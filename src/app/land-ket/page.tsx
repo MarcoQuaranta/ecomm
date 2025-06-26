@@ -22,6 +22,41 @@ const KetoBruciaLanding = () => {
     quantity: '4'
   });
 
+  // Funzione per ottenere i cookie di Facebook
+  const getCookieValue = (name: string): string | null => {
+    const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return match ? match[2] : null;
+  };
+
+  // Funzione per raccogliere i dati necessari per Meta
+  const getMetaTrackingData = () => {
+    return {
+      // Dati Meta essenziali
+      fbp: getCookieValue('_fbp'), // Facebook browser ID
+      fbc: getCookieValue('_fbc'), // Facebook click ID (da campagne)
+      user_agent: navigator.userAgent,
+      timestamp: Math.floor(Date.now() / 1000),
+      event_source_url: window.location.href,
+      referrer: document.referrer,
+
+      // Dati per il tracciamento
+      event_name: 'Lead', // Tipo di evento (Lead, Purchase, etc.)
+      event_id: `${Date.now()}_${Math.random().toString(36).substr(2, 9)}`, // ID univoco
+
+      // Parametri UTM (se presenti nell'URL)
+      utm_source: new URLSearchParams(window.location.search).get('utm_source'),
+      utm_medium: new URLSearchParams(window.location.search).get('utm_medium'),
+      utm_campaign: new URLSearchParams(window.location.search).get('utm_campaign'),
+      utm_content: new URLSearchParams(window.location.search).get('utm_content'),
+      utm_term: new URLSearchParams(window.location.search).get('utm_term'),
+
+      // Altri dati utili
+      page_title: document.title,
+      screen_resolution: `${screen.width}x${screen.height}`,
+      language: navigator.language
+    };
+  };
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -33,19 +68,40 @@ const KetoBruciaLanding = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Debug: verifica che tutti i campi siano presenti
-    console.log('Dati form completi:', formData);
+    // Raccogli i dati per Meta
+    const metaData = getMetaTrackingData();
 
-    fetch('https://primary-production-625c.up.railway.app/0b9ed794-a19e-4914-85fd-e4b3a401a489', {
+    // Combina tutti i dati
+    const completeData = {
+      ...formData,
+      ...metaData
+    };
+
+    // Debug: verifica che tutti i campi siano presenti
+    console.log('Dati form completi:', completeData);
+
+    fetch('https://primary-production-625c.up.railway.app/webhook-test/0b9ed794-a19e-4914-85fd-e4b3a401a489', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',  // Importante!
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify(formData)  // Invia tutti i dati
+      body: JSON.stringify(completeData)
     })
-      .then(() => window.location.href = 'ty-keto')
-      .catch(error => console.error('Errore:', error));
+      .then(response => {
+        if (response.ok) {
+          // Reindirizza solo se la richiesta è andata a buon fine
+          window.location.href = 'ty-keto';
+        } else {
+          console.error('Errore nella risposta:', response.status);
+        }
+      })
+      .catch(error => {
+        console.error('Errore nell\'invio:', error);
+        // Opzionale: potresti comunque reindirizzare anche in caso di errore
+        // window.location.href = 'ty-keto';
+      });
   };
+
 
   const scrollToPricing = () => {
     const element = document.getElementById('pricing-section');
