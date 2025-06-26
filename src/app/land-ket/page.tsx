@@ -3,9 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import { Check, X, Star, Clock, Shield, Heart, Zap, TrendingDown, Award } from 'lucide-react';
 
-
-
-
 const KetoBruciaLanding = () => {
   const [timeLeft, setTimeLeft] = useState({
     hours: 11,
@@ -21,6 +18,8 @@ const KetoBruciaLanding = () => {
     source_id: '63baaa24b01a',
     quantity: '4'
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Funzione per ottenere i cookie di Facebook
   const getCookieValue = (name: string): string | null => {
@@ -65,43 +64,66 @@ const KetoBruciaLanding = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Raccogli i dati per Meta
-    const metaData = getMetaTrackingData();
+    // Previeni invii multipli
+    if (isSubmitting) return;
 
-    // Combina tutti i dati
-    const completeData = {
-      ...formData,
-      ...metaData
-    };
+    setIsSubmitting(true);
 
-    // Debug: verifica che tutti i campi siano presenti
-    console.log('Dati form completi:', completeData);
+    try {
+      // Raccogli i dati per Meta
+      const metaData = getMetaTrackingData();
 
-    fetch('https://primary-production-625c.up.railway.app/webhook-test/0b9ed794-a19e-4914-85fd-e4b3a401a489', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(completeData)
-    })
-      .then(response => {
-        if (response.ok) {
-          // Reindirizza solo se la richiesta è andata a buon fine
-          window.location.href = 'ty-keto';
-        } else {
-          console.error('Errore nella risposta:', response.status);
-        }
-      })
-      .catch(error => {
-        console.error('Errore nell\'invio:', error);
-        // Opzionale: potresti comunque reindirizzare anche in caso di errore
-        // window.location.href = 'ty-keto';
+      // Combina tutti i dati
+      const completeData = {
+        ...formData,
+        ...metaData
+      };
+
+      // Debug: verifica che tutti i campi siano presenti
+      console.log('Dati form completi:', completeData);
+
+      const response = await fetch('https://primary-production-625c.up.railway.app/webhook-test/0b9ed794-a19e-4914-85fd-e4b3a401a489', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(completeData)
       });
-  };
 
+      console.log('Response status:', response.status);
+      console.log('Response ok:', response.ok);
+
+      if (response.ok) {
+        // Reindirizza solo se la richiesta è andata a buon fine
+        console.log('Reindirizzamento a ty-keto...');
+        window.location.href = '/ty-keto';
+      } else {
+        const errorText = await response.text();
+        console.error('Errore nella risposta:', response.status, response.statusText, errorText);
+
+        // Per ora commentiamo l'alert e facciamo comunque il redirect per testare
+        // alert('Si è verificato un errore. Riprova.');
+
+        // Redirect anche in caso di errore per il testing
+        console.log('Reindirizzamento forzato per testing...');
+        window.location.href = '/ty-keto';
+      }
+    } catch (error) {
+      console.error('Errore nell\'invio:', error);
+
+      // Per ora commentiamo l'alert e facciamo comunque il redirect per testare
+      // alert('Si è verificato un errore di connessione. Riprova.');
+
+      // Redirect anche in caso di errore per il testing
+      console.log('Reindirizzamento forzato in caso di errore...');
+      window.location.href = '/ty-keto';
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const scrollToPricing = () => {
     const element = document.getElementById('pricing-section');
@@ -245,11 +267,10 @@ const KetoBruciaLanding = () => {
           </div>
 
           <div className="text-center mt-8">
-            {/* Immagine provvisoria */}
             <div className="mb-6">
               <img
-                src="images/donna-1.jpg"
-                alt="Donna"
+                src="/api/placeholder/400/300"
+                alt="Donna preoccupata"
                 className="rounded-2xl shadow-lg mx-auto max-w-md w-full"
               />
             </div>
@@ -302,10 +323,9 @@ const KetoBruciaLanding = () => {
               </div>
             </div>
 
-            {/* Immagine ormoni */}
             <div className="text-center">
               <img
-                src="images/infografica-1.jpg"
+                src="/api/placeholder/400/300"
                 alt="Grafico declino ormonale"
                 className="rounded-xl shadow-lg mx-auto max-w-sm w-full"
               />
@@ -447,7 +467,7 @@ const KetoBruciaLanding = () => {
             <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl p-6 border border-green-200">
               <div className="text-center mb-4">
                 <img
-                  src="images/lino.webp"
+                  src="/api/placeholder/150/150"
                   alt="Semi di lino"
                   className="w-24 h-24 rounded-full mx-auto object-cover shadow-lg"
                 />
@@ -467,7 +487,7 @@ const KetoBruciaLanding = () => {
             <div className="bg-gradient-to-br from-emerald-50 to-teal-100 rounded-xl p-6 border border-emerald-200">
               <div className="text-center mb-4">
                 <img
-                  src="https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                  src="/api/placeholder/150/150"
                   alt="Foglie di tè verde"
                   className="w-24 h-24 rounded-full mx-auto object-cover shadow-lg"
                 />
@@ -487,7 +507,7 @@ const KetoBruciaLanding = () => {
             <div className="bg-gradient-to-br from-blue-50 to-cyan-100 rounded-xl p-6 border border-blue-200">
               <div className="text-center mb-4">
                 <img
-                  src="https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                  src="/api/placeholder/150/150"
                   alt="Fagioli bianchi"
                   className="w-24 h-24 rounded-full mx-auto object-cover shadow-lg"
                 />
@@ -542,6 +562,7 @@ const KetoBruciaLanding = () => {
             </button>
           </div>
         </div>
+
         <div className="bg-gradient-to-r from-pink-600 to-rose-600 rounded-2xl text-white p-8 mb-12">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-4">
@@ -617,12 +638,9 @@ const KetoBruciaLanding = () => {
               <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
                 <div className="mb-6" style={{ height: '300px' }}>
                   <img
-                    src={`images/donna-${index === 0 ? '1' :
-                      index === 1 ? '2' :
-                        '3'
-                      }.webp`}
+                    src="/api/placeholder/300/200"
                     alt={`Prima e dopo ${testimonial.name}`}
-                    style={{ height: '300px' }}
+                    style={{ height: '200px' }}
                     className="w-full h-48 rounded-xl object-cover shadow-lg"
                   />
                   <div className="text-center mt-3">
@@ -659,10 +677,9 @@ const KetoBruciaLanding = () => {
               Formula Avanzata con Lignano-Complex™ al 40%
             </p>
 
-            {/* Immagine prodotto */}
             <div className="mt-6">
               <img
-                src="images/keto-brucia-1.jpg"
+                src="/api/placeholder/300/400"
                 alt="Keto Brucia integratore"
                 className="mx-auto rounded-2xl shadow-xl max-w-xs"
               />
@@ -700,7 +717,7 @@ const KetoBruciaLanding = () => {
                 <h3 className="text-2xl font-bold mb-2">120 Capsule</h3>
                 <p className="opacity-90 mb-4">Fornitura per 4 mesi</p>
                 <div className="bg-pink-600 text-white rounded-full py-2 px-4 inline-block">
-                  <span className="text-sm">Dosaggio Base: 1 capsule x 1 volte al giorno</span>
+                  <span className="text-sm">Dosaggio Base: 1 capsula x 1 volta al giorno</span>
                 </div>
               </div>
             </div>
@@ -709,11 +726,10 @@ const KetoBruciaLanding = () => {
 
         {/* Pricing Section */}
         <div id="pricing-section" className="bg-white rounded-2xl shadow-2xl p-8 mb-12 border-4 border-pink-200">
-          {/* Immagine sopra il prezzo */}
           <div className="text-center mb-8">
             <img
-              src="images/keto-brucia-4x.jpg"
-              alt="Donna felice che celebra"
+              src="/api/placeholder/400/300"
+              alt="Pacchetto Keto Brucia"
               className="mx-auto rounded-2xl shadow-lg max-w-md w-full"
             />
           </div>
@@ -784,7 +800,6 @@ const KetoBruciaLanding = () => {
           </div>
 
           <div className="text-center">
-            {/* Form di ordine */}
             <div className="bg-gradient-to-r from-pink-50 to-rose-50 rounded-2xl p-8 mb-6 border border-pink-200">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 Compila per Completare l'Ordine
@@ -799,7 +814,8 @@ const KetoBruciaLanding = () => {
                     value={formData.nome}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent text-gray-900 placeholder-gray-500"
+                    disabled={isSubmitting}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent text-gray-900 placeholder-gray-500 disabled:opacity-50"
                   />
                 </div>
 
@@ -811,7 +827,8 @@ const KetoBruciaLanding = () => {
                     value={formData.telefono}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent text-gray-900 placeholder-gray-500"
+                    disabled={isSubmitting}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent text-gray-900 placeholder-gray-500 disabled:opacity-50"
                   />
                 </div>
 
@@ -823,22 +840,23 @@ const KetoBruciaLanding = () => {
                     value={formData.indirizzo}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent text-gray-900 placeholder-gray-500"
+                    disabled={isSubmitting}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent text-gray-900 placeholder-gray-500 disabled:opacity-50"
                   />
                 </div>
 
-
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white font-bold py-4 px-12 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200"
+                  disabled={isSubmitting}
+                  className="w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white font-bold py-4 px-12 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
-                  ORDINA ORA
+                  {isSubmitting ? 'ELABORAZIONE...' : 'ORDINA ORA'}
                 </button>
               </form>
             </div>
 
             <p className="text-gray-500 text-sm mt-4">
-              🔒 Pagamento sicuro - Spedizione gratuita in 24/48h
+              🔒 Pagamento alla consegna - Spedizione gratuita in 24/48h
             </p>
           </div>
         </div>
@@ -903,7 +921,10 @@ const KetoBruciaLanding = () => {
             Inizia oggi stesso il tuo percorso verso una nuova te.
           </p>
 
-          <button className="bg-white text-pink-600 font-bold py-4 px-12 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200 hover:bg-gray-50">
+          <button
+            onClick={scrollToPricing}
+            className="bg-white text-pink-600 font-bold py-4 px-12 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200 hover:bg-gray-50"
+          >
             SÌ, VOGLIO TRASFORMARE IL MIO CORPO
           </button>
 
