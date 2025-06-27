@@ -1,21 +1,14 @@
 "use client";
-
 import React, { useState, useEffect } from 'react';
-import { Check, X, Star, Clock, Shield, Heart, Zap, TrendingDown, Award } from 'lucide-react';
 
-const KetoBruciaLanding = () => {
-  const [timeLeft, setTimeLeft] = useState({
-    hours: 11,
-    minutes: 45,
-    seconds: 36
-  });
+const SuissenLabLanding: React.FC = () => {
   const [formData, setFormData] = useState({
     nome: '',
     telefono: '',
     indirizzo: '',
-    URL: 'https://network.worldfilia.net/manager/inventory/buy/ntm_ketobrucia_4x49.json?api_key=5b4327289caa289c6117c469d70a13bd',
+    URL: 'https://network.worldfilia.net/manager/inventory/buy/ntm_sixslim_2x49.json?api_key=5b4327289caa289c6117c469d70a13bd',
     source_id: '2da1cfad54d3',
-    quantity: '4'
+    quantity: '2'
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -115,829 +108,689 @@ const KetoBruciaLanding = () => {
       });
 
       // Reindirizza sempre (per semplicità)
-      window.location.href = '/ty-keto';
+      window.location.href = '/ty-sixslim';
 
     } catch (error) {
       console.error('Errore:', error);
       // Reindirizza anche in caso di errore
-      window.location.href = '/ty-keto';
+      window.location.href = '/ty-sixslim';
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  const scrollToPricing = () => {
-    const element = document.getElementById('pricing-section');
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  };
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev.seconds > 0) {
-          return { ...prev, seconds: prev.seconds - 1 };
-        } else if (prev.minutes > 0) {
-          return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
-        } else if (prev.hours > 0) {
-          return { ...prev, hours: prev.hours - 1, minutes: 59, seconds: 59 };
-        }
-        return prev;
-      });
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const testimonials = [
-    {
-      name: "Elena M.",
-      age: 45,
-      city: "Milano",
-      result: "-8 kg in 6 settimane",
-      text: "Dopo la menopausa pensavo fosse impossibile perdere peso. Keto Brucia ha riattivato il mio metabolismo e ora mi sento come a 30 anni!",
-      stars: 5,
-      image: "/images/donna-1.webp"
-    },
-    {
-      name: "Giulia R.",
-      age: 42,
-      city: "Roma",
-      result: "-6 kg in 4 settimane",
-      text: "Il gonfiore addominale che mi tormentava è completamente sparito. Finalmente posso indossare i miei vestiti preferiti!",
-      stars: 5,
-      image: "/images/donna-2.webp"
-    },
-    {
-      name: "Francesca L.",
-      age: 50,
-      city: "Torino",
-      result: "-10 kg in 8 settimane",
-      text: "I miei valori ormonali si sono normalizzati e ho ritrovato l'energia che avevo perso. È stata una trasformazione incredibile!",
-      stars: 5,
-      image: "/images/donna-3.webp"
-    }
-  ];
-
-  const benefits = [
-    "Riattiva il metabolismo bloccato",
-    "Elimina il gonfiore addominale",
-    "Equilibra gli ormoni naturalmente",
-    "Accelera la perdita di peso",
-    "Aumenta i livelli di energia",
-    "Migliora la digestione"
-  ];
-
-  const problems = [
-    "Pancia gonfia che peggiora durante il giorno",
-    "Bilancia bloccata nonostante la dieta",
-    "Metabolismo rallentato dopo i 40",
-    "Stanchezza cronica e mancanza di energia",
-    "Difficoltà a perdere peso in menopausa",
-    "Squilibri ormonali che sabotano i risultati"
-  ];
-
   return (
-    <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
-      {/* Header con countdown */}
-      <div className="bg-gradient-to-r from-pink-600 to-rose-600 text-white py-3">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center space-x-4">
-            <Clock className="w-5 h-5" />
-            <span className="font-semibold">Offerta Limitata scade tra:</span>
-            <div className="flex space-x-2">
-              <div className="bg-white text-pink-600 px-2 py-1 rounded font-bold text-sm">
-                {String(timeLeft.hours).padStart(2, '0')}h
-              </div>
-              <div className="bg-white text-pink-600 px-2 py-1 rounded font-bold text-sm">
-                {String(timeLeft.minutes).padStart(2, '0')}m
-              </div>
-              <div className="bg-white text-pink-600 px-2 py-1 rounded font-bold text-sm">
-                {String(timeLeft.seconds).padStart(2, '0')}s
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-8">
-            <button
-              onClick={scrollToPricing}
-              className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200"
-            >
-              Inizia il Trattamento
-            </button>
+    <div className="min-h-screen bg-gray-900">
+      {/* Header */}
+      <div className="bg-white py-6 border-b border-yellow-400">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center">
+            <img src="/images/six-slim/suisse-lab-logo.jpg" alt="SUISSENLAB+" className="h-10" />
           </div>
         </div>
       </div>
 
       {/* Hero Section */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center bg-rose-100 text-rose-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-            <Star className="w-4 h-4 mr-2" />
-            Oltre 2.847 donne hanno già trasformato il loro corpo
-          </div>
+      <div className="bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white">
+        <div className="container mx-auto px-4 py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-5xl lg:text-6xl font-black mb-8 leading-tight">
+                Brucia il <span className="text-yellow-400">GRASSO</span> su pancia,<br />
+                fianchi e cosce.
+              </h1>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Con i Bio-Estrogeni le Donne<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-rose-600">
-              Over 40 Perdono Fino a 4kg
-            </span><br />
-            in 7 Giorni <span className="text-green-600">SENZA RIPRENDERLI</span><br />
-            <span className="text-2xl md:text-3xl text-gray-600">senza Diete Estreme</span>
-          </h1>
+              <p className="text-xl mb-10 text-gray-300 font-light">
+                L'integratore STUDIATO SPECIFICATAMENTE per eliminare il<br />
+                <span className="text-yellow-400 font-semibold">GRASSO VISCERALE</span>
+              </p>
 
-          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Il primo integratore naturale che riattiva il tuo metabolismo bloccato e
-            riequilibra gli ormoni per una perdita di peso rapida e duratura dopo i 40 anni
-          </p>
-        </div>
+              <div className="space-y-6 mb-12">
+                <div className="flex items-start gap-4 p-4 bg-gray-800/50 rounded-xl border border-gray-700">
+                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-black text-lg font-bold">✓</span>
+                  </div>
+                  <p className="text-sm font-medium">
+                    <span className="text-yellow-400">FORMULA SCIENTIFICA BREVETTATA</span> DA SUISSELAB-® SPECIFICA PER IL GRASSO LOCALIZZATO
+                  </p>
+                </div>
 
-        {/* Problems Section */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 mb-12 border border-gray-100">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-            Ti riconosci in questi problemi?
-          </h2>
+                <div className="flex items-start gap-4 p-4 bg-gray-800/50 rounded-xl border border-gray-700">
+                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-black text-lg font-bold">✓</span>
+                  </div>
+                  <p className="text-sm font-medium">
+                    <span className="text-yellow-400">ADATTO A UOMINI E DONNE</span> CHE NON HANNO LA POSSIBILITÀ DI PASSARE ORE IN PALESTRA
+                  </p>
+                </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {problems.map((problem, index) => (
-              <div key={index} className="flex items-start space-x-3">
-                <X className="w-6 h-6 text-red-500 mt-1 flex-shrink-0" />
-                <p className="text-gray-700 font-medium">{problem}</p>
+                <div className="flex items-start gap-4 p-4 bg-gray-800/50 rounded-xl border border-gray-700">
+                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-black text-lg font-bold">✓</span>
+                  </div>
+                  <p className="text-sm font-medium">
+                    <span className="text-yellow-400">MISURA LA TUA CIRCONFERENZA OGNI SETTIMANA!</span> RIDUZIONE DEL GRASSO ADDOMINALE GARANTITA O RIMBORSATA
+                  </p>
+                </div>
               </div>
-            ))}
-          </div>
 
-          <div className="text-center mt-8">
-            <div className="mb-6">
-              <img
-                src="images/donna-1.jpg"
-                alt="Donna"
-                className="rounded-2xl shadow-lg mx-auto max-w-md w-full"
-              />
-            </div>
+              <div className="flex gap-8 mb-12">
+                <div className="text-center">
+                  <div className="p-4 rounded-2xl mb-3">
+                    <img src="/images/six-slim/swiss-formula.png" alt="Swiss Flag" className="w-10 h-10" />
+                  </div>
+                  <p className="text-xs font-semibold">
+                    <span className="text-yellow-400">SWISS</span><br />
+                    FORMULA
+                  </p>
+                </div>
 
-            <p className="text-2xl font-bold text-rose-600 mb-4">
-              Non è colpa tua!
-            </p>
-            <p className="text-gray-600 text-lg">
-              Dopo i 40 anni, i tuoi recettori ormonali si "addormentano" e il metabolismo rallenta del 35%.
-              Ecco perché tutto quello che hai provato finora non ha funzionato.
-            </p>
+                <div className="text-center">
+                  <div className="p-4 rounded-2xl mb-3">
+                    <img src="/images/six-slim/soddisfatti-o-rimborsati.png" alt="Guarantee" className="w-10 h-10" />
+                  </div>
+                  <p className="text-xs font-semibold">
+                    <span className="text-yellow-400">SODDISFATTI</span><br />
+                    O RIMBORSATI
+                  </p>
+                </div>
 
-            <div className="mt-8">
+                <div className="text-center">
+                  <div className="p-4 rounded-2xl mb-3">
+                    <img src="/images/six-slim/spedizione-gratis.png" alt="Free Shipping" className="w-10 h-10" />
+                  </div>
+                  <p className="text-xs font-semibold">
+                    <span className="text-yellow-400">SPEDIZIONE</span><br />
+                    GRATUITA
+                  </p>
+                </div>
+              </div>
+
               <button
-                onClick={scrollToPricing}
-                className="bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200"
+                onClick={() => document.getElementById('order-section')?.scrollIntoView({ behavior: 'smooth' })}
+                className="group relative bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-black py-5 px-10 rounded-2xl text-xl hover:from-yellow-300 hover:to-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-2xl"
               >
-                Inizia il Trattamento
+                <span className="flex items-center gap-3">
+                  📞 ORDINA SUBITO! (-30%)
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
             </div>
+
+            <div className="flex justify-center">
+              <div className="relative">
+                <img src="/images/six-slim/uomo-fatburner.jpg" alt="Fit man torso" className="max-w-full h-auto rounded-3xl" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-3xl"></div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Hormonal Circle Section */}
-        <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 mb-12 border border-blue-200">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-            Il "Circolo Vizioso Ormonale" che Blocca il Tuo Dimagrimento Dopo i 40
+      {/* Embarrassing Situations Section */}
+      <div className="bg-gray-800 py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl lg:text-5xl font-black text-center mb-16 text-white">
+            QUANTE VOLTE TI E' CAPITATO DI <span className="text-yellow-400">VERGOGNARTI</span> PER:
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
-            <div>
-              <p className="text-lg text-gray-700 mb-6">
-                Dopo i 40 anni, i tuoi recettori ormonali iniziano a "spegnere il motore".
-                È come avere un termostato metabolico che gradualmente smette di funzionare:
-              </p>
-
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <p className="text-gray-700">I recettori degli estrogeni perdono sensibilità</p>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <p className="text-gray-700">La produzione di estrogeni crolla del 67%</p>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <p className="text-gray-700">Il metabolismo rallenta fino al 35%</p>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="bg-gray-900 p-8 rounded-3xl border border-gray-700 hover:border-yellow-400 transition-all duration-300">
+              <div className="mb-6">
+                <img src="/images/six-slim/maniglie-amore.jpg" alt="Love handles" className="w-full h-52 object-cover rounded-2xl" />
               </div>
-            </div>
-
-            <div className="text-center">
-              <img
-                src="images/infografica-1.jpg"
-                alt="Grafico declino ormonale"
-                className="rounded-xl shadow-lg mx-auto max-w-sm w-full"
-              />
-            </div>
-
-            <div className="bg-white rounded-xl p-6 shadow-lg">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                Perché gli Estrogeni Sono Fondamentali
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Non sono semplici ormoni riproduttivi, ma i veri "direttori d'orchestra" del tuo metabolismo:
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li>• Regolano dove si accumula il grasso nel corpo</li>
-                <li>• Mantengono attivo il metabolismo 24/7</li>
-                <li>• Controllano fame e sazietà</li>
-                <li>• Equilibrano i livelli di insulina</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-8">
-            <h3 className="text-xl font-bold text-red-800 mb-4">
-              Ecco Perché Tutto Quello che Hai Provato NON Ha Funzionato:
-            </h3>
-
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="flex items-start space-x-3">
-                <X className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold text-red-800">Diete Drastiche</p>
-                  <p className="text-red-700 text-sm">Peggiorano il metabolismo e riducono ancora di più gli estrogeni</p>
-                </div>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-red-500 text-2xl">✗</span>
+                <p className="font-bold text-red-400 text-lg">Quelle odiose MANIGLIE DELL'AMORE</p>
               </div>
-
-              <div className="flex items-start space-x-3">
-                <X className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold text-red-800">Allenamenti Intensi</p>
-                  <p className="text-red-700 text-sm">Senza equilibrio ormonale, il corpo non riesce a bruciare i grassi</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3">
-                <X className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold text-red-800">Brucia Grassi Tradizionali</p>
-                  <p className="text-red-700 text-sm">Ignorano completamente il problema degli estrogeni inattivi</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3">
-                <X className="w-5 h-5 text-red-500 mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold text-red-800">Trattamenti Estetici</p>
-                  <p className="text-red-700 text-sm">Effetti temporanei che non risolvono la causa ormonale</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-red-100 rounded-lg p-4 mt-6">
-              <p className="text-red-800 font-semibold text-center">
-                💡 La Verità: Senza riequilibrare gli estrogeni, ogni tentativo di dimagrire è destinato al fallimento.
-                È come cercare di svuotare una barca che fa acqua senza prima riparare la falla.
+              <p className="text-gray-300">
+                un fastidiosissimo punto dove si vanno a formare cumuli di grasso.
               </p>
             </div>
-          </div>
 
-          <div className="bg-green-50 border border-green-200 rounded-xl p-6">
-            <h3 className="text-2xl font-bold text-green-800 mb-4 text-center">
-              🌟 Ma C'è una Speranza! 🌟
-            </h3>
-
-            <p className="text-green-700 text-lg mb-4 text-center">
-              Immagina di poter "risvegliare" dolcemente questi recettori addormentati.
-              Di ritrovare quella comunicazione perfetta che il tuo corpo aveva a 30 anni.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-bold text-green-800 mb-3">Quando i Bio-Estrogeni si Riequilibrano:</h4>
-                <ul className="space-y-2">
-                  <li className="flex items-center space-x-2">
-                    <Check className="w-4 h-4 text-green-600" />
-                    <span className="text-green-700">Il metabolismo si riattiva completamente</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <Check className="w-4 h-4 text-green-600" />
-                    <span className="text-green-700">Il grasso si allontana dalla pancia</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <Check className="w-4 h-4 text-green-600" />
-                    <span className="text-green-700">Il gonfiore persistente scompare</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <Check className="w-4 h-4 text-green-600" />
-                    <span className="text-green-700">L'energia vitale ritorna</span>
-                  </li>
-                </ul>
+            <div className="bg-gray-900 p-8 rounded-3xl border border-gray-700 hover:border-yellow-400 transition-all duration-300">
+              <div className="mb-6">
+                <img src="/images/six-slim/pancia.jpg" alt="Beach belly" className="w-full h-52 object-cover rounded-2xl" />
               </div>
-
-              <div className="bg-white rounded-lg p-4">
-                <h4 className="font-bold text-gray-900 mb-3">Il Segreto: Lignano-Complex™</h4>
-                <div className="space-y-3">
-                  <div className="flex items-start space-x-2">
-                    <div className="w-2 h-2 bg-pink-500 rounded-full mt-2"></div>
-                    <p className="text-gray-700 text-sm">Si lega ai recettori degli estrogeni "addormentati"</p>
-                  </div>
-                  <div className="flex items-start space-x-2">
-                    <div className="w-2 h-2 bg-pink-500 rounded-full mt-2"></div>
-                    <p className="text-gray-700 text-sm">Biodisponibilità superiore del 312%</p>
-                  </div>
-                  <div className="flex items-start space-x-2">
-                    <div className="w-2 h-2 bg-pink-500 rounded-full mt-2"></div>
-                    <p className="text-gray-700 text-sm">Riattiva la sensibilità in 72 ore</p>
-                  </div>
-                </div>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-red-500 text-2xl">✗</span>
+                <p className="font-bold text-red-400 text-lg">Quell'imbarazzante pancia.</p>
               </div>
+              <p className="text-gray-300">
+                Impossibile da buttare giù anche stando attenti all'alimentazione e facendo sforzi.
+              </p>
             </div>
-          </div>
 
-          <div className="text-center mt-8">
-            <button
-              onClick={scrollToPricing}
-              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200"
-            >
-              Inizia il Trattamento
-            </button>
+            <div className="bg-gray-900 p-8 rounded-3xl border border-gray-700 hover:border-yellow-400 transition-all duration-300">
+              <div className="mb-6">
+                <img src="/images/six-slim/uomo-donna.jpg" alt="Beach couple" className="w-full h-52 object-cover rounded-2xl" />
+              </div>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-red-500 text-2xl">✗</span>
+                <p className="font-bold text-red-400 text-lg">Non sentirti a tuo agio</p>
+              </div>
+              <p className="text-gray-300">
+                in situazione particolari, a causa del tuo fisico che non ti valorizza!
+              </p>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Scientific Formula Section */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 mb-12 border border-gray-100">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-            La Formula Scientifica che Cambia Tutto
+      {/* Benefits Section */}
+      <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl lg:text-5xl font-black text-center mb-6 text-white">
+            QUANTO MIGLIOREREBBE LA TUA VITA, CON <span className="text-yellow-400">5-10-15 KG</span> DI
+          </h2>
+          <h2 className="text-4xl lg:text-5xl font-black text-center mb-16 text-white">
+            GRASSO IN MENO SU ADDOMINALI E FIANCHI?
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl p-6 border border-green-200">
-              <div className="text-center mb-4">
-                <img
-                  src="images/lino.webp"
-                  alt="Semi di lino"
-                  className="w-24 h-24 rounded-full mx-auto object-cover shadow-lg"
-                />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <div className="flex items-start gap-4 p-6 bg-gray-800/50 rounded-2xl border border-gray-700">
+                <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-black text-lg font-bold">✓</span>
+                </div>
+                <p className="text-gray-200 font-medium">
+                  IMMAGINA DI <span className="text-yellow-400 font-bold">AVERE GIÀ IL FISICO CHE DESIDERI</span>, CON GLI ADDOMINALI IN VISTA. QUANTO SARESTI SODDISFATTO DI TE STESSO?
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-green-800 mb-3 text-center">Lino Concentrato</h3>
-              <p className="text-green-700 text-sm mb-3">
-                <strong>Non il comune lino!</strong> Il nostro estratto è standardizzato al 40% in lignani attivi.
-              </p>
-              <div className="bg-white rounded-lg p-3">
-                <p className="text-xs text-gray-600">
-                  Lino comune: 0,5-1% lignani<br />
-                  <span className="font-bold text-green-700">Nostro estratto: 40% lignani</span>
+
+              <div className="flex items-start gap-4 p-6 bg-gray-800/50 rounded-2xl border border-gray-700">
+                <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-black text-lg font-bold">✓</span>
+                </div>
+                <p className="text-gray-200 font-medium">
+                  IMMAGINA <span className="text-yellow-400 font-bold">COME TI GUARDEREBBERO LE ALTRE PERSONE</span>: AMICHE E AMICI
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-gray-800/50 rounded-2xl border border-gray-700">
+                <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-black text-lg font-bold">✓</span>
+                </div>
+                <p className="text-gray-200 font-medium">
+                  IMMAGINA DI <span className="text-yellow-400 font-bold">POTER INDOSSARE VESTITI CHE AL MOMENTO TI FAREBBERO SBIGARARE</span>
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-gray-800/50 rounded-2xl border border-gray-700">
+                <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-black text-lg font-bold">✓</span>
+                </div>
+                <p className="text-gray-200 font-medium">
+                  MIGLIORA LA TUA <span className="text-yellow-400 font-bold">SALUTE</span>
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-gray-800/50 rounded-2xl border border-gray-700">
+                <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-black text-lg font-bold">✓</span>
+                </div>
+                <p className="text-gray-200 font-medium">
+                  MIGLIORA LA TUA <span className="text-yellow-400 font-bold">ENERGIA E LA TUA VOGLIA DI VIVERE APPIENO</span>
                 </p>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-emerald-50 to-teal-100 rounded-xl p-6 border border-emerald-200">
-              <div className="text-center mb-4">
-                <img
-                  src="https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
-                  alt="Foglie di tè verde"
-                  className="w-24 h-24 rounded-full mx-auto object-cover shadow-lg"
-                />
+            <div className="flex justify-center">
+              <div className="relative">
+                <img src="/images/six-slim/man-fisico-buono.jpg" alt="Fit couple" className="max-w-full h-auto rounded-3xl" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-3xl"></div>
               </div>
-              <h3 className="text-xl font-bold text-emerald-800 mb-3 text-center">Tè Verde Premium</h3>
-              <p className="text-emerald-700 text-sm mb-3">
-                Concentrato al 98% in polifenoli attivi che accelerano la termogenesi.
+            </div>
+          </div>
+
+          <div className="text-center mt-16">
+            <button
+              onClick={() => document.getElementById('order-section')?.scrollIntoView({ behavior: 'smooth' })}
+              className="group relative bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-black py-5 px-10 rounded-2xl text-xl hover:from-yellow-300 hover:to-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-2xl"
+            >
+              <span className="flex items-center gap-3">
+                📞 ORDINA SUBITO! (-30%)
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Full Width Image Placeholder */}
+      <div className="w-full">
+        <img
+          src="/images/six-slim/bg-trasform.jpg"
+          alt="Full width promotional image"
+          className="w-full h-auto"
+        />
+      </div>
+
+      {/* How it Works Section */}
+      <div className="bg-gradient-to-br from-black via-gray-900 to-gray-800 py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl lg:text-5xl font-black text-center mb-16 text-white">
+            COME FUNZIONA <span className="text-yellow-400">SIX SLIM-FAST</span> ®?
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <p className="text-xl mb-8 text-gray-200 font-medium">
+                <span className="text-yellow-400 font-bold">SIX SLIM-FAST</span> contiene una formula <span className="text-yellow-400 font-bold">BREVETTATA</span> dai ricercatori di <span className="text-yellow-400 font-bold">SUISSELAB</span> per:
               </p>
-              <div className="bg-white rounded-lg p-3">
-                <p className="text-xs text-gray-600">
-                  Tè verde comune: 10-15%<br />
-                  <span className="font-bold text-emerald-700">Nostro estratto: 98%</span>
+
+              <div className="flex items-start gap-4 p-6 bg-gray-800 rounded-2xl border border-gray-700">
+                <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-black text-lg font-bold">✓</span>
+                </div>
+                <p className="text-gray-200 font-medium">
+                  Aumentare il <span className="text-yellow-400 font-bold">METABOLISMO BASALE</span> e quindi <span className="text-yellow-400 font-bold">CONSUMARE PIÙ CALORIE</span> anche a riposo (entro <span className="text-yellow-400 font-bold">BRUCIA GRASSI</span>)
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-gray-800 rounded-2xl border border-gray-700">
+                <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-black text-lg font-bold">✓</span>
+                </div>
+                <p className="text-gray-200 font-medium">
+                  Stabilizzare i livelli di <span className="text-yellow-400 font-bold">GLICEMIA</span>. Ad ogni picco di glicemia corrisponde un picco di fame, controllando la glicemia avrai meno attacchi di fame.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-gray-800 rounded-2xl border border-gray-700">
+                <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-black text-lg font-bold">✓</span>
+                </div>
+                <p className="text-gray-200 font-medium">
+                  Contiene un particolare ingrediente: <span className="text-yellow-400 font-bold">Deoxynojirimycin (DNJ)</span>.
                 </p>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-100 rounded-xl p-6 border border-blue-200">
-              <div className="text-center mb-4">
-                <img
-                  src="https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
-                  alt="Fagioli bianchi"
-                  className="w-24 h-24 rounded-full mx-auto object-cover shadow-lg"
-                />
-              </div>
-              <h3 className="text-xl font-bold text-blue-800 mb-3 text-center">Fagiolo Bianco</h3>
-              <p className="text-blue-700 text-sm mb-3">
-                Faseolamina concentrata 3000:1 per bloccare l'assorbimento dei carboidrati.
-              </p>
-              <div className="bg-white rounded-lg p-3">
-                <p className="text-xs text-gray-600">
-                  <span className="font-bold text-blue-700">1 capsula = 1kg di fagioli</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 mt-8 border border-purple-200">
-            <h3 className="text-2xl font-bold text-center text-purple-900 mb-4">
-              Oltre il Dimagrimento: Un Benessere Totale
-            </h3>
-            <p className="text-purple-800 text-center mb-6">
-              Riequilibrare i bio-estrogeni non significa solo perdere peso.
-              Significa ritrovare quella vitalità che pensavi perduta per sempre.
-            </p>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="text-center">
-                <div className="text-3xl mb-2">😴</div>
-                <p className="text-sm font-semibold text-purple-800">Sonno Profondo</p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl mb-2">😊</div>
-                <p className="text-sm font-semibold text-purple-800">Umore Stabile</p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl mb-2">✨</div>
-                <p className="text-sm font-semibold text-purple-800">Pelle Luminosa</p>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl mb-2">⚡</div>
-                <p className="text-sm font-semibold text-purple-800">Energia Costante</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-8">
-            <button
-              onClick={scrollToPricing}
-              className="bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200"
-            >
-              Inizia il Trattamento
-            </button>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-pink-600 to-rose-600 rounded-2xl text-white p-8 mb-12">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4">
-              La Soluzione Rivoluzionaria: Keto Brucia
-            </h2>
-            <p className="text-xl opacity-90">
-              Formula brevettata con Lignano-Complex™ che risveglia i tuoi bio-estrogeni
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <div className="bg-white bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Zap className="w-8 h-8" />
-              </div>
-              <h3 className="font-bold text-lg mb-2">Riattiva il Metabolismo</h3>
-              <p className="opacity-90">Risveglia i recettori ormonali "addormentati"</p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-white bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <TrendingDown className="w-8 h-8" />
-              </div>
-              <h3 className="font-bold text-lg mb-2">Elimina il Gonfiore</h3>
-              <p className="opacity-90">Riduce l'infiammazione e migliora la digestione</p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-white bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Heart className="w-8 h-8" />
-              </div>
-              <h3 className="font-bold text-lg mb-2">Equilibra gli Ormoni</h3>
-              <p className="opacity-90">Ripristina l'equilibrio ormonale naturale</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Benefits Section */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-            I Benefici che Otterrai
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                <div className="flex items-start space-x-3">
-                  <Check className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
-                  <p className="text-gray-700 font-medium">{benefit}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-8">
-            <button
-              onClick={scrollToPricing}
-              className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transform hover:scale-105 transition-all duration-200"
-            >
-              Inizia il Trattamento
-            </button>
-          </div>
-        </div>
-
-        {/* Testimonials */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-            Storie di Successo Reali
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                <div className="mb-6" style={{ height: '300px' }}>
-
-                  <img src={testimonial.image} alt={`Evoluzione ${testimonial.name}`}
-                    style={{ height: '300px' }}
-                    className="w-full h-48 rounded-xl object-cover shadow-lg" />
-
-                  <div className="text-center mt-3">
-                    <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">
-                      {testimonial.result}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-center mb-4" style={{ marginTop: '50px' }}>
-                  {[...Array(testimonial.stars)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-
-                <p className="text-gray-600 mb-4 italic">"{testimonial.text}"</p>
-
-                <div className="border-t pt-4">
-                  <p className="font-semibold text-gray-900 text-lg">
-                    {testimonial.name}, {testimonial.age} anni
-                  </p>
-                  <p className="text-gray-500">{testimonial.city}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Product Showcase */}
-        <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl text-white p-8 mb-12">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4">Keto Brucia</h2>
-            <p className="text-xl opacity-90">
-              Formula Avanzata con Lignano-Complex™ al 40%
-            </p>
-
-            <div className="mt-6">
-              <img
-                src="images/keto-brucia-1.jpg"
-                alt="Keto Brucia integratore"
-                className="mx-auto rounded-2xl shadow-xl max-w-xs"
-              />
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="bg-gradient-to-r from-pink-600 to-rose-600 rounded-xl p-6 mb-6">
-                <h3 className="text-2xl font-bold mb-4">Cosa Rende Keto Brucia Unico?</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
-                    <span>Lignano-Complex™ standardizzato al 40%</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
-                    <span>Estratti vegetali certificati biologici</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
-                    <span>Formula scientificamente testata</span>
-                  </li>
-                  <li className="flex items-center space-x-3">
-                    <Check className="w-5 h-5 text-green-400" />
-                    <span>Zero effetti collaterali</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-white bg-opacity-10 rounded-2xl p-8">
-                <div className="text-6xl mb-4">💊</div>
-                <h3 className="text-2xl font-bold mb-2">120 Capsule</h3>
-                <p className="opacity-90 mb-4">Fornitura per 4 mesi</p>
-                <div className="bg-pink-600 text-white rounded-full py-2 px-4 inline-block">
-                  <span className="text-sm">Dosaggio Base: 1 capsula x 1 volta al giorno</span>
-                </div>
+            <div className="flex justify-center">
+              <div className="relative">
+                <img src="/images/six-slim/picco-glicemico-compressor.jpg" alt="Metabolism Chart" className="max-w-full h-auto rounded-3xl border border-gray-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-3xl"></div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Pricing Section */}
-        <div id="pricing-section" className="bg-white rounded-2xl shadow-2xl p-8 mb-12 border-4 border-pink-200">
-          <div className="text-center mb-8">
+      {/* Before/After Gallery */}
+      <div className="bg-black py-12 border-y border-gray-800">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center">
             <img
-              src="images/keto-brucia-4x.jpg"
-              alt="Pacchetto Keto Brucia"
-              className="mx-auto rounded-2xl shadow-lg max-w-md w-full"
+              src="/images/six-slim/bg-trasform.jpg"
+              alt="Before and After Transformations Grid"
+              className="max-w-full h-auto rounded-2xl border border-gray-700"
             />
           </div>
+        </div>
+      </div>
 
-          <div className="text-center mb-8">
-            <div className="inline-flex items-center bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              <Clock className="w-4 h-4 mr-2" />
-              Offerta Limitata - Solo per Oggi
-            </div>
+      {/* How to Use Section */}
+      <div className="bg-gray-800 py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl lg:text-5xl font-black mb-16 text-white">
+            COME UTILIZZARE <span className="text-yellow-400">SIX-SLIM</span> ®?
+          </h2>
 
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Pacchetto Trasformazione Completa
-            </h2>
-
-            <div className="flex items-center justify-center space-x-4 mb-6">
-              <span className="text-2xl text-gray-500 line-through">€199,96</span>
-              <span className="text-5xl font-bold text-pink-600">€49,99</span>
-              <div className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
-                -75%
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="flex justify-center">
+              <div className="relative">
+                <img src="/images/six-slim/prodotto.png" alt="Rebody Slim Bottle" className="max-w-full h-auto" />
+                <div className="absolute -top-4 -right-4 bg-yellow-400 text-black px-4 py-2 rounded-xl font-bold text-sm">
+                  60 COMPRESSE
+                </div>
               </div>
             </div>
 
-            <p className="text-gray-600 mb-8">
-              4 Confezioni di Keto Brucia + Bonus Gratuiti
-            </p>
-          </div>
+            <div className="space-y-8">
+              <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-2xl border border-gray-700">
+                <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-black font-bold">●</span>
+                </div>
+                <p className="text-gray-200">
+                  La confezione contiene ben <span className="text-yellow-400 font-bold">60 COMPRESSE, sufficienti per 2 MESI</span> di trattamento. Al termine dei due mesi vedrai una grossa differenza rispetto al punto di partenza.
+                </p>
+              </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Cosa Ricevi:</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-500" />
-                  <span>4 Confezioni Keto Brucia (4 mesi di trattamento, valore 150€)</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-500" />
-                  <span>Guida Alimentare Keto-Friendly (valore €29)</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-500" />
-                  <span>Piano di Allenamento Metabolico (valore €39)</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-green-500" />
-                  <span>Consulenza WhatsApp con specialista sempre disponibile per 4 mesi (valore 99€)</span>
-                </li>
-              </ul>
+              <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-2xl border border-gray-700">
+                <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-black font-bold">●</span>
+                </div>
+                <p className="text-gray-200">
+                  Prima di iniziare il trattamento con <span className="text-yellow-400 font-bold">SIX-SLIM, scattati una foto</span> a torso nudo davanti alla specchio e prendi la misura delle tue circonferenze di vita e fianchi di partenza (è lì che si concentra l'azione di SIX-SLIM)
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-2xl border border-gray-700">
+                <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-black font-bold">●</span>
+                </div>
+                <p className="text-gray-200">
+                  Dal giorno seguente, inizia ad assumere <span className="text-yellow-400 font-bold">1 compressa prima o dopo uno dei due pasti</span>. Già dai primi giorni inizierai a percepire un abbassamento del livello di fame e una riduzione degli attacchi di fame
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-2xl border border-gray-700">
+                <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-black font-bold">●</span>
+                </div>
+                <p className="text-gray-200">
+                  Dopo le prime <span className="text-yellow-400 font-bold">2 settimane di utilizzo riprendi le misure delle tue circonferenze e confrontale con quelle iniziali. Se non noti dei miglioramenti, CHIEDICI IL RIMBORSO!</span>
+                </p>
+              </div>
+
+              <div className="mt-12 text-center">
+                <button
+                  onClick={() => document.getElementById('order-section')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="group relative bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-black py-5 px-10 rounded-2xl text-xl hover:from-yellow-300 hover:to-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-2xl"
+                >
+                  <span className="flex items-center gap-3">
+                    📞 ORDINA SUBITO! (-30%)
+                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </button>
+              </div>
             </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Garanzie:</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center space-x-3">
-                  <Shield className="w-5 h-5 text-blue-500" />
-                  <span>Garanzia Soddisfatti o Rimborsati 365 giorni</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <Award className="w-5 h-5 text-purple-500" />
-                  <span>Certificazione Biologica Europea</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <Heart className="w-5 h-5 text-red-500" />
-                  <span>Testato da oltre 3.000 donne</span>
-                </li>
-              </ul>
-            </div>
           </div>
+        </div>
+      </div>
 
-          <div className="text-center">
-            <div className="bg-gradient-to-r from-pink-50 to-rose-50 rounded-2xl p-8 mb-6 border border-pink-200">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Compila per Completare l'Ordine
+      {/* Why Choose Section */}
+      <div className="bg-gradient-to-br from-black via-gray-900 to-black py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl lg:text-5xl font-black text-center mb-16 text-white">
+            PERCHE' SCEGLIERE <span className="text-yellow-400">SIX-SLIM</span> ®?
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div className="bg-gray-800 p-8 rounded-3xl border border-gray-700 hover:border-yellow-400 transition-all duration-300 text-center">
+              <div className="mb-8">
+                <div className="bg-white p-6 rounded-3xl inline-block">
+                  <img src="/images/six-slim/svizzera.jpg" alt="Swiss Flag" className="w-16 h-16" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-white">
+                Formula Svizzera<br />
+                <span className="text-yellow-400">BREVETTATA</span>
               </h3>
+            </div>
 
-              <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
-                <div>
-                  <input
-                    type="text"
-                    name="nome"
-                    placeholder="Nome e Cognome"
-                    value={formData.nome}
-                    onChange={handleInputChange}
-                    required
-                    disabled={isSubmitting}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent text-gray-900 placeholder-gray-500 disabled:opacity-50"
-                  />
+            <div className="bg-gray-800 p-8 rounded-3xl border border-gray-700 hover:border-yellow-400 transition-all duration-300 text-center">
+              <div className="mb-8">
+                <div className="bg-white p-6 rounded-3xl inline-block">
+                  <img src="/images/six-slim/sicuro.jpg" alt="Quality Certified" className="w-16 h-16" />
                 </div>
+              </div>
+              <h3 className="text-xl font-bold text-white">
+                Qualità<br />
+                <span className="text-yellow-400">Certificata</span>
+              </h3>
+            </div>
 
-                <div>
-                  <input
-                    type="tel"
-                    name="telefono"
-                    placeholder="Telefono Cellulare"
-                    value={formData.telefono}
-                    onChange={handleInputChange}
-                    required
-                    disabled={isSubmitting}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent text-gray-900 placeholder-gray-500 disabled:opacity-50"
-                  />
+            <div className="bg-gray-800 p-8 rounded-3xl border border-gray-700 hover:border-yellow-400 transition-all duration-300 text-center">
+              <div className="mb-8">
+                <div className="bg-white p-6 rounded-3xl inline-block">
+                  <img src="/images/six-slim/soddisfatto.jpg" alt="100% Satisfaction" className="w-16 h-16" />
                 </div>
+              </div>
+              <h3 className="text-xl font-bold text-white">
+                100% <span className="text-yellow-400">SODDISFATTO</span><br />
+                O RIMBORSATO
+              </h3>
+            </div>
+          </div>
 
-                <div>
-                  <input
-                    type="text"
-                    name="indirizzo"
-                    placeholder="Indirizzo e N. Civico"
-                    value={formData.indirizzo}
-                    onChange={handleInputChange}
-                    required
-                    disabled={isSubmitting}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent text-gray-900 placeholder-gray-500 disabled:opacity-50"
-                  />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-gray-800 p-8 rounded-3xl border border-gray-700 hover:border-yellow-400 transition-all duration-300 text-center">
+              <div className="mb-8">
+                <div className="bg-white p-6 rounded-3xl inline-block">
+                  <img src="/images/six-slim/consegna-gratis.jpg" alt="Free Shipping" className="w-16 h-16" />
                 </div>
+              </div>
+              <h3 className="text-xl font-bold text-white">
+                Spedizione<br />
+                <span className="text-yellow-400">Gratuita</span>
+              </h3>
+            </div>
+
+            <div className="bg-gray-800 p-8 rounded-3xl border border-gray-700 hover:border-yellow-400 transition-all duration-300 text-center">
+              <div className="mb-8">
+                <div className="bg-white p-6 rounded-3xl inline-block">
+                  <img src="/images/six-slim/pagamento-consegna.jpg" alt="Cash on Delivery" className="w-16 h-16" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-white">
+                Paga alla<br />
+                <span className="text-yellow-400">Consegna</span>
+              </h3>
+            </div>
+
+            <div className="bg-gray-800 p-8 rounded-3xl border border-gray-700 hover:border-yellow-400 transition-all duration-300 text-center">
+              <div className="mb-8">
+                <div className="bg-white p-6 rounded-3xl inline-block">
+                  <img src="/images/six-slim/piu-venduto.jpg" alt="Bestseller" className="w-16 h-16" />
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-white">
+                Il Più<br />
+                <span className="text-yellow-400">Venduto</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      {/* Order Section */}
+      <div id="order-section" className="bg-black py-20 border-y-4 border-yellow-400">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl shadow-2xl p-10 border border-gray-700">
+            <div className="text-center mb-12">
+              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black py-3 px-8 rounded-full inline-block mb-6 font-bold text-lg">
+                🕒 Offerta Limitata - Solo per Oggi
+              </div>
+              <h2 className="text-4xl font-black mb-6 text-white">
+                Pacchetto <span className="text-yellow-400">Trasformazione Completa</span>
+              </h2>
+
+              <div className="mb-8">
+                <img src="/images/six-slim/prodotto.png" alt="2x Six Slim Bottles" className="w-full max-w-full mx-auto rounded-2xl object-contain" />
+              </div>
+
+              <div className="mb-8">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-center gap-2 md:gap-6">
+                  <span className="text-yellow-400 text-4xl md:text-5xl font-black text-center md:order-2">€49,99</span>
+                  <div className="flex items-center justify-center gap-4 md:order-1">
+                    <span className="text-gray-400 line-through text-xl md:text-2xl">€99,96</span>
+                    <span className="bg-red-600 text-white px-3 py-1 md:px-4 md:py-2 rounded-full text-lg md:text-xl font-bold">-50%</span>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-gray-300 mb-12 text-xl">2 Confezioni di SIX SLIM + Bonus Gratuiti</p>
+              <p className="text-gray-200 font-medium">Spedizione GRATUITA e pagamento alla consegna</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+              <div>
+                <h3 className="text-2xl font-bold mb-8 text-yellow-400">Cosa Ricevi:</h3>
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-2xl border border-gray-700">
+                    <span className="text-yellow-400 text-2xl">✓</span>
+                    <p className="text-gray-200 font-medium">2 Confezioni SIX SLIM (4 mesi di trattamento, valore 150€)</p>
+                  </div>
+                  <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-2xl border border-gray-700">
+                    <span className="text-yellow-400 text-2xl">✓</span>
+                    <p className="text-gray-200 font-medium">Guida Alimentare Bruciagrassi (valore €29)</p>
+                  </div>
+                  <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-2xl border border-gray-700">
+                    <span className="text-yellow-400 text-2xl">✓</span>
+                    <p className="text-gray-200 font-medium">Consulenza WhatsApp con specialista sempre disponibile per 4 mesi (valore 99€)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold mb-8 text-yellow-400">Garanzie:</h3>
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-2xl border border-gray-700">
+                    <span className="text-blue-400 text-2xl">🛡</span>
+                    <p className="text-gray-200 font-medium">Garanzia Soddisfatti o Rimborsati 365 giorni</p>
+                  </div>
+                  <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-2xl border border-gray-700">
+                    <span className="text-yellow-400 text-2xl">🏆</span>
+                    <p className="text-gray-200 font-medium">Certificazione Biologica Europea</p>
+                  </div>
+                  <div className="flex items-start gap-4 p-4 bg-gray-800 rounded-2xl border border-gray-700">
+                    <span className="text-red-400 text-2xl">❤</span>
+                    <p className="text-gray-200 font-medium">Testato da oltre 3.000 persone</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-800 p-8 rounded-3xl border border-gray-700" style={{ padding: '0px', border: '0px' }}>
+              <h3 className="text-3xl font-black text-center mb-10 text-white">Compila per Completare l'Ordine</h3>
+
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <input
+                  type="text"
+                  name="nome"
+                  placeholder="Nome e Cognome"
+                  value={formData.nome}
+                  onChange={handleInputChange}
+                  required
+                  disabled={isSubmitting}
+                  className="w-full p-5 bg-gray-700 border border-gray-600 rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-white placeholder-gray-400 text-lg disabled:opacity-50"
+                />
+                <input
+                  type="tel"
+                  name="telefono"
+                  placeholder="Telefono Cellulare"
+                  value={formData.telefono}
+                  onChange={handleInputChange}
+                  required
+                  disabled={isSubmitting}
+                  className="w-full p-5 bg-gray-700 border border-gray-600 rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-white placeholder-gray-400 text-lg disabled:opacity-50"
+                />
+                <input
+                  type="text"
+                  name="indirizzo"
+                  placeholder="Indirizzo e N. Civico"
+                  value={formData.indirizzo}
+                  onChange={handleInputChange}
+                  required
+                  disabled={isSubmitting}
+                  className="w-full p-5 bg-gray-700 border border-gray-600 rounded-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent text-white placeholder-gray-400 text-lg disabled:opacity-50"
+                />
 
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white font-bold py-4 px-12 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                  className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-black py-6 px-8 rounded-2xl text-2xl hover:from-yellow-300 hover:to-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
                   {isSubmitting ? 'ELABORAZIONE...' : 'ORDINA ORA'}
                 </button>
               </form>
+
+              <div className="text-center mt-6">
+                <p className="text-gray-300 font-medium">
+                  🔒 Pagamento alla consegna - Spedizione gratuita in 24/48h
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ Section */}
+      <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-black py-20">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-4xl font-black text-center mb-16 text-white">
+            <span className="text-yellow-400">Domande</span> Frequenti
+          </h2>
+
+          <div className="space-y-8">
+            <div className="bg-gray-800 p-8 rounded-3xl border border-gray-700 hover:border-yellow-400 transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-4 text-yellow-400">Quanto tempo ci vuole per vedere i primi risultati?</h3>
+              <p className="text-gray-200 text-lg leading-relaxed">
+                La maggior parte delle persone nota una riduzione del gonfiore già nei primi 5-7 giorni. I risultati sulla perdita di peso diventano evidenti dalla seconda settimana.
+              </p>
             </div>
 
-            <p className="text-gray-500 text-sm mt-4">
-              🔒 Pagamento alla consegna - Spedizione gratuita in 24/48h
-            </p>
+            <div className="bg-gray-800 p-8 rounded-3xl border border-gray-700 hover:border-yellow-400 transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-4 text-yellow-400">Ha delle controindicazioni?</h3>
+              <p className="text-gray-200 text-lg leading-relaxed">
+                Six Slim è assolutamente sicuro, è approvato dal Ministero della Salute Italiano.
+              </p>
+            </div>
+
+            <div className="bg-gray-800 p-8 rounded-3xl border border-gray-700 hover:border-yellow-400 transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-4 text-yellow-400">Ci sono effetti collaterali?</h3>
+              <p className="text-gray-200 text-lg leading-relaxed">
+                Six Slim è composto da ingredienti naturali certificati biologici. Non sono stati riportati effetti collaterali nelle nostre ricerche cliniche.
+              </p>
+            </div>
+
+            <div className="bg-gray-800 p-8 rounded-3xl border border-gray-700 hover:border-yellow-400 transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-4 text-yellow-400">Come funziona la garanzia?</h3>
+              <p className="text-gray-200 text-lg leading-relaxed">
+                Hai 365 giorni per provare il prodotto. Se non sei soddisfatto, invia una email e riceverai il rimborso completo senza dover restituire nulla.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Guarantee Section */}
-        <div className="bg-green-50 rounded-2xl p-8 mb-12 border border-green-200">
-          <div className="text-center">
-            <Shield className="w-16 h-16 text-green-600 mx-auto mb-4" />
-            <h2 className="text-2xl font-bold text-green-800 mb-4">
-              Garanzia Soddisfatti o Rimborsati al 100%
-            </h2>
-            <p className="text-green-700 text-lg mb-4">
-              Hai 365 giorni per provare Keto Brucia. Se non ottieni i risultati promessi,
-              ti rimborsiamo ogni centesimo senza domande.
-            </p>
-            <p className="text-green-600 font-semibold">
-              Non dovrai nemmeno restituire il prodotto!
-            </p>
-          </div>
-        </div>
 
-        {/* FAQ Section */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-            Domande Frequenti
+
+      {/* Final CTA Section */}
+      <div className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400 text-black py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl lg:text-5xl font-black mb-6 leading-tight">
+            Non Rimandare la Tua <span className="underline">Trasformazione</span>
           </h2>
-
-          <div className="space-y-4">
-            {[
-              {
-                q: "Quanto tempo ci vuole per vedere i primi risultati?",
-                a: "La maggior parte delle donne nota una riduzione del gonfiore già nei primi 3-5 giorni. I risultati sulla perdita di peso diventano evidenti dalla seconda settimana."
-              },
-              {
-                q: "È sicuro per chi è in menopausa?",
-                a: "Assolutamente sì. Keto Brucia è formulato specificamente per le donne dopo i 40 anni e durante la menopausa, con ingredienti naturali che supportano l'equilibrio ormonale."
-              },
-              {
-                q: "Ci sono effetti collaterali?",
-                a: "Keto Brucia è composto da ingredienti naturali certificati biologici. Non sono stati riportati effetti collaterali nelle nostre ricerche cliniche."
-              },
-              {
-                q: "Come funziona la garanzia?",
-                a: "Hai 365 giorni per provare il prodotto. Se non sei soddisfatta, invia una email e riceverai il rimborso completo senza dover restituire nulla."
-              }
-            ].map((faq, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                <h3 className="font-bold text-gray-900 mb-2">{faq.q}</h3>
-                <p className="text-gray-600">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Final CTA */}
-        <div className="bg-gradient-to-r from-pink-600 to-rose-600 rounded-2xl text-white p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Non Rimandare la Tua Trasformazione
-          </h2>
-          <p className="text-xl mb-6 opacity-90">
-            Ogni giorno che passa è un giorno in più che il tuo metabolismo rimane bloccato.
-            Inizia oggi stesso il tuo percorso verso una nuova te.
+          <p className="text-xl mb-12 font-medium max-w-4xl mx-auto leading-relaxed">
+            Ogni giorno che passa è un giorno in più che il tuo metabolismo rimane bloccato. Inizia oggi stesso il tuo percorso verso una nuova te.
           </p>
 
           <button
-            onClick={scrollToPricing}
-            className="bg-white text-pink-600 font-bold py-4 px-12 rounded-full text-xl shadow-lg transform hover:scale-105 transition-all duration-200 hover:bg-gray-50"
+            onClick={() => document.getElementById('order-section')?.scrollIntoView({ behavior: 'smooth' })}
+            className="group relative bg-black text-yellow-400 font-black py-6 px-12 rounded-3xl text-2xl hover:bg-gray-900 transition-all duration-300 transform hover:scale-105 shadow-2xl border-4 border-black hover:border-gray-800"
           >
-            SÌ, VOGLIO TRASFORMARE IL MIO CORPO
+            <span className="flex items-center gap-4">
+              SÌ, VOGLIO TRASFORMARE IL MIO CORPO
+            </span>
           </button>
 
-          <p className="text-sm mt-4 opacity-80">
+          <p className="text-lg mt-6 font-bold opacity-90">
             ⚡ Offerta limitata - Scade in poche ore
           </p>
+        </div>
+      </div>
+
+      {/* Footer CTA */}
+      <div className="bg-black py-12 border-t border-yellow-400">
+        <div className="container mx-auto px-4 text-center">
+          <button
+            onClick={() => document.getElementById('order-section')?.scrollIntoView({ behavior: 'smooth' })}
+            className="group relative bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-black py-5 px-10 rounded-2xl text-xl hover:from-yellow-300 hover:to-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-2xl"
+          >
+            <span className="flex items-center gap-3">
+              📞 ORDINA SUBITO! (-30%)
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default KetoBruciaLanding;
+export default SuissenLabLanding;
