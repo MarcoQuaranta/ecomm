@@ -491,7 +491,7 @@ const SuissenLabLanding: React.FC = () => {
                   <span className="text-yellow-400 text-4xl md:text-5xl font-black text-center md:order-2">€49,99</span>
                   <div className="flex items-center justify-center gap-4 md:order-1">
                     <span className="text-gray-400 line-through text-xl md:text-2xl">€99,96</span>
-                    <span className="bg-red-600 text-white px-3 py-1 md:px-4 md:py-2 rounded-full text-lg md:text-xl font-bold">-75%</span>
+                    <span className="bg-red-600 text-white px-3 py-1 md:px-4 md:py-2 rounded-full text-lg md:text-xl font-bold">-50%</span>
                   </div>
                 </div>
               </div>
