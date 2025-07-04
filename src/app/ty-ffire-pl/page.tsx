@@ -36,8 +36,8 @@ const ThankYouPage = () => {
             value: 229.00,
             currency: 'PLN',
             content_type: 'product',
-            content_name: 'Keto Brucia - Pakiet Kompletny',
-            content_ids: ['keto-brucia-complete'],
+            content_name: 'Fat On Fire - Pakiet Kompletny',
+            content_ids: ['fetonfire-complete'],
             num_items: 4
           });
           setPixelFired(true);
@@ -111,7 +111,7 @@ const ThankYouPage = () => {
     {
       step: "2",
       title: "Przygotowanie Zamówienia",
-      description: "Twój pakiet Keto Brucia zostanie przygotowany w naszym certyfikowanym laboratorium",
+      description: "Twój pakiet Fet On Fire zostanie przygotowany w naszym certyfikowanym laboratorium",
       time: "24 godziny"
     },
     {
@@ -134,7 +134,7 @@ const ThankYouPage = () => {
             🎉 Zamówienie Potwierdzone!
           </h1>
           <p className="text-xl md:text-2xl opacity-90">
-            Dziękujemy za wybór Keto Brucia
+            Dziękujemy za wybór Fet On Fire
           </p>
         </div>
       </div>
@@ -185,7 +185,7 @@ const ThankYouPage = () => {
                 <div className="flex items-center space-x-3">
                   <div className="text-4xl">💊</div>
                   <div>
-                    <p className="font-semibold">Keto Brucia - Pakiet Kompletny</p>
+                    <p className="font-semibold">Fet on Fire - Pakiet Kompletny</p>
                     <p className="text-sm text-gray-600">4 Opakowania + Darmowe Bonusy</p>
                     <p className="text-green-600 font-bold">229 zł zamiast 916 zł</p>
                     <div className="mt-2 space-y-1">

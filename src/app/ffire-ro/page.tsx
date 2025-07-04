@@ -17,9 +17,9 @@ const FatOnFireLanding = () => {
   const [showOrderPopup, setShowOrderPopup] = useState(false);
   const [reservationTimer, setReservationTimer] = useState({ minutes: 5, seconds: 0 });
   const [formData, setFormData] = useState({
-    nume: '',
-    telefon: '',
-    adresa: ''
+    nome: '',
+    telefono: '',
+    indirizzo: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -149,7 +149,7 @@ const FatOnFireLanding = () => {
   };
 
   const handleOrderSubmit = async () => {
-    if (!formData.nume || !formData.telefon || !formData.adresa) {
+    if (!formData.nome || !formData.telefono || !formData.indirizzo) {
       alert('Te rugăm să completezi toate câmpurile obligatorii.');
       return;
     }
@@ -160,9 +160,9 @@ const FatOnFireLanding = () => {
 
     try {
       // Prepara i dati per Meta con hashing
-      const cleanedPhone = cleanPhone(formData.telefon);
-      const firstName = formData.nume.split(' ')[0];
-      const lastName = formData.nume.split(' ').length > 1 ? formData.nume.split(' ').slice(1).join(' ') : '';
+      const cleanedPhone = cleanPhone(formData.telefono);
+      const firstName = formData.nome.split(' ')[0];
+      const lastName = formData.nome.split(' ').length > 1 ? formData.nome.split(' ').slice(1).join(' ') : '';
 
       const completeData = {
         // Dati del form originali
@@ -179,9 +179,9 @@ const FatOnFireLanding = () => {
         event_id: `${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
 
         // Dati hashati
-        nume_hash: await hashData(firstName),
-        telefon_hash: await hashData(cleanedPhone),
-        prenume_hash: lastName ? await hashData(lastName) : null,
+        nome_hash: await hashData(firstName),
+        telefono_hash: await hashData(cleanedPhone),
+        cognome_hash: lastName ? await hashData(lastName) : null,
 
         // Parametri UTM
         utm_source: new URLSearchParams(window.location.search).get('utm_source'),
@@ -197,14 +197,14 @@ const FatOnFireLanding = () => {
 
         // Dati prodotto
         product: 'FatOnFire - Pachet Complet de Transformare',
-        price: 199.90,
+        price: 219.00,
 
         // Dati API
         URL: 'https://network.worldfilia.net/manager/inventory/buy/sfn_fatonfire2x1_ro.json?api_key=5b4327289caa289c6117c469d70a13bd',
         source_id: '2da1cfad54d3',
         quantity: 2,
         api_key: '5b4327289caa289c6117c469d70a13bd',
-        product_code: 'fatonfire_2x199'
+        product_code: 'fatonfire_2x1_RO'
       };
 
       // Invia dati all'API
@@ -222,7 +222,7 @@ const FatOnFireLanding = () => {
           ...formData,
           orderId: `FAT${Date.now()}`,
           product: 'FatOnFire - Formula Avansată',
-          price: 199.90
+          price: 219.00
         }));
 
         // Redirect alla thank you page
@@ -728,8 +728,8 @@ const FatOnFireLanding = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-1">Nume și Prenume</label>
                   <input
                     type="text"
-                    value={formData.nume}
-                    onChange={(e) => handleFormChange('nume', e.target.value)}
+                    value={formData.nome}
+                    onChange={(e) => handleFormChange('nome', e.target.value)}
                     className="w-full px-3 py-3 md:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-base"
                     placeholder="Numele tău complet"
                   />
@@ -739,8 +739,8 @@ const FatOnFireLanding = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-1">Numărul de Telefon</label>
                   <input
                     type="tel"
-                    value={formData.telefon}
-                    onChange={(e) => handleFormChange('telefon', e.target.value)}
+                    value={formData.telefono}
+                    onChange={(e) => handleFormChange('telefono', e.target.value)}
                     className="w-full px-3 py-3 md:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-base"
                     placeholder="Numărul tău de telefon"
                   />
@@ -749,8 +749,8 @@ const FatOnFireLanding = () => {
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Adresa Completă</label>
                   <textarea
-                    value={formData.adresa}
-                    onChange={(e) => handleFormChange('adresa', e.target.value)}
+                    value={formData.indirizzo}
+                    onChange={(e) => handleFormChange('indirizzo', e.target.value)}
                     className="w-full px-3 py-3 md:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 h-20 md:h-20 text-base resize-none"
                     placeholder="Strada, numărul, orașul, codul poștal"
                   />
@@ -764,7 +764,7 @@ const FatOnFireLanding = () => {
 
               <button
                 onClick={handleOrderSubmit}
-                disabled={!formData.nume || !formData.telefon || !formData.adresa || isSubmitting}
+                disabled={!formData.nome || !formData.telefono || !formData.indirizzo || isSubmitting}
                 className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 disabled:from-gray-300 disabled:to-gray-400 text-white font-bold py-4 px-6 rounded-lg transition-all duration-200 text-base md:text-lg"
               >
                 {isSubmitting ? 'SE PROCESEAZĂ...' : 'CONFIRMĂ COMANDA - 219 LEI'}

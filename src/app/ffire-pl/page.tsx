@@ -12,14 +12,14 @@ import { CheckCircle, Clock, Shield, Star, Users, TrendingDown, Zap, CreditCard,
 const FatOnFireLanding = () => {
   const [timeLeft, setTimeLeft] = useState({ hours: 7, minutes: 36, seconds: 32 });
   const [viewersCount, setViewersCount] = useState(847);
-  const [remainingStock] = useState(Math.floor(Math.random() * 21) + 10); // Random between 10-30
-  const [stockPercentage, setStockPercentage] = useState(75); // Start at 75%
+  const [remainingStock] = useState(Math.floor(Math.random() * 21) + 10);
+  const [stockPercentage, setStockPercentage] = useState(75);
   const [showOrderPopup, setShowOrderPopup] = useState(false);
   const [reservationTimer, setReservationTimer] = useState({ minutes: 5, seconds: 0 });
   const [formData, setFormData] = useState({
-    imie: '',
-    telefon: '',
-    adres: ''
+    nome: '',
+    telefono: '',
+    indirizzo: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -41,16 +41,15 @@ const FatOnFireLanding = () => {
       setViewersCount(prev => prev + Math.floor(Math.random() * 3) - 1);
     }, 5000);
 
-    // Stock percentage animation
     const stockTimer = setInterval(() => {
       setStockPercentage(prev => {
-        const increase = Math.random() > 0.7; // 30% chance to increase
+        const increase = Math.random() > 0.7;
         if (increase && prev < 95) {
-          return Math.min(95, prev + Math.floor(Math.random() * 3) + 1); // Increase by 1-3%
+          return Math.min(95, prev + Math.floor(Math.random() * 3) + 1);
         }
         return prev;
       });
-    }, 8000); // Every 8 seconds
+    }, 8000);
 
     return () => {
       clearInterval(timer);
@@ -79,14 +78,6 @@ const FatOnFireLanding = () => {
     };
   }, [showOrderPopup]);
 
-  const scrollToOffer = () => {
-    const offerSection = document.getElementById('limited-offer');
-    if (offerSection) {
-      offerSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  // Funkcja do śledzenia początku checkout
   const trackInitiateCheckout = () => {
     if (typeof window !== 'undefined' && window.fbq) {
       try {
@@ -106,20 +97,16 @@ const FatOnFireLanding = () => {
   };
 
   const handleOrderClick = () => {
-    // Śledzi wydarzenie początku checkout
     trackInitiateCheckout();
-
     setShowOrderPopup(true);
     setReservationTimer({ minutes: 5, seconds: 0 });
   };
 
-  // Funkcja do pobierania ciasteczek Facebook
   const getCookieValue = (name: string): string | null => {
     const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
     return match ? match[2] : null;
   };
 
-  // Funkcja do tworzenia hash SHA256
   const hashData = async (data: string): Promise<string | null> => {
     if (!data) return null;
 
@@ -135,7 +122,6 @@ const FatOnFireLanding = () => {
     }
   };
 
-  // Funkcja do czyszczenia numeru telefonu
   const cleanPhone = (phone: string): string => {
     if (!phone) return '';
     const cleaned = phone.replace(/\D/g, '');
@@ -150,26 +136,21 @@ const FatOnFireLanding = () => {
   };
 
   const handleOrderSubmit = async () => {
-    if (!formData.imie || !formData.telefon || !formData.adres) {
+    if (!formData.nome || !formData.telefono || !formData.indirizzo) {
       alert('Proszę wypełnić wszystkie wymagane pola.');
       return;
     }
 
-    // Zapobiega wielokrotnym wysyłkom
     if (isSubmitting) return;
     setIsSubmitting(true);
 
     try {
-      // Przygotowuje dane dla Meta z hashowaniem
-      const cleanedPhone = cleanPhone(formData.telefon);
-      const firstName = formData.imie.split(' ')[0];
-      const lastName = formData.imie.split(' ').length > 1 ? formData.imie.split(' ').slice(1).join(' ') : '';
+      const cleanedPhone = cleanPhone(formData.telefono);
+      const firstName = formData.nome.split(' ')[0];
+      const lastName = formData.nome.split(' ').length > 1 ? formData.nome.split(' ').slice(1).join(' ') : '';
 
       const completeData = {
-        // Oryginalne dane z formularza
         ...formData,
-
-        // Dane Meta
         fbp: getCookieValue('_fbp'),
         fbc: getCookieValue('_fbc'),
         user_agent: navigator.userAgent,
@@ -178,37 +159,26 @@ const FatOnFireLanding = () => {
         referrer: document.referrer,
         event_name: 'Lead',
         event_id: `${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
-
-        // Dane hashowane
-        imie_hash: await hashData(firstName),
-        telefon_hash: await hashData(cleanedPhone),
-        nazwisko_hash: lastName ? await hashData(lastName) : null,
-
-        // Parametry UTM
+        nome_hash: await hashData(firstName),
+        telefono_hash: await hashData(cleanedPhone),
+        cognome_hash: lastName ? await hashData(lastName) : null,
         utm_source: new URLSearchParams(window.location.search).get('utm_source'),
         utm_medium: new URLSearchParams(window.location.search).get('utm_medium'),
         utm_campaign: new URLSearchParams(window.location.search).get('utm_campaign'),
         utm_content: new URLSearchParams(window.location.search).get('utm_content'),
         utm_term: new URLSearchParams(window.location.search).get('utm_term'),
-
-        // Inne dane
         page_title: document.title,
         screen_resolution: `${screen.width}x${screen.height}`,
         language: navigator.language,
-
-        // Dane produktu
         product: 'FatOnFire - Kompletny Pakiet Transformacji',
         price: 219.00,
-
-        // Dane API
         URL: 'https://network.worldfilia.net/manager/inventory/buy/sfn_fatonfire2x1_pl.json?api_key=5b4327289caa289c6117c469d70a13bd',
         source_id: '2da1cfad54d3',
         quantity: 2,
         api_key: '5b4327289caa289c6117c469d70a13bd',
-        product_code: 'fatonfire_2x199'
+        product_code: 'fatonfire_2x1_PL'
       };
 
-      // Wysyła dane do API
       const response = await fetch('https://primary-production-625c.up.railway.app/webhook/0b9ed794-a19e-4914-85fd-e4b3a401a489', {
         method: 'POST',
         headers: {
@@ -218,16 +188,13 @@ const FatOnFireLanding = () => {
       });
 
       if (response.ok) {
-        // Zapisuje dane w localStorage dla strony podziękowania
         localStorage.setItem('orderData', JSON.stringify({
           ...formData,
           orderId: `FAT${Date.now()}`,
           product: 'FatOnFire - Zaawansowana Formuła',
           price: 229.00
         }));
-
-        // Przekierowuje na stronę podziękowania
-        window.location.href = '/ty-fatonfire';
+        window.location.href = '/ty-ffire-pl';
       } else {
         throw new Error('Błąd przy wysyłaniu zamówienia');
       }
@@ -239,24 +206,18 @@ const FatOnFireLanding = () => {
     }
   };
 
-  // Funkcja dla przycisków CTA otwierających popup
   const handleDirectOrder = () => {
-    // Śledzi wydarzenie początku checkout
     trackInitiateCheckout();
-
-    // Otwiera popup
     setShowOrderPopup(true);
     setReservationTimer({ minutes: 5, seconds: 0 });
   };
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Breaking News Banner */}
       <div className="bg-red-600 text-white py-2 px-4 text-center text-sm font-semibold">
         <span className="inline-block w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>PILNE WIADOMOŚCI • {viewersCount} osób czyta ten artykuł teraz
       </div>
 
-      {/* Header */}
       <header className="max-w-4xl mx-auto px-4 py-6">
         <div className="text-center">
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -274,9 +235,7 @@ const FatOnFireLanding = () => {
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4">
-        {/* News Article Intro */}
         <section className="mb-8">
           <img
             src="images/oz/azioni.jpg"
@@ -364,10 +323,9 @@ const FatOnFireLanding = () => {
           </div>
         </section>
 
-        {/* Benefits Section */}
         <section className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-8 mb-8">
           <img
-            src="/images/oz/glp1.webp"
+            src="/images/fatonfire/glp1_pl.png"
             alt="Formuła FatOnFire"
             className="w-full h-auto object-contain rounded-lg mb-6"
           />
@@ -421,7 +379,6 @@ const FatOnFireLanding = () => {
           </div>
         </section>
 
-        {/* Call to Action Button */}
         <div className="text-center my-8">
           <button
             onClick={handleDirectOrder}
@@ -431,7 +388,6 @@ const FatOnFireLanding = () => {
           </button>
         </div>
 
-        {/* Testimonials */}
         <section className="mb-8">
           <h3 className="text-3xl font-bold text-center mb-2">Wyniki Mówią Same Za Siebie</h3>
           <p className="text-center text-gray-600 mb-8 text-lg">
@@ -582,7 +538,6 @@ const FatOnFireLanding = () => {
           </div>
         </section>
 
-        {/* Limited Offer */}
         <section id="limited-offer" className="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg p-8 mb-8 text-center">
           <div className="mb-6">
             <div className="inline-block bg-yellow-500 text-black px-4 py-2 rounded-full font-bold text-sm mb-4">
@@ -605,7 +560,6 @@ const FatOnFireLanding = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="text-5xl font-bold mb-2">229 zł</div>
-
                 <div className="text-xl">2 Opakowania = 2 Pełne Miesiące</div>
                 <div className="text-sm text-red-100 mt-2">
                   Zamiast 50 zł/dzień za Ozempic® → Tylko 6,67 zł/dzień
@@ -677,7 +631,6 @@ const FatOnFireLanding = () => {
           </div>
         </section>
 
-        {/* Order Popup */}
         {showOrderPopup && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center z-50 p-4 overflow-y-auto">
             <div className="bg-white rounded-lg p-6 md:p-8 max-w-md w-full relative my-4 md:my-8 min-h-0">
@@ -691,7 +644,6 @@ const FatOnFireLanding = () => {
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2 pr-8">Wypełnij aby zamówić</h3>
               <p className="text-gray-600 mb-4 md:mb-6">Płatność przy odbiorze</p>
 
-              {/* Order Summary */}
               <div className="bg-gray-50 rounded-lg p-3 md:p-4 mb-4">
                 <h4 className="font-semibold text-gray-800 mb-3 text-sm md:text-base">Podsumowanie zamówienia</h4>
                 <div className="flex items-center gap-3">
@@ -729,8 +681,8 @@ const FatOnFireLanding = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-1">Imię i Nazwisko</label>
                   <input
                     type="text"
-                    value={formData.imie}
-                    onChange={(e) => handleFormChange('imie', e.target.value)}
+                    value={formData.nome}
+                    onChange={(e) => handleFormChange('nome', e.target.value)}
                     className="w-full px-3 py-3 md:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-base"
                     placeholder="Twoje pełne imię i nazwisko"
                   />
@@ -740,8 +692,8 @@ const FatOnFireLanding = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-1">Numer Telefonu</label>
                   <input
                     type="tel"
-                    value={formData.telefon}
-                    onChange={(e) => handleFormChange('telefon', e.target.value)}
+                    value={formData.telefono}
+                    onChange={(e) => handleFormChange('telefono', e.target.value)}
                     className="w-full px-3 py-3 md:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 text-base"
                     placeholder="Twój numer telefonu"
                   />
@@ -750,8 +702,8 @@ const FatOnFireLanding = () => {
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Pełny Adres</label>
                   <textarea
-                    value={formData.adres}
-                    onChange={(e) => handleFormChange('adres', e.target.value)}
+                    value={formData.indirizzo}
+                    onChange={(e) => handleFormChange('indirizzo', e.target.value)}
                     className="w-full px-3 py-3 md:py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 h-20 md:h-20 text-base resize-none"
                     placeholder="Ulica, numer, miasto, kod pocztowy"
                   />
@@ -765,7 +717,7 @@ const FatOnFireLanding = () => {
 
               <button
                 onClick={handleOrderSubmit}
-                disabled={!formData.imie || !formData.telefon || !formData.adres || isSubmitting}
+                disabled={!formData.nome || !formData.telefono || !formData.indirizzo || isSubmitting}
                 className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 disabled:from-gray-300 disabled:to-gray-400 text-white font-bold py-4 px-6 rounded-lg transition-all duration-200 text-base md:text-lg"
               >
                 {isSubmitting ? 'PRZETWARZANIE...' : 'POTWIERDŹ ZAMÓWIENIE - 229 ZŁ'}
@@ -774,7 +726,6 @@ const FatOnFireLanding = () => {
           </div>
         )}
 
-        {/* FAQ */}
         <section className="mb-8">
           <h3 className="text-3xl font-bold text-center mb-6">Najczęściej Zadawane Pytania</h3>
           <div className="space-y-6">
@@ -800,7 +751,6 @@ const FatOnFireLanding = () => {
           </div>
         </section>
 
-        {/* Final CTA */}
         <section className="mb-8">
           <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white rounded-lg p-8 text-center">
             <h3 className="text-3xl font-bold mb-4">⚠️ OSTATNIA SZANSA</h3>
@@ -816,7 +766,6 @@ const FatOnFireLanding = () => {
           </div>
         </section>
 
-        {/* Legal Disclaimer */}
         <section className="bg-gray-50 rounded-lg p-6 text-xs text-gray-600">
           <h4 className="font-semibold mb-3 text-sm">Informacje Prawne i Zastrzeżenia:</h4>
 
@@ -866,7 +815,6 @@ const FatOnFireLanding = () => {
         </section>
       </main>
 
-      {/* Footer */}
       <footer className="bg-gray-800 text-white py-8 mt-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <p className="text-sm">© 2025 FatOnFire Polska. Wszelkie prawa zastrzeżone.</p>
