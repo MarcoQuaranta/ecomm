@@ -262,8 +262,8 @@ const SixSlimLanding = () => {
             IL FARMACO DA 100 MILIARDI CHE HA FATTO DIMAGRIRE HOLLYWOOD È STATO "COPIATO"
           </h1>
           <h2 className="text-xl md:text-2xl text-gray-600 mb-6">
-            Ricercatori svizzeri rivelano la formula segreta dietro il fenomeno Ozempic®.
-            <span className="text-red-600 font-semibold"> Ora disponibile anche un integratore naturale che indirettamente agisce sul ricettore GLP-1</span>
+            Ricercatori svizzeri rivelano la formula segreta dietro il fenomeno Ozempic®:
+            <span className="text-red-600 font-semibold"> ora disponibile come integratore naturale</span>
           </h2>
           <div className="flex items-center justify-center gap-4 text-sm text-gray-500">
             <span>📅 29 Giugno 2025</span>
@@ -299,19 +299,22 @@ const SixSlimLanding = () => {
 
             <p className="text-lg leading-relaxed mb-4">
               Fino ad oggi. <strong>un team di ricercatori svizzeri
-                avrebbe finalmente "decifrato" il meccanismo molecolare alla base di Ozempic®</strong> facendo cosi crollare le azioni in borsa della casa farmaceutica e replicando i principi alla base di Ozempic.
+                avrebbe finalmente "decifrato" il meccanismo molecolare alla base di Ozempic®</strong> facendo cosi crollare le azioni in borsa della casa farmaceutica. La scoperta?
+              <strong> È possibile ottenere gli stessi effetti attraverso una combinazione specifica di composti naturali</strong>
+              che agiscono sugli identici recettori GLP-1.
             </p>
 
             <p className="text-lg leading-relaxed mb-4">
-              A seguito di queste scoperte è stato inoltre sviluppato <strong>Six Slim</strong>, il primo INTEGRATORE che grazie ai propri ingredienti stimola indirettamente l'ormone GLP-1,
-              senza iniezioni, senza prescrizione medica (NON è un farmaco!) e a una frazione del costo.
-
+              Il risultato di questa ricerca è <strong>Six Slim</strong>, il primo integratore che replica il meccanismo d'azione
+              di Ozempic senza iniezioni, senza prescrizione medica e a una frazione del costo.
+              <strong>Si ipotizza che questa rivoluzione abbia contribuito al recente crollo del 70% delle azioni Novo Nordisk</strong>,
+              dopo anni di crescita ininterrotta.
             </p>
 
             <p className="text-lg leading-relaxed mb-6 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
-              <strong>⚠️ ATTENZIONE:</strong> Non stiamo parlando del solito "integratore brucia-grassi".
-              Six Slim utilizza una tecnologia completamente diversa, basata sul due potentissimi ingredienti di origine vegetale che aumentano il rilascio di GLP-1.
-              <strong>È la prima vera alternativa naturale a Ozempic®.</strong>
+              <strong>⚠️ ATTENZIONE:</strong> Non stiamo parlando del solito "integratore brucia-grassi" che hai già provato.
+              Six Slim utilizza una tecnologia completamente diversa, basata sulla modulazione degli ormoni della sazietà.
+              <strong>È la prima vera alternativa scientifica a Ozempic®.</strong>
             </p>
 
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Perché Ozempic® Funziona (E Perché Tutti Lo Vogliono)</h3>
@@ -328,7 +331,11 @@ const SixSlimLanding = () => {
               <strong>Per la prima volta nella storia, esisteva qualcosa che funzionava davvero.</strong>
             </p>
 
-
+            <img
+              src="/images/oz/vs-oz.jpg"
+              alt="Impatto industria fitness"
+              className="w-full h-auto object-contain rounded-lg mb-6"
+            />
 
             <p className="text-lg leading-relaxed mb-6">
               Ma c'era un problema: <strong>Ozempic® costa €3.600 all'anno</strong>.
@@ -346,8 +353,8 @@ const SixSlimLanding = () => {
             <h3 className="text-2xl font-bold text-gray-900 mb-4">La Svolta: Come Six Slim Replica il "Miracolo"</h3>
 
             <p className="text-lg leading-relaxed mb-6">
-              I ricercatori hanno identificato una combinazione di <strong>7 composti naturali</strong> che,
-              assunti insieme nella giusta proporzione e biodisponibilità, <strong>attivano i recettori GLP-1.</strong>
+              I ricercatori svizzeri hanno identificato una combinazione di <strong>7 composti naturali</strong> che,
+              assunti insieme nella giusta proporzione e biodisponibilità, <strong>attivano gli stessi recettori GLP-1 di Ozempic®.</strong>
             </p>
 
             <p className="text-lg leading-relaxed mb-6">
@@ -367,14 +374,14 @@ const SixSlimLanding = () => {
           />
           <h3 className="text-3xl font-bold text-center mb-2">Perché Six Slim È Diverso Da Qualsiasi Cosa Tu Abbia Mai Provato</h3>
           <p className="text-center text-gray-600 mb-8 text-lg">
-            Non è un altro "brucia-grassi". È la prima soluzione naturale della tecnologia GLP-1
+            Non è un altro "brucia-grassi". È la prima replica naturale della tecnologia Ozempic®
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg p-6 shadow-sm border">
               <div className="text-3xl mb-3">🧠</div>
               <h4 className="font-bold text-gray-900 mb-2">Blocca la Fame a Livello Cerebrale</h4>
-              <p className="text-gray-600 text-sm">Agisce sui recettori GLP-1, non sui soliti termogenici</p>
+              <p className="text-gray-600 text-sm">Agisce sui recettori GLP-1 come Ozempic®, non sui soliti termogenici</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm border">
               <div className="text-3xl mb-3">⚡</div>
@@ -383,23 +390,23 @@ const SixSlimLanding = () => {
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm border">
               <div className="text-3xl mb-3">🏆</div>
-              <h4 className="font-bold text-gray-900 mb-2">Formula 7-in-1</h4>
+              <h4 className="font-bold text-gray-900 mb-2">Formula Brevettata 7-in-1</h4>
               <p className="text-gray-600 text-sm">Combinazione unica mai vista prima in commercio</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm border">
               <div className="text-3xl mb-3">💉</div>
               <h4 className="font-bold text-gray-900 mb-2">Zero Iniezioni</h4>
-              <p className="text-gray-600 text-sm">Stimola l'ormone GLP-1 senza aghi o prescrizioni</p>
+              <p className="text-gray-600 text-sm">Stessi meccanismi di Ozempic® senza aghi o prescrizioni</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm border">
               <div className="text-3xl mb-3">💰</div>
-              <h4 className="font-bold text-gray-900 mb-2">1/10 del Costo</h4>
-              <p className="text-gray-600 text-sm">€0,83/giorno vs €10/giorno del farmaco originale</p>
+              <h4 className="font-bold text-gray-900 mb-2">1/10 del Costo di Ozempic®</h4>
+              <p className="text-gray-600 text-sm">€1,70/giorno vs €10/giorno del farmaco originale</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow-sm border">
               <div className="text-3xl mb-3">🔬</div>
               <h4 className="font-bold text-gray-900 mb-2">Testato su 1.200+ Persone</h4>
-              <p className="text-gray-600 text-sm">94% di successo nei test preliminari</p>
+              <p className="text-gray-600 text-sm">94% di successo nei test preliminari svizzeri</p>
             </div>
           </div>
 
@@ -408,7 +415,7 @@ const SixSlimLanding = () => {
               <span>⚠️</span> IMPORTANTE: Questo Non È Un Normale Integratore
             </h4>
             <p className="text-red-700">
-              <strong>Six Slim agisce indirettamente sugli stessi ormoni GLP-1 di un farmaco da miliardi di dollari, senza essere un farmaco.</strong>
+              <strong>Six Slim utilizza la stessa via metabolica di un farmaco da miliardi di dollari.</strong>
               Se hai provato altri integratori senza successo, non significa che questo non funzionerà.
               È completamente diverso da tutto quello che hai provato finora.
             </p>
@@ -488,7 +495,7 @@ const SixSlimLanding = () => {
                   <div className="font-bold text-green-600">71 kg</div>
                 </div>
               </div>
-              <p className="text-gray-700 italic">"Mia moglie prendeva Ozempic® ma aveva troppi effetti collaterali. Six Slim le ha dato gli stessi risultati senza nausea."</p>
+              <p className="text-gray-700 italic">"Mia moglie prendeva Ozempic® ma aveva troppi effetti collaterali. Six Slim le ha dato gli stessi risultati senza nausea. Il nostro medico è rimasto scioccato."</p>
               <div className="mt-3 text-xs text-gray-500 border-t pt-2">
                 ✅ Risultato verificato • Testimonianza autentica
               </div>
@@ -519,7 +526,7 @@ const SixSlimLanding = () => {
                   <div className="font-bold text-green-600">76 kg</div>
                 </div>
               </div>
-              <p className="text-gray-700 italic">"Sono un'infermiera, conosco bene Ozempic®. Non credevo che un integratore naturale potesse funzionare così bene. I miei colleghi mi chiedono cosa sto prendendo."</p>
+              <p className="text-gray-700 italic">"Sono un'infermiera, conosco bene Ozempic®. Non credevo che un integratore potesse funzionare così. I miei colleghi mi chiedono cosa sto prendendo."</p>
               <div className="mt-3 text-xs text-gray-500 border-t pt-2">
                 ✅ Risultato verificato • Testimonianza autentica
               </div>
@@ -590,7 +597,7 @@ const SixSlimLanding = () => {
           </div>
 
           <img
-            src="images/oz/product-2.png"
+            src="images/oz/product.png"
             alt="Offerta Six Slim"
             className="w-full h-auto object-contain rounded-lg mb-6"
           />
@@ -690,7 +697,7 @@ const SixSlimLanding = () => {
                 <h4 className="font-semibold text-gray-800 mb-3 text-sm md:text-base">Riepilogo ordine</h4>
                 <div className="flex items-center gap-3">
                   <img
-                    src="images/oz/product-2.png"
+                    src="images/oz/product.png"
                     alt="Six Slim"
                     className="w-12 h-12 md:w-16 md:h-16 rounded-lg border border-gray-200 object-cover flex-shrink-0"
                   />
@@ -774,12 +781,12 @@ const SixSlimLanding = () => {
           <div className="space-y-6">
             <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
               <h4 className="font-bold text-gray-900 mb-3 text-lg">Six Slim funziona davvero come Ozempic®?</h4>
-              <p className="text-gray-700 leading-relaxed">A differenza di Ozempic, Six Slim NON è un farmaco, è un integratore, agisce indirettamente sugli stessi recettori GLP-1, ma attraverso una via naturale. I test preliminari su 1.200+ persone mostrano una riduzione dell'appetito. Una differenza principale è il metodo di somministrazione: orale invece che per iniezione.</p>
+              <p className="text-gray-700 leading-relaxed">Six Slim agisce sugli stessi recettori GLP-1 di Ozempic®, ma attraverso una via naturale. I test preliminari su 1.200+ persone mostrano una riduzione dell'appetito del 70-80%, paragonabile al farmaco originale. La differenza principale è il metodo di somministrazione: orale invece che per iniezione.</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
               <h4 className="font-bold text-gray-900 mb-3 text-lg">È sicuro? Ci sono effetti collaterali?</h4>
-              <p className="text-gray-700 leading-relaxed">Six Slim è formulato con ingredienti naturali certificati e prodotto in stabilimenti GMP. A differenza di Ozempic®, non causa nausea grave o problemi gastrointestinali significativi. Tuttavia, come per qualsiasi integratore, è consigliabile consultare il medico, specialmente se si assumono farmaci.</p>
+              <p className="text-gray-700 leading-relaxed">Six Slim è formulato con ingredienti naturali certificati e prodotto in stabilimenti GMP. A differenza di Ozempic®, non causa nausea grave o problemi gastrointestinali significativi. Tuttavia, come per qualsiasi integratore, è consigliabile consultare il medico, specialmente se si assumono altri farmaci.</p>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
@@ -829,8 +836,8 @@ const SixSlimLanding = () => {
 
             <p>
               <strong>Riferimenti a Ozempic®:</strong> Tutti i riferimenti a Ozempic® (semaglutide) sono utilizzati esclusivamente a
-              scopo informativo. Six Slim non è prodotto, approvato o affiliato con Novo Nordisk. Ozempic® è un marchio
-              registrato di Novo Nordisk A/S.
+              scopo comparativo e informativo. Six Slim non è prodotto, approvato o affiliato con Novo Nordisk. Ozempic® è un marchio
+              registrato di Novo Nordisk A/S. Six Slim agisce su meccanismi simili ma attraverso ingredienti completamente diversi.
             </p>
 
             <p>
