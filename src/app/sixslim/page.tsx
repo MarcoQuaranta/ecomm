@@ -103,11 +103,7 @@ const SafeSixSlimLanding = () => {
       <main className="max-w-4xl mx-auto px-4">
         {/* Intro Section */}
         <section className="mb-12">
-          <img
-            src="images/oz/product-2.png"
-            alt="Six Slim - Integratore naturale"
-            className="w-full h-auto object-cover rounded-lg mb-8 shadow-lg"
-          />
+
 
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed mb-6">
