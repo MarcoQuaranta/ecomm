@@ -1,6 +1,11 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Star, Thermometer, Zap, Wind, Shield, Wifi, Volume2, Menu, X } from 'lucide-react';
+declare global {
+  interface Window {
+    countdownExpiry?: number;
+  }
+}
 
 // COMPONENTE HEADER
 const Header: React.FC = () => {
