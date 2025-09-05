@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { searchProducts, Product, products } from '@/lib/products';
 import { categories } from '@/lib/categories';
@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-export default function SearchPage() {
+function SearchContent() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q') || '';
   const categoryFilter = searchParams.get('category') || '';
@@ -178,5 +178,15 @@ export default function SearchPage() {
     </div>
     <Footer />
     </>
+  );
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div className="text-xl">Caricamento...</div>
+    </div>}>
+      <SearchContent />
+    </Suspense>
   );
 }

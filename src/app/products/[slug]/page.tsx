@@ -21,7 +21,9 @@ export default function ProductPage({ params }: ProductPageProps) {
     notFound();
   }
 
-  const LandingComponent = landingComponents[product.landingPageComponent];
+  const LandingComponent = product.landingPageComponent 
+    ? landingComponents[product.landingPageComponent]
+    : undefined;
 
   if (!LandingComponent) {
     notFound();
@@ -49,12 +51,12 @@ export async function generateMetadata({ params }: ProductPageProps) {
   }
 
   return {
-    title: product.seo.title,
-    description: product.seo.description,
-    keywords: product.seo.keywords.join(', '),
+    title: product.seo?.title || product.name,
+    description: product.seo?.description || product.description || '',
+    keywords: product.seo?.keywords.join(', ') || '',
     openGraph: {
-      title: product.seo.title,
-      description: product.seo.description,
+      title: product.seo?.title || product.name,
+      description: product.seo?.description || product.description || '',
       images: product.images?.[0] ? [product.images[0]] : [],
     },
   };

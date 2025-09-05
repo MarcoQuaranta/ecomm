@@ -10,7 +10,8 @@
       "Bash(npx:*)",
       "Read(/C:\\landing\\rinaldo\\src\\app/**)",
       "Read(/C:\\landing\\rinaldo\\src\\app/**)",
-      "Read(/C:\\landing\\rinaldo\\src\\app/**)"
+      "Read(/C:\\landing\\rinaldo\\src\\app/**)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []
