@@ -635,7 +635,7 @@ const AirConditionerLanding: React.FC = () => {
               className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-700 text-white rounded-full w-10 h-10 md:w-14 md:h-14 flex items-center justify-center shadow-lg transition-all duration-300 text-xl md:text-2xl"
               onClick={() => {
                 const container = document.querySelector('.reviews-container');
-                container.scrollBy({ left: -300, behavior: 'smooth' });
+                container?.scrollBy({ left: -300, behavior: 'smooth' });
               }}
             >
               ‹
@@ -646,14 +646,14 @@ const AirConditionerLanding: React.FC = () => {
               className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-700 text-white rounded-full w-10 h-10 md:w-14 md:h-14 flex items-center justify-center shadow-lg transition-all duration-300 text-xl md:text-2xl"
               onClick={() => {
                 const container = document.querySelector('.reviews-container');
-                container.scrollBy({ left: 300, behavior: 'smooth' });
+                container?.scrollBy({ left: 300, behavior: 'smooth' });
               }}
             >
               ›
             </button>
 
             <div className="overflow-hidden">
-              <div className="reviews-container flex gap-6 overflow-x-auto scrollbar-hide scroll-snap-x snap-x snap-mandatory px-10 md:px-16 py-4">
+              <div className="reviews-container flex gap-6 overflow-x-auto scrollbar-hide scroll-snap-x snap-x snap-mandatory py-4 px-4 md:px-16">
 
                 {/* Recensione */}
                 <div className="flex-shrink-0 w-80 bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 snap-center">

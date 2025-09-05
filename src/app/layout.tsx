@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "@/styles/globals.css";
+import AuthProvider from "@/components/providers/AuthProvider";
+import GoogleAdsTracking from "@/components/GoogleAdsTracking";
 
 // Font sans-serif (al posto di Geist)
 const geistSans = Inter({
@@ -26,10 +28,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <GoogleAdsTracking />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <AuthProvider>
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );

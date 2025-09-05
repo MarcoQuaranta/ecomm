@@ -29,6 +29,12 @@
 }
 
 @layer base {
+  /* Prevent horizontal scrolling on mobile */
+  html,
+  body {
+    @apply overflow-x-hidden;
+  }
+  
   /* inter var - latin */
   @font-face {
     font-family: 'Inter';
@@ -93,6 +99,15 @@
 }
 
 @layer utilities {
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
   .animated-underline {
     background-image: linear-gradient(#33333300, #33333300),
       linear-gradient(
