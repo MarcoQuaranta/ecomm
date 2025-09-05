@@ -44,7 +44,12 @@ export async function updateProduct(id: string, updates: Partial<ProductDB>): Pr
     
     if (index !== -1) {
       data.products[index] = { ...data.products[index], ...updates };
-      await fs.writeFile(dbPath, JSON.stringify(data, null, 2));
+      
+      // Only write in development
+      if (process.env.NODE_ENV === 'development') {
+        await fs.writeFile(dbPath, JSON.stringify(data, null, 2));
+      }
+      
       return data.products[index];
     }
     return null;
@@ -72,7 +77,12 @@ export async function addProduct(product: Omit<ProductDB, 'id' | 'slug'>): Promi
     };
     
     data.products.push(newProduct);
-    await fs.writeFile(dbPath, JSON.stringify(data, null, 2));
+    
+    // Only write in development
+    if (process.env.NODE_ENV === 'development') {
+      await fs.writeFile(dbPath, JSON.stringify(data, null, 2));
+    }
+    
     return newProduct;
   } catch (error) {
     console.error('Error adding product:', error);
@@ -87,7 +97,10 @@ export async function deleteProduct(id: string): Promise<boolean> {
     data.products = data.products.filter((p: ProductDB) => p.id !== id);
     
     if (data.products.length < initialLength) {
-      await fs.writeFile(dbPath, JSON.stringify(data, null, 2));
+      // Only write in development
+      if (process.env.NODE_ENV === 'development') {
+        await fs.writeFile(dbPath, JSON.stringify(data, null, 2));
+      }
       return true;
     }
     return false;

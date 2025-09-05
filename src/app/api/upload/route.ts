@@ -5,6 +5,14 @@ import { existsSync } from 'fs';
 
 export async function POST(request: NextRequest) {
   try {
+    // In production, return a placeholder image URL
+    if (process.env.NODE_ENV === 'production') {
+      return NextResponse.json({ 
+        url: 'https://via.placeholder.com/400x400?text=Immagine+Prodotto',
+        message: 'File upload not available in production. Use external image URLs.' 
+      });
+    }
+
     const formData = await request.formData();
     const file = formData.get('image') as File;
     
