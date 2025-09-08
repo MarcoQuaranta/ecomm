@@ -76,7 +76,6 @@ export default async function PoliticheSpedizionePage() {
         <h2 className="text-2xl font-semibold mb-4">7. Contatti per Assistenza</h2>
         <p>Per qualsiasi domanda sulla spedizione:</p>
         <p>Email: <a href={`mailto:${company.email}`} className="text-blue-600 hover:underline">{company.email}</a></p>
-        {company.phone && <p>Telefono: {company.phone}</p>}
       </section>
     </LegalPageLayout>
   );

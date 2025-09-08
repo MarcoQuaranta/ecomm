@@ -37,7 +37,6 @@ export default async function PrivacyPolicyPage() {
                 <ul className="list-disc ml-6 mb-4">
                   <li>Email: <a href={`mailto:${company.email}`} className="text-blue-600 hover:underline">{company.email}</a></li>
                   {company.pec_email && <li>PEC: {company.pec_email}</li>}
-                  {company.phone && <li>Telefono: {company.phone}</li>}
                   <li>Indirizzo: {company.legal_address}</li>
                 </ul>
               </section>

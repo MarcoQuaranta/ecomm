@@ -1,23 +1,9 @@
-import { sql } from '@vercel/postgres';
+import { getCompanyInfo } from '@/lib/legal-pages';
 import LegalPageLayout from '@/components/LegalPageLayout';
 
-async function getCompanyInfo() {
-  try {
-    const result = await sql`SELECT * FROM company_info ORDER BY id DESC LIMIT 1`;
-    if (result.rows.length > 0) return result.rows[0];
-  } catch (error) {
-    console.error('Error fetching company info:', error);
-  }
-  return {
-    company_name: 'Il Mio E-commerce',
-    email: 'info@example.com',
-    legal_address: 'Via Roma 1, 00100 Roma, Italia',
-    vat_number: 'IT12345678901',
-    share_capital: '',
-    phone: '',
-    pec_email: ''
-  };
-}
+// Forza rendering dinamico
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export default async function TerminiCondizioniPage() {
   const company = await getCompanyInfo();
@@ -65,7 +51,6 @@ export default async function TerminiCondizioniPage() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">8. Contatti</h2>
         <p>Email: <a href={`mailto:${company.email}`} className="text-blue-600 hover:underline">{company.email}</a></p>
-        {company.phone && <p>Telefono: {company.phone}</p>}
         {company.pec_email && <p>PEC: {company.pec_email}</p>}
       </section>
     </LegalPageLayout>

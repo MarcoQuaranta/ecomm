@@ -168,11 +168,11 @@ export async function analyzeSEO() {
         }
         
         // Conta parole correttamente
-        const words = descriptionText.split(/\s+/).filter(word => word.length > 0);
+        const words = descriptionText.split(/\s+/).filter((word: string) => word.length > 0);
         totalDescriptionLength += words.length;
         
         // Conta keyword frequenti
-        words.forEach(word => {
+        words.forEach((word: string) => {
           const cleanWord = word.toLowerCase().replace(/[^a-z0-9]/g, '');
           if (cleanWord.length > 3) {
             keywordMap.set(cleanWord, (keywordMap.get(cleanWord) || 0) + 1);
@@ -182,11 +182,11 @@ export async function analyzeSEO() {
       
       // Aggiungi anche il nome del prodotto al conteggio parole
       if (product.name) {
-        const nameWords = product.name.split(/\s+/).filter(word => word.length > 0);
+        const nameWords = product.name.split(/\s+/).filter((word: string) => word.length > 0);
         totalDescriptionLength += nameWords.length;
         
         // Aggiungi keyword dal nome prodotto
-        nameWords.forEach(word => {
+        nameWords.forEach((word: string) => {
           const cleanWord = word.toLowerCase().replace(/[^a-z0-9]/g, '');
           if (cleanWord.length > 3) {
             keywordMap.set(cleanWord, (keywordMap.get(cleanWord) || 0) + 1);

@@ -231,7 +231,7 @@ export async function deleteProduct(id: string): Promise<boolean> {
     const result = await sql`
       DELETE FROM products WHERE id = ${id}
     `;
-    return result.rowCount > 0;
+    return (result.rowCount || 0) > 0;
   } catch (error) {
     console.error('Error deleting product:', error);
     return false;
@@ -332,7 +332,7 @@ export async function deleteCategory(id: string): Promise<boolean> {
     const result = await sql`
       DELETE FROM categories WHERE id = ${id}
     `;
-    return result.rowCount > 0;
+    return (result.rowCount || 0) > 0;
   } catch (error) {
     console.error('Error deleting category:', error);
     return false;
