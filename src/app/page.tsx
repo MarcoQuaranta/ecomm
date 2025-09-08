@@ -7,7 +7,7 @@ import Card from './components/ui/card';
 import Input from './components/ui/input';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { products } from '@/lib/products';
+// Rimosso import di products - ora li carichiamo via API
 import Link from 'next/link';
 
 const heroSlides = [
@@ -48,43 +48,7 @@ const heroSlides = [
   }
 ];
 
-const categories = [
-  { name: 'Giardinaggio', slug: 'giardinaggio', image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop', count: '4 prodotti', color: 'from-green-500 to-green-600' },
-  { name: 'Utensili', slug: 'utensili', image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&h=300&fit=crop', count: '1 prodotto', color: 'from-blue-500 to-blue-600' },
-  { name: 'Per la casa', slug: 'per-la-casa', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop', count: '2 prodotti', color: 'from-orange-500 to-orange-600' },
-  { name: 'Elettronica', slug: 'elettronica', image: 'https://images.unsplash.com/photo-1524634126442-357e0eac3c14?w=400&h=300&fit=crop', count: '1 prodotto', color: 'from-purple-500 to-purple-600' },
-];
-
-const featuredProducts = products.slice(0, 6).map(product => ({
-  id: product.id,
-  slug: product.slug,
-  title: product.name,
-  price: `€${product.price.toFixed(2)}`,
-  originalPrice: product.originalPrice ? `€${product.originalPrice.toFixed(2)}` : undefined,
-  discount: product.discount ? `-${product.discount}%` : undefined,
-  image: product.images?.[0] || product.image || 'https://via.placeholder.com/400',
-  rating: product.rating || 4.5,
-  reviews: product.reviews || 100,
-  badge: product.id === 'soffiatore-1' ? 'Bestseller' : 
-         product.id === 'drone-1' ? 'Top Tech' :
-         product.id === 'condizionatore-1' ? 'Eco A+++' : 
-         product.discount && product.discount > 35 ? 'Super Offerta' : undefined,
-  prime: product.shipping?.freeShipping || product.freeShipping || false
-}));
-
-const hotDeals = products
-  .filter(product => product.discount && product.discount >= 30)
-  .slice(0, 3)
-  .map(product => ({
-    slug: product.slug,
-    title: product.name,
-    price: `€${product.price.toFixed(2)}`,
-    originalPrice: `€${product.originalPrice?.toFixed(2)}`,
-    image: product.images?.[0] || product.image || 'https://via.placeholder.com/400',
-    timeLeft: '23:45:12',
-    savings: `€${((product.originalPrice || 0) - product.price).toFixed(2)}`,
-    soldPercentage: 65
-  }));
+// Questi verranno caricati dinamicamente dal database
 
 const brands = [
   { name: 'BOSEK', displayName: 'BOSEK', color: '#2563eb' },
@@ -145,6 +109,12 @@ export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [email, setEmail] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const [featuredProducts, setFeaturedProducts] = useState<any[]>([]);
+  const [hotDeals, setHotDeals] = useState<any[]>([]);
+  const [categories, setCategories] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [allProducts, setAllProducts] = useState<any[]>([]);
+  const [showAllCategoriesMobile, setShowAllCategoriesMobile] = useState(false);
   const heroRef = useRef(null);
   const { scrollY } = useScroll();
   
@@ -152,6 +122,40 @@ export default function HomePage() {
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);
   const heroScale = useTransform(scrollY, [0, 300], [1, 1.1]);
   const heroY = useTransform(scrollY, [0, 300], [0, -50]);
+
+  // Carica i dati dal database
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const response = await fetch('/api/home');
+        const data = await response.json();
+        
+        setFeaturedProducts(data.featuredProducts || []);
+        setHotDeals(data.hotDeals || []);
+        
+        // Usa le categorie dal database
+        if (data.categories && data.categories.length > 0) {
+          const cats = data.categories.map((cat: any) => ({
+            name: cat.name,
+            slug: cat.slug,
+            image: cat.image,
+            count: `${cat.count || 0} prodotti`,
+            color: cat.color
+          }));
+          setCategories(cats);
+        } else {
+          // Fallback se non ci sono categorie nel database
+          setCategories([]);
+        }
+      } catch (error) {
+        console.error('Error loading data:', error);
+      } finally {
+        setLoading(false);
+      }
+    }
+    
+    loadData();
+  }, []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -271,25 +275,48 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Slider Indicators */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2">
-          {heroSlides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`transition-all duration-300 ${
-                currentSlide === index 
-                  ? 'w-12 h-2 bg-white' 
-                  : 'w-2 h-2 bg-white/50 hover:bg-white/75'
-              } rounded-full`}
-            />
-          ))}
+        {/* Slider Controls Container */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex items-center gap-4">
+          {/* Navigation Arrow Left - Mobile */}
+          <button 
+            onClick={() => setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length)}
+            className="md:hidden bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-all backdrop-blur-sm"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          
+          {/* Slider Indicators */}
+          <div className="flex gap-2">
+            {heroSlides.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`transition-all duration-300 ${
+                  currentSlide === index 
+                    ? 'w-12 h-2 bg-white' 
+                    : 'w-2 h-2 bg-white/50 hover:bg-white/75'
+                } rounded-full`}
+              />
+            ))}
+          </div>
+          
+          {/* Navigation Arrow Right - Mobile */}
+          <button 
+            onClick={() => setCurrentSlide((prev) => (prev + 1) % heroSlides.length)}
+            className="md:hidden bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-all backdrop-blur-sm"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
 
-        {/* Navigation Arrows */}
+        {/* Navigation Arrows - Desktop */}
         <button 
           onClick={() => setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length)}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 md:p-3 rounded-full transition-all backdrop-blur-sm"
+          className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all backdrop-blur-sm"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -297,7 +324,7 @@ export default function HomePage() {
         </button>
         <button 
           onClick={() => setCurrentSlide((prev) => (prev + 1) % heroSlides.length)}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 md:p-3 rounded-full transition-all backdrop-blur-sm"
+          className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all backdrop-blur-sm"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -309,20 +336,65 @@ export default function HomePage() {
       <div className="w-full max-w-[1500px] mx-auto px-2 sm:px-4">
         
         {/* Categories Section */}
-        <section className="py-6 md:py-12 bg-white rounded-lg my-3 md:my-6 shadow-sm">
+        {categories.length > 0 && (
+        <section className="py-6 md:py-12 bg-white rounded-lg my-3 md:my-6 shadow-sm overflow-hidden">
           <div className="px-3 md:px-6">
             <h2 className="text-lg md:text-2xl font-bold mb-4 md:mb-6">Acquista per categoria</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            
+            {/* Mobile Layout */}
+            <div className="md:hidden">
+              <div className="grid grid-cols-2 gap-4">
+                {categories.slice(0, showAllCategoriesMobile ? categories.length : 4).map((cat, index) => (
+                <Link key={cat.slug} href={`/categoria/${cat.slug}`}>
+                  <motion.div
+                    initial={{ y: 50, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: index * 0.05 }}
+                    className="group cursor-pointer h-full"
+                    whileHover={{ y: -5 }}
+                  >
+                    <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all h-full">
+                      <div className="aspect-square relative overflow-hidden bg-gray-100">
+                        <img 
+                          src={cat.image} 
+                          alt={cat.name} 
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" 
+                        />
+                      </div>
+                      <div className="p-2">
+                        <h3 className="text-xs font-semibold text-center">{cat.name}</h3>
+                      </div>
+                    </div>
+                  </motion.div>
+                </Link>
+                ))}
+              </div>
+              {categories.length > 4 && (
+                <button
+                  onClick={() => setShowAllCategoriesMobile(!showAllCategoriesMobile)}
+                  className="w-full mt-4 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition"
+                >
+                  {showAllCategoriesMobile ? 'Mostra meno' : `Mostra altre ${categories.length - 4} categorie`}
+                </button>
+              )}
+            </div>
+            
+            {/* Desktop Layout */}
+            <div 
+              id="categories-scroll"
+              className={`hidden md:flex ${categories.length > 4 ? 'gap-4 overflow-x-auto scrollbar-hide scroll-smooth' : 'grid grid-cols-4 gap-4'} pb-2`}
+              style={categories.length > 4 ? { scrollbarWidth: 'none', msOverflowStyle: 'none' } : {}}
+            >
               {categories.map((cat, index) => (
                 <Link key={cat.slug} href={`/categoria/${cat.slug}`}>
                   <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: index * 0.05 }}
-                    className="group cursor-pointer"
+                    className="group cursor-pointer h-full"
                     whileHover={{ y: -5 }}
                   >
-                    <div className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all">
+                    <div id={`category-${index}`} className={`bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all h-full ${categories.length > 4 ? 'w-[calc((1500px-96px)/4)] flex-shrink-0' : ''}`}>
                       <div className="aspect-square relative overflow-hidden bg-gray-100">
                         <img 
                           src={cat.image} 
@@ -338,11 +410,45 @@ export default function HomePage() {
                 </Link>
               ))}
             </div>
+            {categories.length > 4 && (
+              <div className="hidden md:flex justify-center gap-2 mt-4">
+                <button 
+                  onClick={() => {
+                    const container = document.getElementById('categories-scroll');
+                    if (container) {
+                      const categoryWidth = container.querySelector('[id^="category-"]')?.clientWidth || 0;
+                      container.scrollBy({ left: -(categoryWidth + 16), behavior: 'smooth' });
+                    }
+                  }}
+                  className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                <button 
+                  onClick={() => {
+                    const container = document.getElementById('categories-scroll');
+                    if (container) {
+                      const categoryWidth = container.querySelector('[id^="category-"]')?.clientWidth || 0;
+                      container.scrollBy({ left: categoryWidth + 16, behavior: 'smooth' });
+                    }
+                  }}
+                  className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            )}
           </div>
         </section>
+        )}
 
         {/* Hot Deals Section */}
-        <section className="bg-white rounded-lg shadow-sm my-3 md:my-6">
+        {hotDeals.length > 0 && (
+        <section className="bg-white rounded-lg shadow-sm my-3 md:my-6 border-2 border-orange-600">
           <div className="bg-gradient-to-r from-red-600 to-orange-500 text-white p-4 rounded-t-lg">
             <h2 className="text-2xl font-bold flex items-center gap-2">
               ⚡ Offerte Lampo
@@ -350,9 +456,9 @@ export default function HomePage() {
             </h2>
           </div>
           <div className="p-3 md:p-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {hotDeals.map((deal, index) => (
-                <Link key={deal.slug} href={`/products/${deal.slug}`}>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+              {hotDeals.slice(0, 4).map((deal, index) => (
+                <Link key={deal.slug} href={`/prodotti/${deal.slug}`}>
                   <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -364,28 +470,28 @@ export default function HomePage() {
                       <img 
                         src={deal.image} 
                         alt={deal.title} 
-                        className="w-full h-48 object-cover" 
+                        className="w-full h-32 md:h-48 object-cover" 
                       />
-                      <div className="absolute top-2 left-2 bg-red-600 text-white px-2 py-1 rounded text-xs font-bold">
+                      <div className="absolute top-1 left-1 md:top-2 md:left-2 bg-red-600 text-white px-1 md:px-2 py-0.5 md:py-1 rounded text-[10px] md:text-xs font-bold">
                         Risparmi {deal.savings}
                       </div>
                     </div>
-                    <div className="p-4">
-                      <h3 className="font-semibold mb-2 line-clamp-2">{deal.title}</h3>
-                      <div className="mb-3">
-                        <div className="bg-gray-200 rounded-full h-2 overflow-hidden">
+                    <div className="p-2 md:p-4">
+                      <h3 className="font-semibold mb-1 md:mb-2 line-clamp-2 text-xs md:text-base">{deal.title}</h3>
+                      <div className="mb-2 md:mb-3">
+                        <div className="bg-gray-200 rounded-full h-1.5 md:h-2 overflow-hidden">
                           <div 
                             className="bg-orange-500 h-full transition-all duration-1000"
                             style={{ width: `${deal.soldPercentage}%` }}
                           />
                         </div>
-                        <p className="text-xs text-gray-600 mt-1">{deal.soldPercentage}% venduto</p>
+                        <p className="text-[10px] md:text-xs text-gray-600 mt-0.5 md:mt-1">{deal.soldPercentage}% venduto</p>
                       </div>
-                      <div className="flex items-center gap-2 mb-3">
-                        <span className="text-2xl font-bold text-red-600">{deal.price}</span>
-                        <span className="text-gray-500 line-through text-sm">{deal.originalPrice}</span>
+                      <div className="flex items-center gap-1 md:gap-2 mb-2 md:mb-3">
+                        <span className="text-base md:text-2xl font-bold text-red-600">{deal.price}</span>
+                        <span className="text-gray-500 line-through text-[10px] md:text-sm">{deal.originalPrice}</span>
                       </div>
-                      <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded font-semibold">
+                      <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-1.5 md:py-2 rounded font-semibold text-xs md:text-base">
                         💵 Paga alla Consegna
                       </Button>
                     </div>
@@ -395,13 +501,15 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        )}
 
         {/* Featured Products */}
+        {featuredProducts.length > 0 && (
         <section className="bg-white rounded-lg shadow-sm my-3 md:my-6 p-3 md:p-6">
           <h2 className="text-lg md:text-2xl font-bold mb-4 md:mb-6">I più venduti in Bricolage</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {featuredProducts.map((prod, index) => (
-              <Link key={prod.id} href={`/products/${prod.slug}`}>
+              <Link key={prod.id} href={`/prodotti/${prod.slug}`}>
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -453,6 +561,7 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+        )}
 
         {/* Pagamento in Contrassegno */}
         <section className="bg-gradient-to-r from-green-600 to-green-800 rounded-lg shadow-sm my-3 md:my-6 p-4 md:p-8 text-white">
@@ -525,15 +634,15 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="hidden md:block relative">
+            <div className="relative mt-6 md:mt-0">
               <img 
                 src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=400&fit=crop" 
                 alt="Consegna e pagamento" 
-                className="rounded-lg shadow-2xl"
+                className="rounded-lg shadow-2xl w-full"
               />
-              <div className="absolute -bottom-4 -right-4 bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg shadow-xl font-bold">
-                <div className="text-2xl">🚚 + 💵</div>
-                <div className="text-sm">Paga alla Consegna!</div>
+              <div className="absolute -bottom-4 -right-4 bg-yellow-400 text-gray-900 px-3 md:px-6 py-2 md:py-3 rounded-lg shadow-xl font-bold">
+                <div className="text-lg md:text-2xl">🚚 + 💵</div>
+                <div className="text-xs md:text-sm">Paga alla Consegna!</div>
               </div>
             </div>
           </div>
@@ -542,11 +651,11 @@ export default function HomePage() {
         {/* Brands Section */}
         <section className="bg-white rounded-lg shadow-sm my-3 md:my-6 p-3 md:p-6">
           <h2 className="text-lg md:text-2xl font-bold mb-4 md:mb-6">I nostri marchi</h2>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-3 md:gap-8">
             {brands.map((brand, index) => (
               <motion.div 
                 key={brand.name} 
-                className="flex items-center justify-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-all cursor-pointer bg-white"
+                className="flex items-center justify-center p-2 md:p-4 border border-gray-200 rounded-lg hover:shadow-md transition-all cursor-pointer bg-white"
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -554,7 +663,7 @@ export default function HomePage() {
                 whileHover={{ scale: 1.05 }}
               >
                 <div 
-                  className="font-bold text-2xl tracking-wider"
+                  className="font-bold text-sm md:text-2xl tracking-wider text-center"
                   style={{ color: brand.color }}
                 >
                   {brand.displayName}

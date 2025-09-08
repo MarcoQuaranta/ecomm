@@ -1,26 +1,40 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { products } from '@/lib/products';
 import { categories } from '@/lib/categories';
 
 export default function CatalogoPage() {
+  const [products, setProducts] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string>('tutti');
   const [sortBy, setSortBy] = useState<string>('name');
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 1000]);
   const [showFilters, setShowFilters] = useState(false);
 
+  // Carica i prodotti dal database
+  useEffect(() => {
+    async function loadProducts() {
+      try {
+        const response = await fetch('/api/products');
+        const data = await response.json();
+        setProducts(data);
+      } catch (error) {
+        console.error('Error loading products:', error);
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadProducts();
+  }, []);
+
   // Filter products based on selected category
   const filteredProducts = selectedCategory === 'tutti' 
     ? products
-    : products.filter(product => {
-        const category = categories.find(cat => cat.slug === selectedCategory);
-        return category?.productIds.includes(product.id);
-      });
+    : products.filter(product => product.category === selectedCategory);
 
   // Apply price filter
   const priceFilteredProducts = filteredProducts.filter(
@@ -311,7 +325,7 @@ export default function CatalogoPage() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.05 }}
                     >
-                      <Link href={`/products/${product.slug}`}>
+                      <Link href={`/prodotti/${product.slug}`}>
                         <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all cursor-pointer group h-full flex flex-col">
                           <div className="aspect-square relative bg-gray-50">
                             <img

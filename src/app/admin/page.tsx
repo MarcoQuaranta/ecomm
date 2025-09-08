@@ -11,7 +11,7 @@ export default function AdminLoginPage() {
   // Check if already logged in
   useEffect(() => {
     if (sessionStorage.getItem('adminAuth') === 'true') {
-      router.push('/admin/dashboard');
+      router.push('/admin/home');
     }
   }, [router]);
 
@@ -21,7 +21,7 @@ export default function AdminLoginPage() {
     // Password hardcoded per semplicità - in produzione usa environment variable
     if (password === 'admin123') {
       sessionStorage.setItem('adminAuth', 'true');
-      router.push('/admin/dashboard');
+      router.push('/admin/home');
     } else {
       setError('Password non corretta');
       setTimeout(() => setError(''), 3000);

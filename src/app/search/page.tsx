@@ -2,8 +2,7 @@
 
 import React, { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { searchProducts, Product, products } from '@/lib/products';
-import { categories } from '@/lib/categories';
+// Rimuoviamo gli import non necessari
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Header from '@/components/Header';
@@ -13,25 +12,29 @@ function SearchContent() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q') || '';
   const categoryFilter = searchParams.get('category') || '';
-  const [results, setResults] = useState<Product[]>([]);
+  const [results, setResults] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
-    let searchResults = searchProducts(query);
-    
-    // Apply category filter if selected
-    if (categoryFilter && categoryFilter !== 'tutti') {
-      const category = categories.find(cat => cat.slug === categoryFilter);
-      if (category) {
-        searchResults = searchResults.filter(product => 
-          category.productIds.includes(product.id)
-        );
+    async function performSearch() {
+      setLoading(true);
+      try {
+        const params = new URLSearchParams();
+        if (query) params.append('q', query);
+        if (categoryFilter) params.append('category', categoryFilter);
+        
+        const response = await fetch(`/api/search?${params.toString()}`);
+        const data = await response.json();
+        setResults(data);
+      } catch (error) {
+        console.error('Search error:', error);
+        setResults([]);
+      } finally {
+        setLoading(false);
       }
     }
     
-    setResults(searchResults);
-    setLoading(false);
+    performSearch();
   }, [query, categoryFilter]);
 
   return (
@@ -44,7 +47,7 @@ function SearchContent() {
             Risultati di ricerca per: "{query}"
             {categoryFilter && categoryFilter !== 'tutti' && (
               <span className="text-lg font-normal text-gray-600 ml-2">
-                in {categories.find(cat => cat.slug === categoryFilter)?.name}
+                in {categoryFilter.replace('-', ' ')}
               </span>
             )}
           </h1>
@@ -80,7 +83,7 @@ function SearchContent() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05 }}
               >
-                <Link href={`/products/${product.slug}`}>
+                <Link href={`/prodotti/${product.slug}`}>
                   <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow cursor-pointer group">
                     <div className="aspect-square relative bg-gray-50">
                       <img 
@@ -165,10 +168,10 @@ function SearchContent() {
               {Array.from(new Set(results.map(p => p.category))).map((category) => (
                 <Link
                   key={category}
-                  href={`/category/${category.toLowerCase()}`}
-                  className="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-md text-sm font-medium transition-colors"
+                  href={`/categoria/${category}`}
+                  className="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-md text-sm font-medium transition-colors capitalize"
                 >
-                  {category}
+                  {category.replace('-', ' ')}
                 </Link>
               ))}
             </div>

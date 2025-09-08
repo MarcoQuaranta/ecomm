@@ -50,14 +50,15 @@ export default function Header() {
   return (
     <>
       <header 
-        className={`w-full bg-slate-900 text-white fixed top-0 z-50 transition-transform duration-300 ${
+        className={`w-full text-white fixed top-0 z-50 transition-transform duration-300 ${
           isVisible ? 'translate-y-0' : '-translate-y-full'
         }`}
+        style={{ backgroundColor: 'var(--color-header)' }}
       >
         <div className="max-w-[1500px] mx-auto px-4">
           {/* Desktop Header */}
           <div className="hidden md:flex items-center gap-4 py-3">
-            <Link href="/" className="text-2xl font-bold text-orange-400 shrink-0">
+            <Link href="/" className="text-2xl font-bold shrink-0" style={{ color: 'var(--color-primary)' }}>
               BricoShop
             </Link>
             
@@ -89,7 +90,8 @@ export default function Header() {
                 />
                 <button 
                   type="submit"
-                  className="bg-orange-400 hover:bg-orange-500 px-6 rounded-r-md"
+                  className="px-6 rounded-r-md hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: 'var(--color-buttonSecondary)' }}
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -106,7 +108,8 @@ export default function Header() {
               </div>
               <Link 
                 href="/assistenza" 
-                className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors flex items-center gap-2"
+                className="text-white px-4 py-2 rounded-lg font-semibold text-sm transition-opacity hover:opacity-90 flex items-center gap-2"
+                style={{ backgroundColor: 'var(--color-buttonPrimary)' }}
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -120,12 +123,13 @@ export default function Header() {
           <div className="md:hidden">
             {/* Mobile Top Row - Logo and Assistance */}
             <div className="flex items-center justify-between py-3">
-              <Link href="/" className="text-xl font-bold text-orange-400">
+              <Link href="/" className="text-xl font-bold" style={{ color: 'var(--color-primary)' }}>
                 BricoShop
               </Link>
               <Link 
                 href="/assistenza" 
-                className="bg-green-600 hover:bg-green-700 text-white px-3 py-1.5 rounded-lg font-semibold text-xs transition-colors"
+                className="text-white px-3 py-1.5 rounded-lg font-semibold text-xs transition-opacity hover:opacity-90"
+                style={{ backgroundColor: 'var(--color-buttonPrimary)' }}
               >
                 Assistenza
               </Link>
@@ -160,7 +164,8 @@ export default function Header() {
                 />
                 <button 
                   type="submit"
-                  className="bg-orange-400 hover:bg-orange-500 px-3 rounded-r-md flex-shrink-0"
+                  className="px-3 rounded-r-md flex-shrink-0 hover:opacity-90 transition-opacity"
+                  style={{ backgroundColor: 'var(--color-buttonSecondary)' }}
                 >
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -177,9 +182,10 @@ export default function Header() {
 
       {/* Sub Header */}
       <div 
-        className={`w-full bg-slate-800 text-white py-2 overflow-x-hidden fixed z-40 transition-transform duration-300 ${
+        className={`w-full text-white py-2 overflow-x-hidden fixed z-40 transition-transform duration-300 ${
           isVisible ? 'top-[88px] md:top-[60px]' : '-top-[40px]'
-        }`}>
+        }`}
+        style={{ backgroundColor: 'var(--color-secondary)' }}>
         <div className="max-w-[1500px] mx-auto px-4">
           <div className="flex items-center gap-3 md:gap-6 text-xs md:text-sm">
             <Link 

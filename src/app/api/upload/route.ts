@@ -2,17 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 import { writeFile, mkdir } from 'fs/promises';
 import path from 'path';
 import { existsSync } from 'fs';
+import { uploadToCloudinary, isCloudinaryConfigured } from '@/lib/cloudinary';
 
 export async function POST(request: NextRequest) {
   try {
-    // In production, return a placeholder image URL
-    if (process.env.NODE_ENV === 'production') {
-      return NextResponse.json({ 
-        url: 'https://via.placeholder.com/400x400?text=Immagine+Prodotto',
-        message: 'File upload not available in production. Use external image URLs.' 
-      });
-    }
-
     const formData = await request.formData();
     const file = formData.get('image') as File;
     
@@ -20,6 +13,27 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'No file received.' }, { status: 400 });
     }
 
+    // In produzione o se Cloudinary è configurato, usa Cloudinary
+    if (process.env.NODE_ENV === 'production' || isCloudinaryConfigured()) {
+      try {
+        const cloudinaryUrl = await uploadToCloudinary(file);
+        return NextResponse.json({ 
+          url: cloudinaryUrl,
+          message: 'Immagine caricata su Cloudinary con successo' 
+        });
+      } catch (error) {
+        // Se Cloudinary fallisce in produzione, ritorna placeholder
+        if (process.env.NODE_ENV === 'production') {
+          return NextResponse.json({ 
+            url: 'https://via.placeholder.com/400x400?text=Immagine+Prodotto',
+            message: 'Cloudinary non configurato. Usa URL esterni o configura Cloudinary in .env.local' 
+          });
+        }
+        // In sviluppo, continua con upload locale
+      }
+    }
+
+    // Upload locale (solo in sviluppo se Cloudinary non è configurato)
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
 

@@ -129,6 +129,19 @@
       "freeShipping": true,
       "id": "product-1757083883536",
       "slug": "fbfdghfb"
+    },
+    {
+      "name": "dfgdf",
+      "price": 9.9,
+      "originalPrice": 10,
+      "discount": 1,
+      "image": "https://via.placeholder.com/400",
+      "category": "per-la-casa",
+      "inStock": true,
+      "shippingCost": 10,
+      "freeShipping": false,
+      "id": "product-1757317643901",
+      "slug": "dfgdf"
     }
   ]
 }

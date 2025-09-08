@@ -12,7 +12,15 @@
       "Read(/C:\\landing\\rinaldo\\src\\app/**)",
       "Read(/C:\\landing\\rinaldo\\src\\app/**)",
       "Bash(npm run build:*)",
-      "Bash(del nul)"
+      "Bash(del nul)",
+      "Bash(npm run:*)",
+      "Bash(tsx scripts/check-products.ts:*)",
+      "Bash(tsx scripts/init-categories.ts:*)",
+      "Bash(curl:*)",
+      "Bash(pkill:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(psql:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []

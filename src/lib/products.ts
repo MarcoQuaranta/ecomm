@@ -1,5 +1,6 @@
-// Importiamo i dati dal JSON
-import productsData from '@/data/products.json';
+// Questo file è deprecato - usa direttamente le funzioni da db.ts
+// Manteniamo questo file temporaneamente per compatibilità
+import { getProducts as getProductsFromDB } from './db';
 
 export interface Product {
   id: string;
@@ -39,8 +40,14 @@ export interface Product {
   updatedAt?: Date;
 }
 
-// Trasforma i prodotti dal JSON nel formato compatibile
-export const products: Product[] = productsData.products.map(p => ({
+// Carichiamo i prodotti dal database in modo sincrono per compatibilità
+// NOTA: Questo approccio non è ideale ma mantiene la compatibilità
+let cachedProducts: Product[] = [];
+
+// Funzione per inizializzare i prodotti (chiamata server-side)
+export async function initProducts() {
+  const dbProducts = await getProductsFromDB();
+  cachedProducts = dbProducts.map(p => ({
   ...p,
   description: p.name + ' - Prodotto professionale di alta qualità',
   shortDescription: 'Prodotto di qualità superiore',
@@ -64,6 +71,11 @@ export const products: Product[] = productsData.products.map(p => ({
   createdAt: new Date('2024-01-01'),
   updatedAt: new Date('2024-01-01')
 }));
+  return cachedProducts;
+}
+
+// Export dei prodotti cached (per componenti client)
+export const products: Product[] = cachedProducts;
 
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find(product => product.slug === slug);

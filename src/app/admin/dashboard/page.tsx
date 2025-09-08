@@ -3,11 +3,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import AdminLayout from '@/components/AdminLayout';
 
 interface Product {
   id: string;
   slug: string;
   name: string;
+  description?: string;
+  pageContent?: string;
   price: number;
   originalPrice: number;
   discount: number;
@@ -26,10 +29,16 @@ export default function AdminDashboard() {
   const [uploadedImage, setUploadedImage] = useState<File | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
+  
+  // Stati per paginazione
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 10;
 
   // Form state per nuovo/modifica prodotto
   const [formData, setFormData] = useState({
     name: '',
+    description: '',
+    pageContent: '',
     price: '',
     originalPrice: '',
     discount: '',
@@ -135,6 +144,8 @@ export default function AdminDashboard() {
       
       const productData = {
         name: formData.name,
+        description: formData.description,
+        pageContent: formData.pageContent,
         price: parseFloat(formData.price),
         originalPrice: parseFloat(formData.originalPrice),
         discount: parseFloat(formData.discount) || 0,
@@ -199,6 +210,8 @@ export default function AdminDashboard() {
     setIsAddingNew(false);
     setFormData({
       name: product.name,
+      description: product.description || '',
+      pageContent: product.pageContent || '',
       price: product.price.toString(),
       originalPrice: product.originalPrice.toString(),
       discount: product.discount.toString(),
@@ -219,6 +232,8 @@ export default function AdminDashboard() {
   const resetForm = () => {
     setFormData({
       name: '',
+      description: '',
+      pageContent: '',
       price: '',
       originalPrice: '',
       discount: '',
@@ -242,35 +257,23 @@ export default function AdminDashboard() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-        <div className="text-xl">Caricamento...</div>
-      </div>
+      <AdminLayout>
+        <div className="flex items-center justify-center h-screen">
+          <div className="text-xl">Caricamento...</div>
+        </div>
+      </AdminLayout>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      {/* Header */}
-      <div className="bg-white shadow-sm mb-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <h1 className="text-2xl font-bold">Dashboard Amministrazione</h1>
-            <div className="flex gap-4">
-              <Link href="/" className="text-blue-600 hover:text-blue-800">
-                Vai al sito
-              </Link>
-              <button
-                onClick={handleLogout}
-                className="text-red-600 hover:text-red-800"
-              >
-                Esci
-              </button>
-            </div>
-          </div>
+    <AdminLayout>
+      <div className="p-6">
+        {/* Header principale */}
+        <div className="mb-6">
+          <h1 className="text-3xl font-bold text-gray-900">Gestione Prodotti</h1>
+          <p className="text-gray-600 mt-2">Gestisci i prodotti del tuo negozio</p>
         </div>
-      </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Form modifica/aggiungi */}
         {(editingProduct || isAddingNew) && (
           <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
@@ -279,7 +282,7 @@ export default function AdminDashboard() {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div>
+              <div className="md:col-span-2 lg:col-span-3">
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Nome Prodotto *
                 </label>
@@ -290,6 +293,35 @@ export default function AdminDashboard() {
                   className="w-full px-3 py-2 border border-gray-300 rounded-md"
                   required
                 />
+              </div>
+              
+              <div className="md:col-span-2 lg:col-span-3">
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Descrizione Prodotto
+                </label>
+                <textarea
+                  value={formData.description}
+                  onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                  rows={4}
+                  placeholder="Inserisci una descrizione dettagliata del prodotto..."
+                />
+              </div>
+              
+              <div className="md:col-span-2 lg:col-span-3">
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Contenuto Pagina Prodotto (HTML/JSX)
+                </label>
+                <textarea
+                  value={formData.pageContent}
+                  onChange={(e) => setFormData({ ...formData, pageContent: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md font-mono text-sm"
+                  rows={8}
+                  placeholder={'Inserisci il contenuto HTML/JSX personalizzato per la pagina prodotto...\nEsempio:\n<div className="bg-blue-100 p-6 rounded-lg">\n  <h3 className="text-2xl font-bold mb-4">Caratteristiche Speciali</h3>\n  <ul className="space-y-2">\n    <li>✓ Garanzia 5 anni</li>\n    <li>✓ Materiali premium</li>\n  </ul>\n</div>'}
+                />
+                <p className="text-xs text-gray-500 mt-1">
+                  Puoi usare classi Tailwind CSS e struttura HTML/JSX. Il contenuto verrà renderizzato nella pagina prodotto.
+                </p>
               </div>
 
               <div>
@@ -515,17 +547,23 @@ export default function AdminDashboard() {
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-                {products.map((product) => (
+                {(() => {
+                  // Calcola indici per paginazione
+                  const indexOfLastProduct = currentPage * productsPerPage;
+                  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+                  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+                  
+                  return currentProducts.map((product) => (
                   <tr key={product.id}>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="flex items-center">
                         <img
-                          className="h-10 w-10 rounded-full object-cover"
+                          className="h-10 w-10 rounded-full object-cover flex-shrink-0"
                           src={product.image}
                           alt={product.name}
                         />
-                        <div className="ml-4">
-                          <div className="text-sm font-medium text-gray-900">
+                        <div className="ml-4 min-w-0">
+                          <div className="text-sm font-medium text-gray-900 truncate max-w-[200px]" title={product.name}>
                             {product.name}
                           </div>
                         </div>
@@ -572,12 +610,90 @@ export default function AdminDashboard() {
                       </button>
                     </td>
                   </tr>
-                ))}
+                ));
+                })()}
               </tbody>
             </table>
           </div>
+          
+          {/* Controlli Paginazione */}
+          {products.length > productsPerPage && (
+            <div className="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
+              <div className="flex-1 flex justify-between sm:hidden">
+                <button
+                  onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                  disabled={currentPage === 1}
+                  className="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  Precedente
+                </button>
+                <button
+                  onClick={() => setCurrentPage(prev => Math.min(prev + 1, Math.ceil(products.length / productsPerPage)))}
+                  disabled={currentPage === Math.ceil(products.length / productsPerPage)}
+                  className="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  Successiva
+                </button>
+              </div>
+              <div className="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                <div>
+                  <p className="text-sm text-gray-700">
+                    Mostrando{' '}
+                    <span className="font-medium">{((currentPage - 1) * productsPerPage) + 1}</span>
+                    {' '}a{' '}
+                    <span className="font-medium">
+                      {Math.min(currentPage * productsPerPage, products.length)}
+                    </span>
+                    {' '}di{' '}
+                    <span className="font-medium">{products.length}</span>
+                    {' '}risultati
+                  </p>
+                </div>
+                <div>
+                  <nav className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                    <button
+                      onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                      disabled={currentPage === 1}
+                      className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      <span className="sr-only">Precedente</span>
+                      <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </button>
+                    
+                    {/* Numeri pagine */}
+                    {Array.from({ length: Math.ceil(products.length / productsPerPage) }, (_, i) => i + 1).map((pageNumber) => (
+                      <button
+                        key={pageNumber}
+                        onClick={() => setCurrentPage(pageNumber)}
+                        className={`relative inline-flex items-center px-4 py-2 border text-sm font-medium ${
+                          currentPage === pageNumber
+                            ? 'z-10 bg-blue-50 border-blue-500 text-blue-600'
+                            : 'bg-white border-gray-300 text-gray-500 hover:bg-gray-50'
+                        }`}
+                      >
+                        {pageNumber}
+                      </button>
+                    ))}
+                    
+                    <button
+                      onClick={() => setCurrentPage(prev => Math.min(prev + 1, Math.ceil(products.length / productsPerPage)))}
+                      disabled={currentPage === Math.ceil(products.length / productsPerPage)}
+                      className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      <span className="sr-only">Successiva</span>
+                      <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </button>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
-    </div>
+    </AdminLayout>
   );
 }
