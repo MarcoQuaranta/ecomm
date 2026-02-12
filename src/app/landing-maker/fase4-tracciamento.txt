@@ -1,0 +1,133 @@
+================================================================================
+                    FASE 4 - TRACCIAMENTO
+================================================================================
+
+PREREQUISITI:
+- Tutte le traduzioni devono essere completate e approvate
+- L'utente deve aver dato l'OK sulla Fase 3
+
+================================================================================
+STEP 1 - RACCOLTA DATI TRACCIAMENTO
+================================================================================
+
+Chiedi all'utente i seguenti dati:
+
+### GOOGLE ADS
+"Dammi i dati di Google Ads:"
+- Google Ads ID (formato: AW-XXXXXXXXX)
+- Conversion Label (formato: abc123xyz)
+
+NOTA: L'azione di conversione e' UNA sola per prodotto, uguale per tutte
+le nazioni. Google Ads attribuisce la conversione alla campagna corretta
+automaticamente in base al click.
+
+### META ADS (FACEBOOK)
+"Dammi il Pixel ID di Meta:"
+- Facebook Pixel ID
+
+### NETWORK (CHIAMATA API)
+"Dammi i dati del network per la chiamata API:"
+- API endpoint (URL dove inviare i dati dell'ordine)
+- Offer ID
+- Eventuali parametri aggiuntivi (chiave API, LP ID, ecc.)
+
+================================================================================
+STEP 2 - INSERIMENTO TRACCIAMENTO
+================================================================================
+
+Inserisci i dati nel campo "tracking" di OGNI content.json (tutte le nazioni,
+tutti i media buyer).
+
+Struttura tracking nel content.json:
+{
+  "tracking": {
+    "googleAdsId": "AW-XXXXXXXXX",
+    "conversionLabel": "abc123xyz",
+    "conversionValue": 49.99,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "1234567890",
+    "network": {
+      "apiEndpoint": "https://network.example.com/api/order",
+      "offerId": "12345",
+      "params": {}
+    }
+  }
+}
+
+IMPORTANTE - VALORE DI CONVERSIONE DINAMICO:
+- tracking.conversionValue = prezzo SCONTATO del prodotto in quella nazione
+- tracking.conversionCurrency = valuta locale di quella nazione
+
+ESEMPIO:
+- Italia: conversionValue: 49.99, conversionCurrency: "EUR"
+- Polonia: conversionValue: 149, conversionCurrency: "PLN"
+- Ungheria: conversionValue: 14990, conversionCurrency: "HUF"
+
+Il googleAdsId e conversionLabel sono UGUALI per tutte le nazioni.
+Il facebookPixelId e' UGUALE per tutte le nazioni.
+Il network puo' essere uguale o diverso (chiedi all'utente se cambia per nazione).
+
+================================================================================
+STEP 3 - VERIFICA
+================================================================================
+
+Dopo aver inserito il tracciamento, verifica OGNI content.json:
+
+Per ogni nazione e media buyer:
+[ ] googleAdsId presente e corretto
+[ ] conversionLabel presente e corretto
+[ ] conversionValue = prezzo scontato locale
+[ ] conversionCurrency = valuta locale
+[ ] facebookPixelId presente e corretto
+[ ] network.apiEndpoint presente
+[ ] network.offerId presente
+[ ] JSON valido dopo le modifiche
+
+================================================================================
+STEP 4 - REPORT FINALE
+================================================================================
+
+Genera un report finale con:
+
+### RIEPILOGO PRODOTTO
+- Nome prodotto: [nome]
+- Media buyer: [lista]
+- Nazioni: [lista con prezzi]
+
+### TRACCIAMENTO
+- Google Ads ID: AW-XXXXXXXXX
+- Conversion Label: abc123xyz
+- Meta Pixel ID: 1234567890
+- Network endpoint: [url]
+
+### DETTAGLIO PER NAZIONE
+| Nazione | Prezzo | Valuta | Conv. Value | Conv. Currency |
+|---------|--------|--------|-------------|----------------|
+| ITA     | 49.99  | EUR    | 49.99       | EUR            |
+| PL      | 149    | PLN    | 149         | PLN            |
+| HU      | 14990  | HUF    | 14990       | HUF            |
+
+### CARTELLE CREATE
+Lista completa di tutte le cartelle con path.
+
+### CHECK FINALE
+[ ] Tutti i content.json hanno il tracciamento
+[ ] Valori di conversione corretti per ogni nazione
+[ ] Nessun campo tracking vuoto
+[ ] JSON tutti validi
+
+--> MOSTRA REPORT
+--> CHIEDI CONFERMA FINALE ALL'UTENTE
+
+================================================================================
+DOPO CONFERMA
+================================================================================
+
+Aggiorna storico.json con:
+- Nome prodotto
+- Data creazione
+- Media buyer coinvolti
+- Nazioni tradotte
+- Tracking inserito (si/no)
+
+================================================================================

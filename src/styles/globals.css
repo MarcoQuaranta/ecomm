@@ -2,7 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-left {
+  animation: fade-in-left 0.3s ease-out;
+}
+
+@keyframes fade-out-left {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.animate-fade-out-left {
+  animation: fade-out-left 0.3s ease-out;
+}
+
 :root {
+  /* Force Light Mode */
+  color-scheme: light only;
+
   /* #region  /**=========== Primary Color =========== */
   /* !STARTERCONF Customize these variable, copy and paste from /styles/colors.css for list of colors */
   --tw-color-primary-50: 240 249 255;
@@ -129,5 +175,24 @@
   .animated-underline:hover,
   .animated-underline:focus-visible {
     background-size: 0 2px, 100% 2px;
+  }
+}
+
+/* ===== FORCE LIGHT MODE ===== */
+/* Override dark mode system preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light only;
+  }
+
+  html,
+  body {
+    background-color: #ffffff !important;
+    color: #1f2937 !important;
+  }
+
+  /* Override Next.js error page dark mode */
+  .next-error-h1 {
+    border-right-color: rgba(0, 0, 0, 0.3) !important;
   }
 }

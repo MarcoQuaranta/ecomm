@@ -105,7 +105,7 @@ export default async function TerminiCondizioniPage() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">9. Diritto di Recesso</h2>
         <p className="mb-4">
-          L'utente ha diritto di recedere dal contratto entro 14 giorni dalla ricezione, 
+          L'utente ha diritto di recedere dal contratto entro 30 giorni dalla ricezione, 
           secondo quanto previsto dal Codice del Consumo (D.Lgs. 206/2005).
         </p>
         <p className="mb-4">
@@ -167,6 +167,14 @@ export default async function TerminiCondizioniPage() {
         <h2 className="text-2xl font-semibold mb-4">15. Legge Applicabile</h2>
         <p className="mb-4">
           I presenti termini sono regolati dalla legge italiana.
+        </p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">16. Piattaforma Utilizzata</h2>
+        <p className="mb-4">
+          Questo sito web utilizza la piattaforma Open Source Site&Go.
+          I diritti commerciali del sito appartengono al proprietario dello stesso.
         </p>
       </section>
 

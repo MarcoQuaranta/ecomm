@@ -21,9 +21,9 @@ export default async function GaranziaPage() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">2. Garanzia "Soddisfatti o Rimborsati"</h2>
         <div className="bg-green-50 p-6 rounded-lg mb-4">
-          <h3 className="text-xl font-semibold mb-2 text-green-800">14 giorni - Reso Gratuito</h3>
+          <h3 className="text-xl font-semibold mb-2 text-green-800">30 giorni - Reso Gratuito</h3>
           <p className="mb-4 text-green-700">
-            <strong>Non sei soddisfatto del tuo acquisto?</strong> Hai 14 giorni di tempo per restituire 
+            <strong>Non sei soddisfatto del tuo acquisto?</strong> Hai 30 giorni di tempo per restituire
             il prodotto senza dover fornire alcuna spiegazione.
           </p>
           <ul className="list-disc ml-6 mb-4 text-green-700">

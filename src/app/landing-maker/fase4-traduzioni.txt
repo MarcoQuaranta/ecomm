@@ -1,0 +1,240 @@
+================================================================================
+                    FASE 4 - TRADUZIONI
+================================================================================
+
+PREREQUISITI:
+- Tutte le landing italiane (Lino, Mirko, Daniele) devono essere approvate
+- L'utente deve aver dato l'OK finale
+
+================================================================================
+LINGUE TARGET (FISSE)
+================================================================================
+
+Le lingue sono definite qui e NON cambiano. Non chiederle all'utente ogni volta.
+
+LINGUE_TARGET: [inserire qui le lingue una volta sola, es: "pl", "hr", "cs", "sk", "hu"]
+
+================================================================================
+STEP 1 - RACCOLTA PREZZI
+================================================================================
+
+PRIMA di iniziare le traduzioni, chiedi all'utente SOLO i prezzi.
+
+Chiedi:
+"Dammi i prezzi per ogni paese (originale e scontato):"
+- Polonia (PLN):
+- Croazia (EUR):
+- Rep. Ceca (CZK):
+- Slovacchia (EUR):
+- Ungheria (HUF):
+[ecc. in base alle lingue definite sopra]
+
+NOTA: I prezzi sono UGUALI per tutti i venditori, variano solo per nazione.
+
+Salva le informazioni:
+{
+  "prezzi": {
+    "pl": { "originale": "299 PLN", "scontato": "149 PLN", "valuta": "PLN", "simbolo": "zl" },
+    "hr": { "originale": "99 EUR", "scontato": "49 EUR", "valuta": "EUR", "simbolo": "€" },
+    "cs": { "originale": "2990 CZK", "scontato": "1490 CZK", "valuta": "CZK", "simbolo": "Kc" }
+  }
+}
+
+================================================================================
+STEP 2 - STRUTTURA CARTELLE DA CREARE
+================================================================================
+
+Per ogni lingua e per ogni venditore, crea:
+
+src/app/lino/[prodotto]-lino/[prodotto]-lino-[lang]/
+    - page.tsx
+    - copy.json
+
+src/app/mirko/[prodotto]-mirko/[prodotto]-mirko-[lang]/
+    - page.tsx
+    - copy.json
+
+src/app/daniele/[prodotto]-daniele/[prodotto]-daniele-[lang]/
+    - page.tsx
+    - copy.json
+
+ESEMPIO per prodotto "cesoia" in polacco (pl):
+- src/app/lino/cesoia-lino/cesoia-lino-pl/page.tsx
+- src/app/lino/cesoia-lino/cesoia-lino-pl/copy.json
+- src/app/mirko/cesoia-mirko/cesoia-mirko-pl/page.tsx
+- src/app/mirko/cesoia-mirko/cesoia-mirko-pl/copy.json
+- src/app/daniele/cesoia-daniele/cesoia-daniele-pl/page.tsx
+- src/app/daniele/cesoia-daniele/cesoia-daniele-pl/copy.json
+
+================================================================================
+STEP 3 - REGOLE DI TRADUZIONE
+================================================================================
+
+### COSA TRADURRE:
+
+1. TESTI VISIBILI A SCHERMO
+   - Titoli, sottotitoli, headline
+   - Descrizioni prodotto
+   - Testi dei benefici
+   - Testi delle feature
+   - Domande e risposte FAQ
+   - Testi urgenza/scarsita'
+   - Testi garanzia
+   - Testi form (label, placeholder, bottoni)
+   - Testi footer/header se presenti
+   - Alt text immagini (per accessibilita')
+
+2. TESTIMONIANZE
+   - Traduci il testo della recensione
+   - CAMBIA il nome con un nome tipico del paese target
+   - CAMBIA la citta' con una citta' reale del paese target
+
+   Esempio IT -> PL:
+   "Marco R., Milano" -> "Marek R., Warszawa"
+   "Giulia B., Roma" -> "Agnieszka B., Krakow"
+
+3. PREZZI E VALUTA
+   - Usa i prezzi forniti dall'utente per quella nazione
+   - Aggiorna il simbolo della valuta
+   - Aggiorna tutti i riferimenti ai prezzi nel testo
+
+### COSA NON TRADURRE:
+
+1. NOME PRODOTTO
+   - Il nome del prodotto NON va tradotto
+   - Ogni venditore puo' avere un nome prodotto diverso
+   - Mantieni il nome esattamente come nella versione italiana
+
+2. CODICE DI PROGRAMMAZIONE
+   - Nomi variabili (useState, handleSubmit, ecc.)
+   - Nomi funzioni
+   - Import/export statements
+   - Nomi props
+   - Nomi classi CSS
+   - ID elementi HTML
+   - Event handlers
+   - Console.log (se presenti)
+
+3. URL E PATH
+   - Link immagini (restano IDENTICI)
+   - URL API
+   - URL pagine legali (a meno che non esistano versioni tradotte)
+
+4. DATI TECNICI
+   - ID tracking (pixel, analytics)
+   - Chiavi API
+   - Configurazioni
+
+================================================================================
+STEP 4 - ADATTAMENTI CULTURALI PER PAESE
+================================================================================
+
+### NOMI TIPICI PER TESTIMONIANZE
+
+POLONIA (pl):
+- Uomini: Marek, Piotr, Andrzej, Tomasz, Krzysztof, Jan, Pawel, Michal
+- Donne: Anna, Agnieszka, Malgorzata, Katarzyna, Barbara, Ewa, Zofia
+- Citta': Warszawa, Krakow, Lodz, Wroclaw, Poznan, Gdansk, Szczecin
+
+CROAZIA (hr):
+- Uomini: Ivan, Marko, Josip, Ante, Tomislav, Luka, Nikola, Petar
+- Donne: Ana, Marija, Ivana, Petra, Lucija, Martina, Katarina
+- Citta': Zagreb, Split, Rijeka, Osijek, Zadar, Dubrovnik, Pula
+
+REPUBBLICA CECA (cs):
+- Uomini: Jan, Petr, Tomas, Martin, Pavel, Jakub, Michal, Josef
+- Donne: Jana, Marie, Eva, Anna, Hana, Katerina, Lucie, Petra
+- Citta': Praha, Brno, Ostrava, Plzen, Liberec, Olomouc, Ceske Budejovice
+
+SLOVACCHIA (sk):
+- Uomini: Jan, Peter, Martin, Milan, Michal, Tomas, Jozef, Andrej
+- Donne: Maria, Jana, Eva, Anna, Zuzana, Katarina, Martina, Monika
+- Citta': Bratislava, Kosice, Presov, Zilina, Nitra, Banska Bystrica, Trnava
+
+UNGHERIA (hu):
+- Uomini: Laszlo, Istvan, Jozsef, Janos, Zoltan, Sandor, Gabor, Ferenc
+- Donne: Maria, Erzsebet, Katalin, Ilona, Zsuzsanna, Anna, Eva, Judit
+- Citta': Budapest, Debrecen, Szeged, Miskolc, Pecs, Gyor, Nyiregyhaza
+
+ROMANIA (ro):
+- Uomini: Ion, Gheorghe, Vasile, Alexandru, Andrei, Mihai, Stefan, Adrian
+- Donne: Maria, Elena, Ana, Ioana, Andreea, Gabriela, Cristina, Daniela
+- Citta': Bucuresti, Cluj-Napoca, Timisoara, Iasi, Constanta, Craiova, Brasov
+
+GERMANIA (de):
+- Uomini: Thomas, Michael, Andreas, Stefan, Christian, Markus, Daniel, Peter
+- Donne: Sabine, Julia, Anna, Laura, Sarah, Katharina, Maria, Lisa
+- Citta': Berlin, Munchen, Hamburg, Koln, Frankfurt, Stuttgart, Dusseldorf
+
+================================================================================
+STEP 5 - VALUTE E FORMATTAZIONE
+================================================================================
+
+| Paese      | Codice | Valuta | Simbolo | Formato esempio |
+|------------|--------|--------|---------|-----------------|
+| Polonia    | pl     | PLN    | zl      | 149 zl          |
+| Croazia    | hr     | EUR    | €       | 49 €            |
+| Rep. Ceca  | cs     | CZK    | Kc      | 1490 Kc         |
+| Slovacchia | sk     | EUR    | €       | 49 €            |
+| Ungheria   | hu     | HUF    | Ft      | 14990 Ft        |
+| Romania    | ro     | RON    | lei     | 249 lei         |
+| Germania   | de     | EUR    | €       | 49 €            |
+
+NOTA: Croazia e Slovacchia usano EUR.
+
+================================================================================
+STEP 6 - ESECUZIONE CON AGENTI
+================================================================================
+
+Lancia 3 agenti in parallelo (uno per venditore):
+
+AGENTE 1 - TRADUZIONI LINO:
+"Traduci la landing lino/[prodotto]-lino/ nelle seguenti lingue: [lista].
+Per ogni lingua:
+1. Crea cartella [prodotto]-lino-[lang]/
+2. Copia page.tsx e copy.json dalla cartella padre
+3. Traduci seguendo le regole in fase4-traduzioni.txt
+4. Usa i prezzi: [prezzi per lingua]
+Adatta nomi testimonianze e citta' al paese target.
+NON modificare link immagini, codice, variabili."
+
+AGENTE 2 - TRADUZIONI MIRKO:
+[stesso prompt per mirko]
+
+AGENTE 3 - TRADUZIONI DANIELE:
+[stesso prompt per daniele]
+
+================================================================================
+STEP 7 - CHECKLIST POST-TRADUZIONE
+================================================================================
+
+Per ogni cartella tradotta verificare:
+
+[ ] Cartella creata con nome corretto ([prodotto]-[venditore]-[lang])
+[ ] page.tsx presente e tradotto
+[ ] copy.json presente e tradotto
+[ ] Nessun testo in italiano rimasto
+[ ] Prezzi nella valuta corretta
+[ ] Nomi testimonianze adattati al paese
+[ ] Citta' testimonianze adattate al paese
+[ ] Link immagini invariati
+[ ] Codice funzionante (nessun errore sintassi)
+[ ] JSON valido
+
+================================================================================
+RIEPILOGO PROCESSO FASE 4
+================================================================================
+
+1. Leggi le lingue target (sono FISSE, definite nel file)
+2. Chiedi SOLO i prezzi per ogni paese
+3. Lancia 3 agenti in parallelo (Lino, Mirko, Daniele)
+4. Ogni agente traduce in tutte le lingue definite
+5. Verifica checklist
+6. Comunica completamento all'utente
+
+RICORDA:
+- Lingue: NON chiedere, sono fisse
+- Prezzi: chiedere OGNI VOLTA per ogni nuovo prodotto
+- Nome prodotto: NON tradurre (puo' variare per venditore)
+
+================================================================================

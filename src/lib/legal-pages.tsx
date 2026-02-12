@@ -1,35 +1,54 @@
-// Funzione helper per ottenere i dati aziendali
-import { sql } from '@vercel/postgres';
+// Info aziendali dinamiche per le pagine legali
+// Importa da site.config.ts nella root
 
-export async function getCompanyInfo() {
-  try {
-    // Forza lettura dal master con una transazione
-    await sql`BEGIN`;
-    const result = await sql`SELECT * FROM company_info ORDER BY updated_at DESC LIMIT 1`;
-    await sql`COMMIT`;
-    if (result.rows.length > 0) {
-      const company = result.rows[0];
-      return {
-        ...company,
-        company_name: company.company_name || 'Il Mio E-commerce',
-        email: company.email || 'info@example.com',
-        legal_address: company.legal_address || 'Via Roma 1, 00100 Roma, Italia',
-        vat_number: company.vat_number || 'IT12345678901',
-        share_capital: company.share_capital || '',
-        pec_email: company.pec_email || ''
-      };
-    }
-  } catch (error) {
-    // Rollback in caso di errore
-    try { await sql`ROLLBACK`; } catch {}
-    console.error('Error fetching company info:', error);
-  }
+import siteConfig from '../../site.config';
+
+export interface CompanyInfo {
+  company_name: string;
+  legal_address: string;
+  email: string;
+  vat_number: string;
+  share_capital?: string;
+  pec_email?: string;
+  rea_number?: string;
+  fiscal_code?: string;
+  support_email?: string;
+  assistance_email?: string;
+  site_name?: string;
+  site_url?: string;
+}
+
+export async function getCompanyInfo(): Promise<CompanyInfo> {
   return {
-    company_name: 'Il Mio E-commerce',
-    email: 'info@example.com',
-    legal_address: 'Via Roma 1, 00100 Roma, Italia',
-    vat_number: 'IT12345678901',
-    share_capital: '',
-    pec_email: ''
+    company_name: siteConfig.companyName,
+    legal_address: siteConfig.legalAddress,
+    email: siteConfig.email,
+    vat_number: siteConfig.vatNumber,
+    share_capital: siteConfig.shareCapital,
+    pec_email: siteConfig.pecEmail,
+    rea_number: siteConfig.reaNumber,
+    fiscal_code: siteConfig.fiscalCode,
+    support_email: siteConfig.supportEmail,
+    assistance_email: siteConfig.assistanceEmail,
+    site_name: siteConfig.siteName,
+    site_url: siteConfig.siteUrl
+  };
+}
+
+// Export sincrono per componenti client
+export function getCompanyInfoSync(): CompanyInfo {
+  return {
+    company_name: siteConfig.companyName,
+    legal_address: siteConfig.legalAddress,
+    email: siteConfig.email,
+    vat_number: siteConfig.vatNumber,
+    share_capital: siteConfig.shareCapital,
+    pec_email: siteConfig.pecEmail,
+    rea_number: siteConfig.reaNumber,
+    fiscal_code: siteConfig.fiscalCode,
+    support_email: siteConfig.supportEmail,
+    assistance_email: siteConfig.assistanceEmail,
+    site_name: siteConfig.siteName,
+    site_url: siteConfig.siteUrl
   };
 }

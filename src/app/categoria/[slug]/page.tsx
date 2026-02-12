@@ -1,8 +1,8 @@
-import { notFound } from 'next/navigation';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { getProductsByCategory } from '@/lib/db';
-import CategoryClient from './CategoryClient';
+'use client';
+
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { getCategoryBySlug } from '@/lib/categories';
 
 interface CategoryPageProps {
   params: {
@@ -10,62 +10,26 @@ interface CategoryPageProps {
   };
 }
 
-// Metadata per SEO
-export async function generateMetadata({ params }: CategoryPageProps) {
-  const categoryNames: Record<string, string> = {
-    'giardinaggio': 'Giardinaggio',
-    'utensili': 'Utensili',
-    'per-la-casa': 'Per la Casa',
-    'elettronica': 'Elettronica'
-  };
+export default function CategoryPage({ params }: CategoryPageProps) {
+  const router = useRouter();
+  const category = getCategoryBySlug(params.slug);
 
-  const categoryName = categoryNames[params.slug];
-  
-  return {
-    title: `${categoryName || 'Categoria'} - Shop Online`,
-    description: `Scopri tutti i prodotti della categoria ${categoryName}. Prezzi competitivi e spedizione gratuita.`,
-  };
-}
+  useEffect(() => {
+    // Redirect to catalogo with category filter
+    if (category) {
+      router.replace(`/catalogo?categoria=${params.slug}`);
+    } else {
+      router.replace('/catalogo');
+    }
+  }, [category, params.slug, router]);
 
-export default async function CategoryPage({ params }: CategoryPageProps) {
-  // Map slug to display name
-  const categoryNames: Record<string, string> = {
-    'giardinaggio': 'Giardinaggio',
-    'utensili': 'Utensili',
-    'per-la-casa': 'Per la Casa',
-    'elettronica': 'Elettronica'
-  };
-
-  const categoryName = categoryNames[params.slug];
-  if (!categoryName) {
-    notFound();
-  }
-
-  // Get products for this category from database
-  const categoryProducts = await getProductsByCategory(params.slug);
-
+  // Show loading while redirecting
   return (
-    <>
-      <Header />
-      <div className="min-h-screen bg-gray-50">
-        {/* Hero Section */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12">
-          <div className="max-w-[1500px] mx-auto px-4">
-            <h1 className="text-4xl font-bold mb-4">{categoryName}</h1>
-            <p className="text-xl opacity-90">
-              Scopri tutti i prodotti della categoria {categoryName}
-            </p>
-          </div>
-        </div>
-
-        {/* Pass products to client component for filtering/sorting */}
-        <CategoryClient 
-          products={categoryProducts} 
-          categoryName={categoryName}
-          categorySlug={params.slug}
-        />
+    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="text-center">
+        <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+        <p className="text-gray-600">Caricamento...</p>
       </div>
-      <Footer />
-    </>
+    </div>
   );
 }

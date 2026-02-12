@@ -20,7 +20,9 @@
       "Bash(pkill:*)",
       "Bash(npm uninstall:*)",
       "Bash(psql:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(mkdir:*)",
+      "Bash(touch:*)"
     ],
     "deny": [],
     "ask": []

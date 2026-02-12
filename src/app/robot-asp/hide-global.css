@@ -1,0 +1,22 @@
+/* Hide global header/footer on landing pages */
+
+/* Nascondi header e footer globali */
+header.main-header,
+footer.main-footer,
+#global-header,
+#global-footer {
+  display: none !important;
+}
+
+/* Previeni overflow orizzontale */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Font family per landing */
+* {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  box-sizing: border-box;
+}

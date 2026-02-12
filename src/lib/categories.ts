@@ -1,4 +1,5 @@
-import { Product } from './products';
+// Categorie dinamiche per il catalogo
+import { getFilteredProducts, type Product } from './products';
 
 export interface Category {
   id: string;
@@ -7,45 +8,41 @@ export interface Category {
   description: string;
   image: string;
   color: string;
-  productIds: string[];
 }
 
+// Nuove categorie dinamiche
 export const categories: Category[] = [
   {
-    id: 'giardinaggio',
-    name: 'Giardinaggio',
-    slug: 'giardinaggio',
-    description: 'Attrezzature professionali per la cura del giardino e degli spazi esterni',
-    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop',
-    color: 'from-green-500 to-green-600',
-    productIds: ['soffiatore-1', 'decespugliatore-1', 'motosega-1', 'cesoia-1']
+    id: 'offerte',
+    name: 'Offerte',
+    slug: 'offerte',
+    description: 'Tutti i prodotti in offerta speciale',
+    image: 'https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+    color: '#ef4444'
   },
   {
-    id: 'utensili',
-    name: 'Utensili',
-    slug: 'utensili',
-    description: 'Utensili elettrici e manuali per ogni tipo di lavoro',
-    image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?w=400&h=300&fit=crop',
-    color: 'from-blue-500 to-blue-600',
-    productIds: ['smerigliatrice-1']
+    id: 'ultimi-arrivi',
+    name: 'Ultimi Arrivi',
+    slug: 'ultimi-arrivi',
+    description: 'Le ultime novità appena arrivate',
+    image: 'https://images.pexels.com/photos/5632381/pexels-photo-5632381.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+    color: '#3b82f6'
   },
   {
-    id: 'per-la-casa',
-    name: 'Per la casa',
-    slug: 'per-la-casa',
-    description: 'Tutto per il comfort e il benessere della tua casa',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop',
-    color: 'from-orange-500 to-orange-600',
-    productIds: ['condizionatore-1', 'soffiatore-1'] // soffiatore anche per pulizia interni
+    id: 'bestseller',
+    name: 'BestSeller',
+    slug: 'bestseller',
+    description: 'I prodotti più venduti e amati dai clienti',
+    image: 'https://images.pexels.com/photos/5632398/pexels-photo-5632398.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+    color: '#f59e0b'
   },
   {
-    id: 'elettronica',
-    name: 'Elettronica',
-    slug: 'elettronica',
-    description: 'Dispositivi elettronici di ultima generazione',
-    image: 'https://images.unsplash.com/photo-1524634126442-357e0eac3c14?w=400&h=300&fit=crop',
-    color: 'from-purple-500 to-purple-600',
-    productIds: ['drone-1']
+    id: 'scelti-da-noi',
+    name: 'Scelti da Noi',
+    slug: 'scelti-da-noi',
+    description: 'La nostra selezione dei migliori prodotti',
+    image: 'https://images.pexels.com/photos/5632386/pexels-photo-5632386.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+    color: '#8b5cf6'
   }
 ];
 
@@ -57,16 +54,45 @@ export function getCategoryById(id: string): Category | undefined {
   return categories.find(category => category.id === id);
 }
 
-export function getProductIdsByCategory(categorySlug: string): string[] {
-  const category = getCategoryBySlug(categorySlug);
-  return category ? category.productIds : [];
+// Fisher-Yates shuffle per randomizzazione vera
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
 }
 
-export function getCategoriesForProduct(productId: string): Category[] {
-  return categories.filter(category => category.productIds.includes(productId));
+// Conta i prodotti per categoria
+export function getProductCountByCategory(categorySlug: string): number {
+  const products = getProductsByCategory(categorySlug);
+  return products.length;
 }
 
-export function getCategoryCount(categoryId: string): number {
-  const category = getCategoryById(categoryId);
-  return category ? category.productIds.length : 0;
+// Ottieni prodotti per categoria dinamica
+export function getProductsByCategory(categorySlug: string): Product[] {
+  const allProducts = getFilteredProducts();
+
+  switch (categorySlug) {
+    case 'offerte':
+      // Tutti i prodotti
+      return allProducts;
+
+    case 'ultimi-arrivi':
+      // Ultimi 4 prodotti (in ordine inverso di come sono stati aggiunti)
+      return allProducts.slice(-4).reverse();
+
+    case 'bestseller':
+      // 4 prodotti random (davvero random con shuffle)
+      return shuffleArray(allProducts).slice(0, 4);
+
+    case 'scelti-da-noi':
+      // 4 prodotti random diversi (davvero random con shuffle)
+      return shuffleArray(allProducts).slice(0, 4);
+
+    default:
+      // Fallback: cerca per categoria prodotto originale
+      return allProducts.filter((p: Product) => p.category === categorySlug);
+  }
 }

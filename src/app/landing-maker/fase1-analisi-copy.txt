@@ -1,0 +1,113 @@
+================================================================================
+                    FASE 1 - ANALISI DATI + CREAZIONE COPY (ITALIANO)
+================================================================================
+
+OBIETTIVO: Analizzare i dati del prodotto forniti dall'utente, identificare
+i punti di forza migliori e creare il copy persuasivo in italiano.
+Il copy va inserito direttamente nella struttura del content.json.
+
+================================================================================
+INPUT
+================================================================================
+
+Dall'utente ricevi:
+- Nome prodotto
+- Angle principale
+- Dati aggiuntivi (link, specifiche, info varie, ricerche, ecc.)
+
+================================================================================
+STEP 1 - ANALISI
+================================================================================
+
+Analizza i dati ricevuti e identifica:
+
+1. PUNTI DI FORZA DEL PRODOTTO
+   - Quali sono i benefici principali?
+   - Cosa lo rende diverso/migliore dei competitor?
+   - Quale problema risolve?
+
+2. TARGET
+   - A chi si rivolge?
+   - Quali sono i pain point del target?
+   - Cosa desidera il target?
+
+3. OBIEZIONI
+   - Perche' il cliente potrebbe NON comprare?
+   - Come le anticipiamo e le distruggiamo?
+
+4. ANGLE DI VENDITA
+   - Usa l'angle fornito dall'utente come base
+   - Identifica 2-3 angle secondari di supporto
+
+NON creare file separati di ricerca. L'analisi e' interna al tuo processo
+e serve solo per informare la creazione del copy.
+
+================================================================================
+STEP 2 - CREAZIONE COPY
+================================================================================
+
+Usando l'analisi fatta, genera i seguenti elementi:
+
+### HEADLINE
+- 2-3 varianti incisive (max 10 parole)
+- Devono contenere il beneficio principale
+- Creare curiosita' o urgenza
+
+### SUBHEADLINE
+- 1-2 varianti che espandono la promessa dell'headline
+
+### BENEFICI
+- 5-8 benefici con titolo + descrizione
+- Trasforma le feature in benefici emotivi
+- Usa numeri specifici quando possibile
+
+### FEATURES
+- 5-6 caratteristiche con icona check
+
+### TESTIMONIANZE
+- 5 recensioni realistiche
+- Nome italiano, citta' italiana
+- Problema iniziale -> risultato ottenuto
+- Tono colloquiale e autentico
+
+### FAQ
+- 5-8 domande frequenti con risposte
+- Includi sempre: pagamento alla consegna, consegna, reso, garanzia
+- Le risposte devono rassicurare e spingere all'azione
+
+### CTA (Call to Action)
+- 2 varianti di testo bottone (es: "ORDINA ORA" + "APPROFITTA DELL'OFFERTA")
+
+### URGENZA/SCARSITA'
+- Testo stock limitato
+- Testo offerta in scadenza
+- Testo "venduti oggi"
+
+### GARANZIA
+- Titolo garanzia
+- Descrizione garanzia
+
+### TESTI FORM
+- Titolo form
+- Sottotitolo form
+- Label e placeholder per: nome, telefono, indirizzo
+- Testo bottone submit
+- Testo privacy
+
+### TESTI STATICI DELLA PAGINA
+- Qualsiasi testo che appare sulla pagina DEVE essere nel JSON
+- NESSUN testo hardcodato nel componente
+- Includi: label spedizione, label pagamento, badge verificato, ecc.
+
+================================================================================
+OUTPUT
+================================================================================
+
+Presenta all'utente il copy organizzato per sezione.
+Una volta approvato, questo copy sara' inserito nel content.json
+nella Fase 2.
+
+NON creare file intermedi (niente ricerca.md o copy.md).
+L'output e' direttamente il copy pronto per il JSON.
+
+================================================================================

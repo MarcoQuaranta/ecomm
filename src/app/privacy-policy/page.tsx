@@ -1,6 +1,5 @@
 import { getCompanyInfo } from '@/lib/legal-pages';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import SiteLayout from '@/components/SiteLayout';
 
 // Forza rendering dinamico
 export const dynamic = 'force-dynamic';
@@ -15,9 +14,7 @@ export default async function PrivacyPolicyPage() {
   });
 
   return (
-    <>
-      <Header />
-      <div className="min-h-screen bg-gray-50 py-12">
+    <SiteLayout className="bg-gray-50 py-12">
         <div className="max-w-4xl mx-auto px-4">
           <div className="bg-white rounded-lg shadow-lg p-8">
             <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
@@ -185,8 +182,6 @@ export default async function PrivacyPolicyPage() {
             </div>
           </div>
         </div>
-      </div>
-      <Footer />
-    </>
+    </SiteLayout>
   );
 }

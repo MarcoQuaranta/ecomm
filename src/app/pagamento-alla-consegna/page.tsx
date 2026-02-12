@@ -2,15 +2,12 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import SiteLayout from '@/components/SiteLayout';
 import Link from 'next/link';
 
 export default function PagamentoAllaConsegnaPage() {
   return (
-    <>
-      <Header />
-      <div className="min-h-screen bg-gray-50">
+    <SiteLayout className="bg-gray-50">
         {/* Hero Section */}
         <div className="bg-gradient-to-r from-green-600 to-green-800 text-white py-16">
           <div className="max-w-[1200px] mx-auto px-4">
@@ -328,8 +325,6 @@ export default function PagamentoAllaConsegnaPage() {
             </div>
           </motion.section>
         </div>
-      </div>
-      <Footer />
-    </>
+    </SiteLayout>
   );
 }

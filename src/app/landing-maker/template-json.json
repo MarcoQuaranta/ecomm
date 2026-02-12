@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "productName": "",
+    "productSlug": "",
+    "imageFolder": "",
+    "vendor": "",
+    "createdAt": "",
+    "version": "1.0"
+  },
+
+  "hero": {
+    "headline": "",
+    "headlineAlt": "",
+    "subheadline": "",
+    "subheadlineAlt": "",
+    "ctaText": "ORDINA ORA",
+    "ctaTextAlt": "APPROFITTA DELL'OFFERTA",
+    "urgencyBadge": "OFFERTA LIMITATA",
+    "discountBadge": "-50%"
+  },
+
+  "pricing": {
+    "originalPrice": "99.99",
+    "discountedPrice": "49.99",
+    "discountPercentage": "50",
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "shipping": "GRATIS",
+    "paymentMethod": "Pagamento alla consegna"
+  },
+
+  "benefits": [
+    {
+      "icon": "check",
+      "title": "",
+      "description": ""
+    },
+    {
+      "icon": "star",
+      "title": "",
+      "description": ""
+    },
+    {
+      "icon": "shield",
+      "title": "",
+      "description": ""
+    },
+    {
+      "icon": "zap",
+      "title": "",
+      "description": ""
+    },
+    {
+      "icon": "award",
+      "title": "",
+      "description": ""
+    }
+  ],
+
+  "whyChoose": [
+    {
+      "icon": "quality",
+      "title": "Qualita' Premium",
+      "description": ""
+    },
+    {
+      "icon": "easy",
+      "title": "Facile da Usare",
+      "description": ""
+    },
+    {
+      "icon": "save",
+      "title": "Risparmio Garantito",
+      "description": ""
+    },
+    {
+      "icon": "secure",
+      "title": "100% Sicuro",
+      "description": ""
+    },
+    {
+      "icon": "support",
+      "title": "Assistenza Dedicata",
+      "description": ""
+    }
+  ],
+
+  "features": [
+    {
+      "icon": "✓",
+      "text": ""
+    },
+    {
+      "icon": "✓",
+      "text": ""
+    },
+    {
+      "icon": "✓",
+      "text": ""
+    },
+    {
+      "icon": "✓",
+      "text": ""
+    },
+    {
+      "icon": "✓",
+      "text": ""
+    },
+    {
+      "icon": "✓",
+      "text": ""
+    }
+  ],
+
+  "images": {
+    "main": "img_princ.png",
+    "carousel": [
+      "carosello_1.jpg",
+      "carosello_2.jpg",
+      "carosello_3.jpg",
+      "carosello_4.jpg",
+      "carosello_5.jpg"
+    ],
+    "gallery": [],
+    "badges": []
+  },
+
+  "testimonials": [
+    {
+      "name": "Marco R.",
+      "location": "Milano",
+      "rating": 5,
+      "text": "",
+      "date": "",
+      "verified": true,
+      "image": ""
+    },
+    {
+      "name": "Laura B.",
+      "location": "Roma",
+      "rating": 5,
+      "text": "",
+      "date": "",
+      "verified": true,
+      "image": ""
+    },
+    {
+      "name": "Giuseppe M.",
+      "location": "Napoli",
+      "rating": 5,
+      "text": "",
+      "date": "",
+      "verified": true,
+      "image": ""
+    },
+    {
+      "name": "Francesca P.",
+      "location": "Torino",
+      "rating": 5,
+      "text": "",
+      "date": "",
+      "verified": true,
+      "image": ""
+    },
+    {
+      "name": "Andrea C.",
+      "location": "Bologna",
+      "rating": 5,
+      "text": "",
+      "date": "",
+      "verified": true,
+      "image": ""
+    }
+  ],
+
+  "faq": [
+    {
+      "question": "Come funziona il pagamento alla consegna?",
+      "answer": "Paghi direttamente al corriere quando ricevi il prodotto. Nessun pagamento anticipato richiesto."
+    },
+    {
+      "question": "Quanto tempo ci vuole per la consegna?",
+      "answer": "La consegna avviene in 2-5 giorni lavorativi in tutta Italia."
+    },
+    {
+      "question": "Posso restituire il prodotto?",
+      "answer": "Si, hai 30 giorni di tempo per restituire il prodotto se non sei soddisfatto."
+    },
+    {
+      "question": "Il prodotto e' coperto da garanzia?",
+      "answer": "Si, tutti i nostri prodotti sono coperti da garanzia di 24 mesi."
+    },
+    {
+      "question": "Come posso contattare l'assistenza?",
+      "answer": "Puoi contattarci via email o telefono. Rispondiamo entro 24 ore."
+    }
+  ],
+
+  "urgency": {
+    "enabled": true,
+    "countdownMinutes": 57,
+    "stockLeft": "Solo 7 pezzi rimasti!",
+    "stockNumber": 7,
+    "offerEndText": "Offerta valida ancora per:",
+    "limitedText": "ULTIMI PEZZI DISPONIBILI",
+    "soldToday": "147 venduti oggi"
+  },
+
+  "guarantee": {
+    "enabled": true,
+    "title": "Garanzia Soddisfatti o Rimborsati",
+    "description": "Se non sei completamente soddisfatto del tuo acquisto, ti rimborsiamo il 100% senza domande.",
+    "days": 30,
+    "icon": "shield"
+  },
+
+  "socialProof": {
+    "reviewsCount": "2.847",
+    "averageRating": "4.8",
+    "soldCount": "15.000+",
+    "satisfactionRate": "98%"
+  },
+
+  "form": {
+    "title": "Ordina Adesso",
+    "subtitle": "Compila il modulo per ricevere il prodotto",
+    "fields": {
+      "name": {
+        "label": "Nome e Cognome",
+        "placeholder": "Inserisci nome e cognome"
+      },
+      "phone": {
+        "label": "Telefono",
+        "placeholder": "Inserisci numero di telefono"
+      },
+      "address": {
+        "label": "Indirizzo di consegna",
+        "placeholder": "Via, numero civico, citta'"
+      }
+    },
+    "submitText": "CONFERMA ORDINE",
+    "privacyText": "I tuoi dati sono protetti e non verranno condivisi con terzi."
+  },
+
+  "seo": {
+    "title": "",
+    "description": "",
+    "keywords": [],
+    "ogImage": ""
+  },
+
+  "tracking": {
+    "facebookPixelId": "",
+    "googleAdsId": "",
+    "googleAnalyticsId": "",
+    "networkUid": "",
+    "networkKey": "",
+    "offerId": "",
+    "lpId": "",
+    "thankYouPage": ""
+  },
+
+  "abTest": {
+    "variant": "A",
+    "activeTests": [
+      {
+        "name": "headline",
+        "variantA": "headline",
+        "variantB": "headlineAlt"
+      },
+      {
+        "name": "cta",
+        "variantA": "ctaText",
+        "variantB": "ctaTextAlt"
+      }
+    ]
+  },
+
+  "legal": {
+    "privacyPolicyUrl": "/privacy-policy",
+    "termsUrl": "/termini-condizioni",
+    "cookiePolicyUrl": "/cookie-policy",
+    "disclaimerText": ""
+  }
+}

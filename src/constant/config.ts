@@ -1,7 +1,7 @@
-export const siteConfig = {
-  title: 'Erboristeria Urbino',
-  description:
-    'Solo prodotti di alta qualità e Made in Italy',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://erboristeriaurbino.com',
-};
+// Questo file esporta le configurazioni dal file principale site.config.ts
+// Per modificare i dati del sito, modifica site.config.ts nella root del progetto
+
+import siteConfig from '../../site.config';
+
+export { siteConfig };
+export default siteConfig;

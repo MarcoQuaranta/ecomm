@@ -1,0 +1,188 @@
+================================================================================
+                    FASE 3 - TRADUZIONI
+================================================================================
+
+PREREQUISITI:
+- Tutte le landing italiane devono essere approvate dall'utente
+- L'utente deve aver dato l'OK finale sulla Fase 2
+
+================================================================================
+STEP 1 - RACCOLTA INFO
+================================================================================
+
+Chiedi all'utente:
+
+1. "In quali nazioni vuoi tradurre?" (le nazioni NON sono fisse, cambiano ogni volta)
+
+2. "Qual e' il prezzo di vendita per ogni nazione?"
+   Specifica che serve: prezzo originale + prezzo scontato, in valuta locale.
+
+ESEMPIO risposta utente:
+- Polonia: 299 PLN -> 149 PLN
+- Ungheria: 29990 HUF -> 14990 HUF
+- Rep. Ceca: 2990 CZK -> 1490 CZK
+
+================================================================================
+STEP 2 - STRUTTURA CARTELLE
+================================================================================
+
+Per ogni nazione e per ogni media buyer, crea:
+
+src/app/[mediabuyer]/[prodotto]/[prodotto]-[lang]/
+  ├── page.tsx              <-- COPIATO identico dalla versione italiana
+  ├── content.json          <-- TRADOTTO
+  └── ty/
+      └── page.tsx          <-- TRADOTTO
+
+ESEMPIO per prodotto "airwave", media buyer "lino", nazioni PL e HU:
+
+src/app/lino/airwave/
+  ├── airwave-ita/          <-- originale
+  ├── airwave-pl/           <-- traduzione polacca
+  │   ├── page.tsx          <-- identico a ita
+  │   ├── content.json      <-- tradotto in polacco
+  │   └── ty/page.tsx       <-- tradotto in polacco
+  └── airwave-hu/           <-- traduzione ungherese
+      ├── page.tsx          <-- identico a ita
+      ├── content.json      <-- tradotto in ungherese
+      └── ty/page.tsx       <-- tradotto in ungherese
+
+================================================================================
+STEP 3 - COSA TRADURRE
+================================================================================
+
+### TRADURRE:
+
+1. CONTENT.JSON - tutti i testi visibili:
+   - Headline, subheadline
+   - Benefici (titolo + descrizione)
+   - Features
+   - FAQ (domande + risposte)
+   - Testi urgenza/scarsita'
+   - Garanzia (titolo + descrizione)
+   - Form (titolo, sottotitolo, label, placeholder, bottone, privacy)
+   - CTA
+   - Badge e label vari
+   - SEO (title, description)
+   - Sezione TY (title, message, subtitle)
+
+2. TESTIMONIANZE - tradurre + adattare:
+   - Traduci il testo della recensione
+   - CAMBIA il nome con un nome tipico del paese target
+   - CAMBIA la citta' con una citta' reale del paese target
+
+3. PREZZI E VALUTA:
+   - Usa i prezzi forniti dall'utente per quella nazione
+   - Aggiorna valuta e simbolo
+   - Aggiorna tutti i riferimenti ai prezzi nel testo
+   - Il valore di conversione (tracking.conversionValue) = prezzo scontato locale
+
+4. TY/PAGE.TSX:
+   - Traduci i testi visibili della thank you page
+
+### NON TRADURRE:
+
+1. PAGE.TSX - copialo identico, non toccarlo
+2. NOME PRODOTTO - resta uguale in tutte le lingue
+3. CODICE - variabili, funzioni, import, classi CSS, event handlers
+4. URL E PATH - link immagini, URL API, path pagine
+5. DATI TECNICI - ID tracking, chiavi API, configurazioni
+6. STRUTTURA JSON - le chiavi del JSON restano in inglese
+
+================================================================================
+STEP 4 - ADATTAMENTI CULTURALI
+================================================================================
+
+### NOMI TIPICI PER TESTIMONIANZE
+
+POLONIA (pl):
+- Uomini: Marek, Piotr, Andrzej, Tomasz, Krzysztof, Jan, Pawel, Michal
+- Donne: Anna, Agnieszka, Malgorzata, Katarzyna, Barbara, Ewa, Zofia
+- Citta': Warszawa, Krakow, Lodz, Wroclaw, Poznan, Gdansk, Szczecin
+
+CROAZIA (hr):
+- Uomini: Ivan, Marko, Josip, Ante, Tomislav, Luka, Nikola, Petar
+- Donne: Ana, Marija, Ivana, Petra, Lucija, Martina, Katarina
+- Citta': Zagreb, Split, Rijeka, Osijek, Zadar, Dubrovnik, Pula
+
+REPUBBLICA CECA (cs):
+- Uomini: Jan, Petr, Tomas, Martin, Pavel, Jakub, Michal, Josef
+- Donne: Jana, Marie, Eva, Anna, Hana, Katerina, Lucie, Petra
+- Citta': Praha, Brno, Ostrava, Plzen, Liberec, Olomouc, Ceske Budejovice
+
+SLOVACCHIA (sk):
+- Uomini: Jan, Peter, Martin, Milan, Michal, Tomas, Jozef, Andrej
+- Donne: Maria, Jana, Eva, Anna, Zuzana, Katarina, Martina, Monika
+- Citta': Bratislava, Kosice, Presov, Zilina, Nitra, Banska Bystrica, Trnava
+
+UNGHERIA (hu):
+- Uomini: Laszlo, Istvan, Jozsef, Janos, Zoltan, Sandor, Gabor, Ferenc
+- Donne: Maria, Erzsebet, Katalin, Ilona, Zsuzsanna, Anna, Eva, Judit
+- Citta': Budapest, Debrecen, Szeged, Miskolc, Pecs, Gyor, Nyiregyhaza
+
+ROMANIA (ro):
+- Uomini: Ion, Gheorghe, Vasile, Alexandru, Andrei, Mihai, Stefan, Adrian
+- Donne: Maria, Elena, Ana, Ioana, Andreea, Gabriela, Cristina, Daniela
+- Citta': Bucuresti, Cluj-Napoca, Timisoara, Iasi, Constanta, Craiova, Brasov
+
+GERMANIA (de):
+- Uomini: Thomas, Michael, Andreas, Stefan, Christian, Markus, Daniel, Peter
+- Donne: Sabine, Julia, Anna, Laura, Sarah, Katharina, Maria, Lisa
+- Citta': Berlin, Munchen, Hamburg, Koln, Frankfurt, Stuttgart, Dusseldorf
+
+Se la nazione richiesta non e' in questa lista, usa nomi e citta' tipiche
+di quel paese (cerca online se necessario).
+
+================================================================================
+STEP 5 - VALUTE E FORMATTAZIONE
+================================================================================
+
+| Paese          | Codice | Valuta | Simbolo | Formato esempio |
+|----------------|--------|--------|---------|-----------------|
+| Italia         | ita    | EUR    | Euro       | 49 Euro            |
+| Polonia        | pl     | PLN    | zl      | 149 zl          |
+| Croazia        | hr     | EUR    | Euro       | 49 Euro            |
+| Rep. Ceca      | cs     | CZK    | Kc      | 1490 Kc         |
+| Slovacchia     | sk     | EUR    | Euro       | 49 Euro            |
+| Ungheria       | hu     | HUF    | Ft      | 14990 Ft        |
+| Romania        | ro     | RON    | lei     | 249 lei         |
+| Germania       | de     | EUR    | Euro       | 49 Euro            |
+
+Se la nazione richiesta non e' in questa lista, cerca la valuta locale corretta.
+
+================================================================================
+STEP 6 - ESECUZIONE
+================================================================================
+
+Lancia agenti in parallelo (uno per media buyer).
+Ogni agente traduce in TUTTE le nazioni richieste.
+
+Per ogni traduzione:
+1. Crea cartella [prodotto]-[lang]/
+2. Copia page.tsx identico dalla versione italiana
+3. Traduci content.json
+4. Traduci ty/page.tsx
+5. Inserisci prezzi e valuta locale
+6. Adatta nomi/citta' testimonianze
+
+================================================================================
+STEP 7 - CHECKLIST POST-TRADUZIONE
+================================================================================
+
+Per ogni cartella tradotta verificare:
+
+[ ] Cartella creata con nome corretto ([prodotto]-[lang])
+[ ] page.tsx copiato (identico a versione italiana)
+[ ] content.json tradotto completamente
+[ ] ty/page.tsx tradotto
+[ ] Nessun testo in italiano rimasto nel content.json
+[ ] Nessun testo in italiano rimasto nella ty page
+[ ] Prezzi nella valuta locale corretta
+[ ] Valore di conversione = prezzo scontato locale
+[ ] Nomi testimonianze adattati al paese
+[ ] Citta' testimonianze adattate al paese
+[ ] Link immagini invariati
+[ ] JSON valido
+[ ] Nome prodotto NON tradotto
+
+================================================================================

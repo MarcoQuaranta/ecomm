@@ -1,0 +1,131 @@
+================================================================================
+                         LANDING MAKER - ISTRUZIONI PRINCIPALI
+================================================================================
+
+Quando l'utente dice "vai in landing-maker", devi eseguire questo processo.
+
+IMPORTANTE: Ogni fase richiede l'approvazione dell'utente prima di procedere
+alla successiva. NON passare alla fase successiva senza OK esplicito.
+
+================================================================================
+FASE 0 - RACCOLTA DATI PRODOTTO
+================================================================================
+
+Chiedi all'utente:
+
+1. "Qual e' il nome del prodotto?" (sara' uguale per tutti i media buyer)
+
+2. "Qual e' l'angle principale? (es: risparmio, comodita', salute, innovazione...)"
+
+3. "Inserisci i dati aggiuntivi sul prodotto (link, info, specifiche, tutto quello
+   che hai):"
+
+Dopo aver raccolto le info, procedi direttamente alla Fase 1.
+
+--> ATTENDI OK UTENTE
+
+================================================================================
+FASE 1 - ANALISI DATI + CREAZIONE COPY (ITALIANO)
+================================================================================
+
+Leggi il file: fase1-analisi-copy.txt
+
+Il tuo compito:
+1. Analizza i dati ricevuti dall'utente
+2. Identifica i punti di forza migliori del prodotto
+3. Struttura il copy persuasivo
+4. Inserisci tutto nel content.json in ITALIANO
+
+Output: content.json compilato con tutti i copy in italiano.
+
+--> MOSTRA IL COPY CREATO
+--> CHIEDI: "Copy completato. Vuoi modifiche o approvi?"
+--> ATTENDI OK UTENTE (o applica modifiche richieste)
+
+================================================================================
+FASE 2 - CREAZIONE CARTELLE (PER OGNI MEDIA BUYER)
+================================================================================
+
+Leggi il file: fase2-creazione-cartelle.txt
+
+Per ogni media buyer, crea la struttura completa:
+
+src/app/[mediabuyer]/[prodotto]/[prodotto]-ita/
+  ├── page.tsx          <-- statico, sempre uguale
+  ├── content.json      <-- copy, colori, link immagini
+  └── ty/
+      └── page.tsx      <-- thank you page
+
+public/images/[prodotto]/   <-- immagini condivise per tutte le nazioni
+
+ESECUZIONE PARALLELA: Lancia un agente per ogni media buyer.
+Ogni agente adatta il copy allo stile del venditore.
+
+--> MOSTRA RIEPILOGO CARTELLE CREATE
+--> CHIEDI: "Cartelle create. Controllale e dimmi cosa modificare."
+--> ATTENDI OK UTENTE
+
+================================================================================
+FASE 3 - TRADUZIONI
+================================================================================
+
+Leggi il file: fase3-traduzioni.txt
+
+Questa fase si attiva SOLO dopo approvazione della Fase 2.
+
+1. Chiedi: "In quali nazioni vuoi tradurre?"
+2. Chiedi: "Qual e' il prezzo di vendita per ogni nazione?" (valuta locale)
+3. Per ogni nazione:
+   - Copia page.tsx statico (identico, non tradurre)
+   - Traduci content.json
+   - Traduci ty/page.tsx
+   - Adatta nomi/citta' testimonianze al paese
+   - Inserisci prezzo e valuta locale
+   - Il valore di conversione = prezzo locale del prodotto
+
+Struttura risultante:
+src/app/[mediabuyer]/[prodotto]/
+  ├── [prodotto]-ita/      <-- originale
+  ├── [prodotto]-pl/       <-- traduzione polacca
+  ├── [prodotto]-hu/       <-- traduzione ungherese
+  └── ...
+
+--> MOSTRA RIEPILOGO TRADUZIONI
+--> CHIEDI APPROVAZIONE
+
+================================================================================
+FASE 4 - TRACCIAMENTO
+================================================================================
+
+Leggi il file: fase4-tracciamento.txt
+
+Questa fase si attiva SOLO dopo approvazione della Fase 3.
+
+1. Chiedi: "Dammi i dati di tracciamento Google Ads (ID + conversion label)"
+2. Chiedi: "Dammi il pixel ID di Meta Ads"
+3. Chiedi: "Dammi i dati del network (API endpoint, offer ID, ecc.)"
+4. Inserisci il tracciamento in TUTTI i content.json di ogni nazione
+5. Il valore di conversione e' dinamico = prezzo prodotto in valuta locale
+6. Verifica che tutto sia corretto
+7. Report finale con check completo
+
+--> MOSTRA REPORT FINALE
+--> CHIEDI CONFERMA
+
+================================================================================
+STORICO
+================================================================================
+
+Aggiorna sempre il file storico.json con la nuova landing creata.
+
+================================================================================
+RIEPILOGO FLUSSO
+================================================================================
+
+FASE 0 (raccolta dati prodotto)           -->  OK utente  -->
+FASE 1 (analisi + copy italiano)           -->  OK utente  -->
+FASE 2 (cartelle per media buyer)          -->  OK utente  -->
+FASE 3 (traduzioni per nazione + prezzi)   -->  OK utente  -->
+FASE 4 (tracciamento Google/Meta/network)  -->  report finale
+
+================================================================================

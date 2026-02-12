@@ -1,12 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import SiteLayout from '@/components/SiteLayout';
+import siteConfig from '../../../site.config';
 
-export default function OrderConfirmedPage() {
+function OrderConfirmedContent() {
   const searchParams = useSearchParams();
   const productSlug = searchParams.get('product');
   const [orderNumber, setOrderNumber] = useState('');
@@ -18,9 +18,7 @@ export default function OrderConfirmedPage() {
   }, []);
 
   return (
-    <>
-      <Header />
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-16">
+    <SiteLayout className="bg-gray-50 flex items-center justify-center px-4 py-16">
         <div className="max-w-md w-full">
           <div className="bg-white rounded-lg shadow-xl p-8 text-center">
             {/* Icona di successo */}
@@ -113,14 +111,24 @@ export default function OrderConfirmedPage() {
             </p>
             <p className="mt-2">
               Domande? Scrivici a{' '}
-              <a href="mailto:supporto@bricoshop.it" className="text-blue-600 hover:underline">
-                supporto@bricoshop.it
+              <a href={`mailto:${siteConfig.supportEmail}`} className="text-blue-600 hover:underline">
+                {siteConfig.supportEmail}
               </a>
             </p>
           </div>
         </div>
+    </SiteLayout>
+  );
+}
+
+export default function OrderConfirmedPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-lg">Caricamento...</div>
       </div>
-      <Footer />
-    </>
+    }>
+      <OrderConfirmedContent />
+    </Suspense>
   );
 }

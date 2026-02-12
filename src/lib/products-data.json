@@ -1,0 +1,100 @@
+{
+  "airwave": {
+    "name": "Přenosná Klimatizace Air Wave Smart™ 3v1 - Vytápí, Ochlazuje a Odvlhčuje",
+    "description": "Prodotto Přenosná Klimatizace Air Wave Smart™ 3v1 - Vytápí, Ochlazuje a Odvlhčuje",
+    "price": 99,
+    "originalPrice": 149,
+    "category": "per-la-casa",
+    "image": "/images/condizionatore/riscaldamento.webp",
+    "images": [
+      "/images/condizionatore/riscaldamento.webp",
+      "/images/condizionatore/installazione.webp",
+      "/images/condizionatore/caldo-freddo.webp",
+      "/images/condizionatore/risparmio.webp",
+      "/images/condizionatore/silenzioso.webp"
+    ]
+  },
+  "cesoia": {
+    "name": "TAGLIA RAMI FINO A 8CM COME IL BURRO",
+    "description": "2 batterie potentissime da 40V incluse nel prezzo. Lavori tutto il giorno senza fermarti. Quando una si scarica, metti l",
+    "price": 66.99,
+    "originalPrice": 167.48,
+    "category": "giardinaggio",
+    "image": "/images/cesoia/img_princ.png",
+    "images": [
+      "/images/cesoia/img_princ.png",
+      "/images/cesoia/carosello_1.jpg",
+      "/images/cesoia/carosello_2.jpg",
+      "/images/cesoia/carosello_3.jpg",
+      "/images/cesoia/carosello_4.jpg",
+      "/images/cesoia/carosello_5.jpg",
+      "/images/cesoia/carosello_6.jpg",
+      "/images/cesoia/carosello_7.jpg",
+      "/images/cesoia/carosello_8.jpg"
+    ]
+  },
+  "cuffietrad": {
+    "name": "Cuffietrad",
+    "description": "Prodotto Cuffietrad",
+    "price": 89,
+    "originalPrice": 259,
+    "category": "elettronica",
+    "image": "/images/cuffie/box-viaggio.png",
+    "images": [
+      "/images/cuffie/box-viaggio.png",
+      "/images/cuffie/box-testi.png",
+      "/images/cuffie/box-sicurezza.png",
+      "/images/cuffie/box-offline.png",
+      "/images/cuffie/box-semplicita.png"
+    ]
+  },
+  "dongle": {
+    "name": "4K TV",
+    "description": "Prodotto 4K TV",
+    "price": 99,
+    "originalPrice": 149,
+    "category": "elettronica",
+    "image": "/images/dongle/sliderhero/8.png",
+    "images": [
+      "/images/dongle/sliderhero/8.png",
+      "/images/dongle/sliderhero/5.png",
+      "/images/dongle/sliderhero/4.png",
+      "/images/dongle/sliderhero/7.png",
+      "/images/dongle/hu/1.png"
+    ]
+  },
+  "robot-asp": {
+    "name": "NIKDY SE HO NEDOTÝKEJTE.",
+    "description": "Prodotto NIKDY SE HO NEDOTÝKEJTE.",
+    "price": 99,
+    "originalPrice": 149,
+    "category": "per-la-casa",
+    "image": "/images/robot-asp/1.png",
+    "images": [
+      "/images/robot-asp/1.png",
+      "/images/robot-asp/2.png",
+      "/images/robot-asp/3.png",
+      "/images/robot-asp/4.png",
+      "/images/robot-asp/5.png",
+      "/images/robot-asp/6.png",
+      "/images/robot-asp/7.png",
+      "/images/robot-asp/8.png",
+      "/images/robot-asp/9.png"
+    ]
+  },
+  "soffiatore": {
+    "name": "Soffiatore",
+    "description": "Versatilità totale per ogni esigenza: soffia via le foglie dai vialetti, le aspira dal prato e le tritura automaticamente riducendo il volume dell",
+    "price": 74,
+    "originalPrice": 559,
+    "category": "giardinaggio",
+    "image": "/images/soffiatore/carosello_1.png",
+    "images": [
+      "/images/soffiatore/carosello_1.png",
+      "/images/soffiatore/carosello_2.png",
+      "/images/soffiatore/carosello_3.png",
+      "/images/soffiatore/carosello_4.png",
+      "/images/soffiatore/carosello_5.png"
+    ]
+  }
+}

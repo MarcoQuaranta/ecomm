@@ -9,7 +9,7 @@ export default async function PoliticheResoPage() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">1. Diritto di Recesso</h2>
         <p className="mb-4">
-          Ai sensi del D.Lgs. 206/2005 (Codice del Consumo), hai diritto di recedere dal contratto entro 14 giorni dal ricevimento dei prodotti, senza dover fornire alcuna motivazione.
+          Hai diritto di recedere dal contratto entro 30 giorni dal ricevimento dei prodotti, senza dover fornire alcuna motivazione.
         </p>
       </section>
 

@@ -1,0 +1,12 @@
+{
+  "landingsCreate": [],
+  "stats": {
+    "totalLandings": 0,
+    "lastCreated": null,
+    "byVendor": {
+      "lino": 0,
+      "mirko": 0,
+      "daniele": 0
+    }
+  }
+}
