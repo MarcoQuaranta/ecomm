@@ -68,24 +68,21 @@
     "15. TUTTI i testi devono essere grammaticalmente corretti in italiano. Linguaggio semplice e diretto NON significa scorretto. Evitare calchi da altre lingue, costruzioni innaturali o frasi che suonano tradotte. Esempio: NON 'niente appiccica' ma 'lo sporco non attacca'. NON 'zero problemi hai' ma 'non avrai nessun problema'. Ogni frase deve suonare naturale per un madrelingua italiano. Il tono è aggressivo e semplice, ma la grammatica deve essere SEMPRE corretta.",
     "",
     "=== NOTE AGGIUNTIVE (WORKFLOW) ===",
-    "16. Dopo aver raccolto i dati del prodotto (Fase 0), PRIMA di iniziare la Fase 1 (analisi + copy), chiedere SEMPRE all'utente: 'Hai note aggiuntive, preferenze o cose da tenere a mente per questa landing?' — e attendere la risposta prima di procedere.",
-    "",
-    "=== EMOJI (REGOLA FONDAMENTALE) ===",
-    "17. MAI usare emoji o emoticon nel content.json. Per i campi 'icon' (trustBadges, problems, package), usare NOMI di icone SVG (es: 'cash', 'truck', 'shield', 'box', 'leaf'). Il componente renderizza automaticamente icone SVG professionali in base al nome. Per i campi di testo (timerLabel, stockWarning, paymentBadge, reassurance, ecc), NON inserire nessuna emoji — il componente aggiunge automaticamente le icone SVG dove servono. Lista icone disponibili: cash, truck, return, back-pain, numbness, insomnia, box, leaf, droplet, shield, gift, lock, warning, timer, money, check, phone, pencil."
+    "16. Dopo aver raccolto i dati del prodotto (Fase 0), PRIMA di iniziare la Fase 1 (analisi + copy), chiedere SEMPRE all'utente: 'Hai note aggiuntive, preferenze o cose da tenere a mente per questa landing?' — e attendere la risposta prima di procedere."
   ],
 
   "seo": {
     "_note": "DINAMICO - Cambia per ogni prodotto. Title max 60 caratteri, description max 160 caratteri.",
-    "title": "NeckRelax Pro™ - Elimina il Dolore Cervicale in 10 Minuti",
-    "description": "Il massaggiatore EMS professionale che scioglie contratture e rigidità. Spedizione gratuita, pagamento alla consegna."
+    "title": "CloudRelief Topper™ - Dormi Senza Dolore dalla Prima Notte",
+    "description": "Il topper ortopedico con onde massaggianti che allinea la colonna e riduce il dolore. Spedizione gratuita, pagamento alla consegna."
   },
 
   "pricing": {
     "_note": "DINAMICO - FONTE UNICA DI VERITÀ PER TUTTI I PREZZI. Cambia per ogni prodotto e nazione. L'utente fornisce questi valori all'inizio della creazione. Tutti i prezzi visibili nella pagina si calcolano da qui.",
     "currency": "EUR",
     "currencySymbol": "€",
-    "originalPrice": 118.00,
-    "currentPrice": 59.00,
+    "originalPrice": 138.00,
+    "currentPrice": 69.00,
     "discountPercent": 50
   },
 
@@ -108,14 +105,14 @@
     "_instructions_title": "SOLUZIONE a un PROBLEMA. Il titolo deve dire al cliente cosa risolve il prodotto. Formato: frase principale + highlight (la parte wow in corsivo) + suffisso. DEVE essere grammaticalmente corretto: se title + highlight + suffix formano due frasi separate, usare punteggiatura (due punti, punto, ecc). Esempio corretto: 'Casa Pulita Ogni Giorno' + 'Senza Fare Nulla:' + 'Lui Aspira e Lava Mentre Tu Ti Rilassi'. Esempio corretto senza punteggiatura (unica frase): 'Elimina il Dolore Cervicale' + 'in 10 Minuti' + 'Senza Farmaci e Senza Fisioterapista'. Linguaggio emotivo, non tecnico.",
     "_instructions_subtitle": "Descrizione aggressiva ma rassicurante. Spiega COSA fa il prodotto in modo semplice e concreto. Deve dare fiducia. 1-2 frasi.",
     "_instructions_socialProof": "count: numero tra 10.000 e 30.000, MAI cifre tonde (es: 12.847, 23.519, 16.203). rating: valore random tra 4.7 e 4.9. DEVONO corrispondere ESATTAMENTE a reviews.totalCount e reviews.rating.",
-    "badge": "Tecnologia 2026",
-    "title": "Elimina il Dolore Cervicale",
-    "titleHighlight": "in 10 Minuti",
-    "titleSuffix": "Senza Farmaci e Senza Fisioterapista",
-    "subtitle": "Il primo massaggiatore con impulsi EMS che scioglie contratture, rigidità e tensione direttamente dal divano di casa. Semplice come indossare una sciarpa.",
+    "badge": "Novità 2026",
+    "title": "Tecnologia Ortopedica che",
+    "titleHighlight": "Elimina il Dolore",
+    "titleSuffix": "Mentre Dormi",
+    "subtitle": "Il topper ortopedico con onde massaggianti che allinea la colonna vertebrale e azzera i punti di pressione. Lo appoggi sul letto e il dolore sparisce.",
     "socialProof": {
-      "rating": "4.9/5",
-      "count": "12.847 clienti soddisfatti"
+      "rating": "4.8/5",
+      "count": "18.463 clienti soddisfatti"
     }
   },
 
@@ -123,13 +120,14 @@
     "_note": "DINAMICO - Le immagini sono in /images/[venditore]/[prodotto]/carosello/ con nomi progressivi (1.jpg, 2.png, ecc). Inserire TUTTE le immagini presenti nella cartella, IN ORDINE. La prima (1.*) va anche nel riepilogo ordine. discountTag si calcola da pricing.discountPercent.",
     "discountTag": "-50%",
     "slides": [
-      { "src": "/images/mirko/neckrelax/carosello/1.jpg", "alt": "Prodotto vista frontale" },
-      { "src": "/images/mirko/neckrelax/carosello/2.jpg", "alt": "Prodotto in uso" },
-      { "src": "/images/mirko/neckrelax/carosello/3.jpg", "alt": "Prodotto dettaglio" },
-      { "src": "/images/mirko/neckrelax/carosello/4.jpg", "alt": "Prodotto accessori" },
-      { "src": "/images/mirko/neckrelax/carosello/5.jpg", "alt": "Prodotto confezione" },
-      { "src": "/images/mirko/neckrelax/carosello/6.jpg", "alt": "Prodotto laterale" },
-      { "src": "/images/mirko/neckrelax/carosello/7.jpg", "alt": "Prodotto lifestyle" }
+      { "src": "/images/mirko/cloudrelief/carosello/1.png", "alt": "CloudRelief Topper vista frontale" },
+      { "src": "/images/mirko/cloudrelief/carosello/2.png", "alt": "CloudRelief Topper in uso" },
+      { "src": "/images/mirko/cloudrelief/carosello/3.png", "alt": "CloudRelief Topper dettaglio" },
+      { "src": "/images/mirko/cloudrelief/carosello/4.png", "alt": "CloudRelief Topper profilo ondulato" },
+      { "src": "/images/mirko/cloudrelief/carosello/5.png", "alt": "CloudRelief Topper strati interni" },
+      { "src": "/images/mirko/cloudrelief/carosello/6.png", "alt": "CloudRelief Topper sul letto" },
+      { "src": "/images/mirko/cloudrelief/carosello/7.png", "alt": "CloudRelief Topper confezione" },
+      { "src": "/images/mirko/cloudrelief/carosello/8.png", "alt": "CloudRelief Topper accessori" }
     ]
   },
 
@@ -137,11 +135,12 @@
     "_note": "DINAMICO - Numero variabile di bullet point. Devono riguardare SOLO le caratteristiche/benefici del prodotto. NON parlare di spedizione, consegna, pagamento, garanzia qui.",
     "_instructions": "Ogni bullet ha un TITOLO IN BOLD (incisivo, corto) e una DESCRIZIONE (1 riga, concreta). Devono puntare sugli ANGLE forniti dall'utente all'inizio. Se non viene detto quanti metterne: 5-6 di default. Se il prodotto ha molti angle fondamentali che devono esserci tutti: fino a 10. Valuta tu in base al prodotto. Linguaggio emotivo, non tecnico: traduci le specifiche in benefici concreti.",
     "items": [
-      { "title": "Sollievo in 10 minuti:", "description": "impulsi EMS penetrano nel muscolo e sciolgono la contrattura." },
-      { "title": "Zero farmaci:", "description": "niente antidolorifici. Azione naturale su collo, spalle e trapezio." },
-      { "title": "Calore terapeutico 42°C:", "description": "rilassa la muscolatura profonda come un impacco caldo." },
-      { "title": "Usalo ovunque:", "description": "wireless, leggero (180g). In ufficio, in auto, sul divano." },
-      { "title": "15 livelli di intensità:", "description": "delicato per i sensibili, intenso per i \"duri\"." }
+      { "title": "Colonna allineata tutta la notte:", "description": "il corpo si adagia nella posizione naturale, la schiena si decomprime mentre dormi." },
+      { "title": "Onde massaggianti:", "description": "il profilo ondulato stimola la microcircolazione. Basta formicolii e gambe gonfie al mattino." },
+      { "title": "Spalle e fianchi liberi:", "description": "7 cm di memory ad alta densità assorbono il peso senza affossamento." },
+      { "title": "Fresco anche d'estate:", "description": "ventilazione laterale 3D Mesh e profilo aperto. Zero sudorazione notturna." },
+      { "title": "Igiene totale:", "description": "rivestimento in Aloe Vera con cerniera. Lo sfili e lo lavi quando vuoi." },
+      { "title": "Stabile come una roccia:", "description": "fondo antiscivolo e 4 elastici rinforzati. Non si muove di un millimetro." }
     ]
   },
 
@@ -150,19 +149,17 @@
     "_note_dynamic": "productName, originalPriceLabel, discountLabel e offerItems sono DINAMICI. TUTTI i prezzi si calcolano da pricing (originalPrice, currentPrice, discountPercent). discountLabel: 'RISPARMI [originalPrice - currentPrice][currencySymbol] (-[discountPercent]%)'.",
     "_instructions_productName": "Nome prodotto con simbolo TM (trademark). Formato: 'NomeProdotto Pro™' o 'NomeProdotto™'. Usare sempre il nome esatto fornito dall'utente.",
     "_instructions_offerItems": "L'utente fornisce cosa include l'offerta all'inizio della creazione. Inserire tutti gli elementi. Usare badge 'REGALO' per gli accessori extra/bonus. L'ultima riga è sempre 'Garanzia 2 Anni + Assistenza Dedicata' senza badge.",
-    "productName": "NeckRelax Pro™",
+    "productName": "CloudRelief Topper™",
     "originalPriceLabel": "Prezzo di listino:",
-    "discountLabel": "RISPARMI 59€ (-50%)",
+    "discountLabel": "RISPARMI 69€ (-50%)",
     "shippingLabel": "Spedizione Rapida:",
     "shippingValue": "Gratis",
     "guaranteeLabel": "Garanzia 2 Anni",
     "offerToggleText": "Scopri cosa include l'offerta",
     "offerItems": [
-      { "text": "NeckRelax Pro™ — Massaggiatore EMS Professionale", "badge": null },
-      { "text": "Cavo di ricarica USB-C", "badge": null },
-      { "text": "Custodia da Viaggio Premium", "badge": null },
-      { "text": "Gel Conduttore EMS", "badge": "REGALO" },
-      { "text": "Guida 5 Esercizi Anti-Cervicale", "badge": "REGALO" },
+      { "text": "CloudRelief Topper™ — Topper Ortopedico con Onde Massaggianti", "badge": null },
+      { "text": "Rivestimento Aloe Vera con Cerniera (già applicato)", "badge": null },
+      { "text": "Coprimaterasso Impermeabile con Elastici", "badge": "REGALO" },
       { "text": "Garanzia 2 Anni + Assistenza Dedicata", "badge": null }
     ]
   },
@@ -186,17 +183,17 @@
   "problems": {
     "_note": "DINAMICO (contenuto) - Items e soluzione cambiano per ogni prodotto. MAI citare nazioni specifiche.",
     "_note_title": "STATICO - eyebrow 'Ti riconosci?' e title 'Questi problemi ti sono familiari?' non cambiano mai.",
-    "_instructions_items": "Individua i 3 problemi PIÙ COMUNI che il prodotto risolve (salvo istruzioni diverse dall'utente). Descrivili come asfissianti ma senza essere drammatici. Devono creare FAMILIARITÀ: problemi quotidiani che capitano a tutti senza il prodotto. Il cliente deve pensare 'sì, succede anche a me'. Formato: icon (nome icona SVG) + titleBold (problema in una frase) + text (conseguenza breve). Lunghezza simile all'esempio nel template.",
+    "_instructions_items": "Individua i 3 problemi PIÙ COMUNI che il prodotto risolve (salvo istruzioni diverse dall'utente). Descrivili come asfissianti ma senza essere drammatici. Devono creare FAMILIARITÀ: problemi quotidiani che capitano a tutti senza il prodotto. Il cliente deve pensare 'sì, succede anche a me'. Formato: emoji + titleBold (problema in una frase) + text (conseguenza breve). Lunghezza simile all'esempio nel template.",
     "_instructions_solution": "solutionTitle è STATICO: 'Esiste una soluzione migliore.' - solutionText è DINAMICO: descrizione brevissima ed emozionale dei punti chiave del prodotto. 1-2 frasi. Stile: 'Tecnologia usata dai professionisti direttamente a casa tua. Senza abbonamenti.' Conciso, d'impatto.",
     "eyebrow": "Ti riconosci?",
     "title": "Questi problemi ti sono familiari?",
     "items": [
-      { "icon": "stiffness", "titleBold": "Ti svegli con il collo bloccato", "text": "e la rigidità non passa fino a metà mattina." },
-      { "icon": "pain", "titleBold": "Dopo ore al computer senti una morsa", "text": "che parte dal collo e arriva alle spalle." },
-      { "icon": "fatigue", "titleBold": "Farmaci e pomate non bastano più", "text": "— il dolore torna sempre il giorno dopo." }
+      { "icon": "bone", "titleBold": "Ti svegli con la schiena a pezzi", "text": "e il dolore non passa fino a metà mattina." },
+      { "icon": "foot", "titleBold": "Formicolio a mani e gambe durante la notte", "text": "— ti svegli intorpidito e senza sensibilità." },
+      { "icon": "fatigue", "titleBold": "Ti giri e rigiri per ore senza trovare posizione", "text": "e la mattina sei più stanco di quando sei andato a letto." }
     ],
     "solutionTitle": "Esiste una soluzione migliore.",
-    "solutionText": "Tecnologia EMS professionale, direttamente a casa tua. Senza farmaci, senza appuntamenti."
+    "solutionText": "Supporto ortopedico professionale, direttamente sul tuo letto. Senza cambiare materasso, senza spendere una fortuna."
   },
 
   "features": {
@@ -205,39 +202,31 @@
     "_instructions_title": "Il title deve essere molto D'IMPATTO e SEMPLICE. Una frase corta che riassume il vantaggio principale del prodotto in modo emotivo. Esempi: 'Tecnologia professionale, semplicità casalinga.', 'Come avere un barbiere in casa.', 'Pulito perfetto senza muovere un dito.'",
     "_instructions_items": "Angle incisivi sul prodotto, basati su quelli forniti dall'utente. Linguaggio SEMPLICE, non troppo tecnico. Se servono info tecniche, solo cose che tutti conoscono (wattaggio, gradi, ecc). I titoli dei singoli blocchi devono essere aggressivi e immediati. Esempi: 'Come avere una domestica in casa', 'Dimentica aspirapolvere e mocho', 'Sollievo in 10 minuti senza farmaci'. Ogni blocco ha: image, tag (etichetta corta in caps), title (incisivo), description (1-2 righe, beneficio concreto).",
     "eyebrow": "Perché è diverso",
-    "title": "Tecnologia professionale, semplicità casalinga.",
+    "title": "3 Livelli Ortopedici che Lavorano Insieme",
     "items": [
       {
-        "image": "/images/mirko/neckrelax/feat_ems.jpg",
-        "imageAlt": "Impulsi EMS",
-        "tag": "SOLLIEVO IMMEDIATO",
+        "image": "/images/mirko/cloudrelief/angle/1.gif",
+        "imageAlt": "Decompressione spinale",
+        "tag": "LIVELLO 1",
         "tagColor": "green",
-        "title": "Impulsi EMS Professionali",
-        "description": "16 elettrodi in silicone medicale rilassano il muscolo dall'interno, fino a 5cm di profondità."
+        "title": "Decompressione Spinale",
+        "description": "Il materiale viscoelastico si adatta con precisione millimetrica al corpo, riempiendo gli spazi vuoti nella zona lombare. La colonna si distende e i dischi si reidratano durante la notte."
       },
       {
-        "image": "/images/mirko/neckrelax/feat_calore.jpg",
-        "imageAlt": "Calore 42°C",
-        "tag": "CALORE TERAPEUTICO",
+        "image": "/images/mirko/cloudrelief/angle/2.gif",
+        "imageAlt": "Profilo ondulato Wave",
+        "tag": "LIVELLO 2",
         "tagColor": "orange",
-        "title": "42°C di Calore Costante",
-        "description": "Si scalda in 30 secondi. Dilata i vasi, accelera il recupero e amplifica l'effetto EMS."
+        "title": "Profilo Ondulato \"Wave\"",
+        "description": "La finitura ondulata crea un micro-massaggio passivo ad ogni movimento. Stimola la microcircolazione capillare, riducendo gonfiori e ristagni di liquidi."
       },
       {
-        "image": "/images/mirko/neckrelax/feat_wireless.jpg",
-        "imageAlt": "Batteria Wireless",
-        "tag": "LIBERTÀ TOTALE",
-        "tagColor": "green",
-        "title": "Wireless · 30 Sessioni di Batteria",
-        "description": "Solo 180g, ricarica USB-C. Usalo in ufficio, in auto o sul divano. Silenzioso."
-      },
-      {
-        "image": "/images/mirko/neckrelax/feat_design.jpg",
-        "imageAlt": "Design Adattabile",
-        "tag": "ADATTABILITÀ",
+        "image": "/images/mirko/cloudrelief/angle/3.gif",
+        "imageAlt": "Zero punti di pressione",
+        "tag": "LIVELLO 3",
         "tagColor": "blue",
-        "title": "Si Adatta a Qualsiasi Collo",
-        "description": "Design flessibile con pad auto-posizionanti. 15 livelli d'intensità, 4 modalità."
+        "title": "Zero Punti di Pressione",
+        "description": "Distribuendo uniformemente il peso su 7 cm di spessore, elimina i picchi di pressione su fianchi e spalle. Fondamentale per chi soffre di dolori articolari e intorpidimento."
       }
     ]
   },
@@ -247,13 +236,13 @@
     "_note_title": "DINAMICO - eyebrow 'Semplicissimo' e title cambiano per ogni prodotto.",
     "_instructions": "Spiega l'utilizzo del prodotto in 3-4 passaggi. Deve essere SUPER SEMPLIFICATO: far sembrare l'uso del prodotto un gioco da ragazzi. Ogni step ha un titolo (1-2 parole, azione chiara) e una descrizione (1 riga, immediata). Il cliente deve pensare 'anche mia nonna ci riesce'. Esempio: '1. Accendilo - Un pulsante e parte. 2. Appoggialo - Si guida da solo. 3. Rilassati - Fa tutto lui.' Il title della sezione deve rafforzare la semplicità, tipo 'Come funziona? 3 gesti e via.' o '3 passi e hai finito.'",
     "eyebrow": "Semplicissimo",
-    "title": "Come funziona? 3 gesti e via.",
+    "title": "Si installa in 30 secondi. Senza attrezzi.",
     "image": "",
     "imageAlt": "Come funziona",
     "steps": [
-      { "title": "Indossalo", "description": "Appoggialo sul collo. I pad aderiscono da soli, zero fili." },
-      { "title": "Scegli il Programma", "description": "Un pulsante: leggero, medio o intenso + calore. 10 secondi." },
-      { "title": "Rilassati", "description": "In 10 minuti il muscolo si scioglie. Si spegne da solo." }
+      { "title": "Srotola", "description": "Apri la confezione sottovuoto e stendilo sul tuo materasso." },
+      { "title": "Aggancia", "description": "Fissa i 4 elastici rinforzati agli angoli. Fermo come una roccia." },
+      { "title": "Dormi", "description": "Coprilo col lenzuolo e goditi il primo sonno senza dolore." }
     ]
   },
 
@@ -270,17 +259,14 @@
     "eyebrow": "Specifiche",
     "title": "Caratteristiche Tecniche",
     "items": [
-      { "label": "Tecnologia", "value": "EMS (Stimolazione Elettrica Muscolare)" },
-      { "label": "Elettrodi", "value": "16 pad in silicone medicale" },
-      { "label": "Livelli di intensità", "value": "15 livelli regolabili" },
-      { "label": "Modalità", "value": "4 (rilassamento, recupero, intenso, notte)" },
-      { "label": "Calore terapeutico", "value": "42°C costanti, riscaldamento in 30s" },
-      { "label": "Batteria", "value": "Li-ion 1800mAh — circa 30 sessioni" },
-      { "label": "Ricarica", "value": "USB-C, carica completa in 2h" },
-      { "label": "Peso", "value": "180g" },
-      { "label": "Materiale", "value": "ABS + silicone medicale ipoallergenico" },
-      { "label": "Timer auto-spegnimento", "value": "15 minuti" },
-      { "label": "Certificazioni", "value": "CE · FCC · RoHS" }
+      { "label": "Struttura interna", "value": "Doppio strato Memory HD + HR ad alta densità" },
+      { "label": "Spessore totale", "value": "7 cm reali" },
+      { "label": "Profilo superficie", "value": "Ondulato massaggiante (Wave)" },
+      { "label": "Rivestimento", "value": "Aloe Vera con cerniera, sfoderabile e lavabile" },
+      { "label": "Ventilazione", "value": "Rete laterale 3D Mesh traspirante" },
+      { "label": "Fissaggio", "value": "Fondo antiscivolo + 4 elastici rinforzati" },
+      { "label": "Certificazioni", "value": "Antiacaro · Anallergico · Oeko-Tex" },
+      { "label": "Garanzia", "value": "2 anni ufficiale" }
     ]
   },
 
@@ -290,15 +276,15 @@
     "_instructions": "Angle principali del prodotto (non troppi, 4-6 righe) confrontati con la concorrenza. REGOLE: 1) NON troppo tecnico (niente '4000 vs 5000 ampere'). 2) NON auto-celebrativo esagerato (niente 'il nostro bello, il loro brutto'). 3) OBIETTIVO e PRATICO: vantaggi concreti. Esempio: 'Caldo e freddo' vs 'Solo freddo', 'Timer programmabile' vs 'Accensione manuale'. 4) La concorrenza deve essere EQUA: il concorrente più venduto su Amazon, oppure l'alternativa umana/professionale (es: nutrizionista, fisioterapista, barbiere). competitorColumn può essere: 'Fisioterapista / Farmaci', 'Prodotto concorrente migliore', 'Altri prodotti', 'Robot concorrenti su Amazon', ecc. 5) L'ultima riga è sempre il COSTO: nostro prezzo (da pricing) vs costo alternativa. 6) TESTI CORTI: devono stare nella tabella senza uscire fuori. Max 5-6 parole per cella.",
     "eyebrow": "Il Confronto",
     "title": "Quali vantaggi avrai rispetto alle alternative?",
-    "productColumn": "NeckRelax Pro™",
-    "competitorColumn": "Fisioterapista / Farmaci",
+    "productColumn": "CloudRelief Topper™",
+    "competitorColumn": "Materasso Nuovo / Fisioterapista",
     "rows": [
-      { "feature": "Sollievo dal dolore", "product": "✔ In 10 minuti, ogni giorno", "competitor": "Solo durante la seduta" },
-      { "feature": "Disponibilità", "product": "✔ 24/7 a casa tua", "competitor": "Solo su appuntamento" },
-      { "feature": "Tecnologia EMS", "product": "✔ Professionale (16 pad)", "competitor": "Solo in clinica" },
-      { "feature": "Calore terapeutico", "product": "✔ Integrato 42°C", "competitor": "Impacchi manuali" },
-      { "feature": "Effetti collaterali", "product": "✔ Zero", "competitor": "Stomaco, fegato (farmaci)" },
-      { "feature": "Costo totale", "product": "✔ Solo 59€ (una volta)", "competitor": "500-800€ / anno" }
+      { "feature": "Sollievo dal dolore", "product": "✔ Dalla prima notte", "competitor": "Dopo settimane / solo in seduta" },
+      { "feature": "Installazione", "product": "✔ 30 secondi, zero attrezzi", "competitor": "Consegna e montaggio" },
+      { "feature": "Effetto massaggiante", "product": "✔ Onde Wave integrate", "competitor": "Assente / solo manuale" },
+      { "feature": "Decompressione colonna", "product": "✔ Tutta la notte, ogni notte", "competitor": "Solo durante la seduta" },
+      { "feature": "Manutenzione", "product": "✔ Sfoderabile e lavabile", "competitor": "Non lavabile / appuntamenti" },
+      { "feature": "Costo totale", "product": "✔ Solo 69€ (una volta)", "competitor": "500-1500€" }
     ]
   },
 
@@ -309,17 +295,16 @@
     "eyebrow": "Tutto incluso",
     "title": "Cosa ricevi a casa tua",
     "items": [
-      { "icon": "box", "text": "NeckRelax Pro™ — Massaggiatore EMS", "value": "€118,00", "valueType": "price" },
-      { "icon": "cable", "text": "Cavo di ricarica USB-C", "value": "INCLUSO", "valueType": "included" },
-      { "icon": "gift", "text": "Guida ai 5 Esercizi Anti-Cervicale", "value": "REGALO", "valueType": "gift" },
-      { "icon": "droplet", "text": "Gel Conduttore EMS (migliora l'effetto)", "value": "REGALO", "valueType": "gift" },
-      { "icon": "shield", "text": "Custodia da Viaggio Premium", "value": "REGALO", "valueType": "gift" }
+      { "icon": "box", "text": "CloudRelief Topper™ — Topper Ortopedico con Onde Massaggianti", "value": "€138,00", "valueType": "price" },
+      { "icon": "leaf", "text": "Rivestimento Aloe Vera con Cerniera (già applicato)", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "droplet", "text": "Coprimaterasso Impermeabile con Elastici", "value": "REGALO", "valueType": "gift" },
+      { "icon": "shield", "text": "Garanzia 2 Anni + Assistenza Dedicata", "value": "INCLUSO", "valueType": "included" }
     ],
     "totalOriginalLabel": "Prezzo di Listino:",
     "totalOriginalValue": "€197,00",
     "totalCurrentLabel": "Oggi paghi solo:",
-    "totalCurrentValue": "€59,00",
-    "totalSave": "Risparmi €138,00 · Spedizione GRATUITA",
+    "totalCurrentValue": "€69,00",
+    "totalSave": "Risparmi €128,00 · Spedizione GRATUITA",
     "ctaText": "ORDINA ORA"
   },
 
@@ -339,91 +324,91 @@
     ],
     "eyebrow": "Cosa dicono di Noi",
     "title": "Recensioni Verificate",
-    "rating": "4.9",
-    "totalCount": "12.847 recensioni",
+    "rating": "4.8",
+    "totalCount": "18.463 recensioni",
     "verifiedNote": "✓ Le recensioni vengono verificate da un team neutrale esterno a questo sito web.",
     "showMoreText": "Mostra altre recensioni",
     "leaveReviewText": "Lascia una recensione",
     "items": [
       {
-        "initials": "FS",
-        "name": "Federica Santoro",
-        "stars": 5,
-        "text": "Lo uso da una settimana e il collo sta già molto meglio, prima non riuscivo neanche a girarmi la mattina. L'ho fatto provare anche a mio marito che lavora in magazzino e dice che non può più farne a meno. Arrivato in due giorni, pagato al corriere senza problemi.",
-        "verified": true,
-        "sellerReply": "Federica, siamo contenti che stia funzionando per tutta la famiglia! Il fatto che suo marito lo usi dopo il lavoro in magazzino è esattamente l'uso per cui è stato progettato. Per qualsiasi necessità siamo qui."
-      },
-      {
         "initials": "GT",
-        "name": "Giuseppe Tarantino",
+        "name": "Giuseppina Tarantino",
         "stars": 5,
-        "text": "lavoro al computer 8 ore al giorno e la sera avevo sempre il collo a pezzi. dalla prima sera ho sentito la differenza. lo uso 15 minuti mentre guardo la tv e il giorno dopo sto molto meglio. consigliatissimo",
+        "text": "Soffro di mal di schiena da anni e il fisioterapista mi diceva di cambiare materasso. Ho provato questo topper e dalla prima notte ho sentito la differenza. Mi sveglio senza quel dolore lombare che mi bloccava. Arrivato in due giorni, pagato al corriere.",
         "verified": true,
-        "sellerReply": "Giuseppe, ci fa piacere! L'uso serale è il momento perfetto per rilassare la muscolatura dopo una giornata di lavoro. Grazie per la fiducia."
+        "sellerReply": "Giuseppina, siamo felicissimi che abbia trovato sollievo fin dalla prima notte! Il supporto lombare è uno dei punti forti del prodotto. Per qualsiasi necessità siamo qui."
       },
       {
-        "initials": "LM",
-        "name": "Lucia Marchetti",
+        "initials": "AM",
+        "name": "Antonio Moretti",
         "stars": 5,
-        "text": "L'ho comprato per mia madre di 72 anni che ha la cervicale da una vita. È riuscita a usarlo da sola senza aiuto, facilissimo. Mi ha chiamato il giorno dopo dicendo che ha dormito come non dormiva da mesi.",
+        "text": "lavoro in cantiere e la sera la schiena era distrutta. mia moglie ha visto la pubblicità e lo ha ordinato. devo ammettere che dormo molto meglio, mi sveglio meno rigido e il materasso vecchio sembra nuovo. ottimo acquisto",
         "verified": true,
-        "sellerReply": "Lucia, che bella notizia! È progettato proprio per essere usato anche dalle persone meno esperte. Un saluto alla mamma!"
+        "sellerReply": "Antonio, chi fa lavori fisici è chi ne beneficia di più! Siamo contenti che anche la moglie sia soddisfatta della scelta. Grazie per la fiducia."
       },
       {
-        "initials": "RF",
-        "name": "Roberto Ferretti",
+        "initials": "MC",
+        "name": "Maria Caputo",
+        "stars": 5,
+        "text": "L'ho preso per mio padre di 75 anni che si lamentava sempre della schiena al mattino. Lo ha messo da solo sul letto in un minuto, facilissimo. Dopo una settimana mi ha detto che dorme molto meglio e non si sveglia più con le mani addormentate.",
+        "verified": true,
+        "sellerReply": "Maria, ci fa molto piacere! È progettato per essere semplice anche per le persone meno pratiche. Un saluto al papà!"
+      },
+      {
+        "initials": "LS",
+        "name": "Lorenzo Silvestri",
         "stars": 4,
-        "text": "funziona bene lo ammetto, il calore si sente subito e dà sollievo. per ora metto 4 stelle perché voglio provarlo ancora un paio di settimane prima di dare il massimo ma le premesse sono ottime",
+        "text": "è arrivato sottovuoto, ci ha messo circa un giorno a gonfiarsi del tutto. le prime notti bene, sento che la schiena si appoggia meglio. per ora metto 4 stelle perché voglio provarlo ancora un po prima di giudicare ma la sensazione è positiva",
         "verified": true,
-        "sellerReply": "Roberto, apprezziamo la sua onestà! Siamo sicuri che con l'uso continuato noterà risultati ancora migliori. Ci aggiorni tra qualche settimana, saremo felici di leggere il suo feedback."
+        "sellerReply": "Lorenzo, apprezziamo la sua onestà! È normale che serva 24-48h per il volume pieno. Siamo sicuri che con l'uso continuato noterà risultati ancora migliori. Ci aggiorni!"
       },
       {
-        "initials": "VP",
-        "name": "Valentina Proietti",
+        "initials": "PN",
+        "name": "Patrizia Nardella",
         "stars": 5,
-        "text": "Ero molto scettica su queste cose ma una collega me lo ha consigliato e mi ha cambiato le serate. Prima prendevo sempre la tachipirina adesso la uso molto meno. Il calore è spettacolare.",
+        "text": "Avevo il materasso pieno di buche e mi faceva malissimo la schiena. Non volevo spendere 800 euro per uno nuovo. Con questo topper ho risolto, sembra di dormire su un letto completamente diverso. Il profilo ondulato si sente davvero.",
         "verified": true,
-        "sellerReply": "Valentina, siamo felici che abbia trovato un'alternativa naturale. Il passaparola è il nostro miglior complimento. Grazie!"
+        "sellerReply": "Patrizia, trasformare il vecchio materasso senza spendere una fortuna è esattamente il nostro obiettivo. Felici che si trovi bene!"
       },
       {
-        "initials": "MS",
-        "name": "Marco Sabatini",
+        "initials": "DP",
+        "name": "Davide Palmieri",
         "stars": 5,
-        "text": "guido il camion tutto il giorno e il collo era un disastro. lo uso anche in pausa pranzo perché è wireless, nessun filo. il dolore è diminuito tanto in una settimana, lo porto sempre con me",
+        "text": "spedizione velocissima, arrivato il giorno dopo. lo uso da due settimane e il dolore alle spalle che avevo ogni mattina è praticamente sparito. dormivo di lato e mi svegliavo sempre con la spalla dolorante, adesso non più. lo consiglio",
         "verified": true,
         "sellerReply": null
       },
       {
-        "initials": "AC",
-        "name": "Angela Caputo",
+        "initials": "RF",
+        "name": "Rosa Ferretti",
         "stars": 5,
-        "text": "ordinato lunedì arrivato mercoledì. pagato al corriere e basta, nessun costo nascosto. lo uso la sera prima di dormire e la differenza si sente. anche mia figlia me ne ha chiesto uno",
+        "text": "Ho problemi di circolazione alle gambe e mi svegliavo sempre con i piedi gonfi. Da quando uso questo topper la situazione è migliorata parecchio. Il materiale non fa sudare neanche d'estate, cosa che temevo.",
         "verified": true,
-        "sellerReply": "Angela, trasparenza totale sui costi è la nostra priorità. Felici che si trovi bene, per la figlia può usare lo stesso link!"
+        "sellerReply": "Rosa, il profilo ondulato è studiato proprio per favorire la microcircolazione. Contenti che stia notando miglioramenti concreti!"
       },
       {
-        "initials": "PN",
-        "name": "Paolo Nardella",
+        "initials": "SC",
+        "name": "Salvatore Cataldo",
         "stars": 5,
-        "text": "Come farmacista vedo troppa gente che abusa di antidolorifici per il collo. Questo è un'alternativa seria, l'ho consigliato a diversi clienti e tutti sono soddisfatti. La tecnologia EMS funziona.",
+        "text": "sono un fisioterapista e conosco bene i problemi della colonna. questo topper fa quello che promette, il supporto lombare è serio e il doppio strato si sente. l'ho consigliato a diversi pazienti che non volevano cambiare materasso",
         "verified": true,
-        "sellerReply": "Paolo, la conferma di un professionista sanitario è il miglior riconoscimento. Grazie per la fiducia e per i consigli ai suoi clienti!"
+        "sellerReply": "Salvatore, la conferma di un professionista del settore è il riconoscimento più importante. Grazie per averlo consigliato ai suoi pazienti!"
       },
       {
-        "initials": "SR",
-        "name": "Simona Rinaldi",
+        "initials": "EC",
+        "name": "Elena Corradi",
         "stars": 5,
-        "text": "spedizione velocissima e prodotto ottimo. non pensavo funzionasse così bene per 59 euro, ho speso molto di più in pomate e fisioterapista senza risultati così. lo consiglio a tutti",
+        "text": "ordinato venerdì arrivato lunedì. pagato al corriere senza problemi, nessun costo extra. dopo tre notti posso dire che la differenza si sente, mi sveglio molto meno rigida. anche il coprimaterasso in regalo è di buona qualità",
         "verified": true,
-        "sellerReply": "Simona, è proprio quello che vogliamo sentire! Un prodotto professionale ad un prezzo accessibile. Grazie per la recensione."
+        "sellerReply": "Elena, trasparenza totale sui costi è la nostra priorità. Felici che apprezzi anche il coprimaterasso in omaggio!"
       },
       {
-        "initials": "DC",
-        "name": "Davide Catalano",
+        "initials": "FG",
+        "name": "Franco Gentile",
         "stars": 5,
-        "text": "Lo uso dopo l'allenamento per il recupero muscolare. L'EMS è la stessa tecnologia che usano in palestra ma costa dieci volte meno. La batteria dura tantissimo, lo ricarico una volta a settimana.",
+        "text": "Ho 68 anni e la notte era diventata un incubo, non trovavo mai la posizione giusta e mi svegliavo tre o quattro volte. Con questo topper dormo tutta la notte senza svegliarmi. Il materiale si adatta al corpo ed è comodissimo.",
         "verified": true,
-        "sellerReply": "Davide, quando un sportivo conferma la qualità della tecnologia EMS, per noi è il complimento più bello. Grazie!"
+        "sellerReply": "Franco, dormire tutta la notte senza interruzioni è fondamentale alla sua età. Siamo davvero contenti che abbia ritrovato il riposo. Grazie!"
       }
     ]
   },
@@ -455,12 +440,12 @@
     "stockWarning": "Solo <strong>8 pezzi</strong> rimasti a questo prezzo",
     "summaryTitle": "Riepilogo Ordine",
     "summaryLines": [
-      { "label": "NeckRelax Pro™ + Accessori", "value": "€59,00", "type": "normal" },
+      { "label": "CloudRelief Topper™ + Accessori", "value": "€69,00", "type": "normal" },
       { "label": "Spedizione rapida 24/48h", "value": "GRATIS", "type": "free" },
       { "label": "Spese di Contrassegno", "value": "GRATIS", "type": "free" }
     ],
     "totalLabel": "TOTALE",
-    "totalValue": "€59,00",
+    "totalValue": "€69,00",
     "fields": {
       "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
       "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
@@ -489,8 +474,8 @@
 
   "stickyCta": {
     "_note": "SEMI-STATICO - buttonText e buttonSubtext sono STATICI. I prezzi sono DINAMICI: oldPrice = pricing.originalPrice, newPrice = pricing.currentPrice.",
-    "oldPrice": "€118",
-    "newPrice": "€59",
+    "oldPrice": "€138",
+    "newPrice": "€69",
     "buttonText": "ORDINA ORA",
     "buttonSubtext": "Paga Alla Consegna"
   },
@@ -499,7 +484,7 @@
     "_note": "Compilato nella FASE 4. conversionValue = pricing.currentPrice, conversionCurrency = pricing.currency.",
     "googleAdsId": "",
     "conversionLabel": "",
-    "conversionValue": 59.00,
+    "conversionValue": 69.00,
     "conversionCurrency": "EUR",
     "facebookPixelId": "",
     "network": {

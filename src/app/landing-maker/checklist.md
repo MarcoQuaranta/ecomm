@@ -113,7 +113,53 @@ Prima di considerare completata una landing, verifica tutti i seguenti punti:
 - [ ] Dettaglio per nazione con prezzi e valori conversione
 - [ ] Lista cartelle create
 - [ ] Check finale positivo
-- [ ] Storico.json aggiornato
+
+---
+
+## VALIDAZIONE FINALE (dopo Fase 4)
+
+### Formato ID
+- [ ] googleAdsId formato AW-XXXXXXXXX (AW- + numeri)
+- [ ] conversionLabel non vuoto, alfanumerico
+- [ ] facebookPixelId non vuoto, solo numeri
+- [ ] network.apiEndpoint URL valido (https://)
+- [ ] network.offerId non vuoto
+
+### Coerenza tracking
+- [ ] conversionValue == pricing.currentPrice (ogni nazione)
+- [ ] conversionCurrency == pricing.currency (ogni nazione)
+- [ ] googleAdsId uguale in tutte le nazioni
+- [ ] conversionLabel uguale in tutte le nazioni
+- [ ] facebookPixelId uguale in tutte le nazioni
+
+### Coerenza prezzi
+- [ ] Prezzi coerenti ovunque (priceBox, comparison, package, orderForm, stickyCta)
+- [ ] Nessun prezzo hardcodato diverso da pricing
+- [ ] discountPercent coerente con originalPrice e currentPrice
+
+### Coerenza social proof
+- [ ] hero.socialProof.count == reviews.totalCount
+- [ ] hero.socialProof.rating == reviews.rating
+
+### Qualità contenuto
+- [ ] Nessun placeholder rimasto ([nome], TODO, XXX, Lorem)
+- [ ] Nessun riferimento a nazioni specifiche
+- [ ] Nessun nome di brand/negozio terzo
+- [ ] Nessun testo in lingua sbagliata nelle traduzioni
+- [ ] Nomi/città recensioni adattati alla nazione
+- [ ] Nome prodotto NON tradotto
+- [ ] Accenti corretti (no apostrofi al posto di accenti)
+- [ ] Nessun tag HTML nelle recensioni
+
+### Struttura file
+- [ ] Ogni cartella: page.tsx + content.json + ty/page.tsx
+- [ ] page.tsx e ty/page.tsx identici tra cartelle
+- [ ] Cartella immagini esiste
+- [ ] Path immagini nel JSON puntano a file esistenti
+- [ ] JSON valido (nessun errore parsing)
+
+### Risultato
+- [ ] Validazione superata (zero errori)
 
 ---
 

@@ -7,63 +7,82 @@ Quando l'utente dice "vai in landing-maker", devi eseguire questo processo.
 IMPORTANTE: Ogni fase richiede l'approvazione dell'utente prima di procedere
 alla successiva. NON passare alla fase successiva senza OK esplicito.
 
+REGOLA FONDAMENTALE: Ogni landing e' composta da 3 file. NON creare MAI
+solo il content.json. Crea SEMPRE tutti e 3 i file insieme:
+  1. page.tsx       (importa il template del venditore + content.json)
+  2. content.json   (copy, prezzi, immagini, tracking)
+  3. ty/page.tsx    (importa il template TY del venditore + content.json)
+
 ================================================================================
 FASE 0 - RACCOLTA DATI PRODOTTO
 ================================================================================
 
 Chiedi all'utente:
 
-1. "Qual e' il nome del prodotto?" (sara' uguale per tutti i media buyer)
+1. "Per quale venditore devo creare la landing?" (es: Mirko, Lino, Daniele)
+   NOTA: ogni venditore ha il suo template dedicato. Se il template non esiste
+   ancora, avvisa l'utente e chiedi come procedere.
+   Template disponibili:
+   - Mirko: LandingTemplateMirko + TyTemplateMirko (landing-mirko.css)
+   - (altri template verranno aggiunti qui man mano)
 
-2. "Qual e' l'angle principale? (es: risparmio, comodita', salute, innovazione...)"
+2. "Qual e' il nome del prodotto?"
 
-3. "Inserisci i dati aggiuntivi sul prodotto (link, info, specifiche, tutto quello
+3. "Qual e' l'angle principale? (es: risparmio, comodita', salute, innovazione...)"
+
+4. "Inserisci i dati aggiuntivi sul prodotto (link, info, specifiche, tutto quello
    che hai):"
 
-Dopo aver raccolto le info, procedi direttamente alla Fase 1.
+5. "Hai note aggiuntive, preferenze o cose da tenere a mente per questa landing?"
+
+Dopo aver raccolto TUTTE le info (incluse le note aggiuntive), procedi alla Fase 1.
 
 --> ATTENDI OK UTENTE
 
 ================================================================================
-FASE 1 - ANALISI DATI + CREAZIONE COPY (ITALIANO)
+FASE 1 - ANALISI DATI + CREAZIONE LANDING ITALIANA
 ================================================================================
 
 Leggi il file: fase1-analisi-copy.txt
 
 Il tuo compito:
-1. Analizza i dati ricevuti dall'utente
-2. Identifica i punti di forza migliori del prodotto
-3. Struttura il copy persuasivo
-4. Inserisci tutto nel content.json in ITALIANO
+1. Leggi template-json.json per la struttura (regole STATIC/DYNAMIC)
+2. Analizza i dati ricevuti dall'utente
+3. Crea il content.json rispettando le sezioni STATIC/DYNAMIC
+4. Crea page.tsx (importa il template del venditore)
+5. Crea ty/page.tsx (importa il template TY del venditore)
+6. Crea le cartelle immagini (vuote)
 
-Output: content.json compilato con tutti i copy in italiano.
+Output: 3 file creati + cartella immagini. Landing subito visibile nel browser.
 
---> MOSTRA IL COPY CREATO
+--> MOSTRA IL COPY CREATO (sezioni DYNAMIC)
+--> COMUNICA L'URL PER VEDERE LA LANDING
 --> CHIEDI: "Copy completato. Vuoi modifiche o approvi?"
 --> ATTENDI OK UTENTE (o applica modifiche richieste)
 
 ================================================================================
-FASE 2 - CREAZIONE CARTELLE (PER OGNI MEDIA BUYER)
+FASE 2 - CARTELLE PER ALTRI MEDIA BUYER (opzionale)
 ================================================================================
 
 Leggi il file: fase2-creazione-cartelle.txt
 
-Per ogni media buyer, crea la struttura completa:
+Se ci sono altri media buyer oltre a quello della Fase 1, crea le landing
+adattando il copy allo stile di ciascun venditore. Se il venditore e' uno
+solo, SALTA questa fase.
 
-src/app/[mediabuyer]/[prodotto]/[prodotto]-ita/
-  ├── page.tsx          <-- statico, sempre uguale
-  ├── content.json      <-- copy, colori, link immagini
-  └── ty/
-      └── page.tsx      <-- thank you page
-
-public/images/[prodotto]/   <-- immagini condivise per tutte le nazioni
+Per ogni media buyer aggiuntivo, crea TUTTI E 3 i file + cartella immagini.
 
 ESECUZIONE PARALLELA: Lancia un agente per ogni media buyer.
-Ogni agente adatta il copy allo stile del venditore.
 
 --> MOSTRA RIEPILOGO CARTELLE CREATE
 --> CHIEDI: "Cartelle create. Controllale e dimmi cosa modificare."
---> ATTENDI OK UTENTE
+--> ATTENDI OK UTENTE (prima approvazione)
+
+Dopo approvazione dell'utente:
+1. PUSH SU GITHUB (chiedi su quale account pushare, segui le regole in CLAUDE.md)
+2. CHIEDI: "Push fatto. Ora attendo l'approvazione del media buyer. Dimmi quando ha approvato."
+3. ATTENDI SECONDA APPROVAZIONE (dal media buyer, tramite l'utente)
+4. Solo dopo la seconda conferma, procedi alla Fase 3.
 
 ================================================================================
 FASE 3 - TRADUZIONI
@@ -71,20 +90,20 @@ FASE 3 - TRADUZIONI
 
 Leggi il file: fase3-traduzioni.txt
 
-Questa fase si attiva SOLO dopo approvazione della Fase 2.
+Questa fase si attiva SOLO dopo approvazione della Fase 2 (o Fase 1 se c'e'
+un solo venditore).
 
 1. Chiedi: "In quali nazioni vuoi tradurre?"
 2. Chiedi: "Qual e' il prezzo di vendita per ogni nazione?" (valuta locale)
-3. Per ogni nazione:
-   - Copia page.tsx statico (identico, non tradurre)
-   - Traduci content.json
-   - Traduci ty/page.tsx
+3. Per ogni nazione, crea TUTTI E 3 i file:
+   - page.tsx: COPIATO identico dalla versione italiana
+   - content.json: TRADOTTO nella lingua target
+   - ty/page.tsx: COPIATO identico dalla versione italiana
    - Adatta nomi/citta' testimonianze al paese
    - Inserisci prezzo e valuta locale
-   - Il valore di conversione = prezzo locale del prodotto
 
 Struttura risultante:
-src/app/[mediabuyer]/[prodotto]/
+src/app/[venditore]/[prodotto]/
   ├── [prodotto]-ita/      <-- originale
   ├── [prodotto]-pl/       <-- traduzione polacca
   ├── [prodotto]-hu/       <-- traduzione ungherese
@@ -123,9 +142,9 @@ RIEPILOGO FLUSSO
 ================================================================================
 
 FASE 0 (raccolta dati prodotto)           -->  OK utente  -->
-FASE 1 (analisi + copy italiano)           -->  OK utente  -->
-FASE 2 (cartelle per media buyer)          -->  OK utente  -->
-FASE 3 (traduzioni per nazione + prezzi)   -->  OK utente  -->
-FASE 4 (tracciamento Google/Meta/network)  -->  report finale
+FASE 1 (analisi + landing italiana)       -->  OK utente  -->
+FASE 2 (cartelle altri media buyer)       -->  OK utente  -->  PUSH GITHUB  -->  OK media buyer  -->
+FASE 3 (traduzioni per nazione + prezzi)  -->  OK utente  -->
+FASE 4 (tracciamento Google/Meta/network) -->  validazione  -->  report finale
 
 ================================================================================

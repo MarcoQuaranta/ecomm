@@ -2,112 +2,193 @@
                     FASE 1 - ANALISI DATI + CREAZIONE COPY (ITALIANO)
 ================================================================================
 
-OBIETTIVO: Analizzare i dati del prodotto forniti dall'utente, identificare
-i punti di forza migliori e creare il copy persuasivo in italiano.
-Il copy va inserito direttamente nella struttura del content.json.
+OBIETTIVO: Analizzare i dati del prodotto, creare il copy persuasivo in italiano
+e generare TUTTI i file della landing (content.json + page.tsx + ty/page.tsx)
+in modo che sia subito visibile nel browser.
 
 ================================================================================
-INPUT
+RIFERIMENTI OBBLIGATORI
 ================================================================================
 
-Dall'utente ricevi:
-- Nome prodotto
-- Angle principale
-- Dati aggiuntivi (link, specifiche, info varie, ricerche, ecc.)
+PRIMA di creare qualsiasi contenuto, LEGGI SEMPRE:
+
+1. template-json.json (nella cartella landing-maker)
+   --> Struttura JSON completa con _note e _instructions per ogni sezione
+   --> Contiene le regole STATIC / DYNAMIC / SEMI-STATIC
+   --> E' il MODELLO DA SEGUIRE, non inventare strutture diverse
+
+2. riferimento[venditore]/ (nella cartella landing-maker)
+   --> Contiene il template React (LandingTemplate[Venditore].tsx)
+   --> Contiene il template TY (TyTemplate[Venditore].tsx)
+   --> Il page.tsx e ty/page.tsx devono importare QUESTI componenti
+
+TEMPLATE DISPONIBILI:
+- Mirko: LandingTemplateMirko + TyTemplateMirko (in riferimentomirko/)
+- (altri verranno aggiunti qui)
+
+ATTENZIONE - COMPONENTI TEMPLATE:
+I file in riferimento[venditore]/ sono la COPIA DI RIFERIMENTO dei componenti
+che stanno in src/components/. NON modificare mai i componenti template
+(LandingTemplate*.tsx, TyTemplate*.tsx) durante la creazione di una landing.
+Se trovi un bug nel componente, correggilo SIA in src/components/ SIA nella
+copia in riferimento[venditore]/. Ogni sezione del content.json che il
+componente utilizza DEVE avere una variabile dichiarata nel componente
+(es: const pricing = content?.pricing). Se aggiungi una nuova sezione al JSON,
+verifica che il componente la estragga correttamente.
 
 ================================================================================
-STEP 1 - ANALISI
+REGOLE FONDAMENTALI DEL CONTENT.JSON
+================================================================================
+
+### SEZIONI STATIC (NON TOCCARE MAI)
+Queste sezioni vanno COPIATE IDENTICHE dal template-json.json:
+- topBar
+- urgencyBanner
+- cta (tutti i campi)
+- trustBadges
+- faq (domande e risposte)
+- reviewPopup
+- ty (title, subtitle, message)
+- Titoli fissi: problems.eyebrow, problems.title, features.eyebrow,
+  comparison.eyebrow, comparison.title, package.eyebrow
+
+### SEZIONI SEMI-STATIC (modificare SOLO i valori indicati)
+- midCta: cambiare SOLO la percentuale di sconto
+- stickyCta: cambiare SOLO i prezzi (derivati da pricing)
+- orderForm: cambiare SOLO productName e prezzi (derivati da pricing)
+
+### SEZIONI DYNAMIC (da generare per il prodotto)
+- seo (title, description)
+- pricing (originalPrice, currentPrice, discountPercent, currency, currencySymbol)
+- hero (title, highlightedText, subtitle, socialProof)
+- gallery (slides con path immagini)
+- benefits (6 benefici - SOLO sul prodotto, MAI spedizione/pagamento/garanzia)
+- priceBox (productName, tagline, discountLabel, originalPrice, currentPrice, features)
+- problems.items (3 problemi)
+- features.items (3-4 feature con immagini/GIF angle)
+- howItWorks (3 step)
+- specs.items (specifiche tecniche)
+- comparison.rows (righe confronto)
+- package.items (cosa include il pacco)
+- reviews (10 recensioni: 9x5 stelle + 1x4 stelle, seller reply su 9/10)
+
+### REGOLA EMOJI / ICONE (FONDAMENTALE)
+- MAI usare emoji o emoticon nel content.json. ZERO emoji, in NESSUN campo.
+- Per i campi "icon" (trustBadges, problems, package), usare NOMI di icone SVG
+  (es: "cash", "truck", "shield", "box", "leaf", "back-pain", "insomnia").
+  Il componente renderizza automaticamente icone SVG professionali.
+- Per i campi di testo (timerLabel, stockWarning, paymentBadge, reassurance, ecc),
+  NON inserire nessuna emoji. Il componente aggiunge le icone SVG dove servono.
+- Icone disponibili: cash, truck, return, bone, foot, fatigue, box,
+  leaf, droplet, shield, gift, lock, warning, timer, money, check, phone, pencil,
+  stiffness, pain, cable.
+- Se serve un'icona non in lista, usare quella piu' simile o chiedere all'utente.
+
+### REGOLE PREZZI
+- TUTTI i prezzi nel JSON derivano da pricing.originalPrice e pricing.currentPrice
+- MAI hardcodare prezzi diversi in altre sezioni
+- Il formato e': "69 Euro" (numero + simbolo dalla sezione pricing)
+
+### REGOLE RECENSIONI
+- 10 totali: 9 da 5 stelle, 1 da 4 stelle
+- Seller reply su 9 recensioni su 10
+- Tono informale, colloquiale, realistico
+- NO tag HTML nel testo
+- NO riferimenti a nazioni specifiche
+- Nomi e citta' italiane (per la versione ITA)
+
+### REGOLE SOCIAL PROOF
+- hero.socialProof.count DEVE corrispondere a reviews.totalCount
+- hero.socialProof.rating DEVE corrispondere a reviews.rating
+
+================================================================================
+STEP 1 - ANALISI (INTERNA)
 ================================================================================
 
 Analizza i dati ricevuti e identifica:
 
-1. PUNTI DI FORZA DEL PRODOTTO
-   - Quali sono i benefici principali?
-   - Cosa lo rende diverso/migliore dei competitor?
-   - Quale problema risolve?
+1. PUNTI DI FORZA - Benefici principali, cosa lo rende diverso
+2. TARGET - A chi si rivolge, pain points, desideri
+3. OBIEZIONI - Perche' non comprerebbero, come anticiparle
+4. ANGLE - Usa quello fornito dall'utente + 2-3 secondari
 
-2. TARGET
-   - A chi si rivolge?
-   - Quali sono i pain point del target?
-   - Cosa desidera il target?
-
-3. OBIEZIONI
-   - Perche' il cliente potrebbe NON comprare?
-   - Come le anticipiamo e le distruggiamo?
-
-4. ANGLE DI VENDITA
-   - Usa l'angle fornito dall'utente come base
-   - Identifica 2-3 angle secondari di supporto
-
-NON creare file separati di ricerca. L'analisi e' interna al tuo processo
-e serve solo per informare la creazione del copy.
+NON creare file separati. L'analisi e' solo interna al tuo processo.
 
 ================================================================================
-STEP 2 - CREAZIONE COPY
+STEP 2 - CREAZIONE CONTENT.JSON
 ================================================================================
 
-Usando l'analisi fatta, genera i seguenti elementi:
+1. Parti dal template-json.json come base
+2. COPIA tutte le sezioni STATIC senza modifiche
+3. GENERA le sezioni DYNAMIC con il copy del prodotto
+4. AGGIORNA le sezioni SEMI-STATIC (solo i valori permessi)
+5. Rimuovi tutti i campi _note e _instructions dal JSON finale
+6. Verifica che il JSON sia valido
 
-### HEADLINE
-- 2-3 varianti incisive (max 10 parole)
-- Devono contenere il beneficio principale
-- Creare curiosita' o urgenza
+STILE COPY (per versione italiana):
+- Marketing aggressivo, semplice, emozionale
+- Target boomer-friendly
+- Grammatica italiana corretta (accenti, non apostrofi)
+- Mai menzionare nazioni specifiche
 
-### SUBHEADLINE
-- 1-2 varianti che espandono la promessa dell'headline
+================================================================================
+STEP 3 - CREAZIONE FILE LANDING
+================================================================================
 
-### BENEFICI
-- 5-8 benefici con titolo + descrizione
-- Trasforma le feature in benefici emotivi
-- Usa numeri specifici quando possibile
+IMPORTANTE: Ogni landing DEVE avere SEMPRE 3 file. Non creare MAI solo il JSON.
 
-### FEATURES
-- 5-6 caratteristiche con icona check
+Per il venditore specificato in Fase 0, crea:
 
-### TESTIMONIANZE
-- 5 recensioni realistiche
-- Nome italiano, citta' italiana
-- Problema iniziale -> risultato ottenuto
-- Tono colloquiale e autentico
+src/app/[venditore]/[prodotto]/[prodotto]-ita/
+  ├── page.tsx          <-- importa il template del venditore + content.json
+  ├── content.json      <-- il copy generato
+  └── ty/
+      └── page.tsx      <-- importa il template TY del venditore + content.json
 
-### FAQ
-- 5-8 domande frequenti con risposte
-- Includi sempre: pagamento alla consegna, consegna, reso, garanzia
-- Le risposte devono rassicurare e spingere all'azione
+### PAGE.TSX (per Mirko):
+```tsx
+import LandingTemplateMirko from '@/components/LandingTemplateMirko';
+import content from './content.json';
 
-### CTA (Call to Action)
-- 2 varianti di testo bottone (es: "ORDINA ORA" + "APPROFITTA DELL'OFFERTA")
+export default function Page() {
+  return <LandingTemplateMirko content={content} />;
+}
+```
 
-### URGENZA/SCARSITA'
-- Testo stock limitato
-- Testo offerta in scadenza
-- Testo "venduti oggi"
+### TY/PAGE.TSX (per Mirko):
+```tsx
+import TyTemplateMirko from '@/components/TyTemplateMirko';
+import content from '../content.json';
 
-### GARANZIA
-- Titolo garanzia
-- Descrizione garanzia
+export default function TyPage() {
+  return <TyTemplateMirko content={content} />;
+}
+```
 
-### TESTI FORM
-- Titolo form
-- Sottotitolo form
-- Label e placeholder per: nome, telefono, indirizzo
-- Testo bottone submit
-- Testo privacy
+Per altri venditori, sostituisci il nome del componente:
+- Lino: LandingTemplateLino / TyTemplateLino
+- Daniele: LandingTemplateDaniele / TyTemplateDaniele
 
-### TESTI STATICI DELLA PAGINA
-- Qualsiasi testo che appare sulla pagina DEVE essere nel JSON
-- NESSUN testo hardcodato nel componente
-- Includi: label spedizione, label pagamento, badge verificato, ecc.
+### CARTELLA IMMAGINI:
+Crea anche le cartelle per le immagini (vuote, l'utente le riempira'):
+
+public/images/[venditore]/[prodotto]/
+  ├── carosello/    <-- foto prodotto: 1.webp, 2.webp, ecc.
+  └── angle/        <-- foto feature: 1.webp, 2.webp, 3.webp, 4.webp
 
 ================================================================================
 OUTPUT
 ================================================================================
 
-Presenta all'utente il copy organizzato per sezione.
-Una volta approvato, questo copy sara' inserito nel content.json
-nella Fase 2.
+Dopo aver creato i file:
 
-NON creare file intermedi (niente ricerca.md o copy.md).
-L'output e' direttamente il copy pronto per il JSON.
+1. Mostra all'utente il copy organizzato per sezione (le parti DYNAMIC)
+2. Comunica gli URL per vedere la landing:
+   - Landing: http://localhost:3000/[venditore]/[prodotto]/[prodotto]-ita
+   - Thank You: http://localhost:3000/[venditore]/[prodotto]/[prodotto]-ita/ty
+3. Ricorda che servono le immagini nelle cartelle
+4. Chiedi: "Copy completato. Vuoi modifiche o approvi?"
+
+--> ATTENDI OK UTENTE (o applica modifiche richieste)
 
 ================================================================================

@@ -120,6 +120,76 @@ Lista completa di tutte le cartelle con path.
 --> CHIEDI CONFERMA FINALE ALL'UTENTE
 
 ================================================================================
+STEP 5 - VALIDAZIONE COMPLETA
+================================================================================
+
+Dopo il report e PRIMA della conferma finale, esegui TUTTI questi controlli
+su OGNI content.json (tutte le nazioni, tutti i media buyer).
+Se trovi errori, ELENCALI TUTTI e chiedi all'utente come procedere.
+
+### TRACKING - FORMATO ID
+
+[ ] googleAdsId rispetta il formato AW- seguito da numeri (es: AW-123456789)
+[ ] conversionLabel non vuoto, solo lettere e numeri (es: AbC1dEf2gHi)
+[ ] facebookPixelId non vuoto, solo numeri (es: 1234567890123456)
+[ ] network.apiEndpoint e' un URL valido (inizia con https://)
+[ ] network.offerId non vuoto
+
+### TRACKING - COERENZA VALORI
+
+[ ] conversionValue == pricing.currentPrice (per ogni nazione)
+[ ] conversionCurrency == pricing.currency (per ogni nazione)
+[ ] googleAdsId UGUALE in tutte le nazioni (stessa conversion action)
+[ ] conversionLabel UGUALE in tutte le nazioni
+[ ] facebookPixelId UGUALE in tutte le nazioni
+
+### PREZZI - COERENZA GLOBALE
+
+[ ] pricing.currentPrice usato ovunque (priceBox, comparison, package, orderForm, stickyCta)
+[ ] pricing.originalPrice usato ovunque (priceBox, package, stickyCta)
+[ ] pricing.discountPercent coerente con originalPrice e currentPrice
+[ ] Nessun prezzo hardcodato diverso da pricing
+[ ] Simbolo valuta corretto per la nazione
+
+### SOCIAL PROOF - COERENZA
+
+[ ] hero.socialProof.count == reviews.totalCount (stesso numero)
+[ ] hero.socialProof.rating == reviews.rating
+
+### CONTENUTO - QUALITA'
+
+[ ] Nessun placeholder rimasto ([nome], TODO, XXX, PLACEHOLDER, Lorem, ecc)
+[ ] Nessun riferimento a nazioni specifiche (Italia, Poland, ecc)
+[ ] Nessun nome di brand/negozio terzo (Amazon, Decathlon, ecc)
+[ ] Nessun testo in lingua sbagliata (es: italiano rimasto nelle traduzioni)
+[ ] Nomi e citta' nelle recensioni adattati alla nazione
+[ ] Nome prodotto NON tradotto (uguale in tutte le nazioni)
+[ ] Caratteri accentati corretti (e', a', u' → è, à, ù)
+[ ] Nessun tag HTML nelle recensioni (<strong>, <em>, ecc)
+
+### STRUTTURA FILE
+
+[ ] Ogni cartella ha: page.tsx + content.json + ty/page.tsx
+[ ] page.tsx identici in tutte le cartelle (stesso contenuto)
+[ ] ty/page.tsx identici in tutte le cartelle
+[ ] Cartella immagini esiste in public/images/[venditore]/[prodotto]/
+[ ] Tutti i path immagini nel JSON puntano a file esistenti
+[ ] JSON valido (nessun errore di parsing)
+
+### RISULTATO VALIDAZIONE
+
+Mostra il risultato cosi':
+
+✅ CHECK SUPERATO (se tutto ok)
+oppure
+❌ ERRORI TROVATI:
+  - [lista errori con file e riga]
+
+--> MOSTRA RISULTATO VALIDAZIONE
+--> SE CI SONO ERRORI: correggi e ri-valida
+--> SE TUTTO OK: CHIEDI CONFERMA FINALE ALL'UTENTE
+
+================================================================================
 DOPO CONFERMA
 ================================================================================
 
@@ -129,5 +199,6 @@ Aggiorna storico.json con:
 - Media buyer coinvolti
 - Nazioni tradotte
 - Tracking inserito (si/no)
+- Validazione superata (si/no)
 
 ================================================================================

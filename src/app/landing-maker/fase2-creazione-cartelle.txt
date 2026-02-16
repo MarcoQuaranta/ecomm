@@ -1,104 +1,72 @@
 ================================================================================
-                    FASE 2 - CREAZIONE CARTELLE (PER MEDIA BUYER)
+                    FASE 2 - CREAZIONE CARTELLE (PER ALTRI MEDIA BUYER)
 ================================================================================
 
-OBIETTIVO: Creare la struttura completa delle cartelle per ogni media buyer,
-con page.tsx statico, content.json dinamico e thank you page.
+PREREQUISITI:
+- La landing italiana del venditore principale e' gia' stata creata in Fase 1
+- Il copy e' stato approvato dall'utente
+
+OBIETTIVO: Creare le landing per gli ALTRI media buyer, adattando il copy
+allo stile di ciascun venditore. Se il venditore e' uno solo, questa fase
+si salta.
 
 ================================================================================
-STRUTTURA CARTELLE DA CREARE
+STRUTTURA PER OGNI MEDIA BUYER
 ================================================================================
 
-Per ogni media buyer, crea:
+OGNI landing ha SEMPRE 3 file + cartella immagini. MAI creare solo il JSON.
 
-src/app/[mediabuyer]/[prodotto]/
-  └── [prodotto]-ita/
-      ├── page.tsx              <-- STATICO, sempre identico
-      ├── content.json          <-- DINAMICO: copy, colori, immagini, tracking
-      └── ty/
-          └── page.tsx          <-- thank you page
+src/app/[venditore]/[prodotto]/[prodotto]-ita/
+  ├── page.tsx          <-- STATICO, importa il template del venditore
+  ├── content.json      <-- copy adattato allo stile del venditore
+  └── ty/
+      └── page.tsx      <-- STATICO, importa il template TY del venditore
 
-public/images/[prodotto]/       <-- immagini condivise per tutte le nazioni
+public/images/[venditore]/[prodotto]/
+  ├── carosello/
+  └── angle/
 
-ESEMPIO per prodotto "airwave", media buyer "lino", "mirko", "daniele":
-
-src/app/lino/airwave/airwave-ita/
-  ├── page.tsx
-  ├── content.json
-  └── ty/page.tsx
-
-src/app/mirko/airwave/airwave-ita/
-  ├── page.tsx
-  ├── content.json
-  └── ty/page.tsx
-
-src/app/daniele/airwave/airwave-ita/
-  ├── page.tsx
-  ├── content.json
-  └── ty/page.tsx
-
-public/images/airwave/
+NOTA: Le immagini sono separate per venditore (path diversi nel JSON).
 
 ================================================================================
-PAGE.TSX (STATICO)
+PAGE.TSX - TEMPLATE PER VENDITORE
 ================================================================================
 
-Il page.tsx e' SEMPRE lo stesso per tutte le landing, tutti i media buyer,
-tutte le nazioni. Non contiene NESSUN testo. Importa il componente
-LandingTemplate e gli passa il content.json.
+Il page.tsx cambia SOLO il nome del componente importato, in base al venditore.
 
+### MIRKO:
 ```tsx
-import { LandingTemplate } from '@/components/LandingTemplate';
+import LandingTemplateMirko from '@/components/LandingTemplateMirko';
 import content from './content.json';
 
-export const metadata = { title: content.seo.title, description: content.seo.description };
-
 export default function Page() {
-  return <LandingTemplate content={content} />;
+  return <LandingTemplateMirko content={content} />;
 }
 ```
 
-NOTA: Il LandingTemplate sara' creato separatamente. Per ora, crea il
-page.tsx con questa struttura.
+### TY/PAGE.TSX per MIRKO:
+```tsx
+import TyTemplateMirko from '@/components/TyTemplateMirko';
+import content from '../content.json';
 
-================================================================================
-CONTENT.JSON (DINAMICO)
-================================================================================
-
-Il content.json contiene TUTTO: copy, colori, immagini, tracking, prezzi.
-NESSUN testo visibile deve essere hardcodato nel componente.
-
-Usa il copy approvato nella Fase 1 e inseriscilo nella struttura JSON.
-Consulta template-json.json per la struttura base.
-
-Campi chiave:
-- Tutto il copy (headline, benefits, FAQ, testimonials, ecc.)
-- Path immagini (puntano a /images/[prodotto]/)
-- Prezzi e valuta
-- Dati SEO
-- Tracking (vuoto per ora, sara' compilato nella Fase 4)
-
-================================================================================
-TY/PAGE.TSX (THANK YOU PAGE)
-================================================================================
-
-La thank you page mostra il messaggio di conferma ordine.
-Anche qui, i testi vengono dal content.json (sezione "ty").
-
-Nel content.json aggiungi:
-{
-  "ty": {
-    "title": "Ordine Confermato!",
-    "message": "Grazie per il tuo ordine. Riceverai una chiamata di conferma.",
-    "subtitle": "Il tuo ordine e' in fase di elaborazione"
-  }
+export default function TyPage() {
+  return <TyTemplateMirko content={content} />;
 }
+```
+
+Per altri venditori, sostituisci il componente:
+- Lino: LandingTemplateLino / TyTemplateLino
+- Daniele: LandingTemplateDaniele / TyTemplateDaniele
+
+SE il template di un venditore non esiste ancora, AVVISA l'utente e chiedi
+come procedere (non usare il template di un altro venditore).
 
 ================================================================================
-ADATTAMENTO PER MEDIA BUYER
+ADATTAMENTO COPY PER MEDIA BUYER
 ================================================================================
 
-Ogni media buyer ha uno stile diverso. Adatta il copy del content.json:
+Le sezioni STATIC restano IDENTICHE per tutti i venditori.
+Le sezioni DYNAMIC vengono adattate allo stile del venditore.
 
 LINO:
 - Tone of voice: Diretto, professionale, tecnico
@@ -115,44 +83,44 @@ DANIELE:
 - Focus: Soluzione problemi, educazione, fiducia
 - CTA style: Logico, basato su prove, garanzia forte
 
-Il page.tsx resta IDENTICO. Cambia SOLO il content.json.
+Il page.tsx e ty/page.tsx restano IDENTICI per tutti (cambiano solo in base
+al template del venditore). Cambia SOLO il content.json.
 
 ================================================================================
 ESECUZIONE
 ================================================================================
 
-Lancia un agente per ogni media buyer in parallelo.
+Lancia un agente per ogni media buyer aggiuntivo, in parallelo.
 Ogni agente:
-1. Crea la cartella [prodotto]-ita/
-2. Copia il page.tsx statico
-3. Crea il content.json con copy adattato allo stile del venditore
-4. Crea ty/page.tsx
-5. Verifica: nessun placeholder, JSON valido, tutti i campi presenti
-
-================================================================================
-IMMAGINI
-================================================================================
-
-Crea la cartella public/images/[prodotto]/ se non esiste.
-Le immagini sono condivise per tutte le nazioni e tutti i media buyer.
-I path nel content.json puntano a: /images/[prodotto]/[nomeimmagine]
-
-Nomi file standard:
-- img_princ.png (immagine principale)
-- carosello_1.jpg, carosello_2.jpg, ecc.
-- Eventuali altre immagini specifiche del prodotto
+1. Crea la cartella [prodotto]-ita/ per il venditore
+2. Scrive page.tsx con l'import del template corretto
+3. Scrive ty/page.tsx con l'import del template TY corretto
+4. Crea content.json adattato allo stile del venditore
+5. Crea la cartella immagini (vuota)
+6. Verifica: JSON valido, nessun placeholder, tutti i campi presenti
 
 ================================================================================
 CHECKLIST PRE-COMPLETAMENTO
 ================================================================================
 
-[ ] Cartella creata per ogni media buyer
-[ ] page.tsx statico presente in ogni cartella
-[ ] content.json compilato con copy adattato al venditore
-[ ] ty/page.tsx presente in ogni cartella
-[ ] Path immagini corretti
+Per OGNI media buyer verificare:
+[ ] Cartella [prodotto]-ita/ creata
+[ ] page.tsx presente e importa il template CORRETTO del venditore
+[ ] content.json compilato con copy adattato allo stile del venditore
+[ ] ty/page.tsx presente e importa il template TY CORRETTO del venditore
+[ ] Cartella public/images/[venditore]/[prodotto]/ creata
 [ ] Nessun placeholder rimasto
 [ ] JSON valido
-[ ] Cartella public/images/[prodotto]/ creata
+[ ] Sezioni STATIC identiche al template
+
+================================================================================
+DOPO APPROVAZIONE
+================================================================================
+
+1. Mostra riepilogo cartelle create
+2. Chiedi approvazione utente
+3. Dopo OK: push su GitHub (segui regole CLAUDE.md per scelta account)
+4. Dopo push: attendi approvazione del media buyer (tramite l'utente)
+5. Solo dopo seconda conferma, procedi a Fase 3
 
 ================================================================================

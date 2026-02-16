@@ -51,43 +51,58 @@ src/app/lino/airwave/
 STEP 3 - COSA TRADURRE
 ================================================================================
 
+### REGOLA FONDAMENTALE:
+Si traducono SOLO i testi visibili a schermo e gli attributi leggibili dai
+motori di ricerca (alt delle immagini, SEO title/description).
+NON si traduce codice, struttura, link o configurazioni.
+
 ### TRADURRE:
 
-1. CONTENT.JSON - tutti i testi visibili:
+1. CONTENT.JSON - SOLO i testi visibili a schermo:
    - Headline, subheadline
    - Benefici (titolo + descrizione)
-   - Features
+   - Features (titoli + descrizioni)
    - FAQ (domande + risposte)
    - Testi urgenza/scarsita'
    - Garanzia (titolo + descrizione)
-   - Form (titolo, sottotitolo, label, placeholder, bottone, privacy)
-   - CTA
+   - Form (titolo, sottotitolo, label, placeholder, bottone, note)
+   - CTA (testi pulsanti, sottotesti)
    - Badge e label vari
    - SEO (title, description)
-   - Sezione TY (title, message, subtitle)
+   - Sezione TY (title, subtitle, message)
+   - Alt delle immagini (attributo "alt" nei slides e features)
 
 2. TESTIMONIANZE - tradurre + adattare:
-   - Traduci il testo della recensione
-   - CAMBIA il nome con un nome tipico del paese target
-   - CAMBIA la citta' con una citta' reale del paese target
+   - Traduci il testo della recensione nella lingua target
+   - CAMBIA il nome con un nome TIPICO del paese target (vedi lista sotto)
+   - CAMBIA le iniziali (initials) per corrispondere al nuovo nome
+   - CAMBIA la citta' con una citta' REALE del paese target
+   - Traduci anche le risposte del venditore (sellerReply)
+   - NON tradurre il nome del prodotto dentro le recensioni
 
 3. PREZZI E VALUTA:
    - Usa i prezzi forniti dall'utente per quella nazione
-   - Aggiorna valuta e simbolo
-   - Aggiorna tutti i riferimenti ai prezzi nel testo
+   - Aggiorna pricing.currency, pricing.currencySymbol, pricing.originalPrice, pricing.currentPrice
+   - Ricalcola pricing.discountPercent se necessario
+   - Aggiorna TUTTI i testi che contengono prezzi (priceBox.discountLabel, comparison, package, orderForm, stickyCta, midCta)
    - Il valore di conversione (tracking.conversionValue) = prezzo scontato locale
+   - tracking.conversionCurrency = valuta locale
 
 4. TY/PAGE.TSX:
-   - Traduci i testi visibili della thank you page
+   - Traduci SOLO i testi visibili della thank you page
+   - NON toccare il codice, import, componenti, logica
 
-### NON TRADURRE:
+### NON TRADURRE (MAI):
 
-1. PAGE.TSX - copialo identico, non toccarlo
-2. NOME PRODOTTO - resta uguale in tutte le lingue
-3. CODICE - variabili, funzioni, import, classi CSS, event handlers
-4. URL E PATH - link immagini, URL API, path pagine
-5. DATI TECNICI - ID tracking, chiavi API, configurazioni
-6. STRUTTURA JSON - le chiavi del JSON restano in inglese
+1. PAGE.TSX - copialo IDENTICO dalla versione italiana, NON TOCCARLO
+2. NOME PRODOTTO - resta UGUALE in tutte le lingue (es: "QuickChef Pro™" resta cosi')
+3. MARCHI E TRADEMARK - simboli ™, ®, nomi brand restano invariati
+4. CODICE - variabili, funzioni, import, classi CSS, event handlers, componenti React
+5. LINK IMMAGINI - tutti i path /images/ restano IDENTICI (le immagini sono condivise)
+6. URL E PATH - link API, endpoint network, path pagine
+7. DATI TECNICI - ID tracking, chiavi API, pixel ID, conversion label, configurazioni
+8. STRUTTURA JSON - le chiavi del JSON restano in inglese (mai tradurre "title", "description", "items" ecc)
+9. CAMPI _note E _instructions - sono commenti per l'AI, restano in italiano
 
 ================================================================================
 STEP 4 - ADATTAMENTI CULTURALI
