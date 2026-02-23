@@ -1,0 +1,426 @@
+{
+  "seo": {
+    "title": "ChefStation™ - Stazione di Cucina 5 in 1",
+    "description": "Friggitrice ad aria, forno capiente, piastra cottura, caffè e tisane in un solo apparecchio. Libera il piano cucina. Spedizione gratuita."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 158.00,
+    "currentPrice": 79.00,
+    "discountPercent": 50
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Attenzione: Forte richiesta —",
+    "highlight": "Ultimi 8 pezzi disponibili",
+    "suffix": "a questo prezzo"
+  },
+
+  "hero": {
+    "badge": "Novità 2026",
+    "title": "Cucina Completa",
+    "titleHighlight": "in Metà Spazio:",
+    "titleSuffix": "Friggitrice ad Aria, Forno, Piastra, Caffè e Tisane",
+    "subtitle": "La stazione 5-in-1 che <strong>sostituisce 5 elettrodomestici</strong>. Cucina più cose insieme in <strong>45 cm di spazio</strong>.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.743 recensioni verificate"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/chefstation/carosello/1.webp", "alt": "ChefStation vista frontale" },
+      { "src": "/images/mirko/chefstation/carosello/2.webp", "alt": "ChefStation in uso" },
+      { "src": "/images/mirko/chefstation/carosello/3.webp", "alt": "ChefStation forno aperto" },
+      { "src": "/images/mirko/chefstation/carosello/4.webp", "alt": "ChefStation Friggitrice ad Aria" },
+      { "src": "/images/mirko/chefstation/carosello/5.webp", "alt": "ChefStation caffè e tisane" },
+      { "src": "/images/mirko/chefstation/carosello/6.webp", "alt": "ChefStation accessori inclusi" },
+      { "src": "/images/mirko/chefstation/carosello/7.webp", "alt": "ChefStation dettaglio" },
+      { "src": "/images/mirko/chefstation/carosello/8.webp", "alt": "ChefStation confezione" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Frittura ad aria croccante:", "description": "patatine, nuggets e molto altro, croccantissimi con poco olio." },
+      { "title": "Forno 12L doppio livello:", "description": "cuoci più cose nel forno contemporaneamente mentre usi anche la piastra." },
+      { "title": "Piastra antiaderente:", "description": "la smonti in un click, una sciacquata e riparti." },
+      { "title": "Caffè e tisane:", "description": "scalda acqua per le tisane e ha un filtro integrato per preparare il caffè, tutto in un lampo." },
+      { "title": "Pezzi removibili:", "description": "teglie, griglie e piastra si lavano anche in lavastoviglie." },
+      { "title": "Portabile:", "description": "perfetta per vacanze, camper, cucina piccola." },
+      { "title": "Timer + autospegnimento:", "description": "imposti e si spegne da sola." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "ChefStation™",
+    "shippingLabel": "Spedizione rapida:",
+    "shippingValue": "GRATIS",
+    "guaranteeLabel": "Garanzia 2 Anni",
+    "offerToggleText": "Scopri cosa include l'offerta",
+    "offerItems": [
+      { "text": "ChefStation™ — Stazione di Cucina 5 in 1", "badge": null },
+      { "text": "Cestello Frittura ad Aria", "badge": null },
+      { "text": "Crisp Tray Microforato", "badge": null },
+      { "text": "2 Griglie + 2 Teglie Inox", "badge": null },
+      { "text": "Infusore Tisane in Acciaio Inox", "badge": "REGALO" },
+      { "text": "Mini Guanti in Silicone", "badge": "REGALO" },
+      { "text": "Garanzia 2 Anni + Assistenza Dedicata", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ORDINA ORA",
+    "mainSubtext": "Paghi Alla Consegna",
+    "subNote": ""
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Pagamento alla Consegna", "color": "green" },
+      { "icon": "truck", "text": "Spedizione 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Giorni di Reso", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Il problema",
+    "title": "Gli elettrodomestici economici ti deludono?",
+    "items": [
+      { "icon": "box", "titleBold": "Piano cucina <strong>pieno di apparecchi</strong> che occupano tutto lo spazio", "text": "" },
+      { "icon": "timer", "titleBold": "Friggitrice ad aria <strong>troppo piccola</strong> per cucinare per la famiglia", "text": "" },
+      { "icon": "money", "titleBold": "Pentole e teglie da <strong>lavare ogni volta</strong>, montagne di roba", "text": "" },
+      { "icon": "money", "titleBold": "Comprare 5 apparecchi separati costa <strong>300-500€</strong>", "text": "" }
+    ],
+    "solutionTitle": "Con ChefStation™ è diverso.",
+    "solutionText": "5 funzioni in un solo apparecchio. Cuoci, friggi, prepara caffè — e pulisci in un minuto."
+  },
+
+  "features": {
+    "eyebrow": "Perché è diverso",
+    "title": "Un'intera cucina professionale nello spazio di un fornetto.",
+    "image": "/images/mirko/chefstation/features.gif",
+    "imageAlt": "ChefStation in azione",
+    "items": [
+      {
+        "image": "/images/mirko/chefstation/angle/1.webp",
+        "imageAlt": "Frittura ad Aria 360°",
+        "tag": "FRITTURA AD ARIA 360°",
+        "tagColor": "green",
+        "title": "Croccante Fuori, Zero Olio Dentro",
+        "description": "Ventola ad aria calda che circola a 360°. Patatine, pollo, verdure: <strong>croccanti in metà tempo</strong>, con pochissimo olio. Stesso risultato della frittura, senza l'odore."
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/2.webp",
+        "imageAlt": "Forno Doppio Livello",
+        "tag": "FORNO CAPIENTE",
+        "tagColor": "orange",
+        "title": "Multilivello: Cuoci Più Cose Insieme",
+        "description": "12 litri di spazio con <strong>multilivello</strong>. Contorno sopra, pane sotto. Il tutto mentre usi la piastra e fai il caffè. <strong>Statico o ventilato</strong>, scegli tu."
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/3.webp",
+        "imageAlt": "Piastra Antiaderente",
+        "tag": "ZERO PENTOLE",
+        "tagColor": "blue",
+        "title": "Piastra Antiaderente, Niente Pentole",
+        "description": "Scaldi, cuoci, abbrustolisci — direttamente sulla piastra. <strong>Rivestimento antiaderente</strong>: lo smonti, lo sciacqui e riparti. <strong>Piastra, teglie e caffettiera lavabili in lavastoviglie.</strong>"
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/4.webp",
+        "imageAlt": "Caffè e Tisane",
+        "tag": "CAFFÈ E TISANE",
+        "tagColor": "green",
+        "title": "Caffè Filtro e Tisane, Sempre Pronti",
+        "description": "Caffettiera a filtro integrata + infusore in acciaio inox per tisane. <strong>Zero bollitori</strong>, zero apparecchi extra. La mattina il caffè, la sera la tisana."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Semplicissimo",
+    "title": "Accendi, scegli la funzione, cucina.",
+    "image": "",
+    "imageAlt": "Come funziona",
+    "steps": [
+      { "title": "Scegli la Funzione", "description": "Gira la manopola: Friggitrice ad aria, Forno, Grill, Piastra o Caffè e tisane." },
+      { "title": "Imposta e Via", "description": "Temperatura e timer si regolano in un secondo. Non bruci niente." },
+      { "title": "Mangia e Sciacqua", "description": "Parti removibili. Una passata e il piano è libero." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ORDINA ORA CON IL 50% DI SCONTO",
+    "subtext": "Pagamento Contanti alla Consegna"
+  },
+
+  "specs": {
+    "eyebrow": "Specifiche",
+    "title": "Caratteristiche Tecniche",
+    "items": [
+      { "label": "Potenza", "value": "1250W" },
+      { "label": "Funzioni", "value": "Friggitrice ad aria, Forno, Grill, Piastra, Caffè" },
+      { "label": "Capacità forno", "value": "12L doppio livello" },
+      { "label": "Temperatura", "value": "80-230°C" },
+      { "label": "Dimensioni", "value": "45 × 26 × 28 cm" },
+      { "label": "Certificazioni", "value": "CE · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Il Confronto",
+    "title": "Quali vantaggi avrai rispetto alle alternative?",
+    "featureColumn": "Caratteristica",
+    "winnerBadge": "VINCITORE",
+    "productColumn": "ChefStation™",
+    "competitorColumn": "5 Apparecchi Separati",
+    "rows": [
+      { "feature": "Spazio occupato", "product": "✔ Un solo apparecchio, 45cm", "competitor": "5 apparecchi sul piano" },
+      { "feature": "Funzioni", "product": "✔ Friggitrice + Forno + Piastra + Caffè", "competitor": "Devi comprare tutto separato" },
+      { "feature": "Pulizia", "product": "✔ Parti removibili, una sciacquata", "competitor": "Pentole, teglie, filtri da lavare" },
+      { "feature": "Portabilità", "product": "✔ La porti in vacanza", "competitor": "Impossibile portare tutto" },
+      { "feature": "Semplicità", "product": "✔ Una manopola, zero complicazioni", "competitor": "5 manuali diversi" },
+      { "feature": "Costo totale", "product": "✔ Solo 79€ (una volta)", "competitor": "300-500€ per tutti" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Tutto incluso",
+    "title": "Cosa ricevi a casa tua",
+    "items": [
+      { "icon": "box", "text": "ChefStation™ — Stazione 5 in 1", "value": "€158,00", "valueType": "price" },
+      { "icon": "check", "text": "Cestello frittura ad aria + Crisp Tray", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "check", "text": "2 griglie + 2 teglie inox", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "gift", "text": "Infusore tisane + mini guanti silicone", "value": "REGALO", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Prezzo di Listino:",
+    "totalOriginalValue": "€239,00",
+    "totalCurrentLabel": "Oggi paghi solo:",
+    "totalCurrentValue": "€79,00",
+    "totalSave": "Risparmi €160,00 · Spedizione GRATUITA",
+    "ctaText": "ORDINA ORA"
+  },
+
+  "reviews": {
+    "eyebrow": "Cosa dicono di Noi",
+    "title": "Recensioni Verificate",
+    "rating": "4.8",
+    "totalCount": "18.743 recensioni",
+    "verifiedNote": "✓ Le recensioni vengono verificate da un team neutrale esterno a questo sito web.",
+    "showMoreText": "Mostra altre recensioni",
+    "leaveReviewText": "Lascia una recensione",
+    "verifiedBadge": "Acquisto verificato",
+    "sellerReplyLabel": "Risposta del venditore:",
+    "items": [
+      {
+        "initials": "CB",
+        "name": "Carla Benedetti",
+        "stars": 5,
+        "text": "Ho una cucina piccolissima e non avevo più spazio per niente. Questa stazione mi ha risolto il problema: faccio tutto con un solo apparecchio. Il caffè al mattino, la friggitrice ad aria per cena... sono contentissima. Arrivata in due giorni, pagata al corriere.",
+        "verified": true,
+        "sellerReply": "Carla, siamo contenti che abbia risolto il problema dello spazio! La combinazione caffè + friggitrice ad aria è quella preferita dai nostri clienti. Grazie!"
+      },
+      {
+        "initials": "MF",
+        "name": "Massimo Ferraro",
+        "stars": 5,
+        "text": "la friggitrice ad aria funziona davvero bene, le patatine vengono croccanti come fritte ma con una goccia d'olio. la uso quasi tutti i giorni. anche il forno è capiente per quello che è, ci ho fatto una teglia di verdure senza problemi",
+        "verified": true,
+        "sellerReply": "Massimo, la friggitrice ad aria è la funzione più apprezzata! Provi anche il grill per tostare il pane, resterà sorpreso. Grazie per la recensione."
+      },
+      {
+        "initials": "AG",
+        "name": "Antonella Grasso",
+        "stars": 5,
+        "text": "Comprata per la casa al mare dove non abbiamo una cucina vera. La portiamo in macchina, pesa poco e ci facciamo tutto: dalla colazione alla cena. Il caffè filtro è ottimo e la piastra scalda in fretta. Super soddisfatta.",
+        "verified": true,
+        "sellerReply": "Antonella, l'uso in casa vacanze è esattamente uno degli scenari per cui è stata progettata! Buone vacanze e buon appetito."
+      },
+      {
+        "initials": "LP",
+        "name": "Luca Parente",
+        "stars": 4,
+        "text": "devo dire che sono rimasto colpito dalla qualità per il prezzo. la friggitrice ad aria funziona, il forno scalda bene, il caffè è buono. metto 4 stelle per ora perché la uso da poco e voglio testarla ancora un po prima di dare il massimo",
+        "verified": true,
+        "sellerReply": "Luca, apprezziamo l'onestà! Siamo sicuri che con l'uso continuato apprezzerà ancora di più tutte le funzioni. Ci aggiorni!"
+      },
+      {
+        "initials": "SM",
+        "name": "Stefania Morelli",
+        "stars": 5,
+        "text": "Ho eliminato la friggitrice ad aria, il tostapane e il bollitore. Adesso ho il piano cucina libero e faccio le stesse cose con un apparecchio solo. La pulizia è facilissima, le parti si staccano e si lavano in un minuto.",
+        "verified": true,
+        "sellerReply": "Stefania, liberare il piano cucina è la soddisfazione più grande! Grazie per aver condiviso la sua esperienza."
+      },
+      {
+        "initials": "DR",
+        "name": "Daniele Ruggio",
+        "stars": 5,
+        "text": "la uso principalmente per il caffè filtro la mattina e la friggitrice ad aria la sera. due funzioni che da sole valgono il prezzo. spedizione velocissima e pagata al corriere senza problemi",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "PC",
+        "name": "Paola Crivelli",
+        "stars": 5,
+        "text": "Facilissima da usare, mio marito che non cucina mai ha imparato in cinque minuti. Le manopole sono intuitive e il timer con autospegnimento è una sicurezza in più. Ordinata lunedì, arrivata mercoledì.",
+        "verified": true,
+        "sellerReply": "Paola, la semplicità d'uso è una delle cose su cui abbiamo lavorato di più! Contenti che anche suo marito si trovi bene."
+      },
+      {
+        "initials": "AM",
+        "name": "Andrea Montini",
+        "stars": 5,
+        "text": "la uso nel camper e devo dire che è perfetta. compatta, fa tutto quello che serve e non devo portarmi dietro mille cose. il grill per tostare il pane la mattina è spettacolare",
+        "verified": true,
+        "sellerReply": "Andrea, l'uso in camper è geniale! Compatta e completa, esattamente quello che serve quando si viaggia. Buon viaggio!"
+      },
+      {
+        "initials": "GT",
+        "name": "Gloria Tassone",
+        "stars": 5,
+        "text": "Ero scettica sul caffè filtro ma devo ammettere che è buono. E la tisana la sera prima di dormire è diventata un rito. Tutto da un apparecchio solo, senza riempire la cucina di roba. Lo consiglio.",
+        "verified": true,
+        "sellerReply": "Gloria, il caffè filtro ha conquistato anche i più scettici! La tisana serale è un'abitudine che adorano in molti. Grazie!"
+      },
+      {
+        "initials": "FN",
+        "name": "Franco Nobile",
+        "stars": 5,
+        "text": "pensavo fosse il solito aggeggio inutile e invece funziona benissimo. la friggitrice ad aria è legittima, le patatine vengono croccanti. il forno è piccolo ma con il doppio livello ci fai parecchio. per 79 euro non puoi chiedere di più",
+        "verified": true,
+        "sellerReply": "Franco, siamo contenti di aver smentito lo scetticismo! Il doppio livello è la chiave per sfruttare al massimo la capienza. Grazie per la fiducia."
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Lascia la tua recensione",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "Valutazione",
+    "textLabel": "La tua recensione",
+    "textPlaceholder": "Racconta la tua esperienza...",
+    "submitText": "Invia Recensione",
+    "successTitle": "Grazie per la tua recensione!",
+    "successText": "La tua recensione è in attesa di approvazione da un team esterno a questo sito web. Le recensioni lasciate da chi non ha acquistato il prodotto non saranno pubblicate, questo per evitare recensioni non autentiche.",
+    "closeText": "Chiudi"
+  },
+
+  "orderSteps": {
+    "eyebrow": "COME ORDINARE",
+    "title": "Ordina in 3 semplici passi",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Compila il modulo",
+        "description": "Inserisci i tuoi dati nel modulo d'ordine qui sotto."
+      },
+      {
+        "icon": "phone",
+        "title": "Conferma telefonica",
+        "description": "Ti chiamiamo o ti contattiamo su WhatsApp per confermare i dati."
+      },
+      {
+        "icon": "cash",
+        "title": "Paga alla consegna",
+        "description": "Dopo 24/48h il pacco arriva con corriere tracciato. Paghi in contanti alla consegna."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Modulo d'Ordine",
+    "title": "Completa il tuo ordine",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "L'offerta -50% scade tra:",
+    "stockWarning": "Solo <strong>8 pezzi</strong> rimasti a questo prezzo",
+    "summaryTitle": "Riepilogo Ordine",
+    "summaryLines": [
+      { "label": "ChefStation™ + Accessori", "value": "€79,00", "type": "normal" },
+      { "label": "Spedizione rapida 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Spese di Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€79,00",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo di Spedizione *", "placeholder": "Via, Numero, Città, CAP" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "CONFERMA ORDINE",
+    "submitSubtext": "Paghi Contanti alla Consegna",
+    "reassurance": "Spedizione 24/48h · Garanzia 2 anni · Assistenza<br><strong>Nessuna carta richiesta.</strong> Ti richiamiamo per conferma."
+  },
+
+  "faq": {
+    "eyebrow": "Domande frequenti",
+    "title": "Hai ancora dubbi? Ecco le risposte.",
+    "items": [
+      { "question": "Come faccio ad ordinare?", "answer": "Clicca sul pulsante di acquisto, compila il modulo con i tuoi dati e conferma l'ordine. Sarai contattato telefonicamente o tramite WhatsApp per la conferma e riceverai il pacco comodamente a casa, con pagamento in contanti." },
+      { "question": "Come funziona la spedizione?", "answer": "La spedizione è totalmente gratuita. Da quando l'ordine è confermato, impiega circa 24/48h lavorative per essere consegnato." },
+      { "question": "E se non mi piace?", "answer": "Puoi richiedere un rimborso totale facendo il reso del prodotto entro 30 giorni dalla consegna. Veniamo noi a ritirare il pacco e a ridarti l'intera somma spesa." },
+      { "question": "Se ho problemi dopo 30 giorni?", "answer": "Tranquillo, tutti i nostri prodotti hanno 2 anni di garanzia." },
+      { "question": "Come faccio a chiedere un reso o assistenza?", "answer": "Per chiedere assistenza o un reso dopo aver effettuato un ordine, puoi utilizzare il modulo di contatto che trovi all'interno del sito o tramite la mail presente nel footer." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€158",
+    "newPrice": "€79",
+    "buttonText": "ORDINA ORA",
+    "buttonSubtext": "Paga Alla Consegna"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 79.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
+  "ty": {
+    "title": "Ordine Confermato!",
+    "subtitle": "Il tuo ordine è stato ricevuto con successo.",
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Riepilogo Ordine",
+    "accessoriesLabel": "+ Accessori inclusi",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — nessun anticipo",
+    "yourDataTitle": "I Tuoi Dati",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "Cosa succede ora?",
+    "message": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine e organizzare la consegna.",
+    "steps": [
+      "Riceverai una chiamata o un messaggio WhatsApp di conferma",
+      "Il pacco verrà spedito in 24/48h",
+      "Paghi in contanti al corriere alla consegna"
+    ],
+    "footerText": "Garanzia 2 Anni · 30 Giorni di Reso · Assistenza Dedicata"
+  }
+}

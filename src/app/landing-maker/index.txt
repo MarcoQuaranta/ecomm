@@ -7,11 +7,25 @@ Quando l'utente dice "vai in landing-maker", devi eseguire questo processo.
 IMPORTANTE: Ogni fase richiede l'approvazione dell'utente prima di procedere
 alla successiva. NON passare alla fase successiva senza OK esplicito.
 
-REGOLA FONDAMENTALE: Ogni landing e' composta da 3 file. NON creare MAI
-solo il content.json. Crea SEMPRE tutti e 3 i file insieme:
-  1. page.tsx       (importa il template del venditore + content.json)
-  2. content.json   (copy, prezzi, immagini, tracking)
-  3. ty/page.tsx    (importa il template TY del venditore + content.json)
+REGOLA FONDAMENTALE: Ogni landing DEVE essere AUTOCONTENUTA. La cartella
+deve poter essere copiata in qualsiasi progetto Next.js e funzionare.
+TUTTI i file necessari vanno DENTRO la cartella della landing:
+  1. page.tsx                      (import RELATIVO del template)
+  2. content.json                  (copy, prezzi, immagini, tracking)
+  3. LandingTemplate[Venditore].tsx  (componente, copiato con import CSS relativo)
+  4. TyTemplate[Venditore].tsx       (componente TY, copiato con import CSS relativo)
+  5. landing-[venditore].css         (CSS copiato)
+  6. ty/page.tsx                   (import RELATIVO del template TY)
+
+FOOTER AUTOMATICO (NO HEADER):
+A livello venditore (es: src/app/mirko/) va creato UN SOLO layout.tsx che
+importa SOLO il Footer dal progetto host. NIENTE Header. Questo layout
+wrappa TUTTE le landing di quel venditore, aggiungendo solo il footer.
+Il layout.tsx usa import con @ perche' NON fa parte della landing autocontenuta,
+ma del progetto host. Vedi fase2-creazione-cartelle.txt per il template.
+
+Nelle cartelle landing: MAI usare import con @ (@/components/, @/styles/).
+SOLO import relativi (./ ../)
 
 ================================================================================
 FASE 0 - RACCOLTA DATI PRODOTTO
@@ -79,10 +93,11 @@ ESECUZIONE PARALLELA: Lancia un agente per ogni media buyer.
 --> ATTENDI OK UTENTE (prima approvazione)
 
 Dopo approvazione dell'utente:
-1. PUSH SU GITHUB (chiedi su quale account pushare, segui le regole in CLAUDE.md)
-2. CHIEDI: "Push fatto. Ora attendo l'approvazione del media buyer. Dimmi quando ha approvato."
-3. ATTENDI SECONDA APPROVAZIONE (dal media buyer, tramite l'utente)
-4. Solo dopo la seconda conferma, procedi alla Fase 3.
+1. CHIEDI: "Ora attendo l'approvazione del media buyer. Dimmi quando ha approvato."
+2. ATTENDI APPROVAZIONE (dal media buyer, tramite l'utente)
+3. Solo dopo conferma, procedi alla Fase 3.
+
+NOTA: NON pushare MAI. L'utente gestisce deploy e push autonomamente.
 
 ================================================================================
 FASE 3 - TRADUZIONI
@@ -123,7 +138,7 @@ Questa fase si attiva SOLO dopo approvazione della Fase 3.
 1. Chiedi: "Dammi i dati di tracciamento Google Ads (ID + conversion label)"
 2. Chiedi: "Dammi il pixel ID di Meta Ads"
 3. Chiedi: "Dammi i dati del network (API endpoint, offer ID, ecc.)"
-4. Inserisci il tracciamento in TUTTI i content.json di ogni nazione
+4. Inserisci il tracciamento nei content.json e page.tsx di ogni nazione
 5. Il valore di conversione e' dinamico = prezzo prodotto in valuta locale
 6. Verifica che tutto sia corretto
 7. Report finale con check completo
@@ -143,8 +158,10 @@ RIEPILOGO FLUSSO
 
 FASE 0 (raccolta dati prodotto)           -->  OK utente  -->
 FASE 1 (analisi + landing italiana)       -->  OK utente  -->
-FASE 2 (cartelle altri media buyer)       -->  OK utente  -->  PUSH GITHUB  -->  OK media buyer  -->
+FASE 2 (cartelle altri media buyer)       -->  OK utente  -->  OK media buyer  -->
 FASE 3 (traduzioni per nazione + prezzi)  -->  OK utente  -->
 FASE 4 (tracciamento Google/Meta/network) -->  validazione  -->  report finale
+
+NOTA: L'utente gestisce deploy e push autonomamente. MAI pushare.
 
 ================================================================================

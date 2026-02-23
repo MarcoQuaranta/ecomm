@@ -12,6 +12,9 @@ RIFERIMENTI OBBLIGATORI
 
 PRIMA di creare qualsiasi contenuto, LEGGI SEMPRE:
 
+0. storico-modifiche.txt (nella cartella landing-maker)
+   --> Lezioni apprese da correzioni passate. Applicare SEMPRE.
+
 1. template-json.json (nella cartella landing-maker)
    --> Struttura JSON completa con _note e _instructions per ogni sezione
    --> Contiene le regole STATIC / DYNAMIC / SEMI-STATIC
@@ -36,6 +39,13 @@ componente utilizza DEVE avere una variabile dichiarata nel componente
 (es: const pricing = content?.pricing). Se aggiungi una nuova sezione al JSON,
 verifica che il componente la estragga correttamente.
 
+REGOLA SEPARAZIONE TSX / JSON:
+- Nel TSX vanno SOLO: struttura HTML, stili, logica, layout, componenti React
+- Nel JSON vanno TUTTI i testi visibili all'utente (qualsiasi cosa che va tradotta)
+- MAI scrivere testo visibile direttamente nel TSX — sempre dal JSON
+- Se aggiungi/modifichi un elemento nel TSX che mostra testo, il testo DEVE
+  essere letto dal content.json (es: {sezione?.campo || 'fallback italiano'})
+
 ================================================================================
 REGOLE FONDAMENTALI DEL CONTENT.JSON
 ================================================================================
@@ -48,9 +58,15 @@ Queste sezioni vanno COPIATE IDENTICHE dal template-json.json:
 - trustBadges
 - faq (domande e risposte)
 - reviewPopup
-- ty (title, subtitle, message)
+- ty (TUTTI i campi: title, subtitle, orderNumberLabel, summaryTitle,
+  accessoriesLabel, totalLabel, paymentNote, yourDataTitle, nameLabel,
+  phoneLabel, addressLabel, nextStepsTitle, message, steps[], footerText)
+- ariaLabels (prevSlide, nextSlide, thumbnail, close)
 - Titoli fissi: problems.eyebrow, problems.title, features.eyebrow,
-  comparison.eyebrow, comparison.title, package.eyebrow
+  comparison.eyebrow, comparison.title, comparison.featureColumn,
+  comparison.winnerBadge, package.eyebrow
+- Label fissi reviews: reviews.verifiedBadge, reviews.sellerReplyLabel,
+  reviews.showMoreText, reviews.leaveReviewText
 
 ### SEZIONI SEMI-STATIC (modificare SOLO i valori indicati)
 - midCta: cambiare SOLO la percentuale di sconto
@@ -125,6 +141,16 @@ STEP 2 - CREAZIONE CONTENT.JSON
 5. Rimuovi tutti i campi _note e _instructions dal JSON finale
 6. Verifica che il JSON sia valido
 
+NOTA TRACKING: In Fase 1 la sezione "tracking" nel content.json va lasciata con
+valori vuoti. Il tracking viene compilato in Fase 4 separatamente per ogni
+piattaforma (Google Ads / Meta Facebook). Imposta tutti i campi tracking a "":
+  "googleAdsId": "",
+  "conversionLabel": "",
+  "conversionValue": 0,
+  "conversionCurrency": "",
+  "facebookPixelId": "",
+  "network": { ... vuoto ... }
+
 STILE COPY (per versione italiana):
 - Marketing aggressivo, semplice, emozionale
 - Target boomer-friendly
@@ -135,46 +161,89 @@ STILE COPY (per versione italiana):
 STEP 3 - CREAZIONE FILE LANDING
 ================================================================================
 
-IMPORTANTE: Ogni landing DEVE avere SEMPRE 3 file. Non creare MAI solo il JSON.
+IMPORTANTE: Ogni landing DEVE essere AUTOCONTENUTA. La cartella deve poter
+essere copiata in qualsiasi progetto Next.js e funzionare senza dipendenze
+esterne. TUTTI i file necessari vanno DENTRO la cartella della landing.
 
 Per il venditore specificato in Fase 0, crea:
 
 src/app/[venditore]/[prodotto]/[prodotto]-ita/
-  ├── page.tsx          <-- importa il template del venditore + content.json
-  ├── content.json      <-- il copy generato
+  ├── page.tsx                      <-- importa ./LandingTemplate (RELATIVO)
+  ├── content.json                  <-- il copy generato
+  ├── LandingTemplate[Venditore].tsx  <-- COPIA del componente con import RELATIVI
+  ├── TyTemplate[Venditore].tsx       <-- COPIA del componente TY con import RELATIVI
+  ├── landing-[venditore].css         <-- COPIA del CSS
   └── ty/
-      └── page.tsx      <-- importa il template TY del venditore + content.json
+      └── page.tsx                  <-- importa ../TyTemplate (RELATIVO)
 
-### PAGE.TSX (per Mirko):
+### COME CREARE I FILE:
+
+1. Copia LandingTemplate[Venditore].tsx da riferimento[venditore]/ nella cartella
+2. Copia TyTemplate[Venditore].tsx da riferimento[venditore]/ nella cartella
+3. Copia il CSS (landing-[venditore].css) da src/styles/ nella cartella
+4. NEI COMPONENTI COPIATI: cambia l'import CSS da '@/styles/...' a './landing-[venditore].css'
+5. Crea page.tsx e ty/page.tsx con import RELATIVI (vedi sotto)
+
+ATTENZIONE - ARCHITETTURA TRACKING:
+- LandingTemplate*.tsx: gestisce script loading (gtag.js, FB Pixel, fingerprint)
+  e invio lead DIRETTO al network via fetch() + FormData usando networkConfig prop.
+  NON contiene logica di conversione. NON modificare.
+- TyTemplate*.tsx: e' puro UI, ZERO logica tracking. NON modificare.
+- La CONVERSIONE (Google/Facebook) va hardcodata nel ty/page.tsx di ogni nazione.
+- L'INVIO LEAD: il page.tsx passa networkConfig al template, che fa fetch() DIRETTO
+  al network con FormData (NO proxy, NO /api/lead, NO sendBeacon).
+- Vedi fase2-creazione-cartelle.txt e fase4-tracciamento.txt per i template.
+
+### PAGE.TSX (per Mirko — versione italiana/test, senza network):
 ```tsx
-import LandingTemplateMirko from '@/components/LandingTemplateMirko';
+import LandingTemplateMirko from './LandingTemplateMirko';
 import content from './content.json';
 
 export default function Page() {
   return <LandingTemplateMirko content={content} />;
 }
 ```
+NOTA: In Fase 1 il page.tsx e' senza networkConfig (versione italiana/test).
+Il networkConfig viene aggiunto in Fase 4 per ogni nazione.
 
-### TY/PAGE.TSX (per Mirko):
+### TY/PAGE.TSX (per Mirko — versione italiana/test, senza tracking):
 ```tsx
-import TyTemplateMirko from '@/components/TyTemplateMirko';
+import TyTemplateMirko from '../TyTemplateMirko';
 import content from '../content.json';
 
 export default function TyPage() {
   return <TyTemplateMirko content={content} />;
 }
 ```
+NOTA: In Fase 1 il ty/page.tsx e' senza tracking (versione italiana/test).
+Il tracking hardcodato viene aggiunto in Fase 4 per ogni nazione/piattaforma.
 
 Per altri venditori, sostituisci il nome del componente:
 - Lino: LandingTemplateLino / TyTemplateLino
 - Daniele: LandingTemplateDaniele / TyTemplateDaniele
 
+### REGOLA IMPORT:
+- TUTTI gli import devono essere RELATIVI (./ o ../)
+- MAI usare import con @ (es: @/components/, @/styles/)
+- Il motivo: le landing vengono copiate su altri progetti Next.js
+
 ### CARTELLA IMMAGINI:
-Crea anche le cartelle per le immagini (vuote, l'utente le riempira'):
+Crea le cartelle per le immagini se non esistono già:
 
 public/images/[venditore]/[prodotto]/
-  ├── carosello/    <-- foto prodotto: 1.webp, 2.webp, ecc.
-  └── angle/        <-- foto feature: 1.webp, 2.webp, 3.webp, 4.webp
+  ├── carosello/    <-- foto prodotto: 1.webp, 2.png, ecc.
+  └── angle/        <-- foto feature: 1.gif, 2.webp, ecc.
+
+REGOLA AUTO-DETECT IMMAGINI (FONDAMENTALE):
+Dopo aver creato le cartelle, CONTROLLA SEMPRE se l'utente ha già inserito
+file nelle cartelle (con Glob). Se ci sono file:
+  1. Rileva il formato reale di ogni file (png, jpg, gif, webp, ecc.)
+  2. Conta quanti file ci sono in ogni sottocartella
+  3. Inserisci nel content.json i path con l'ESTENSIONE REALE del file
+  4. Per il carosello: inserisci TUTTE le immagini trovate (non un numero fisso)
+  5. Per angle: inserisci tante immagini quante sono le features.items
+Se le cartelle sono vuote, usa .webp come placeholder e avvisa l'utente.
+MAI assumere .webp — controlla SEMPRE il formato reale.
 
 ================================================================================
 OUTPUT

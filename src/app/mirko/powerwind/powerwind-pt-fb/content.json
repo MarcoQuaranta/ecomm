@@ -1,0 +1,411 @@
+{
+  "seo": {
+    "title": "PowerWind X™ - Corta Silvas, Erva e Ramos Sem Encravar",
+    "description": "O aparador a bateria com motor inteligente que aumenta a potência sozinho. Kit completo com 4 lâminas, corta-bordos, 2 baterias. Envio gratuito."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 111.00,
+    "currentPrice": 74.00,
+    "discountPercent": 33
+  },
+
+  "topBar": {
+    "text": "Envio Gratuito 24/48h · Pagamento contra entrega · Garantia de 2 anos"
+  },
+
+  "urgencyBanner": {
+    "text": "Atenção: Procura elevada —",
+    "highlight": "Últimas 8 unidades disponíveis",
+    "suffix": "a este preço"
+  },
+
+  "hero": {
+    "badge": "Inovação 2026",
+    "title": "Corta Silvas, Erva Alta e Ramos",
+    "titleHighlight": "Sem Nunca Encravar:",
+    "titleSuffix": "O Primeiro Aparador que Pensa Sozinho",
+    "subtitle": "Motor inteligente que regula a potência sozinho. 4 lâminas incluídas no preço, 2 baterias, corta-bordos e mala de transporte. Liga e corta, ele faz tudo.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.743 clientes satisfeitos"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-33%",
+    "slides": [
+      { "src": "/images/mirko/powerwind/carosello/1.webp", "alt": "PowerWind X vista completa" },
+      { "src": "/images/mirko/powerwind/carosello/2.webp", "alt": "PowerWind X em utilização" },
+      { "src": "/images/mirko/powerwind/carosello/3.webp", "alt": "PowerWind X detalhe da cabeça de corte" },
+      { "src": "/images/mirko/powerwind/carosello/4.webp", "alt": "PowerWind X acessórios incluídos" },
+      { "src": "/images/mirko/powerwind/carosello/5.webp", "alt": "PowerWind X baterias e carregador" },
+      { "src": "/images/mirko/powerwind/carosello/6.webp", "alt": "PowerWind X corta-bordos" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Nunca encrava:", "description": "o motor SmartTorque aumenta a potência sozinho quando encontra silvas e erva alta." },
+      { "title": "Fio de corte — recarrega em 10 segundos:", "description": "o fio de nylon que corta a erva gasta-se com o uso. Colocas um novo, bates no chão e enrola-se sozinho. Zero desmontagem." },
+      { "title": "Liberta-se com 1 clique:", "description": "o botão Reverse desbloqueia o fio e a erva presa num instante." },
+      { "title": "Bordos perfeitos de jardineiro:", "description": "corta-bordos com roda guia para passeios e caminhos impecáveis." },
+      { "title": "Zero pausas:", "description": "2 baterias incluídas. Uma trabalha, outra carrega. Trabalhas o tempo que quiseres." },
+      { "title": "Chegas a todo o lado:", "description": "estende-se de 71 a 210 cm. Alcança debaixo das sebes e nos pontos difíceis sem te curvares." },
+      { "title": "Conforto total nos ombros:", "description": "arnês de ombro duplo com almofada que distribui o peso. Trabalhas durante horas sem sentir cansaço." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "PowerWind X™",
+    "originalPriceLabel": "Preço de tabela:",
+    "discountLabel": "POUPA 37€ (-33%)",
+    "shippingLabel": "Envio Rápido:",
+    "shippingValue": "Grátis",
+    "guaranteeLabel": "Garantia de 2 Anos",
+    "offerToggleText": "Descobre o que a oferta inclui",
+    "offerItems": [
+      { "text": "PowerWind X™ — Aparador Profissional", "badge": null },
+      { "text": "Kit 4 Lâminas de Corte (fio, erva, silvas, ramos)", "badge": null },
+      { "text": "2 Baterias 40V + Carregador Rápido", "badge": null },
+      { "text": "Corta-Bordos com Roda Guia", "badge": "OFERTA" },
+      { "text": "Arnês de Ombro Duplo Comfort PRO", "badge": "OFERTA" },
+      { "text": "Mala Rígida + Fio de Substituição", "badge": "OFERTA" },
+      { "text": "Garantia de 2 Anos + Assistência Dedicada", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ENCOMENDAR AGORA",
+    "mainSubtext": "Pagamento em dinheiro ao estafeta",
+    "subNote": "Zero risco: pagas apenas quando recebes a encomenda"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Pagamento contra entrega", "color": "green" },
+      { "icon": "truck", "text": "Envio 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Dias de Devolução", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Identificas-te?",
+    "title": "Estes problemas são-te familiares?",
+    "items": [
+      { "icon": "pain", "titleBold": "O aparador a gasolina rebenta-te as costas", "text": "— pesado, barulhento, cheira mal e arranca uma vez em cada três." },
+      { "icon": "warning", "titleBold": "O fio encrava a cada dois minutos", "text": "e tens de desmontar tudo para o enrolar. Perdes mais tempo a arranjá-lo do que a cortar." },
+      { "icon": "timer", "titleBold": "Os de bateria não aguentam as silvas", "text": "— encrava, desliga-se e a bateria morre ao fim de 20 minutos." }
+    ],
+    "solutionTitle": "Existe uma solução melhor.",
+    "solutionText": "Um aparador com motor inteligente, 4 lâminas, 2 baterias e zero gasolina. Liga e corta tudo."
+  },
+
+  "features": {
+    "eyebrow": "Porque é diferente",
+    "title": "Elimina erva alta, ramos e silvas num instante",
+    "demoGifs": {
+      "items": [
+        { "src": "/images/mirko/powerwind/gif/1.gif", "alt": "PowerWind X em ação" },
+        { "src": "/images/mirko/powerwind/gif/2.gif", "alt": "PowerWind X em ação" },
+        { "src": "/images/mirko/powerwind/gif/3.gif", "alt": "PowerWind X em ação" }
+      ],
+      "caption": "PowerWind X em ação."
+    },
+    "items": [
+      {
+        "image": "/images/mirko/powerwind/angle/1.webp",
+        "imageAlt": "SmartTorque AUTO",
+        "tag": "POTÊNCIA INTELIGENTE",
+        "tagColor": "green",
+        "title": "Nunca Encrava nas Silvas",
+        "description": "O motor <strong>SmartTorque</strong> aumenta <strong>potência e velocidade automaticamente</strong> quando encontra erva alta e mato. <strong>Nenhum aparador a bateria</strong> faz isto."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/2.webp",
+        "imageAlt": "4 sistemas de corte",
+        "tag": "4 LÂMINAS INCLUÍDAS",
+        "tagColor": "orange",
+        "title": "Uma Lâmina para Cada Necessidade",
+        "description": "<strong>Fio de nylon</strong> para acabamentos, <strong>lâmina 3 dentes</strong> para erva densa, <strong>disco para silvas</strong> e mato, <strong>disco de corte</strong> para ramos e pequenos galhos. Uma só ferramenta, cortas tudo."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/3.webp",
+        "imageAlt": "Corta-bordos Bordo Perfeito",
+        "tag": "RESULTADO WOW",
+        "tagColor": "blue",
+        "title": "Bordos Perfeitos Como um Jardineiro Profissional",
+        "description": "<strong>Corta-bordos</strong> com <strong>roda guia</strong> para passeios e caminhos. Em <strong>5 minutos</strong> o teu jardim parece tratado por um profissional."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/4.webp",
+        "imageAlt": "Aparador telescópico extensível",
+        "tag": "ZERO ESFORÇO",
+        "tagColor": "green",
+        "title": "Chegas Onde os Outros Não Chegam",
+        "description": "Estende-se de <strong>71 a 210 cm</strong> num gesto. Cortas debaixo das sebes, ao longo dos muros e nos pontos difíceis <strong>sem te curvares</strong> e sem rebentares as costas. Ajustas à <strong>tua altura</strong> e trabalhas confortavelmente."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Muito simples",
+    "title": "3 passos e o jardim está feito.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Monta", "description": "Encaixas a lâmina, colocas a bateria. 30 segundos e estás pronto." },
+      { "title": "Liga", "description": "Um botão e arranca. SmartTorque regula a potência sozinho." },
+      { "title": "Corta", "description": "Erva, silvas, ramos: ele faz tudo. Mudas de lâmina em 2 segundos." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ENCOMENDAR AGORA COM 33% DE DESCONTO",
+    "subtext": "Pagamento em dinheiro ao estafeta"
+  },
+
+  "comparison": {
+    "eyebrow": "A Comparação",
+    "title": "Que vantagens terás em relação às alternativas?",
+    "featureColumn": "Característica",
+    "winnerBadge": "VENCEDOR",
+    "productColumn": "PowerWind X™",
+    "competitorColumn": "Aparador a Gasolina",
+    "rows": [
+      { "feature": "Potência nas silvas", "product": "✔ SmartTorque auto", "competitor": "Constante (risco de bloqueio)" },
+      { "feature": "Recarga do fio", "product": "✔ 10 segundos, sem desmontar", "competitor": "Desmontar e enrolar à mão" },
+      { "feature": "Fio encravado", "product": "✔ Reverse: 1 clique", "competitor": "Desmontar e limpar à mão" },
+      { "feature": "Peso e conforto", "product": "✔ Leve, zero vibrações", "competitor": "Pesado, vibrações fortes" },
+      { "feature": "Ruído", "product": "✔ Silencioso", "competitor": "Acorda os vizinhos" },
+      { "feature": "Custo total", "product": "✔ Apenas 74€ (tudo incluído)", "competitor": "200-400€ + gasolina + revisões" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Tudo incluído",
+    "title": "O que recebes em tua casa",
+    "items": [
+      { "icon": "box", "text": "PowerWind X™ — Aparador Profissional", "value": "€111,00", "valueType": "price" },
+      { "icon": "check", "text": "Kit 4 Lâminas de Corte (fio, erva, silvas, ramos)", "value": "INCLUÍDO", "valueType": "included" },
+      { "icon": "check", "text": "2 Baterias 40V + Carregador Rápido", "value": "INCLUÍDO", "valueType": "included" },
+      { "icon": "gift", "text": "Corta-Bordos com Roda Guia", "value": "OFERTA", "valueType": "gift" },
+      { "icon": "gift", "text": "Arnês de Ombro Duplo Comfort PRO", "value": "OFERTA", "valueType": "gift" },
+      { "icon": "gift", "text": "Mala Rígida + Fio de Substituição", "value": "OFERTA", "valueType": "gift" },
+      { "icon": "shield", "text": "Garantia de 2 Anos + Assistência Dedicada", "value": "INCLUÍDO", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Preço de Tabela:",
+    "totalOriginalValue": "€239,00",
+    "totalCurrentLabel": "Hoje pagas apenas:",
+    "totalCurrentValue": "€74,00",
+    "totalSave": "Poupa €165,00 · Envio GRATUITO",
+    "ctaText": "ENCOMENDAR AGORA"
+  },
+
+  "reviews": {
+    "eyebrow": "O que dizem de nós",
+    "title": "Avaliações Verificadas",
+    "rating": "4.8",
+    "totalCount": "18.743 avaliações",
+    "verifiedNote": "✓ As avaliações são verificadas por uma equipa neutra externa a este site.",
+    "showMoreText": "Mostrar mais avaliações",
+    "leaveReviewText": "Deixar uma avaliação",
+    "verifiedBadge": "Compra verificada",
+    "sellerReplyLabel": "Resposta do vendedor:",
+    "items": [
+      {
+        "initials": "JS",
+        "name": "João Silva",
+        "stars": 5,
+        "text": "Tenho um terreno de 2000 metros com silvas e mato duro. O antigo a gasolina encravava sempre e pesava uma tonelada. Este aqui entra nas silvas e não para, o motor acelera sozinho quando encontra resistência. Cortei tudo numa tarde sem rebentar as costas. Envio em dois dias, paguei ao estafeta.",
+        "image": "/images/mirko/powerwind/recensioni/1.webp",
+        "imageAlt": "Foto avaliação João",
+        "verified": true,
+        "sellerReply": "João, o SmartTorque foi pensado precisamente para quem tem terrenos exigentes como o seu. Ainda bem que notou a diferença de peso. Para qualquer necessidade, estamos aqui."
+      },
+      {
+        "initials": "PS",
+        "name": "Pedro Santos",
+        "stars": 5,
+        "text": "antes demorava 10 minutos cada vez que o fio acabava, tinha de desmontar a cabeça e perdia a paciência. com este enfio o fio, bato no chão e volto a cortar, não acreditava mas funciona mesmo. uso-o ao sábado de manhã e faço tudo em metade do tempo",
+        "image": "/images/mirko/powerwind/recensioni/2.webp",
+        "imageAlt": "Foto avaliação Pedro",
+        "verified": true,
+        "sellerReply": "Pedro, o AutoSpool é a função mais apreciada pelos nossos clientes. Ficamos contentes por lhe ter simplificado o trabalho de sábado. Obrigado!"
+      },
+      {
+        "initials": "AO",
+        "name": "Ana Oliveira",
+        "stars": 5,
+        "text": "Comprei para o meu marido que tem 62 anos e queixava-se sempre das costas depois de usar o de gasolina. Com este é leve e os arneses de ombro duplo distribuem o peso muito bem. O barulho também é mínimo, os vizinhos agradecem. Chegou em dois dias, sem custos adicionais.",
+        "image": "/images/mirko/powerwind/recensioni/3.webp",
+        "imageAlt": "Foto avaliação Ana",
+        "verified": true,
+        "sellerReply": "Ana, que bela ideia de presente! O arnês de ombro duplo foi concebido precisamente para quem trabalha durante muito tempo sem se cansar. Cumprimentos ao seu marido!"
+      },
+      {
+        "initials": "AF",
+        "name": "António Ferreira",
+        "stars": 5,
+        "text": "as duas baterias são uma revolução. acaba uma, ponho a outra e continuo sem pausas. com o antigo a gasolina tinha de levar o bidão e cheirava a gasolina o dia todo. este é silencioso, limpo e potente. o corta-bordos então é espetacular, os bordos ficam direitinhos",
+        "image": "/images/mirko/powerwind/recensioni/4.webp",
+        "imageAlt": "Foto avaliação António",
+        "verified": true,
+        "sellerReply": "António, a continuidade de trabalho com duas baterias é fundamental para quem tem jardins grandes. Obrigado por ter escolhido o PowerWind X!"
+      },
+      {
+        "initials": "MP",
+        "name": "Manuel Pereira",
+        "stars": 4,
+        "text": "Produto sólido, experimentei-o em erva alta e silvas e devo dizer que o motor responde bem. Por agora dou 4 estrelas porque quero testá-lo bem durante toda a estação antes de dar a nota máxima, mas os sinais são excelentes. Ótimo o kit com todos os acessórios incluídos.",
+        "verified": true,
+        "sellerReply": "Manuel, apreciamos a sua honestidade! Temos a certeza de que no final da estação os resultados falarão por si. Dê-nos novidades, estamos curiosos!"
+      },
+      {
+        "initials": "CC",
+        "name": "Catarina Costa",
+        "stars": 5,
+        "text": "Comprei para o meu pai de 68 anos que não queria ouvir falar de bateria. Depois de o experimentar, não quer voltar à gasolina. Diz que pesa metade e que o corta-bordos lhe faz os passeios como um jardineiro a sério. Paguei ao estafeta sem problemas.",
+        "verified": true,
+        "sellerReply": "Catarina, converter um fã da gasolina é a nossa maior satisfação! Cumprimentos ao pai, ficamos contentes por estar satisfeito."
+      },
+      {
+        "initials": "RR",
+        "name": "Rui Rodrigues",
+        "stars": 5,
+        "text": "o corta-bordos com a roda é uma coisa incrível. os bordos do caminho ficam direitos, perfeitos, parece feito por um profissional. antes fazia a olho e era sempre um desastre. a mala também é prática para manter tudo arrumado na garagem",
+        "verified": true,
+        "sellerReply": "Rui, a roda guia foi concebida precisamente para obter bordos profissionais sem experiência. Obrigado pela avaliação!"
+      },
+      {
+        "initials": "PA",
+        "name": "Paulo Almeida",
+        "stars": 5,
+        "text": "O que me conquistou foi o botão Reverse. Antes, cada vez que o fio encravava na erva, tinha de desligar tudo e puxar à mão. Com este carregas num botão e liberta-se sozinho. Genial. A lâmina para silvas também funciona na perfeição.",
+        "verified": true,
+        "sellerReply": "Paulo, o Reverse anti-bloqueio nasceu de ouvir os problemas mais comuns dos nossos clientes. Ficamos felizes por ser a função que mais aprecia!"
+      },
+      {
+        "initials": "NC",
+        "name": "Nuno Carvalho",
+        "stars": 5,
+        "text": "por 74€ todo este kit é um negócio incrível. aparador, 4 lâminas diferentes, corta-bordos, mala, duas baterias... comparei com os das lojas e para ter o mesmo tens de gastar o triplo. chegou rápido, envio gratuito como prometido",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "RM",
+        "name": "Ricardo Martins",
+        "stars": 5,
+        "text": "A barra telescópica resolveu-me um problema que tinha há anos: cortar debaixo da sebe e nos pontos onde não chegava. Estende-se sem ferramentas e alcança sítios impossíveis. Tudo isto sem te curvares e sem rebentares as costas. Produto sério, recomendo.",
+        "verified": true,
+        "sellerReply": "Ricardo, a barra telescópica foi pensada precisamente para eliminar as posições desconfortáveis. Obrigado por ter escolhido o PowerWind X, bom trabalho!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Deixa a tua avaliação",
+    "nameLabel": "O teu nome",
+    "namePlaceholder": "Ex. João Silva",
+    "ratingLabel": "Classificação",
+    "textLabel": "A tua avaliação",
+    "textPlaceholder": "Conta a tua experiência...",
+    "submitText": "Enviar Avaliação",
+    "successTitle": "Obrigado pela tua avaliação!",
+    "successText": "A tua avaliação está a aguardar aprovação por uma equipa externa a este site. As avaliações deixadas por quem não comprou o produto não serão publicadas, de forma a evitar avaliações não autênticas.",
+    "closeText": "Fechar"
+  },
+
+  "orderForm": {
+    "eyebrow": "Formulário de Encomenda",
+    "title": "Completa a tua encomenda",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "A oferta -33% expira em:",
+    "stockWarning": "Apenas <strong>8 unidades</strong> restantes a este preço",
+    "summaryTitle": "Resumo da Encomenda",
+    "summaryLines": [
+      { "label": "PowerWind X™ + 4 Lâminas + Acessórios", "value": "€74,00", "type": "normal" },
+      { "label": "Envio rápido 24/48h", "value": "GRÁTIS", "type": "free" },
+      { "label": "Taxa de contra entrega", "value": "GRÁTIS", "type": "free" }
+    ],
+    "totalLabel": "TOTAL",
+    "totalValue": "€74,00",
+    "fields": {
+      "name": { "label": "Nome Completo *", "placeholder": "Ex. João Silva" },
+      "phone": { "label": "Número de Telefone *", "placeholder": "Ex. 912 345 678" },
+      "address": { "label": "Morada de Envio *", "placeholder": "Rua, número, cidade, código postal" }
+    },
+    "phoneNote": "Serás contactado telefonicamente ou por WhatsApp para confirmar a encomenda.",
+    "paymentBadge": "Pagamento contra entrega — Pagas em dinheiro ao estafeta. Zero adiantamento.",
+    "submitText": "CONFIRMAR ENCOMENDA",
+    "submitSubtext": "Pagamento em dinheiro ao estafeta",
+    "reassurance": "Dados protegidos · SSL 256-bit · Sem qualquer cobrança antecipada"
+  },
+
+  "faq": {
+    "eyebrow": "Perguntas frequentes",
+    "title": "Ainda tens dúvidas? Aqui estão as respostas.",
+    "items": [
+      { "question": "Como faço para encomendar?", "answer": "Clica no botão de compra, preenche o formulário com os teus dados e confirma a encomenda. Serás contactado telefonicamente ou por WhatsApp para confirmação e receberás a encomenda comodamente em casa, com pagamento em dinheiro ao estafeta." },
+      { "question": "Como funciona o envio?", "answer": "O envio é totalmente gratuito. A partir do momento em que a encomenda é confirmada, demora aproximadamente 24/48h úteis a ser entregue." },
+      { "question": "E se não gostar?", "answer": "Podes pedir um reembolso total fazendo a devolução do produto até 30 dias após a entrega. Nós vamos buscar a encomenda e devolvemos-te o valor total." },
+      { "question": "Se tiver problemas após 30 dias?", "answer": "Fica tranquilo, todos os nossos produtos têm 2 anos de garantia." },
+      { "question": "Como peço uma devolução ou assistência?", "answer": "Para pedir assistência ou uma devolução após teres feito uma encomenda, podes utilizar o formulário de contacto que encontras no site ou através do email presente no rodapé." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€111",
+    "newPrice": "€74",
+    "buttonText": "ENCOMENDAR AGORA",
+    "buttonSubtext": "Paga na Entrega"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 74.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "1576025786901423",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "fingerprintScript": "https://offers.uncappednetwork.com/forms/tmfp/",
+      "clickPixel": "https://offers.uncappednetwork.com/forms/api/ck/?o=1612&uid=4a2b2107-ba63-494f-b762-41120bde0c94&lp=1632",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Anterior",
+    "nextSlide": "Seguinte",
+    "thumbnail": "Miniatura",
+    "close": "Fechar"
+  },
+
+  "ty": {
+    "title": "Encomenda Confirmada!",
+    "subtitle": "A tua encomenda foi recebida com sucesso.",
+    "orderNumberLabel": "N.º encomenda:",
+    "summaryTitle": "Resumo da Encomenda",
+    "accessoriesLabel": "+ Acessórios incluídos",
+    "totalLabel": "TOTAL A PAGAR",
+    "paymentNote": "Pagamento em dinheiro ao estafeta — sem adiantamento",
+    "yourDataTitle": "Os Teus Dados",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefone",
+    "addressLabel": "Morada",
+    "nextStepsTitle": "O que acontece agora?",
+    "message": "Serás contactado telefonicamente ou por WhatsApp para confirmar a encomenda e organizar a entrega.",
+    "steps": [
+      "Receberás uma chamada ou uma mensagem WhatsApp de confirmação",
+      "A encomenda será enviada em 24/48h",
+      "Pagas em dinheiro ao estafeta na entrega"
+    ],
+    "footerText": "Garantia de 2 Anos · 30 Dias de Devolução · Assistência Dedicada"
+  }
+}

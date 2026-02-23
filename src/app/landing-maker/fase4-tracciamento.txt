@@ -6,82 +6,343 @@ PREREQUISITI:
 - Tutte le traduzioni devono essere completate e approvate
 - L'utente deve aver dato l'OK sulla Fase 3
 
+NOTA: Le landing sono separate per piattaforma pubblicitaria.
+Ogni cartella ha il suffisso -gg (Google Ads) o -fb (Meta/Facebook).
+Il tracking va compilato SEPARATAMENTE per ogni piattaforma.
+
+================================================================================
+ARCHITETTURA TRACKING (FONDAMENTALE — LEGGERE PRIMA DI TUTTO)
+================================================================================
+
+Il tracking e' diviso in 3 pezzi separati. NON confonderli.
+
+### PEZZO 1: content.json → tracking section
+Serve SOLO per caricare gli script e sparare eventi NON di conversione.
+- googleAdsId: carica gtag.js, spara PageView e begin_checkout
+- facebookPixelId: carica FB Pixel, spara PageView e InitiateCheckout
+- network.fingerprintScript: carica lo script di fingerprinting (tmfp)
+- network.clickPixel: pixel di click per attribuzione network
+NON mettere qui la logica di conversione o invio lead.
+
+IMPORTANTE — SNIPPET FACEBOOK PIXEL:
+Il template LandingTemplateMirko.tsx usa lo snippet UFFICIALE di Facebook
+per inizializzare il pixel. Lo snippet corretto e':
+
+    if (tracking?.facebookPixelId && !w.fbq) {
+      const n: any = w.fbq = function () {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      w._fbq = n;
+      n.push = n;
+      n.loaded = true;
+      n.version = '2.0';
+      n.queue = [];
+      const fbScript = document.createElement('script');
+      fbScript.async = true;
+      fbScript.src = 'https://connect.facebook.net/en_US/fbevents.js';
+      const firstScript = document.getElementsByTagName('script')[0];
+      if (firstScript?.parentNode) firstScript.parentNode.insertBefore(fbScript, firstScript);
+      else document.head.appendChild(fbScript);
+      w.fbq('init', tracking.facebookPixelId);
+      w.fbq('track', 'PageView');
+    }
+
+NON usare versioni semplificate (senza callMethod, _fbq, n.push).
+Lo snippet semplificato causa problemi: gli eventi accodati prima del
+caricamento dello script non vengono processati dall'SDK di Facebook.
+
+### PEZZO 2: page.tsx → networkConfig + LandingTemplate (INVIO LEAD DIRETTO)
+L'invio della lead al network avviene DIRETTAMENTE dal browser al network.
+- page.tsx e' un SERVER COMPONENT (NO 'use client')
+- Contiene un oggetto `networkConfig` con: endpoint, uid, key, offerId, lpId
+- Il template LandingTemplate riceve networkConfig come prop
+- Quando l'utente compila il form e clicca "Ordina", il template:
+  1. Crea un oggetto FormData
+  2. Appende tutti i campi richiesti dal network (uid, key, offer, lp, name, tel, ecc.)
+  3. Fa una chiamata fetch() DIRETTA all'endpoint del network
+  4. Attende la risposta del network
+  5. Reindirizza alla pagina TY
+- Il fetch usa FormData (NON JSON, NON urlencoded)
+- NON esiste nessun proxy intermedio, NON si usa /api/lead, NON si usa sendBeacon
+
+MAPPATURA CAMPI (da networkConfig/form → FormData inviato al network):
+| Sorgente              | Campo FormData   | Descrizione                        |
+|-----------------------|------------------|------------------------------------|
+| networkConfig.uid     | uid              | ID utente network                  |
+| networkConfig.key     | key              | Chiave API network                 |
+| networkConfig.offerId | offer            | ID dell'offerta nel network        |
+| networkConfig.lpId    | lp               | ID della landing page nel network  |
+| form: nome            | name             | Nome inserito dall'utente          |
+| form: telefono        | tel              | Telefono inserito dall'utente      |
+| form: indirizzo       | street-address   | Indirizzo inserito dall'utente     |
+| script fingerprint    | tmfp             | Fingerprint (se script caricato)   |
+| navigator.userAgent   | ua               | User agent (fallback se no tmfp)   |
+
+### PEZZO 3: ty/page.tsx → CONVERSIONE HARDCODATA
+La conversione (evento che conta come vendita) e' HARDCODATA nel ty/page.tsx.
+- ty/page.tsx e' un CLIENT COMPONENT ('use client')
+- Contiene un useEffect che spara la conversione al caricamento
+- Protezione anti-duplicazione: sessionStorage con chiave `cf_{orderNumber}`
+- Google Ads: gtag('event', 'conversion', { send_to, value, currency, transaction_id })
+- Meta Pixel: fbq('track', 'Purchase', { value, currency }, { eventID })
+- La conversione scatta UNA SOLA VOLTA per ordine (anche se l'utente refresha)
+
+PERCHE' QUESTA ARCHITETTURA:
+- fetch() diretto: la lead va dritta al network, nessun proxy intermedio
+- FormData: il formato richiesto dai network (NON JSON, NON urlencoded)
+- await response: si aspetta conferma dal network prima di reindirizzare alla TY
+- Hardcodato per nazione: zero ambiguita', zero bug da JSON mal compilato
+- Anti-duplicazione robusta: sessionStorage + transaction_id/eventID
+
 ================================================================================
 STEP 1 - RACCOLTA DATI TRACCIAMENTO
 ================================================================================
 
-Chiedi all'utente i seguenti dati:
-
-### GOOGLE ADS
+### GOOGLE ADS (per cartelle -gg)
+Chiedi all'utente:
 "Dammi i dati di Google Ads:"
 - Google Ads ID (formato: AW-XXXXXXXXX)
-- Conversion Label (formato: abc123xyz)
+- Conversion Label per ogni nazione (formato: abc123xyz)
 
 NOTA: L'azione di conversione e' UNA sola per prodotto, uguale per tutte
 le nazioni. Google Ads attribuisce la conversione alla campagna corretta
 automaticamente in base al click.
 
-### META ADS (FACEBOOK)
+### META ADS / FACEBOOK (per cartelle -fb)
+Chiedi all'utente:
 "Dammi il Pixel ID di Meta:"
-- Facebook Pixel ID
+- Facebook Pixel ID (formato: solo numeri, es: 1576025786901423)
 
-### NETWORK (CHIAMATA API)
-"Dammi i dati del network per la chiamata API:"
-- API endpoint (URL dove inviare i dati dell'ordine)
+NOTA: Il Pixel e' UNO solo per prodotto, uguale per tutte le nazioni.
+
+### NETWORK (CHIAMATA API LEAD) - CHIEDI UNO PER UNO
+Chiedi all'utente i dati del network PER OGNI NAZIONE, UNO ALLA VOLTA.
+Le credenziali possono essere DIVERSE tra piattaforme e tra nazioni.
+
+Per ogni nazione/piattaforma serve:
+- API endpoint (URL completo, es: https://offers.uncappednetwork.com/forms/api/)
+- UID
+- Key
 - Offer ID
-- Eventuali parametri aggiuntivi (chiave API, LP ID, ecc.)
+- LP ID
+
+ATTENZIONE: Non inventare MAI gli URL dei network. Gli endpoint
+corretti vengono SOLO dall'utente. Errore tipico da evitare:
+  SBAGLIATO: https://uncappednetwork.com/pb
+  CORRETTO:  https://offers.uncappednetwork.com/forms/api/
+L'utente fornisce l'URL esatto. Usalo COSI' COM'E', senza modificarlo.
+
+Se il network ha anche:
+- Fingerprint script URL → va nel content.json tracking.network.fingerprintScript
+- Click pixel URL → va nel content.json tracking.network.clickPixel
 
 ================================================================================
-STEP 2 - INSERIMENTO TRACCIAMENTO
+STEP 2 - INSERIMENTO DATI
 ================================================================================
 
-Inserisci i dati nel campo "tracking" di OGNI content.json (tutte le nazioni,
-tutti i media buyer).
+### A. CONTENT.JSON — tracking section (script loading)
 
-Struttura tracking nel content.json:
+Per cartelle -gg:
 {
   "tracking": {
     "googleAdsId": "AW-XXXXXXXXX",
-    "conversionLabel": "abc123xyz",
-    "conversionValue": 49.99,
-    "conversionCurrency": "EUR",
-    "facebookPixelId": "1234567890",
+    "conversionLabel": "",
+    "conversionValue": [prezzo scontato locale],
+    "conversionCurrency": "[valuta locale]",
+    "facebookPixelId": "",
     "network": {
-      "apiEndpoint": "https://network.example.com/api/order",
-      "offerId": "12345",
-      "params": {}
+      "apiEndpoint": "",
+      "offerId": "",
+      "uid": "",
+      "key": "",
+      "lpId": "",
+      "fingerprintScript": "https://...",
+      "clickPixel": "https://..."
     }
   }
 }
 
-IMPORTANTE - VALORE DI CONVERSIONE DINAMICO:
-- tracking.conversionValue = prezzo SCONTATO del prodotto in quella nazione
-- tracking.conversionCurrency = valuta locale di quella nazione
+Per cartelle -fb:
+{
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": [prezzo scontato locale],
+    "conversionCurrency": "[valuta locale]",
+    "facebookPixelId": "1234567890123456",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "uid": "",
+      "key": "",
+      "lpId": "",
+      "fingerprintScript": "https://...",
+      "clickPixel": "https://..."
+    }
+  }
+}
 
-ESEMPIO:
-- Italia: conversionValue: 49.99, conversionCurrency: "EUR"
-- Polonia: conversionValue: 149, conversionCurrency: "PLN"
-- Ungheria: conversionValue: 14990, conversionCurrency: "HUF"
+NOTA: I campi network nel content.json (apiEndpoint, uid, key, offerId, lpId)
+NON vengono usati per l'invio lead. L'invio lead avviene tramite fetch() diretto
+dal template usando il networkConfig passato dal page.tsx.
+Solo fingerprintScript e clickPixel vengono ancora letti dal content.json.
 
-Il googleAdsId e conversionLabel sono UGUALI per tutte le nazioni.
-Il facebookPixelId e' UGUALE per tutte le nazioni.
-Il network puo' essere uguale o diverso (chiedi all'utente se cambia per nazione).
+### B. PAGE.TSX — networkConfig (INVIO LEAD DIRETTO AL NETWORK)
+
+Per OGNI cartella nazione, scrivi il page.tsx con networkConfig.
+Il template usera' questi dati per fare fetch() diretto al network con FormData.
+
+```tsx
+import LandingTemplateMirko from './LandingTemplateMirko';
+import content from './content.json';
+
+const networkConfig = {
+  endpoint: 'https://offers.NETWORK.com/forms/api/',
+  uid: 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX',
+  key: 'XXXXXXXXXXXXXXXXXXXXXX',
+  offerId: 'XXX',
+  lpId: 'XXX',
+};
+
+export default function Page() {
+  return <LandingTemplateMirko content={content} networkConfig={networkConfig} />;
+}
+```
+
+REGOLE CRITICHE:
+- page.tsx e' un SERVER COMPONENT: NO 'use client'
+- L'endpoint URL va copiato ESATTAMENTE come fornito dall'utente
+- uid, key, offerId, lpId vanno copiati ESATTAMENTE
+- Ogni nazione/piattaforma ha il SUO page.tsx con i SUOI dati
+- Il template fa fetch() DIRETTO all'endpoint: NO proxy, NO /api/lead
+- offerId viene inviato come 'offer' nel FormData al network
+- lpId viene inviato come 'lp' nel FormData al network
+
+COME FUNZIONA L'INVIO (gestito dal template, NON dal page.tsx):
+Quando l'utente compila il form nella landing, il template esegue:
+1. Crea un new FormData()
+2. Appende: uid, key, offer (=offerId), lp (=lpId), name, tel, street-address
+3. Se tmfp disponibile (fingerprint): appende tmfp
+4. Se tmfp NON disponibile: appende ua (navigator.userAgent)
+5. Fa await fetch(endpoint, { method: 'POST', body: formData })
+6. Logga la risposta in console
+7. Reindirizza alla pagina /ty
+
+Questo codice e' GIA' nel LandingTemplateMirko.tsx (e negli altri template).
+NON serve scrivere questa logica nel page.tsx. Il page.tsx passa SOLO i dati.
+
+### C. TY/PAGE.TSX — conversione tracking (HARDCODATA)
+
+Per cartelle -gg (Google Ads):
+```tsx
+'use client';
+
+import { useEffect } from 'react';
+import TyTemplateMirko from '../TyTemplateMirko';
+import content from '../content.json';
+
+export default function TyPage() {
+  useEffect(() => {
+    const orderNumber = sessionStorage.getItem('orderNumber') || '';
+    const key = `cf_${orderNumber}`;
+    if (sessionStorage.getItem(key)) return;
+    sessionStorage.setItem(key, '1');
+
+    const transactionId = `${orderNumber}_${Date.now()}`;
+
+    const w = window as any;
+    if (typeof w.gtag === 'function') {
+      w.gtag('event', 'conversion', {
+        send_to: 'AW-XXXXXXXXX/CONVERSION_LABEL',
+        value: PREZZO_SCONTATO,
+        currency: 'VALUTA',
+        transaction_id: transactionId,
+      });
+    }
+  }, []);
+
+  return <TyTemplateMirko content={content} />;
+}
+```
+
+Per cartelle -fb (Meta Pixel):
+```tsx
+'use client';
+
+import { useEffect } from 'react';
+import TyTemplateMirko from '../TyTemplateMirko';
+import content from '../content.json';
+
+export default function TyPage() {
+  useEffect(() => {
+    const orderNumber = sessionStorage.getItem('orderNumber') || '';
+    const key = `cf_${orderNumber}`;
+    if (sessionStorage.getItem(key)) return;
+    sessionStorage.setItem(key, '1');
+
+    const eventId = `${orderNumber}_${Date.now()}`;
+
+    const w = window as any;
+    if (typeof w.fbq === 'function') {
+      w.fbq('track', 'Purchase', {
+        value: PREZZO_SCONTATO,
+        currency: 'VALUTA',
+      }, { eventID: eventId });
+    }
+  }, []);
+
+  return <TyTemplateMirko content={content} />;
+}
+```
+
+REGOLE CRITICHE:
+- ty/page.tsx e' un CLIENT COMPONENT: DEVE avere 'use client'
+- send_to: formato 'AW-ID/LABEL' (Google)
+- value: prezzo scontato NUMERICO (es: 299, 69.99), MAI stringa
+- currency: codice ISO valuta (es: 'PLN', 'EUR', 'CZK')
+- La guardia sessionStorage DEVE essere presente (anti-duplicazione)
+- transaction_id (Google) e eventID (Facebook) DEVONO essere presenti
 
 ================================================================================
 STEP 3 - VERIFICA
 ================================================================================
 
-Dopo aver inserito il tracciamento, verifica OGNI content.json:
+Dopo aver inserito il tracciamento, verifica OGNI landing:
 
-Per ogni nazione e media buyer:
-[ ] googleAdsId presente e corretto
-[ ] conversionLabel presente e corretto
-[ ] conversionValue = prezzo scontato locale
-[ ] conversionCurrency = valuta locale
-[ ] facebookPixelId presente e corretto
-[ ] network.apiEndpoint presente
-[ ] network.offerId presente
-[ ] JSON valido dopo le modifiche
+### Per cartelle -gg:
+[ ] content.json: googleAdsId presente (formato AW-XXXXXXXXX)
+[ ] content.json: facebookPixelId == "" (stringa vuota)
+[ ] page.tsx: networkConfig con endpoint, uid, key, offerId, lpId corretti
+[ ] page.tsx: NO 'use client' (e' un Server Component)
+[ ] ty/page.tsx: 'use client' presente
+[ ] ty/page.tsx: guardia sessionStorage cf_{orderNumber} presente
+[ ] ty/page.tsx: gtag conversion con send_to, value, currency, transaction_id
+[ ] ty/page.tsx: value = prezzo scontato locale (numero, non stringa)
+
+### Per cartelle -fb:
+[ ] content.json: facebookPixelId presente (solo numeri)
+[ ] content.json: googleAdsId == "" (stringa vuota)
+[ ] page.tsx: networkConfig con endpoint, uid, key, offerId, lpId corretti
+[ ] page.tsx: NO 'use client' (e' un Server Component)
+[ ] ty/page.tsx: 'use client' presente
+[ ] ty/page.tsx: guardia sessionStorage cf_{orderNumber} presente
+[ ] ty/page.tsx: fbq Purchase con value, currency, eventID
+[ ] ty/page.tsx: value = prezzo scontato locale (numero, non stringa)
+
+### Coerenza cross-piattaforma:
+[ ] value UGUALE tra -gg e -fb della stessa nazione
+[ ] currency UGUALE tra -gg e -fb della stessa nazione
+[ ] networkConfig endpoint URL esattamente come fornito dall'utente
+
+### Test chiamata network (OBBLIGATORIO):
+Per ogni nazione, testa con curl che il network risponda:
+```
+curl -s -X POST "ENDPOINT_URL" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "uid=XXX&key=XXX&offer=XXX&lp=XXX&name=Test&tel=+00000000&ip=8.8.8.8&ua=Mozilla/5.0"
+```
+Il network deve rispondere con HTTP 200 e un JSON con "code":200.
+Se risponde errore o il dominio non esiste, l'URL e' SBAGLIATO.
 
 ================================================================================
 STEP 4 - REPORT FINALE
@@ -94,100 +355,28 @@ Genera un report finale con:
 - Media buyer: [lista]
 - Nazioni: [lista con prezzi]
 
-### TRACCIAMENTO
-- Google Ads ID: AW-XXXXXXXXX
-- Conversion Label: abc123xyz
-- Meta Pixel ID: 1234567890
-- Network endpoint: [url]
+### NETWORK PER NAZIONE
+| Nazione | Piattaforma | Endpoint | UID | Offer | LP |
+|---------|-------------|----------|-----|-------|----|
+| ...     | ...         | ...      | ... | ...   | ...|
 
-### DETTAGLIO PER NAZIONE
-| Nazione | Prezzo | Valuta | Conv. Value | Conv. Currency |
-|---------|--------|--------|-------------|----------------|
-| ITA     | 49.99  | EUR    | 49.99       | EUR            |
-| PL      | 149    | PLN    | 149         | PLN            |
-| HU      | 14990  | HUF    | 14990       | HUF            |
-
-### CARTELLE CREATE
-Lista completa di tutte le cartelle con path.
+### TRACKING PER NAZIONE
+| Nazione | Piattaforma | Tipo conversione | Value | Currency |
+|---------|-------------|------------------|-------|----------|
+| ...     | GG          | gtag conversion  | ...   | ...      |
+| ...     | FB          | fbq Purchase     | ...   | ...      |
 
 ### CHECK FINALE
-[ ] Tutti i content.json hanno il tracciamento
-[ ] Valori di conversione corretti per ogni nazione
-[ ] Nessun campo tracking vuoto
+[ ] Tutti i page.tsx hanno networkConfig corretto
+[ ] Tutti i ty/page.tsx hanno tracking hardcodato corretto
+[ ] Tutti i content.json hanno script loading corretto
+[ ] Test curl superato per ogni network endpoint
 [ ] JSON tutti validi
+[ ] Nessun 'use client' nei page.tsx
+[ ] Tutti i ty/page.tsx con tracking hanno 'use client'
 
 --> MOSTRA REPORT
 --> CHIEDI CONFERMA FINALE ALL'UTENTE
-
-================================================================================
-STEP 5 - VALIDAZIONE COMPLETA
-================================================================================
-
-Dopo il report e PRIMA della conferma finale, esegui TUTTI questi controlli
-su OGNI content.json (tutte le nazioni, tutti i media buyer).
-Se trovi errori, ELENCALI TUTTI e chiedi all'utente come procedere.
-
-### TRACKING - FORMATO ID
-
-[ ] googleAdsId rispetta il formato AW- seguito da numeri (es: AW-123456789)
-[ ] conversionLabel non vuoto, solo lettere e numeri (es: AbC1dEf2gHi)
-[ ] facebookPixelId non vuoto, solo numeri (es: 1234567890123456)
-[ ] network.apiEndpoint e' un URL valido (inizia con https://)
-[ ] network.offerId non vuoto
-
-### TRACKING - COERENZA VALORI
-
-[ ] conversionValue == pricing.currentPrice (per ogni nazione)
-[ ] conversionCurrency == pricing.currency (per ogni nazione)
-[ ] googleAdsId UGUALE in tutte le nazioni (stessa conversion action)
-[ ] conversionLabel UGUALE in tutte le nazioni
-[ ] facebookPixelId UGUALE in tutte le nazioni
-
-### PREZZI - COERENZA GLOBALE
-
-[ ] pricing.currentPrice usato ovunque (priceBox, comparison, package, orderForm, stickyCta)
-[ ] pricing.originalPrice usato ovunque (priceBox, package, stickyCta)
-[ ] pricing.discountPercent coerente con originalPrice e currentPrice
-[ ] Nessun prezzo hardcodato diverso da pricing
-[ ] Simbolo valuta corretto per la nazione
-
-### SOCIAL PROOF - COERENZA
-
-[ ] hero.socialProof.count == reviews.totalCount (stesso numero)
-[ ] hero.socialProof.rating == reviews.rating
-
-### CONTENUTO - QUALITA'
-
-[ ] Nessun placeholder rimasto ([nome], TODO, XXX, PLACEHOLDER, Lorem, ecc)
-[ ] Nessun riferimento a nazioni specifiche (Italia, Poland, ecc)
-[ ] Nessun nome di brand/negozio terzo (Amazon, Decathlon, ecc)
-[ ] Nessun testo in lingua sbagliata (es: italiano rimasto nelle traduzioni)
-[ ] Nomi e citta' nelle recensioni adattati alla nazione
-[ ] Nome prodotto NON tradotto (uguale in tutte le nazioni)
-[ ] Caratteri accentati corretti (e', a', u' → è, à, ù)
-[ ] Nessun tag HTML nelle recensioni (<strong>, <em>, ecc)
-
-### STRUTTURA FILE
-
-[ ] Ogni cartella ha: page.tsx + content.json + ty/page.tsx
-[ ] page.tsx identici in tutte le cartelle (stesso contenuto)
-[ ] ty/page.tsx identici in tutte le cartelle
-[ ] Cartella immagini esiste in public/images/[venditore]/[prodotto]/
-[ ] Tutti i path immagini nel JSON puntano a file esistenti
-[ ] JSON valido (nessun errore di parsing)
-
-### RISULTATO VALIDAZIONE
-
-Mostra il risultato cosi':
-
-✅ CHECK SUPERATO (se tutto ok)
-oppure
-❌ ERRORI TROVATI:
-  - [lista errori con file e riga]
-
---> MOSTRA RISULTATO VALIDAZIONE
---> SE CI SONO ERRORI: correggi e ri-valida
---> SE TUTTO OK: CHIEDI CONFERMA FINALE ALL'UTENTE
 
 ================================================================================
 DOPO CONFERMA
@@ -198,6 +387,7 @@ Aggiorna storico.json con:
 - Data creazione
 - Media buyer coinvolti
 - Nazioni tradotte
+- Piattaforme per nazione (GG/FB/entrambe)
 - Tracking inserito (si/no)
 - Validazione superata (si/no)
 

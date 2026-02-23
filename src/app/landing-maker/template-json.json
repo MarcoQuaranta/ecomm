@@ -15,7 +15,7 @@
     "3. STRUTTURA CARTELLE: /images/[nome-venditore]/[nome-prodotto]/ — se il prodotto ha più parole (es: 'QuickChef Pro Max'), la cartella si chiama solo con il nome base (es: 'quickchef'). Se la cartella esiste già, CHIEDERE all'utente come vuole chiamarla. Dentro la cartella ci sono due sottocartelle:",
     "   - carosello/ — foto numerate progressivamente (1.jpg, 2.png, 3.webp, ecc). TUTTE le immagini presenti vanno inserite nel gallery.slides della hero, IN ORDINE. La prima immagine (1.*) va anche nel riepilogo ordine come thumbnail.",
     "   - angle/ — foto numerate progressivamente (1.jpg, 2.png, ecc). Vanno inserite IN ORDINE nei blocchi della sezione 'Perché è diverso' (features.items). La foto 1 va nel primo blocco, la 2 nel secondo, ecc.",
-    "   L'utente carica le immagini, tu inserisci i path nel JSON. Non importa l'estensione: inserisci tutte le immagini presenti. Le immagini vengono ottimizzate automaticamente dal componente tramite next/image.",
+    "   L'utente carica le immagini, tu inserisci i path nel JSON. REGOLA AUTO-DETECT: dopo aver creato le cartelle, controlla SEMPRE con Glob se ci sono già file dentro. Se ci sono, rileva il formato reale (png, jpg, gif, webp) e usa l'estensione corretta nel JSON. MAI assumere .webp — controlla sempre. Se le cartelle sono vuote, usa .webp come placeholder. Le immagini vengono ottimizzate automaticamente dal componente tramite next/image.",
     "",
     "=== BENEFITS ===",
     "4. I benefits devono riguardare SOLO il prodotto e le sue funzionalità. MAI parlare di spedizione, consegna, pagamento, garanzia nei benefits.",
@@ -89,10 +89,8 @@
     "discountPercent": 50
   },
 
-  "topBar": {
-    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
-    "text": "Spedizione Gratuita 24/48h · Pagamento alla Consegna · Garanzia 2 Anni"
-  },
+  "topBar": null,
+  "_topBar_note": "RIMOSSA - La topBar non viene più usata. Impostare sempre a null.",
 
   "urgencyBanner": {
     "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
@@ -105,17 +103,17 @@
     "_note": "DINAMICO - Badge, titolo, sottotitolo e social proof cambiano per ogni prodotto. MAI citare nazioni specifiche.",
     "_note_title": "DINAMICO - Titolo cambia per ogni prodotto.",
     "_instructions_badge": "Qualcosa di semplice che riguarda il prodotto e trasmette INNOVAZIONE. Se prodotto tecnologico: 'Tecnologia [anno corrente]'. Se prodotto benessere/salute: 'Novità [anno corrente]' o 'Innovazione [anno corrente]'. Deve sempre contenere l'ANNO CORRENTE.",
-    "_instructions_title": "SOLUZIONE a un PROBLEMA. Il titolo deve dire al cliente cosa risolve il prodotto. Formato: frase principale + highlight (la parte wow in corsivo) + suffisso. DEVE essere grammaticalmente corretto: se title + highlight + suffix formano due frasi separate, usare punteggiatura (due punti, punto, ecc). Esempio corretto: 'Casa Pulita Ogni Giorno' + 'Senza Fare Nulla:' + 'Lui Aspira e Lava Mentre Tu Ti Rilassi'. Esempio corretto senza punteggiatura (unica frase): 'Elimina il Dolore Cervicale' + 'in 10 Minuti' + 'Senza Farmaci e Senza Fisioterapista'. Linguaggio emotivo, non tecnico.",
-    "_instructions_subtitle": "Descrizione aggressiva ma rassicurante. Spiega COSA fa il prodotto in modo semplice e concreto. Deve dare fiducia. 1-2 frasi.",
-    "_instructions_socialProof": "count: numero tra 10.000 e 30.000, MAI cifre tonde (es: 12.847, 23.519, 16.203). rating: valore random tra 4.7 e 4.9. DEVONO corrispondere ESATTAMENTE a reviews.totalCount e reviews.rating.",
+    "_instructions_title": "SOLUZIONE a un PROBLEMA. Il titolo deve dire al cliente cosa risolve il prodotto. Viene renderizzato in UPPERCASE via CSS e con line-height maggiore (1.25). Formato: frase principale + highlight (la parte wow in corsivo) + suffisso. DEVE essere grammaticalmente corretto. Tieni il titolo CONCISO: il suffix non deve essere troppo lungo. Esempio: 'Cucina Completa' + 'in Metà Spazio.' + 'Friggitrice ad Aria, Forno, Piastra e Caffè in Un Apparecchio'. Linguaggio emotivo, non tecnico.",
+    "_instructions_subtitle": "Descrizione aggressiva ma rassicurante. Spiega COSA fa il prodotto in modo semplice e concreto. Deve dare fiducia. 1-2 frasi. IMPORTANTE: il campo usa dangerouslySetInnerHTML, quindi puoi usare tag <strong> per evidenziare 1-2 parole chiave (es: 'formato tascabile', 'al primo colpo'). Non esagerare: max 2 grassetti.",
+    "_instructions_socialProof": "count: numero tra 10.000 e 30.000, MAI cifre tonde (es: 12.847, 23.519, 16.203). Formato: '[numero] recensioni verificate'. rating: valore random tra 4.7 e 4.9. DEVONO corrispondere ESATTAMENTE a reviews.totalCount e reviews.rating.",
     "badge": "Tecnologia 2026",
     "title": "Elimina il Dolore Cervicale",
     "titleHighlight": "in 10 Minuti",
     "titleSuffix": "Senza Farmaci e Senza Fisioterapista",
-    "subtitle": "Il primo massaggiatore con impulsi EMS che scioglie contratture, rigidità e tensione direttamente dal divano di casa. Semplice come indossare una sciarpa.",
+    "subtitle": "Saldatrice inverter da officina in <strong>formato tascabile</strong>. Attacca, regola, salda. Funziona <strong>al primo colpo</strong>.",
     "socialProof": {
-      "rating": "4.9/5",
-      "count": "12.847 clienti soddisfatti"
+      "rating": "4.8/5",
+      "count": "14.729 recensioni verificate"
     }
   },
 
@@ -135,34 +133,41 @@
 
   "benefits": {
     "_note": "DINAMICO - Numero variabile di bullet point. Devono riguardare SOLO le caratteristiche/benefici del prodotto. NON parlare di spedizione, consegna, pagamento, garanzia qui.",
-    "_instructions": "Ogni bullet ha un TITOLO IN BOLD (incisivo, corto) e una DESCRIZIONE (1 riga, concreta). Devono puntare sugli ANGLE forniti dall'utente all'inizio. Se non viene detto quanti metterne: 5-6 di default. Se il prodotto ha molti angle fondamentali che devono esserci tutti: fino a 10. Valuta tu in base al prodotto. Linguaggio emotivo, non tecnico: traduci le specifiche in benefici concreti.",
+    "_instructions": "Ogni bullet ha un TITOLO IN BOLD (incisivo, corto, finisce con ':') e una DESCRIZIONE BREVE (max 8-10 parole, concreta). Devono puntare sugli ANGLE forniti dall'utente all'inizio. Default: 5-8 bullet. Linguaggio emotivo, non tecnico: traduci le specifiche in benefici concreti. Testi CORTI e d'impatto.",
     "items": [
-      { "title": "Sollievo in 10 minuti:", "description": "impulsi EMS penetrano nel muscolo e sciolgono la contrattura." },
-      { "title": "Zero farmaci:", "description": "niente antidolorifici. Azione naturale su collo, spalle e trapezio." },
-      { "title": "Calore terapeutico 42°C:", "description": "rilassa la muscolatura profonda come un impacco caldo." },
-      { "title": "Usalo ovunque:", "description": "wireless, leggero (180g). In ufficio, in auto, sul divano." },
-      { "title": "15 livelli di intensità:", "description": "delicato per i sensibili, intenso per i \"duri\"." }
+      { "title": "Inverter IGBT:", "description": "arco stabile, cordone pulito, zero schizzi" },
+      { "title": "Hot Start:", "description": "l'arco parte al primo colpo, zero incollaggi" },
+      { "title": "20-120A regolabili:", "description": "dal sottile al pesante, una macchina per tutto" },
+      { "title": "Solo 1,5 kg:", "description": "saldi in verticale, sopra la testa, ovunque" },
+      { "title": "Protezione surriscaldamento:", "description": "spegnimento automatico, non ti lascia a metà" },
+      { "title": "Presa di casa + prolunga 10m:", "description": "niente trifase, si riavvolge da sola" },
+      { "title": "Bacchette standard 2,5-3,2 mm:", "description": "le trovi in qualsiasi ferramenta" },
+      { "title": "Kit PRO completo:", "description": "maschera, guanti, 20 bacchette, magneti, prolunga" }
     ]
   },
 
   "priceBox": {
     "_note_static": "shippingLabel, shippingValue, guaranteeLabel, offerToggleText sono STATICI - non modificare.",
-    "_note_dynamic": "productName, originalPriceLabel, discountLabel e offerItems sono DINAMICI. TUTTI i prezzi si calcolano da pricing (originalPrice, currentPrice, discountPercent). discountLabel: 'RISPARMI [originalPrice - currentPrice][currencySymbol] (-[discountPercent]%)'.",
+    "_note_dynamic": "productName e offerItems sono DINAMICI. TUTTI i prezzi si calcolano da pricing (originalPrice, currentPrice, discountPercent).",
+    "_note_layout": "LAYOUT PRICE BOX: sotto al nome prodotto c'è la garanzia, poi una riga con prezzo originale barrato + badge sconto (es: '-50%' da gallery.discountTag), poi il prezzo attuale grande in verde, poi spedizione, poi CTA. NON ci sono più i campi originalPriceLabel e discountLabel — il prezzo barrato e il badge sconto vengono renderizzati automaticamente dal componente usando pricing.originalPrice e gallery.discountTag.",
     "_instructions_productName": "Nome prodotto con simbolo TM (trademark). Formato: 'NomeProdotto Pro™' o 'NomeProdotto™'. Usare sempre il nome esatto fornito dall'utente.",
     "_instructions_offerItems": "L'utente fornisce cosa include l'offerta all'inizio della creazione. Inserire tutti gli elementi. Usare badge 'REGALO' per gli accessori extra/bonus. L'ultima riga è sempre 'Garanzia 2 Anni + Assistenza Dedicata' senza badge.",
-    "productName": "NeckRelax Pro™",
-    "originalPriceLabel": "Prezzo di listino:",
-    "discountLabel": "RISPARMI 59€ (-50%)",
-    "shippingLabel": "Spedizione Rapida:",
-    "shippingValue": "Gratis",
+    "productName": "Bowek Ironweld™",
+    "shippingLabel": "Spedizione rapida:",
+    "shippingValue": "GRATIS",
     "guaranteeLabel": "Garanzia 2 Anni",
     "offerToggleText": "Scopri cosa include l'offerta",
     "offerItems": [
-      { "text": "NeckRelax Pro™ — Massaggiatore EMS Professionale", "badge": null },
-      { "text": "Cavo di ricarica USB-C", "badge": null },
-      { "text": "Custodia da Viaggio Premium", "badge": null },
-      { "text": "Gel Conduttore EMS", "badge": "REGALO" },
-      { "text": "Guida 5 Esercizi Anti-Cervicale", "badge": "REGALO" },
+      { "text": "Bowek Ironweld™ — Saldatrice Inverter IGBT", "badge": null },
+      { "text": "Valigetta Rigida Antiurto", "badge": null },
+      { "text": "Cavo Massa + Morsetto Heavy-Duty", "badge": null },
+      { "text": "20 Bacchette E6013 2,5 mm", "badge": null },
+      { "text": "Maschera Auto-Oscurante", "badge": "REGALO" },
+      { "text": "Guanti da Saldatura in Crosta", "badge": "REGALO" },
+      { "text": "Spazzola Acciaio + Martellina Scoria (2-in-1)", "badge": "REGALO" },
+      { "text": "2 Magneti Angolari 45°/90°", "badge": "REGALO" },
+      { "text": "Prolunga 10m Autoavvolgente", "badge": "REGALO" },
+      { "text": "Libretto di Istruzioni in 48 Lingue", "badge": null },
       { "text": "Garanzia 2 Anni + Assistenza Dedicata", "badge": null }
     ]
   },
@@ -170,8 +175,8 @@
   "cta": {
     "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
     "mainText": "ORDINA ORA",
-    "mainSubtext": "Pagamento Contanti alla Consegna",
-    "subNote": "Zero rischio: paghi solo quando ricevi il pacco"
+    "mainSubtext": "Paghi Alla Consegna",
+    "subNote": ""
   },
 
   "trustBadges": {
@@ -185,25 +190,26 @@
 
   "problems": {
     "_note": "DINAMICO (contenuto) - Items e soluzione cambiano per ogni prodotto. MAI citare nazioni specifiche.",
-    "_note_title": "STATICO - eyebrow 'Ti riconosci?' e title 'Questi problemi ti sono familiari?' non cambiano mai.",
-    "_instructions_items": "Individua i 3 problemi PIÙ COMUNI che il prodotto risolve (salvo istruzioni diverse dall'utente). Descrivili come asfissianti ma senza essere drammatici. Devono creare FAMILIARITÀ: problemi quotidiani che capitano a tutti senza il prodotto. Il cliente deve pensare 'sì, succede anche a me'. Formato: icon (nome icona SVG) + titleBold (problema in una frase) + text (conseguenza breve). Lunghezza simile all'esempio nel template.",
-    "_instructions_solution": "solutionTitle è STATICO: 'Esiste una soluzione migliore.' - solutionText è DINAMICO: descrizione brevissima ed emozionale dei punti chiave del prodotto. 1-2 frasi. Stile: 'Tecnologia usata dai professionisti direttamente a casa tua. Senza abbonamenti.' Conciso, d'impatto.",
-    "eyebrow": "Ti riconosci?",
-    "title": "Questi problemi ti sono familiari?",
+    "_note_title": "DINAMICO - eyebrow e title cambiano per ogni prodotto. L'eyebrow è 'Il problema', il title è una domanda che accenna ai PRODOTTI CONCORRENTI (non ai problemi personali del cliente). Esempio: 'Le saldatrici economiche ti deludono?', 'I robot aspirapolvere economici ti hanno deluso?'.",
+    "_instructions_items": "4 problemi legati ai PRODOTTI CONCORRENTI (non ai problemi personali del cliente). Devono far pensare 'sì, queste cose capitano con i prodotti economici'. Formato: icon (nome icona SVG) + titleBold (problema in una frase, può contenere tag <strong> per evidenziare 1-2 parole chiave) + text (VUOTO, stringa vuota ''). Il campo titleBold usa dangerouslySetInnerHTML. Ultimo item può parlare del COSTO delle alternative professionali.",
+    "_instructions_solution": "solutionTitle è DINAMICO: 'Con [NomeProdotto]™ è diverso.' - solutionText è DINAMICO: una frase BREVE e d'impatto che riassume il vantaggio chiave. Max 15 parole. Sfondo verde.",
+    "eyebrow": "Il problema",
+    "title": "Le saldatrici economiche ti deludono?",
     "items": [
-      { "icon": "stiffness", "titleBold": "Ti svegli con il collo bloccato", "text": "e la rigidità non passa fino a metà mattina." },
-      { "icon": "pain", "titleBold": "Dopo ore al computer senti una morsa", "text": "che parte dal collo e arriva alle spalle." },
-      { "icon": "fatigue", "titleBold": "Farmaci e pomate non bastano più", "text": "— il dolore torna sempre il giorno dopo." }
+      { "icon": "money", "titleBold": "Surriscaldamento dopo <strong>pochi minuti</strong> di utilizzo", "text": "" },
+      { "icon": "warning", "titleBold": "Saldature <strong>fragili e irregolari</strong> che si spezzano", "text": "" },
+      { "icon": "timer", "titleBold": "Peso <strong>eccessivo</strong> e materiali scadenti che si rompono subito", "text": "" },
+      { "icon": "money", "titleBold": "Un intervento professionale ti costa <strong>200-400€</strong> ogni volta", "text": "" }
     ],
-    "solutionTitle": "Esiste una soluzione migliore.",
-    "solutionText": "Tecnologia EMS professionale, direttamente a casa tua. Senza farmaci, senza appuntamenti."
+    "solutionTitle": "Con Ironweld™ è diverso.",
+    "solutionText": "Saldature professionali in 1,5 kg. Paghi una volta, ripari per sempre."
   },
 
   "features": {
     "_note": "DINAMICO (contenuto e titoli) - Numero variabile di blocchi foto+testo. Le immagini sono in /images/[venditore]/[prodotto]/angle/ con nomi progressivi (1.jpg, 2.png, ecc). Inserire IN ORDINE: la foto 1 nel primo blocco, la 2 nel secondo, ecc. tagColor: green, orange, blue, red.",
     "_note_title": "DINAMICO - eyebrow 'Perché è diverso' è STATICO. Il title (sottotitolo grande) è DINAMICO.",
     "_instructions_title": "Il title deve essere molto D'IMPATTO e SEMPLICE. Una frase corta che riassume il vantaggio principale del prodotto in modo emotivo. Esempi: 'Tecnologia professionale, semplicità casalinga.', 'Come avere un barbiere in casa.', 'Pulito perfetto senza muovere un dito.'",
-    "_instructions_items": "Angle incisivi sul prodotto, basati su quelli forniti dall'utente. Linguaggio SEMPLICE, non troppo tecnico. Se servono info tecniche, solo cose che tutti conoscono (wattaggio, gradi, ecc). I titoli dei singoli blocchi devono essere aggressivi e immediati. Esempi: 'Come avere una domestica in casa', 'Dimentica aspirapolvere e mocho', 'Sollievo in 10 minuti senza farmaci'. Ogni blocco ha: image, tag (etichetta corta in caps), title (incisivo), description (1-2 righe, beneficio concreto).",
+    "_instructions_items": "Angle incisivi sul prodotto, basati su quelli forniti dall'utente. Linguaggio SEMPLICE, non troppo tecnico. Se servono info tecniche, solo cose che tutti conoscono (wattaggio, gradi, ecc). I titoli dei singoli blocchi devono essere aggressivi e immediati. Esempi: 'Come avere una domestica in casa', 'Dimentica aspirapolvere e mocho', 'Sollievo in 10 minuti senza farmaci'. Ogni blocco ha: image, tag (etichetta corta in caps), title (incisivo), description (1-2 righe, beneficio concreto). GRASSETTI: nelle description, evidenziare con <strong> le 1-2 parole chiave più importanti per box (dato concreto, beneficio principale). Non esagerare: max 2 grassetti per descrizione, solo le parole che catturano l'occhio. Il campo usa dangerouslySetInnerHTML quindi i tag HTML vengono renderizzati.",
     "eyebrow": "Perché è diverso",
     "title": "Tecnologia professionale, semplicità casalinga.",
     "items": [
@@ -260,26 +266,21 @@
   "midCta": {
     "_note": "STATICO tranne la percentuale di sconto. Il testo usa pricing.discountPercent per la percentuale. Il subtext è sempre uguale. Formato: 'ORDINA ORA CON IL [discountPercent]% DI SCONTO'.",
     "text": "ORDINA ORA CON IL 50% DI SCONTO",
-    "subtext": "Pagamento Contanti alla Consegna"
+    "subtext": "Paghi Alla Consegna"
   },
 
   "specs": {
     "_note": "DINAMICO (contenuto) - Presente SOLO per prodotti molto tecnici. Se il prodotto non è tecnico, questa sezione può essere omessa.",
     "_note_title": "STATICO - eyebrow 'Specifiche' e title 'Caratteristiche Tecniche' non cambiano mai.",
-    "_instructions": "Inserire solo le specifiche PRINCIPALI, non un elenco infinito. Solo se il prodotto è molto tecnico (elettronica, dispositivi, ecc). Se le specifiche non sono presenti nelle info iniziali fornite dall'utente, INVENTALE esagerando leggermente verso l'alto: metti specifiche molto buone per quella categoria di prodotto. Esempio: se è un condizionatore, metti specifiche da fascia alta. Se è un massaggiatore, metti numeri da dispositivo professionale.",
+    "_instructions": "Inserire SOLO le 6 specifiche PIÙ IMPORTANTI. Non un elenco infinito. Le righe hanno sfondi alternati (bianco/azzurrino) per leggibilità. Testi più grandi (17px desktop). Se le specifiche non sono presenti nelle info iniziali, INVENTALE esagerando leggermente verso l'alto: metti specifiche molto buone per quella categoria.",
     "eyebrow": "Specifiche",
     "title": "Caratteristiche Tecniche",
     "items": [
-      { "label": "Tecnologia", "value": "EMS (Stimolazione Elettrica Muscolare)" },
-      { "label": "Elettrodi", "value": "16 pad in silicone medicale" },
-      { "label": "Livelli di intensità", "value": "15 livelli regolabili" },
-      { "label": "Modalità", "value": "4 (rilassamento, recupero, intenso, notte)" },
-      { "label": "Calore terapeutico", "value": "42°C costanti, riscaldamento in 30s" },
-      { "label": "Batteria", "value": "Li-ion 1800mAh — circa 30 sessioni" },
-      { "label": "Ricarica", "value": "USB-C, carica completa in 2h" },
-      { "label": "Peso", "value": "180g" },
-      { "label": "Materiale", "value": "ABS + silicone medicale ipoallergenico" },
-      { "label": "Timer auto-spegnimento", "value": "15 minuti" },
+      { "label": "Tecnologia", "value": "Inverter IGBT" },
+      { "label": "Corrente", "value": "20-120A (5 livelli)" },
+      { "label": "Innesco", "value": "Hot Arc Start" },
+      { "label": "Alimentazione", "value": "Presa di casa standard" },
+      { "label": "Peso", "value": "~1,5 kg" },
       { "label": "Certificazioni", "value": "CE · FCC · RoHS" }
     ]
   },
@@ -290,6 +291,8 @@
     "_instructions": "Angle principali del prodotto (non troppi, 4-6 righe) confrontati con la concorrenza. REGOLE: 1) NON troppo tecnico (niente '4000 vs 5000 ampere'). 2) NON auto-celebrativo esagerato (niente 'il nostro bello, il loro brutto'). 3) OBIETTIVO e PRATICO: vantaggi concreti. Esempio: 'Caldo e freddo' vs 'Solo freddo', 'Timer programmabile' vs 'Accensione manuale'. 4) La concorrenza deve essere EQUA: il concorrente più venduto su Amazon, oppure l'alternativa umana/professionale (es: nutrizionista, fisioterapista, barbiere). competitorColumn può essere: 'Fisioterapista / Farmaci', 'Prodotto concorrente migliore', 'Altri prodotti', 'Robot concorrenti su Amazon', ecc. 5) L'ultima riga è sempre il COSTO: nostro prezzo (da pricing) vs costo alternativa. 6) TESTI CORTI: devono stare nella tabella senza uscire fuori. Max 5-6 parole per cella.",
     "eyebrow": "Il Confronto",
     "title": "Quali vantaggi avrai rispetto alle alternative?",
+    "featureColumn": "Caratteristica",
+    "winnerBadge": "VINCITORE",
     "productColumn": "NeckRelax Pro™",
     "competitorColumn": "Fisioterapista / Farmaci",
     "rows": [
@@ -305,28 +308,28 @@
   "package": {
     "_note": "DINAMICO (contenuto) - Numero variabile di elementi nel pacco. TUTTI i prezzi si calcolano da pricing. valueType: 'price' (barrato, usa pricing.originalPrice), 'included' (verde INCLUSO), 'gift' (arancione REGALO). MAI cancellare la scritta INCLUSO.",
     "_note_title": "STATICO - eyebrow 'Tutto incluso' e title 'Cosa ricevi a casa tua' non cambiano mai.",
-    "_instructions": "Stessi elementi inseriti in priceBox.offerItems nella hero. DEVONO corrispondere. Prima riga: il prodotto principale, a destra il prezzo di listino barrato (pricing.originalPrice). Righe successive: accessori/bonus con 'INCLUSO' o 'REGALO'. totalOriginalLabel: sempre 'Prezzo di Listino:'. totalCurrentLabel: sempre 'Oggi paghi solo:'. totalSave: 'Risparmi [risparmio] · Spedizione GRATUITA'. Tutti i prezzi da pricing.",
+    "_instructions": "SINTETIZZARE gli accessori raggruppando quelli simili (es: 'Guanti + spazzola/martellina + 2 magneti angolari'). Max 4-5 righe totali. Prima riga: prodotto principale con prezzo barrato. Righe successive: accessori raggruppati con 'INCLUSO' o 'REGALO'. totalOriginalLabel: sempre 'Prezzo di Listino:'. totalCurrentLabel: sempre 'Oggi paghi solo:'. totalSave: 'Risparmi [risparmio] · Spedizione GRATUITA'. Tutti i prezzi da pricing.",
     "eyebrow": "Tutto incluso",
     "title": "Cosa ricevi a casa tua",
     "items": [
-      { "icon": "box", "text": "NeckRelax Pro™ — Massaggiatore EMS", "value": "€118,00", "valueType": "price" },
-      { "icon": "cable", "text": "Cavo di ricarica USB-C", "value": "INCLUSO", "valueType": "included" },
-      { "icon": "gift", "text": "Guida ai 5 Esercizi Anti-Cervicale", "value": "REGALO", "valueType": "gift" },
-      { "icon": "droplet", "text": "Gel Conduttore EMS (migliora l'effetto)", "value": "REGALO", "valueType": "gift" },
-      { "icon": "shield", "text": "Custodia da Viaggio Premium", "value": "REGALO", "valueType": "gift" }
+      { "icon": "box", "text": "Saldatrice Ironweld™ Inverter IGBT", "value": "€139,00", "valueType": "price" },
+      { "icon": "box", "text": "Valigetta rigida + cavo massa", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "gift", "text": "20 bacchette E6013 + maschera auto-oscurante", "value": "REGALO", "valueType": "gift" },
+      { "icon": "gift", "text": "Guanti + spazzola/martellina + 2 magneti angolari", "value": "REGALO", "valueType": "gift" },
+      { "icon": "cable", "text": "Prolunga 10m autoavvolgente", "value": "REGALO", "valueType": "gift" }
     ],
     "totalOriginalLabel": "Prezzo di Listino:",
-    "totalOriginalValue": "€197,00",
+    "totalOriginalValue": "€259,00",
     "totalCurrentLabel": "Oggi paghi solo:",
-    "totalCurrentValue": "€59,00",
-    "totalSave": "Risparmi €138,00 · Spedizione GRATUITA",
+    "totalCurrentValue": "€69,00",
+    "totalSave": "Risparmi €190,00 · Spedizione GRATUITA",
     "ctaText": "ORDINA ORA"
   },
 
   "reviews": {
     "_note": "DINAMICO (contenuto) - rating, totalCount e items cambiano per ogni prodotto. totalCount DEVE corrispondere a hero.socialProof.count. MAI citare nazioni nelle recensioni (nomi e città si adattano alla nazione nella fase traduzioni).",
     "_note_title": "STATICO - eyebrow 'Cosa dicono di Noi' e title 'Recensioni Verificate' non cambiano mai.",
-    "_note_static": "verifiedNote, showMoreText, leaveReviewText sono STATICI - non modificare.",
+    "_note_static": "verifiedNote, showMoreText, leaveReviewText, verifiedBadge, sellerReplyLabel sono STATICI - non modificare.",
     "_instructions": [
       "10 recensioni totali. Distribuzione uomo/donna in base al prodotto: se femminile tutte donne, se molto maschile tutti uomini (max 1-2 donne), se unisex mix equilibrato.",
       "STELLE: tutte 5 stelle TRANNE una da 4 stelle. Quella da 4 stelle dice cose tipo 'per ora metto 4 stelle, voglio provarlo ancora un po prima di dare il massimo' o simile.",
@@ -340,10 +343,12 @@
     "eyebrow": "Cosa dicono di Noi",
     "title": "Recensioni Verificate",
     "rating": "4.9",
-    "totalCount": "12.847 recensioni",
+    "totalCount": "14.729 recensioni",
     "verifiedNote": "✓ Le recensioni vengono verificate da un team neutrale esterno a questo sito web.",
     "showMoreText": "Mostra altre recensioni",
     "leaveReviewText": "Lascia una recensione",
+    "verifiedBadge": "Acquisto verificato",
+    "sellerReplyLabel": "Risposta del venditore:",
     "items": [
       {
         "initials": "FS",
@@ -442,11 +447,35 @@
     "closeText": "Chiudi"
   },
 
+  "orderSteps": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare. Sezione 'Come Ordinare' che appare sopra il modulo d'ordine.",
+    "eyebrow": "COME ORDINARE",
+    "title": "Ordina in 3 semplici passi",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Compila il modulo",
+        "description": "Inserisci i tuoi dati nel modulo d'ordine qui sotto."
+      },
+      {
+        "icon": "phone",
+        "title": "Conferma telefonica",
+        "description": "Ti chiamiamo o ti contattiamo su WhatsApp per confermare i dati."
+      },
+      {
+        "icon": "cash",
+        "title": "Paga alla consegna",
+        "description": "Dopo 24/48h il pacco arriva con corriere tracciato. Paghi in contanti alla consegna."
+      }
+    ]
+  },
+
   "orderForm": {
     "_note": "SEMI-STATICO - La struttura e i campi sono sempre uguali. Cambiano dinamicamente: nome prodotto (nella prima summaryLine), immagine prodotto (prima slide del carosello), prezzi (da pricing). Spedizione e Contrassegno sono SEMPRE gratuiti.",
     "_note_title": "STATICO - eyebrow 'Modulo d'Ordine' e title 'Completa il tuo ordine' non cambiano mai.",
     "_note_countdown": "OPZIONALE - showCountdown controlla se il countdown viene mostrato. L'utente decide se attivarlo per ogni landing. countdownMinutes: durata in minuti, default 118 (1h 58min) salvo diverse indicazioni.",
     "_note_dynamic": "summaryLines: la prima riga ha nome prodotto + prezzo da pricing.currentPrice. totalValue si calcola da pricing.currentPrice. timerLabel usa pricing.discountPercent per la percentuale. L'immagine nel riepilogo è la PRIMA foto del carosello (gallery.slides[0]) in versione thumbnail.",
+    "_note_layout": "LAYOUT MODULO: phoneNote e paymentBadge sono VUOTI (stringa vuota ''). Non vengono più mostrati. Il campo indirizzo è una textarea (non un input) con rows=3 per dare più spazio. La reassurance usa dangerouslySetInnerHTML e può contenere <br> e <strong>.",
     "eyebrow": "Modulo d'Ordine",
     "title": "Completa il tuo ordine",
     "showCountdown": true,
@@ -455,22 +484,22 @@
     "stockWarning": "Solo <strong>8 pezzi</strong> rimasti a questo prezzo",
     "summaryTitle": "Riepilogo Ordine",
     "summaryLines": [
-      { "label": "NeckRelax Pro™ + Accessori", "value": "€59,00", "type": "normal" },
+      { "label": "Bowek Ironweld™ + Accessori", "value": "€69,00", "type": "normal" },
       { "label": "Spedizione rapida 24/48h", "value": "GRATIS", "type": "free" },
       { "label": "Spese di Contrassegno", "value": "GRATIS", "type": "free" }
     ],
     "totalLabel": "TOTALE",
-    "totalValue": "€59,00",
+    "totalValue": "€69,00",
     "fields": {
       "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
       "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
       "address": { "label": "Indirizzo di Spedizione *", "placeholder": "Via, Numero, Città, CAP" }
     },
-    "phoneNote": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine.",
-    "paymentBadge": "Pagamento alla Consegna — Paghi in contanti al corriere. Zero anticipo.",
+    "phoneNote": "",
+    "paymentBadge": "",
     "submitText": "CONFERMA ORDINE",
-    "submitSubtext": "Pagamento Contanti alla Consegna",
-    "reassurance": "Dati protetti · SSL 256-bit · Nessun addebito anticipato"
+    "submitSubtext": "Paghi Contanti alla Consegna",
+    "reassurance": "Spedizione 24/48h · Garanzia 2 anni · Assistenza<br><strong>Nessuna carta richiesta.</strong> Ti richiamiamo per conferma."
   },
 
   "faq": {
@@ -509,10 +538,34 @@
     }
   },
 
+  "ariaLabels": {
+    "_note": "STATICO - Aria labels per accessibilità. Vanno tradotti nella lingua target.",
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
   "ty": {
-    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare. I dati dinamici (prodotto, prezzo, thumbnail, riepilogo ordine, dati utente) vengono letti dalle altre sezioni del content.json e dal sessionStorage.",
+    "_note": "STATICO - Sempre uguale per tutte le landing. TUTTI i testi visibili della TY page devono essere in questa sezione, MAI hardcodati nel componente. Nella fase traduzioni, TUTTI questi campi vanno tradotti.",
     "title": "Ordine Confermato!",
     "subtitle": "Il tuo ordine è stato ricevuto con successo.",
-    "message": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine e organizzare la consegna."
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Riepilogo Ordine",
+    "accessoriesLabel": "+ Accessori inclusi",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — nessun anticipo",
+    "yourDataTitle": "I Tuoi Dati",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "Cosa succede ora?",
+    "message": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine e organizzare la consegna.",
+    "steps": [
+      "Riceverai una chiamata o un messaggio WhatsApp di conferma",
+      "Il pacco verrà spedito in 24/48h",
+      "Paghi in contanti al corriere alla consegna"
+    ],
+    "footerText": "Garanzia 2 Anni · 30 Giorni di Reso · Assistenza Dedicata"
   }
 }

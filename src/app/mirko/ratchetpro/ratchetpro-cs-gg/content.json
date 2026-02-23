@@ -1,0 +1,411 @@
+{
+  "seo": {
+    "title": "RatchetPro 2in1™ - Ráčna a šroubovák bez námahy",
+    "description": "Nástroj 2v1 na šrouby a matice: elektrická ráčna s kompletní sadou, 2 baterie a kufřík. Doprava zdarma, platba na dobírku."
+  },
+
+  "pricing": {
+    "currency": "CZK",
+    "currencySymbol": "Kč",
+    "originalPrice": 3998,
+    "currentPrice": 1999,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "text": "Doprava zdarma 24/48h · Platba na dobírku · Záruka 2 roky"
+  },
+
+  "urgencyBanner": {
+    "text": "Pozor: Vysoká poptávka —",
+    "highlight": "Posledních 8 kusů skladem",
+    "suffix": "za tuto cenu"
+  },
+
+  "hero": {
+    "badge": "Technologie 2026",
+    "title": "Matice a šrouby",
+    "titleHighlight": "bez námahy",
+    "titleSuffix": "jedním nástrojem",
+    "subtitle": "Elektrická ráčna 2v1, která šroubuje, povoluje a utahuje matice i v nejtěsnějších prostorech. Kompletní sada se 2 bateriemi, nástrčnými klíči, bity, vestavěným LED světlem a kufříkem.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "14 731 spokojených zákazníků"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/ratchetpro/carosello/1.webp", "alt": "RatchetPro 2in1 přední pohled" },
+      { "src": "/images/mirko/ratchetpro/carosello/2.webp", "alt": "RatchetPro 2in1 při použití" },
+      { "src": "/images/mirko/ratchetpro/carosello/3.webp", "alt": "RatchetPro 2in1 detail" },
+      { "src": "/images/mirko/ratchetpro/carosello/4.webp", "alt": "RatchetPro 2in1 kompletní sada" },
+      { "src": "/images/mirko/ratchetpro/carosello/5.webp", "alt": "RatchetPro 2in1 kufřík" },
+      { "src": "/images/mirko/ratchetpro/carosello/6.webp", "alt": "RatchetPro 2in1 příslušenství" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Skutečný 2v1:", "description": "matice s nástrčnými klíči 3/8\" a šrouby s bity 1/4\". Jeden nástroj na všechno." },
+      { "title": "Rychlost ovládáte vy:", "description": "čím víc stisknete spoušť, tím rychleji se točí. Žádné stržené šrouby, žádné poškozené závity." },
+      { "title": "Dostane se tam, kam ostatní ne:", "description": "kompaktní hlava s kloubem pro práci v nejtěsnějších prostorech." },
+      { "title": "Dopředu a dozadu okamžitě:", "description": "přepnete směr otáčení bez změny úchopu a bez ztráty času." },
+      { "title": "2 baterie v balení:", "description": "jedna pracuje, druhá se nabíjí. Nikdy se nezastavíte uprostřed práce." },
+      { "title": "Vestavěné LED:", "description": "pracujete i ve tmě, v garáži, pod umyvadlem nebo za nábytkem." },
+      { "title": "Kompletní sada připravená k použití:", "description": "nástrčné klíče, bity, prodloužení, kloub a kufřík. Nemusíte kupovat nic dalšího." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "RatchetPro 2in1™",
+    "originalPriceLabel": "Běžná cena:",
+    "discountLabel": "UŠETŘÍTE 1 999 Kč (-50%)",
+    "shippingLabel": "Rychlé doručení:",
+    "shippingValue": "Zdarma",
+    "guaranteeLabel": "Záruka 2 roky",
+    "offerToggleText": "Zjistěte, co nabídka obsahuje",
+    "offerItems": [
+      { "text": "RatchetPro 2in1™ — Elektrická ráčna a šroubovák", "badge": null },
+      { "text": "Sada nástrčných klíčů 3/8\"", "badge": null },
+      { "text": "Sada bitů 1/4\" + Adaptér Quick-Change", "badge": null },
+      { "text": "Prodloužení + Flexibilní kloub", "badge": null },
+      { "text": "2 Li-ion baterie 20V + Nabíječka", "badge": null },
+      { "text": "Profesionální kufřík", "badge": "DÁREK" },
+      { "text": "Záruka 2 roky + Zákaznická podpora", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "OBJEDNAT NYNÍ",
+    "mainSubtext": "Platba na dobírku",
+    "subNote": "Bez rizika: platíte až při převzetí zásilky"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Platba na dobírku", "color": "green" },
+      { "icon": "truck", "text": "Doručení 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 dní na vrácení", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Poznáváte se?",
+    "title": "Jsou vám tyto problémy povědomé?",
+    "items": [
+      { "icon": "timer", "titleBold": "Půl hodiny utahování 10 matic ručně", "text": "a nakonec máte zápěstí zničené." },
+      { "icon": "stiffness", "titleBold": "Šroubovák se nevejde do úzkých prostor", "text": "a s ruční ráčnou to trvá věčnost." },
+      { "icon": "warning", "titleBold": "Jeden nástroj na šrouby, druhý na matice", "text": "— vyhozené peníze a přeplněný kufřík s nářadím." }
+    ],
+    "solutionTitle": "Existuje lepší řešení.",
+    "solutionText": "Jeden elektrický nástroj na matice i šrouby s plnou kontrolou rychlosti a kompletní sadou připravenou k použití."
+  },
+
+  "features": {
+    "eyebrow": "Proč je jiný",
+    "title": "Dva nástroje v jednom. Žádné kompromisy.",
+    "items": [
+      {
+        "image": "/images/mirko/ratchetpro/angle/1.webp",
+        "imageAlt": "Dvojitý adaptér 2v1",
+        "tag": "2V1",
+        "tagColor": "green",
+        "title": "Matice i šrouby jedním nástrojem",
+        "description": "Adaptér <strong>3/8\" pro nástrčné klíče</strong> (matice a šrouby) + adaptér <strong>1/4\" pro bity</strong> (šrouby). <strong>Plynulá regulace rychlosti</strong> spouští: čím víc stisknete, tím rychleji se točí. <strong>Žádné stržené šrouby</strong>."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/2.webp",
+        "imageAlt": "Profesionální použití",
+        "tag": "PROFESIONÁLNÍ POUŽITÍ",
+        "tagColor": "orange",
+        "title": "Vhodný pro profesionální použití",
+        "description": "<strong>81 Nm točivého momentu</strong> a motor s <strong>450 ot./min</strong>. Zvládne denní práci v dílně, na stavbě i ve skladu bez problémů."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/3.webp",
+        "imageAlt": "Úzké prostory",
+        "tag": "NEMOŽNÉ PROSTORY",
+        "tagColor": "blue",
+        "title": "Dostane se tam, kam šroubovák ne",
+        "description": "Kompaktní hlava + <strong>flexibilní kloub</strong> v balení. <strong>Vestavěné přední LED</strong> světlo pro viditelnost i v tmavých prostorech. Pracujte za umyvadlem, pod autem, mezi trubkami."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/4.webp",
+        "imageAlt": "Kompletní sada se 2 bateriemi",
+        "tag": "KOMPLETNÍ SADA",
+        "tagColor": "green",
+        "title": "Vše v balení, nekupujete nic dalšího",
+        "description": "<strong>2 baterie 20V</strong> (jedna pracuje, druhá se nabíjí), nástrčné klíče, bity, prodloužení, kloub a <strong>profesionální kufřík</strong>. Otevřete a pracujte."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Velmi jednoduché",
+    "title": "3 kroky a máte hotovo.",
+    "image": "",
+    "imageAlt": "Jak to funguje",
+    "steps": [
+      { "title": "Vyberte", "description": "Nástrčný klíč na matice nebo bit na šrouby. Výměna za 2 sekundy." },
+      { "title": "Stiskněte", "description": "Spoušť ovládá rychlost. Čím víc stisknete, tím rychleji se točí." },
+      { "title": "Hotovo", "description": "81 Nm točivého momentu udělá práci za vás. Finální dotažení rukou, pokud je potřeba." }
+    ]
+  },
+
+  "midCta": {
+    "text": "OBJEDNAT NYNÍ SE SLEVOU -50%",
+    "subtext": "Platba na dobírku"
+  },
+
+  "specs": {
+    "eyebrow": "Specifikace",
+    "title": "Technické parametry",
+    "items": [
+      { "label": "Typ", "value": "Elektrická ráčna 2v1 (matice + šrouby)" },
+      { "label": "Adaptér nástrčných klíčů", "value": "3/8\" (čtyřhran)" },
+      { "label": "Adaptér bitů", "value": "1/4\" šestihran (s adaptérem)" },
+      { "label": "Maximální točivý moment", "value": "81 Nm (60 ft-lbs)" },
+      { "label": "Rychlost", "value": "0-450 ot./min (plynulá regulace)" },
+      { "label": "Napětí", "value": "20V" },
+      { "label": "Baterie", "value": "Li-ion 2.0 Ah (2× v balení)" },
+      { "label": "Nabíjení", "value": "Rychlonabíječka v balení" },
+      { "label": "Otáčení", "value": "Dopředu / Dozadu (rychlé přepnutí)" },
+      { "label": "LED", "value": "Vestavěné přední pracovní světlo" },
+      { "label": "Certifikace", "value": "CE" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Srovnání",
+    "title": "Jaké výhody získáte oproti alternativám?",
+    "featureColumn": "Vlastnost",
+    "winnerBadge": "BESTSELLER",
+    "productColumn": "RatchetPro 2in1™",
+    "competitorColumn": "Ruční ráčna / Šroubovák",
+    "rows": [
+      { "feature": "Univerzálnost", "product": "✔ Matice + šrouby (2v1)", "competitor": "Pouze matice NEBO šrouby" },
+      { "feature": "Fyzická námaha", "product": "✔ Žádná, elektrický motor", "competitor": "Zápěstí a paže pod zátěží" },
+      { "feature": "Úzké prostory", "product": "✔ Kompaktní hlava + kloub", "competitor": "Šroubovák se nevejde" },
+      { "feature": "Rychlost práce", "product": "✔ 450 ot./min", "competitor": "Pomalé a namáhavé" },
+      { "feature": "Kompletní sada", "product": "✔ Klíče + bity + kufřík", "competitor": "Nutné dokoupit zvlášť" },
+      { "feature": "Celková cena", "product": "✔ Pouze 1 999 Kč (jednorázově)", "competitor": "5 600–7 000 Kč (2 nástroje)" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Vše v balení",
+    "title": "Co obdržíte domů",
+    "items": [
+      { "icon": "box", "text": "RatchetPro 2in1™ — Elektrická ráčna a šroubovák", "value": "3 998 Kč", "valueType": "price" },
+      { "icon": "box", "text": "Sada nástrčných klíčů 3/8\"", "value": "V CENĚ", "valueType": "included" },
+      { "icon": "box", "text": "Sada bitů 1/4\" + Adaptér Quick-Change", "value": "V CENĚ", "valueType": "included" },
+      { "icon": "cable", "text": "Prodloužení + Flexibilní kloub", "value": "V CENĚ", "valueType": "included" },
+      { "icon": "box", "text": "2 Li-ion baterie 20V + Nabíječka", "value": "V CENĚ", "valueType": "included" },
+      { "icon": "gift", "text": "Profesionální kufřík", "value": "DÁREK", "valueType": "gift" },
+      { "icon": "shield", "text": "Záruka 2 roky + Zákaznická podpora", "value": "V CENĚ", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Běžná cena:",
+    "totalOriginalValue": "5 699 Kč",
+    "totalCurrentLabel": "Dnes zaplatíte pouze:",
+    "totalCurrentValue": "1 999 Kč",
+    "totalSave": "Ušetříte 3 700 Kč · Doprava ZDARMA",
+    "ctaText": "OBJEDNAT NYNÍ"
+  },
+
+  "reviews": {
+    "eyebrow": "Co o nás říkají",
+    "title": "Ověřené recenze",
+    "rating": "4.8",
+    "totalCount": "14 731 recenzí",
+    "verifiedNote": "✓ Recenze jsou ověřovány nezávislým externím týmem mimo tento web.",
+    "showMoreText": "Zobrazit další recenze",
+    "leaveReviewText": "Napsat recenzi",
+    "verifiedBadge": "Ověřený nákup",
+    "sellerReplyLabel": "Odpověď prodejce:",
+    "items": [
+      {
+        "initials": "JN",
+        "name": "Jan Novák",
+        "stars": 5,
+        "text": "Používám ho na auto i na montáž nábytku doma. Dříve jsem musel vytahovat ruční ráčnu na matice a šroubovák na šrouby, teď dělám všechno s tímhle. Výměna nástrčného klíče za bit je bleskurychlá. Dorazil za dva dny, zaplatil jsem kurýrovi.",
+        "verified": true,
+        "sellerReply": "Jane, přesně k tomuto byl navržen: jeden nástroj na všechno. Děkujeme za důvěru!"
+      },
+      {
+        "initials": "PD",
+        "name": "Petr Dvořák",
+        "stars": 5,
+        "text": "Pracuji jako instalatér a tahle věc mi změnila den. V úzkých prostorech za sanitární technikou se můj šroubovák nevešel, s kloubem tohohle se dostanu všude. Plynulá regulace rychlosti je dar z nebes, protože neničím přípojky.",
+        "verified": true,
+        "sellerReply": "Petře, když to profesionál používá každý den, je to nejlepší potvrzení. Flexibilní kloub v úzkých prostorech opravdu dělá rozdíl!"
+      },
+      {
+        "initials": "MS",
+        "name": "Marie Svobodová",
+        "stars": 5,
+        "text": "Koupila jsem to manželovi, který si stále stěžoval na zápěstí při používání ruční ráčny. Teď všechno zvládne za polovinu času a bez námahy. Sama jsem to taky použila na montáž police a musím říct, že je to velmi jednoduché.",
+        "verified": true,
+        "sellerReply": "Marie, když to bez problémů zvládne i ten, kdo není odborník, znamená to, že jsme odvedli dobrou práci. Děkujeme!"
+      },
+      {
+        "initials": "TČ",
+        "name": "Tomáš Černý",
+        "stars": 5,
+        "text": "Jsem truhlář a používám ho každý den. 81 Nm točivého momentu je pro moji práci víc než dostačující. Dvě baterie jsou základ, protože jedna se nabíjí, zatímco druhou používám, a nikdy se nezastavím. Kufřík je praktický na přenášení.",
+        "verified": true,
+        "sellerReply": "Tomáši, truhlář, který to používá denně, je nejlepší test. 2 baterie jsou navrženy přesně pro ty, kdo pracují bez přestávky. Děkujeme!"
+      },
+      {
+        "initials": "MP",
+        "name": "Martin Procházka",
+        "stars": 4,
+        "text": "Funguje dobře s nástrčnými klíči i s bity. LED je velmi užitečná, když pracuji pod autem v garáži. Zatím dávám 4 hvězdy, protože ho stále testuji na různých pracích, ale první dojem je velmi dobrý.",
+        "verified": true,
+        "sellerReply": "Martine, ceníme si vaší upřímnosti! Jsme si jistí, že při dalším používání na různých pracích budete spokojený. Dejte nám vědět!"
+      },
+      {
+        "initials": "JV",
+        "name": "Jakub Veselý",
+        "stars": 5,
+        "text": "Používám ho na údržbu motorky. Výměna brzdových destiček byla dřív noční můra s ruční ráčnou. Teď to mám hotové za 10 minut a zápěstí mě nebolí. Sada nástrčných klíčů pokrývá všechny rozměry, které potřebuji.",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "PK",
+        "name": "Pavel Kučera",
+        "stars": 5,
+        "text": "Bleskurychlé doručení a skvělý produkt. Nečekal jsem, že za 1 999 Kč dostanu tohle všechno: ráčnu, nástrčné klíče, bity, prodloužení, kloub, dvě baterie a dokonce i kufřík. Už jsem udělal tři práce doma a funguje to skvěle.",
+        "verified": true,
+        "sellerReply": "Pavle, kompletní sada je náš silný bod: otevřete kufřík a máte vše. Žádné skryté náklady a žádné příslušenství k dokoupení. Děkujeme!"
+      },
+      {
+        "initials": "HK",
+        "name": "Hana Králová",
+        "stars": 5,
+        "text": "Používám to sama na drobné práce doma. Namontovala jsem dvě police a vyměnila kliky u dveří, aniž bych kohokoli prosila o pomoc. Plynulá regulace rychlosti je perfektní, protože nehrozí poškození dřeva. Mnohem praktičtější než šroubovák, který jsem měla předtím.",
+        "verified": true,
+        "sellerReply": "Hano, je krásné vědět, že to bez problémů zvládne i ten, kdo to nemá jako profesi. Plynulá regulace rychlosti je navržena přesně pro tohle!"
+      },
+      {
+        "initials": "JH",
+        "name": "Josef Horák",
+        "stars": 5,
+        "text": "Přezul jsem pneumatiky na autě sám v garáži. Nástrčné klíče 3/8\" utahují dobře a s elektrickou ráčnou se nenadřete. Finální dotažení uděláte rukou pro jistotu. Dvě baterie jsou geniální nápad.",
+        "verified": true,
+        "sellerReply": "Josefe, perfektní přístup: elektrická ráčna udělá hlavní práci a pak finální dotažení rukou pro jistotu. Jsme rádi, že 2 baterie dělají rozdíl!"
+      },
+      {
+        "initials": "MN",
+        "name": "Michal Němec",
+        "stars": 5,
+        "text": "Objednal jsem v pondělí, dorazilo ve středu. Zaplatil jsem kurýrovi bez problémů. Přední LED je nesmírně užitečná, když pracuji pod dřezem v kuchyni. Už jsem to doporučil švagrovi, který je automechanik.",
+        "verified": true,
+        "sellerReply": "Michale, LED se zdá jako detail, ale v garáži a v tmavých prostorech dělá obrovský rozdíl. Pozdravujte švagra!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Napište svou recenzi",
+    "nameLabel": "Vaše jméno",
+    "namePlaceholder": "Např. Jan Novák",
+    "ratingLabel": "Hodnocení",
+    "textLabel": "Vaše recenze",
+    "textPlaceholder": "Popište svou zkušenost...",
+    "submitText": "Odeslat recenzi",
+    "successTitle": "Děkujeme za vaši recenzi!",
+    "successText": "Vaše recenze čeká na schválení externím týmem mimo tento web. Recenze od osob, které produkt nezakoupily, nebudou zveřejněny, aby se zabránilo neautentickým recenzím.",
+    "closeText": "Zavřít"
+  },
+
+  "orderForm": {
+    "eyebrow": "Objednávkový formulář",
+    "title": "Dokončete svou objednávku",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Nabídka -50% končí za:",
+    "stockWarning": "Pouze <strong>8 kusů</strong> zbývá za tuto cenu",
+    "summaryTitle": "Souhrn objednávky",
+    "summaryLines": [
+      { "label": "RatchetPro 2in1™ + Kompletní sada", "value": "1 999 Kč", "type": "normal" },
+      { "label": "Rychlé doručení 24/48h", "value": "ZDARMA", "type": "free" },
+      { "label": "Poplatek za dobírku", "value": "ZDARMA", "type": "free" }
+    ],
+    "totalLabel": "CELKEM",
+    "totalValue": "1 999 Kč",
+    "fields": {
+      "name": { "label": "Jméno a příjmení *", "placeholder": "Např. Jan Novák" },
+      "phone": { "label": "Telefonní číslo *", "placeholder": "Např. +420 777 123 456" },
+      "address": { "label": "Doručovací adresa *", "placeholder": "Ulice, číslo, město, PSČ" }
+    },
+    "phoneNote": "Budete kontaktováni telefonicky nebo přes WhatsApp pro potvrzení objednávky.",
+    "paymentBadge": "Platba na dobírku — Platíte hotově kurýrovi. Žádná platba předem.",
+    "submitText": "POTVRDIT OBJEDNÁVKU",
+    "submitSubtext": "Platba na dobírku",
+    "reassurance": "Chráněná data · SSL 256-bit · Žádná platba předem"
+  },
+
+  "faq": {
+    "eyebrow": "Časté dotazy",
+    "title": "Máte ještě pochybnosti? Zde jsou odpovědi.",
+    "items": [
+      { "question": "Jak mohu objednat?", "answer": "Klikněte na tlačítko objednávky, vyplňte formulář se svými údaji a potvrďte objednávku. Budete kontaktováni telefonicky nebo přes WhatsApp pro potvrzení a zásilku obdržíte pohodlně domů s platbou v hotovosti." },
+      { "question": "Jak funguje doručení?", "answer": "Doručení je zcela zdarma. Od potvrzení objednávky trvá doručení přibližně 1–2 pracovní dny." },
+      { "question": "Co když se mi nebude líbit?", "answer": "Můžete požádat o plnou náhradu vrácením produktu do 30 dnů od doručení. Přijedeme zásilku vyzvednout a vrátíme vám celou zaplacenou částku." },
+      { "question": "Co když mám problém po 30 dnech?", "answer": "Žádný strach, všechny naše produkty mají 2 roky záruky." },
+      { "question": "Jak mohu požádat o vrácení nebo podporu?", "answer": "Pro žádost o podporu nebo vrácení po uskutečnění objednávky můžete použít kontaktní formulář na webu nebo e-mail uvedený v patičce stránky." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "3 998 Kč",
+    "newPrice": "1 999 Kč",
+    "buttonText": "OBJEDNAT NYNÍ",
+    "buttonSubtext": "Platba na dobírku"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 1999,
+    "conversionCurrency": "CZK",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Předchozí",
+    "nextSlide": "Další",
+    "thumbnail": "Miniatura",
+    "close": "Zavřít"
+  },
+
+  "ty": {
+    "title": "Objednávka potvrzena!",
+    "subtitle": "Vaše objednávka byla úspěšně přijata.",
+    "orderNumberLabel": "Č. objednávky:",
+    "summaryTitle": "Souhrn objednávky",
+    "accessoriesLabel": "+ Kompletní sada v ceně",
+    "totalLabel": "CELKEM K ÚHRADĚ",
+    "paymentNote": "Platba v hotovosti kurýrovi — žádná platba předem",
+    "yourDataTitle": "Vaše údaje",
+    "nameLabel": "Jméno",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Co se bude dít dál?",
+    "message": "Budete kontaktováni telefonicky nebo přes WhatsApp pro potvrzení objednávky a domluvení doručení.",
+    "steps": [
+      "Obdržíte potvrzovací hovor nebo zprávu přes WhatsApp",
+      "Zásilka bude odeslána do 24/48h",
+      "Platíte v hotovosti kurýrovi při doručení"
+    ],
+    "footerText": "Záruka 2 roky · 30 dní na vrácení · Zákaznická podpora"
+  }
+}

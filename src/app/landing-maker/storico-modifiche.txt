@@ -1,0 +1,73 @@
+================================================================================
+                    STORICO MODIFICHE — LOGICA DA APPLICARE SEMPRE
+================================================================================
+
+Queste sono lezioni apprese dalle correzioni dell'utente durante la creazione
+delle landing. Vanno applicate SEMPRE nelle future landing per evitare di
+ripetere gli stessi errori.
+
+================================================================================
+LANDING: G-Station 5 Slim Pro (Mirko) — 2026-02-18
+================================================================================
+
+1. LINGUAGGIO SEMPLICE, MAI TECNICO NEL COPY
+   - Il copy (benefits, features, hero, problems) deve essere boomer-friendly.
+   - Mai usare termini tecnici nel copy: "120Hz", "FreeSync", "Wi-Fi 6E",
+     "dock HDMI", "Full HD" vanno tradotti in benefici comprensibili.
+   - Eccezione: la sezione SPECS deve essere tecnica e precisa (dati reali).
+   - Eccezione: nel copy si possono usare termini tecnici SE accompagnati
+     da una spiegazione semplice (es: "Schermo LED Full HD a 120Hz").
+
+2. MAI PARLARE IN TERZA PERSONA
+   - Sbagliato: "Accende e gioca", "La regali, la accende"
+   - Corretto: "Accendi e gioca", "La accendi e giochi"
+   - Usare sempre la seconda persona (tu).
+
+3. NON ASSUMERE CHE IL CLIENTE REGALI IL PRODOTTO
+   - Il target puo' essere boomer ma non per forza comprano per altri.
+   - Mai scrivere "la regali", "regalo perfetto", "tuo nipote" nel copy.
+   - Nelle recensioni: tenere un mix naturale (2-3 su 10 comprano per
+     familiari, il resto uso personale). Non esagerare con il tema regalo.
+
+4. PREZZO ITALIANO = PLACEHOLDER, MAI CHIEDERE
+   - Il prezzo della versione italiana e' solo un placeholder per test.
+   - Usare un prezzo ragionevole di default (es: 139 -> 69).
+   - I prezzi veri arrivano in Fase 3 per ogni nazione.
+
+5. GIOCHI vs ABBONAMENTO: DISTINZIONE CHIARA
+   - Se il prodotto include giochi, specificare che sono SEMPRE inclusi.
+   - Se include un abbonamento (es: Online Plus), e' un BONUS SEPARATO.
+   - Mai confondere i due: "3 mesi di giochi" e' SBAGLIATO se i giochi
+     sono inclusi e l'abbonamento e' per il multiplayer.
+
+6. NON VENDERE FUFFA — GIUSTIFICARE I CLAIM
+   - Sbagliato: "luminosita' altissima", "schermo che sembra un cinema"
+   - Corretto: "Schermo LED Full HD a 120Hz", "500 nit di luminosita'"
+   - I claim devono essere giustificati da dati reali. Non esagerare
+     con aggettivi vuoti. Meglio un dato concreto semplificato.
+
+7. SPIEGARE COME FUNZIONA L'HARDWARE
+   - Se il prodotto si collega a qualcosa (es: TV), spiegare COME.
+   - Sbagliato: "la colleghi alla TV con un cavo"
+   - Corretto: "attacchi il supporto (dock) alla TV"
+   - Usare il nome dell'accessorio con spiegazione tra parentesi
+     se non e' un termine comune: "supporto (dock)".
+
+8. FEATURE BOX: EVITARE RIPETIZIONI TRA I BOX
+   - Ogni box deve avere un FOCUS DIVERSO e complementare.
+   - Se un box parla di "tutto incluso", concentrarsi solo sull'hardware.
+   - Se un altro box parla di giochi, concentrarsi su catalogo e abbonamento.
+   - Mai ripetere lo stesso concetto in due box diversi.
+
+9. TITOLO E SOTTOTITOLO: COMPLEMENTARI, NON RIPETITIVI
+   - Il titolo dice COSA FA il prodotto (beneficio principale).
+   - Il sottotitolo dice COSA E' e COSA INCLUDE (specifiche + bundle).
+   - Mai ripetere le stesse informazioni in entrambi.
+
+10. ITEMS DEL BUNDLE: SEPARARE QUANDO POSSIBILE
+    - Sbagliato: "Custodia + Protezione Schermo + Gommini" tutto in una riga.
+    - Corretto: ogni accessorio significativo su una riga separata.
+    - I dettagli tecnici degli accessori vanno mantenuti
+      (es: "in Vetro Temperato") ma in modo leggibile.
+
+================================================================================

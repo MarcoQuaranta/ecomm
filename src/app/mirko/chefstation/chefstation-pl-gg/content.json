@@ -1,0 +1,426 @@
+{
+  "seo": {
+    "title": "ChefStation™ - Stacja kuchenna 5 w 1",
+    "description": "Frytkownica beztłuszczowa, pojemny piekarnik, płyta grzewcza, kawa i herbata w jednym urządzeniu. Uwolnij blat kuchenny. Darmowa wysyłka."
+  },
+
+  "pricing": {
+    "currency": "PLN",
+    "currencySymbol": "zł",
+    "originalPrice": 298,
+    "currentPrice": 149,
+    "discountPercent": 50
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Uwaga: Duże zainteresowanie —",
+    "highlight": "Ostatnie 8 sztuk dostępnych",
+    "suffix": "w tej cenie"
+  },
+
+  "hero": {
+    "badge": "Nowość 2026",
+    "title": "Kompletna Kuchnia",
+    "titleHighlight": "na Połowie Miejsca:",
+    "titleSuffix": "Frytkownica Beztłuszczowa, Piekarnik, Płyta, Kawa i Herbata",
+    "subtitle": "Stacja 5-w-1, która <strong>zastępuje 5 urządzeń kuchennych</strong>. Gotuj więcej rzeczy jednocześnie na <strong>45 cm przestrzeni</strong>.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.743 zweryfikowanych opinii"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/chefstation/carosello/1.webp", "alt": "ChefStation widok z przodu" },
+      { "src": "/images/mirko/chefstation/carosello/2.webp", "alt": "ChefStation w użyciu" },
+      { "src": "/images/mirko/chefstation/carosello/3.webp", "alt": "ChefStation otwarty piekarnik" },
+      { "src": "/images/mirko/chefstation/carosello/4.webp", "alt": "ChefStation Frytkownica beztłuszczowa" },
+      { "src": "/images/mirko/chefstation/carosello/5.webp", "alt": "ChefStation kawa i herbata" },
+      { "src": "/images/mirko/chefstation/carosello/6.webp", "alt": "ChefStation akcesoria w zestawie" },
+      { "src": "/images/mirko/chefstation/carosello/7.webp", "alt": "ChefStation szczegół" },
+      { "src": "/images/mirko/chefstation/carosello/8.webp", "alt": "ChefStation opakowanie" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Chrupiące smażenie beztłuszczowe:", "description": "frytki, nuggetsy i wiele więcej, idealnie chrupiące z minimalną ilością oleju." },
+      { "title": "Piekarnik 12L z dwoma poziomami:", "description": "piecz więcej rzeczy jednocześnie, korzystając także z płyty." },
+      { "title": "Płyta nieprzywierająca:", "description": "zdejmujesz jednym kliknięciem, płuczesz i gotowe." },
+      { "title": "Kawa i herbata:", "description": "podgrzewa wodę na herbatę i ma wbudowany filtr do parzenia kawy, wszystko w mgnieniu oka." },
+      { "title": "Wyjmowane części:", "description": "blachy, ruszty i płyta nadają się do mycia w zmywarce." },
+      { "title": "Przenośna:", "description": "idealna na wakacje, do kampera, do małej kuchni." },
+      { "title": "Timer + automatyczne wyłączanie:", "description": "ustawiasz i wyłącza się sama." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "ChefStation™",
+    "shippingLabel": "Szybka wysyłka:",
+    "shippingValue": "GRATIS",
+    "guaranteeLabel": "Gwarancja 2 lata",
+    "offerToggleText": "Zobacz co zawiera oferta",
+    "offerItems": [
+      { "text": "ChefStation™ — Stacja kuchenna 5 w 1", "badge": null },
+      { "text": "Kosz do smażenia beztłuszczowego", "badge": null },
+      { "text": "Perforowana taca Crisp", "badge": null },
+      { "text": "2 ruszty + 2 blachy ze stali nierdzewnej", "badge": null },
+      { "text": "Zaparzacz do herbaty ze stali nierdzewnej", "badge": "GRATIS" },
+      { "text": "Mini rękawice silikonowe", "badge": "GRATIS" },
+      { "text": "Gwarancja 2 lata + dedykowane wsparcie", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ZAMÓW TERAZ",
+    "mainSubtext": "Płatność przy odbiorze",
+    "subNote": ""
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Płatność przy odbiorze", "color": "green" },
+      { "icon": "truck", "text": "Wysyłka 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 dni na zwrot", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Problem",
+    "title": "Tanie sprzęty kuchenne cię rozczarowują?",
+    "items": [
+      { "icon": "box", "titleBold": "Blat kuchenny <strong>pełen urządzeń</strong>, które zajmują całą przestrzeń", "text": "" },
+      { "icon": "timer", "titleBold": "Frytkownica beztłuszczowa <strong>za mała</strong>, żeby gotować dla rodziny", "text": "" },
+      { "icon": "money", "titleBold": "Garnki i blachy do <strong>mycia za każdym razem</strong>, góry naczyń", "text": "" },
+      { "icon": "money", "titleBold": "Kupno 5 osobnych urządzeń kosztuje <strong>600-1000 zł</strong>", "text": "" }
+    ],
+    "solutionTitle": "Z ChefStation™ jest inaczej.",
+    "solutionText": "5 funkcji w jednym urządzeniu. Piecz, smaż, przygotuj kawę — i posprzątaj w minutę."
+  },
+
+  "features": {
+    "eyebrow": "Dlaczego jest inny",
+    "title": "Cała profesjonalna kuchnia w rozmiarze jednego piekarnika.",
+    "image": "/images/mirko/chefstation/features.gif",
+    "imageAlt": "ChefStation w akcji",
+    "items": [
+      {
+        "image": "/images/mirko/chefstation/angle/1.webp",
+        "imageAlt": "Smażenie beztłuszczowe 360°",
+        "tag": "SMAŻENIE BEZTŁUSZCZOWE 360°",
+        "tagColor": "green",
+        "title": "Chrupiące na zewnątrz, zero oleju w środku",
+        "description": "Wentylator gorącego powietrza cyrkulującego 360°. Frytki, kurczak, warzywa: <strong>chrupiące w połowie czasu</strong>, z minimalną ilością oleju. Ten sam efekt co smażenie, bez zapachu."
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/2.webp",
+        "imageAlt": "Piekarnik z dwoma poziomami",
+        "tag": "POJEMNY PIEKARNIK",
+        "tagColor": "orange",
+        "title": "Wiele poziomów: piecz więcej rzeczy naraz",
+        "description": "12 litrów przestrzeni z <strong>wieloma poziomami</strong>. Dodatek na górze, chleb na dole. A wszystko to podczas używania płyty i parzenia kawy. <strong>Statyczny lub z nawiewem</strong>, ty wybierasz."
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/3.webp",
+        "imageAlt": "Płyta nieprzywierająca",
+        "tag": "BEZ GARNKÓW",
+        "tagColor": "blue",
+        "title": "Płyta nieprzywierająca, bez garnków",
+        "description": "Podgrzewasz, gotujesz, opiekasz — bezpośrednio na płycie. <strong>Powłoka nieprzywierająca</strong>: zdejmujesz, płuczesz i gotowe. <strong>Płyta, blachy i ekspres do kawy nadają się do mycia w zmywarce.</strong>"
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/4.webp",
+        "imageAlt": "Kawa i herbata",
+        "tag": "KAWA I HERBATA",
+        "tagColor": "green",
+        "title": "Kawa filtrowana i herbata, zawsze gotowe",
+        "description": "Wbudowany ekspres do kawy filtrowanej + zaparzacz ze stali nierdzewnej na herbatę. <strong>Bez czajników</strong>, bez dodatkowych urządzeń. Rano kawa, wieczorem herbata."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Banalnie proste",
+    "title": "Włącz, wybierz funkcję, gotuj.",
+    "image": "",
+    "imageAlt": "Jak to działa",
+    "steps": [
+      { "title": "Wybierz funkcję", "description": "Obróć pokrętło: Frytkownica beztłuszczowa, Piekarnik, Grill, Płyta lub Kawa i herbata." },
+      { "title": "Ustaw i gotowe", "description": "Temperaturę i timer ustawiasz w sekundę. Nic się nie przypali." },
+      { "title": "Jedz i opłucz", "description": "Wyjmowane części. Jedno przetarcie i blat jest wolny." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ZAMÓW TERAZ Z 50% RABATEM",
+    "subtext": "Płatność gotówką przy odbiorze"
+  },
+
+  "specs": {
+    "eyebrow": "Specyfikacja",
+    "title": "Parametry techniczne",
+    "items": [
+      { "label": "Moc", "value": "1250W" },
+      { "label": "Funkcje", "value": "Frytkownica beztłuszczowa, Piekarnik, Grill, Płyta, Kawa" },
+      { "label": "Pojemność piekarnika", "value": "12L dwa poziomy" },
+      { "label": "Temperatura", "value": "80-230°C" },
+      { "label": "Wymiary", "value": "45 × 26 × 28 cm" },
+      { "label": "Certyfikaty", "value": "CE · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Porównanie",
+    "title": "Jakie korzyści zyskasz w porównaniu z alternatywami?",
+    "featureColumn": "Cecha",
+    "winnerBadge": "ZWYCIĘZCA",
+    "productColumn": "ChefStation™",
+    "competitorColumn": "5 osobnych urządzeń",
+    "rows": [
+      { "feature": "Zajmowane miejsce", "product": "✔ Jedno urządzenie, 45cm", "competitor": "5 urządzeń na blacie" },
+      { "feature": "Funkcje", "product": "✔ Frytkownica + Piekarnik + Płyta + Kawa", "competitor": "Musisz kupić wszystko osobno" },
+      { "feature": "Czyszczenie", "product": "✔ Wyjmowane części, jedno płukanie", "competitor": "Garnki, blachy, filtry do mycia" },
+      { "feature": "Przenośność", "product": "✔ Zabierasz na wakacje", "competitor": "Niemożliwe zabrać wszystko" },
+      { "feature": "Prostota", "product": "✔ Jedno pokrętło, zero komplikacji", "competitor": "5 różnych instrukcji" },
+      { "feature": "Łączny koszt", "product": "✔ Tylko 149 zł (jednorazowo)", "competitor": "600-1000 zł za wszystko" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Wszystko w zestawie",
+    "title": "Co otrzymujesz do domu",
+    "items": [
+      { "icon": "box", "text": "ChefStation™ — Stacja 5 w 1", "value": "298 zł", "valueType": "price" },
+      { "icon": "check", "text": "Kosz do smażenia + taca Crisp", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "check", "text": "2 ruszty + 2 blachy ze stali nierdzewnej", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "gift", "text": "Zaparzacz do herbaty + mini rękawice silikonowe", "value": "GRATIS", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Cena katalogowa:",
+    "totalOriginalValue": "478 zł",
+    "totalCurrentLabel": "Dziś płacisz tylko:",
+    "totalCurrentValue": "149 zł",
+    "totalSave": "Oszczędzasz 329 zł · Wysyłka GRATIS",
+    "ctaText": "ZAMÓW TERAZ"
+  },
+
+  "reviews": {
+    "eyebrow": "Co mówią o nas",
+    "title": "Zweryfikowane opinie",
+    "rating": "4.8",
+    "totalCount": "18.743 opinii",
+    "verifiedNote": "✓ Opinie są weryfikowane przez niezależny zespół zewnętrzny.",
+    "showMoreText": "Pokaż więcej opinii",
+    "leaveReviewText": "Zostaw opinię",
+    "verifiedBadge": "Zweryfikowany zakup",
+    "sellerReplyLabel": "Odpowiedź sprzedawcy:",
+    "items": [
+      {
+        "initials": "AK",
+        "name": "Agnieszka Kowalska",
+        "stars": 5,
+        "text": "Mam bardzo małą kuchnię i nie miałam już miejsca na nic. Ta stacja rozwiązała mój problem: wszystko robię jednym urządzeniem. Kawę rano, frytkownicę beztłuszczową na kolację... jestem zachwycona. Dotarła w dwa dni, zapłaciłam kurierowi.",
+        "verified": true,
+        "sellerReply": "Agnieszka, cieszymy się, że rozwiązała problem z miejscem! Połączenie kawy + frytkownica beztłuszczowa to ulubiona kombinacja naszych klientów. Dziękujemy!"
+      },
+      {
+        "initials": "PN",
+        "name": "Piotr Nowak",
+        "stars": 5,
+        "text": "frytkownica beztłuszczowa naprawdę dobrze działa, frytki wychodzą chrupiące jak smażone ale z kroplą oleju. używam jej prawie codziennie. piekarnik też jest pojemny jak na swój rozmiar, upiekłem blachę warzyw bez problemu",
+        "verified": true,
+        "sellerReply": "Piotr, frytkownica beztłuszczowa to najczęściej chwalona funkcja! Spróbuj też grilla do tostowania chleba, będziesz zaskoczony. Dziękujemy za opinię."
+      },
+      {
+        "initials": "MW",
+        "name": "Małgorzata Wiśniewska",
+        "stars": 5,
+        "text": "Kupiłam do domku letniskowego, gdzie nie mamy prawdziwej kuchni. Zabieramy ją samochodem, jest lekka i robimy w niej wszystko: od śniadania po kolację. Kawa filtrowana jest świetna i płyta szybko się nagrzewa. Super zadowolona.",
+        "verified": true,
+        "sellerReply": "Małgorzata, użytkowanie w domku letniskowym to dokładnie jeden ze scenariuszy, do których została zaprojektowana! Udanych wakacji i smacznego."
+      },
+      {
+        "initials": "TZ",
+        "name": "Tomasz Zieliński",
+        "stars": 4,
+        "text": "muszę przyznać że jestem pod wrażeniem jakości za tę cenę. frytkownica beztłuszczowa działa, piekarnik dobrze grzeje, kawa jest dobra. daję 4 gwiazdki na razie bo używam ją krótko i chcę jeszcze trochę potestować zanim dam maksimum",
+        "verified": true,
+        "sellerReply": "Tomasz, doceniamy szczerość! Jesteśmy pewni, że z dalszym użytkowaniem docenisz jeszcze bardziej wszystkie funkcje. Daj znać!"
+      },
+      {
+        "initials": "KL",
+        "name": "Katarzyna Lewandowska",
+        "stars": 5,
+        "text": "Pozbyłam się frytkownicy beztłuszczowej, tostera i czajnika. Teraz mam wolny blat kuchenny i robię te same rzeczy jednym urządzeniem. Czyszczenie jest bardzo łatwe, części się odczepiają i myją w minutę.",
+        "verified": true,
+        "sellerReply": "Katarzyna, uwolnienie blatu kuchennego to największa satysfakcja! Dziękujemy za podzielenie się doświadczeniem."
+      },
+      {
+        "initials": "MK",
+        "name": "Marek Kamiński",
+        "stars": 5,
+        "text": "używam głównie do kawy filtrowanej rano i frytkownicy beztłuszczowej wieczorem. te dwie funkcje same w sobie są warte ceny. wysyłka błyskawiczna i zapłaciłem kurierowi bez problemów",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "EW",
+        "name": "Ewa Wójcik",
+        "stars": 5,
+        "text": "Bardzo łatwa w obsłudze, mój mąż który nigdy nie gotuje nauczył się w pięć minut. Pokrętła są intuicyjne a timer z automatycznym wyłączaniem to dodatkowe bezpieczeństwo. Zamówiłam w poniedziałek, dotarła w środę.",
+        "verified": true,
+        "sellerReply": "Ewa, prostota obsługi to jedna z rzeczy, nad którymi pracowaliśmy najbardziej! Cieszymy się, że i mąż sobie radzi."
+      },
+      {
+        "initials": "AJ",
+        "name": "Andrzej Jabłoński",
+        "stars": 5,
+        "text": "używam jej w kamperze i muszę powiedzieć że jest idealna. kompaktowa, robi wszystko co potrzeba i nie muszę zabierać ze sobą tysiąca rzeczy. grill do tostowania chleba rano jest rewelacyjny",
+        "verified": true,
+        "sellerReply": "Andrzej, używanie w kamperze to genialny pomysł! Kompaktowa i kompletna, dokładnie to czego potrzeba w podróży. Szczęśliwej drogi!"
+      },
+      {
+        "initials": "ZS",
+        "name": "Zofia Szymańska",
+        "stars": 5,
+        "text": "Byłam sceptyczna co do kawy filtrowanej ale muszę przyznać że jest dobra. A herbata wieczorem przed snem stała się rytuałem. Wszystko z jednego urządzenia, bez zaśmiecania kuchni. Polecam.",
+        "verified": true,
+        "sellerReply": "Zofia, kawa filtrowana przekonała nawet największych sceptyków! Wieczorna herbata to nawyk, który wielu uwielbia. Dziękujemy!"
+      },
+      {
+        "initials": "JD",
+        "name": "Jan Dąbrowski",
+        "stars": 5,
+        "text": "myślałem że to kolejny bezużyteczny gadżet a tymczasem działa rewelacyjnie. frytkownica beztłuszczowa jest legalna, frytki wychodzą chrupiące. piekarnik jest mały ale z dwoma poziomami zmieścisz dużo. za 149 zł nie możesz wymagać więcej",
+        "verified": true,
+        "sellerReply": "Jan, cieszymy się, że obaliliśmy sceptycyzm! Dwa poziomy to klucz do maksymalnego wykorzystania pojemności. Dziękujemy za zaufanie."
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Zostaw swoją opinię",
+    "nameLabel": "Twoje imię",
+    "namePlaceholder": "Np. Jan Kowalski",
+    "ratingLabel": "Ocena",
+    "textLabel": "Twoja opinia",
+    "textPlaceholder": "Opowiedz o swoim doświadczeniu...",
+    "submitText": "Wyślij opinię",
+    "successTitle": "Dziękujemy za Twoją opinię!",
+    "successText": "Twoja opinia oczekuje na zatwierdzenie przez niezależny zespół zewnętrzny. Opinie pozostawione przez osoby, które nie kupiły produktu, nie zostaną opublikowane, aby uniknąć nieautentycznych recenzji.",
+    "closeText": "Zamknij"
+  },
+
+  "orderSteps": {
+    "eyebrow": "JAK ZAMÓWIĆ",
+    "title": "Zamów w 3 prostych krokach",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Wypełnij formularz",
+        "description": "Wpisz swoje dane w formularzu zamówienia poniżej."
+      },
+      {
+        "icon": "phone",
+        "title": "Potwierdzenie telefoniczne",
+        "description": "Zadzwonimy do Ciebie lub skontaktujemy się przez WhatsApp w celu potwierdzenia danych."
+      },
+      {
+        "icon": "cash",
+        "title": "Zapłać przy odbiorze",
+        "description": "Po 24/48h paczka dociera kurierem z śledzeniem. Płacisz gotówką przy odbiorze."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Formularz zamówienia",
+    "title": "Dokończ swoje zamówienie",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Oferta -50% wygasa za:",
+    "stockWarning": "Tylko <strong>8 sztuk</strong> zostało w tej cenie",
+    "summaryTitle": "Podsumowanie zamówienia",
+    "summaryLines": [
+      { "label": "ChefStation™ + Akcesoria", "value": "149 zł", "type": "normal" },
+      { "label": "Szybka wysyłka 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Opłata za pobranie", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "SUMA",
+    "totalValue": "149 zł",
+    "fields": {
+      "name": { "label": "Imię i nazwisko *", "placeholder": "Np. Jan Kowalski" },
+      "phone": { "label": "Numer telefonu *", "placeholder": "Np. 500 123 456" },
+      "address": { "label": "Adres dostawy *", "placeholder": "Ulica, Numer, Miasto, Kod pocztowy" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "POTWIERDŹ ZAMÓWIENIE",
+    "submitSubtext": "Płatność gotówką przy odbiorze",
+    "reassurance": "Wysyłka 24/48h · Gwarancja 2 lata · Wsparcie<br><strong>Karta nie jest wymagana.</strong> Oddzwonimy w celu potwierdzenia."
+  },
+
+  "faq": {
+    "eyebrow": "Najczęściej zadawane pytania",
+    "title": "Masz jeszcze wątpliwości? Oto odpowiedzi.",
+    "items": [
+      { "question": "Jak złożyć zamówienie?", "answer": "Kliknij przycisk zakupu, wypełnij formularz swoimi danymi i potwierdź zamówienie. Skontaktujemy się z Tobą telefonicznie lub przez WhatsApp w celu potwierdzenia, a paczkę otrzymasz wygodnie do domu, z płatnością gotówką." },
+      { "question": "Jak działa dostawa?", "answer": "Dostawa jest całkowicie bezpłatna. Od momentu potwierdzenia zamówienia, dostarczenie zajmuje około 24/48 godzin roboczych." },
+      { "question": "A jeśli mi się nie spodoba?", "answer": "Możesz zażądać pełnego zwrotu pieniędzy, zwracając produkt w ciągu 30 dni od dostawy. Przyjeżdżamy po paczkę i zwracamy całą kwotę." },
+      { "question": "Co jeśli mam problemy po 30 dniach?", "answer": "Spokojnie, wszystkie nasze produkty mają 2 lata gwarancji." },
+      { "question": "Jak poprosić o zwrot lub pomoc?", "answer": "Aby uzyskać pomoc lub zwrot po złożeniu zamówienia, możesz skorzystać z formularza kontaktowego na stronie lub napisać na adres e-mail podany w stopce." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "298 zł",
+    "newPrice": "149 zł",
+    "buttonText": "ZAMÓW TERAZ",
+    "buttonSubtext": "Płatność przy odbiorze"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 149,
+    "conversionCurrency": "PLN",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Poprzedni",
+    "nextSlide": "Następny",
+    "thumbnail": "Miniatura",
+    "close": "Zamknij"
+  },
+
+  "ty": {
+    "title": "Zamówienie potwierdzone!",
+    "subtitle": "Twoje zamówienie zostało pomyślnie przyjęte.",
+    "orderNumberLabel": "Nr zamówienia:",
+    "summaryTitle": "Podsumowanie zamówienia",
+    "accessoriesLabel": "+ Akcesoria w zestawie",
+    "totalLabel": "SUMA DO ZAPŁATY",
+    "paymentNote": "Płatność gotówką kurierowi — bez zaliczki",
+    "yourDataTitle": "Twoje dane",
+    "nameLabel": "Imię",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adres",
+    "nextStepsTitle": "Co teraz się dzieje?",
+    "message": "Skontaktujemy się z Tobą telefonicznie lub przez WhatsApp w celu potwierdzenia zamówienia i zorganizowania dostawy.",
+    "steps": [
+      "Otrzymasz telefon lub wiadomość WhatsApp z potwierdzeniem",
+      "Paczka zostanie wysłana w ciągu 24/48h",
+      "Płacisz gotówką kurierowi przy odbiorze"
+    ],
+    "footerText": "Gwarancja 2 lata · 30 dni na zwrot · Dedykowane wsparcie"
+  }
+}

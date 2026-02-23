@@ -14,29 +14,94 @@ si salta.
 STRUTTURA PER OGNI MEDIA BUYER
 ================================================================================
 
-OGNI landing ha SEMPRE 3 file + cartella immagini. MAI creare solo il JSON.
+OGNI landing DEVE essere AUTOCONTENUTA. Tutti i file dentro la cartella.
+MAI import con @ — SOLO import relativi (./ ../).
 
 src/app/[venditore]/[prodotto]/[prodotto]-ita/
-  ├── page.tsx          <-- STATICO, importa il template del venditore
-  ├── content.json      <-- copy adattato allo stile del venditore
+  ├── page.tsx                      <-- Server Component, import RELATIVO + networkConfig
+  ├── content.json                  <-- copy adattato allo stile del venditore
+  ├── LandingTemplate[Venditore].tsx  <-- COPIA componente (import CSS relativo)
+  ├── TyTemplate[Venditore].tsx       <-- COPIA componente TY (import CSS relativo)
+  ├── landing-[venditore].css         <-- COPIA CSS
   └── ty/
-      └── page.tsx      <-- STATICO, importa il template TY del venditore
+      └── page.tsx                  <-- Client Component, tracking hardcodato
 
 public/images/[venditore]/[prodotto]/
   ├── carosello/
   └── angle/
 
-NOTA: Le immagini sono separate per venditore (path diversi nel JSON).
-
 ================================================================================
-PAGE.TSX - TEMPLATE PER VENDITORE
+COME CREARE I FILE
 ================================================================================
 
-Il page.tsx cambia SOLO il nome del componente importato, in base al venditore.
+1. Copia LandingTemplate e TyTemplate da riferimento[venditore]/ nella cartella
+2. Copia il CSS da src/styles/ nella cartella
+3. Nei componenti copiati: cambia import CSS da '@/styles/...' a './landing-[venditore].css'
+4. Crea page.tsx (Server Component con networkConfig)
+5. Crea ty/page.tsx (Client Component con tracking hardcodato)
 
-### MIRKO:
+================================================================================
+ARCHITETTURA NETWORK + TRACKING (FONDAMENTALE)
+================================================================================
+
+La logica e' divisa in 3 pezzi:
+
+### 1. page.tsx — INVIO LEAD AL NETWORK (DIRETTO)
+- E' un SERVER COMPONENT (NO 'use client')
+- Contiene `networkConfig` hardcodato per la nazione
+- Il template riceve networkConfig come prop e lo usa per fare fetch() DIRETTO
+  all'endpoint del network con FormData
+- NON esiste nessun proxy intermedio (/api/lead NON si usa)
+- Il template crea FormData con: uid, key, offer, lp, name, tel, street-address, tmfp/ua
+- Fa await fetch(endpoint, { method: 'POST', body: formData }) direttamente al network
+
+### 2. ty/page.tsx — CONVERSIONE TRACKING
+- E' un CLIENT COMPONENT ('use client')
+- Contiene il codice tracking hardcodato (Google Ads o Meta Pixel)
+- Protezione anti-duplicazione con sessionStorage
+- Google Ads: gtag('event', 'conversion', { send_to, value, currency, transaction_id })
+- Meta Pixel: fbq('track', 'Purchase', { value, currency }, { eventID })
+
+### 3. content.json tracking section — SOLO script loading
+- googleAdsId: carica gtag.js + PageView + begin_checkout (NON conversion)
+- facebookPixelId: carica FB Pixel + PageView + InitiateCheckout (NON Purchase)
+- network.fingerprintScript: carica script fingerprint (tmfp)
+- network.clickPixel: pixel di click per il network
+- La CONVERSIONE e il NETWORK CALL sono hardcodati nei page.tsx, NON nel JSON
+
+================================================================================
+TEMPLATE page.tsx — CON NETWORK (per Mirko)
+================================================================================
+
 ```tsx
-import LandingTemplateMirko from '@/components/LandingTemplateMirko';
+import LandingTemplateMirko from './LandingTemplateMirko';
+import content from './content.json';
+
+const networkConfig = {
+  endpoint: 'https://offers.NETWORK.com/forms/api/',
+  uid: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+  key: 'xxxxxxxxxxxxxxxxxxxxxx',
+  offerId: 'XXX',
+  lpId: 'XXX',
+};
+
+export default function Page() {
+  return <LandingTemplateMirko content={content} networkConfig={networkConfig} />;
+}
+```
+
+NOTA: page.tsx e' un SERVER COMPONENT (niente 'use client'). Il networkConfig
+e' un oggetto serializzabile che viene passato al template client component.
+Il template usa questi dati per fare fetch() DIRETTO al network con FormData.
+I dati network vengono forniti dall'utente in Fase 4.
+In Fase 1/2/3, networkConfig si lascia con valori placeholder.
+
+================================================================================
+TEMPLATE page.tsx — SENZA NETWORK (test/italiano)
+================================================================================
+
+```tsx
+import LandingTemplateMirko from './LandingTemplateMirko';
 import content from './content.json';
 
 export default function Page() {
@@ -44,9 +109,80 @@ export default function Page() {
 }
 ```
 
-### TY/PAGE.TSX per MIRKO:
+================================================================================
+TEMPLATE ty/page.tsx — GOOGLE ADS (cartelle -gg)
+================================================================================
+
 ```tsx
-import TyTemplateMirko from '@/components/TyTemplateMirko';
+'use client';
+
+import { useEffect } from 'react';
+import TyTemplateMirko from '../TyTemplateMirko';
+import content from '../content.json';
+
+export default function TyPage() {
+  useEffect(() => {
+    const orderNumber = sessionStorage.getItem('orderNumber') || '';
+    const key = `cf_${orderNumber}`;
+    if (sessionStorage.getItem(key)) return;
+    sessionStorage.setItem(key, '1');
+
+    const transactionId = `${orderNumber}_${Date.now()}`;
+
+    const w = window as any;
+    if (typeof w.gtag === 'function') {
+      w.gtag('event', 'conversion', {
+        send_to: 'AW-XXXXXXXXX/CONVERSION_LABEL',
+        value: PREZZO_SCONTATO,
+        currency: 'VALUTA',
+        transaction_id: transactionId,
+      });
+    }
+  }, []);
+
+  return <TyTemplateMirko content={content} />;
+}
+```
+
+================================================================================
+TEMPLATE ty/page.tsx — META PIXEL (cartelle -fb)
+================================================================================
+
+```tsx
+'use client';
+
+import { useEffect } from 'react';
+import TyTemplateMirko from '../TyTemplateMirko';
+import content from '../content.json';
+
+export default function TyPage() {
+  useEffect(() => {
+    const orderNumber = sessionStorage.getItem('orderNumber') || '';
+    const key = `cf_${orderNumber}`;
+    if (sessionStorage.getItem(key)) return;
+    sessionStorage.setItem(key, '1');
+
+    const eventId = `${orderNumber}_${Date.now()}`;
+
+    const w = window as any;
+    if (typeof w.fbq === 'function') {
+      w.fbq('track', 'Purchase', {
+        value: PREZZO_SCONTATO,
+        currency: 'VALUTA',
+      }, { eventID: eventId });
+    }
+  }, []);
+
+  return <TyTemplateMirko content={content} />;
+}
+```
+
+================================================================================
+TEMPLATE ty/page.tsx — SENZA TRACKING (test/italiano)
+================================================================================
+
+```tsx
+import TyTemplateMirko from '../TyTemplateMirko';
 import content from '../content.json';
 
 export default function TyPage() {
@@ -83,9 +219,6 @@ DANIELE:
 - Focus: Soluzione problemi, educazione, fiducia
 - CTA style: Logico, basato su prove, garanzia forte
 
-Il page.tsx e ty/page.tsx restano IDENTICI per tutti (cambiano solo in base
-al template del venditore). Cambia SOLO il content.json.
-
 ================================================================================
 ESECUZIONE
 ================================================================================
@@ -93,8 +226,8 @@ ESECUZIONE
 Lancia un agente per ogni media buyer aggiuntivo, in parallelo.
 Ogni agente:
 1. Crea la cartella [prodotto]-ita/ per il venditore
-2. Scrive page.tsx con l'import del template corretto
-3. Scrive ty/page.tsx con l'import del template TY corretto
+2. Scrive page.tsx (Server Component, senza networkConfig in fase 2)
+3. Scrive ty/page.tsx (senza tracking in fase 2, aggiunto in fase 4)
 4. Crea content.json adattato allo stile del venditore
 5. Crea la cartella immagini (vuota)
 6. Verifica: JSON valido, nessun placeholder, tutti i campi presenti
@@ -105,13 +238,103 @@ CHECKLIST PRE-COMPLETAMENTO
 
 Per OGNI media buyer verificare:
 [ ] Cartella [prodotto]-ita/ creata
-[ ] page.tsx presente e importa il template CORRETTO del venditore
+[ ] page.tsx presente (Server Component, importa il template CORRETTO)
 [ ] content.json compilato con copy adattato allo stile del venditore
-[ ] ty/page.tsx presente e importa il template TY CORRETTO del venditore
+[ ] ty/page.tsx presente (importa il template TY CORRETTO)
+[ ] LandingTemplate copiato da riferimento (import CSS relativo)
+[ ] TyTemplate copiato da riferimento (import CSS relativo)
+[ ] CSS copiato nella cartella
 [ ] Cartella public/images/[venditore]/[prodotto]/ creata
 [ ] Nessun placeholder rimasto
 [ ] JSON valido
 [ ] Sezioni STATIC identiche al template
+
+================================================================================
+SPLIT PIATTAFORMA (FB / GG)
+================================================================================
+
+IMPORTANTE: Ogni landing puo' avere versioni separate per piattaforma pubblicitaria.
+Il suffisso della cartella indica la piattaforma:
+  - `-gg` = Google Ads (tracking Google, NO Meta Pixel)
+  - `-fb` = Meta/Facebook (tracking Meta Pixel, NO Google Ads)
+
+Se la landing va su UNA SOLA piattaforma, usa il suffisso corrispondente.
+Se va su ENTRAMBE, crea DUE cartelle (una -gg e una -fb).
+
+### QUANDO CHIEDERE
+Dopo aver creato la landing italiana (Fase 1), chiedi all'utente:
+"Su quali piattaforme vuoi pubblicare? (Google Ads / Facebook / entrambe)"
+
+### COME CREARE LE VARIANTI
+Le varianti -gg e -fb sono IDENTICHE nel contenuto (copy, immagini, stile).
+Cambiano TRE cose:
+
+1. content.json tracking: -gg ha googleAdsId, -fb ha facebookPixelId
+2. page.tsx networkConfig: credenziali network diverse per piattaforma
+3. ty/page.tsx: -gg ha gtag conversion, -fb ha fbq Purchase
+
+Il content.json (copy, prezzi, testi) e' IDENTICO tra -gg e -fb.
+
+### STRUTTURA CARTELLE
+Esempio per prodotto "cloudrelief", media buyer "mirko", nazione HR su entrambe:
+
+src/app/mirko/cloudrelief/
+  ├── cloudrelief-hr-gg/     <-- versione Google Ads
+  │   ├── page.tsx           <-- networkConfig GG + no 'use client'
+  │   ├── content.json       <-- tracking.googleAdsId compilato
+  │   └── ty/page.tsx        <-- gtag conversion hardcodato
+  └── cloudrelief-hr-fb/     <-- versione Facebook
+      ├── page.tsx           <-- networkConfig FB + no 'use client'
+      ├── content.json       <-- tracking.facebookPixelId compilato
+      └── ty/page.tsx        <-- fbq Purchase hardcodato
+
+================================================================================
+LAYOUT.TSX — HEADER E FOOTER AUTOMATICI
+================================================================================
+
+Per ogni venditore, va creato UN SOLO layout.tsx a livello venditore
+(NON dentro ogni singola landing, ma nella cartella padre del prodotto):
+
+src/app/[venditore]/layout.tsx
+
+Questo layout importa SOLO il Footer dal progetto host e lo wrappa
+attorno a TUTTE le landing di quel venditore automaticamente.
+NIENTE HEADER — le landing NON devono avere header.
+
+TEMPLATE layout.tsx (esempio per Mirko):
+```tsx
+import Footer from '@/components/Footer';
+
+export default function MirkoLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <>
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+}
+```
+
+Per altri venditori, cambia il nome della funzione:
+- Lino: LinoLayout
+- Daniele: DanieleLayout
+
+REGOLE CRITICHE:
+- NIENTE HEADER nelle landing. Solo Footer.
+- Questo file va creato UNA SOLA VOLTA per venditore (NON per ogni landing)
+- USA import con @ perche' NON fa parte della landing autocontenuta,
+  ma del progetto host
+- Funziona SOLO se il progetto host ha Footer.tsx in src/components/
+- Se il progetto host non ha Footer, le landing funzionano comunque
+  (basta non creare il layout.tsx)
+- Quando si spostano le landing in un altro progetto, il layout.tsx va
+  ricreato nella cartella venditore usando il Footer di quel progetto
+
+QUANDO CREARLO:
+- In Fase 1, quando crei la prima landing per un venditore, controlla se
+  esiste gia' il layout.tsx nella cartella venditore (src/app/[venditore]/)
+- Se non esiste, crealo
+- Se esiste gia', NON toccarlo
 
 ================================================================================
 DOPO APPROVAZIONE
@@ -119,8 +342,9 @@ DOPO APPROVAZIONE
 
 1. Mostra riepilogo cartelle create
 2. Chiedi approvazione utente
-3. Dopo OK: push su GitHub (segui regole CLAUDE.md per scelta account)
-4. Dopo push: attendi approvazione del media buyer (tramite l'utente)
-5. Solo dopo seconda conferma, procedi a Fase 3
+3. Dopo OK: chiedi approvazione del media buyer (tramite l'utente)
+4. Solo dopo conferma, procedi a Fase 3
+
+NOTA: NON pushare MAI. L'utente gestisce deploy e push autonomamente.
 
 ================================================================================

@@ -1,0 +1,411 @@
+{
+  "seo": {
+    "title": "RatchetPro 2in1™ - Račňa a skrutkovač bez námahy",
+    "description": "Nástroj 2-v-1 na skrutky a matice: elektrická račňa s kompletnou sadou, 2 batérie a kufrík. Doprava zadarmo, platba na dobierku."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 159.99,
+    "currentPrice": 79.99,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "text": "Doprava zadarmo 24/48h · Platba na dobierku · Záruka 2 roky"
+  },
+
+  "urgencyBanner": {
+    "text": "Pozor: Vysoký dopyt —",
+    "highlight": "Posledných 8 kusov dostupných",
+    "suffix": "za túto cenu"
+  },
+
+  "hero": {
+    "badge": "Technológia 2026",
+    "title": "Matice a skrutky",
+    "titleHighlight": "bez námahy",
+    "titleSuffix": "s jedným nástrojom",
+    "subtitle": "Elektrická račňa 2-v-1, ktorá skrutkuje, odskrutkuje a uťahuje matice aj v tých najužších priestoroch. Kompletná sada s 2 batériami, nástavcami, bitmi, vstavaným LED svetlom a kufríkom.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "14 731 spokojných zákazníkov"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/ratchetpro/carosello/1.webp", "alt": "RatchetPro 2in1 pohľad spredu" },
+      { "src": "/images/mirko/ratchetpro/carosello/2.webp", "alt": "RatchetPro 2in1 pri používaní" },
+      { "src": "/images/mirko/ratchetpro/carosello/3.webp", "alt": "RatchetPro 2in1 detail" },
+      { "src": "/images/mirko/ratchetpro/carosello/4.webp", "alt": "RatchetPro 2in1 kompletná sada" },
+      { "src": "/images/mirko/ratchetpro/carosello/5.webp", "alt": "RatchetPro 2in1 kufrík" },
+      { "src": "/images/mirko/ratchetpro/carosello/6.webp", "alt": "RatchetPro 2in1 príslušenstvo" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Skutočný 2-v-1:", "description": "matice s nástavcami 3/8\" a skrutky s bitmi 1/4\". Jeden nástroj na všetko." },
+      { "title": "Rýchlosť, ktorú ovládate vy:", "description": "čím viac stlačíte spúšť, tým rýchlejšie sa točí. Žiadne strhané skrutky, žiadne poškodené závity." },
+      { "title": "Dostane sa tam, kde ostatné nie:", "description": "kompaktná hlava s kĺbom pre prácu v najtesnejších priestoroch." },
+      { "title": "Dopredu a dozadu okamžite:", "description": "zmeňte smer otáčania bez zmeny úchopu a bez straty času." },
+      { "title": "2 batérie v balení:", "description": "jedna pracuje, druhá sa nabíja. Nikdy sa nezastavíte uprostred práce." },
+      { "title": "Vstavaný LED:", "description": "pracujte aj v tme, v garáži, pod umývadlom alebo za nábytkom." },
+      { "title": "Kompletná sada pripravená na použitie:", "description": "nástavce, bity, nadstavce, kĺb a kufrík. Nemusíte kupovať nič navyše." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "RatchetPro 2in1™",
+    "originalPriceLabel": "Pôvodná cena:",
+    "discountLabel": "UŠETRÍTE 80 € (-50%)",
+    "shippingLabel": "Rýchla doprava:",
+    "shippingValue": "Zadarmo",
+    "guaranteeLabel": "Záruka 2 roky",
+    "offerToggleText": "Zistite, čo ponuka obsahuje",
+    "offerItems": [
+      { "text": "RatchetPro 2in1™ — Elektrická račňa a skrutkovač", "badge": null },
+      { "text": "Sada nástavcov 3/8\"", "badge": null },
+      { "text": "Sada bitov 1/4\" + adaptér Quick-Change", "badge": null },
+      { "text": "Nadstavce + flexibilný kĺb", "badge": null },
+      { "text": "2 Li-ion batérie 20V + nabíjačka", "badge": null },
+      { "text": "Profesionálny kufrík", "badge": "DARČEK" },
+      { "text": "Záruka 2 roky + špecializovaná podpora", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "OBJEDNAJTE TERAZ",
+    "mainSubtext": "Platba na dobierku v hotovosti",
+    "subNote": "Nulové riziko: platíte až keď dostanete balík"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Platba na dobierku", "color": "green" },
+      { "icon": "truck", "text": "Doprava 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 dní na vrátenie", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Poznáte to?",
+    "title": "Sú vám tieto problémy známe?",
+    "items": [
+      { "icon": "timer", "titleBold": "Strávite pol hodiny uťahovaním 10 matíc ručne", "text": "a nakoniec máte zničený zápästie." },
+      { "icon": "stiffness", "titleBold": "Skrutkovač sa nezmestí do úzkych priestorov", "text": "a s ručnou račňou to trvá celú večnosť." },
+      { "icon": "warning", "titleBold": "Jeden nástroj na skrutky, druhý na matice", "text": "— vyhodené peniaze a preplnený kufrík s náradím." }
+    ],
+    "solutionTitle": "Existuje lepšie riešenie.",
+    "solutionText": "Jediný elektrický nástroj na matice aj skrutky, s úplnou kontrolou rýchlosti a kompletnou sadou pripravenou na použitie."
+  },
+
+  "features": {
+    "eyebrow": "Prečo je iný",
+    "title": "Dva nástroje v jednom. Žiadne kompromisy.",
+    "items": [
+      {
+        "image": "/images/mirko/ratchetpro/angle/1.webp",
+        "imageAlt": "Dvojitý úchyt 2-v-1",
+        "tag": "2-V-1",
+        "tagColor": "green",
+        "title": "Matice a skrutky s rovnakým nástrojom",
+        "description": "Úchyt <strong>3/8\" pre nástavce</strong> (matice a skrutky) + adaptér <strong>1/4\" pre bity</strong> (skrutky). <strong>Variabilná rýchlosť</strong> spúšťou: čím viac stlačíte, tým rýchlejšie sa točí. <strong>Žiadne strhané skrutky</strong>."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/2.webp",
+        "imageAlt": "Profesionálne použitie",
+        "tag": "PROFESIONÁLNE POUŽITIE",
+        "tagColor": "orange",
+        "title": "Vhodný na profesionálne použitie",
+        "description": "<strong>81 Nm krútiaceho momentu</strong> a motor s <strong>450 ot./min</strong>. Zvláda každodennú prácu v dielni, na stavbe a v sklade bez akéhokoľvek problému."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/3.webp",
+        "imageAlt": "Úzke priestory",
+        "tag": "NEMOŽNÉ PRIESTORY",
+        "tagColor": "blue",
+        "title": "Dostane sa tam, kde skrutkovač nie",
+        "description": "Kompaktná hlava + <strong>flexibilný kĺb</strong> v balení. <strong>Vstavaný predný LED</strong> pre prácu aj v tmavých priestoroch. Pracujte za umývadlom, pod autom, medzi rúrkami."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/4.webp",
+        "imageAlt": "Kompletná sada s 2 batériami",
+        "tag": "KOMPLETNÁ SADA",
+        "tagColor": "green",
+        "title": "Všetko v balení, nemusíte kupovať nič navyše",
+        "description": "<strong>2 batérie 20V</strong> (jedna pracuje, druhá sa nabíja), nástavce, bity, nadstavce, kĺb a <strong>profesionálny kufrík</strong>. Otvoríte a pracujete."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Jednoduché",
+    "title": "3 kroky a máte hotovo.",
+    "image": "",
+    "imageAlt": "Ako to funguje",
+    "steps": [
+      { "title": "Vyberte", "description": "Nástavec na matice alebo bit na skrutky. Výmena za 2 sekundy." },
+      { "title": "Stlačte", "description": "Spúšť ovláda rýchlosť. Čím viac stlačíte, tým rýchlejšie sa točí." },
+      { "title": "Hotovo", "description": "81 Nm krútiaceho momentu odvedie prácu. Finálne dotiahnutie ručne, ak je potrebné." }
+    ]
+  },
+
+  "midCta": {
+    "text": "OBJEDNAJTE TERAZ SO ZĽAVOU -50%",
+    "subtext": "Platba na dobierku v hotovosti"
+  },
+
+  "specs": {
+    "eyebrow": "Špecifikácie",
+    "title": "Technické parametre",
+    "items": [
+      { "label": "Typ", "value": "Elektrická račňa 2-v-1 (matice + skrutky)" },
+      { "label": "Úchyt pre nástavce", "value": "3/8\" (štvorhran)" },
+      { "label": "Úchyt pre bity", "value": "1/4\" šesťhran (s adaptérom)" },
+      { "label": "Maximálny krútiaci moment", "value": "81 Nm (60 ft-lbs)" },
+      { "label": "Rýchlosť", "value": "0-450 RPM (variabilná)" },
+      { "label": "Napätie", "value": "20V" },
+      { "label": "Batéria", "value": "Li-ion 2.0 Ah (2x v balení)" },
+      { "label": "Nabíjanie", "value": "Rýchla nabíjačka v balení" },
+      { "label": "Otáčanie", "value": "Dopredu / Dozadu (rýchle prepínanie)" },
+      { "label": "LED", "value": "Vstavaný predný pracovný LED" },
+      { "label": "Certifikácie", "value": "CE" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Porovnanie",
+    "title": "Aké výhody získate oproti alternatívam?",
+    "featureColumn": "Vlastnosť",
+    "winnerBadge": "BESTSELLER",
+    "productColumn": "RatchetPro 2in1™",
+    "competitorColumn": "Ručná račňa / Skrutkovač",
+    "rows": [
+      { "feature": "Univerzálnosť", "product": "✔ Matice + skrutky (2-v-1)", "competitor": "Len matice ALEBO len skrutky" },
+      { "feature": "Fyzická námaha", "product": "✔ Nulová, elektrický motor", "competitor": "Zápästie a rameno pod záťažou" },
+      { "feature": "Úzke priestory", "product": "✔ Kompaktná hlava + kĺb", "competitor": "Skrutkovač sa nezmestí" },
+      { "feature": "Rýchlosť práce", "product": "✔ 450 ot./min", "competitor": "Pomalé a namáhavé" },
+      { "feature": "Kompletná sada", "product": "✔ Nástavce + bity + kufrík", "competitor": "Musíte kúpiť zvlášť" },
+      { "feature": "Celková cena", "product": "✔ Len 79,99 € (jednorazovo)", "competitor": "280–350 € (2 nástroje)" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Všetko v balení",
+    "title": "Čo dostanete domov",
+    "items": [
+      { "icon": "box", "text": "RatchetPro 2in1™ — Elektrická račňa a skrutkovač", "value": "159,99 €", "valueType": "price" },
+      { "icon": "box", "text": "Sada nástavcov 3/8\"", "value": "V BALENÍ", "valueType": "included" },
+      { "icon": "box", "text": "Sada bitov 1/4\" + adaptér Quick-Change", "value": "V BALENÍ", "valueType": "included" },
+      { "icon": "cable", "text": "Nadstavce + flexibilný kĺb", "value": "V BALENÍ", "valueType": "included" },
+      { "icon": "box", "text": "2 Li-ion batérie 20V + nabíjačka", "value": "V BALENÍ", "valueType": "included" },
+      { "icon": "gift", "text": "Profesionálny kufrík", "value": "DARČEK", "valueType": "gift" },
+      { "icon": "shield", "text": "Záruka 2 roky + špecializovaná podpora", "value": "V BALENÍ", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Pôvodná cena:",
+    "totalOriginalValue": "228,99 €",
+    "totalCurrentLabel": "Dnes platíte len:",
+    "totalCurrentValue": "79,99 €",
+    "totalSave": "Ušetríte 149 € · Doprava ZADARMO",
+    "ctaText": "OBJEDNAJTE TERAZ"
+  },
+
+  "reviews": {
+    "eyebrow": "Čo hovoria naši zákazníci",
+    "title": "Overené recenzie",
+    "rating": "4.8",
+    "totalCount": "14 731 recenzií",
+    "verifiedNote": "✓ Recenzie sú overované nezávislým tímom mimo tejto webovej stránky.",
+    "showMoreText": "Zobraziť ďalšie recenzie",
+    "leaveReviewText": "Napísať recenziu",
+    "verifiedBadge": "Overený nákup",
+    "sellerReplyLabel": "Odpoveď predajcu:",
+    "items": [
+      {
+        "initials": "PH",
+        "name": "Peter Horváth",
+        "stars": 5,
+        "text": "Používam ho na auto aj na montáž nábytku doma. Predtým som musel vytiahnuť ručnú račňu na matice a skrutkovač na skrutky, teraz robím všetko s týmto. Výmena nástavca za bit je bleskurýchla. Doručené za dva dni, platil som kuriérovi.",
+        "verified": true,
+        "sellerReply": "Peter, presne na toto bol navrhnutý: jeden nástroj na všetko. Ďakujeme za dôveru!"
+      },
+      {
+        "initials": "MK",
+        "name": "Martin Kováč",
+        "stars": 5,
+        "text": "pracujem ako inštalatér a tento nástroj mi zachránil deň. v úzkych priestoroch za sanitárnymi zariadeniami sa môj skrutkovač nezmestil, s kĺbom na tomto sa dostanem všade. variabilná rýchlosť je dar z neba, pretože nepoškodím armatúry",
+        "verified": true,
+        "sellerReply": "Martin, keď ho profesionál používa každý deň, je to najlepšie potvrdenie. Flexibilný kĺb skutočne robí rozdiel v úzkych priestoroch!"
+      },
+      {
+        "initials": "JV",
+        "name": "Jana Vargová",
+        "stars": 5,
+        "text": "Kúpila som ho pre manžela, ktorý sa stále sťažoval na zápästie pri používaní ručnej račne. Teraz všetko zvládne za polovicu času a bez námahy. Aj ja som ho použila na montáž police a musím povedať, že je veľmi jednoduchý na použitie.",
+        "verified": true,
+        "sellerReply": "Jana, keď ho zvládne aj ten, kto nie je odborník, znamená to, že sme odviedli dobrú prácu. Ďakujeme!"
+      },
+      {
+        "initials": "TB",
+        "name": "Tomáš Baláž",
+        "stars": 5,
+        "text": "som stolár a používam ho každý deň. 81 Nm krútiaceho momentu je na moju prácu viac ako dosť. dve batérie sú nevyhnutné, pretože jedna sa nabíja, kým používam druhú a nikdy sa nezastavím. kufrík je praktický na prenášanie",
+        "verified": true,
+        "sellerReply": "Tomáš, stolár, ktorý ho používa denne, je najlepší test. 2 batérie sú navrhnuté práve pre tých, čo pracujú bez prestávky. Ďakujeme!"
+      },
+      {
+        "initials": "MT",
+        "name": "Michal Tóth",
+        "stars": 4,
+        "text": "funguje dobre s nástavcami aj s bitmi. LED je veľmi užitočný, keď pracujem pod autom v garáži. zatiaľ dávam 4 hviezdičky, pretože ho ešte testujem na rôznych prácach, ale prvý dojem je veľmi dobrý",
+        "verified": true,
+        "sellerReply": "Michal, ceníme si vašu úprimnosť! Sme si istí, že pri ďalšom používaní na rôznych prácach budete spokojný. Dajte nám vedieť!"
+      },
+      {
+        "initials": "AM",
+        "name": "Andrej Molnár",
+        "stars": 5,
+        "text": "používam ho na údržbu motorky. výmena brzdových platničiek bola predtým nočná mora s ručnou račňou. teraz mám za 10 minút hotovo a zápästie ma nebolí. sada nástavcov pokrýva všetky rozmery, ktoré potrebujem",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "JS",
+        "name": "Jozef Szabó",
+        "stars": 5,
+        "text": "doprava blesková a produkt vynikajúci. nečakal som, že za 79,99 eur môžem mať toto všetko: račňu, nástavce, bity, nadstavce, kĺb, dve batérie a dokonca kufrík. už som urobil tri opravy doma a funguje to výborne",
+        "verified": true,
+        "sellerReply": "Jozef, kompletná sada je naša hlavná prednosť: otvoríte kufrík a máte všetko. Žiadne skryté náklady a žiadne príslušenstvo na dokúpenie. Ďakujeme!"
+      },
+      {
+        "initials": "KN",
+        "name": "Katarína Némethová",
+        "stars": 5,
+        "text": "Používam ho sama na domáce práce. Namontovala som dve police a vymenila kľučky na dverách bez toho, aby som niekoho prosila o pomoc. Variabilná rýchlosť je perfektná, pretože neriskujem poškodenie dreva. Oveľa praktickejší ako skrutkovač, ktorý som mala predtým.",
+        "verified": true,
+        "sellerReply": "Katarína, je pekné vedieť, že ho zvládne aj ten, kto nie je profesionál. Variabilná rýchlosť je navrhnutá práve na toto!"
+      },
+      {
+        "initials": "MF",
+        "name": "Milan Fekete",
+        "stars": 5,
+        "text": "vymenil som pneumatiky na aute sám v garáži. nástavce 3/8 uťahujú dobre a s elektrickou račňou sa nenadrete. finálne dotiahnutie urobíte ručne pre istotu. dve batérie sú geniálny nápad",
+        "verified": true,
+        "sellerReply": "Milan, perfektný prístup: elektrická račňa odvedie ťažkú prácu a potom finálne dotiahnutie ručne pre istotu. Tešíme sa, že 2 batérie robia rozdiel!"
+      },
+      {
+        "initials": "JL",
+        "name": "Jan Lukáč",
+        "stars": 5,
+        "text": "Objednal som v pondelok, doručili v stredu. Platil som kuriérovi bez problémov. Predný LED je veľmi užitočný, keď pracujem pod kuchynským drezom. Už som ho odporučil švagrovi, ktorý je mechanik.",
+        "verified": true,
+        "sellerReply": "Jan, LED sa zdá ako detail, ale v garáži a v tmavých priestoroch robí obrovský rozdiel. Pozdravujte švagra!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Napíšte svoju recenziu",
+    "nameLabel": "Vaše meno",
+    "namePlaceholder": "Napr. Ján Novák",
+    "ratingLabel": "Hodnotenie",
+    "textLabel": "Vaša recenzia",
+    "textPlaceholder": "Povedzte nám o vašej skúsenosti...",
+    "submitText": "Odoslať recenziu",
+    "successTitle": "Ďakujeme za vašu recenziu!",
+    "successText": "Vaša recenzia čaká na schválenie nezávislým tímom mimo tejto webovej stránky. Recenzie od osôb, ktoré si produkt nekúpili, nebudú zverejnené, aby sme predišli neautentickým recenziám.",
+    "closeText": "Zavrieť"
+  },
+
+  "orderForm": {
+    "eyebrow": "Objednávkový formulár",
+    "title": "Dokončite svoju objednávku",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Ponuka -50% končí o:",
+    "stockWarning": "Už len <strong>8 kusov</strong> za túto cenu",
+    "summaryTitle": "Súhrn objednávky",
+    "summaryLines": [
+      { "label": "RatchetPro 2in1™ + kompletná sada", "value": "79,99 €", "type": "normal" },
+      { "label": "Rýchla doprava 24/48h", "value": "ZADARMO", "type": "free" },
+      { "label": "Poplatky za dobierku", "value": "ZADARMO", "type": "free" }
+    ],
+    "totalLabel": "CELKOM",
+    "totalValue": "79,99 €",
+    "fields": {
+      "name": { "label": "Meno a priezvisko *", "placeholder": "Napr. Ján Novák" },
+      "phone": { "label": "Telefónne číslo *", "placeholder": "Napr. 0901 234 567" },
+      "address": { "label": "Doručovacia adresa *", "placeholder": "Ulica, číslo, mesto, PSČ" }
+    },
+    "phoneNote": "Budeme vás kontaktovať telefonicky alebo cez WhatsApp na potvrdenie objednávky.",
+    "paymentBadge": "Platba na dobierku — Platíte v hotovosti kuriérovi. Žiadna záloha.",
+    "submitText": "POTVRDIŤ OBJEDNÁVKU",
+    "submitSubtext": "Platba na dobierku v hotovosti",
+    "reassurance": "Chránené údaje · SSL 256-bit · Žiadna predplatba"
+  },
+
+  "faq": {
+    "eyebrow": "Časté otázky",
+    "title": "Máte ešte otázky? Tu sú odpovede.",
+    "items": [
+      { "question": "Ako si objednám?", "answer": "Kliknite na tlačidlo objednávky, vyplňte formulár so svojimi údajmi a potvrďte objednávku. Budeme vás kontaktovať telefonicky alebo cez WhatsApp na potvrdenie a balík dostanete pohodlne domov s platbou v hotovosti." },
+      { "question": "Ako funguje doprava?", "answer": "Doprava je úplne zadarmo. Od potvrdenia objednávky trvá doručenie približne 1–2 pracovné dni." },
+      { "question": "A čo ak sa mi nebude páčiť?", "answer": "Môžete požiadať o úplnú refundáciu vrátením produktu do 30 dní od doručenia. Prídeme si po balík a vrátime vám celú sumu." },
+      { "question": "Čo ak mám problém po 30 dňoch?", "answer": "Bez obáv, všetky naše produkty majú 2-ročnú záruku." },
+      { "question": "Ako požiadať o vrátenie alebo podporu?", "answer": "Na požiadanie o podporu alebo vrátenie po objednaní môžete použiť kontaktný formulár na stránke alebo e-mail uvedený v pätičke." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "159,99 €",
+    "newPrice": "79,99 €",
+    "buttonText": "OBJEDNAJTE TERAZ",
+    "buttonSubtext": "Platba na dobierku"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 79.99,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Predchádzajúci",
+    "nextSlide": "Nasledujúci",
+    "thumbnail": "Miniatúra",
+    "close": "Zavrieť"
+  },
+
+  "ty": {
+    "title": "Objednávka potvrdená!",
+    "subtitle": "Vaša objednávka bola úspešne prijatá.",
+    "orderNumberLabel": "Č. objednávky:",
+    "summaryTitle": "Súhrn objednávky",
+    "accessoriesLabel": "+ Kompletná sada v balení",
+    "totalLabel": "CELKOM NA ÚHRADU",
+    "paymentNote": "Platba v hotovosti kuriérovi — žiadna záloha",
+    "yourDataTitle": "Vaše údaje",
+    "nameLabel": "Meno",
+    "phoneLabel": "Telefón",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Čo sa deje ďalej?",
+    "message": "Budeme vás kontaktovať telefonicky alebo cez WhatsApp na potvrdenie objednávky a organizáciu doručenia.",
+    "steps": [
+      "Dostanete telefonát alebo správu cez WhatsApp na potvrdenie",
+      "Balík bude odoslaný do 24/48h",
+      "Platíte v hotovosti kuriérovi pri doručení"
+    ],
+    "footerText": "Záruka 2 roky · 30 dní na vrátenie · Špecializovaná podpora"
+  }
+}

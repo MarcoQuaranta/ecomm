@@ -1,0 +1,409 @@
+{
+  "seo": {
+    "title": "PowerWind X™ - Taglia Rovi, Erba e Rametti Senza Piantarsi",
+    "description": "Il decespugliatore a batteria con motore intelligente che aumenta la potenza da solo. Kit completo con 4 lame, taglia-bordi, 2 batterie. Spedizione gratuita."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 179.00,
+    "currentPrice": 89.00,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "text": "Spedizione Gratuita 24/48h · Pagamento alla Consegna · Garanzia 2 Anni"
+  },
+
+  "urgencyBanner": {
+    "text": "Attenzione: Forte richiesta —",
+    "highlight": "Ultimi 8 pezzi disponibili",
+    "suffix": "a questo prezzo"
+  },
+
+  "hero": {
+    "badge": "Innovazione 2026",
+    "title": "Taglia Rovi, Erba Alta e Rametti",
+    "titleHighlight": "Senza Mai Piantarsi:",
+    "titleSuffix": "Il Primo Decespugliatore che Pensa da Solo",
+    "subtitle": "Motore intelligente che regola la potenza da solo. 4 lame incluse nel prezzo, 2 batterie, taglia-bordi e valigetta. Accendi e taglia, fa tutto lui.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.743 clienti soddisfatti"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/powerwind/carosello/1.webp", "alt": "PowerWind X vista completa" },
+      { "src": "/images/mirko/powerwind/carosello/2.webp", "alt": "PowerWind X in uso" },
+      { "src": "/images/mirko/powerwind/carosello/3.webp", "alt": "PowerWind X dettaglio testina" },
+      { "src": "/images/mirko/powerwind/carosello/4.webp", "alt": "PowerWind X accessori inclusi" },
+      { "src": "/images/mirko/powerwind/carosello/5.webp", "alt": "PowerWind X batterie e caricatore" },
+      { "src": "/images/mirko/powerwind/carosello/6.webp", "alt": "PowerWind X bordatore" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Non si pianta mai:", "description": "il motore SmartTorque aumenta la potenza da solo quando incontra rovi ed erba alta." },
+      { "title": "Filo di taglio: si ricarica in 10 secondi:", "description": "il filo di nylon che taglia l'erba si consuma con l'uso. Ne infili uno nuovo, batti a terra e si riavvolge da solo. Zero smontaggio." },
+      { "title": "Si libera in 1 click:", "description": "il tasto Reverse sblocca filo e erba incastrata all'istante." },
+      { "title": "Bordi perfetti da giardiniere:", "description": "taglia-bordi con rotella guida per marciapiedi e vialetti impeccabili." },
+      { "title": "Zero pause:", "description": "2 batterie incluse. Una lavora, una ricarica. Lavori quanto vuoi." },
+      { "title": "Arrivi ovunque:", "description": "si allunga da 71 a 210 cm. Raggiungi sotto le siepi e i punti scomodi senza piegarti." },
+      { "title": "Comfort totale sulle spalle:", "description": "imbracatura doppia spalla con imbottitura che distribuisce il peso. Lavori per ore senza sentire fatica." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "PowerWind X™",
+    "originalPriceLabel": "Prezzo di listino:",
+    "discountLabel": "RISPARMI 90€ (-50%)",
+    "shippingLabel": "Spedizione Rapida:",
+    "shippingValue": "Gratis",
+    "guaranteeLabel": "Garanzia 2 Anni",
+    "offerToggleText": "Scopri cosa include l'offerta",
+    "offerItems": [
+      { "text": "PowerWind X™ — Decespugliatore Professionale", "badge": null },
+      { "text": "Kit 4 Lame di Taglio (filo, erba, rovi, rametti)", "badge": null },
+      { "text": "2 Batterie 40V + Caricatore Rapido", "badge": null },
+      { "text": "Taglia-Bordi con Rotella Guida", "badge": "REGALO" },
+      { "text": "Imbracatura Doppia Spalla Comfort PRO", "badge": "REGALO" },
+      { "text": "Valigetta Rigida + Filo di Ricambio", "badge": "REGALO" },
+      { "text": "Garanzia 2 Anni + Assistenza Dedicata", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ORDINA ORA",
+    "mainSubtext": "Pagamento Contanti alla Consegna",
+    "subNote": "Zero rischio: paghi solo quando ricevi il pacco"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Pagamento alla Consegna", "color": "green" },
+      { "icon": "truck", "text": "Spedizione 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Giorni di Reso", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Ti riconosci?",
+    "title": "Questi problemi ti sono familiari?",
+    "items": [
+      { "icon": "pain", "titleBold": "Il decespugliatore a benzina ti spacca la schiena", "text": "— pesante, rumoroso, puzza e parte una volta su tre." },
+      { "icon": "warning", "titleBold": "Il filo si incastra ogni due minuti", "text": "e devi smontare tutto per riavvolgerlo. Perdi più tempo a sistemarlo che a tagliare." },
+      { "icon": "timer", "titleBold": "A batteria non ce la fa con i rovi", "text": "— si pianta, si spegne e la batteria muore dopo 20 minuti." }
+    ],
+    "solutionTitle": "Esiste una soluzione migliore.",
+    "solutionText": "Un decespugliatore con motore intelligente, 4 lame, 2 batterie e zero benzina. Accendi e taglia tutto."
+  },
+
+  "features": {
+    "eyebrow": "Perché è diverso",
+    "title": "Spazza via erba alta, rami e rovi in un istante",
+    "demoGifs": {
+      "items": [
+        { "src": "/images/mirko/powerwind/gif/1.gif", "alt": "PowerWind X in azione" },
+        { "src": "/images/mirko/powerwind/gif/2.gif", "alt": "PowerWind X in azione" },
+        { "src": "/images/mirko/powerwind/gif/3.gif", "alt": "PowerWind X in azione" }
+      ],
+      "caption": "PowerWind X in azione."
+    },
+    "items": [
+      {
+        "image": "/images/mirko/powerwind/angle/1.webp",
+        "imageAlt": "SmartTorque AUTO",
+        "tag": "POTENZA INTELLIGENTE",
+        "tagColor": "green",
+        "title": "Non Si Pianta Mai nei Rovi",
+        "description": "Il motore <strong>SmartTorque</strong> aumenta <strong>potenza e velocità automaticamente</strong> quando incontra erba alta e sterpaglie. <strong>Nessun decespugliatore a batteria</strong> fa questo."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/2.webp",
+        "imageAlt": "4 sistemi di taglio",
+        "tag": "4 LAME INCLUSE",
+        "tagColor": "orange",
+        "title": "Una Lama per Ogni Esigenza",
+        "description": "<strong>Filo di nylon</strong> per le rifiniture, <strong>lama 3 denti</strong> per l'erba spessa, <strong>disco per rovi</strong> e sterpaglie, <strong>disco da taglio</strong> per rametti e piccoli rami. Un solo attrezzo, tagli tutto."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/3.webp",
+        "imageAlt": "Taglia-bordi Bordo Perfetto",
+        "tag": "RISULTATO WOW",
+        "tagColor": "blue",
+        "title": "Bordi Perfetti Come un Giardiniere Professionista",
+        "description": "<strong>Taglia-bordi</strong> con <strong>rotella guida</strong> per marciapiedi e vialetti. In <strong>5 minuti</strong> il tuo giardino sembra curato da un professionista."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/4.webp",
+        "imageAlt": "Decespugliatore telescopico allungabile",
+        "tag": "ZERO FATICA",
+        "tagColor": "green",
+        "title": "Arrivi Dove gli Altri Non Arrivano",
+        "description": "Si allunga da <strong>71 a 210 cm</strong> in un gesto. Tagli sotto le siepi, lungo i muri e nei punti scomodi <strong>senza piegarti</strong> e senza spaccarti la schiena. Lo regoli sulla <strong>tua altezza</strong> e lavori comodo."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Semplicissimo",
+    "title": "3 gesti e il giardino è fatto.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Monta", "description": "Agganci la lama, inserisci la batteria. 30 secondi e sei pronto." },
+      { "title": "Accendi", "description": "Un pulsante e parte. SmartTorque regola la potenza da solo." },
+      { "title": "Taglia", "description": "Erba, rovi, rametti: fa tutto lui. Cambi lama in 2 secondi." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ORDINA ORA CON IL 50% DI SCONTO",
+    "subtext": "Pagamento Contanti alla Consegna"
+  },
+
+  "comparison": {
+    "eyebrow": "Il Confronto",
+    "title": "Quali vantaggi avrai rispetto alle alternative?",
+    "featureColumn": "Caratteristica",
+    "winnerBadge": "VINCITORE",
+    "productColumn": "PowerWind X™",
+    "competitorColumn": "Decespugliatore a Benzina",
+    "rows": [
+      { "feature": "Potenza sui rovi", "product": "✔ SmartTorque auto", "competitor": "Costante (rischio stallo)" },
+      { "feature": "Ricarica filo", "product": "✔ 10 secondi, senza smontare", "competitor": "Smontare e riavvolgere a mano" },
+      { "feature": "Filo incastrato", "product": "✔ Reverse: 1 click", "competitor": "Smontare e pulire a mano" },
+      { "feature": "Peso e comfort", "product": "✔ Leggero, zero vibrazioni", "competitor": "Pesante, vibrazioni forti" },
+      { "feature": "Rumore", "product": "✔ Silenzioso", "competitor": "Sveglia i vicini" },
+      { "feature": "Costo totale", "product": "✔ Solo 89€ (tutto incluso)", "competitor": "200-400€ + benzina + tagliandi" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Tutto incluso",
+    "title": "Cosa ricevi a casa tua",
+    "items": [
+      { "icon": "box", "text": "PowerWind X™ — Decespugliatore Professionale", "value": "€179,00", "valueType": "price" },
+      { "icon": "check", "text": "Kit 4 Lame di Taglio (filo, erba, rovi, rametti)", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "check", "text": "2 Batterie 40V + Caricatore Rapido", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "gift", "text": "Taglia-Bordi con Rotella Guida", "value": "REGALO", "valueType": "gift" },
+      { "icon": "gift", "text": "Imbracatura Doppia Spalla Comfort PRO", "value": "REGALO", "valueType": "gift" },
+      { "icon": "gift", "text": "Valigetta Rigida + Filo di Ricambio", "value": "REGALO", "valueType": "gift" },
+      { "icon": "shield", "text": "Garanzia 2 Anni + Assistenza Dedicata", "value": "INCLUSO", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Prezzo di Listino:",
+    "totalOriginalValue": "€389,00",
+    "totalCurrentLabel": "Oggi paghi solo:",
+    "totalCurrentValue": "€89,00",
+    "totalSave": "Risparmi €300,00 · Spedizione GRATUITA",
+    "ctaText": "ORDINA ORA"
+  },
+
+  "reviews": {
+    "eyebrow": "Cosa dicono di Noi",
+    "title": "Recensioni Verificate",
+    "rating": "4.8",
+    "totalCount": "18.743 recensioni",
+    "verifiedNote": "✓ Le recensioni vengono verificate da un team neutrale esterno a questo sito web.",
+    "showMoreText": "Mostra altre recensioni",
+    "leaveReviewText": "Lascia una recensione",
+    "verifiedBadge": "Acquisto verificato",
+    "sellerReplyLabel": "Risposta del venditore:",
+    "items": [
+      {
+        "initials": "AF",
+        "name": "Antonio Ferrara",
+        "stars": 5,
+        "text": "Ho un terreno di 2000 metri con rovi e sterpaglie dure. Il vecchio a benzina si piantava sempre e pesava una tonnellata. Questo qui entra nei rovi e non si ferma, il motore accelera da solo quando trova resistenza. Ho tagliato tutto in un pomeriggio senza spaccarmi la schiena. Spedizione in due giorni, pagato al corriere.",
+        "image": "/images/mirko/powerwind/recensioni/1.webp",
+        "imageAlt": "Foto recensione Antonio",
+        "verified": true,
+        "sellerReply": "Antonio, il SmartTorque è stato pensato proprio per chi ha terreni impegnativi come il suo. Contento che abbia notato la differenza di peso. Per qualsiasi necessità siamo qui."
+      },
+      {
+        "initials": "MB",
+        "name": "Massimo Benedetti",
+        "stars": 5,
+        "text": "prima ci mettevo 10 minuti ogni volta che finiva il filo, dovevo smontare la testina e bestemmiare. con questo infilo il filo giro e riparto, non ci credevo ma funziona davvero. lo uso il sabato mattina e faccio tutto in metà tempo rispetto a prima",
+        "image": "/images/mirko/powerwind/recensioni/2.webp",
+        "imageAlt": "Foto recensione Massimo",
+        "verified": true,
+        "sellerReply": "Massimo, l'AutoSpool è la funzione più apprezzata dai nostri clienti. Siamo felici che le abbia semplificato il lavoro del sabato. Grazie!"
+      },
+      {
+        "initials": "SP",
+        "name": "Sandra Pellegrino",
+        "stars": 5,
+        "text": "L'ho preso per mio marito che ha 62 anni e si lamentava sempre della schiena dopo aver usato quello a benzina. Con questo è leggero e le cinghie a doppia spalla distribuiscono il peso benissimo. Anche il rumore è minimo, i vicini ringraziano. Arrivato in due giorni, nessun costo aggiuntivo.",
+        "image": "/images/mirko/powerwind/recensioni/3.webp",
+        "imageAlt": "Foto recensione Sandra",
+        "verified": true,
+        "sellerReply": "Sandra, che bella idea regalo! L'imbracatura doppia spalla è progettata proprio per chi lavora a lungo senza affaticarsi. Un saluto a suo marito!"
+      },
+      {
+        "initials": "GM",
+        "name": "Giovanni Moretti",
+        "stars": 5,
+        "text": "le due batterie sono una svolta. finisce una metto l'altra e vado avanti senza pause. con il vecchio a benzina dovevo portarmi il bidone e puzzavo tutto il giorno. questo è silenzioso pulito e potente. il taglia-bordi poi è spettacolare, i bordi vengono dritti",
+        "image": "/images/mirko/powerwind/recensioni/4.webp",
+        "imageAlt": "Foto recensione Giovanni",
+        "verified": true,
+        "sellerReply": "Giovanni, la continuità di lavoro con due batterie è fondamentale per chi ha giardini grandi. Grazie per aver scelto PowerWind X!"
+      },
+      {
+        "initials": "CR",
+        "name": "Carmelo Ruggiero",
+        "stars": 4,
+        "text": "Prodotto solido, l'ho provato su erba alta e rovi e devo dire che il motore risponde bene. Per ora metto 4 stelle perché voglio testarlo bene per tutta la stagione prima di dare il massimo, ma le premesse sono eccellenti. Ottimo il kit con tutti gli accessori inclusi",
+        "verified": true,
+        "sellerReply": "Carmelo, apprezziamo la sua onestà! Siamo sicuri che a fine stagione i risultati parleranno da soli. Ci aggiorni, siamo curiosi di sapere!"
+      },
+      {
+        "initials": "TM",
+        "name": "Teresa Mancuso",
+        "stars": 5,
+        "text": "Comprato per mio padre di 68 anni che non voleva sentir parlare di batteria. Dopo averlo provato non vuole più tornare a benzina. Dice che pesa la metà e che il taglia-bordi gli fa i marciapiedi come un giardiniere vero. Pagato al corriere senza problemi.",
+        "verified": true,
+        "sellerReply": "Teresa, convertire un fan della benzina è la nostra soddisfazione più grande! Un saluto al papà, siamo contenti che si trovi bene."
+      },
+      {
+        "initials": "DB",
+        "name": "Domenico Basile",
+        "stars": 5,
+        "text": "il taglia-bordi con la rotella è una cosa pazzesca. i bordi del vialetto vengono dritti perfetti, sembra fatto da un professionista. prima ci andavo a occhio e facevo sempre disastri. anche la valigetta è comoda per tenere tutto in ordine nel garage",
+        "verified": true,
+        "sellerReply": "Domenico, la rotella guida è stata progettata proprio per ottenere bordi professionali senza esperienza. Grazie per la recensione!"
+      },
+      {
+        "initials": "FP",
+        "name": "Franco Palmieri",
+        "stars": 5,
+        "text": "La cosa che mi ha conquistato è il tasto reverse. Prima ogni volta che il filo si incastrava nell'erba dovevo spegnere tutto e tirare a mano. Con questo premi un pulsante e si libera da solo. Geniale. Anche la lama per i rovi funziona alla grande.",
+        "verified": true,
+        "sellerReply": "Franco, il Reverse anti-ingarbuglio è nato dall'ascolto dei problemi più comuni dei nostri clienti. Felici che sia la funzione che apprezza di più!"
+      },
+      {
+        "initials": "LM",
+        "name": "Luciano Mattioli",
+        "stars": 5,
+        "text": "per 89 euro tutto questo kit è un affare incredibile. decespugliatore, 4 lame diverse, taglia-bordi, valigetta, due batterie... ho confrontato con quelli in negozio e per avere lo stesso devi spendere il triplo. arrivato in fretta spedizione gratuita come promesso",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "SV",
+        "name": "Salvatore Vitale",
+        "stars": 5,
+        "text": "L'asta telescopica mi ha risolto un problema che avevo da anni: tagliare sotto la siepe e nei punti dove non arrivavo. Si allunga senza attrezzi e raggiungi posti impossibili. Il tutto senza chinarti e spaccarti la schiena. Prodotto serio, lo consiglio.",
+        "verified": true,
+        "sellerReply": "Salvatore, l'asta telescopica è pensata proprio per eliminare le posizioni scomode. Grazie per aver scelto PowerWind X, buon lavoro!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Lascia la tua recensione",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "Valutazione",
+    "textLabel": "La tua recensione",
+    "textPlaceholder": "Racconta la tua esperienza...",
+    "submitText": "Invia Recensione",
+    "successTitle": "Grazie per la tua recensione!",
+    "successText": "La tua recensione è in attesa di approvazione da un team esterno a questo sito web. Le recensioni lasciate da chi non ha acquistato il prodotto non saranno pubblicate, questo per evitare recensioni non autentiche.",
+    "closeText": "Chiudi"
+  },
+
+  "orderForm": {
+    "eyebrow": "Modulo d'Ordine",
+    "title": "Completa il tuo ordine",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "L'offerta -50% scade tra:",
+    "stockWarning": "Solo <strong>8 pezzi</strong> rimasti a questo prezzo",
+    "summaryTitle": "Riepilogo Ordine",
+    "summaryLines": [
+      { "label": "PowerWind X™ + 4 Lame + Accessori", "value": "€89,00", "type": "normal" },
+      { "label": "Spedizione rapida 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Spese di Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€89,00",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo di Spedizione *", "placeholder": "Via, Numero, Città, CAP" }
+    },
+    "phoneNote": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine.",
+    "paymentBadge": "Pagamento alla Consegna — Paghi in contanti al corriere. Zero anticipo.",
+    "submitText": "CONFERMA ORDINE",
+    "submitSubtext": "Pagamento Contanti alla Consegna",
+    "reassurance": "Dati protetti · SSL 256-bit · Nessun addebito anticipato"
+  },
+
+  "faq": {
+    "eyebrow": "Domande frequenti",
+    "title": "Hai ancora dubbi? Ecco le risposte.",
+    "items": [
+      { "question": "Come faccio ad ordinare?", "answer": "Clicca sul pulsante di acquisto, compila il modulo con i tuoi dati e conferma l'ordine. Sarai contattato telefonicamente o tramite WhatsApp per la conferma e riceverai il pacco comodamente a casa, con pagamento in contanti." },
+      { "question": "Come funziona la spedizione?", "answer": "La spedizione è totalmente gratuita. Da quando l'ordine è confermato, impiega circa 24/48h lavorative per essere consegnato." },
+      { "question": "E se non mi piace?", "answer": "Puoi richiedere un rimborso totale facendo il reso del prodotto entro 30 giorni dalla consegna. Veniamo noi a ritirare il pacco e a ridarti l'intera somma spesa." },
+      { "question": "Se ho problemi dopo 30 giorni?", "answer": "Tranquillo, tutti i nostri prodotti hanno 2 anni di garanzia." },
+      { "question": "Come faccio a chiedere un reso o assistenza?", "answer": "Per chiedere assistenza o un reso dopo aver effettuato un ordine, puoi utilizzare il modulo di contatto che trovi all'interno del sito o tramite la mail presente nel footer." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€179",
+    "newPrice": "€89",
+    "buttonText": "ORDINA ORA",
+    "buttonSubtext": "Paga Alla Consegna"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 89.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
+  "ty": {
+    "title": "Ordine Confermato!",
+    "subtitle": "Il tuo ordine è stato ricevuto con successo.",
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Riepilogo Ordine",
+    "accessoriesLabel": "+ Accessori inclusi",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — nessun anticipo",
+    "yourDataTitle": "I Tuoi Dati",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "Cosa succede ora?",
+    "message": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine e organizzare la consegna.",
+    "steps": [
+      "Riceverai una chiamata o un messaggio WhatsApp di conferma",
+      "Il pacco verrà spedito in 24/48h",
+      "Paghi in contanti al corriere alla consegna"
+    ],
+    "footerText": "Garanzia 2 Anni · 30 Giorni di Reso · Assistenza Dedicata"
+  }
+}

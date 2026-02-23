@@ -17,43 +17,66 @@ Chiedi all'utente:
 2. "Qual e' il prezzo di vendita per ogni nazione?"
    Specifica che serve: prezzo originale + prezzo scontato, in valuta locale.
 
+3. "Per ogni nazione, su quali piattaforme? (Google Ads / Facebook / entrambe)"
+
 ESEMPIO risposta utente:
-- Polonia: 299 PLN -> 149 PLN
-- Ungheria: 29990 HUF -> 14990 HUF
-- Rep. Ceca: 2990 CZK -> 1490 CZK
+- Polonia: 299 PLN -> 149 PLN (GG + FB)
+- Ungheria: 29990 HUF -> 14990 HUF (solo GG)
+- Rep. Ceca: 2990 CZK -> 1490 CZK (solo GG)
 
 ================================================================================
 STEP 2 - STRUTTURA CARTELLE
 ================================================================================
 
-Per ogni nazione e per ogni media buyer, crea:
+Per ogni nazione, per ogni media buyer, per ogni piattaforma, crea una cartella
+con suffisso -[lang]-[piattaforma]:
 
-src/app/[mediabuyer]/[prodotto]/[prodotto]-[lang]/
-  ├── page.tsx              <-- COPIATO identico dalla versione italiana
-  ├── content.json          <-- TRADOTTO
+src/app/[mediabuyer]/[prodotto]/[prodotto]-[lang]-[gg|fb]/
+  ├── page.tsx                      <-- COPIATO identico dalla versione italiana
+  ├── content.json                  <-- TRADOTTO (TUTTI i campi visibili)
+  ├── LandingTemplate[Venditore].tsx  <-- COPIATO identico dalla versione italiana
+  ├── TyTemplate[Venditore].tsx       <-- COPIATO identico dalla versione italiana
+  ├── landing-[venditore].css         <-- COPIATO identico dalla versione italiana
   └── ty/
-      └── page.tsx          <-- TRADOTTO
+      └── page.tsx                  <-- COPIATO identico dalla versione italiana
 
-ESEMPIO per prodotto "airwave", media buyer "lino", nazioni PL e HU:
+ESEMPIO per prodotto "cloudrelief", media buyer "mirko", PL (GG+FB) e CS (solo GG):
 
-src/app/lino/airwave/
-  ├── airwave-ita/          <-- originale
-  ├── airwave-pl/           <-- traduzione polacca
-  │   ├── page.tsx          <-- identico a ita
-  │   ├── content.json      <-- tradotto in polacco
-  │   └── ty/page.tsx       <-- tradotto in polacco
-  └── airwave-hu/           <-- traduzione ungherese
-      ├── page.tsx          <-- identico a ita
-      ├── content.json      <-- tradotto in ungherese
-      └── ty/page.tsx       <-- tradotto in ungherese
+src/app/mirko/cloudrelief/
+  ├── cloudrelief-ita/          <-- originale (test)
+  ├── cloudrelief-pl-gg/        <-- polacco Google Ads
+  │   ├── page.tsx
+  │   ├── content.json          <-- tradotto, tracking GG
+  │   └── ty/page.tsx
+  ├── cloudrelief-pl-fb/        <-- polacco Facebook
+  │   ├── page.tsx
+  │   ├── content.json          <-- tradotto, tracking FB
+  │   └── ty/page.tsx
+  └── cloudrelief-cs-gg/        <-- ceco solo Google Ads
+      ├── page.tsx
+      ├── content.json          <-- tradotto, tracking GG
+      └── ty/page.tsx
+
+### COME CREARE LE VARIANTI PER PIATTAFORMA
+Se una nazione va su ENTRAMBE le piattaforme:
+1. Crea la versione -gg con il content.json tradotto
+2. Copia TUTTI i file dalla -gg alla -fb
+3. Nel content.json della -fb: svuota googleAdsId e conversionLabel,
+   inserisci facebookPixelId, svuota network (credenziali FB diverse)
+4. Il tracking finale viene compilato in Fase 4
 
 ================================================================================
 STEP 3 - COSA TRADURRE
 ================================================================================
 
-### REGOLA FONDAMENTALE:
+### REGOLA FONDAMENTALE — ZERO TESTO HARDCODATO:
+TUTTI i testi visibili a schermo DEVONO provenire dal content.json.
+Il componente (LandingTemplate*.tsx / TyTemplate*.tsx) NON DEVE contenere
+MAI testi in nessuna lingua — legge TUTTO dal JSON.
+Se trovi un testo hardcodato nel componente, SPOSTALO nel JSON prima di tradurre.
+
 Si traducono SOLO i testi visibili a schermo e gli attributi leggibili dai
-motori di ricerca (alt delle immagini, SEO title/description).
+motori di ricerca (alt delle immagini, SEO title/description, aria-label).
 NON si traduce codice, struttura, link o configurazioni.
 
 ### TRADURRE:
@@ -68,8 +91,16 @@ NON si traduce codice, struttura, link o configurazioni.
    - Form (titolo, sottotitolo, label, placeholder, bottone, note)
    - CTA (testi pulsanti, sottotesti)
    - Badge e label vari
+   - Comparison: featureColumn, winnerBadge, productColumn, competitorColumn, rows
+   - Reviews: verifiedBadge, sellerReplyLabel, showMoreText, leaveReviewText
+   - Sizes (se presente): sizeLabel, title, options[].name, explanationTitle, explanationText
+     NOTA: gli ID delle opzioni sizes (options[].id e defaultSelected) vanno adattati
+     alla lingua target per coerenza (es: "singolo" → "jednoosobowy" in polacco)
+   - ariaLabels: prevSlide, nextSlide, thumbnail, close
    - SEO (title, description)
-   - Sezione TY (title, subtitle, message)
+   - Sezione TY (TUTTI i campi visibili: title, subtitle, orderNumberLabel,
+     summaryTitle, accessoriesLabel, totalLabel, paymentNote, yourDataTitle,
+     nameLabel, phoneLabel, addressLabel, nextStepsTitle, message, steps[], footerText)
    - Alt delle immagini (attributo "alt" nei slides e features)
 
 2. TESTIMONIANZE - tradurre + adattare:
@@ -89,8 +120,13 @@ NON si traduce codice, struttura, link o configurazioni.
    - tracking.conversionCurrency = valuta locale
 
 4. TY/PAGE.TSX:
-   - Traduci SOLO i testi visibili della thank you page
-   - NON toccare il codice, import, componenti, logica
+   - Il componente TyTemplate legge TUTTI i testi dalla sezione "ty" del content.json
+   - NON ci sono testi hardcodati nel componente — tutti vengono dal JSON
+   - Assicurati che TUTTI i campi nella sezione "ty" siano tradotti:
+     title, subtitle, orderNumberLabel, summaryTitle, accessoriesLabel,
+     totalLabel, paymentNote, yourDataTitle, nameLabel, phoneLabel,
+     addressLabel, nextStepsTitle, message, steps (array di 3 stringhe), footerText
+   - NON toccare il codice, import, componenti, logica del ty/page.tsx
 
 ### NON TRADURRE (MAI):
 
@@ -174,11 +210,21 @@ Ogni agente traduce in TUTTE le nazioni richieste.
 
 Per ogni traduzione:
 1. Crea cartella [prodotto]-[lang]/
-2. Copia page.tsx identico dalla versione italiana
-3. Traduci content.json
-4. Traduci ty/page.tsx
-5. Inserisci prezzi e valuta locale
-6. Adatta nomi/citta' testimonianze
+2. Copia TUTTI i file dalla versione italiana:
+   - page.tsx (identico)
+   - LandingTemplate[Venditore].tsx (identico)
+   - TyTemplate[Venditore].tsx (identico)
+   - landing-[venditore].css (identico)
+   - ty/page.tsx (identico)
+3. Traduci content.json — OGNI testo visibile, NESSUNA eccezione:
+   - Tutti i testi delle sezioni principali
+   - Sezione ty (TUTTI i 15+ campi)
+   - Sezione comparison (featureColumn, winnerBadge)
+   - Sezione reviews (verifiedBadge, sellerReplyLabel, showMoreText, leaveReviewText)
+   - Sezione sizes (sizeLabel, title, options names, explanations, IDs adattati)
+   - Sezione ariaLabels (prevSlide, nextSlide, thumbnail, close)
+4. Inserisci prezzi e valuta locale
+5. Adatta nomi/citta' testimonianze
 
 ================================================================================
 STEP 7 - CHECKLIST POST-TRADUZIONE
@@ -186,18 +232,55 @@ STEP 7 - CHECKLIST POST-TRADUZIONE
 
 Per ogni cartella tradotta verificare:
 
-[ ] Cartella creata con nome corretto ([prodotto]-[lang])
+STRUTTURA FILE:
+[ ] Cartella creata con nome corretto ([prodotto]-[lang]-[gg|fb])
+[ ] Se piattaforma doppia: entrambe le varianti -gg e -fb create
 [ ] page.tsx copiato (identico a versione italiana)
-[ ] content.json tradotto completamente
-[ ] ty/page.tsx tradotto
-[ ] Nessun testo in italiano rimasto nel content.json
-[ ] Nessun testo in italiano rimasto nella ty page
+[ ] LandingTemplate[Venditore].tsx copiato (identico a versione italiana)
+[ ] TyTemplate[Venditore].tsx copiato (identico a versione italiana)
+[ ] landing-[venditore].css copiato (identico a versione italiana)
+[ ] ty/page.tsx copiato (identico a versione italiana)
+
+TRADUZIONI CONTENT.JSON - SEZIONI PRINCIPALI:
+[ ] Tutti i testi visibili tradotti (hero, benefits, problems, features, etc.)
+[ ] comparison.featureColumn tradotto
+[ ] comparison.winnerBadge tradotto
+[ ] reviews.verifiedBadge tradotto
+[ ] reviews.sellerReplyLabel tradotto
+[ ] reviews.showMoreText tradotto
+[ ] reviews.leaveReviewText tradotto
+[ ] sizes.sizeLabel tradotto (se presente)
+[ ] sizes.title, options names, explanations tradotti (se presente)
+[ ] sizes option IDs adattati alla lingua (NO IDs italiani)
+
+TRADUZIONI CONTENT.JSON - SEZIONE TY:
+[ ] ty.title, ty.subtitle tradotti
+[ ] ty.orderNumberLabel, ty.summaryTitle tradotti
+[ ] ty.accessoriesLabel, ty.totalLabel tradotti
+[ ] ty.paymentNote tradotto
+[ ] ty.yourDataTitle, ty.nameLabel, ty.phoneLabel, ty.addressLabel tradotti
+[ ] ty.nextStepsTitle, ty.message tradotti
+[ ] ty.steps (array di 3 stringhe) tradotto
+[ ] ty.footerText tradotto
+
+TRADUZIONI CONTENT.JSON - ARIA LABELS:
+[ ] ariaLabels.prevSlide, nextSlide, thumbnail, close tradotti
+
+VERIFICHE FINALI:
+[ ] *** NESSUN testo in italiano rimasto nel content.json ***
+    (ESCLUSI: _note, _instructions, nomi prodotto/brand)
 [ ] Prezzi nella valuta locale corretta
 [ ] Valore di conversione = prezzo scontato locale
 [ ] Nomi testimonianze adattati al paese
 [ ] Citta' testimonianze adattate al paese
 [ ] Link immagini invariati
-[ ] JSON valido
+[ ] JSON valido (controllare con parser)
 [ ] Nome prodotto NON tradotto
+
+VERIFICHE PIATTAFORMA:
+[ ] Cartelle -gg: facebookPixelId vuoto
+[ ] Cartelle -fb: googleAdsId e conversionLabel vuoti
+[ ] Cartelle -fb: facebookPixelId presente
+[ ] Cartelle -fb: network credentials vuoti (da compilare in Fase 4)
 
 ================================================================================

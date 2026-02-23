@@ -1,0 +1,379 @@
+{
+  "seo": {
+    "title": "CleanBot X1™ - La Tua Casa Pulita Senza Muovere un Dito",
+    "description": "Il robot aspirapolvere e lavapavimenti che pulisce da solo tutta la casa. Spedizione gratuita, pagamento alla consegna."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 199.00,
+    "currentPrice": 89.00,
+    "discountPercent": 55
+  },
+
+  "topBar": {
+    "text": "Spedizione Gratuita 24/48h · Pagamento alla Consegna · Garanzia 2 Anni"
+  },
+
+  "urgencyBanner": {
+    "text": "⚠️ Attenzione: Forte richiesta —",
+    "highlight": "Ultimi 8 pezzi disponibili",
+    "suffix": "a questo prezzo"
+  },
+
+  "hero": {
+    "badge": "Tecnologia 2026",
+    "title": "Casa Pulita Ogni Giorno",
+    "titleHighlight": "Senza Fare Nulla:",
+    "titleSuffix": "Lui Aspira e Lava Mentre Tu Ti Rilassi",
+    "subtitle": "Il primo robot che aspira, lava e si svuota da solo. Programmalo una volta e non ci pensare più. Pavimenti perfetti ogni giorno, zero fatica.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.329 clienti soddisfatti"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-55%",
+    "slides": [
+      { "src": "/images/mirko/cleanbot/carosello/1.jpg", "alt": "CleanBot X1 vista frontale" },
+      { "src": "/images/mirko/cleanbot/carosello/2.jpg", "alt": "CleanBot X1 in azione" },
+      { "src": "/images/mirko/cleanbot/carosello/3.jpg", "alt": "CleanBot X1 base di ricarica" },
+      { "src": "/images/mirko/cleanbot/carosello/4.jpg", "alt": "CleanBot X1 lavapavimenti" },
+      { "src": "/images/mirko/cleanbot/carosello/5.jpg", "alt": "CleanBot X1 accessori" },
+      { "src": "/images/mirko/cleanbot/carosello/6.jpg", "alt": "CleanBot X1 dettaglio spazzole" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Aspira + Lava in un passaggio:", "description": "non serve passare due volte. Fa tutto lui contemporaneamente." },
+      { "title": "Si svuota da solo:", "description": "torna alla base e scarica lo sporco. Zero manutenzione per 30 giorni." },
+      { "title": "Mappa tutta la casa:", "description": "sensori laser che evitano ostacoli, scale e mobili. Non si blocca mai." },
+      { "title": "Silenzioso come un sussurro:", "description": "puoi usarlo di notte senza svegliare nessuno." },
+      { "title": "3 ore di autonomia:", "description": "pulisce fino a 200m² con una sola carica." },
+      { "title": "Programmabile da telefono:", "description": "imposta gli orari e le stanze. Parte da solo, ogni giorno." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "CleanBot X1™",
+    "originalPriceLabel": "Prezzo di listino:",
+    "discountLabel": "RISPARMI 110€ (-55%)",
+    "shippingLabel": "Spedizione Rapida:",
+    "shippingValue": "Gratis",
+    "guaranteeLabel": "🛡 Garanzia 2 Anni",
+    "offerToggleText": "🎁 Scopri cosa include l'offerta",
+    "offerItems": [
+      { "text": "CleanBot X1™ — Robot Aspirapolvere e Lavapavimenti", "badge": null },
+      { "text": "Base di Ricarica con Svuotamento Automatico", "badge": null },
+      { "text": "2 Panni in Microfibra Lavabili", "badge": null },
+      { "text": "Telecomando di Emergenza", "badge": "REGALO" },
+      { "text": "Set 4 Spazzole di Ricambio", "badge": "REGALO" },
+      { "text": "Garanzia 2 Anni + Assistenza Dedicata", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ORDINA ORA",
+    "mainSubtext": "Pagamento Contanti alla Consegna",
+    "subNote": "🔒 Zero rischio: paghi solo quando ricevi il pacco"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "💳", "text": "Pagamento alla Consegna", "color": "green" },
+      { "icon": "🚚", "text": "Spedizione 24/48h", "color": "blue" },
+      { "icon": "🔃", "text": "30 Giorni di Reso", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Ti riconosci?",
+    "title": "Questi problemi ti sono familiari?",
+    "items": [
+      { "icon": "😩", "titleBold": "Torni a casa e il pavimento è già sporco", "text": "peli, briciole, polvere ovunque nonostante hai pulito ieri." },
+      { "icon": "⏰", "titleBold": "Non hai mai tempo per pulire bene", "text": "tra lavoro, famiglia e impegni la casa resta sempre indietro." },
+      { "icon": "🧹", "titleBold": "Aspirapolvere pesante e scomodo", "text": "spostare mobili, piegare la schiena, trascinare fili per tutta casa." }
+    ],
+    "solutionTitle": "Esiste una soluzione migliore.",
+    "solutionText": "Un robot che pulisce al posto tuo, ogni giorno, senza che tu faccia nulla. Zero fatica, zero stress."
+  },
+
+  "features": {
+    "eyebrow": "Perché è diverso",
+    "title": "Come avere una domestica in casa, ma senza stipendio.",
+    "items": [
+      {
+        "image": "/images/mirko/cleanbot/feat_aspira_lava.jpg",
+        "imageAlt": "Aspira e lava",
+        "tag": "2 IN 1",
+        "tagColor": "green",
+        "title": "Dimentica Aspirapolvere e Mocho",
+        "description": "Aspira lo sporco secco e lava il pavimento in un solo passaggio. Piastrelle, parquet, marmo: si adatta a tutto."
+      },
+      {
+        "image": "/images/mirko/cleanbot/feat_autosvuota.jpg",
+        "imageAlt": "Auto svuotamento",
+        "tag": "ZERO MANUTENZIONE",
+        "tagColor": "orange",
+        "title": "Si Svuota Da Solo Per 30 Giorni",
+        "description": "Torna alla base e scarica lo sporco nel serbatoio sigillato. Tu non tocchi nulla per un mese intero."
+      },
+      {
+        "image": "/images/mirko/cleanbot/feat_laser.jpg",
+        "imageAlt": "Navigazione laser",
+        "tag": "INTELLIGENZA",
+        "tagColor": "blue",
+        "title": "Evita Tutto, Non Si Blocca Mai",
+        "description": "Sensori laser a 360° mappano la casa in tempo reale. Evita scale, sedie, scarpe e animali domestici."
+      },
+      {
+        "image": "/images/mirko/cleanbot/feat_silenzioso.jpg",
+        "imageAlt": "Silenzioso",
+        "tag": "COMFORT",
+        "tagColor": "green",
+        "title": "Lo Usi Anche di Notte",
+        "description": "Solo 55dB in modalità silenziosa. Meno rumore di un frigorifero. Pulisce mentre dormi."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Semplicissimo",
+    "title": "Come funziona? 3 gesti e via.",
+    "image": "",
+    "imageAlt": "Come funziona",
+    "steps": [
+      { "title": "Accendilo", "description": "Un pulsante e parte. Si mappa la casa da solo la prima volta." },
+      { "title": "Programma", "description": "Scegli stanze e orari dal telefono. Una volta sola, poi va da solo." },
+      { "title": "Dimenticalo", "description": "Pulisce, torna alla base, si svuota. Tu non fai nulla." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ORDINA ORA CON IL 55% DI SCONTO",
+    "subtext": "Pagamento Contanti alla Consegna"
+  },
+
+  "specs": {
+    "eyebrow": "Specifiche",
+    "title": "Caratteristiche Tecniche",
+    "items": [
+      { "label": "Potenza aspirazione", "value": "4000Pa (boost automatico su tappeti)" },
+      { "label": "Navigazione", "value": "LiDAR 360° + sensori anti-caduta" },
+      { "label": "Autonomia", "value": "180 minuti (fino a 200m²)" },
+      { "label": "Serbatoio polvere", "value": "400ml + base autosvuotante 2.5L" },
+      { "label": "Serbatoio acqua", "value": "300ml con flusso regolabile" },
+      { "label": "Rumorosità", "value": "55dB (modalità silenziosa)" },
+      { "label": "Altezza robot", "value": "9.5cm (passa sotto letti e divani)" },
+      { "label": "Ricarica", "value": "Automatica, carica completa in 4h" },
+      { "label": "Controllo", "value": "App + telecomando + comandi vocali" },
+      { "label": "Certificazioni", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Il Confronto",
+    "title": "Quali vantaggi avrai rispetto alle alternative?",
+    "productColumn": "CleanBot X1™",
+    "competitorColumn": "Robot concorrenti su Amazon",
+    "rows": [
+      { "feature": "Aspira + Lava", "product": "✔ Contemporaneamente", "competitor": "Solo aspirazione" },
+      { "feature": "Svuotamento", "product": "✔ Automatico (30 giorni)", "competitor": "Manuale ogni utilizzo" },
+      { "feature": "Navigazione", "product": "✔ Laser 360° preciso", "competitor": "Casuale (rimbalza)" },
+      { "feature": "Rumorosità", "product": "✔ 55dB silenzioso", "competitor": "70-80dB fastidioso" },
+      { "feature": "Autonomia", "product": "✔ 3 ore (200m²)", "competitor": "60-90 minuti" },
+      { "feature": "Costo", "product": "✔ Solo 89€ (una volta)", "competitor": "150-400€" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Tutto incluso",
+    "title": "Cosa ricevi a casa tua",
+    "items": [
+      { "icon": "📦", "text": "CleanBot X1™ — Robot Aspirapolvere e Lavapavimenti", "value": "€199,00", "valueType": "price" },
+      { "icon": "🔌", "text": "Base di Ricarica con Svuotamento Automatico", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "🧹", "text": "2 Panni in Microfibra Lavabili", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "📡", "text": "Telecomando di Emergenza", "value": "REGALO", "valueType": "gift" },
+      { "icon": "🔄", "text": "Set 4 Spazzole di Ricambio", "value": "REGALO", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Prezzo di Listino:",
+    "totalOriginalValue": "€289,00",
+    "totalCurrentLabel": "Oggi paghi solo:",
+    "totalCurrentValue": "€89,00",
+    "totalSave": "Risparmi €200,00 · Spedizione GRATUITA",
+    "ctaText": "ORDINA ORA"
+  },
+
+  "reviews": {
+    "eyebrow": "Cosa dicono di Noi",
+    "title": "Recensioni Verificate",
+    "rating": "4.8",
+    "totalCount": "18.329 recensioni",
+    "verifiedNote": "✓ Le recensioni vengono verificate da un team neutrale esterno a questo sito web.",
+    "showMoreText": "Mostra altre recensioni",
+    "leaveReviewText": "✏️ Lascia una recensione",
+    "items": [
+      {
+        "initials": "MT",
+        "name": "Maria Teresa Conti",
+        "stars": 5,
+        "text": "Non ci credevo finché non l'ho visto in azione. Lo accendo la mattina prima di uscire e quando torno la casa è pulita come se fosse passata una domestica. I pavimenti brillano, anche sotto il divano dove non pulivo mai.",
+        "verified": true,
+        "sellerReply": "Maria Teresa, siamo felicissimi! L'obiettivo è proprio questo: tornare a casa e trovare tutto pulito senza fatica. Grazie per la fiducia."
+      },
+      {
+        "initials": "AP",
+        "name": "Antonio Palmieri",
+        "stars": 5,
+        "text": "avevo un altro robot prima che si bloccava sempre sotto le sedie. questo con il laser evita tutto, non si è mai bloccato in un mese. e il fatto che si svuota da solo è fantastico, non devo fare nulla",
+        "verified": true,
+        "sellerReply": "Antonio, la navigazione laser è proprio il salto di qualità rispetto ai robot vecchi. Contenti che apprezzi la differenza!"
+      },
+      {
+        "initials": "GF",
+        "name": "Giuliana Ferraro",
+        "stars": 5,
+        "text": "Ho tre gatti e la casa era sempre piena di peli ovunque. Adesso lo faccio andare tutti i giorni e i peli sono spariti completamente. Arrivato in due giorni, pagato al corriere, tutto perfetto.",
+        "verified": true,
+        "sellerReply": "Giuliana, con tre gatti serviva proprio un aiuto quotidiano! Il robot è perfetto per gestire i peli degli animali. Un saluto ai mici!"
+      },
+      {
+        "initials": "LC",
+        "name": "Lorenzo Cataldi",
+        "stars": 4,
+        "text": "funziona molto bene devo dire, il lavaggio dei pavimenti è sorprendente per un robot. per ora metto 4 stelle perché lo sto testando da poco ma le premesse sono eccellenti. la batteria dura tantissimo",
+        "verified": true,
+        "sellerReply": "Lorenzo, la sua prudenza è comprensibile. Siamo sicuri che con il passare delle settimane i risultati la convinceranno ancora di più. Ci faccia sapere!"
+      },
+      {
+        "initials": "ER",
+        "name": "Elena Ruggiero",
+        "stars": 5,
+        "text": "L'ho preso per mia mamma che ha 75 anni e fa fatica a pulire casa. Lo accende con un pulsante e fa tutto da solo. Lei è contentissima, dice che è il regalo più bello che le abbia mai fatto.",
+        "verified": true,
+        "sellerReply": "Elena, che bel pensiero! È progettato per essere semplicissimo da usare, anche per chi non è pratico di tecnologia. Un saluto alla mamma!"
+      },
+      {
+        "initials": "FD",
+        "name": "Fabio De Luca",
+        "stars": 5,
+        "text": "120 metri quadri di casa e li pulisce tutti con una sola carica. prima ci mettevo un'ora e mezza con aspirapolvere e mocio, adesso non faccio proprio nulla. passa anche sotto il letto dove non arrivavo mai",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "SC",
+        "name": "Sabrina Caruso",
+        "stars": 5,
+        "text": "Spedizione velocissima, arrivato il giorno dopo. Il silenzio è incredibile, lo faccio andare la sera mentre guardiamo la tv e quasi non si sente. Pensavo che un robot a questo prezzo fosse scarso e invece mi ha smentita.",
+        "verified": true,
+        "sellerReply": "Sabrina, la modalità silenziosa è una delle caratteristiche che i clienti apprezzano di più. Felici che la stia sfruttando al meglio!"
+      },
+      {
+        "initials": "RN",
+        "name": "Roberto Napolitano",
+        "stars": 5,
+        "text": "ho il parquet in tutta casa e avevo paura che lo rovinasse. niente di tutto ciò, i panni in microfibra sono delicatissimi e il pavimento è sempre perfetto. lo consiglio a chi ha pavimenti delicati",
+        "verified": true,
+        "sellerReply": "Roberto, i panni in microfibra sono stati progettati proprio per superfici delicate. Il parquet è al sicuro. Grazie per la recensione!"
+      },
+      {
+        "initials": "VP",
+        "name": "Valentina Parisi",
+        "stars": 5,
+        "text": "Con due bambini piccoli il pavimento è sempre sporco di briciole. Adesso va da solo tre volte al giorno e la casa è sempre in ordine. Non so come facevo prima sinceramente. Acquisto migliore dell'anno.",
+        "verified": true,
+        "sellerReply": "Valentina, con i bambini piccoli è un salvavita! La programmazione multipla durante il giorno è la funzione perfetta per le famiglie. Grazie!"
+      },
+      {
+        "initials": "MC",
+        "name": "Massimo Capobianco",
+        "stars": 5,
+        "text": "ero scettico sui robot economici perché ne avevo provato uno anni fa che faceva pena. questo è un altro pianeta, con il laser mappa tutto e non lascia zone scoperte. la base che si svuota da sola è geniale, la apro una volta al mese",
+        "verified": true,
+        "sellerReply": "Massimo, la tecnologia dei robot è cambiata radicalmente negli ultimi anni. Felici che abbia dato un'altra possibilità a questa categoria. Grazie!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Lascia la tua recensione",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "Valutazione",
+    "textLabel": "La tua recensione",
+    "textPlaceholder": "Racconta la tua esperienza...",
+    "submitText": "Invia Recensione",
+    "successTitle": "Grazie per la tua recensione!",
+    "successText": "La tua recensione è in attesa di approvazione da un team esterno a questo sito web. Le recensioni lasciate da chi non ha acquistato il prodotto non saranno pubblicate, questo per evitare recensioni non autentiche.",
+    "closeText": "Chiudi"
+  },
+
+  "orderForm": {
+    "eyebrow": "Modulo d'Ordine",
+    "title": "Completa il tuo ordine",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "⏰ L'offerta -55% scade tra:",
+    "stockWarning": "⚠️ Solo <strong>8 pezzi</strong> rimasti a questo prezzo",
+    "summaryTitle": "Riepilogo Ordine",
+    "summaryLines": [
+      { "label": "CleanBot X1™ + Accessori", "value": "€89,00", "type": "normal" },
+      { "label": "Spedizione rapida 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Spese di Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€89,00",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo di Spedizione *", "placeholder": "Via, Numero, Città, CAP" }
+    },
+    "phoneNote": "ℹ️ Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine.",
+    "paymentBadge": "💰 Pagamento alla Consegna — Paghi in contanti al corriere. Zero anticipo.",
+    "submitText": "✔ CONFERMA ORDINE",
+    "submitSubtext": "Pagamento Contanti alla Consegna",
+    "reassurance": "🔒 Dati protetti · SSL 256-bit · Nessun addebito anticipato"
+  },
+
+  "faq": {
+    "eyebrow": "Domande frequenti",
+    "title": "Hai ancora dubbi? Ecco le risposte.",
+    "items": [
+      { "question": "Come faccio ad ordinare?", "answer": "Clicca sul pulsante di acquisto, compila il modulo con i tuoi dati e conferma l'ordine. Sarai contattato telefonicamente o tramite WhatsApp per la conferma e riceverai il pacco comodamente a casa, con pagamento in contanti." },
+      { "question": "Come funziona la spedizione?", "answer": "La spedizione è totalmente gratuita. Da quando l'ordine è confermato, impiega circa 24/48h lavorative per essere consegnato." },
+      { "question": "E se non mi piace?", "answer": "Puoi richiedere un rimborso totale facendo il reso del prodotto entro 30 giorni dalla consegna. Veniamo noi a ritirare il pacco e a ridarti l'intera somma spesa." },
+      { "question": "Se ho problemi dopo 30 giorni?", "answer": "Tranquillo, tutti i nostri prodotti hanno 2 anni di garanzia." },
+      { "question": "Come faccio a chiedere un reso o assistenza?", "answer": "Per chiedere assistenza o un reso dopo aver effettuato un ordine, puoi utilizzare il modulo di contatto che trovi all'interno del sito o tramite la mail presente nel footer." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€199",
+    "newPrice": "€89",
+    "buttonText": "ORDINA ORA",
+    "buttonSubtext": "Paga Alla Consegna"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 89.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ty": {
+    "title": "Ordine Confermato!",
+    "subtitle": "Il tuo ordine è stato ricevuto con successo.",
+    "message": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine e organizzare la consegna."
+  }
+}

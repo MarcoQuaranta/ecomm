@@ -1,0 +1,530 @@
+{
+  "_instructions": [
+    "REGOLE GLOBALI PER LA COMPILAZIONE DI QUESTO JSON:",
+    "",
+    "=== ENCODING ===",
+    "0. Il file DEVE essere salvato in UTF-8. Usare sempre i caratteri accentati nativi (è, à, ù, ò, ì, é) e MAI apostrofi al posto degli accenti. Le emoji e i simboli speciali vanno inseriti direttamente come caratteri Unicode.",
+    "",
+    "=== NAZIONI ===",
+    "1. NON fare MAI riferimento a una nazione specifica (es: Italia, in Italia, ecc). Le landing vengono lanciate in tutta Europa.",
+    "",
+    "=== COERENZA SOCIAL PROOF ===",
+    "2. hero.socialProof.count DEVE corrispondere ESATTAMENTE a reviews.totalCount. La media stelle in hero.socialProof.rating DEVE corrispondere a reviews.rating.",
+    "",
+    "=== IMMAGINI (REGOLA FONDAMENTALE) ===",
+    "3. STRUTTURA CARTELLE: /images/[nome-venditore]/[nome-prodotto]/ — se il prodotto ha più parole (es: 'QuickChef Pro Max'), la cartella si chiama solo con il nome base (es: 'quickchef'). Se la cartella esiste già, CHIEDERE all'utente come vuole chiamarla. Dentro la cartella ci sono due sottocartelle:",
+    "   - carosello/ — foto numerate progressivamente (1.jpg, 2.png, 3.webp, ecc). TUTTE le immagini presenti vanno inserite nel gallery.slides della hero, IN ORDINE. La prima immagine (1.*) va anche nel riepilogo ordine come thumbnail.",
+    "   - angle/ — foto numerate progressivamente (1.jpg, 2.png, ecc). Vanno inserite IN ORDINE nei blocchi della sezione 'Perché è diverso' (features.items). La foto 1 va nel primo blocco, la 2 nel secondo, ecc.",
+    "   L'utente carica le immagini, tu inserisci i path nel JSON. Non importa l'estensione: inserisci tutte le immagini presenti. Le immagini vengono ottimizzate automaticamente dal componente tramite next/image.",
+    "",
+    "=== BENEFITS ===",
+    "4. I benefits devono riguardare SOLO il prodotto e le sue funzionalità. MAI parlare di spedizione, consegna, pagamento, garanzia nei benefits.",
+    "",
+    "=== PREZZI (REGOLA FONDAMENTALE) ===",
+    "5. TUTTI I PREZZI vengono dalla sezione 'pricing'. L'utente fornisce prezzi e sconti all'inizio della creazione, vanno inseriti in pricing. Da lì vengono pescati OVUNQUE servano: priceBox, midCta, comparison, package, orderForm, stickyCta. MAI hardcodare un prezzo.",
+    "",
+    "=== SOCIAL PROOF CLICK ===",
+    "6. Cliccando sulla social proof nella hero, l'utente viene portato alla sezione recensioni.",
+    "",
+    "=== TITOLI DI SEZIONE ===",
+    "7. I titoli (eyebrow + title) possono essere STATICI o DINAMICI. Quelli marcati STATICO non vanno mai cambiati. Quelli DINAMICI cambiano per ogni prodotto.",
+    "",
+    "=== TONO E LINGUAGGIO (REGOLA FONDAMENTALE) ===",
+    "8. TUTTI i testi della landing devono seguire queste regole:",
+    "   - Linguaggio MARKETING AGGRESSIVO e SEMPLICE, mai volgare.",
+    "   - Adatto ai boomer: estremamente semplice ma d'impatto.",
+    "   - Deve trasmettere URGENZA e avere EFFETTO WOW, molto spinto.",
+    "   - NON tecnico ma EMOZIONALE e IMMEDIATO.",
+    "   - Esempio: NON scrivere 'batteria da 5000mAh' ma '3 giorni senza scaricarsi'.",
+    "   - Esempio: NON scrivere 'motore da 800W' ma 'potenza da barbiere professionista'.",
+    "   - Traduci sempre le specifiche tecniche in BENEFICI CONCRETI che il cliente capisce e sente.",
+    "   - Frasi brevi, dirette, che colpiscono. Zero giri di parole.",
+    "",
+    "=== LUNGHEZZA TESTI (REGOLA FONDAMENTALE) ===",
+    "9. Le lunghezze di TUTTI i testi (titoli, descrizioni, bullet, recensioni, ecc) devono essere MOLTO SIMILI a quelle dell'esempio presente in questo JSON. Se un titolo nell'esempio è di 5 parole, anche il nuovo deve essere circa 5 parole. Se una descrizione è di 1 riga, anche la nuova deve essere di 1 riga. Se una recensione è di 3 righe, anche la nuova deve essere circa 3 righe. MAI testi molto più lunghi o molto più corti dell'esempio.",
+    "",
+    "=== MARCHI E NOMI (REGOLA FONDAMENTALE) ===",
+    "10. MAI citare nomi di negozi, brand, marchi registrati o aziende terze (es: Amazon, Decathlon, Apple, Samsung, ecc). Se serve un confronto, usare termini generici come 'altri prodotti', 'prodotti concorrenti', 'alternative in commercio'.",
+    "",
+    "=== NAZIONI (RIBADITO) ===",
+    "11. MAI fare riferimento all'Italia o a qualsiasi nazione specifica. Nemmeno nelle recensioni, nelle risposte del venditore, nei benefits, nelle FAQ. Le landing vengono usate in tutta Europa e tradotte.",
+    "",
+    "=== SPEDIZIONE E PAGAMENTO (REGOLA FONDAMENTALE) ===",
+    "12. NON inventare MAI informazioni su spedizione e pagamento. Le regole sono FISSE e NON modificabili:",
+    "   - Spedizione: SEMPRE gratuita, 24/48h.",
+    "   - Pagamento: SEMPRE alla consegna, in contanti al corriere.",
+    "   - Contrassegno: SEMPRE gratuito.",
+    "   - Reso: SEMPRE 30 giorni.",
+    "   - Garanzia: SEMPRE 2 anni.",
+    "   - MAI inventare costi di spedizione, metodi di pagamento alternativi (carta, PayPal, ecc), tempi diversi o condizioni diverse da queste.",
+    "",
+    "=== ANGLE (REGOLA FONDAMENTALE) ===",
+    "13. Gli angle forniti dall'utente riguardano SEMPRE e SOLO il prodotto e le sue funzionalità. Gli angle su spedizione, consegna, pagamento, garanzia, reso sono GIÀ presenti nelle sezioni statiche e NON vanno ripetuti nei contenuti dinamici (benefits, features, problems, hero, ecc). Non mischiare mai angle prodotto con angle logistica/negozio.",
+    "",
+    "=== LINGUA (REGOLA FONDAMENTALE) ===",
+    "14. La prima versione della landing è SEMPRE in ITALIANO, indipendentemente dalla lingua della fonte, del competitor o del riferimento fornito dall'utente. Anche se il link, le informazioni di partenza o il materiale è in polacco, inglese, tedesco, spagnolo o qualsiasi altra lingua, il copy va SEMPRE scritto in italiano. Le traduzioni nelle altre lingue vengono fatte successivamente nella Fase 3.",
+    "",
+    "=== GRAMMATICA E CORRETTEZZA (REGOLA FONDAMENTALE) ===",
+    "15. TUTTI i testi devono essere grammaticalmente corretti in italiano. Linguaggio semplice e diretto NON significa scorretto. Evitare calchi da altre lingue, costruzioni innaturali o frasi che suonano tradotte. Esempio: NON 'niente appiccica' ma 'lo sporco non attacca'. NON 'zero problemi hai' ma 'non avrai nessun problema'. Ogni frase deve suonare naturale per un madrelingua italiano. Il tono è aggressivo e semplice, ma la grammatica deve essere SEMPRE corretta.",
+    "",
+    "=== NOTE AGGIUNTIVE (WORKFLOW) ===",
+    "16. Dopo aver raccolto i dati del prodotto (Fase 0), PRIMA di iniziare la Fase 1 (analisi + copy), chiedere SEMPRE all'utente: 'Hai note aggiuntive, preferenze o cose da tenere a mente per questa landing?' — e attendere la risposta prima di procedere."
+  ],
+
+  "seo": {
+    "_note": "DINAMICO - Cambia per ogni prodotto. Title max 60 caratteri, description max 160 caratteri.",
+    "title": "CloudRelief Topper™ - Spi Bez Bolu Od Pierwszej Nocy",
+    "description": "Topper ortopedyczny z falami masujacymi, ktory ustawia kregoslup i redukuje bol. Darmowa wysylka, platnosc przy odbiorze."
+  },
+
+  "pricing": {
+    "_note": "DINAMICO - FONTE UNICA DI VERITÀ PER TUTTI I PREZZI. Cambia per ogni prodotto e nazione. L'utente fornisce questi valori all'inizio della creazione. Tutti i prezzi visibili nella pagina si calcolano da qui.",
+    "currency": "PLN",
+    "currencySymbol": "zł",
+    "originalPrice": 598.00,
+    "currentPrice": 299.00,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "text": "Darmowa Wysyłka 24/48h · Płatność Przy Odbiorze · Gwarancja 2 Lata"
+  },
+
+  "urgencyBanner": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "text": "Uwaga: Duże zainteresowanie —",
+    "highlight": "Ostatnie 8 sztuk dostępnych",
+    "suffix": "w tej cenie"
+  },
+
+  "hero": {
+    "_note": "DINAMICO - Badge, titolo, sottotitolo e social proof cambiano per ogni prodotto. MAI citare nazioni specifiche.",
+    "_note_title": "DINAMICO - Titolo cambia per ogni prodotto.",
+    "_instructions_badge": "Qualcosa di semplice che riguarda il prodotto e trasmette INNOVAZIONE. Se prodotto tecnologico: 'Tecnologia [anno corrente]'. Se prodotto benessere/salute: 'Novità [anno corrente]' o 'Innovazione [anno corrente]'. Deve sempre contenere l'ANNO CORRENTE.",
+    "_instructions_title": "SOLUZIONE a un PROBLEMA. Il titolo deve dire al cliente cosa risolve il prodotto. Formato: frase principale + highlight (la parte wow in corsivo) + suffisso. DEVE essere grammaticalmente corretto: se title + highlight + suffix formano due frasi separate, usare punteggiatura (due punti, punto, ecc). Esempio corretto: 'Casa Pulita Ogni Giorno' + 'Senza Fare Nulla:' + 'Lui Aspira e Lava Mentre Tu Ti Rilassi'. Esempio corretto senza punteggiatura (unica frase): 'Elimina il Dolore Cervicale' + 'in 10 Minuti' + 'Senza Farmaci e Senza Fisioterapista'. Linguaggio emotivo, non tecnico.",
+    "_instructions_subtitle": "Descrizione aggressiva ma rassicurante. Spiega COSA fa il prodotto in modo semplice e concreto. Deve dare fiducia. 1-2 frasi.",
+    "_instructions_socialProof": "count: numero tra 10.000 e 30.000, MAI cifre tonde (es: 12.847, 23.519, 16.203). rating: valore random tra 4.7 e 4.9. DEVONO corrispondere ESATTAMENTE a reviews.totalCount e reviews.rating.",
+    "badge": "Nowość 2026",
+    "title": "Technologia Ortopedyczna, która",
+    "titleHighlight": "Eliminuje Ból",
+    "titleSuffix": "Podczas Snu",
+    "subtitle": "Topper ortopedyczny z falami masującymi, który ustawia kręgosłup i eliminuje punkty nacisku. Kładziesz go na łóżko i ból znika.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.463 zadowolonych klientów"
+    }
+  },
+
+  "gallery": {
+    "_note": "DINAMICO - Le immagini sono in /images/[venditore]/[prodotto]/carosello/ con nomi progressivi (1.jpg, 2.png, ecc). Inserire TUTTE le immagini presenti nella cartella, IN ORDINE. La prima (1.*) va anche nel riepilogo ordine. discountTag si calcola da pricing.discountPercent.",
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/cloudrelief/carosello/1.png", "alt": "CloudRelief Topper™ widok z przodu" },
+      { "src": "/images/mirko/cloudrelief/carosello/2.png", "alt": "CloudRelief Topper™ w użyciu" },
+      { "src": "/images/mirko/cloudrelief/carosello/3.png", "alt": "CloudRelief Topper™ szczegóły" },
+      { "src": "/images/mirko/cloudrelief/carosello/4.png", "alt": "CloudRelief Topper™ profil falowy" },
+      { "src": "/images/mirko/cloudrelief/carosello/5.png", "alt": "CloudRelief Topper™ warstwy wewnętrzne" },
+      { "src": "/images/mirko/cloudrelief/carosello/6.png", "alt": "CloudRelief Topper™ na łóżku" },
+      { "src": "/images/mirko/cloudrelief/carosello/7.png", "alt": "CloudRelief Topper™ opakowanie" },
+      { "src": "/images/mirko/cloudrelief/carosello/8.png", "alt": "CloudRelief Topper™ akcesoria" }
+    ]
+  },
+
+  "benefits": {
+    "_note": "DINAMICO - Numero variabile di bullet point. Devono riguardare SOLO le caratteristiche/benefici del prodotto. NON parlare di spedizione, consegna, pagamento, garanzia qui.",
+    "_instructions": "Ogni bullet ha un TITOLO IN BOLD (incisivo, corto) e una DESCRIZIONE (1 riga, concreta). Devono puntare sugli ANGLE forniti dall'utente all'inizio. Se non viene detto quanti metterne: 5-6 di default. Se il prodotto ha molti angle fondamentali che devono esserci tutti: fino a 10. Valuta tu in base al prodotto. Linguaggio emotivo, non tecnico: traduci le specifiche in benefici concreti.",
+    "items": [
+      { "title": "Kręgosłup ustawiony całą noc:", "description": "ciało układa się w naturalnej pozycji, a plecy się odprężają podczas snu." },
+      { "title": "Fale masujące:", "description": "falowy profil stymuluje mikrokrążenie. Koniec z mrowieniem i opuchniętymi nogami rano." },
+      { "title": "Wolne barki i biodra:", "description": "7 cm pianki memory o wysokiej gęstości pochłania ciężar bez zapadania się." },
+      { "title": "Chłodny nawet latem:", "description": "wentylacja boczna 3D Mesh i otwarty profil. Zero nocnego pocenia się." },
+      { "title": "Pełna higiena:", "description": "pokrowiec z aloesem na zamek. Zdejmujesz i pierzesz, kiedy chcesz." },
+      { "title": "Stabilny jak skała:", "description": "antypoślizgowy spód i 4 wzmocnione gumki. Nie rusza się ani o milimetr." }
+    ]
+  },
+
+  "sizes": {
+    "title": "Wybierz swój rozmiar",
+    "sizeLabel": "Rozmiar",
+    "options": [
+      { "id": "jednoosobowy", "name": "Jednoosobowy", "dimensions": "80×190 cm" },
+      { "id": "poltorak", "name": "Półtorak", "dimensions": "120×190 cm" },
+      { "id": "dwuosobowy", "name": "Dwuosobowy", "dimensions": "160×190 cm" },
+      { "id": "king", "name": "King", "dimensions": "180×200 cm" }
+    ],
+    "defaultSelected": "dwuosobowy",
+    "explanationTitle": "Dlaczego wszystkie kosztują tyle samo?",
+    "explanationText": "Aby zwolnić miejsce w magazynie, obniżyliśmy cenę dużych rozmiarów (King/Dwuosobowy) do ceny bazowej Jednoosobowego. Skorzystaj: płacisz za mały, a dostajesz duży!"
+  },
+
+  "priceBox": {
+    "_note_static": "shippingLabel, shippingValue, guaranteeLabel, offerToggleText sono STATICI - non modificare.",
+    "_note_dynamic": "productName, originalPriceLabel, discountLabel e offerItems sono DINAMICI. TUTTI i prezzi si calcolano da pricing (originalPrice, currentPrice, discountPercent). discountLabel: 'RISPARMI [originalPrice - currentPrice][currencySymbol] (-[discountPercent]%)'.",
+    "_instructions_productName": "Nome prodotto con simbolo TM (trademark). Formato: 'NomeProdotto Pro™' o 'NomeProdotto™'. Usare sempre il nome esatto fornito dall'utente.",
+    "_instructions_offerItems": "L'utente fornisce cosa include l'offerta all'inizio della creazione. Inserire tutti gli elementi. Usare badge 'REGALO' per gli accessori extra/bonus. L'ultima riga è sempre 'Garanzia 2 Anni + Assistenza Dedicata' senza badge.",
+    "productName": "CloudRelief Topper™",
+    "originalPriceLabel": "Cena katalogowa:",
+    "discountLabel": "OSZCZĘDZASZ 299 zł (-50%)",
+    "shippingLabel": "Szybka Wysyłka:",
+    "shippingValue": "Gratis",
+    "guaranteeLabel": "Gwarancja 2 Lata",
+    "offerToggleText": "Zobacz co zawiera oferta",
+    "offerItems": [
+      { "text": "CloudRelief Topper™ — Topper Ortopedyczny z Falami Masującymi", "badge": null },
+      { "text": "Pokrowiec z Aloesem na Zamek (już założony)", "badge": null },
+      { "text": "Wodoodporny Ochraniacz na Materac z Gumkami", "badge": "PREZENT" },
+      { "text": "Gwarancja 2 Lata + Dedykowana Obsługa", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "mainText": "ZAMÓW TERAZ",
+    "mainSubtext": "Płatność Gotówką Przy Odbiorze",
+    "subNote": "Zero ryzyka: płacisz dopiero gdy otrzymasz paczkę"
+  },
+
+  "trustBadges": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "items": [
+      { "icon": "cash", "text": "Płatność Przy Odbiorze", "color": "green" },
+      { "icon": "truck", "text": "Wysyłka 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Dni na Zwrot", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "_note": "DINAMICO (contenuto) - Items e soluzione cambiano per ogni prodotto. MAI citare nazioni specifiche.",
+    "_note_title": "STATICO - eyebrow 'Ti riconosci?' e title 'Questi problemi ti sono familiari?' non cambiano mai.",
+    "_instructions_items": "Individua i 3 problemi PIÙ COMUNI che il prodotto risolve (salvo istruzioni diverse dall'utente). Descrivili come asfissianti ma senza essere drammatici. Devono creare FAMILIARITÀ: problemi quotidiani che capitano a tutti senza il prodotto. Il cliente deve pensare 'sì, succede anche a me'. Formato: emoji + titleBold (problema in una frase) + text (conseguenza breve). Lunghezza simile all'esempio nel template.",
+    "_instructions_solution": "solutionTitle è STATICO: 'Esiste una soluzione migliore.' - solutionText è DINAMICO: descrizione brevissima ed emozionale dei punti chiave del prodotto. 1-2 frasi. Stile: 'Tecnologia usata dai professionisti direttamente a casa tua. Senza abbonamenti.' Conciso, d'impatto.",
+    "eyebrow": "Rozpoznajesz się?",
+    "title": "Te problemy są Ci znane?",
+    "items": [
+      { "icon": "bone", "titleBold": "Budzisz się z połamanym kręgosłupem", "text": "a ból nie ustępuje aż do połowy dnia." },
+      { "icon": "foot", "titleBold": "Mrowienie w rękach i nogach w nocy", "text": "— budzisz się zdrętwiały i bez czucia." },
+      { "icon": "fatigue", "titleBold": "Przewracasz się z boku na bok godzinami", "text": "a rano jesteś bardziej zmęczony niż przed snem." }
+    ],
+    "solutionTitle": "Istnieje lepsze rozwiązanie.",
+    "solutionText": "Profesjonalne wsparcie ortopedyczne, bezpośrednio na Twoim łóżku. Bez wymiany materaca, bez wydawania fortuny."
+  },
+
+  "features": {
+    "_note": "DINAMICO (contenuto e titoli) - Numero variabile di blocchi foto+testo. Le immagini sono in /images/[venditore]/[prodotto]/angle/ con nomi progressivi (1.jpg, 2.png, ecc). Inserire IN ORDINE: la foto 1 nel primo blocco, la 2 nel secondo, ecc. tagColor: green, orange, blue, red.",
+    "_note_title": "DINAMICO - eyebrow 'Perché è diverso' è STATICO. Il title (sottotitolo grande) è DINAMICO.",
+    "_instructions_title": "Il title deve essere molto D'IMPATTO e SEMPLICE. Una frase corta che riassume il vantaggio principale del prodotto in modo emotivo. Esempi: 'Tecnologia professionale, semplicità casalinga.', 'Come avere un barbiere in casa.', 'Pulito perfetto senza muovere un dito.'",
+    "_instructions_items": "Angle incisivi sul prodotto, basati su quelli forniti dall'utente. Linguaggio SEMPLICE, non troppo tecnico. Se servono info tecniche, solo cose che tutti conoscono (wattaggio, gradi, ecc). I titoli dei singoli blocchi devono essere aggressivi e immediati. Esempi: 'Come avere una domestica in casa', 'Dimentica aspirapolvere e mocho', 'Sollievo in 10 minuti senza farmaci'. Ogni blocco ha: image, tag (etichetta corta in caps), title (incisivo), description (1-2 righe, beneficio concreto).",
+    "eyebrow": "Dlaczego jest inny",
+    "title": "3 Poziomy Ortopedyczne Działające Razem",
+    "items": [
+      {
+        "image": "/images/mirko/cloudrelief/angle/1.gif",
+        "imageAlt": "Dekompresja kręgosłupa",
+        "tag": "POZIOM 1",
+        "tagColor": "green",
+        "title": "Dekompresja Kręgosłupa",
+        "description": "Materiał <strong>wiskoelastyczny</strong> dopasowuje się z milimetrową precyzją do ciała, wypełniając <strong>puste przestrzenie w odcinku lędźwiowym</strong>. Kręgosłup się prostuje, a dyski <strong>nawadniają się</strong> w ciągu nocy."
+      },
+      {
+        "image": "/images/mirko/cloudrelief/angle/2.gif",
+        "imageAlt": "Falowy profil Wave",
+        "tag": "POZIOM 2",
+        "tagColor": "orange",
+        "title": "Falowy Profil \"Wave\"",
+        "description": "Falowe wykończenie tworzy <strong>pasywny mikro-masaż</strong> przy każdym ruchu. Stymuluje <strong>mikrokrążenie kapilarne</strong>, redukując obrzęki i zastoje płynów."
+      },
+      {
+        "image": "/images/mirko/cloudrelief/angle/3.gif",
+        "imageAlt": "Zero punktów nacisku",
+        "tag": "POZIOM 3",
+        "tagColor": "blue",
+        "title": "Zero Punktów Nacisku",
+        "description": "Równomiernie rozkładając ciężar na <strong>7 cm grubości</strong>, eliminuje <strong>szczyty nacisku</strong> na biodrach i barkach. Kluczowe dla osób cierpiących na <strong>bóle stawów</strong> i drętwienie."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "_note": "DINAMICO (contenuto e titoli) - 3-4 step. Titolo, immagine e step cambiano per ogni prodotto. Se image è vuoto, l'immagine non viene mostrata.",
+    "_note_title": "DINAMICO - eyebrow 'Semplicissimo' e title cambiano per ogni prodotto.",
+    "_instructions": "Spiega l'utilizzo del prodotto in 3-4 passaggi. Deve essere SUPER SEMPLIFICATO: far sembrare l'uso del prodotto un gioco da ragazzi. Ogni step ha un titolo (1-2 parole, azione chiara) e una descrizione (1 riga, immediata). Il cliente deve pensare 'anche mia nonna ci riesce'. Esempio: '1. Accendilo - Un pulsante e parte. 2. Appoggialo - Si guida da solo. 3. Rilassati - Fa tutto lui.' Il title della sezione deve rafforzare la semplicità, tipo 'Come funziona? 3 gesti e via.' o '3 passi e hai finito.'",
+    "eyebrow": "Banalnie proste",
+    "title": "Montaż w 30 sekund. Bez narzędzi.",
+    "image": "",
+    "imageAlt": "Jak to działa",
+    "steps": [
+      { "title": "Rozwiń", "description": "Otwórz opakowanie próżniowe i rozłóż na swoim materacu." },
+      { "title": "Przypnij", "description": "Zamocuj 4 wzmocnione gumki w rogach. Stabilny jak skała." },
+      { "title": "Śpij", "description": "Przykryj prześcieradłem i ciesz się pierwszą nocą bez bólu." }
+    ]
+  },
+
+  "midCta": {
+    "_note": "STATICO tranne la percentuale di sconto. Il testo usa pricing.discountPercent per la percentuale. Il subtext è sempre uguale. Formato: 'ORDINA ORA CON IL [discountPercent]% DI SCONTO'.",
+    "text": "ZAMÓW TERAZ Z 50% RABATEM",
+    "subtext": "Płatność Gotówką Przy Odbiorze"
+  },
+
+  "comparison": {
+    "_note": "DINAMICO (contenuto) - Numero variabile di righe. productColumn contiene il nome prodotto, competitorColumn l'alternativa. I prezzi nelle righe si calcolano da pricing (mai hardcodati).",
+    "_note_title": "STATICO - eyebrow 'Il Confronto' e title 'Quali vantaggi avrai rispetto alle alternative?' non cambiano mai.",
+    "_instructions": "Angle principali del prodotto (non troppi, 4-6 righe) confrontati con la concorrenza. REGOLE: 1) NON troppo tecnico (niente '4000 vs 5000 ampere'). 2) NON auto-celebrativo esagerato (niente 'il nostro bello, il loro brutto'). 3) OBIETTIVO e PRATICO: vantaggi concreti. Esempio: 'Caldo e freddo' vs 'Solo freddo', 'Timer programmabile' vs 'Accensione manuale'. 4) La concorrenza deve essere EQUA: il concorrente più venduto su Amazon, oppure l'alternativa umana/professionale (es: nutrizionista, fisioterapista, barbiere). competitorColumn può essere: 'Fisioterapista / Farmaci', 'Prodotto concorrente migliore', 'Altri prodotti', 'Robot concorrenti su Amazon', ecc. 5) L'ultima riga è sempre il COSTO: nostro prezzo (da pricing) vs costo alternativa. 6) TESTI CORTI: devono stare nella tabella senza uscire fuori. Max 5-6 parole per cella.",
+    "eyebrow": "Porównanie",
+    "title": "Jakie korzyści zyskujesz w porównaniu z alternatywami?",
+    "productColumn": "CloudRelief Topper™",
+    "competitorColumn": "Nowy Materac / Fizjoterapeuta",
+    "featureColumn": "Cecha",
+    "winnerBadge": "ZWYCIĘZCA",
+    "rows": [
+      { "feature": "Ulga w bólu", "product": "✔ Od pierwszej nocy", "competitor": "Po tygodniach / tylko na wizycie" },
+      { "feature": "Montaż", "product": "✔ 30 sekund, zero narzędzi", "competitor": "Dostawa i montaż" },
+      { "feature": "Efekt masujący", "product": "✔ Zintegrowane fale Wave", "competitor": "Brak / tylko ręczny" },
+      { "feature": "Dekompresja kręgosłupa", "product": "✔ Całą noc, każdej nocy", "competitor": "Tylko podczas wizyty" },
+      { "feature": "Pielęgnacja", "product": "✔ Zdejmowany pokrowiec do prania", "competitor": "Nie do prania / wizyty" },
+      { "feature": "Koszt całkowity", "product": "✔ Tylko 299 zł (jednorazowo)", "competitor": "2000-6000 zł" }
+    ]
+  },
+
+  "package": {
+    "_note": "DINAMICO (contenuto) - Numero variabile di elementi nel pacco. TUTTI i prezzi si calcolano da pricing. valueType: 'price' (barrato, usa pricing.originalPrice), 'included' (verde INCLUSO), 'gift' (arancione REGALO). MAI cancellare la scritta INCLUSO.",
+    "_note_title": "STATICO - eyebrow 'Tutto incluso' e title 'Cosa ricevi a casa tua' non cambiano mai.",
+    "_instructions": "Stessi elementi inseriti in priceBox.offerItems nella hero. DEVONO corrispondere. Prima riga: il prodotto principale, a destra il prezzo di listino barrato (pricing.originalPrice). Righe successive: accessori/bonus con 'INCLUSO' o 'REGALO'. totalOriginalLabel: sempre 'Prezzo di Listino:'. totalCurrentLabel: sempre 'Oggi paghi solo:'. totalSave: 'Risparmi [risparmio] · Spedizione GRATUITA'. Tutti i prezzi da pricing.",
+    "eyebrow": "Wszystko w zestawie",
+    "title": "Co otrzymujesz do domu",
+    "items": [
+      { "icon": "box", "text": "CloudRelief Topper™ — Topper Ortopedyczny z Falami Masującymi", "value": "598 zł", "valueType": "price" },
+      { "icon": "leaf", "text": "Pokrowiec z Aloesem na Zamek (już założony)", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "droplet", "text": "Wodoodporny Ochraniacz na Materac z Gumkami", "value": "PREZENT", "valueType": "gift" },
+      { "icon": "shield", "text": "Gwarancja 2 Lata + Dedykowana Obsługa", "value": "W ZESTAWIE", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Cena Katalogowa:",
+    "totalOriginalValue": "849 zł",
+    "totalCurrentLabel": "Dziś płacisz tylko:",
+    "totalCurrentValue": "299 zł",
+    "totalSave": "Oszczędzasz 550 zł · Wysyłka GRATIS",
+    "ctaText": "ZAMÓW TERAZ"
+  },
+
+  "reviews": {
+    "_note": "DINAMICO (contenuto) - rating, totalCount e items cambiano per ogni prodotto. totalCount DEVE corrispondere a hero.socialProof.count. MAI citare nazioni nelle recensioni (nomi e città si adattano alla nazione nella fase traduzioni).",
+    "_note_title": "STATICO - eyebrow 'Cosa dicono di Noi' e title 'Recensioni Verificate' non cambiano mai.",
+    "_note_static": "verifiedNote, showMoreText, leaveReviewText sono STATICI - non modificare.",
+    "_instructions": [
+      "10 recensioni totali. Distribuzione uomo/donna in base al prodotto: se femminile tutte donne, se molto maschile tutti uomini (max 1-2 donne), se unisex mix equilibrato.",
+      "STELLE: tutte 5 stelle TRANNE una da 4 stelle. Quella da 4 stelle dice cose tipo 'per ora metto 4 stelle, voglio provarlo ancora un po prima di dare il massimo' o simile.",
+      "STILE TESTO: NO virgolette attorno al testo. Tono INFORMALE, poco tecnico. Non deve sembrare scritto da un copywriter ma da una persona vera. NON cose tipo 'Ho provato GrandX545 Pro e ne sono rimasta entusiasta!' ma piuttosto 'ho provato questo aggeggio e mi trovo molto bene... spedizione rapida corriere gentilissimo nessun costo a parte'. Alcune recensioni devono menzionare la spedizione rapida/gratuita, tipo 'è arrivato dopo soli due giorni'.",
+      "FORMATTAZIONE: testo SEMPLICE, senza grassetti, corsivi, tag HTML o formattazioni di alcun tipo. Solo testo puro.",
+      "MAIUSCOLE: mix realistico. Alcune recensioni (circa metà) usano le maiuscole correttamente (inizio frase, dopo il punto). Altre (circa metà) scrivono tutto minuscolo senza maiuscole a inizio frase. MAI maiuscole nei nomi dei prodotti tipo 'GrandProX675' — i clienti veri scrivono 'questo aggeggio' o 'il prodotto'.",
+      "NOMI: realistici, non troppo comuni e non troppo rari. MAI cognomi-colore (Rossi, Bianchi, Verdi) o cognomi troppo tipici (Ferrari, Colombo). Usare nomi credibili. Nelle traduzioni i nomi vanno adattati alla lingua di destinazione.",
+      "NON fare errori di digitazione/grammaticali che potrebbero dare problemi nelle traduzioni.",
+      "RISPOSTA VENDITORE: sempre gentile e professionale. Rispondere a 9 recensioni su 10 (inclusa quella da 4 stelle). Una recensione (a 5 stelle) resta senza risposta."
+    ],
+    "eyebrow": "Co mówią o nas",
+    "title": "Zweryfikowane Opinie",
+    "rating": "4.8",
+    "totalCount": "18.463 opinii",
+    "verifiedNote": "✓ Opinie są weryfikowane przez niezależny zespół zewnętrzny.",
+    "showMoreText": "Pokaż więcej opinii",
+    "leaveReviewText": "Zostaw opinię",
+    "verifiedBadge": "Zweryfikowany zakup",
+    "sellerReplyLabel": "Odpowiedź sprzedawcy:",
+    "items": [
+      {
+        "initials": "AK",
+        "name": "Anna Kowalczyk",
+        "stars": 5,
+        "text": "Od lat cierpię na bóle pleców i fizjoterapeuta mówił mi, żebym zmieniła materac. Wypróbowałam ten topper i od pierwszej nocy poczułam różnicę. Budzę się bez tego bólu lędźwiowego, który mnie blokował. Przyszedł w dwa dni, zapłaciłam kurierowi.",
+        "verified": true,
+        "sellerReply": "Anno, bardzo się cieszymy, że poczuła Pani ulgę już od pierwszej nocy! Wsparcie lędźwiowe to jeden z mocnych punktów produktu. W razie potrzeby jesteśmy do dyspozycji."
+      },
+      {
+        "initials": "MN",
+        "name": "Marek Nowicki",
+        "stars": 5,
+        "text": "pracuję na budowie i wieczorami plecy miałem wykończone. żona zobaczyła reklamę i zamówiła. muszę przyznać że śpię dużo lepiej, budzę się mniej sztywny i stary materac jest jak nowy. świetny zakup",
+        "verified": true,
+        "sellerReply": "Marku, osoby pracujące fizycznie zyskują najbardziej! Cieszymy się, że żona jest zadowolona z wyboru. Dziękujemy za zaufanie."
+      },
+      {
+        "initials": "AW",
+        "name": "Agnieszka Wiśniewska",
+        "stars": 5,
+        "text": "Kupiłam go dla mojego taty, który ma 75 lat i ciągle narzekał na plecy rano. Położył go sam na łóżko w minutę, łatwizna. Po tygodniu powiedział mi, że śpi dużo lepiej i nie budzi się już z zdrętwiałymi rękami.",
+        "verified": true,
+        "sellerReply": "Agnieszko, bardzo nam miło! Produkt jest zaprojektowany tak, aby był prosty nawet dla mniej wprawnych osób. Pozdrowienia dla taty!"
+      },
+      {
+        "initials": "PZ",
+        "name": "Piotr Zieliński",
+        "stars": 4,
+        "text": "przyszedł próżniowo zapakowany, potrzebował jakieś doby żeby się w pełni rozprężyć. pierwsze noce dobrze, czuję że plecy się lepiej układają. na razie daję 4 gwiazdki bo chcę go jeszcze trochę potestować ale wrażenie jest pozytywne",
+        "verified": true,
+        "sellerReply": "Piotrze, doceniamy szczerość! To normalne, że potrzebuje 24-48h na pełną objętość. Jesteśmy pewni, że przy dłuższym użytkowaniu zauważy Pan jeszcze lepsze efekty. Proszę nas informować!"
+      },
+      {
+        "initials": "MK",
+        "name": "Małgorzata Kamińska",
+        "stars": 5,
+        "text": "Miałam materac pełen wgnieceń i plecy bolały mnie okropnie. Nie chciałam wydawać 3000 złotych na nowy. Z tym topperem rozwiązałam problem, czuję się jakbym spała na zupełnie innym łóżku. Falowy profil naprawdę się czuje.",
+        "verified": true,
+        "sellerReply": "Małgorzato, odmiana starego materaca bez wydawania fortuny to dokładnie nasz cel. Cieszymy się, że jest Pani zadowolona!"
+      },
+      {
+        "initials": "TW",
+        "name": "Tomasz Wójcik",
+        "stars": 5,
+        "text": "wysyłka błyskawiczna, przyszedł następnego dnia. używam od dwóch tygodni i ból barków który miałem co rano praktycznie zniknął. spałem na boku i budziłem się zawsze z bolącym barkiem, teraz już nie. polecam",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "KL",
+        "name": "Katarzyna Lewandowska",
+        "stars": 5,
+        "text": "Mam problemy z krążeniem w nogach i budziłam się zawsze z opuchniętymi stopami. Od kiedy używam tego toppera sytuacja poprawiła się znacznie. Materiał nie powoduje pocenia nawet latem, czego się obawiałam.",
+        "verified": true,
+        "sellerReply": "Katarzyno, falowy profil jest zaprojektowany właśnie po to, aby wspierać mikrokrążenie. Cieszymy się, że zauważa Pani konkretne efekty!"
+      },
+      {
+        "initials": "AJ",
+        "name": "Andrzej Jankowski",
+        "stars": 5,
+        "text": "jestem fizjoterapeutą i dobrze znam problemy kręgosłupa. ten topper robi to co obiecuje, wsparcie lędźwiowe jest poważne i podwójna warstwa jest wyczuwalna. poleciłem go kilku pacjentom którzy nie chcieli wymieniać materaca",
+        "verified": true,
+        "sellerReply": "Andrzeju, potwierdzenie od specjalisty z branży to dla nas najważniejsze uznanie. Dziękujemy za polecanie produktu pacjentom!"
+      },
+      {
+        "initials": "BG",
+        "name": "Barbara Grabowska",
+        "stars": 5,
+        "text": "zamówiłam w piątek przyszedł w poniedziałek. zapłaciłam kurierowi bez problemów, żadnych dodatkowych kosztów. po trzech nocach mogę powiedzieć że różnica jest odczuwalna, budzę się dużo mniej sztywna. ochraniacz na materac w prezencie też dobrej jakości",
+        "verified": true,
+        "sellerReply": "Barbaro, pełna przejrzystość kosztów to nasz priorytet. Cieszymy się, że docenia Pani również ochraniacz w prezencie!"
+      },
+      {
+        "initials": "JP",
+        "name": "Jan Pawlak",
+        "stars": 5,
+        "text": "Mam 68 lat i noc stała się koszmarem, nie mogłem znaleźć wygodnej pozycji i budziłem się trzy, cztery razy. Z tym topperem śpię całą noc bez budzenia się. Materiał dopasowuje się do ciała i jest niesamowicie wygodny.",
+        "verified": true,
+        "sellerReply": "Janie, spanie całą noc bez przerw jest kluczowe w Pana wieku. Naprawdę cieszymy się, że odzyskał Pan spokojny sen. Dziękujemy!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "title": "Zostaw swoją opinię",
+    "nameLabel": "Twoje imię",
+    "namePlaceholder": "Np. Jan Kowalski",
+    "ratingLabel": "Ocena",
+    "textLabel": "Twoja opinia",
+    "textPlaceholder": "Opisz swoje doświadczenie...",
+    "submitText": "Wyślij Opinię",
+    "successTitle": "Dziękujemy za Twoją opinię!",
+    "successText": "Twoja opinia oczekuje na zatwierdzenie przez niezależny zespół zewnętrzny. Opinie osób, które nie zakupiły produktu, nie zostaną opublikowane, aby zapewnić autentyczność recenzji.",
+    "closeText": "Zamknij"
+  },
+
+  "orderForm": {
+    "_note": "SEMI-STATICO - La struttura e i campi sono sempre uguali. Cambiano dinamicamente: nome prodotto (nella prima summaryLine), immagine prodotto (prima slide del carosello), prezzi (da pricing). Spedizione e Contrassegno sono SEMPRE gratuiti.",
+    "_note_title": "STATICO - eyebrow 'Modulo d'Ordine' e title 'Completa il tuo ordine' non cambiano mai.",
+    "_note_countdown": "OPZIONALE - showCountdown controlla se il countdown viene mostrato. L'utente decide se attivarlo per ogni landing. countdownMinutes: durata in minuti, default 118 (1h 58min) salvo diverse indicazioni.",
+    "_note_dynamic": "summaryLines: la prima riga ha nome prodotto + prezzo da pricing.currentPrice. totalValue si calcola da pricing.currentPrice. timerLabel usa pricing.discountPercent per la percentuale. L'immagine nel riepilogo è la PRIMA foto del carosello (gallery.slides[0]) in versione thumbnail.",
+    "eyebrow": "Formularz Zamówienia",
+    "title": "Dokończ swoje zamówienie",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Oferta -50% wygasa za:",
+    "stockWarning": "Tylko <strong>8 sztuk</strong> pozostało w tej cenie",
+    "summaryTitle": "Podsumowanie Zamówienia",
+    "summaryLines": [
+      { "label": "CloudRelief Topper™ + Akcesoria", "value": "299 zł", "type": "normal" },
+      { "label": "Szybka wysyłka 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Opłata za pobranie", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "RAZEM",
+    "totalValue": "299 zł",
+    "fields": {
+      "name": { "label": "Imię i Nazwisko *", "placeholder": "Np. Jan Kowalski" },
+      "phone": { "label": "Numer Telefonu *", "placeholder": "Np. 500 123 456" },
+      "address": { "label": "Adres Dostawy *", "placeholder": "Ulica, Numer, Miasto, Kod Pocztowy" }
+    },
+    "phoneNote": "Skontaktujemy się z Tobą telefonicznie lub przez WhatsApp w celu potwierdzenia zamówienia.",
+    "paymentBadge": "Płatność Przy Odbiorze — Płacisz gotówką kurierowi. Zero zaliczki.",
+    "submitText": "POTWIERDŹ ZAMÓWIENIE",
+    "submitSubtext": "Płatność Gotówką Przy Odbiorze",
+    "reassurance": "Dane chronione · SSL 256-bit · Brak wcześniejszych obciążeń"
+  },
+
+  "faq": {
+    "_note": "STATICO - Le FAQ sono sempre uguali per tutte le landing. Non modificare.",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Często zadawane pytania",
+    "title": "Masz jeszcze wątpliwości? Oto odpowiedzi.",
+    "items": [
+      { "question": "Jak złożyć zamówienie?", "answer": "Kliknij przycisk zakupu, wypełnij formularz swoimi danymi i potwierdź zamówienie. Skontaktujemy się z Tobą telefonicznie lub przez WhatsApp w celu potwierdzenia, a paczkę otrzymasz wygodnie do domu z płatnością gotówką." },
+      { "question": "Jak działa wysyłka?", "answer": "Wysyłka jest całkowicie bezpłatna. Od momentu potwierdzenia zamówienia dostawa zajmuje około 24/48h roboczych." },
+      { "question": "A jeśli mi się nie spodoba?", "answer": "Możesz zażądać pełnego zwrotu pieniędzy, odsyłając produkt w ciągu 30 dni od dostawy. Przyjeżdżamy po paczkę i zwracamy całą wydaną kwotę." },
+      { "question": "Co jeśli mam problemy po 30 dniach?", "answer": "Bez obaw, wszystkie nasze produkty objęte są 2-letnią gwarancją." },
+      { "question": "Jak mogę poprosić o zwrot lub pomoc?", "answer": "Aby poprosić o pomoc lub zwrot po złożeniu zamówienia, możesz skorzystać z formularza kontaktowego na stronie lub napisać na adres e-mail podany w stopce." }
+    ]
+  },
+
+  "stickyCta": {
+    "_note": "SEMI-STATICO - buttonText e buttonSubtext sono STATICI. I prezzi sono DINAMICI: oldPrice = pricing.originalPrice, newPrice = pricing.currentPrice.",
+    "oldPrice": "598 zł",
+    "newPrice": "299 zł",
+    "buttonText": "ZAMÓW TERAZ",
+    "buttonSubtext": "Płać Przy Odbiorze"
+  },
+
+  "tracking": {
+    "_note": "Compilato nella FASE 4. conversionValue = pricing.currentPrice, conversionCurrency = pricing.currency.",
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 299,
+    "conversionCurrency": "PLN",
+    "facebookPixelId": "1576025786901423",
+    "network": {
+      "apiEndpoint": "https://offers.supertrendaffiliateprogram.com/forms/api/",
+      "offerId": "585",
+      "uid": "019855d0-397a-72ee-8df5-c5026966105a",
+      "key": "8ea99f0506e1df27f625d0",
+      "lpId": "585",
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=585&uid=019855d0-397a-72ee-8df5-c5026966105a&lp=585"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Poprzedni",
+    "nextSlide": "Następny",
+    "thumbnail": "Miniatura",
+    "close": "Zamknij"
+  },
+
+  "ty": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. TUTTI i testi visibili devono essere qui, MAI hardcodati nel componente.",
+    "title": "Zamówienie Potwierdzone!",
+    "subtitle": "Twoje zamówienie zostało pomyślnie przyjęte.",
+    "orderNumberLabel": "Nr zamówienia:",
+    "summaryTitle": "Podsumowanie Zamówienia",
+    "accessoriesLabel": "+ Akcesoria w zestawie",
+    "totalLabel": "RAZEM DO ZAPŁATY",
+    "paymentNote": "Płatność gotówką kurierowi — bez zaliczki",
+    "yourDataTitle": "Twoje Dane",
+    "nameLabel": "Imię",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adres",
+    "nextStepsTitle": "Co dalej?",
+    "message": "Skontaktujemy się z Tobą telefonicznie lub przez WhatsApp w celu potwierdzenia zamówienia i zorganizowania dostawy.",
+    "steps": [
+      "Otrzymasz telefon lub wiadomość WhatsApp z potwierdzeniem",
+      "Paczka zostanie wysłana w ciągu 24/48h",
+      "Płacisz gotówką kurierowi przy odbiorze"
+    ],
+    "footerText": "Gwarancja 2 Lata · 30 Dni na Zwrot · Dedykowana Obsługa"
+  }
+}

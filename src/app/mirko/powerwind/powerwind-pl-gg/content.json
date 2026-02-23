@@ -1,0 +1,411 @@
+{
+  "seo": {
+    "title": "PowerWind X™ - Tnij Zarośla, Trawę i Gałęzie Bez Zacięć",
+    "description": "Podkaszarka akumulatorowa z inteligentnym silnikiem, który sam zwiększa moc. Kompletny zestaw z 4 ostrzami, przycinacz krawędzi, 2 akumulatory. Darmowa wysyłka."
+  },
+
+  "pricing": {
+    "currency": "PLN",
+    "currencySymbol": "zł",
+    "originalPrice": 449.00,
+    "currentPrice": 299.00,
+    "discountPercent": 33
+  },
+
+  "topBar": {
+    "text": "Darmowa Wysyłka 24/48h · Płatność przy Odbiorze · 2 Lata Gwarancji"
+  },
+
+  "urgencyBanner": {
+    "text": "Uwaga: Duże zainteresowanie —",
+    "highlight": "Ostatnie 8 sztuk dostępnych",
+    "suffix": "w tej cenie"
+  },
+
+  "hero": {
+    "badge": "Innowacja 2026",
+    "title": "Tnij Zarośla, Wysoką Trawę i Gałęzie",
+    "titleHighlight": "Bez Żadnych Zacięć:",
+    "titleSuffix": "Pierwsza Podkaszarka, Która Myśli za Ciebie",
+    "subtitle": "Inteligentny silnik, który sam reguluje moc. 4 ostrza w cenie, 2 akumulatory, przycinacz krawędzi i walizka. Włącz i tnij, reszta działa sama.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18 743 zadowolonych klientów"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-33%",
+    "slides": [
+      { "src": "/images/mirko/powerwind/carosello/1.webp", "alt": "PowerWind X widok ogólny" },
+      { "src": "/images/mirko/powerwind/carosello/2.webp", "alt": "PowerWind X w użyciu" },
+      { "src": "/images/mirko/powerwind/carosello/3.webp", "alt": "PowerWind X detal głowicy" },
+      { "src": "/images/mirko/powerwind/carosello/4.webp", "alt": "PowerWind X dołączone akcesoria" },
+      { "src": "/images/mirko/powerwind/carosello/5.webp", "alt": "PowerWind X akumulatory i ładowarka" },
+      { "src": "/images/mirko/powerwind/carosello/6.webp", "alt": "PowerWind X przycinacz krawędzi" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Nigdy się nie zacina:", "description": "silnik SmartTorque sam zwiększa moc, gdy napotka zarośla i wysoką trawę." },
+      { "title": "Żyłka ładuje się w 10 sekund:", "description": "żyłka nylonowa zużywa się podczas pracy. Wkładasz nową, uderzasz o ziemię i nawija się sama. Zero rozkręcania." },
+      { "title": "Odblokowanie jednym kliknięciem:", "description": "przycisk Reverse natychmiast uwalnia żyłkę i zakleszczoną trawę." },
+      { "title": "Idealne krawędzie jak u ogrodnika:", "description": "przycinacz krawędzi z kółkiem prowadzącym do perfekcyjnych chodników i ścieżek." },
+      { "title": "Zero przerw:", "description": "2 akumulatory w zestawie. Jeden pracuje, drugi się ładuje. Pracujesz ile chcesz." },
+      { "title": "Dosięgniesz wszędzie:", "description": "rozsuwa się od 71 do 210 cm. Dosięgniesz pod żywopłotem i w trudno dostępne miejsca bez schylania się." },
+      { "title": "Pełen komfort na ramionach:", "description": "uprząż na dwa ramiona z wyściółką, która równomiernie rozkłada ciężar. Pracujesz godzinami bez zmęczenia." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "PowerWind X™",
+    "originalPriceLabel": "Cena katalogowa:",
+    "discountLabel": "OSZCZĘDZASZ 150 zł (-33%)",
+    "shippingLabel": "Szybka Wysyłka:",
+    "shippingValue": "Gratis",
+    "guaranteeLabel": "2 lata gwarancji",
+    "offerToggleText": "Zobacz co zawiera oferta",
+    "offerItems": [
+      { "text": "PowerWind X™ — Profesjonalna Podkaszarka", "badge": null },
+      { "text": "Zestaw 4 Ostrzy (żyłka, trawa, zarośla, gałęzie)", "badge": null },
+      { "text": "2 Akumulatory 40V + Szybka Ładowarka", "badge": null },
+      { "text": "Przycinacz Krawędzi z Kółkiem Prowadzącym", "badge": "PREZENT" },
+      { "text": "Uprząż na Dwa Ramiona Comfort PRO", "badge": "PREZENT" },
+      { "text": "Sztywna Walizka + Zapasowa Żyłka", "badge": "PREZENT" },
+      { "text": "2 Lata Gwarancji + Dedykowana Obsługa", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ZAMÓW TERAZ",
+    "mainSubtext": "Płatność Gotówką przy Odbiorze",
+    "subNote": "Zero ryzyka: płacisz dopiero gdy otrzymasz paczkę"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Płatność przy Odbiorze", "color": "green" },
+      { "icon": "truck", "text": "Wysyłka 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Dni na Zwrot", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Znasz to?",
+    "title": "Te problemy brzmią znajomo?",
+    "items": [
+      { "icon": "pain", "titleBold": "Podkaszarka spalinowa niszczy Ci kręgosłup", "text": "— ciężka, głośna, śmierdzi i odpala raz na trzy." },
+      { "icon": "warning", "titleBold": "Żyłka zacina się co dwie minuty", "text": "i musisz wszystko rozkręcać, żeby ją przewinąć. Więcej czasu tracisz na naprawę niż na koszenie." },
+      { "icon": "timer", "titleBold": "Akumulatorowe nie radzą sobie z zaroślami", "text": "— zacinają się, wyłączają, a akumulator pada po 20 minutach." }
+    ],
+    "solutionTitle": "Istnieje lepsze rozwiązanie.",
+    "solutionText": "Podkaszarka z inteligentnym silnikiem, 4 ostrzami, 2 akumulatorami i bez benzyny. Włącz i tnij wszystko."
+  },
+
+  "features": {
+    "eyebrow": "Dlaczego jest inna",
+    "title": "Rozpraw się z wysoką trawą, gałęziami i zaroślami w mgnieniu oka",
+    "demoGifs": {
+      "items": [
+        { "src": "/images/mirko/powerwind/gif/1.gif", "alt": "PowerWind X w akcji" },
+        { "src": "/images/mirko/powerwind/gif/2.gif", "alt": "PowerWind X w akcji" },
+        { "src": "/images/mirko/powerwind/gif/3.gif", "alt": "PowerWind X w akcji" }
+      ],
+      "caption": "PowerWind X w akcji."
+    },
+    "items": [
+      {
+        "image": "/images/mirko/powerwind/angle/1.webp",
+        "imageAlt": "SmartTorque AUTO",
+        "tag": "INTELIGENTNA MOC",
+        "tagColor": "green",
+        "title": "Nigdy Się Nie Zacina w Zaroślach",
+        "description": "Silnik <strong>SmartTorque</strong> automatycznie zwiększa <strong>moc i obroty</strong>, gdy napotka wysoką trawę i zarośla. <strong>Żadna podkaszarka akumulatorowa</strong> tego nie robi."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/2.webp",
+        "imageAlt": "4 systemy tnące",
+        "tag": "4 OSTRZA W ZESTAWIE",
+        "tagColor": "orange",
+        "title": "Ostrze na Każdą Potrzebę",
+        "description": "<strong>Żyłka nylonowa</strong> do wykończeń, <strong>ostrze 3-zębne</strong> do gęstej trawy, <strong>tarcza do zarośli</strong> i chwastów, <strong>tarcza tnąca</strong> do gałęzi i drobnych gałązek. Jedno narzędzie, tniesz wszystko."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/3.webp",
+        "imageAlt": "Przycinacz krawędzi Idealny Brzeg",
+        "tag": "EFEKT WOW",
+        "tagColor": "blue",
+        "title": "Idealne Krawędzie Jak u Profesjonalnego Ogrodnika",
+        "description": "<strong>Przycinacz krawędzi</strong> z <strong>kółkiem prowadzącym</strong> do chodników i ścieżek. W <strong>5 minut</strong> Twój ogród wygląda jakby zadbał o niego profesjonalista."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/4.webp",
+        "imageAlt": "Podkaszarka teleskopowa rozsuwana",
+        "tag": "ZERO WYSIŁKU",
+        "tagColor": "green",
+        "title": "Dosięgniesz Tam, Gdzie Inne Nie Sięgają",
+        "description": "Rozsuwa się od <strong>71 do 210 cm</strong> jednym ruchem. Tniesz pod żywopłotem, wzdłuż murów i w trudno dostępnych miejscach <strong>bez schylania się</strong> i bez niszczenia kręgosłupa. Regulujesz do <strong>swojego wzrostu</strong> i pracujesz wygodnie."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Banalnie proste",
+    "title": "3 kroki i ogród gotowy.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Zamontuj", "description": "Zatrzaskujesz ostrze, wkładasz akumulator. 30 sekund i gotowe." },
+      { "title": "Włącz", "description": "Jeden przycisk i rusza. SmartTorque sam reguluje moc." },
+      { "title": "Tnij", "description": "Trawa, zarośla, gałęzie: robi wszystko sam. Zmiana ostrza w 2 sekundy." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ZAMÓW TERAZ Z 33% RABATEM",
+    "subtext": "Płatność Gotówką przy Odbiorze"
+  },
+
+  "comparison": {
+    "eyebrow": "Porównanie",
+    "title": "Jakie korzyści zyskasz w porównaniu z alternatywami?",
+    "featureColumn": "Cecha",
+    "winnerBadge": "ZWYCIĘZCA",
+    "productColumn": "PowerWind X™",
+    "competitorColumn": "Podkaszarka spalinowa",
+    "rows": [
+      { "feature": "Moc w zaroślach", "product": "✔ SmartTorque auto", "competitor": "Stała (ryzyko zacięcia)" },
+      { "feature": "Wymiana żyłki", "product": "✔ 10 sekund, bez rozkręcania", "competitor": "Rozkręcanie i ręczne nawijanie" },
+      { "feature": "Zakleszczona żyłka", "product": "✔ Reverse: 1 klik", "competitor": "Rozkręcanie i ręczne czyszczenie" },
+      { "feature": "Waga i komfort", "product": "✔ Lekka, zero wibracji", "competitor": "Ciężka, silne wibracje" },
+      { "feature": "Hałas", "product": "✔ Cicha praca", "competitor": "Budzi sąsiadów" },
+      { "feature": "Koszt całkowity", "product": "✔ Tylko 299 zł (wszystko w zestawie)", "competitor": "800-1600 zł + benzyna + przeglądy" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Wszystko w zestawie",
+    "title": "Co otrzymujesz do domu",
+    "items": [
+      { "icon": "box", "text": "PowerWind X™ — Profesjonalna Podkaszarka", "value": "449,00 zł", "valueType": "price" },
+      { "icon": "check", "text": "Zestaw 4 Ostrzy (żyłka, trawa, zarośla, gałęzie)", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "check", "text": "2 Akumulatory 40V + Szybka Ładowarka", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "gift", "text": "Przycinacz Krawędzi z Kółkiem Prowadzącym", "value": "PREZENT", "valueType": "gift" },
+      { "icon": "gift", "text": "Uprząż na Dwa Ramiona Comfort PRO", "value": "PREZENT", "valueType": "gift" },
+      { "icon": "gift", "text": "Sztywna Walizka + Zapasowa Żyłka", "value": "PREZENT", "valueType": "gift" },
+      { "icon": "shield", "text": "2 Lata Gwarancji + Dedykowana Obsługa", "value": "W ZESTAWIE", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Cena katalogowa:",
+    "totalOriginalValue": "979,00 zł",
+    "totalCurrentLabel": "Dziś płacisz tylko:",
+    "totalCurrentValue": "299,00 zł",
+    "totalSave": "Oszczędzasz 680,00 zł · Darmowa wysyłka",
+    "ctaText": "ZAMÓW TERAZ"
+  },
+
+  "reviews": {
+    "eyebrow": "Co mówią o nas",
+    "title": "Zweryfikowane Opinie",
+    "rating": "4.8",
+    "totalCount": "18 743 opinii",
+    "verifiedNote": "✓ Opinie są weryfikowane przez niezależny zespół zewnętrzny wobec tej strony.",
+    "showMoreText": "Pokaż więcej opinii",
+    "leaveReviewText": "Zostaw opinię",
+    "verifiedBadge": "Zweryfikowany zakup",
+    "sellerReplyLabel": "Odpowiedź sprzedawcy:",
+    "items": [
+      {
+        "initials": "MK",
+        "name": "Marek Kowalski",
+        "stars": 5,
+        "text": "Mam działkę 2000 metrów z zaroślami i twardymi chwastami. Stara spalinowa ciągle się zacinała i ważyła tonę. Ta wchodzi w zarośla i nie staje, silnik sam przyspiesza, jak napotka opór. Wykosiłem wszystko w jedno popołudnie bez niszczenia kręgosłupa. Wysyłka w dwa dni, zapłaciłem kurierowi.",
+        "image": "/images/mirko/powerwind/recensioni/1.webp",
+        "imageAlt": "Zdjęcie z opinii Marka",
+        "verified": true,
+        "sellerReply": "Marku, SmartTorque został stworzony właśnie dla osób z wymagającymi działkami jak Pańska. Cieszymy się, że zauważył Pan różnicę w wadze. W razie potrzeby jesteśmy do dyspozycji."
+      },
+      {
+        "initials": "PW",
+        "name": "Piotr Wiśniewski",
+        "stars": 5,
+        "text": "wcześniej traciłem 10 minut za każdym razem gdy kończyła się żyłka, musiałem rozkręcać głowicę i się denerwować. z tym wkładam żyłkę, uderzam o ziemię i ruszam dalej, nie wierzyłem ale naprawdę działa. używam w sobotę rano i robię wszystko w połowie czasu co kiedyś",
+        "image": "/images/mirko/powerwind/recensioni/2.webp",
+        "imageAlt": "Zdjęcie z opinii Piotra",
+        "verified": true,
+        "sellerReply": "Piotrze, AutoSpool to funkcja najbardziej doceniana przez naszych klientów. Cieszymy się, że ułatwił Panu sobotnie prace. Dziękujemy!"
+      },
+      {
+        "initials": "AL",
+        "name": "Agnieszka Lewandowska",
+        "stars": 5,
+        "text": "Kupiłam to dla męża, który ma 62 lata i ciągle narzekał na kręgosłup po używaniu spalinowej. Z tą jest lekka, a szelki na dwa ramiona świetnie rozkładają ciężar. Hałas też jest minimalny, sąsiedzi dziękują. Doszła w dwa dni, żadnych dodatkowych kosztów.",
+        "image": "/images/mirko/powerwind/recensioni/3.webp",
+        "imageAlt": "Zdjęcie z opinii Agnieszki",
+        "verified": true,
+        "sellerReply": "Agnieszko, co za wspaniały pomysł na prezent! Uprząż na dwa ramiona została zaprojektowana właśnie dla osób, które pracują długo bez zmęczenia. Pozdrowienia dla męża!"
+      },
+      {
+        "initials": "TN",
+        "name": "Tomasz Nowak",
+        "stars": 5,
+        "text": "dwa akumulatory to przełom. kończy się jeden, wkładam drugi i jadę dalej bez przerwy. ze starą spalinową musiałem nosić kanister i śmierdziałem cały dzień. ta jest cicha, czysta i mocna. przycinacz krawędzi to coś niesamowitego, krawędzie wychodzą proste",
+        "image": "/images/mirko/powerwind/recensioni/4.webp",
+        "imageAlt": "Zdjęcie z opinii Tomasza",
+        "verified": true,
+        "sellerReply": "Tomaszu, ciągłość pracy z dwoma akumulatorami jest kluczowa dla osób z dużymi ogrodami. Dziękujemy za wybór PowerWind X!"
+      },
+      {
+        "initials": "KZ",
+        "name": "Krzysztof Zieliński",
+        "stars": 4,
+        "text": "Solidny produkt, przetestowałem na wysokiej trawie i zaroślach i muszę przyznać, że silnik dobrze reaguje. Na razie daję 4 gwiazdki, bo chcę go dobrze przetestować przez cały sezon zanim dam maksimum, ale zapowiedzi są doskonałe. Świetny zestaw ze wszystkimi akcesoriami w komplecie.",
+        "verified": true,
+        "sellerReply": "Krzysztofie, doceniamy Pańską uczciwość! Jesteśmy pewni, że pod koniec sezonu wyniki przemówią same za siebie. Niech Pan da znać, jesteśmy ciekawi!"
+      },
+      {
+        "initials": "KS",
+        "name": "Katarzyna Szymańska",
+        "stars": 5,
+        "text": "Kupiłam dla taty, który ma 68 lat i nie chciał słyszeć o akumulatorze. Po przetestowaniu nie chce wracać do spalinowej. Mówi, że waży o połowę mniej i że przycinacz krawędzi robi mu chodniki jak prawdziwy ogrodnik. Zapłaciłam kurierowi bez problemów.",
+        "verified": true,
+        "sellerReply": "Katarzyno, nawrócenie fana benzyny to nasza największa satysfakcja! Pozdrowienia dla taty, cieszymy się, że jest zadowolony."
+      },
+      {
+        "initials": "AW",
+        "name": "Andrzej Wójcik",
+        "stars": 5,
+        "text": "przycinacz krawędzi z kółkiem to coś szalonego. krawędzie ścieżki wychodzą idealnie proste, wygląda jakby robił to profesjonalista. wcześniej robiłem na oko i zawsze wychodziło źle. walizka też jest wygodna żeby trzymać wszystko w porządku w garażu",
+        "verified": true,
+        "sellerReply": "Andrzeju, kółko prowadzące zostało zaprojektowane właśnie po to, żeby uzyskać profesjonalne krawędzie bez doświadczenia. Dziękujemy za opinię!"
+      },
+      {
+        "initials": "JK",
+        "name": "Jan Kamiński",
+        "stars": 5,
+        "text": "To co mnie przekonało to przycisk Reverse. Wcześniej za każdym razem gdy żyłka się zakleszczała w trawie musiałem wszystko wyłączać i wyciągać ręcznie. Z tym naciskasz przycisk i sama się uwalnia. Genialne. Ostrze do zarośli też działa świetnie.",
+        "verified": true,
+        "sellerReply": "Janie, Reverse anty-zaplątanie powstał z wysłuchania najczęstszych problemów naszych klientów. Cieszymy się, że to funkcja, którą Pan najbardziej docenia!"
+      },
+      {
+        "initials": "PD",
+        "name": "Paweł Dąbrowski",
+        "stars": 5,
+        "text": "za 299 zł cały ten zestaw to niesamowita okazja. podkaszarka, 4 różne ostrza, przycinacz krawędzi, walizka, dwa akumulatory... porównałem z tymi w sklepie i żeby mieć to samo trzeba wydać trzy razy tyle. doszła szybko wysyłka gratis jak obiecano",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "MK",
+        "name": "Michał Kozłowski",
+        "stars": 5,
+        "text": "Teleskopowa rura rozwiązała problem, który miałem od lat: koszenie pod żywopłotem i w miejscach, do których nie sięgałem. Rozsuwa się bez narzędzi i dosięgniesz niemożliwe miejsca. Wszystko bez schylania się i niszczenia kręgosłupa. Poważny produkt, polecam.",
+        "verified": true,
+        "sellerReply": "Michale, teleskopowa rura została zaprojektowana właśnie po to, żeby wyeliminować niewygodne pozycje. Dziękujemy za wybór PowerWind X, powodzenia w pracy!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Zostaw swoją opinię",
+    "nameLabel": "Twoje imię",
+    "namePlaceholder": "Np. Jan Kowalski",
+    "ratingLabel": "Ocena",
+    "textLabel": "Twoja opinia",
+    "textPlaceholder": "Opisz swoje doświadczenie...",
+    "submitText": "Wyślij Opinię",
+    "successTitle": "Dziękujemy za Twoją opinię!",
+    "successText": "Twoja opinia oczekuje na zatwierdzenie przez niezależny zespół zewnętrzny wobec tej strony. Opinie pozostawione przez osoby, które nie kupiły produktu, nie zostaną opublikowane — zapobiega to nieautentycznym recenzjom.",
+    "closeText": "Zamknij"
+  },
+
+  "orderForm": {
+    "eyebrow": "Formularz Zamówienia",
+    "title": "Dokończ swoje zamówienie",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Oferta -33% wygasa za:",
+    "stockWarning": "Tylko <strong>8 sztuk</strong> pozostało w tej cenie",
+    "summaryTitle": "Podsumowanie Zamówienia",
+    "summaryLines": [
+      { "label": "PowerWind X™ + 4 Ostrza + Akcesoria", "value": "299,00 zł", "type": "normal" },
+      { "label": "Szybka wysyłka 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Opłata za pobranie", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "RAZEM",
+    "totalValue": "299,00 zł",
+    "fields": {
+      "name": { "label": "Imię i Nazwisko *", "placeholder": "Np. Jan Kowalski" },
+      "phone": { "label": "Numer Telefonu *", "placeholder": "Np. 500 123 456" },
+      "address": { "label": "Adres Dostawy *", "placeholder": "Ulica, numer, miasto, kod pocztowy" }
+    },
+    "phoneNote": "Skontaktujemy się telefonicznie lub przez WhatsApp, aby potwierdzić zamówienie.",
+    "paymentBadge": "Płatność przy Odbiorze — Płacisz gotówką kurierowi. Zero zaliczki.",
+    "submitText": "POTWIERDŹ ZAMÓWIENIE",
+    "submitSubtext": "Płatność Gotówką przy Odbiorze",
+    "reassurance": "Dane chronione · SSL 256-bit · Brak opłat z góry"
+  },
+
+  "faq": {
+    "eyebrow": "Często zadawane pytania",
+    "title": "Masz jeszcze wątpliwości? Oto odpowiedzi.",
+    "items": [
+      { "question": "Jak złożyć zamówienie?", "answer": "Kliknij przycisk zakupu, wypełnij formularz swoimi danymi i potwierdź zamówienie. Skontaktujemy się z Tobą telefonicznie lub przez WhatsApp w celu potwierdzenia, a paczkę otrzymasz wygodnie do domu z płatnością gotówką." },
+      { "question": "Jak działa wysyłka?", "answer": "Wysyłka jest całkowicie darmowa. Od momentu potwierdzenia zamówienia, dostawa zajmuje około 1-2 dni roboczych." },
+      { "question": "A co jeśli mi się nie spodoba?", "answer": "Możesz poprosić o pełny zwrot pieniędzy, odsyłając produkt w ciągu 30 dni od dostawy. Przyjeżdżamy po paczkę i zwracamy Ci całą zapłaconą kwotę." },
+      { "question": "A jeśli mam problem po 30 dniach?", "answer": "Bez obaw, wszystkie nasze produkty mają 2 lata gwarancji." },
+      { "question": "Jak mogę poprosić o zwrot lub pomoc?", "answer": "Aby poprosić o pomoc lub zwrot po złożeniu zamówienia, możesz skorzystać z formularza kontaktowego dostępnego na stronie lub napisać na adres e-mail podany w stopce." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "449 zł",
+    "newPrice": "299 zł",
+    "buttonText": "ZAMÓW TERAZ",
+    "buttonSubtext": "Zapłać przy Odbiorze"
+  },
+
+  "tracking": {
+    "googleAdsId": "AW-17935100960",
+    "conversionLabel": "pDqaCOj18_sbEKDYj-hC",
+    "conversionValue": 299.00,
+    "conversionCurrency": "PLN",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "fingerprintScript": "https://offers.uncappednetwork.com/forms/tmfp/",
+      "clickPixel": "https://offers.uncappednetwork.com/forms/api/ck/?o=883&uid=0191b25c-22d2-7f55-9d9b-79b67cebbff3&lp=897",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Poprzedni",
+    "nextSlide": "Następny",
+    "thumbnail": "Miniatura",
+    "close": "Zamknij"
+  },
+
+  "ty": {
+    "title": "Zamówienie Potwierdzone!",
+    "subtitle": "Twoje zamówienie zostało pomyślnie przyjęte.",
+    "orderNumberLabel": "Nr zamówienia:",
+    "summaryTitle": "Podsumowanie Zamówienia",
+    "accessoriesLabel": "+ Akcesoria w zestawie",
+    "totalLabel": "RAZEM DO ZAPŁATY",
+    "paymentNote": "Płatność gotówką kurierowi — brak zaliczki",
+    "yourDataTitle": "Twoje Dane",
+    "nameLabel": "Imię",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adres",
+    "nextStepsTitle": "Co teraz się wydarzy?",
+    "message": "Skontaktujemy się telefonicznie lub przez WhatsApp, aby potwierdzić zamówienie i ustalić dostawę.",
+    "steps": [
+      "Otrzymasz telefon lub wiadomość WhatsApp z potwierdzeniem",
+      "Paczka zostanie wysłana w 24/48h",
+      "Płacisz gotówką kurierowi przy odbiorze"
+    ],
+    "footerText": "2 Lata Gwarancji · 30 Dni na Zwrot · Dedykowana Obsługa"
+  }
+}

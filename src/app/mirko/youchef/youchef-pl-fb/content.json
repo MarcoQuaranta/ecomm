@@ -1,0 +1,438 @@
+{
+  "seo": {
+    "title": "YouChef 3.0™ - Gotuj Dania Jak Szef Kuchni Bez Umiejętności Kulinarnych",
+    "description": "Robot kuchenny z automatycznym dozownikiem i 45 funkcjami. Sam dodaje składniki. Darmowa wysyłka, płatność przy odbiorze."
+  },
+
+  "pricing": {
+    "currency": "PLN",
+    "currencySymbol": "zł",
+    "originalPrice": 778.00,
+    "currentPrice": 389.00,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "text": "Darmowa Wysyłka 24/48h · Płatność przy Odbiorze · Gwarancja 2 Lata"
+  },
+
+  "urgencyBanner": {
+    "text": "Uwaga: Duże zainteresowanie —",
+    "highlight": "Ostatnie 8 sztuk dostępnych",
+    "suffix": "w tej cenie"
+  },
+
+  "hero": {
+    "badge": "Nowość 2026",
+    "title": "Dania Jak z Restauracji Każdego Wieczoru",
+    "titleHighlight": "Bez Umiejętności Gotowania:",
+    "titleSuffix": "Sam Dodaje Składniki i Gotuje, Gdy Ty Odpoczywasz",
+    "subtitle": "Pierwszy robot kuchenny z automatycznym dozownikiem. Załaduj składniki, wybierz przepis na ekranie, a on zrobi wszystko sam. 45 funkcji, zero doświadczenia wymagane.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18 739 zadowolonych klientów"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/youchef/carosello/1.png", "alt": "YouChef 3.0 widok z przodu" },
+      { "src": "/images/mirko/youchef/carosello/2.png", "alt": "YouChef 3.0 w akcji" },
+      { "src": "/images/mirko/youchef/carosello/3.png", "alt": "YouChef 3.0 ekran dotykowy" },
+      { "src": "/images/mirko/youchef/carosello/4.png", "alt": "YouChef 3.0 automatyczny dozownik" },
+      { "src": "/images/mirko/youchef/carosello/5.png", "alt": "YouChef 3.0 akcesoria w zestawie" },
+      { "src": "/images/mirko/youchef/carosello/6.png", "alt": "YouChef 3.0 gotowe danie" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Automatyczny dozownik:", "description": "6 komór, które dozują składniki w odpowiednim momencie. Ty nie dotykasz niczego." },
+      { "title": "45 funkcji w jednym urządzeniu:", "description": "gotuje, smaży, wyrabia ciasto, miksuje, paruje, robi jogurt, wolno gotuje. Zastępuje 10 urządzeń." },
+      { "title": "Ekran dotykowy 7 cali:", "description": "prowadzi Cię krok po kroku. Wybierz przepis i postępuj zgodnie z instrukcjami na ekranie." },
+      { "title": "Misa ceramiczna z powłoką nieprzywierającą:", "description": "nic się nie przykleja, czyści się w 30 sekund. Można myć w zmywarce." },
+      { "title": "Wbudowana waga co do grama:", "description": "sam waży wszystko, porcje zawsze wychodzą idealne. Koniec z miarkami i wagami zewnętrznymi." },
+      { "title": "Aplikacja z 1000+ przepisami:", "description": "wybierz danie z aplikacji, naciśnij start i on gotuje. Dostępna też funkcja 'Co mam w lodówce'." },
+      { "title": "Gotowanie do 180°C:", "description": "smaży, podpiecze i gotuje jak prawdziwa patelnia. Rezultaty jak z restauracji." },
+      { "title": "System OneClick:", "description": "zmiana akcesorium w sekundę bez demontażu. Zawsze gotowy na następny przepis." },
+      { "title": "Pojemność rodzinna 3,3 litra:", "description": "obfite porcje dla całej rodziny, od 2 do 6 osób." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "YouChef 3.0™",
+    "originalPriceLabel": "Cena katalogowa:",
+    "discountLabel": "OSZCZĘDZASZ 389 zł (-50%)",
+    "shippingLabel": "Szybka Wysyłka:",
+    "shippingValue": "Gratis",
+    "guaranteeLabel": "Gwarancja 2 Lata",
+    "offerToggleText": "Zobacz, co zawiera oferta",
+    "offerItems": [
+      { "text": "YouChef 3.0™ — Robot Kuchenny 45 Funkcji", "badge": null },
+      { "text": "Misa Ceramiczna z Powłoką Nieprzywierającą 3,3L", "badge": null },
+      { "text": "Automatyczny Dozownik QuickSense™", "badge": null },
+      { "text": "Łopatka Sauté do risotta i sosów", "badge": null },
+      { "text": "Parowar XL na 2 Poziomy", "badge": null },
+      { "text": "Zestaw Ostrzy + Trzepaczka + Łyżka", "badge": null },
+      { "text": "Aplikacja Premium z 1000+ Przepisami", "badge": "GRATIS" },
+      { "text": "Gwarancja 2 Lata + Dedykowane Wsparcie", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ZAMÓW TERAZ",
+    "mainSubtext": "Płatność Gotówką przy Odbiorze",
+    "subNote": "Zero ryzyka: płacisz dopiero, gdy otrzymasz paczkę"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Płatność przy Odbiorze", "color": "green" },
+      { "icon": "truck", "text": "Wysyłka 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Dni na Zwrot", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Rozpoznajesz to?",
+    "title": "Te problemy brzmią znajomo?",
+    "items": [
+      { "icon": "fatigue", "titleBold": "Wracasz do domu zmęczony i nie wiesz, co ugotować", "text": "i zawsze kończysz zamawiając jedzenie na wynos lub jedząc to, co wpadnie pod rękę." },
+      { "icon": "timer", "titleBold": "Gotowanie zabiera Ci cały wieczór", "text": "między przygotowaniem, gotowaniem i sprzątaniem znikają dwie godziny, zanim się obejrzysz." },
+      { "icon": "warning", "titleBold": "Potrawy nigdy nie wychodzą tak, jak chcesz", "text": "przypalone, bez smaku lub zbyt skomplikowane. A do tego te garnki do mycia za każdym razem." }
+    ],
+    "solutionTitle": "Jest lepsze rozwiązanie.",
+    "solutionText": "Robot, który gotuje za Ciebie, od pierwszego do ostatniego kroku. Ty ładujesz składniki, a on robi resztę."
+  },
+
+  "features": {
+    "eyebrow": "Dlaczego jest inny",
+    "title": "Jakbyś miał szefa kuchni w domu, ale bez płacenia.",
+    "items": [
+      {
+        "image": "/images/mirko/youchef/angle/1.png",
+        "imageAlt": "Automatyczny dozownik",
+        "tag": "JEDYNY NA ŚWIECIE",
+        "tagColor": "green",
+        "title": "Sam Dodaje Składniki",
+        "description": "Automatyczny dozownik ma 6 komór. Dozuje je do misy w odpowiednim momencie, w dokładnych ilościach. Ty nie musisz nic robić podczas gotowania."
+      },
+      {
+        "image": "/images/mirko/youchef/angle/2.png",
+        "imageAlt": "Ekran dotykowy 7 cali",
+        "tag": "PEŁNA PROSTOTA",
+        "tagColor": "blue",
+        "title": "Ekran 7 Cali, Który Cię Prowadzi",
+        "description": "Duży i czytelny ekran dotykowy. Mówi Ci, co załadować, ile odmierzyć i kiedy gotowe. Postępuj zgodnie z instrukcjami, a rezultat gwarantowany w 100%."
+      },
+      {
+        "image": "/images/mirko/youchef/angle/3.png",
+        "imageAlt": "Funkcja opróżnij lodówkę",
+        "tag": "ZERO MARNOWANIA",
+        "tagColor": "orange",
+        "title": "Funkcja 'Co Mam w Lodówce'",
+        "description": "Wpisz w aplikacji, co masz w lodówce, a on stworzy idealny przepis. Koniec z wyrzucaniem jedzenia, koniec z niepotrzebnymi zakupami."
+      },
+      {
+        "image": "/images/mirko/youchef/angle/4.png",
+        "imageAlt": "Misa ceramiczna z powłoką nieprzywierającą",
+        "tag": "ZERO WYSIŁKU",
+        "tagColor": "green",
+        "title": "Ceramiczna Powłoka, Czyszczenie w 30 Sekund",
+        "description": "Ceramiczna misa, do której nic nie przywiera. Wszystko spływa po jednym przetarciu gąbką. Można też myć w zmywarce."
+      },
+      {
+        "image": "/images/mirko/youchef/angle/5.png",
+        "imageAlt": "45 funkcji w jednym",
+        "tag": "WSZYSTKO W JEDNYM",
+        "tagColor": "blue",
+        "title": "45 Funkcji, Jedno Urządzenie",
+        "description": "Siekanie, wyrabianie ciasta, gotowanie na parze, smażenie do 180°C, jogurt, wolne gotowanie i wiele więcej. Zastępuje 10 różnych urządzeń kuchennych."
+      },
+      {
+        "image": "/images/mirko/youchef/angle/6.png",
+        "imageAlt": "Rezultaty jak od szefa kuchni",
+        "tag": "PROFESJONALNE REZULTATY",
+        "tagColor": "orange",
+        "title": "Rezultaty Jak od Szefa Kuchni, Zero Doświadczenia",
+        "description": "Aksamitne kremy, idealne ciasta, gęste i aromatyczne sosy. Wszystko automatycznie, nawet jeśli nigdy w życiu nie gotowałeś."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Banalnie proste",
+    "title": "Jak to działa? 3 kroki i jesz.",
+    "image": "",
+    "imageAlt": "Jak to działa",
+    "steps": [
+      { "title": "Załaduj", "description": "Włóż składniki do 6 komór dozownika. Waga waży wszystko automatycznie." },
+      { "title": "Wybierz", "description": "Wybierz przepis na ekranie 7 cali lub z aplikacji. Ponad 1000 gotowych dań." },
+      { "title": "Odpocznij", "description": "On dozuje, gotuje, miesza i powiadamia, gdy gotowe. Ty nie robisz nic." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ZAMÓW TERAZ Z 50% RABATEM",
+    "subtext": "Płatność Gotówką przy Odbiorze"
+  },
+
+  "specs": {
+    "eyebrow": "Specyfikacja",
+    "title": "Parametry Techniczne",
+    "items": [
+      { "label": "Funkcje", "value": "45 trybów gotowania i przygotowania" },
+      { "label": "Ekran", "value": "Dotykowy 7\" SoftScreen" },
+      { "label": "Pojemność misy", "value": "3,3 litra (rodzina 4-6 osób)" },
+      { "label": "Materiał misy", "value": "Ceramika z powłoką nieprzywierającą" },
+      { "label": "Automatyczny dozownik", "value": "6 komór z programowalnym dozowaniem" },
+      { "label": "Temperatura gotowania", "value": "Do 180°C (w tym smażenie)" },
+      { "label": "Wbudowana waga", "value": "Precyzja co do grama" },
+      { "label": "Aplikacja", "value": "1000+ przepisów z instrukcją krok po kroku" },
+      { "label": "Czyszczenie", "value": "Samoczyszczenie + zmywarka" },
+      { "label": "Certyfikaty", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Porównanie",
+    "title": "Jakie korzyści zyskujesz w porównaniu z alternatywami?",
+    "featureColumn": "Cecha",
+    "winnerBadge": "ZWYCIĘZCA",
+    "productColumn": "YouChef 3.0™",
+    "competitorColumn": "Inne roboty kuchenne",
+    "rows": [
+      { "feature": "Dozowanie składników", "product": "Automatyczne (6 komór)", "competitor": "Ręczne za każdym razem" },
+      { "feature": "Funkcje", "product": "45 pełnych funkcji", "competitor": "12-20 podstawowych funkcji" },
+      { "feature": "Ekran", "product": "7 cali dotykowy", "competitor": "Mały lub brak" },
+      { "feature": "Aplikacja + Opróżnij Lodówkę", "product": "1000+ przepisów w zestawie", "competitor": "Mało przepisów lub brak" },
+      { "feature": "Misa", "product": "Ceramiczna nieprzywierająca 3,3L", "competitor": "Stalowa (przywiera) 2,2L" },
+      { "feature": "Czyszczenie", "product": "Samoczyszczenie + zmywarka", "competitor": "Tylko ręczne" },
+      { "feature": "Koszt", "product": "Tylko 389 zł (jednorazowo)", "competitor": "800-2000 zł" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Wszystko w zestawie",
+    "title": "Co otrzymasz do domu",
+    "items": [
+      { "icon": "box", "text": "YouChef 3.0™ — Robot Kuchenny 45 Funkcji", "value": "778 zł", "valueType": "price" },
+      { "icon": "box", "text": "Misa Ceramiczna z Powłoką Nieprzywierającą 3,3L", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "box", "text": "Automatyczny Dozownik QuickSense™", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "box", "text": "Łopatka Sauté do risotta i sosów", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "box", "text": "Parowar XL na 2 Poziomy", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "box", "text": "Zestaw Ostrzy + Trzepaczka + Łyżka", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "gift", "text": "Aplikacja Premium z 1000+ Przepisami", "value": "GRATIS", "valueType": "gift" },
+      { "icon": "shield", "text": "Gwarancja 2 Lata + Dedykowane Wsparcie", "value": "W ZESTAWIE", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Cena katalogowa:",
+    "totalOriginalValue": "778 zł",
+    "totalCurrentLabel": "Dziś płacisz tylko:",
+    "totalCurrentValue": "389 zł",
+    "totalSave": "Oszczędzasz 389 zł · Wysyłka GRATIS",
+    "ctaText": "ZAMÓW TERAZ"
+  },
+
+  "reviews": {
+    "eyebrow": "Co mówią o Nas",
+    "title": "Zweryfikowane Opinie",
+    "rating": "4.8",
+    "totalCount": "18 739 opinii",
+    "verifiedNote": "Opinie są weryfikowane przez niezależny zespół zewnętrzny wobec tej strony.",
+    "showMoreText": "Pokaż więcej opinii",
+    "leaveReviewText": "Zostaw opinię",
+    "verifiedBadge": "Zweryfikowany zakup",
+    "sellerReplyLabel": "Odpowiedź sprzedawcy:",
+    "items": [
+      {
+        "initials": "AK",
+        "name": "Anna Kowalska",
+        "stars": 5,
+        "text": "Nigdy nie umiałam gotować, a z tym urządzeniem robię dania, których wcześniej bym nawet nie próbowała. Wkładam składniki, wybieram przepis i on robi wszystko. Mój mąż nie mógł uwierzyć, gdy spróbował risotto.",
+        "image": "/images/mirko/youchef/recensioni/1.jpg",
+        "verified": true,
+        "sellerReply": "Anna, risotto to jedno z najbardziej cenionych dań przez naszych klientów! Cieszymy się, że odkrywa Pani nowe przepisy. Dziękujemy za zaufanie."
+      },
+      {
+        "initials": "PW",
+        "name": "Piotr Wiśniewski",
+        "stars": 5,
+        "text": "pracuję do późna i wieczorem nie miałem siły gotować, jadłem same byle co. teraz ładuję wszystko rano, a wieczorem naciskam guzik. w pół godziny kolacja gotowa dla całej rodziny. wysyłka błyskawiczna nawiasem mówiąc",
+        "image": "/images/mirko/youchef/recensioni/2.jpg",
+        "verified": true,
+        "sellerReply": "Piotr, to dokładnie idealne zastosowanie: przygotować rano i gotować wieczorem jednym przyciskiem. Cieszymy się, że działa dla całej rodziny!"
+      },
+      {
+        "initials": "MN",
+        "name": "Małgorzata Nowak",
+        "stars": 5,
+        "text": "Mam 63 lata i technologia to nie moja mocna strona. Ale ekran jest duży, mówi ci co robić krok po kroku. Porcje też wychodzą idealne, bo waga waży wszystko. Moje wnuki uwielbiają to, co teraz gotuję.",
+        "image": "/images/mirko/youchef/recensioni/3.jpg",
+        "verified": true,
+        "sellerReply": "Małgorzato, to nas bardzo cieszy! Ekran 7 cali został zaprojektowany tak, aby był czytelny i intuicyjny. Pozdrowienia dla wnuków!"
+      },
+      {
+        "initials": "TK",
+        "name": "Tomasz Kamiński",
+        "stars": 4,
+        "text": "na razie daję 4 gwiazdki, bo testuję go od niedawna, ale muszę przyznać, że automatyczny dozownik to genialne rozwiązanie. dodaje składniki w odpowiednim momencie i nie musisz stać i pilnować. przepisy z aplikacji są świetne, wypróbuję jeszcze więcej",
+        "verified": true,
+        "sellerReply": "Tomasz, doceniamy ostrożność. Dozownik to rzeczywiście funkcja, która robi różnicę. Jesteśmy pewni, że w ciągu kilku tygodni gwiazdek będzie 5!"
+      },
+      {
+        "initials": "KZ",
+        "name": "Katarzyna Zielińska",
+        "stars": 5,
+        "text": "ceramiczna powłoka nieprzywierająca jest rewelacyjna, nic się nie przykleja i czyści się jednym ruchem gąbki. wcześniej ze starym robotem mycie misy było koszmarem. przyszło w dwa dni, zapłaciłam kurierowi bez żadnego problemu",
+        "verified": true,
+        "sellerReply": "Katarzyna, misa ceramiczna to jedno z najbardziej docenianych ulepszeń. Zero pozostałości, zero wysiłku. Dziękujemy za opinię!"
+      },
+      {
+        "initials": "AL",
+        "name": "Andrzej Lewandowski",
+        "stars": 5,
+        "text": "Kupowałem wcześniej inne roboty, które miały 10-12 funkcji i kosztowały więcej. Ten ma 45 i kosztuje mniej. Parowar na dwóch poziomach jest mega wygodny, robię warzywa i rybę jednocześnie.",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "ED",
+        "name": "Ewa Dąbrowska",
+        "stars": 5,
+        "text": "z trójką dzieci i pracą na pełen etat gotowanie stało się koszmarem. teraz kolacja robi się sama. korzystam z funkcji co mam w lodówce prawie co wieczór i podpowiada mi przepisy z tego, co mam. genialne",
+        "verified": true,
+        "sellerReply": "Ewa, funkcja opróżnij lodówkę jest stworzona właśnie dla osób, które mają mało czasu i nie chcą marnować jedzenia. Cieszymy się, że wykorzystuje Pani ją na maksa!"
+      },
+      {
+        "initials": "KS",
+        "name": "Krzysztof Szymański",
+        "stars": 5,
+        "text": "Jestem singlem i gotowanie dla mnie zawsze było problemem. Albo za dużo, albo za mało. Z wbudowaną wagą porcje wychodzą idealne dla jednej osoby. A jak mam gości, podwajam i wszystko wychodzi tak samo idealnie.",
+        "verified": true,
+        "sellerReply": "Krzysztof, waga co do grama jest idealna właśnie do precyzyjnych porcji. Czy to dla jednego, czy dla sześciu, rezultaty są zawsze takie same. Dziękujemy!"
+      },
+      {
+        "initials": "BW",
+        "name": "Barbara Wójcik",
+        "stars": 5,
+        "text": "używam go codziennie od miesiąca i nie wrócę do starego sposobu. robiłam nawet jogurt i chleb. wcześniej kupowałam wszystko w sklepie i wydawałam fortunę. zwrócił mi się w trzy tygodnie",
+        "verified": true,
+        "sellerReply": "Barbara, domowy jogurt i chleb to zupełnie inny poziom! I ma Pani rację, oszczędności z czasem są znaczące. Dziękujemy za zaufanie."
+      },
+      {
+        "initials": "MJ",
+        "name": "Marek Jankowski",
+        "stars": 5,
+        "text": "Byłem sceptyczny, bo w tej cenie myślałem, że to zabawka. Zmieniłem zdanie po pierwszej kolacji. Mięso jest ugotowane perfekcyjnie, a sosy kremowe jak w restauracji. Najlepszy zakup ostatnich lat.",
+        "verified": true,
+        "sellerReply": "Marek, rozumiemy początkowy sceptycyzm, ale jakość mówi sama za siebie. Cieszymy się, że zmienił Pan zdanie już pierwszego wieczoru!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Zostaw swoją opinię",
+    "nameLabel": "Twoje imię",
+    "namePlaceholder": "Np. Jan Kowalski",
+    "ratingLabel": "Ocena",
+    "textLabel": "Twoja opinia",
+    "textPlaceholder": "Opisz swoje doświadczenie...",
+    "submitText": "Wyślij Opinię",
+    "successTitle": "Dziękujemy za Twoją opinię!",
+    "successText": "Twoja opinia oczekuje na zatwierdzenie przez niezależny zespół zewnętrzny wobec tej strony. Opinie pozostawione przez osoby, które nie kupiły produktu, nie zostaną opublikowane — w celu uniknięcia nieautentycznych opinii.",
+    "closeText": "Zamknij"
+  },
+
+  "orderForm": {
+    "eyebrow": "Formularz Zamówienia",
+    "title": "Złóż swoje zamówienie",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Oferta -50% wygasa za:",
+    "stockWarning": "Tylko <strong>8 sztuk</strong> pozostało w tej cenie",
+    "summaryTitle": "Podsumowanie Zamówienia",
+    "summaryLines": [
+      { "label": "YouChef 3.0™ + Akcesoria", "value": "389 zł", "type": "normal" },
+      { "label": "Szybka wysyłka 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Opłata za pobranie", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "RAZEM",
+    "totalValue": "389 zł",
+    "fields": {
+      "name": { "label": "Imię i Nazwisko *", "placeholder": "Np. Jan Kowalski" },
+      "phone": { "label": "Numer Telefonu *", "placeholder": "Np. 500 123 456" },
+      "address": { "label": "Adres Wysyłki *", "placeholder": "Ulica, Numer, Miasto, Kod pocztowy" }
+    },
+    "phoneNote": "Skontaktujemy się telefonicznie lub przez WhatsApp w celu potwierdzenia zamówienia.",
+    "paymentBadge": "Płatność przy Odbiorze — Płacisz gotówką kurierowi. Zero zaliczki.",
+    "submitText": "POTWIERDŹ ZAMÓWIENIE",
+    "submitSubtext": "Płatność Gotówką przy Odbiorze",
+    "reassurance": "Dane chronione · SSL 256-bit · Bez opłat z góry"
+  },
+
+  "faq": {
+    "eyebrow": "Najczęściej zadawane pytania",
+    "title": "Masz jeszcze wątpliwości? Oto odpowiedzi.",
+    "items": [
+      { "question": "Jak mogę złożyć zamówienie?", "answer": "Kliknij przycisk zakupu, wypełnij formularz swoimi danymi i potwierdź zamówienie. Skontaktujemy się telefonicznie lub przez WhatsApp w celu potwierdzenia, a paczkę otrzymasz wygodnie do domu z płatnością gotówką." },
+      { "question": "Jak działa wysyłka?", "answer": "Wysyłka jest całkowicie bezpłatna. Od momentu potwierdzenia zamówienia dostawa zajmuje około 24/48h roboczych." },
+      { "question": "A jeśli mi się nie spodoba?", "answer": "Możesz poprosić o pełny zwrot pieniędzy, odsyłając produkt w ciągu 30 dni od dostawy. Przyjedziemy po paczkę i zwrócimy całą wydaną kwotę." },
+      { "question": "A jeśli mam problem po 30 dniach?", "answer": "Spokojnie, wszystkie nasze produkty objęte są 2-letnią gwarancją." },
+      { "question": "Jak mogę poprosić o zwrot lub pomoc?", "answer": "Aby poprosić o pomoc lub zwrot po złożeniu zamówienia, możesz skorzystać z formularza kontaktowego na stronie lub napisać na adres e-mail podany w stopce." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "778 zł",
+    "newPrice": "389 zł",
+    "buttonText": "ZAMÓW TERAZ",
+    "buttonSubtext": "Płać przy Odbiorze"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 389,
+    "conversionCurrency": "PLN",
+    "facebookPixelId": "1576025786901423",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "uid": "",
+      "key": "",
+      "lpId": "",
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=635&uid=019855d0-397a-72ee-8df5-c5026966105a&lp=635"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Poprzedni",
+    "nextSlide": "Następny",
+    "thumbnail": "Miniatura",
+    "close": "Zamknij"
+  },
+
+  "ty": {
+    "title": "Zamówienie Potwierdzone!",
+    "subtitle": "Twoje zamówienie zostało pomyślnie przyjęte.",
+    "orderNumberLabel": "Nr zamówienia:",
+    "summaryTitle": "Podsumowanie Zamówienia",
+    "accessoriesLabel": "+ Akcesoria w zestawie",
+    "totalLabel": "SUMA DO ZAPŁATY",
+    "paymentNote": "Płatność gotówką kurierowi — bez zaliczki",
+    "yourDataTitle": "Twoje Dane",
+    "nameLabel": "Imię",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adres",
+    "nextStepsTitle": "Co teraz się wydarzy?",
+    "message": "Skontaktujemy się telefonicznie lub przez WhatsApp, aby potwierdzić zamówienie i ustalić dostawę.",
+    "steps": [
+      "Otrzymasz telefon lub wiadomość WhatsApp z potwierdzeniem",
+      "Paczka zostanie wysłana w 24/48h",
+      "Płacisz gotówką kurierowi przy odbiorze"
+    ],
+    "footerText": "Gwarancja 2 Lata · 30 Dni na Zwrot · Dedykowane Wsparcie"
+  }
+}

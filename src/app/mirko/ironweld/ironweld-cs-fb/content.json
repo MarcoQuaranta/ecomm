@@ -1,0 +1,421 @@
+{
+  "seo": {
+    "title": "Bowek Ironweld™ - Svařte jakýkoliv kov za 5 minut",
+    "description": "Přenosná invertorová svářečka IGBT o hmotnosti 1,5 kg. Výkon od 20 do 120A, Hot Start, kompletní PRO sada v balení. Doprava zdarma, platba na dobírku."
+  },
+
+  "pricing": {
+    "currency": "CZK",
+    "currencySymbol": "Kč",
+    "originalPrice": 3749.00,
+    "currentPrice": 2499.00,
+    "discountPercent": 33
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Pozor: Vysoká poptávka —",
+    "highlight": "Posledních 8 kusů skladem",
+    "suffix": "za tuto cenu"
+  },
+
+  "hero": {
+    "badge": "Technologie 2026",
+    "title": "Svařte cokoliv",
+    "titleHighlight": "jednou rukou.",
+    "titleSuffix": "1,5 kg. Domácí zásuvka. Nulová zkušenost.",
+    "subtitle": "Invertorová svářečka z dílny v <strong>kapesním formátu</strong>. Zapojte, nastavte, svařte. Funguje <strong>na první pokus</strong>.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "14 729 ověřených recenzí"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-33%",
+    "slides": [
+      { "src": "/images/mirko/ironweld/carosello/1.webp", "alt": "Bowek Ironweld pohled zepředu" },
+      { "src": "/images/mirko/ironweld/carosello/2.webp", "alt": "Bowek Ironweld při použití" },
+      { "src": "/images/mirko/ironweld/carosello/3.webp", "alt": "Bowek Ironweld detail panelu" },
+      { "src": "/images/mirko/ironweld/carosello/4.webp", "alt": "Bowek Ironweld kompletní sada" },
+      { "src": "/images/mirko/ironweld/carosello/5.webp", "alt": "Bowek Ironweld kufřík" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Inverter IGBT:", "description": "stabilní oblouk, čistý svar, žádné rozstřiky" },
+      { "title": "Hot Start:", "description": "oblouk se zapálí na první pokus, žádné přilepování" },
+      { "title": "20-120A regulace:", "description": "od tenkého po těžký materiál, jeden stroj na vše" },
+      { "title": "Pouze 1,5 kg:", "description": "svařujte vertikálně, nad hlavou, kdekoliv" },
+      { "title": "Ochrana proti přehřátí:", "description": "automatické vypnutí, nezastaví vás uprostřed práce" },
+      { "title": "Domácí zásuvka + 10m prodlužka:", "description": "žádný třífázový proud, automatické navíjení" },
+      { "title": "Standardní elektrody 2,5-3,2 mm:", "description": "koupíte je v každém železářství" },
+      { "title": "Kompletní PRO sada:", "description": "maska, rukavice, 20 elektrod, magnety, prodlužka" }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "Bowek Ironweld™",
+    "originalPriceLabel": "Běžná cena:",
+    "discountLabel": "UŠETŘÍTE -33%",
+    "shippingLabel": "Rychlé doručení:",
+    "shippingValue": "ZDARMA",
+    "guaranteeLabel": "Záruka 2 roky",
+    "offerToggleText": "Zjistěte, co nabídka obsahuje",
+    "offerItems": [
+      { "text": "Bowek Ironweld™ — Invertorová svářečka IGBT", "badge": null },
+      { "text": "Pevný kufřík odolný proti nárazům", "badge": null },
+      { "text": "Zemnící kabel + svorka Heavy-Duty", "badge": null },
+      { "text": "20 elektrod E6013 2,5 mm", "badge": null },
+      { "text": "Samozatmívací svařovací maska", "badge": "DÁREK" },
+      { "text": "Svařovací rukavice z hovězí kůže", "badge": "DÁREK" },
+      { "text": "Ocelový kartáč + svářecí kladívko (2v1)", "badge": "DÁREK" },
+      { "text": "2 úhlové magnety 45°/90°", "badge": "DÁREK" },
+      { "text": "Prodlužovací kabel 10m s automatickým navíjením", "badge": "DÁREK" },
+      { "text": "Návod k použití ve 48 jazycích", "badge": null },
+      { "text": "Záruka 2 roky + zákaznická podpora", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "OBJEDNAT NYNÍ",
+    "mainSubtext": "Platba při převzetí",
+    "subNote": ""
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Platba na dobírku", "color": "green" },
+      { "icon": "truck", "text": "Doručení 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 dní na vrácení", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Problém",
+    "title": "Zklamávají vás levné svářečky?",
+    "items": [
+      { "icon": "money", "titleBold": "Přehřátí už po <strong>pár minutách</strong> používání", "text": "" },
+      { "icon": "warning", "titleBold": "Křehké a <strong>nerovnoměrné svary</strong>, které se lámou", "text": "" },
+      { "icon": "timer", "titleBold": "<strong>Nadměrná hmotnost</strong> a nekvalitní materiály, které se rychle opotřebí", "text": "" },
+      { "icon": "money", "titleBold": "Profesionální oprava vás stojí <strong>5 000-10 000 Kč</strong> pokaždé", "text": "" }
+    ],
+    "solutionTitle": "S Ironweld™ je to jiné.",
+    "solutionText": "Profesionální svary v 1,5 kg. Zaplatíte jednou, opravujete navždy."
+  },
+
+  "features": {
+    "eyebrow": "Proč je jiný",
+    "title": "Proměňte svou garáž v profesionální dílnu.",
+    "items": [
+      {
+        "image": "/images/mirko/ironweld/angle/1.webp",
+        "imageAlt": "Invertorová technologie IGBT",
+        "tag": "TECHNOLOGIE IGBT",
+        "tagColor": "green",
+        "title": "Inverter IGBT + regulace 20-120A",
+        "description": "IGBT inverter reguluje proud <strong>50 000krát za sekundu</strong>: stabilní oblouk, žádné rozstřiky. Otočte knoflíkem od <strong>20 do 120 Ampér</strong> podle návodu a přejdete od tenkého plechu k těžkému profilu."
+      },
+      {
+        "image": "/images/mirko/ironweld/angle/2.webp",
+        "imageAlt": "Lehká svářečka do jedné ruky",
+        "tag": "KONEC S TĚŽKÝMI STROJI",
+        "tagColor": "blue",
+        "title": "1,5 kg: Držíte ji jednou rukou a svařujete kdekoliv",
+        "description": "Vezmete ji, donesete kam potřebujete a svařujete. <strong>Nad hlavou, za profilem, v úzkých prostorech</strong>. S <strong>těžkou dílenskou svářečkou</strong> to nejde."
+      },
+      {
+        "image": "/images/mirko/ironweld/angle/3.webp",
+        "imageAlt": "Domácí zásuvka a prodlužka",
+        "tag": "ZÁSUVKA + SAMONAVÍJECÍ PRODLUŽKA",
+        "tagColor": "green",
+        "title": "Domácí zásuvka + samonavíjecí prodlužka",
+        "description": "Žádný třífázový rozvod, žádné adaptéry. Prodlužka <strong>10 metrů</strong>, která se navíjí sama. Zapojíte do zásuvky a pracujete kde potřebujete. Stabilní proud bez přerušení."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Jednoduché",
+    "title": "Zapojte, nastavte, svařte. Hotovo.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Zapojte", "description": "Zapojte do domácí zásuvky. Žádný speciální rozvod, žádný adaptér." },
+      { "title": "Nastavte", "description": "Otočte knoflíkem na správný proud. Od 20A pro tenký materiál po 120A pro těžký." },
+      { "title": "Svařte", "description": "Oblouk se zapálí stabilně, svar je čistý. I když svařujete poprvé." }
+    ]
+  },
+
+  "midCta": {
+    "text": "OBJEDNAT NYNÍ SE SLEVOU 33%",
+    "subtext": "Platba v hotovosti při převzetí"
+  },
+
+  "specs": {
+    "eyebrow": "Specifikace",
+    "title": "Technické parametry",
+    "items": [
+      { "label": "Technologie", "value": "Inverter IGBT" },
+      { "label": "Proud", "value": "20-120A (5 úrovní)" },
+      { "label": "Zapalování", "value": "Hot Arc Start" },
+      { "label": "Napájení", "value": "Standardní domácí zásuvka" },
+      { "label": "Hmotnost", "value": "~1,5 kg" },
+      { "label": "Certifikace", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Srovnání",
+    "title": "Jaké výhody získáte oproti alternativám?",
+    "featureColumn": "Vlastnost",
+    "winnerBadge": "VÍTĚZ",
+    "productColumn": "Bowek Ironweld™",
+    "competitorColumn": "Těžká svářečka / Svářeč",
+    "rows": [
+      { "feature": "Hmotnost", "product": "✔ ~1,5 kg, jedna ruka", "competitor": "15-25 kg, musíte táhnout" },
+      { "feature": "Zapalování", "product": "✔ Hot Start, zapálí hned", "competitor": "Elektroda se přilepí" },
+      { "feature": "Napájení", "product": "✔ Domácí zásuvka + prodlužka", "competitor": "Třífázový rozvod" },
+      { "feature": "Úzké prostory", "product": "✔ Svařujete kdekoliv", "competitor": "Nedostanete se tam" },
+      { "feature": "Příslušenství", "product": "✔ 9 PRO doplňků v ceně", "competitor": "Kupujete zvlášť" },
+      { "feature": "Cena", "product": "✔ Pouze 2 499 Kč (jednorázově)", "competitor": "5 000-12 000 Kč za opravu" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Vše v balení",
+    "title": "Co dostanete domů",
+    "items": [
+      { "icon": "box", "text": "Svářečka Ironweld™ Inverter IGBT", "value": "3 749 Kč", "valueType": "price" },
+      { "icon": "box", "text": "Pevný kufřík + zemnící kabel", "value": "V CENĚ", "valueType": "included" },
+      { "icon": "gift", "text": "20 elektrod E6013 + samozatmívací maska", "value": "DÁREK", "valueType": "gift" },
+      { "icon": "gift", "text": "Rukavice + kartáč/kladívko + 2 úhlové magnety", "value": "DÁREK", "valueType": "gift" },
+      { "icon": "cable", "text": "Prodlužka 10m s automatickým navíjením", "value": "DÁREK", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Běžná cena:",
+    "totalOriginalValue": "6 499 Kč",
+    "totalCurrentLabel": "Dnes zaplatíte pouze:",
+    "totalCurrentValue": "2 499 Kč",
+    "totalSave": "Ušetříte 1 250 Kč · Doručení ZDARMA",
+    "ctaText": "OBJEDNAT NYNÍ"
+  },
+
+  "reviews": {
+    "eyebrow": "Co o nás říkají",
+    "title": "Ověřené recenze",
+    "rating": "4.8",
+    "totalCount": "14 729 recenzí",
+    "verifiedNote": "✓ Recenze jsou ověřovány nezávislým externím týmem.",
+    "showMoreText": "Zobrazit další recenze",
+    "leaveReviewText": "Napsat recenzi",
+    "verifiedBadge": "Ověřený nákup",
+    "sellerReplyLabel": "Odpověď prodejce:",
+    "items": [
+      {
+        "initials": "TN",
+        "name": "Tomas Novak",
+        "stars": 5,
+        "text": "Svařil jsem bránu garáže, která byla rozbitá několik měsíců. Svářeč mi chtěl 6 000 korun, s touhle jsem to zvládl za půl hodiny a výsledek předčil mé očekávání. Oblouk je stabilní, nestříká jako levné svářečky, které jsem zkoušel předtím.",
+        "verified": true,
+        "sellerReply": "Tomáši, přesně pro tyto situace vznikl Bowek Ironweld. Jsme rádi, že vás výsledek potěšil. Pro jakékoliv dotazy jsme tu."
+      },
+      {
+        "initials": "PK",
+        "name": "Petr Kratochvil",
+        "stars": 5,
+        "text": "Používám ji v dílně na projekty z kovaného železa ve volném čase. Co mě překvapilo, je stabilita oblouku i při nízkých ampérech, na plechu 1 mm nic nepropálí. Za tu cenu je to skvělý obchod.",
+        "verified": true,
+        "sellerReply": "Petře, přesná práce při nízkém proudu je silnou stránkou technologie IGBT. Děkujeme za důvěru!"
+      },
+      {
+        "initials": "MH",
+        "name": "Martin Horak",
+        "stars": 5,
+        "text": "Potřeboval jsem svařit držák nárazníku auta a mechanik chtěl 4 500 korun. S touhle jsem to vyřešil sám na parkovišti pod domem. Neváží nic, vozím ji v kufru. Kurýr přijel za dva dny, platil jsem při převzetí.",
+        "verified": true,
+        "sellerReply": "Martine, přenosnost je její hlavní předností. Jsme rádi, že jste ušetřil čas i peníze. Hodně zdaru při svařování!"
+      },
+      {
+        "initials": "JV",
+        "name": "Jakub Vlcek",
+        "stars": 4,
+        "text": "Zatím funguje dobře, vyzkoušel jsem ji na 3mm železo a svar drží. Dávám 4 hvězdy, protože ji chci ještě chvíli používat než dám maximum, ale předpoklady jsou výborné. Knoflík na regulaci ampérů je praktický.",
+        "verified": true,
+        "sellerReply": "Jakube, oceňujeme upřímnost! S dalším používáním uvidíte, že zvládne i náročnější práce. Dejte nám vědět, rádi si přečteme vaše další hodnocení."
+      },
+      {
+        "initials": "PS",
+        "name": "Pavel Svoboda",
+        "stars": 5,
+        "text": "Objednal jsem v sobotu odpoledne, v pondělí to bylo tady. Zaplatil jsem kurýrovi bez problémů, žádné skryté poplatky. Hned jsem ji vyzkoušel na zahradním plotě a funguje skvěle. Maska v sadě je příjemný bonus.",
+        "verified": true,
+        "sellerReply": "Pavle, transparentnost v cenách je naší prioritou. Jsme rádi, že jste spokojený i s příslušenstvím!"
+      },
+      {
+        "initials": "JD",
+        "name": "Josef Dvorak",
+        "stars": 5,
+        "text": "Používám ji na chalupě k opravám zemědělského nářadí a plotů. Skvělé je, že se zapojí do jakékoliv zásuvky, nepotřebujete žádný speciální rozvod. Do kufříku se vejde vše, hodím to do auta a jedu.",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "MK",
+        "name": "Michal Kolar",
+        "stars": 5,
+        "text": "Nikdy v životě jsem nesvařoval. Podíval jsem se na pár videí a na třetí pokus to vypadalo slušně. Regulace ampérů hodně pomáhá, protože začnete pomalu a pak přidáte, když získáte jistotu. Pro začátečníka jsem spokojený.",
+        "verified": true,
+        "sellerReply": "Michale, možnost začít od 20 Ampér je navržena právě pro začátečníky. Uvidíte, že se budete rychle zlepšovat. Děkujeme za recenzi!"
+      },
+      {
+        "initials": "KP",
+        "name": "Katerina Prochazkova",
+        "stars": 5,
+        "text": "Koupila jsem ji, protože mě nebaví čekat a platit pokaždé za věci, které se dají vyřešit za deset minut. Svařila jsem nohu zahradního stolu a držák branky. Jednoduchá na ovládání, lehká, vejde se do komory.",
+        "verified": true,
+        "sellerReply": "Kateřino, nezávislost v drobných opravách má obrovskou hodnotu. Děkujeme za důvěru a přejeme hodně zdaru!"
+      },
+      {
+        "initials": "JB",
+        "name": "Jan Benes",
+        "stars": 5,
+        "text": "Jsem elektrikář v důchodu a mohu říct, že na domácí práce tahle dělá svou práci na výbornou. IGBT inverter drží oblouk stabilní i při kolísání sítě. Za tu cenu je velmi poctivá.",
+        "verified": true,
+        "sellerReply": "Jane, uznání od profesionála z oboru je tím největším komplimentem. Děkujeme!"
+      },
+      {
+        "initials": "LP",
+        "name": "Lukas Pospisil",
+        "stars": 5,
+        "text": "Loni jsem si koupil levnou svářečku na internetu a byla na nic, oblouk pořád vyhasínal. Tohle je úplně jiná liga, rozdíl poznáte okamžitě. A sada s maskou a elektrodami je velká výhoda, protože nemusíte kupovat nic dalšího.",
+        "verified": true,
+        "sellerReply": "Lukáši, rozdíl je v technologii IGBT inverteru, který zajišťuje konstantní oblouk. Jsme rádi, že jste si zlepšení všiml!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Napište svou recenzi",
+    "nameLabel": "Vaše jméno",
+    "namePlaceholder": "Např. Jan Novák",
+    "ratingLabel": "Hodnocení",
+    "textLabel": "Vaše recenze",
+    "textPlaceholder": "Podělte se o svou zkušenost...",
+    "submitText": "Odeslat recenzi",
+    "successTitle": "Děkujeme za vaši recenzi!",
+    "successText": "Vaše recenze čeká na schválení nezávislým externím týmem. Recenze od osob, které produkt nezakoupily, nebudou zveřejněny, abychom předešli neautentickým hodnocením.",
+    "closeText": "Zavřít"
+  },
+
+  "orderSteps": {
+    "eyebrow": "JAK OBJEDNAT",
+    "title": "Objednejte ve 3 jednoduchých krocích",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Vyplňte formulář",
+        "description": "Zadejte své údaje do objednávkového formuláře níže."
+      },
+      {
+        "icon": "phone",
+        "title": "Telefonické potvrzení",
+        "description": "Zavoláme vám nebo vás kontaktujeme přes WhatsApp pro potvrzení údajů."
+      },
+      {
+        "icon": "cash",
+        "title": "Zaplaťte při převzetí",
+        "description": "Za 24/48h vám kurýr doručí zásilku. Platíte hotově při převzetí."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Objednávkový formulář",
+    "title": "Dokončete svou objednávku",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Sleva -33% vyprší za:",
+    "stockWarning": "Pouze <strong>8 kusů</strong> zbývá za tuto cenu",
+    "summaryTitle": "Souhrn objednávky",
+    "summaryLines": [
+      { "label": "Bowek Ironweld™ + příslušenství", "value": "2 499 Kč", "type": "normal" },
+      { "label": "Rychlé doručení 24/48h", "value": "ZDARMA", "type": "free" },
+      { "label": "Dobírka", "value": "ZDARMA", "type": "free" }
+    ],
+    "totalLabel": "CELKEM",
+    "totalValue": "2 499 Kč",
+    "fields": {
+      "name": { "label": "Jméno a příjmení *", "placeholder": "Např. Jan Novák" },
+      "phone": { "label": "Telefonní číslo *", "placeholder": "Např. +420 123 456 789" },
+      "address": { "label": "Doručovací adresa *", "placeholder": "Ulice, číslo, město, PSČ" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "POTVRDIT OBJEDNÁVKU",
+    "submitSubtext": "Platba hotově při převzetí",
+    "reassurance": "Doručení 24/48h · Záruka 1 rok · Zákaznická podpora<br><strong>Žádná karta není potřeba.</strong> Zavoláme vám pro potvrzení."
+  },
+
+  "faq": {
+    "eyebrow": "Časté dotazy",
+    "title": "Máte ještě otázky? Zde jsou odpovědi.",
+    "items": [
+      { "question": "Jak mohu objednat?", "answer": "Klikněte na tlačítko objednávky, vyplňte formulář se svými údaji a potvrďte objednávku. Budeme vás kontaktovat telefonicky nebo přes WhatsApp pro potvrzení a zásilku pohodlně obdržíte domů s platbou v hotovosti." },
+      { "question": "Jak funguje doručení?", "answer": "Doručení je zcela zdarma. Od potvrzení objednávky trvá doručení přibližně 24/48 pracovních hodin." },
+      { "question": "Co když se mi nebude líbit?", "answer": "Můžete požádat o plnou náhradu vrácením produktu do 30 dnů od doručení. Přijedeme pro zásilku a vrátíme vám celou zaplacenou částku." },
+      { "question": "Co když mám problém po 30 dnech?", "answer": "Žádný strach, všechny naše produkty mají 2letou záruku." },
+      { "question": "Jak mohu požádat o vrácení nebo podporu?", "answer": "Pro podporu nebo vrácení po objednání můžete využít kontaktní formulář na webu nebo e-mail uvedený v patičce stránky." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "3 749 Kč",
+    "newPrice": "2 499 Kč",
+    "buttonText": "OBJEDNAT NYNÍ",
+    "buttonSubtext": "Platba při převzetí"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 2499,
+    "conversionCurrency": "CZK",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Předchozí",
+    "nextSlide": "Další",
+    "thumbnail": "Miniatura",
+    "close": "Zavřít"
+  },
+
+  "ty": {
+    "title": "Objednávka potvrzena!",
+    "subtitle": "Vaše objednávka byla úspěšně přijata.",
+    "orderNumberLabel": "Č. objednávky:",
+    "summaryTitle": "Souhrn objednávky",
+    "accessoriesLabel": "+ Příslušenství v ceně",
+    "totalLabel": "CELKEM K ÚHRADĚ",
+    "paymentNote": "Platba v hotovosti kurýrovi — žádná záloha",
+    "yourDataTitle": "Vaše údaje",
+    "nameLabel": "Jméno",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Co se stane dál?",
+    "message": "Budeme vás kontaktovat telefonicky nebo přes WhatsApp pro potvrzení objednávky a doručení.",
+    "steps": [
+      "Obdržíte potvrzovací hovor nebo zprávu přes WhatsApp",
+      "Zásilka bude odeslána do 24/48h",
+      "Zaplatíte hotově kurýrovi při převzetí"
+    ],
+    "footerText": "Záruka 2 roky · 30 dní na vrácení · Zákaznická podpora"
+  }
+}

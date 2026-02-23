@@ -1,0 +1,411 @@
+{
+  "seo": {
+    "title": "PowerWind X™ - Režite kupinu, travu i grančice bez zastoja",
+    "description": "Akumulatorski trimmer s pametnim motorom koji sam pojačava snagu. Kompletan set s 4 oštrice, rubni trimmer, 2 baterije. Besplatna dostava."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 104.00,
+    "currentPrice": 69.00,
+    "discountPercent": 34
+  },
+
+  "topBar": {
+    "text": "Besplatna dostava 24/48h · Plaćanje pouzećem · Jamstvo 2 godine"
+  },
+
+  "urgencyBanner": {
+    "text": "Pažnja: Velika potražnja —",
+    "highlight": "Posljednjih 8 komada dostupno",
+    "suffix": "po ovoj cijeni"
+  },
+
+  "hero": {
+    "badge": "Inovacija 2026",
+    "title": "Režite kupinu, visoku travu i grančice",
+    "titleHighlight": "bez ikakvih zastoja:",
+    "titleSuffix": "Prvi trimmer koji misli umjesto vas",
+    "subtitle": "Pametni motor koji sam regulira snagu. 4 oštrice uključene u cijenu, 2 baterije, rubni trimmer i kovčeg. Uključite i režite, sve radi sam.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.743 zadovoljnih kupaca"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-34%",
+    "slides": [
+      { "src": "/images/mirko/powerwind/carosello/1.webp", "alt": "PowerWind X potpuni prikaz" },
+      { "src": "/images/mirko/powerwind/carosello/2.webp", "alt": "PowerWind X u upotrebi" },
+      { "src": "/images/mirko/powerwind/carosello/3.webp", "alt": "PowerWind X detalj glave" },
+      { "src": "/images/mirko/powerwind/carosello/4.webp", "alt": "PowerWind X uključeni dodaci" },
+      { "src": "/images/mirko/powerwind/carosello/5.webp", "alt": "PowerWind X baterije i punjač" },
+      { "src": "/images/mirko/powerwind/carosello/6.webp", "alt": "PowerWind X rubni trimmer" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Nikad se ne zaglavlja:", "description": "motor SmartTorque sam pojačava snagu kad naiđe na kupinu i visoku travu." },
+      { "title": "Nit za rezanje: napuni se za 10 sekundi:", "description": "najlonska nit koja reže travu se troši upotrebom. Ubacite novu, udarite o tlo i sama se namota. Bez rastavljanja." },
+      { "title": "Oslobađa se jednim klikom:", "description": "tipka Reverse odmah oslobađa nit i zaglavljenu travu." },
+      { "title": "Savršeni rubovi kao od vrtlara:", "description": "rubni trimmer s vodećim kotačićem za besprijekorne nogostupe i staze." },
+      { "title": "Bez stanki:", "description": "2 baterije uključene. Jedna radi, druga se puni. Radite koliko želite." },
+      { "title": "Dohvatite svaki kutak:", "description": "produžuje se od 71 do 210 cm. Dohvatite ispod živice i nezgodna mjesta bez saginjanja." },
+      { "title": "Potpuna udobnost na ramenima:", "description": "dvostruki remenski sustav s podstavom koji raspoređuje težinu. Radite satima bez umora." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "PowerWind X™",
+    "originalPriceLabel": "Redovna cijena:",
+    "discountLabel": "UŠTEDITE 35€ (-34%)",
+    "shippingLabel": "Brza dostava:",
+    "shippingValue": "Besplatno",
+    "guaranteeLabel": "Jamstvo 2 godine",
+    "offerToggleText": "Otkrijte što uključuje ponuda",
+    "offerItems": [
+      { "text": "PowerWind X™ — Profesionalni trimmer", "badge": null },
+      { "text": "Set 4 oštrice za rezanje (nit, trava, kupina, grančice)", "badge": null },
+      { "text": "2 baterije 40V + brzi punjač", "badge": null },
+      { "text": "Rubni trimmer s vodećim kotačićem", "badge": "POKLON" },
+      { "text": "Dvostruki remenski sustav Comfort PRO", "badge": "POKLON" },
+      { "text": "Tvrdi kovčeg + zamjenska nit", "badge": "POKLON" },
+      { "text": "Jamstvo 2 godine + posvećena podrška", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "NARUČITE SADA",
+    "mainSubtext": "Plaćanje pouzećem",
+    "subNote": "Bez rizika: plaćate tek kad primite paket"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Plaćanje pouzećem", "color": "green" },
+      { "icon": "truck", "text": "Dostava 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 dana za povrat", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Prepoznajete se?",
+    "title": "Poznati su vam ovi problemi?",
+    "items": [
+      { "icon": "pain", "titleBold": "Benzinski trimmer vam uništava leđa", "text": "— težak, bučan, smrdi i upali se jednom od tri puta." },
+      { "icon": "warning", "titleBold": "Nit se zaglavi svake dvije minute", "text": "i morate sve rastaviti da je namotate. Više vremena trošite na popravljanje nego na rezanje." },
+      { "icon": "timer", "titleBold": "Akumulatorski ne može s kupinom", "text": "— zaglavi se, ugasi se i baterija crkne nakon 20 minuta." }
+    ],
+    "solutionTitle": "Postoji bolje rješenje.",
+    "solutionText": "Trimmer s pametnim motorom, 4 oštrice, 2 baterije i bez benzina. Uključite i režite sve."
+  },
+
+  "features": {
+    "eyebrow": "Zašto je drugačiji",
+    "title": "Počistite visoku travu, grane i kupinu u trenu",
+    "demoGifs": {
+      "items": [
+        { "src": "/images/mirko/powerwind/gif/1.gif", "alt": "PowerWind X u akciji" },
+        { "src": "/images/mirko/powerwind/gif/2.gif", "alt": "PowerWind X u akciji" },
+        { "src": "/images/mirko/powerwind/gif/3.gif", "alt": "PowerWind X u akciji" }
+      ],
+      "caption": "PowerWind X u akciji."
+    },
+    "items": [
+      {
+        "image": "/images/mirko/powerwind/angle/1.webp",
+        "imageAlt": "SmartTorque AUTO",
+        "tag": "PAMETNA SNAGA",
+        "tagColor": "green",
+        "title": "Nikad se ne zaglavljuje u kupini",
+        "description": "Motor <strong>SmartTorque</strong> automatski pojačava <strong>snagu i brzinu</strong> kad naiđe na visoku travu i kupinu. <strong>Nijedan akumulatorski trimmer</strong> to ne radi."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/2.webp",
+        "imageAlt": "4 sustava rezanja",
+        "tag": "4 OŠTRICE UKLJUČENE",
+        "tagColor": "orange",
+        "title": "Oštrica za svaku potrebu",
+        "description": "<strong>Najlonska nit</strong> za završne radove, <strong>oštrica s 3 zuba</strong> za gustu travu, <strong>disk za kupinu</strong> i korov, <strong>rezni disk</strong> za grančice i male grane. Jedan alat, režete sve."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/3.webp",
+        "imageAlt": "Rubni trimmer savršeni rubovi",
+        "tag": "WOW REZULTAT",
+        "tagColor": "blue",
+        "title": "Savršeni rubovi kao od profesionalnog vrtlara",
+        "description": "<strong>Rubni trimmer</strong> s <strong>vodećim kotačićem</strong> za nogostupe i staze. Za <strong>5 minuta</strong> vaš vrt izgleda kao da ga je uredio profesionalac."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/4.webp",
+        "imageAlt": "Teleskopski produživi trimmer",
+        "tag": "BEZ NAPORA",
+        "tagColor": "green",
+        "title": "Dohvatite gdje drugi ne mogu",
+        "description": "Produžuje se od <strong>71 do 210 cm</strong> jednim pokretom. Režite ispod živice, uz zidove i na nezgodnim mjestima <strong>bez saginjanja</strong> i bez boli u leđima. Prilagodite ga <strong>svojoj visini</strong> i radite udobno."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Jednostavno",
+    "title": "3 pokreta i vrt je gotov.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Sastavite", "description": "Pričvrstite oštricu, umetnite bateriju. 30 sekundi i spremni ste." },
+      { "title": "Uključite", "description": "Jedan gumb i kreće. SmartTorque sam regulira snagu." },
+      { "title": "Režite", "description": "Trava, kupina, grančice: sve radi sam. Promjena oštrice za 2 sekunde." }
+    ]
+  },
+
+  "midCta": {
+    "text": "NARUČITE SADA S 34% POPUSTA",
+    "subtext": "Plaćanje pouzećem"
+  },
+
+  "comparison": {
+    "eyebrow": "Usporedba",
+    "title": "Koje prednosti imate u odnosu na alternative?",
+    "featureColumn": "Značajka",
+    "winnerBadge": "POBJEDNIK",
+    "productColumn": "PowerWind X™",
+    "competitorColumn": "Benzinski trimmer",
+    "rows": [
+      { "feature": "Snaga na kupini", "product": "✔ SmartTorque auto", "competitor": "Konstantna (rizik od zastoja)" },
+      { "feature": "Punjenje niti", "product": "✔ 10 sekundi, bez rastavljanja", "competitor": "Rastaviti i ručno namotati" },
+      { "feature": "Zaglavljena nit", "product": "✔ Reverse: 1 klik", "competitor": "Rastaviti i ručno očistiti" },
+      { "feature": "Težina i udobnost", "product": "✔ Lagan, bez vibracija", "competitor": "Težak, jake vibracije" },
+      { "feature": "Buka", "product": "✔ Tih", "competitor": "Budi susjede" },
+      { "feature": "Ukupna cijena", "product": "✔ Samo 69€ (sve uključeno)", "competitor": "200-400€ + benzin + servisi" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Sve uključeno",
+    "title": "Što dobivate na kućnu adresu",
+    "items": [
+      { "icon": "box", "text": "PowerWind X™ — Profesionalni trimmer", "value": "€104,00", "valueType": "price" },
+      { "icon": "check", "text": "Set 4 oštrice za rezanje (nit, trava, kupina, grančice)", "value": "UKLJUČENO", "valueType": "included" },
+      { "icon": "check", "text": "2 baterije 40V + brzi punjač", "value": "UKLJUČENO", "valueType": "included" },
+      { "icon": "gift", "text": "Rubni trimmer s vodećim kotačićem", "value": "POKLON", "valueType": "gift" },
+      { "icon": "gift", "text": "Dvostruki remenski sustav Comfort PRO", "value": "POKLON", "valueType": "gift" },
+      { "icon": "gift", "text": "Tvrdi kovčeg + zamjenska nit", "value": "POKLON", "valueType": "gift" },
+      { "icon": "shield", "text": "Jamstvo 2 godine + posvećena podrška", "value": "UKLJUČENO", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Redovna cijena:",
+    "totalOriginalValue": "€229,00",
+    "totalCurrentLabel": "Danas plaćate samo:",
+    "totalCurrentValue": "€69,00",
+    "totalSave": "Ušteda €160,00 · Besplatna dostava",
+    "ctaText": "NARUČITE SADA"
+  },
+
+  "reviews": {
+    "eyebrow": "Što kažu o nama",
+    "title": "Provjerene recenzije",
+    "rating": "4.8",
+    "totalCount": "18.743 recenzija",
+    "verifiedNote": "✓ Recenzije provjerava neutralni tim koji nije povezan s ovom web stranicom.",
+    "showMoreText": "Prikaži više recenzija",
+    "leaveReviewText": "Ostavite recenziju",
+    "verifiedBadge": "Potvrđena kupnja",
+    "sellerReplyLabel": "Odgovor prodavača:",
+    "items": [
+      {
+        "initials": "IH",
+        "name": "Ivan Horvat",
+        "stars": 5,
+        "text": "Imam zemljište od 2000 metara s kupinom i tvrdim korovom. Stari benzinski se stalno zaglavio i težio je tonu. Ovaj ulazi u kupinu i ne staje, motor sam ubrzava kad naiđe na otpor. Sve sam pokosio u jedno poslijepodne bez boli u leđima. Dostava za dva dana, platio kuriru.",
+        "image": "/images/mirko/powerwind/recensioni/1.webp",
+        "imageAlt": "Foto recenzija Ivan",
+        "verified": true,
+        "sellerReply": "Ivane, SmartTorque je osmišljen upravo za one koji imaju zahtjevna zemljišta poput vašeg. Drago nam je da ste primijetili razliku u težini. Za sve što trebate, tu smo."
+      },
+      {
+        "initials": "MK",
+        "name": "Marko Kovačić",
+        "stars": 5,
+        "text": "prije sam gubio 10 minuta svaki put kad bi nit ponestala, morao sam rastaviti glavu i nervirati se. s ovim ubacim nit, udarim o tlo i nastavljam, nisam mogao vjerovati ali stvarno funkcionira. koristim ga subotom ujutro i sve završim u pola vremena nego prije",
+        "image": "/images/mirko/powerwind/recensioni/2.webp",
+        "imageAlt": "Foto recenzija Marko",
+        "verified": true,
+        "sellerReply": "Marko, AutoSpool je najcjenjenija funkcija među našim kupcima. Drago nam je da vam je olakšao subotnji posao. Hvala!"
+      },
+      {
+        "initials": "AB",
+        "name": "Ana Babić",
+        "stars": 5,
+        "text": "Kupila sam ga za supruga koji ima 62 godine i stalno se žalio na leđa nakon korištenja benzinskog. S ovim je lagan i remeni na oba ramena savršeno raspoređuju težinu. I buka je minimalna, susjedi su zahvalni. Stigao za dva dana, bez dodatnih troškova.",
+        "image": "/images/mirko/powerwind/recensioni/3.webp",
+        "imageAlt": "Foto recenzija Ana",
+        "verified": true,
+        "sellerReply": "Ana, kakva divna ideja za poklon! Dvostruki remenski sustav je osmišljen upravo za one koji rade dugo bez umora. Pozdravite supruga!"
+      },
+      {
+        "initials": "TN",
+        "name": "Tomislav Novak",
+        "stars": 5,
+        "text": "dvije baterije su revolucija. kad se jedna isprazni stavim drugu i nastavljam bez pauze. sa starim benzinskim sam morao nositi kanister i smrdio cijeli dan. ovaj je tih čist i snažan. rubni trimmer je spektakularan, rubovi ispadaju ravni",
+        "image": "/images/mirko/powerwind/recensioni/4.webp",
+        "imageAlt": "Foto recenzija Tomislav",
+        "verified": true,
+        "sellerReply": "Tomislave, kontinuirani rad s dvije baterije je ključan za one koji imaju velike vrtove. Hvala što ste odabrali PowerWind X!"
+      },
+      {
+        "initials": "JJ",
+        "name": "Josip Jurić",
+        "stars": 4,
+        "text": "Solidan proizvod, isprobao sam ga na visokoj travi i kupini i moram reći da motor dobro reagira. Za sada dajem 4 zvjezdice jer ga želim dobro testirati cijelu sezonu prije nego dam maksimum, ali preduvjeti su izvrsni. Odličan set sa svim dodacima uključenim",
+        "verified": true,
+        "sellerReply": "Josipe, cijenimo vašu iskrenost! Sigurni smo da će rezultati na kraju sezone govoriti sami za sebe. Javite nam, radoznali smo!"
+      },
+      {
+        "initials": "PK",
+        "name": "Petra Knežević",
+        "stars": 5,
+        "text": "Kupila sam za oca od 68 godina koji nije htio ni čuti za baterijski. Nakon što ga je isprobao, više se ne želi vratiti na benzinski. Kaže da je upola lakši i da mu rubni trimmer uređuje nogostupe kao pravi vrtlar. Platila kuriru bez problema.",
+        "verified": true,
+        "sellerReply": "Petra, pretvoriti obožavatelja benzinskog u korisnika baterijskog je naše najveće zadovoljstvo! Pozdravite tatu, drago nam je da je zadovoljan."
+      },
+      {
+        "initials": "AV",
+        "name": "Ante Vuković",
+        "stars": 5,
+        "text": "rubni trimmer s kotačićem je nevjerojatan. rubovi staze ispadaju ravni i savršeni, izgleda kao da je radio profesionalac. prije sam rezao na oko i uvijek ispadalo krivo. i kovčeg je praktičan da sve držim na redu u garaži",
+        "verified": true,
+        "sellerReply": "Ante, vodeći kotačić je osmišljen upravo za profesionalne rubove bez iskustva. Hvala na recenziji!"
+      },
+      {
+        "initials": "LM",
+        "name": "Luka Matić",
+        "stars": 5,
+        "text": "Ono što me je osvojilo je tipka Reverse. Prije svaki put kad bi se nit zaglavila u travi morao sam sve ugasiti i ručno izvlačiti. S ovim pritisnete gumb i samo se oslobodi. Genijalno. I oštrica za kupinu radi odlično.",
+        "verified": true,
+        "sellerReply": "Luka, Reverse protiv zapetljavanja nastao je slušajući najčešće probleme naših kupaca. Drago nam je da je to funkcija koja vam se najviše sviđa!"
+      },
+      {
+        "initials": "NP",
+        "name": "Nikola Perić",
+        "stars": 5,
+        "text": "za 69€ cijeli ovaj set je nevjerojatna ponuda. trimmer, 4 različite oštrice, rubni trimmer, kovčeg, dvije baterije... usporedio sam s onima u trgovini i za isto morate potrošiti trostruko. stiglo brzo, besplatna dostava kao što je obećano",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "PŠ",
+        "name": "Petar Šimunović",
+        "stars": 5,
+        "text": "Teleskopska šipka mi je riješila problem koji sam imao godinama: rezanje ispod živice i na mjestima do kojih nisam mogao doći. Produžuje se bez alata i dohvatite nemoguća mjesta. Sve to bez saginjanja i boli u leđima. Ozbiljan proizvod, preporučujem.",
+        "verified": true,
+        "sellerReply": "Petre, teleskopska šipka je osmišljena upravo za eliminaciju nezgodnih položaja. Hvala što ste odabrali PowerWind X, ugodan rad!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Ostavite svoju recenziju",
+    "nameLabel": "Vaše ime",
+    "namePlaceholder": "Npr. Ivan Horvat",
+    "ratingLabel": "Ocjena",
+    "textLabel": "Vaša recenzija",
+    "textPlaceholder": "Opišite svoje iskustvo...",
+    "submitText": "Pošalji recenziju",
+    "successTitle": "Hvala na vašoj recenziji!",
+    "successText": "Vaša recenzija čeka odobrenje od vanjskog tima koji nije povezan s ovom web stranicom. Recenzije koje ostave osobe koje nisu kupile proizvod neće biti objavljene, kako bi se izbjegle neautentične recenzije.",
+    "closeText": "Zatvori"
+  },
+
+  "orderForm": {
+    "eyebrow": "Obrazac za narudžbu",
+    "title": "Dovršite svoju narudžbu",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Ponuda -34% istječe za:",
+    "stockWarning": "Samo <strong>8 komada</strong> preostalo po ovoj cijeni",
+    "summaryTitle": "Pregled narudžbe",
+    "summaryLines": [
+      { "label": "PowerWind X™ + 4 oštrice + dodaci", "value": "€69,00", "type": "normal" },
+      { "label": "Brza dostava 24/48h", "value": "BESPLATNO", "type": "free" },
+      { "label": "Troškovi pouzeća", "value": "BESPLATNO", "type": "free" }
+    ],
+    "totalLabel": "UKUPNO",
+    "totalValue": "€69,00",
+    "fields": {
+      "name": { "label": "Ime i prezime *", "placeholder": "Npr. Ivan Horvat" },
+      "phone": { "label": "Broj telefona *", "placeholder": "Npr. 091 1234567" },
+      "address": { "label": "Adresa za dostavu *", "placeholder": "Ulica, broj, grad, poštanski broj" }
+    },
+    "phoneNote": "Bit ćete kontaktirani telefonski ili putem WhatsAppa za potvrdu narudžbe.",
+    "paymentBadge": "Plaćanje pouzećem — Plaćate gotovinom kuriru. Bez predujma.",
+    "submitText": "POTVRDITE NARUDŽBU",
+    "submitSubtext": "Plaćanje pouzećem",
+    "reassurance": "Zaštićeni podaci · SSL 256-bit · Bez prethodne naplate"
+  },
+
+  "faq": {
+    "eyebrow": "Česta pitanja",
+    "title": "Još imate pitanja? Evo odgovora.",
+    "items": [
+      { "question": "Kako naručiti?", "answer": "Kliknite na gumb za kupnju, ispunite obrazac sa svojim podacima i potvrdite narudžbu. Bit ćete kontaktirani telefonski ili putem WhatsAppa za potvrdu i primit ćete paket udobno na kućnu adresu, s plaćanjem gotovinom." },
+      { "question": "Kako funkcionira dostava?", "answer": "Dostava je potpuno besplatna. Od potvrde narudžbe, isporuka traje oko 24/48h radnim danom." },
+      { "question": "Što ako mi se ne sviđa?", "answer": "Možete zatražiti potpuni povrat novca vraćanjem proizvoda unutar 30 dana od dostave. Mi dolazimo po paket i vraćamo vam cjelokupni iznos." },
+      { "question": "Što ako imam problem nakon 30 dana?", "answer": "Bez brige, svi naši proizvodi imaju jamstvo od 2 godine." },
+      { "question": "Kako zatražiti povrat ili pomoć?", "answer": "Za pomoć ili povrat nakon narudžbe možete koristiti kontaktni obrazac na stranici ili e-mail koji se nalazi u podnožju." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€104",
+    "newPrice": "€69",
+    "buttonText": "NARUČITE SADA",
+    "buttonSubtext": "Plaćanje pouzećem"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 69.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "1576025786901423",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "fingerprintScript": "https://offers.uncappednetwork.com/forms/tmfp/",
+      "clickPixel": "https://offers.uncappednetwork.com/forms/api/ck/?o=3595&uid=4a2b2107-ba63-494f-b762-41120bde0c94&lp=3632",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Prethodna",
+    "nextSlide": "Sljedeća",
+    "thumbnail": "Minijatura",
+    "close": "Zatvori"
+  },
+
+  "ty": {
+    "title": "Narudžba potvrđena!",
+    "subtitle": "Vaša narudžba je uspješno zaprimljena.",
+    "orderNumberLabel": "Br. narudžbe:",
+    "summaryTitle": "Pregled narudžbe",
+    "accessoriesLabel": "+ Uključeni dodaci",
+    "totalLabel": "UKUPNO ZA PLATITI",
+    "paymentNote": "Plaćanje gotovinom kuriru — bez predujma",
+    "yourDataTitle": "Vaši podaci",
+    "nameLabel": "Ime",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Što slijedi?",
+    "message": "Bit ćete kontaktirani telefonski ili putem WhatsAppa za potvrdu narudžbe i organizaciju dostave.",
+    "steps": [
+      "Primit ćete poziv ili WhatsApp poruku za potvrdu",
+      "Paket će biti poslan u roku 24/48h",
+      "Plaćate gotovinom kuriru pri dostavi"
+    ],
+    "footerText": "Jamstvo 2 godine · 30 dana za povrat · Posvećena podrška"
+  }
+}

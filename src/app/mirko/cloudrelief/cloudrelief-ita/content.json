@@ -144,6 +144,20 @@
     ]
   },
 
+  "sizes": {
+    "title": "Seleziona la tua misura",
+    "sizeLabel": "Misura",
+    "options": [
+      { "id": "singolo", "name": "Singolo", "dimensions": "80×190 cm" },
+      { "id": "piazzaemezza", "name": "Piazza e Mezza", "dimensions": "120×190 cm" },
+      { "id": "matrimoniale", "name": "Matrimoniale", "dimensions": "160×190 cm" },
+      { "id": "king", "name": "King", "dimensions": "180×200 cm" }
+    ],
+    "defaultSelected": "matrimoniale",
+    "explanationTitle": "Perché costano tutte uguale?",
+    "explanationText": "Per liberare spazio in magazzino abbiamo abbassato il prezzo delle misure grandi (King/Matrimoniale) al costo base del Singolo. Approfittane: paghi il piccolo e prendi il grande!"
+  },
+
   "priceBox": {
     "_note_static": "shippingLabel, shippingValue, guaranteeLabel, offerToggleText sono STATICI - non modificare.",
     "_note_dynamic": "productName, originalPriceLabel, discountLabel e offerItems sono DINAMICI. TUTTI i prezzi si calcolano da pricing (originalPrice, currentPrice, discountPercent). discountLabel: 'RISPARMI [originalPrice - currentPrice][currencySymbol] (-[discountPercent]%)'.",
@@ -210,7 +224,7 @@
         "tag": "LIVELLO 1",
         "tagColor": "green",
         "title": "Decompressione Spinale",
-        "description": "Il materiale viscoelastico si adatta con precisione millimetrica al corpo, riempiendo gli spazi vuoti nella zona lombare. La colonna si distende e i dischi si reidratano durante la notte."
+        "description": "Il materiale <strong>viscoelastico</strong> si adatta con precisione millimetrica al corpo, riempiendo gli <strong>spazi vuoti nella zona lombare</strong>. La colonna si distende e i dischi si <strong>reidratano</strong> durante la notte."
       },
       {
         "image": "/images/mirko/cloudrelief/angle/2.gif",
@@ -218,7 +232,7 @@
         "tag": "LIVELLO 2",
         "tagColor": "orange",
         "title": "Profilo Ondulato \"Wave\"",
-        "description": "La finitura ondulata crea un micro-massaggio passivo ad ogni movimento. Stimola la microcircolazione capillare, riducendo gonfiori e ristagni di liquidi."
+        "description": "La finitura ondulata crea un <strong>micro-massaggio passivo</strong> ad ogni movimento. Stimola la <strong>microcircolazione capillare</strong>, riducendo gonfiori e ristagni di liquidi."
       },
       {
         "image": "/images/mirko/cloudrelief/angle/3.gif",
@@ -226,7 +240,7 @@
         "tag": "LIVELLO 3",
         "tagColor": "blue",
         "title": "Zero Punti di Pressione",
-        "description": "Distribuendo uniformemente il peso su 7 cm di spessore, elimina i picchi di pressione su fianchi e spalle. Fondamentale per chi soffre di dolori articolari e intorpidimento."
+        "description": "Distribuendo uniformemente il peso su <strong>7 cm di spessore</strong>, elimina i <strong>picchi di pressione</strong> su fianchi e spalle. Fondamentale per chi soffre di <strong>dolori articolari</strong> e intorpidimento."
       }
     ]
   },
@@ -252,24 +266,6 @@
     "subtext": "Pagamento Contanti alla Consegna"
   },
 
-  "specs": {
-    "_note": "DINAMICO (contenuto) - Presente SOLO per prodotti molto tecnici. Se il prodotto non è tecnico, questa sezione può essere omessa.",
-    "_note_title": "STATICO - eyebrow 'Specifiche' e title 'Caratteristiche Tecniche' non cambiano mai.",
-    "_instructions": "Inserire solo le specifiche PRINCIPALI, non un elenco infinito. Solo se il prodotto è molto tecnico (elettronica, dispositivi, ecc). Se le specifiche non sono presenti nelle info iniziali fornite dall'utente, INVENTALE esagerando leggermente verso l'alto: metti specifiche molto buone per quella categoria di prodotto. Esempio: se è un condizionatore, metti specifiche da fascia alta. Se è un massaggiatore, metti numeri da dispositivo professionale.",
-    "eyebrow": "Specifiche",
-    "title": "Caratteristiche Tecniche",
-    "items": [
-      { "label": "Struttura interna", "value": "Doppio strato Memory HD + HR ad alta densità" },
-      { "label": "Spessore totale", "value": "7 cm reali" },
-      { "label": "Profilo superficie", "value": "Ondulato massaggiante (Wave)" },
-      { "label": "Rivestimento", "value": "Aloe Vera con cerniera, sfoderabile e lavabile" },
-      { "label": "Ventilazione", "value": "Rete laterale 3D Mesh traspirante" },
-      { "label": "Fissaggio", "value": "Fondo antiscivolo + 4 elastici rinforzati" },
-      { "label": "Certificazioni", "value": "Antiacaro · Anallergico · Oeko-Tex" },
-      { "label": "Garanzia", "value": "2 anni ufficiale" }
-    ]
-  },
-
   "comparison": {
     "_note": "DINAMICO (contenuto) - Numero variabile di righe. productColumn contiene il nome prodotto, competitorColumn l'alternativa. I prezzi nelle righe si calcolano da pricing (mai hardcodati).",
     "_note_title": "STATICO - eyebrow 'Il Confronto' e title 'Quali vantaggi avrai rispetto alle alternative?' non cambiano mai.",
@@ -278,6 +274,8 @@
     "title": "Quali vantaggi avrai rispetto alle alternative?",
     "productColumn": "CloudRelief Topper™",
     "competitorColumn": "Materasso Nuovo / Fisioterapista",
+    "featureColumn": "Caratteristica",
+    "winnerBadge": "VINCITORE",
     "rows": [
       { "feature": "Sollievo dal dolore", "product": "✔ Dalla prima notte", "competitor": "Dopo settimane / solo in seduta" },
       { "feature": "Installazione", "product": "✔ 30 secondi, zero attrezzi", "competitor": "Consegna e montaggio" },
@@ -329,6 +327,8 @@
     "verifiedNote": "✓ Le recensioni vengono verificate da un team neutrale esterno a questo sito web.",
     "showMoreText": "Mostra altre recensioni",
     "leaveReviewText": "Lascia una recensione",
+    "verifiedBadge": "Acquisto verificato",
+    "sellerReplyLabel": "Risposta del venditore:",
     "items": [
       {
         "initials": "GT",
@@ -494,10 +494,33 @@
     }
   },
 
+  "ariaLabels": {
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
   "ty": {
-    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare. I dati dinamici (prodotto, prezzo, thumbnail, riepilogo ordine, dati utente) vengono letti dalle altre sezioni del content.json e dal sessionStorage.",
+    "_note": "STATICO - Sempre uguale per tutte le landing. I dati dinamici (prodotto, prezzo, thumbnail, riepilogo ordine, dati utente) vengono letti dalle altre sezioni del content.json e dal sessionStorage. TUTTI i testi visibili devono essere qui, MAI hardcodati nel componente.",
     "title": "Ordine Confermato!",
     "subtitle": "Il tuo ordine è stato ricevuto con successo.",
-    "message": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine e organizzare la consegna."
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Riepilogo Ordine",
+    "accessoriesLabel": "+ Accessori inclusi",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — nessun anticipo",
+    "yourDataTitle": "I Tuoi Dati",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "Cosa succede ora?",
+    "message": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine e organizzare la consegna.",
+    "steps": [
+      "Riceverai una chiamata o un messaggio WhatsApp di conferma",
+      "Il pacco verrà spedito in 24/48h",
+      "Paghi in contanti al corriere alla consegna"
+    ],
+    "footerText": "Garanzia 2 Anni · 30 Giorni di Reso · Assistenza Dedicata"
   }
 }

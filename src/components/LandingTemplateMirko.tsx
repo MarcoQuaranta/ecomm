@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Image from 'next/image';
-import { useRouter, usePathname } from 'next/navigation';
 import '@/styles/landing-mirko.css';
 
 /* ------------------------------------------------------------------ */
@@ -69,9 +68,7 @@ function LandingIcon({ name, size = 20 }: { name: string; size?: number }) {
 /*  Component                                                          */
 /* ------------------------------------------------------------------ */
 
-export default function LandingTemplateMirko({ content = {} }: { content?: any }) {
-  const router = useRouter();
-  const pathname = usePathname();
+export default function LandingTemplateMirko({ content = {}, networkConfig }: { content?: any; networkConfig?: { endpoint: string; uid: string; key: string; offerId: string; lpId: string } }) {
 
   /* ---- extract sections ---- */
   const pricing = content?.pricing;
@@ -96,6 +93,8 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
   const faq = content?.faq;
   const stickyCta = content?.stickyCta;
   const tracking = content?.tracking;
+  const sizes = content?.sizes;
+  const ariaLabels = content?.ariaLabels;
 
   /* ---- slides & data ---- */
   const slides = gallery?.slides || [];
@@ -114,6 +113,7 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
   const [reviewSubmitted, setReviewSubmitted] = useState(false);
   const [stickyVisible, setStickyVisible] = useState(false);
   const [countdown, setCountdown] = useState((orderForm?.countdownMinutes || 118) * 60);
+  const [selectedSize, setSelectedSize] = useState(sizes?.defaultSelected || sizes?.options?.[0]?.id || '');
 
   /* ---- slides derived ---- */
   const thumbsVisible = Math.min(5, totalSlides);
@@ -228,6 +228,14 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
       w.fbq('init', tracking.facebookPixelId);
       w.fbq('track', 'PageView');
     }
+
+    // Network Fingerprint Script (tmfp)
+    if (tracking?.network?.fingerprintScript) {
+      const fpScript = document.createElement('script');
+      fpScript.async = true;
+      fpScript.src = tracking.network.fingerprintScript;
+      document.head.appendChild(fpScript);
+    }
   }, []);
 
   /* ---- derived ---- */
@@ -301,14 +309,14 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                 <div className="gallery-main">
                   {gallery?.discountTag && <span className="gallery-tag">{gallery.discountTag}</span>}
                   <Image src={slides[currentSlide]?.src} alt={slides[currentSlide]?.alt || ''} className="gallery-main-img" width={800} height={800} quality={85} sizes="(max-width: 768px) 100vw, 500px" />
-                  <button className="gallery-arrow gallery-prev" onClick={prevSlide} aria-label="Precedente">&#8249;</button>
-                  <button className="gallery-arrow gallery-next" onClick={nextSlide} aria-label="Successiva">&#8250;</button>
+                  <button className="gallery-arrow gallery-prev" onClick={prevSlide} aria-label={ariaLabels?.prevSlide || 'Precedente'}>&#8249;</button>
+                  <button className="gallery-arrow gallery-next" onClick={nextSlide} aria-label={ariaLabels?.nextSlide || 'Successiva'}>&#8250;</button>
                 </div>
                 <div className="gallery-thumbs">
                   {visibleThumbs.map((slide: any, i: number) => {
                     const realIndex = thumbStart + i;
                     return (
-                      <button key={realIndex} className={`gallery-thumb${currentSlide === realIndex ? ' active' : ''}`} onClick={() => { stopAutoplay(); setCurrentSlide(realIndex); }} aria-label={`Miniatura ${realIndex + 1}`}>
+                      <button key={realIndex} className={`gallery-thumb${currentSlide === realIndex ? ' active' : ''}`} onClick={() => { stopAutoplay(); setCurrentSlide(realIndex); }} aria-label={`${ariaLabels?.thumbnail || 'Miniatura'} ${realIndex + 1}`}>
                         <Image src={slide.src} alt={slide.alt || ''} width={100} height={100} quality={70} />
                       </button>
                     );
@@ -362,6 +370,27 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                         </div>
                       </div>
                     </>
+                  )}
+                </div>
+              )}
+
+              {/* SIZE SELECTOR */}
+              {sizes?.options?.length > 0 && (
+                <div className="size-selector">
+                  <h4 className="size-title">{sizes.title}</h4>
+                  <div className="size-options">
+                    {sizes.options.map((opt: any) => (
+                      <button key={opt.id} className={`size-option${selectedSize === opt.id ? ' selected' : ''}`} onClick={() => setSelectedSize(opt.id)}>
+                        <span className="size-name">{opt.name}</span>
+                        <span className="size-dims">{opt.dimensions}</span>
+                      </button>
+                    ))}
+                  </div>
+                  {sizes.explanationTitle && (
+                    <div className="size-explanation">
+                      <strong>{sizes.explanationTitle}</strong>
+                      <p>{sizes.explanationText}</p>
+                    </div>
                   )}
                 </div>
               )}
@@ -424,6 +453,11 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
           <div className="container">
             {features.eyebrow && <span className="section-eyebrow">{features.eyebrow}</span>}
             {features.title && <h2 className="section-title">{features.title}</h2>}
+            {features.image && (
+              <div className="features-header-image">
+                <Image src={features.image} alt={features.imageAlt || ''} width={800} height={500} quality={85} sizes="(max-width: 768px) 100vw, 700px" unoptimized={features.image?.endsWith('.gif')} />
+              </div>
+            )}
             {features.items.map((f: any, i: number) => (
               <div key={i} className={`feature-block${i % 2 !== 0 ? ' feature-block-right' : ''}`}>
                 <div className="feature-media">
@@ -432,7 +466,7 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                 <div className="feature-text">
                   {f.tag && <span className={`feature-tag tag-${f.tagColor || 'green'}`}>{f.tag}</span>}
                   <h3>{f.title}</h3>
-                  <p>{f.description}</p>
+                  <p dangerouslySetInnerHTML={{ __html: f.description }} />
                 </div>
               </div>
             ))}
@@ -501,8 +535,8 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
             <table className="comparison-table">
               <thead>
                 <tr>
-                  <th>Caratteristica</th>
-                  <th>{comparison.productColumn} <span className="winner-badge">VINCITORE</span></th>
+                  <th>{comparison.featureColumn || 'Caratteristica'}</th>
+                  <th>{comparison.productColumn} <span className="winner-badge">{comparison.winnerBadge || 'VINCITORE'}</span></th>
                   <th>{comparison.competitorColumn}</th>
                 </tr>
               </thead>
@@ -584,7 +618,7 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                     <div className="review-meta">
                       <h4>{review.name}</h4>
                       {review.verified && (
-                        <span className="review-badge">&#10003; Acquisto verificato</span>
+                        <span className="review-badge">&#10003; {reviews?.verifiedBadge || 'Acquisto verificato'}</span>
                       )}
                     </div>
                   </div>
@@ -596,9 +630,14 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                   <div className="review-text">
                     <p>{review.text}</p>
                   </div>
+                  {review.image && (
+                    <div className="review-image">
+                      <Image src={review.image} alt={review.imageAlt || ''} width={350} height={350} quality={80} sizes="350px" style={{ maxWidth: '350px', width: '100%', height: 'auto', borderRadius: '8px' }} />
+                    </div>
+                  )}
                   {review.sellerReply && (
                     <div className="seller-reply">
-                      <span className="seller-reply-header"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '4px' }}><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg> Risposta del venditore:</span>
+                      <span className="seller-reply-header"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '4px' }}><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg> {reviews?.sellerReplyLabel || 'Risposta del venditore:'}</span>
                       <p>{review.sellerReply}</p>
                     </div>
                   )}
@@ -620,7 +659,7 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
       {reviewPopupData && (
         <div className={`review-popup-overlay${reviewPopupOpen ? ' open' : ''}`} onClick={() => setReviewPopupOpen(false)}>
           <div className="review-popup" onClick={(e) => e.stopPropagation()}>
-            <button className="popup-close" onClick={() => setReviewPopupOpen(false)} aria-label="Chiudi">&times;</button>
+            <button className="popup-close" onClick={() => setReviewPopupOpen(false)} aria-label={ariaLabels?.close || 'Chiudi'}>&times;</button>
             {!reviewSubmitted ? (
               <>
                 <h3>{reviewPopupData.title}</h3>
@@ -689,6 +728,12 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                     <Image src={slides[0].src} alt={slides[0].alt || ''} width={100} height={100} quality={70} />
                   </div>
                 )}
+                {selectedSize && sizes?.options && (
+                  <div className="order-line">
+                    <span>{sizes?.sizeLabel || 'Misura'}</span>
+                    <span>{sizes.options.find((o: any) => o.id === selectedSize)?.name} — {sizes.options.find((o: any) => o.id === selectedSize)?.dimensions}</span>
+                  </div>
+                )}
                 {orderForm.summaryLines?.map((line: any, i: number) => (
                   <div key={i} className="order-line">
                     <span>{line.label}</span>
@@ -701,16 +746,57 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                 </div>
               </div>
 
+              {/* ORDER SIZE SELECTOR */}
+              {sizes?.options?.length > 0 && (
+                <div className="size-selector order-size-selector">
+                  <h4 className="size-title">{sizes.title}</h4>
+                  <div className="size-options">
+                    {sizes.options.map((opt: any) => (
+                      <button key={opt.id} type="button" className={`size-option${selectedSize === opt.id ? ' selected' : ''}`} onClick={() => setSelectedSize(opt.id)}>
+                        <span className="size-name">{opt.name}</span>
+                        <span className="size-dims">{opt.dimensions}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               <form onSubmit={(e) => {
                 e.preventDefault();
+                const w = window as any;
+                const selectedSizeObj = sizes?.options?.find((o: any) => o.id === selectedSize);
                 const formData = {
                   name: (document.getElementById('order-name') as HTMLInputElement)?.value || '',
                   phone: (document.getElementById('order-phone') as HTMLInputElement)?.value || '',
                   address: (document.getElementById('order-address') as HTMLInputElement)?.value || '',
+                  size: selectedSizeObj ? `${selectedSizeObj.name} (${selectedSizeObj.dimensions})` : '',
+                  tmfp: w.tmfp || '',
                 };
                 sessionStorage.setItem('orderData', JSON.stringify(formData));
-                const tyPath = pathname.endsWith('/') ? `${pathname}ty` : `${pathname}/ty`;
-                router.push(tyPath);
+                if (!sessionStorage.getItem('orderNumber')) {
+                  sessionStorage.setItem('orderNumber', `ORD-${Date.now().toString().slice(-8)}`);
+                }
+                if (networkConfig) {
+                  const payload = {
+                    endpoint: networkConfig.endpoint,
+                    networkParams: {
+                      uid: networkConfig.uid,
+                      key: networkConfig.key,
+                      offerId: networkConfig.offerId,
+                      lpId: networkConfig.lpId,
+                    },
+                    formData: {
+                      name: formData.name,
+                      phone: formData.phone,
+                      address: formData.address,
+                      tmfp: formData.tmfp,
+                      ua: navigator.userAgent,
+                    },
+                  };
+                  navigator.sendBeacon('/api/lead', new Blob([JSON.stringify(payload)], { type: 'application/json' }));
+                }
+                const base = window.location.pathname;
+                window.location.href = base.endsWith('/') ? `${base}ty` : `${base}/ty`;
               }}>
                 {orderForm.fields?.name && (
                   <div className="form-group">
@@ -783,6 +869,12 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
             <small>{stickyCta.buttonSubtext}</small>
           </a>
         </div>
+      )}
+
+      {/* Network Click Pixel */}
+      {tracking?.network?.clickPixel && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={tracking.network.clickPixel} width={1} height={1} alt="" style={{ position: 'absolute', opacity: 0, pointerEvents: 'none' }} />
       )}
 
     </div>

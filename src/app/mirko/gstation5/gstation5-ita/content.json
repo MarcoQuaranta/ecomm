@@ -1,0 +1,422 @@
+{
+  "seo": {
+    "title": "Aurix Ultra™ - La Console Portatile Definitiva",
+    "description": "La console portatile che si collega anche alla TV. Joystick, accessori e 3 mesi di giochi inclusi. Pagamento alla consegna."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 139.00,
+    "currentPrice": 69.00,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "text": "Spedizione Gratuita 24/48h · Pagamento alla Consegna · Garanzia 2 Anni"
+  },
+
+  "urgencyBanner": {
+    "text": "Attenzione: Forte richiesta —",
+    "highlight": "Ultimi 8 pezzi disponibili",
+    "suffix": "a questo prezzo"
+  },
+
+  "hero": {
+    "badge": "Tecnologia 2026",
+    "title": "Gioca Dove Vuoi,",
+    "titleHighlight": "Anche sulla TV:",
+    "titleSuffix": "Zero Postazione, Zero Sbatti",
+    "subtitle": "Console portatile con schermo Full HD a 120Hz. Oltre 500 giochi inclusi, joystick, supporto (dock) per la TV, custodia e 3 mesi di Online Plus nella scatola.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.743 clienti soddisfatti"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/gstation5/carosello/1.webp", "alt": "Aurix Ultra vista frontale" },
+      { "src": "/images/mirko/gstation5/carosello/2.webp", "alt": "Aurix Ultra in uso" },
+      { "src": "/images/mirko/gstation5/carosello/3.webp", "alt": "Aurix Ultra collegata alla TV" },
+      { "src": "/images/mirko/gstation5/carosello/4.webp", "alt": "Aurix Ultra accessori" },
+      { "src": "/images/mirko/gstation5/carosello/5.webp", "alt": "Aurix Ultra confezione" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Console portatile, giochi dove vuoi:", "description": "a letto, sul divano, in viaggio. Leggera, la porti ovunque come un telefono." },
+      { "title": "Si collega alla TV con il supporto (dock) incluso:", "description": "attacchi il supporto (dock) alla TV, prendi il joystick e giochi sullo schermo grande. Come una console da salotto." },
+      { "title": "Nella scatola c'è già tutto:", "description": "joystick, supporto (dock) per la TV, custodia, protezione schermo e 3 mesi di Online Plus. Non devi comprare nient'altro." },
+      { "title": "Schermo LED Full HD da 7 pollici:", "description": "risoluzione 1080p, 120Hz e 500 nit di luminosità. Immagini nitide e fluide." },
+      { "title": "Oltre 500 giochi inclusi + 3 mesi di Online Plus:", "description": "giochi come Fortnite, GTA, FIFA e tanti altri. In più, 3 mesi di Online Plus per il multiplayer." },
+      { "title": "Gioca online con gli amici:", "description": "connessione veloce e stabile. Partite online senza problemi." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "Aurix Ultra™",
+    "originalPriceLabel": "Prezzo di listino:",
+    "discountLabel": "RISPARMI 70€ (-50%)",
+    "shippingLabel": "Spedizione Rapida:",
+    "shippingValue": "Gratis",
+    "guaranteeLabel": "Garanzia 2 Anni",
+    "offerToggleText": "Scopri cosa include l'offerta",
+    "offerItems": [
+      { "text": "Aurix Ultra™ — Console Portatile", "badge": null },
+      { "text": "Joystick Wireless Pro", "badge": "REGALO" },
+      { "text": "Dock TV + Cavo HDMI (plug & play)", "badge": "REGALO" },
+      { "text": "Voucher 3 Mesi di Online Plus", "badge": "REGALO" },
+      { "text": "Custodia Rigida", "badge": "REGALO" },
+      { "text": "Protezione Schermo in Vetro Temperato", "badge": "REGALO" },
+      { "text": "Stand di Ricarica + Guida Rapida", "badge": "REGALO" },
+      { "text": "Garanzia 2 Anni + Assistenza Dedicata", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ORDINA ORA",
+    "mainSubtext": "Pagamento Contanti alla Consegna",
+    "subNote": "Zero rischio: paghi solo quando ricevi il pacco"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Pagamento alla Consegna", "color": "green" },
+      { "icon": "truck", "text": "Spedizione 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Giorni di Reso", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Ti riconosci?",
+    "title": "Questi problemi ti sono familiari?",
+    "items": [
+      { "icon": "stiffness", "titleBold": "Vorresti una console ma quelle grosse costano troppo", "text": "e servono mille accessori extra che non sono mai inclusi nella scatola." },
+      { "icon": "pain", "titleBold": "Compri la console e poi scopri che manca sempre qualcosa", "text": "— il joystick, l'abbonamento, i giochi. Ogni volta altri soldi da spendere." },
+      { "icon": "fatigue", "titleBold": "Vuoi qualcosa che funziona subito, senza complicazioni", "text": "senza impazzire con configurazioni, fili e cose complicate da collegare." }
+    ],
+    "solutionTitle": "Esiste una soluzione migliore.",
+    "solutionText": "Una console pronta all'uso che si collega anche alla TV. Nella scatola c'è già tutto. Zero spese extra."
+  },
+
+  "features": {
+    "eyebrow": "Perché è diverso",
+    "title": "Accendi e gioca. Sul divano, a letto, sulla TV.",
+    "items": [
+      {
+        "image": "/images/mirko/gstation5/angle/1.webp",
+        "imageAlt": "Collegata alla TV con joystick",
+        "tag": "TV MODE",
+        "tagColor": "green",
+        "title": "Con il Supporto (Dock) Incluso la Colleghi alla TV in 10 Secondi",
+        "description": "Attacchi il supporto (dock) alla TV, appoggi la console e giochi sullo schermo grande col joystick. Facilissimo."
+      },
+      {
+        "image": "/images/mirko/gstation5/angle/2.webp",
+        "imageAlt": "Grafica mozzafiato",
+        "tag": "GRAFICA PAZZESCA",
+        "tagColor": "red",
+        "title": "Schermo LED Full HD a 120Hz: Grafica Mozzafiato",
+        "description": "Risoluzione 1080p su 7 pollici, 120 fotogrammi al secondo e FreeSync Premium. Movimenti fluidi, zero scatti, colori brillanti."
+      },
+      {
+        "image": "/images/mirko/gstation5/angle/3.webp",
+        "imageAlt": "Accessori inclusi nella scatola",
+        "tag": "TUTTO INCLUSO",
+        "tagColor": "orange",
+        "title": "Joystick, Dock, Custodia e Protezione: Tutto Nella Scatola",
+        "description": "Joystick wireless, supporto (dock) per la TV con cavo HDMI, custodia rigida, protezione schermo in vetro temperato e stand di ricarica. Non devi comprare nient'altro."
+      },
+      {
+        "image": "/images/mirko/gstation5/angle/4.webp",
+        "imageAlt": "Giochi e abbonamento Online Plus",
+        "tag": "GIOCHI + ONLINE",
+        "tagColor": "green",
+        "title": "Oltre 500 Giochi Inclusi + 3 Mesi di Online Plus",
+        "description": "Oltre 500 giochi disponibili fin da subito, come Fortnite, GTA e FIFA. In più, 3 mesi di abbonamento Online Plus per giocare in multiplayer."
+      }
+    ]
+  },
+
+  "unboxing": {
+    "eyebrow": "Unboxing & Gameplay",
+    "title": "Guarda con i tuoi occhi",
+    "caption": "Video reali dei nostri acquirenti",
+    "slides": [
+      { "src": "/images/mirko/gstation5/unboxing/1.gif", "alt": "Unboxing Aurix Ultra" },
+      { "src": "/images/mirko/gstation5/unboxing/2.gif", "alt": "Gameplay Aurix Ultra" },
+      { "src": "/images/mirko/gstation5/unboxing/3.gif", "alt": "Aurix Ultra in azione" }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Semplicissimo",
+    "title": "Come funziona? 3 gesti e via.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Accendi", "description": "Un pulsante e sei dentro. Nessuna configurazione, nessun problema." },
+      { "title": "Gioca", "description": "Sul divano, a letto, in viaggio. Leggera, la porti dove vuoi." },
+      { "title": "Attacca alla TV (opzionale)", "description": "Se vuoi, attacchi il supporto (dock) alla TV, appoggi la console e giochi col joystick." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ORDINA ORA CON IL 50% DI SCONTO",
+    "subtext": "Pagamento Contanti alla Consegna"
+  },
+
+  "specs": {
+    "eyebrow": "Specifiche",
+    "title": "Caratteristiche Tecniche",
+    "items": [
+      { "label": "Display", "value": "7\" LED Full HD (1920x1080)" },
+      { "label": "Refresh rate", "value": "120Hz" },
+      { "label": "Luminosità", "value": "500 nit" },
+      { "label": "Sync", "value": "FreeSync Premium" },
+      { "label": "RAM", "value": "16GB" },
+      { "label": "Storage", "value": "512GB SSD" },
+      { "label": "Wi-Fi", "value": "Wi-Fi 6E" },
+      { "label": "Bluetooth", "value": "5.2" },
+      { "label": "Batteria", "value": "40Wh" },
+      { "label": "Peso", "value": "608g" },
+      { "label": "OS", "value": "Windows" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Il Confronto",
+    "title": "Quali vantaggi avrai rispetto alle alternative?",
+    "featureColumn": "Caratteristica",
+    "winnerBadge": "VINCITORE",
+    "productColumn": "Aurix Ultra™",
+    "competitorColumn": "Altre console / PC",
+    "rows": [
+      { "feature": "Portatile + TV", "product": "✔ Giochi ovunque + sulla TV", "competitor": "Solo alla scrivania" },
+      { "feature": "Accessori", "product": "✔ Tutto incluso nella scatola", "competitor": "Da comprare a parte" },
+      { "feature": "Giochi disponibili", "product": "✔ Oltre 500 subito", "competitor": "Da comprare uno a uno" },
+      { "feature": "Online Plus", "product": "✔ 3 mesi inclusi", "competitor": "Da pagare subito" },
+      { "feature": "Facilità d'uso", "product": "✔ Accendi e giochi", "competitor": "Serve configurazione" },
+      { "feature": "Quanto spendi", "product": "✔ 69€ e hai tutto", "competitor": "500-1000€ + extra" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Tutto incluso",
+    "title": "Cosa ricevi a casa tua",
+    "items": [
+      { "icon": "box", "text": "Aurix Ultra™ — Console Portatile", "value": "€139,00", "valueType": "price" },
+      { "icon": "gift", "text": "Joystick Wireless Pro", "value": "REGALO", "valueType": "gift" },
+      { "icon": "cable", "text": "Dock TV + Cavo HDMI (plug & play)", "value": "REGALO", "valueType": "gift" },
+      { "icon": "gift", "text": "Voucher 3 Mesi di Online Plus", "value": "REGALO", "valueType": "gift" },
+      { "icon": "shield", "text": "Custodia Rigida", "value": "REGALO", "valueType": "gift" },
+      { "icon": "shield", "text": "Protezione Schermo in Vetro Temperato", "value": "REGALO", "valueType": "gift" },
+      { "icon": "gift", "text": "Stand di Ricarica + Guida Rapida", "value": "REGALO", "valueType": "gift" },
+      { "icon": "shield", "text": "Garanzia 2 Anni + Assistenza Dedicata", "value": "INCLUSO", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Prezzo di Listino:",
+    "totalOriginalValue": "€349,00",
+    "totalCurrentLabel": "Oggi paghi solo:",
+    "totalCurrentValue": "€69,00",
+    "totalSave": "Risparmi €280,00 · Spedizione GRATUITA",
+    "ctaText": "ORDINA ORA"
+  },
+
+  "reviews": {
+    "eyebrow": "Cosa dicono di Noi",
+    "title": "Recensioni Verificate",
+    "rating": "4.8",
+    "totalCount": "18.743 recensioni",
+    "verifiedNote": "✓ Le recensioni vengono verificate da un team neutrale esterno a questo sito web.",
+    "showMoreText": "Mostra altre recensioni",
+    "leaveReviewText": "Lascia una recensione",
+    "verifiedBadge": "Acquisto verificato",
+    "sellerReplyLabel": "Risposta del venditore:",
+    "items": [
+      {
+        "initials": "GP",
+        "name": "Giuseppe Parisi",
+        "stars": 5,
+        "text": "comprata per il nipote di 14 anni, non me la aspettavo cosi. ha aperto la scatola e dopo 5 minuti stava gia giocando. la sera l'ha collegata alla tv e ci ha giocato tutta la famiglia. per il prezzo che costa non ci credo ancora",
+        "verified": true,
+        "sellerReply": "Giuseppe, il fatto che tutta la famiglia ci giochi è il complimento più bello. Grazie per la fiducia!"
+      },
+      {
+        "initials": "CF",
+        "name": "Chiara Ferrante",
+        "stars": 5,
+        "text": "Nella scatola c'era già tutto, joystick custodia e pure 3 mesi di giochi. Non ho dovuto comprare nient'altro. Con le altre console spendi il doppio e ti manca sempre qualcosa. Questa la apri e sei a posto.",
+        "verified": true,
+        "sellerReply": "Chiara, è proprio il nostro punto di forza: tutto pronto nella scatola. Grazie per la recensione!"
+      },
+      {
+        "initials": "AT",
+        "name": "Andrea Tagliaferri",
+        "stars": 5,
+        "text": "ci gioco a fortnite e a fifa, la grafica è una bomba e non si blocca mai. il joystick che viene nella scatola è fatto bene, non pensavo. la sera la attacco alla tv e gioco dal divano, spettacolo",
+        "verified": true,
+        "sellerReply": "Andrea, contenti che la grafica ti abbia colpito! Sul grande schermo è ancora meglio. Grazie!"
+      },
+      {
+        "initials": "MG",
+        "name": "Marta Gentile",
+        "stars": 4,
+        "text": "Devo dire che lo schermo è bellissimo, colori pazzeschi. Per ora metto 4 stelle perché devo ancora provare bene la modalità TV, ma come portatile è perfetta. Ci gioco la sera a letto ed è comodissima. Vediamo tra un po'.",
+        "verified": true,
+        "sellerReply": "Marta, collegarla alla TV è facilissimo, basta un cavo! Ci aggiorni dopo, siamo sicuri che rimarrà soddisfatta."
+      },
+      {
+        "initials": "RP",
+        "name": "Roberto Palmieri",
+        "stars": 5,
+        "text": "ho 58 anni e di tecnologia ne capisco poco ma questa l'ho capita subito. c'è una guida dentro che spiega tutto. l'ho comprata per me e ci gioco la sera sul divano. mi ha ricordato quando da ragazzo giocavo con gli amici. bellissima",
+        "verified": true,
+        "sellerReply": "Roberto, la guida rapida è fatta apposta per rendere tutto semplice. Contenti che si diverta, grazie!"
+      },
+      {
+        "initials": "SV",
+        "name": "Simone Valente",
+        "stars": 5,
+        "text": "a 69 euro hai la console il joystick la custodia il cavo per la tv e pure 3 mesi di giochi. ho guardato in giro e una cosa del genere non la trovi. spedizione gratis e pagato al corriere quando è arrivato. affare",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "EL",
+        "name": "Elena Luciani",
+        "stars": 5,
+        "text": "Non capivo niente di console ma questa è semplicissima. L'ho accesa e dopo due minuti stavo già giocando. Non ho avuto bisogno di chiedere aiuto a nessuno. E quando voglio la collego alla TV e gioco dal divano. Fantastica.",
+        "verified": true,
+        "sellerReply": "Elena, la semplicità d'uso è il nostro punto di forza. Contenti che si diverta, grazie!"
+      },
+      {
+        "initials": "DM",
+        "name": "Davide Moretti",
+        "stars": 5,
+        "text": "la batteria dura bene per giocare la sera e poi la metti in carica e il giorno dopo è pronta. c'è spazio per tanti giochi e funziona pure online senza problemi. per il prezzo è imbattibile",
+        "verified": true,
+        "sellerReply": "Davide, con tutta quella memoria ci stanno davvero tanti giochi! Grazie per la recensione."
+      },
+      {
+        "initials": "GC",
+        "name": "Giulia Capasso",
+        "stars": 5,
+        "text": "Lo schermo è bellissimo, i colori sembrano veri. La custodia rigida è comoda perché la porto in giro senza paura di rovinarla. Ci gioco in pausa pranzo al lavoro e la sera sul divano. Arrivata in 2 giorni, pagata al corriere.",
+        "verified": true,
+        "sellerReply": "Giulia, la custodia protegge tutto perfettamente per portarla ovunque. Grazie per la recensione!"
+      },
+      {
+        "initials": "FC",
+        "name": "Fabio Cataldi",
+        "stars": 5,
+        "text": "l'ho presa per i miei due figli e ci giocano a turno. la sera la collegano alla tv con il cavo e giocano col joystick sul divano, stanno ore cosi. molto meglio che stare attaccati al telefono. consigliatissima",
+        "verified": true,
+        "sellerReply": "Fabio, meglio giocare insieme sul divano che ognuno col telefono! Contenti che i ragazzi si divertano. Grazie!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Lascia la tua recensione",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "Valutazione",
+    "textLabel": "La tua recensione",
+    "textPlaceholder": "Racconta la tua esperienza...",
+    "submitText": "Invia Recensione",
+    "successTitle": "Grazie per la tua recensione!",
+    "successText": "La tua recensione è in attesa di approvazione da un team esterno a questo sito web. Le recensioni lasciate da chi non ha acquistato il prodotto non saranno pubblicate, questo per evitare recensioni non autentiche.",
+    "closeText": "Chiudi"
+  },
+
+  "orderForm": {
+    "eyebrow": "Modulo d'Ordine",
+    "title": "Completa il tuo ordine",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "L'offerta -50% scade tra:",
+    "stockWarning": "Solo <strong>8 pezzi</strong> rimasti a questo prezzo",
+    "summaryTitle": "Riepilogo Ordine",
+    "summaryLines": [
+      { "label": "Aurix Ultra™ + Accessori", "value": "€69,00", "type": "normal" },
+      { "label": "Spedizione rapida 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Spese di Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€69,00",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo di Spedizione *", "placeholder": "Via, Numero, Città, CAP" }
+    },
+    "phoneNote": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine.",
+    "paymentBadge": "Pagamento alla Consegna — Paghi in contanti al corriere. Zero anticipo.",
+    "submitText": "CONFERMA ORDINE",
+    "submitSubtext": "Pagamento Contanti alla Consegna",
+    "reassurance": "Dati protetti · SSL 256-bit · Nessun addebito anticipato"
+  },
+
+  "faq": {
+    "eyebrow": "Domande frequenti",
+    "title": "Hai ancora dubbi? Ecco le risposte.",
+    "items": [
+      { "question": "Come faccio ad ordinare?", "answer": "Clicca sul pulsante di acquisto, compila il modulo con i tuoi dati e conferma l'ordine. Sarai contattato telefonicamente o tramite WhatsApp per la conferma e riceverai il pacco comodamente a casa, con pagamento in contanti." },
+      { "question": "Come funziona la spedizione?", "answer": "La spedizione è totalmente gratuita. Da quando l'ordine è confermato, impiega circa 24/48h lavorative per essere consegnato." },
+      { "question": "E se non mi piace?", "answer": "Puoi richiedere un rimborso totale facendo il reso del prodotto entro 30 giorni dalla consegna. Veniamo noi a ritirare il pacco e a ridarti l'intera somma spesa." },
+      { "question": "Se ho problemi dopo 30 giorni?", "answer": "Tranquillo, tutti i nostri prodotti hanno 2 anni di garanzia." },
+      { "question": "Come faccio a chiedere un reso o assistenza?", "answer": "Per chiedere assistenza o un reso dopo aver effettuato un ordine, puoi utilizzare il modulo di contatto che trovi all'interno del sito o tramite la mail presente nel footer." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€139",
+    "newPrice": "€69",
+    "buttonText": "ORDINA ORA",
+    "buttonSubtext": "Paga Alla Consegna"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 69.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
+  "ty": {
+    "title": "Ordine Confermato!",
+    "subtitle": "Il tuo ordine è stato ricevuto con successo.",
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Riepilogo Ordine",
+    "accessoriesLabel": "+ Accessori inclusi",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — nessun anticipo",
+    "yourDataTitle": "I Tuoi Dati",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "Cosa succede ora?",
+    "message": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine e organizzare la consegna.",
+    "steps": [
+      "Riceverai una chiamata o un messaggio WhatsApp di conferma",
+      "Il pacco verrà spedito in 24/48h",
+      "Paghi in contanti al corriere alla consegna"
+    ],
+    "footerText": "Garanzia 2 Anni · 30 Giorni di Reso · Assistenza Dedicata"
+  }
+}

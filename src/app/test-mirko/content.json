@@ -1,0 +1,531 @@
+{
+  "_instructions": [
+    "REGOLE GLOBALI PER LA COMPILAZIONE DI QUESTO JSON:",
+    "",
+    "=== ENCODING ===",
+    "0. Il file DEVE essere salvato in UTF-8. Usare sempre i caratteri accentati nativi (è, à, ù, ò, ì, é) e MAI apostrofi al posto degli accenti. Le emoji e i simboli speciali vanno inseriti direttamente come caratteri Unicode.",
+    "",
+    "=== NAZIONI ===",
+    "1. NON fare MAI riferimento a una nazione specifica (es: Italia, in Italia, ecc). Le landing vengono lanciate in tutta Europa.",
+    "",
+    "=== COERENZA SOCIAL PROOF ===",
+    "2. hero.socialProof.count DEVE corrispondere ESATTAMENTE a reviews.totalCount. La media stelle in hero.socialProof.rating DEVE corrispondere a reviews.rating.",
+    "",
+    "=== IMMAGINI (REGOLA FONDAMENTALE) ===",
+    "3. STRUTTURA CARTELLE: /images/[nome-venditore]/[nome-prodotto]/ — se il prodotto ha più parole (es: 'QuickChef Pro Max'), la cartella si chiama solo con il nome base (es: 'quickchef'). Se la cartella esiste già, CHIEDERE all'utente come vuole chiamarla. Dentro la cartella ci sono due sottocartelle:",
+    "   - carosello/ — foto numerate progressivamente (1.jpg, 2.png, 3.webp, ecc). TUTTE le immagini presenti vanno inserite nel gallery.slides della hero, IN ORDINE. La prima immagine (1.*) va anche nel riepilogo ordine come thumbnail.",
+    "   - angle/ — foto numerate progressivamente (1.jpg, 2.png, ecc). Vanno inserite IN ORDINE nei blocchi della sezione 'Perché è diverso' (features.items). La foto 1 va nel primo blocco, la 2 nel secondo, ecc.",
+    "   L'utente carica le immagini, tu inserisci i path nel JSON. Non importa l'estensione: inserisci tutte le immagini presenti. Le immagini vengono ottimizzate automaticamente dal componente tramite next/image.",
+    "",
+    "=== BENEFITS ===",
+    "4. I benefits devono riguardare SOLO il prodotto e le sue funzionalità. MAI parlare di spedizione, consegna, pagamento, garanzia nei benefits.",
+    "",
+    "=== PREZZI (REGOLA FONDAMENTALE) ===",
+    "5. TUTTI I PREZZI vengono dalla sezione 'pricing'. L'utente fornisce prezzi e sconti all'inizio della creazione, vanno inseriti in pricing. Da lì vengono pescati OVUNQUE servano: priceBox, midCta, comparison, package, orderForm, stickyCta. MAI hardcodare un prezzo.",
+    "",
+    "=== SOCIAL PROOF CLICK ===",
+    "6. Cliccando sulla social proof nella hero, l'utente viene portato alla sezione recensioni.",
+    "",
+    "=== TITOLI DI SEZIONE ===",
+    "7. I titoli (eyebrow + title) possono essere STATICI o DINAMICI. Quelli marcati STATICO non vanno mai cambiati. Quelli DINAMICI cambiano per ogni prodotto.",
+    "",
+    "=== TONO E LINGUAGGIO (REGOLA FONDAMENTALE) ===",
+    "8. TUTTI i testi della landing devono seguire queste regole:",
+    "   - Linguaggio MARKETING AGGRESSIVO e SEMPLICE, mai volgare.",
+    "   - Adatto ai boomer: estremamente semplice ma d'impatto.",
+    "   - Deve trasmettere URGENZA e avere EFFETTO WOW, molto spinto.",
+    "   - NON tecnico ma EMOZIONALE e IMMEDIATO.",
+    "   - Esempio: NON scrivere 'batteria da 5000mAh' ma '3 giorni senza scaricarsi'.",
+    "   - Esempio: NON scrivere 'motore da 800W' ma 'potenza da barbiere professionista'.",
+    "   - Traduci sempre le specifiche tecniche in BENEFICI CONCRETI che il cliente capisce e sente.",
+    "   - Frasi brevi, dirette, che colpiscono. Zero giri di parole.",
+    "",
+    "=== LUNGHEZZA TESTI (REGOLA FONDAMENTALE) ===",
+    "9. Le lunghezze di TUTTI i testi (titoli, descrizioni, bullet, recensioni, ecc) devono essere MOLTO SIMILI a quelle dell'esempio presente in questo JSON. Se un titolo nell'esempio è di 5 parole, anche il nuovo deve essere circa 5 parole. Se una descrizione è di 1 riga, anche la nuova deve essere di 1 riga. Se una recensione è di 3 righe, anche la nuova deve essere circa 3 righe. MAI testi molto più lunghi o molto più corti dell'esempio.",
+    "",
+    "=== MARCHI E NOMI (REGOLA FONDAMENTALE) ===",
+    "10. MAI citare nomi di negozi, brand, marchi registrati o aziende terze (es: Amazon, Decathlon, Apple, Samsung, ecc). Se serve un confronto, usare termini generici come 'altri prodotti', 'prodotti concorrenti', 'alternative in commercio'.",
+    "",
+    "=== NAZIONI (RIBADITO) ===",
+    "11. MAI fare riferimento all'Italia o a qualsiasi nazione specifica. Nemmeno nelle recensioni, nelle risposte del venditore, nei benefits, nelle FAQ. Le landing vengono usate in tutta Europa e tradotte.",
+    "",
+    "=== SPEDIZIONE E PAGAMENTO (REGOLA FONDAMENTALE) ===",
+    "12. NON inventare MAI informazioni su spedizione e pagamento. Le regole sono FISSE e NON modificabili:",
+    "   - Spedizione: SEMPRE gratuita, 24/48h.",
+    "   - Pagamento: SEMPRE alla consegna, in contanti al corriere.",
+    "   - Contrassegno: SEMPRE gratuito.",
+    "   - Reso: SEMPRE 30 giorni.",
+    "   - Garanzia: SEMPRE 2 anni.",
+    "   - MAI inventare costi di spedizione, metodi di pagamento alternativi (carta, PayPal, ecc), tempi diversi o condizioni diverse da queste.",
+    "",
+    "=== ANGLE (REGOLA FONDAMENTALE) ===",
+    "13. Gli angle forniti dall'utente riguardano SEMPRE e SOLO il prodotto e le sue funzionalità. Gli angle su spedizione, consegna, pagamento, garanzia, reso sono GIÀ presenti nelle sezioni statiche e NON vanno ripetuti nei contenuti dinamici (benefits, features, problems, hero, ecc). Non mischiare mai angle prodotto con angle logistica/negozio.",
+    "",
+    "=== LINGUA (REGOLA FONDAMENTALE) ===",
+    "14. La prima versione della landing è SEMPRE in ITALIANO, indipendentemente dalla lingua della fonte, del competitor o del riferimento fornito dall'utente. Anche se il link, le informazioni di partenza o il materiale è in polacco, inglese, tedesco, spagnolo o qualsiasi altra lingua, il copy va SEMPRE scritto in italiano. Le traduzioni nelle altre lingue vengono fatte successivamente nella Fase 3.",
+    "",
+    "=== GRAMMATICA E CORRETTEZZA (REGOLA FONDAMENTALE) ===",
+    "15. TUTTI i testi devono essere grammaticalmente corretti in italiano. Linguaggio semplice e diretto NON significa scorretto. Evitare calchi da altre lingue, costruzioni innaturali o frasi che suonano tradotte. Esempio: NON 'niente appiccica' ma 'lo sporco non attacca'. NON 'zero problemi hai' ma 'non avrai nessun problema'. Ogni frase deve suonare naturale per un madrelingua italiano. Il tono è aggressivo e semplice, ma la grammatica deve essere SEMPRE corretta.",
+    "",
+    "=== NOTE AGGIUNTIVE (WORKFLOW) ===",
+    "16. Dopo aver raccolto i dati del prodotto (Fase 0), PRIMA di iniziare la Fase 1 (analisi + copy), chiedere SEMPRE all'utente: 'Hai note aggiuntive, preferenze o cose da tenere a mente per questa landing?' — e attendere la risposta prima di procedere."
+  ],
+
+  "seo": {
+    "_note": "DINAMICO - Cambia per ogni prodotto. Title max 60 caratteri, description max 160 caratteri.",
+    "title": "NeckRelax Pro™ - Elimina il Dolore Cervicale in 10 Minuti",
+    "description": "Il massaggiatore EMS professionale che scioglie contratture e rigidità. Spedizione gratuita, pagamento alla consegna."
+  },
+
+  "pricing": {
+    "_note": "DINAMICO - FONTE UNICA DI VERITÀ PER TUTTI I PREZZI. Cambia per ogni prodotto e nazione. L'utente fornisce questi valori all'inizio della creazione. Tutti i prezzi visibili nella pagina si calcolano da qui.",
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 118.00,
+    "currentPrice": 59.00,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "text": "Spedizione Gratuita 24/48h · Pagamento alla Consegna · Garanzia 2 Anni"
+  },
+
+  "urgencyBanner": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "text": "⚠️ Attenzione: Forte richiesta —",
+    "highlight": "Ultimi 8 pezzi disponibili",
+    "suffix": "a questo prezzo"
+  },
+
+  "hero": {
+    "_note": "DINAMICO - Badge, titolo, sottotitolo e social proof cambiano per ogni prodotto. MAI citare nazioni specifiche.",
+    "_note_title": "DINAMICO - Titolo cambia per ogni prodotto.",
+    "_instructions_badge": "Qualcosa di semplice che riguarda il prodotto e trasmette INNOVAZIONE. Se prodotto tecnologico: 'Tecnologia [anno corrente]'. Se prodotto benessere/salute: 'Novità [anno corrente]' o 'Innovazione [anno corrente]'. Deve sempre contenere l'ANNO CORRENTE.",
+    "_instructions_title": "SOLUZIONE a un PROBLEMA. Il titolo deve dire al cliente cosa risolve il prodotto. Formato: frase principale + highlight (la parte wow in corsivo) + suffisso. DEVE essere grammaticalmente corretto: se title + highlight + suffix formano due frasi separate, usare punteggiatura (due punti, punto, ecc). Esempio corretto: 'Casa Pulita Ogni Giorno' + 'Senza Fare Nulla:' + 'Lui Aspira e Lava Mentre Tu Ti Rilassi'. Esempio corretto senza punteggiatura (unica frase): 'Elimina il Dolore Cervicale' + 'in 10 Minuti' + 'Senza Farmaci e Senza Fisioterapista'. Linguaggio emotivo, non tecnico.",
+    "_instructions_subtitle": "Descrizione aggressiva ma rassicurante. Spiega COSA fa il prodotto in modo semplice e concreto. Deve dare fiducia. 1-2 frasi.",
+    "_instructions_socialProof": "count: numero tra 10.000 e 30.000, MAI cifre tonde (es: 12.847, 23.519, 16.203). rating: valore random tra 4.7 e 4.9. DEVONO corrispondere ESATTAMENTE a reviews.totalCount e reviews.rating.",
+    "badge": "Tecnologia 2026",
+    "title": "Elimina il Dolore Cervicale",
+    "titleHighlight": "in 10 Minuti",
+    "titleSuffix": "Senza Farmaci e Senza Fisioterapista",
+    "subtitle": "Il primo massaggiatore con impulsi EMS che scioglie contratture, rigidità e tensione direttamente dal divano di casa. Semplice come indossare una sciarpa.",
+    "socialProof": {
+      "rating": "4.9/5",
+      "count": "12.847 clienti soddisfatti"
+    }
+  },
+
+  "gallery": {
+    "_note": "DINAMICO - Le immagini sono in /images/[venditore]/[prodotto]/carosello/ con nomi progressivi (1.jpg, 2.png, ecc). Inserire TUTTE le immagini presenti nella cartella, IN ORDINE. La prima (1.*) va anche nel riepilogo ordine. discountTag si calcola da pricing.discountPercent.",
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/neckrelax/carosello/1.jpg", "alt": "Prodotto vista frontale" },
+      { "src": "/images/mirko/neckrelax/carosello/2.jpg", "alt": "Prodotto in uso" },
+      { "src": "/images/mirko/neckrelax/carosello/3.jpg", "alt": "Prodotto dettaglio" },
+      { "src": "/images/mirko/neckrelax/carosello/4.jpg", "alt": "Prodotto accessori" },
+      { "src": "/images/mirko/neckrelax/carosello/5.jpg", "alt": "Prodotto confezione" },
+      { "src": "/images/mirko/neckrelax/carosello/6.jpg", "alt": "Prodotto laterale" },
+      { "src": "/images/mirko/neckrelax/carosello/7.jpg", "alt": "Prodotto lifestyle" }
+    ]
+  },
+
+  "benefits": {
+    "_note": "DINAMICO - Numero variabile di bullet point. Devono riguardare SOLO le caratteristiche/benefici del prodotto. NON parlare di spedizione, consegna, pagamento, garanzia qui.",
+    "_instructions": "Ogni bullet ha un TITOLO IN BOLD (incisivo, corto) e una DESCRIZIONE (1 riga, concreta). Devono puntare sugli ANGLE forniti dall'utente all'inizio. Se non viene detto quanti metterne: 5-6 di default. Se il prodotto ha molti angle fondamentali che devono esserci tutti: fino a 10. Valuta tu in base al prodotto. Linguaggio emotivo, non tecnico: traduci le specifiche in benefici concreti.",
+    "items": [
+      { "title": "Sollievo in 10 minuti:", "description": "impulsi EMS penetrano nel muscolo e sciolgono la contrattura." },
+      { "title": "Zero farmaci:", "description": "niente antidolorifici. Azione naturale su collo, spalle e trapezio." },
+      { "title": "Calore terapeutico 42°C:", "description": "rilassa la muscolatura profonda come un impacco caldo." },
+      { "title": "Usalo ovunque:", "description": "wireless, leggero (180g). In ufficio, in auto, sul divano." },
+      { "title": "15 livelli di intensità:", "description": "delicato per i sensibili, intenso per i \"duri\"." }
+    ]
+  },
+
+  "priceBox": {
+    "_note_static": "shippingLabel, shippingValue, guaranteeLabel, offerToggleText sono STATICI - non modificare.",
+    "_note_dynamic": "productName, originalPriceLabel, discountLabel e offerItems sono DINAMICI. TUTTI i prezzi si calcolano da pricing (originalPrice, currentPrice, discountPercent). discountLabel: 'RISPARMI [originalPrice - currentPrice][currencySymbol] (-[discountPercent]%)'.",
+    "_instructions_productName": "Nome prodotto con simbolo TM (trademark). Formato: 'NomeProdotto Pro™' o 'NomeProdotto™'. Usare sempre il nome esatto fornito dall'utente.",
+    "_instructions_offerItems": "L'utente fornisce cosa include l'offerta all'inizio della creazione. Inserire tutti gli elementi. Usare badge 'REGALO' per gli accessori extra/bonus. L'ultima riga è sempre 'Garanzia 2 Anni + Assistenza Dedicata' senza badge.",
+    "productName": "NeckRelax Pro™",
+    "originalPriceLabel": "Prezzo di listino:",
+    "discountLabel": "RISPARMI 59€ (-50%)",
+    "shippingLabel": "Spedizione Rapida:",
+    "shippingValue": "Gratis",
+    "guaranteeLabel": "🛡 Garanzia 2 Anni",
+    "offerToggleText": "🎁 Scopri cosa include l'offerta",
+    "offerItems": [
+      { "text": "NeckRelax Pro™ — Massaggiatore EMS Professionale", "badge": null },
+      { "text": "Cavo di ricarica USB-C", "badge": null },
+      { "text": "Custodia da Viaggio Premium", "badge": null },
+      { "text": "Gel Conduttore EMS", "badge": "REGALO" },
+      { "text": "Guida 5 Esercizi Anti-Cervicale", "badge": "REGALO" },
+      { "text": "Garanzia 2 Anni + Assistenza Dedicata", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "mainText": "ORDINA ORA",
+    "mainSubtext": "Pagamento Contanti alla Consegna",
+    "subNote": "🔒 Zero rischio: paghi solo quando ricevi il pacco"
+  },
+
+  "trustBadges": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "items": [
+      { "icon": "💳", "text": "Pagamento alla Consegna", "color": "green" },
+      { "icon": "🚚", "text": "Spedizione 24/48h", "color": "blue" },
+      { "icon": "🔃", "text": "30 Giorni di Reso", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "_note": "DINAMICO (contenuto) - Items e soluzione cambiano per ogni prodotto. MAI citare nazioni specifiche.",
+    "_note_title": "STATICO - eyebrow 'Ti riconosci?' e title 'Questi problemi ti sono familiari?' non cambiano mai.",
+    "_instructions_items": "Individua i 3 problemi PIÙ COMUNI che il prodotto risolve (salvo istruzioni diverse dall'utente). Descrivili come asfissianti ma senza essere drammatici. Devono creare FAMILIARITÀ: problemi quotidiani che capitano a tutti senza il prodotto. Il cliente deve pensare 'sì, succede anche a me'. Formato: emoji + titleBold (problema in una frase) + text (conseguenza breve). Lunghezza simile all'esempio nel template.",
+    "_instructions_solution": "solutionTitle è STATICO: 'Esiste una soluzione migliore.' - solutionText è DINAMICO: descrizione brevissima ed emozionale dei punti chiave del prodotto. 1-2 frasi. Stile: 'Tecnologia usata dai professionisti direttamente a casa tua. Senza abbonamenti.' Conciso, d'impatto.",
+    "eyebrow": "Ti riconosci?",
+    "title": "Questi problemi ti sono familiari?",
+    "items": [
+      { "icon": "😰", "titleBold": "Ti svegli con il collo bloccato", "text": "e la rigidità non passa fino a metà mattina." },
+      { "icon": "💻", "titleBold": "Dopo ore al computer senti una morsa", "text": "che parte dal collo e arriva alle spalle." },
+      { "icon": "💊", "titleBold": "Farmaci e pomate non bastano più", "text": "— il dolore torna sempre il giorno dopo." }
+    ],
+    "solutionTitle": "Esiste una soluzione migliore.",
+    "solutionText": "Tecnologia EMS professionale, direttamente a casa tua. Senza farmaci, senza appuntamenti."
+  },
+
+  "features": {
+    "_note": "DINAMICO (contenuto e titoli) - Numero variabile di blocchi foto+testo. Le immagini sono in /images/[venditore]/[prodotto]/angle/ con nomi progressivi (1.jpg, 2.png, ecc). Inserire IN ORDINE: la foto 1 nel primo blocco, la 2 nel secondo, ecc. tagColor: green, orange, blue, red.",
+    "_note_title": "DINAMICO - eyebrow 'Perché è diverso' è STATICO. Il title (sottotitolo grande) è DINAMICO.",
+    "_instructions_title": "Il title deve essere molto D'IMPATTO e SEMPLICE. Una frase corta che riassume il vantaggio principale del prodotto in modo emotivo. Esempi: 'Tecnologia professionale, semplicità casalinga.', 'Come avere un barbiere in casa.', 'Pulito perfetto senza muovere un dito.'",
+    "_instructions_items": "Angle incisivi sul prodotto, basati su quelli forniti dall'utente. Linguaggio SEMPLICE, non troppo tecnico. Se servono info tecniche, solo cose che tutti conoscono (wattaggio, gradi, ecc). I titoli dei singoli blocchi devono essere aggressivi e immediati. Esempi: 'Come avere una domestica in casa', 'Dimentica aspirapolvere e mocho', 'Sollievo in 10 minuti senza farmaci'. Ogni blocco ha: image, tag (etichetta corta in caps), title (incisivo), description (1-2 righe, beneficio concreto).",
+    "eyebrow": "Perché è diverso",
+    "title": "Tecnologia professionale, semplicità casalinga.",
+    "items": [
+      {
+        "image": "/images/mirko/neckrelax/feat_ems.jpg",
+        "imageAlt": "Impulsi EMS",
+        "tag": "SOLLIEVO IMMEDIATO",
+        "tagColor": "green",
+        "title": "Impulsi EMS Professionali",
+        "description": "16 elettrodi in silicone medicale rilassano il muscolo dall'interno, fino a 5cm di profondità."
+      },
+      {
+        "image": "/images/mirko/neckrelax/feat_calore.jpg",
+        "imageAlt": "Calore 42°C",
+        "tag": "CALORE TERAPEUTICO",
+        "tagColor": "orange",
+        "title": "42°C di Calore Costante",
+        "description": "Si scalda in 30 secondi. Dilata i vasi, accelera il recupero e amplifica l'effetto EMS."
+      },
+      {
+        "image": "/images/mirko/neckrelax/feat_wireless.jpg",
+        "imageAlt": "Batteria Wireless",
+        "tag": "LIBERTÀ TOTALE",
+        "tagColor": "green",
+        "title": "Wireless · 30 Sessioni di Batteria",
+        "description": "Solo 180g, ricarica USB-C. Usalo in ufficio, in auto o sul divano. Silenzioso."
+      },
+      {
+        "image": "/images/mirko/neckrelax/feat_design.jpg",
+        "imageAlt": "Design Adattabile",
+        "tag": "ADATTABILITÀ",
+        "tagColor": "blue",
+        "title": "Si Adatta a Qualsiasi Collo",
+        "description": "Design flessibile con pad auto-posizionanti. 15 livelli d'intensità, 4 modalità."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "_note": "DINAMICO (contenuto e titoli) - 3-4 step. Titolo, immagine e step cambiano per ogni prodotto. Se image è vuoto, l'immagine non viene mostrata.",
+    "_note_title": "DINAMICO - eyebrow 'Semplicissimo' e title cambiano per ogni prodotto.",
+    "_instructions": "Spiega l'utilizzo del prodotto in 3-4 passaggi. Deve essere SUPER SEMPLIFICATO: far sembrare l'uso del prodotto un gioco da ragazzi. Ogni step ha un titolo (1-2 parole, azione chiara) e una descrizione (1 riga, immediata). Il cliente deve pensare 'anche mia nonna ci riesce'. Esempio: '1. Accendilo - Un pulsante e parte. 2. Appoggialo - Si guida da solo. 3. Rilassati - Fa tutto lui.' Il title della sezione deve rafforzare la semplicità, tipo 'Come funziona? 3 gesti e via.' o '3 passi e hai finito.'",
+    "eyebrow": "Semplicissimo",
+    "title": "Come funziona? 3 gesti e via.",
+    "image": "",
+    "imageAlt": "Come funziona",
+    "steps": [
+      { "title": "Indossalo", "description": "Appoggialo sul collo. I pad aderiscono da soli, zero fili." },
+      { "title": "Scegli il Programma", "description": "Un pulsante: leggero, medio o intenso + calore. 10 secondi." },
+      { "title": "Rilassati", "description": "In 10 minuti il muscolo si scioglie. Si spegne da solo." }
+    ]
+  },
+
+  "midCta": {
+    "_note": "STATICO tranne la percentuale di sconto. Il testo usa pricing.discountPercent per la percentuale. Il subtext è sempre uguale. Formato: 'ORDINA ORA CON IL [discountPercent]% DI SCONTO'.",
+    "text": "ORDINA ORA CON IL 50% DI SCONTO",
+    "subtext": "Pagamento Contanti alla Consegna"
+  },
+
+  "specs": {
+    "_note": "DINAMICO (contenuto) - Presente SOLO per prodotti molto tecnici. Se il prodotto non è tecnico, questa sezione può essere omessa.",
+    "_note_title": "STATICO - eyebrow 'Specifiche' e title 'Caratteristiche Tecniche' non cambiano mai.",
+    "_instructions": "Inserire solo le specifiche PRINCIPALI, non un elenco infinito. Solo se il prodotto è molto tecnico (elettronica, dispositivi, ecc). Se le specifiche non sono presenti nelle info iniziali fornite dall'utente, INVENTALE esagerando leggermente verso l'alto: metti specifiche molto buone per quella categoria di prodotto. Esempio: se è un condizionatore, metti specifiche da fascia alta. Se è un massaggiatore, metti numeri da dispositivo professionale.",
+    "eyebrow": "Specifiche",
+    "title": "Caratteristiche Tecniche",
+    "items": [
+      { "label": "Tecnologia", "value": "EMS (Stimolazione Elettrica Muscolare)" },
+      { "label": "Elettrodi", "value": "16 pad in silicone medicale" },
+      { "label": "Livelli di intensità", "value": "15 livelli regolabili" },
+      { "label": "Modalità", "value": "4 (rilassamento, recupero, intenso, notte)" },
+      { "label": "Calore terapeutico", "value": "42°C costanti, riscaldamento in 30s" },
+      { "label": "Batteria", "value": "Li-ion 1800mAh — circa 30 sessioni" },
+      { "label": "Ricarica", "value": "USB-C, carica completa in 2h" },
+      { "label": "Peso", "value": "180g" },
+      { "label": "Materiale", "value": "ABS + silicone medicale ipoallergenico" },
+      { "label": "Timer auto-spegnimento", "value": "15 minuti" },
+      { "label": "Certificazioni", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "_note": "DINAMICO (contenuto) - Numero variabile di righe. productColumn contiene il nome prodotto, competitorColumn l'alternativa. I prezzi nelle righe si calcolano da pricing (mai hardcodati).",
+    "_note_title": "STATICO - eyebrow 'Il Confronto' e title 'Quali vantaggi avrai rispetto alle alternative?' non cambiano mai.",
+    "_instructions": "Angle principali del prodotto (non troppi, 4-6 righe) confrontati con la concorrenza. REGOLE: 1) NON troppo tecnico (niente '4000 vs 5000 ampere'). 2) NON auto-celebrativo esagerato (niente 'il nostro bello, il loro brutto'). 3) OBIETTIVO e PRATICO: vantaggi concreti. Esempio: 'Caldo e freddo' vs 'Solo freddo', 'Timer programmabile' vs 'Accensione manuale'. 4) La concorrenza deve essere EQUA: il concorrente più venduto su Amazon, oppure l'alternativa umana/professionale (es: nutrizionista, fisioterapista, barbiere). competitorColumn può essere: 'Fisioterapista / Farmaci', 'Prodotto concorrente migliore', 'Altri prodotti', 'Robot concorrenti su Amazon', ecc. 5) L'ultima riga è sempre il COSTO: nostro prezzo (da pricing) vs costo alternativa. 6) TESTI CORTI: devono stare nella tabella senza uscire fuori. Max 5-6 parole per cella.",
+    "eyebrow": "Il Confronto",
+    "title": "Quali vantaggi avrai rispetto alle alternative?",
+    "productColumn": "NeckRelax Pro™",
+    "competitorColumn": "Fisioterapista / Farmaci",
+    "rows": [
+      { "feature": "Sollievo dal dolore", "product": "✔ In 10 minuti, ogni giorno", "competitor": "Solo durante la seduta" },
+      { "feature": "Disponibilità", "product": "✔ 24/7 a casa tua", "competitor": "Solo su appuntamento" },
+      { "feature": "Tecnologia EMS", "product": "✔ Professionale (16 pad)", "competitor": "Solo in clinica" },
+      { "feature": "Calore terapeutico", "product": "✔ Integrato 42°C", "competitor": "Impacchi manuali" },
+      { "feature": "Effetti collaterali", "product": "✔ Zero", "competitor": "Stomaco, fegato (farmaci)" },
+      { "feature": "Costo totale", "product": "✔ Solo 59€ (una volta)", "competitor": "500-800€ / anno" }
+    ]
+  },
+
+  "package": {
+    "_note": "DINAMICO (contenuto) - Numero variabile di elementi nel pacco. TUTTI i prezzi si calcolano da pricing. valueType: 'price' (barrato, usa pricing.originalPrice), 'included' (verde INCLUSO), 'gift' (arancione REGALO). MAI cancellare la scritta INCLUSO.",
+    "_note_title": "STATICO - eyebrow 'Tutto incluso' e title 'Cosa ricevi a casa tua' non cambiano mai.",
+    "_instructions": "Stessi elementi inseriti in priceBox.offerItems nella hero. DEVONO corrispondere. Prima riga: il prodotto principale, a destra il prezzo di listino barrato (pricing.originalPrice). Righe successive: accessori/bonus con 'INCLUSO' o 'REGALO'. totalOriginalLabel: sempre 'Prezzo di Listino:'. totalCurrentLabel: sempre 'Oggi paghi solo:'. totalSave: 'Risparmi [risparmio] · Spedizione GRATUITA'. Tutti i prezzi da pricing.",
+    "eyebrow": "Tutto incluso",
+    "title": "Cosa ricevi a casa tua",
+    "items": [
+      { "icon": "📦", "text": "NeckRelax Pro™ — Massaggiatore EMS", "value": "€118,00", "valueType": "price" },
+      { "icon": "🔌", "text": "Cavo di ricarica USB-C", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "📖", "text": "Guida ai 5 Esercizi Anti-Cervicale", "value": "REGALO", "valueType": "gift" },
+      { "icon": "💠", "text": "Gel Conduttore EMS (migliora l'effetto)", "value": "REGALO", "valueType": "gift" },
+      { "icon": "📎", "text": "Custodia da Viaggio Premium", "value": "REGALO", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Prezzo di Listino:",
+    "totalOriginalValue": "€197,00",
+    "totalCurrentLabel": "Oggi paghi solo:",
+    "totalCurrentValue": "€59,00",
+    "totalSave": "Risparmi €138,00 · Spedizione GRATUITA",
+    "ctaText": "ORDINA ORA"
+  },
+
+  "reviews": {
+    "_note": "DINAMICO (contenuto) - rating, totalCount e items cambiano per ogni prodotto. totalCount DEVE corrispondere a hero.socialProof.count. MAI citare nazioni nelle recensioni (nomi e città si adattano alla nazione nella fase traduzioni).",
+    "_note_title": "STATICO - eyebrow 'Cosa dicono di Noi' e title 'Recensioni Verificate' non cambiano mai.",
+    "_note_static": "verifiedNote, showMoreText, leaveReviewText sono STATICI - non modificare.",
+    "_instructions": [
+      "10 recensioni totali. Distribuzione uomo/donna in base al prodotto: se femminile tutte donne, se molto maschile tutti uomini (max 1-2 donne), se unisex mix equilibrato.",
+      "STELLE: tutte 5 stelle TRANNE una da 4 stelle. Quella da 4 stelle dice cose tipo 'per ora metto 4 stelle, voglio provarlo ancora un po prima di dare il massimo' o simile.",
+      "STILE TESTO: NO virgolette attorno al testo. Tono INFORMALE, poco tecnico. Non deve sembrare scritto da un copywriter ma da una persona vera. NON cose tipo 'Ho provato GrandX545 Pro e ne sono rimasta entusiasta!' ma piuttosto 'ho provato questo aggeggio e mi trovo molto bene... spedizione rapida corriere gentilissimo nessun costo a parte'. Alcune recensioni devono menzionare la spedizione rapida/gratuita, tipo 'è arrivato dopo soli due giorni'.",
+      "FORMATTAZIONE: testo SEMPLICE, senza grassetti, corsivi, tag HTML o formattazioni di alcun tipo. Solo testo puro.",
+      "MAIUSCOLE: mix realistico. Alcune recensioni (circa metà) usano le maiuscole correttamente (inizio frase, dopo il punto). Altre (circa metà) scrivono tutto minuscolo senza maiuscole a inizio frase. MAI maiuscole nei nomi dei prodotti tipo 'GrandProX675' — i clienti veri scrivono 'questo aggeggio' o 'il prodotto'.",
+      "NOMI: realistici, non troppo comuni e non troppo rari. MAI cognomi-colore (Rossi, Bianchi, Verdi) o cognomi troppo tipici (Ferrari, Colombo). Usare nomi credibili. Nelle traduzioni i nomi vanno adattati alla lingua di destinazione.",
+      "NON fare errori di digitazione/grammaticali che potrebbero dare problemi nelle traduzioni.",
+      "RISPOSTA VENDITORE: sempre gentile e professionale. Rispondere a 9 recensioni su 10 (inclusa quella da 4 stelle). Una recensione (a 5 stelle) resta senza risposta."
+    ],
+    "eyebrow": "Cosa dicono di Noi",
+    "title": "Recensioni Verificate",
+    "rating": "4.9",
+    "totalCount": "12.847 recensioni",
+    "verifiedNote": "✓ Le recensioni vengono verificate da un team neutrale esterno a questo sito web.",
+    "showMoreText": "Mostra altre recensioni",
+    "leaveReviewText": "✏️ Lascia una recensione",
+    "items": [
+      {
+        "initials": "FS",
+        "name": "Federica Santoro",
+        "stars": 5,
+        "text": "Lo uso da una settimana e il collo sta già molto meglio, prima non riuscivo neanche a girarmi la mattina. L'ho fatto provare anche a mio marito che lavora in magazzino e dice che non può più farne a meno. Arrivato in due giorni, pagato al corriere senza problemi.",
+        "verified": true,
+        "sellerReply": "Federica, siamo contenti che stia funzionando per tutta la famiglia! Il fatto che suo marito lo usi dopo il lavoro in magazzino è esattamente l'uso per cui è stato progettato. Per qualsiasi necessità siamo qui."
+      },
+      {
+        "initials": "GT",
+        "name": "Giuseppe Tarantino",
+        "stars": 5,
+        "text": "lavoro al computer 8 ore al giorno e la sera avevo sempre il collo a pezzi. dalla prima sera ho sentito la differenza. lo uso 15 minuti mentre guardo la tv e il giorno dopo sto molto meglio. consigliatissimo",
+        "verified": true,
+        "sellerReply": "Giuseppe, ci fa piacere! L'uso serale è il momento perfetto per rilassare la muscolatura dopo una giornata di lavoro. Grazie per la fiducia."
+      },
+      {
+        "initials": "LM",
+        "name": "Lucia Marchetti",
+        "stars": 5,
+        "text": "L'ho comprato per mia madre di 72 anni che ha la cervicale da una vita. È riuscita a usarlo da sola senza aiuto, facilissimo. Mi ha chiamato il giorno dopo dicendo che ha dormito come non dormiva da mesi.",
+        "verified": true,
+        "sellerReply": "Lucia, che bella notizia! È progettato proprio per essere usato anche dalle persone meno esperte. Un saluto alla mamma!"
+      },
+      {
+        "initials": "RF",
+        "name": "Roberto Ferretti",
+        "stars": 4,
+        "text": "funziona bene lo ammetto, il calore si sente subito e dà sollievo. per ora metto 4 stelle perché voglio provarlo ancora un paio di settimane prima di dare il massimo ma le premesse sono ottime",
+        "verified": true,
+        "sellerReply": "Roberto, apprezziamo la sua onestà! Siamo sicuri che con l'uso continuato noterà risultati ancora migliori. Ci aggiorni tra qualche settimana, saremo felici di leggere il suo feedback."
+      },
+      {
+        "initials": "VP",
+        "name": "Valentina Proietti",
+        "stars": 5,
+        "text": "Ero molto scettica su queste cose ma una collega me lo ha consigliato e mi ha cambiato le serate. Prima prendevo sempre la tachipirina adesso la uso molto meno. Il calore è spettacolare.",
+        "verified": true,
+        "sellerReply": "Valentina, siamo felici che abbia trovato un'alternativa naturale. Il passaparola è il nostro miglior complimento. Grazie!"
+      },
+      {
+        "initials": "MS",
+        "name": "Marco Sabatini",
+        "stars": 5,
+        "text": "guido il camion tutto il giorno e il collo era un disastro. lo uso anche in pausa pranzo perché è wireless, nessun filo. il dolore è diminuito tanto in una settimana, lo porto sempre con me",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "AC",
+        "name": "Angela Caputo",
+        "stars": 5,
+        "text": "ordinato lunedì arrivato mercoledì. pagato al corriere e basta, nessun costo nascosto. lo uso la sera prima di dormire e la differenza si sente. anche mia figlia me ne ha chiesto uno",
+        "verified": true,
+        "sellerReply": "Angela, trasparenza totale sui costi è la nostra priorità. Felici che si trovi bene, per la figlia può usare lo stesso link!"
+      },
+      {
+        "initials": "PN",
+        "name": "Paolo Nardella",
+        "stars": 5,
+        "text": "Come farmacista vedo troppa gente che abusa di antidolorifici per il collo. Questo è un'alternativa seria, l'ho consigliato a diversi clienti e tutti sono soddisfatti. La tecnologia EMS funziona.",
+        "verified": true,
+        "sellerReply": "Paolo, la conferma di un professionista sanitario è il miglior riconoscimento. Grazie per la fiducia e per i consigli ai suoi clienti!"
+      },
+      {
+        "initials": "SR",
+        "name": "Simona Rinaldi",
+        "stars": 5,
+        "text": "spedizione velocissima e prodotto ottimo. non pensavo funzionasse così bene per 59 euro, ho speso molto di più in pomate e fisioterapista senza risultati così. lo consiglio a tutti",
+        "verified": true,
+        "sellerReply": "Simona, è proprio quello che vogliamo sentire! Un prodotto professionale ad un prezzo accessibile. Grazie per la recensione."
+      },
+      {
+        "initials": "DC",
+        "name": "Davide Catalano",
+        "stars": 5,
+        "text": "Lo uso dopo l'allenamento per il recupero muscolare. L'EMS è la stessa tecnologia che usano in palestra ma costa dieci volte meno. La batteria dura tantissimo, lo ricarico una volta a settimana.",
+        "verified": true,
+        "sellerReply": "Davide, quando un sportivo conferma la qualità della tecnologia EMS, per noi è il complimento più bello. Grazie!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "title": "Lascia la tua recensione",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "Valutazione",
+    "textLabel": "La tua recensione",
+    "textPlaceholder": "Racconta la tua esperienza...",
+    "submitText": "Invia Recensione",
+    "successTitle": "Grazie per la tua recensione!",
+    "successText": "La tua recensione è in attesa di approvazione da un team esterno a questo sito web. Le recensioni lasciate da chi non ha acquistato il prodotto non saranno pubblicate, questo per evitare recensioni non autentiche.",
+    "closeText": "Chiudi"
+  },
+
+  "orderForm": {
+    "_note": "SEMI-STATICO - La struttura e i campi sono sempre uguali. Cambiano dinamicamente: nome prodotto (nella prima summaryLine), immagine prodotto (prima slide del carosello), prezzi (da pricing). Spedizione e Contrassegno sono SEMPRE gratuiti.",
+    "_note_title": "STATICO - eyebrow 'Modulo d'Ordine' e title 'Completa il tuo ordine' non cambiano mai.",
+    "_note_countdown": "OPZIONALE - showCountdown controlla se il countdown viene mostrato. L'utente decide se attivarlo per ogni landing. countdownMinutes: durata in minuti, default 118 (1h 58min) salvo diverse indicazioni.",
+    "_note_dynamic": "summaryLines: la prima riga ha nome prodotto + prezzo da pricing.currentPrice. totalValue si calcola da pricing.currentPrice. timerLabel usa pricing.discountPercent per la percentuale. L'immagine nel riepilogo è la PRIMA foto del carosello (gallery.slides[0]) in versione thumbnail.",
+    "eyebrow": "Modulo d'Ordine",
+    "title": "Completa il tuo ordine",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "⏰ L'offerta -50% scade tra:",
+    "stockWarning": "⚠️ Solo <strong>8 pezzi</strong> rimasti a questo prezzo",
+    "summaryTitle": "Riepilogo Ordine",
+    "summaryLines": [
+      { "label": "NeckRelax Pro™ + Accessori", "value": "€59,00", "type": "normal" },
+      { "label": "Spedizione rapida 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Spese di Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€59,00",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo di Spedizione *", "placeholder": "Via, Numero, Città, CAP" }
+    },
+    "phoneNote": "ℹ️ Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine.",
+    "paymentBadge": "💰 Pagamento alla Consegna — Paghi in contanti al corriere. Zero anticipo.",
+    "submitText": "✔ CONFERMA ORDINE",
+    "submitSubtext": "Pagamento Contanti alla Consegna",
+    "reassurance": "🔒 Dati protetti · SSL 256-bit · Nessun addebito anticipato"
+  },
+
+  "faq": {
+    "_note": "STATICO - Le FAQ sono sempre uguali per tutte le landing. Non modificare.",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Domande frequenti",
+    "title": "Hai ancora dubbi? Ecco le risposte.",
+    "items": [
+      { "question": "Come faccio ad ordinare?", "answer": "Clicca sul pulsante di acquisto, compila il modulo con i tuoi dati e conferma l'ordine. Sarai contattato telefonicamente o tramite WhatsApp per la conferma e riceverai il pacco comodamente a casa, con pagamento in contanti." },
+      { "question": "Come funziona la spedizione?", "answer": "La spedizione è totalmente gratuita. Da quando l'ordine è confermato, impiega circa 24/48h lavorative per essere consegnato." },
+      { "question": "E se non mi piace?", "answer": "Puoi richiedere un rimborso totale facendo il reso del prodotto entro 30 giorni dalla consegna. Veniamo noi a ritirare il pacco e a ridarti l'intera somma spesa." },
+      { "question": "Se ho problemi dopo 30 giorni?", "answer": "Tranquillo, tutti i nostri prodotti hanno 2 anni di garanzia." },
+      { "question": "Come faccio a chiedere un reso o assistenza?", "answer": "Per chiedere assistenza o un reso dopo aver effettuato un ordine, puoi utilizzare il modulo di contatto che trovi all'interno del sito o tramite la mail presente nel footer." }
+    ]
+  },
+
+  "stickyCta": {
+    "_note": "SEMI-STATICO - buttonText e buttonSubtext sono STATICI. I prezzi sono DINAMICI: oldPrice = pricing.originalPrice, newPrice = pricing.currentPrice.",
+    "oldPrice": "€118",
+    "newPrice": "€59",
+    "buttonText": "ORDINA ORA",
+    "buttonSubtext": "Paga Alla Consegna"
+  },
+
+  "tracking": {
+    "_note": "Compilato nella FASE 4. conversionValue = pricing.currentPrice, conversionCurrency = pricing.currency.",
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 59.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ty": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. TUTTI i testi visibili della TY page devono essere in questa sezione, MAI hardcodati nel componente.",
+    "title": "Ordine Confermato!",
+    "subtitle": "Il tuo ordine è stato ricevuto con successo.",
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Riepilogo Ordine",
+    "accessoriesLabel": "+ Accessori inclusi",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — nessun anticipo",
+    "yourDataTitle": "I Tuoi Dati",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "Cosa succede ora?",
+    "message": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine e organizzare la consegna.",
+    "steps": [
+      "Riceverai una chiamata o un messaggio WhatsApp di conferma",
+      "Il pacco verrà spedito in 24/48h",
+      "Paghi in contanti al corriere alla consegna"
+    ],
+    "footerText": "Garanzia 2 Anni · 30 Giorni di Reso · Assistenza Dedicata"
+  }
+}

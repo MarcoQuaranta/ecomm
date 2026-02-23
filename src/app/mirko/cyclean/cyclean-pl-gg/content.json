@@ -1,0 +1,417 @@
+{
+  "seo": {
+    "title": "CyClean Nano Pro™ - Odkurza, Myje i Suszy Samodzielnie",
+    "description": "Robot odkurzający z bazą samoczyszczącą, który sprząta cały dom za Ciebie. Darmowa wysyłka, płatność przy odbiorze."
+  },
+
+  "pricing": {
+    "currency": "PLN",
+    "currencySymbol": "zł",
+    "originalPrice": 529.00,
+    "currentPrice": 349.00,
+    "discountPercent": 34
+  },
+
+  "topBar": {
+    "text": "Darmowa Wysyłka 24/48h · Płatność przy Odbiorze · Gwarancja 2 Lata"
+  },
+
+  "urgencyBanner": {
+    "text": "Uwaga: Duże zainteresowanie —",
+    "highlight": "Ostatnie 8 sztuk dostępnych",
+    "suffix": "w tej cenie"
+  },
+
+  "hero": {
+    "badge": "Technologia 2026",
+    "title": "Czysty Dom Każdego Dnia",
+    "titleHighlight": "Bez Wysiłku:",
+    "titleSuffix": "Odkurza, Myje i Suszy, Gdy Ty Odpoczywasz",
+    "subtitle": "Jedyny robot z inteligentną bazą, który odkurza brud, myje podłogi i opróżnia się sam. Plamy, sierść i kurz znikają bez kiwnięcia palcem.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18 473 zadowolonych klientów"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-34%",
+    "slides": [
+      { "src": "/images/mirko/cyclean/carosello/1.webp", "alt": "CyClean Nano Pro widok z przodu" },
+      { "src": "/images/mirko/cyclean/carosello/2.webp", "alt": "CyClean Nano Pro w akcji" },
+      { "src": "/images/mirko/cyclean/carosello/3.webp", "alt": "Baza ładująca z funkcją samoczyszczenia" },
+      { "src": "/images/mirko/cyclean/carosello/4.webp", "alt": "CyClean Nano Pro szczegół szczotek" },
+      { "src": "/images/mirko/cyclean/carosello/5.webp", "alt": "CyClean Nano Pro kompletny zestaw" },
+      { "src": "/images/mirko/cyclean/carosello/6.webp", "alt": "CyClean Nano Pro widok z boku" },
+      { "src": "/images/mirko/cyclean/carosello/7.webp", "alt": "CyClean Nano Pro akcesoria" },
+      { "src": "/images/mirko/cyclean/carosello/8.webp", "alt": "CyClean Nano Pro szczegół bazy" },
+      { "src": "/images/mirko/cyclean/carosello/9.webp", "alt": "CyClean Nano Pro styl życia" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Koniec z bólem pleców:", "description": "myje podłogi za Ciebie, nigdy więcej się nie schylasz." },
+      { "title": "Sierść zwierząt? Usunięta:", "description": "zbiera 99% sierści i włosów w jednym przejeździe." },
+      { "title": "Odkurza, myje i suszy:", "description": "robi wszystko w jednym przejeździe, podłoga sucha w minutę." },
+      { "title": "Opróżnia się sam:", "description": "baza zbiera brud do szczelnego worka. Nie dotykasz niczego." },
+      { "title": "Omija przeszkody i schody:", "description": "widzi wszystko dzięki czujnikowi laserowemu i nigdy nie uderza w meble." },
+      { "title": "Steruj głosem:", "description": "wystarczy powiedzieć 'posprzątaj kuchnię' i sam rusza." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "CyClean Nano Pro™",
+    "originalPriceLabel": "Cena katalogowa:",
+    "discountLabel": "OSZCZĘDZASZ 180 zł (-34%)",
+    "shippingLabel": "Szybka Wysyłka:",
+    "shippingValue": "Za darmo",
+    "guaranteeLabel": "Gwarancja 2 Lata",
+    "offerToggleText": "Zobacz, co zawiera oferta",
+    "offerItems": [
+      { "text": "CyClean Nano Pro™ — Robot Odkurzający i Myjący Podłogi", "badge": null },
+      { "text": "Baza Ładująca z Funkcją Samoczyszczenia", "badge": null },
+      { "text": "Worki na Kurz (2 szt.)", "badge": null },
+      { "text": "Szczotki Boczne Zapasowe (2 szt.)", "badge": "GRATIS" },
+      { "text": "Ściereczki do Mopa Wielokrotnego Użytku (4 szt.)", "badge": "GRATIS" },
+      { "text": "Filtr HEPA Zapasowy (2 szt.)", "badge": "GRATIS" },
+      { "text": "Płyn do Mycia Podłóg", "badge": "GRATIS" },
+      { "text": "Gwarancja 2 Lata + Dedykowana Obsługa", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ZAMÓW TERAZ",
+    "mainSubtext": "Płatność Gotówką przy Odbiorze",
+    "subNote": "Zero ryzyka: płacisz dopiero, gdy otrzymasz paczkę"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Płatność przy Odbiorze", "color": "green" },
+      { "icon": "truck", "text": "Wysyłka 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Dni na Zwrot", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Znasz to?",
+    "title": "Te problemy są Ci znane?",
+    "items": [
+      { "icon": "pain", "titleBold": "Za każdym razem, gdy odkurzasz, boli Cię kręgosłup", "text": "a następnego dnia budzisz się jeszcze bardziej zmęczony." },
+      { "icon": "warning", "titleBold": "Sierść zwierząt wszędzie — na kanapie, dywanach, w kuchni", "text": "— zbierasz ją, a po godzinie jest znowu." },
+      { "icon": "fatigue", "titleBold": "Myjesz podłogi ręcznie, a one wciąż są mokre i lepkie", "text": "— niekończąca się praca, która nigdy się nie kończy." }
+    ],
+    "solutionTitle": "Jest lepsze rozwiązanie.",
+    "solutionText": "Robot, który odkurza, myje i suszy samodzielnie. Opróżnia się w bazie i rusza ponownie, bez Twojego udziału."
+  },
+
+  "features": {
+    "eyebrow": "Dlaczego jest inny",
+    "title": "Jak mieć gosposię w domu, bez płacenia co miesiąc.",
+    "items": [
+      {
+        "image": "/images/mirko/cyclean/angle/1.gif",
+        "imageAlt": "Moc ssania",
+        "tag": "EKSTREMALNA MOC",
+        "tagColor": "green",
+        "title": "Zbiera Nawet Najcięższe Rzeczy",
+        "description": "Ma tak dużą moc ssania, że zbiera <strong>monety, karmę i ciężkie zanieczyszczenia</strong>. Sierść zwierząt, okruszki i kurz nie mają szans."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/2.gif",
+        "imageAlt": "Baza samoczyszcząca",
+        "tag": "ZAPOMNIJ O NIM",
+        "tagColor": "blue",
+        "title": "Baza Robi Wszystko Sama",
+        "description": "Wysysa brud z robota i zbiera go w <strong>szczelny worek</strong>. Napełnia czystą wodę i odprowadza brudną. Ty <strong>nie dotykasz niczego</strong>."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/3.gif",
+        "imageAlt": "Mycie ciśnieniowe",
+        "tag": "GŁĘBOKIE MYCIE",
+        "tagColor": "orange",
+        "title": "Usuwa Nawet Zaschnięte Plamy",
+        "description": "Obrotowe ściereczki wirują <strong>setki razy na minutę</strong> i usuwają plamy po kawie, sosie i błocie. Podłoga pozostaje czysta i <strong>sucha w minutę</strong>."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/4.gif",
+        "imageAlt": "Nawigacja laserowa",
+        "tag": "INTELIGENCJA LASEROWA",
+        "tagColor": "green",
+        "title": "Nie Uderza i Nie Spada ze Schodów",
+        "description": "Widzi i <strong>omija przeszkody</strong> takie jak buty, kable i zabawki. Mapuje cały dom co do milimetra za pomocą <strong>czujnika laserowego</strong> i nie pomija żadnej strefy."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/5.gif",
+        "imageAlt": "Sterowanie aplikacją i głosem",
+        "tag": "PEŁNA KONTROLA",
+        "tagColor": "blue",
+        "title": "Słucha Twoich Komend",
+        "description": "Powiedz mu, żeby posprzątał kuchnię za pomocą <strong>asystenta głosowego</strong> i rusza. Albo użyj <strong>Aplikacji</strong>, żeby wybrać pokoje, zaplanować godziny i sterować nim z zewnątrz."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/6.webp",
+        "imageAlt": "Bateria o długiej żywotności",
+        "tag": "NIEZMORDOWANY",
+        "tagColor": "orange",
+        "title": "Nawet 8 Godzin Sprzątania Non-Stop",
+        "description": "Bateria wystarcza na <strong>cały dzień</strong>. Gdy się rozładuje, wraca sam do bazy, <strong>ładuje się i rusza ponownie</strong> dokładnie z miejsca, w którym skończył."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Banalnie proste",
+    "title": "Jak to działa? 4 kroki i gotowe.",
+    "image": "/images/mirko/cyclean/come-usare.webp",
+    "imageAlt": "CyClean Nano Pro w działaniu",
+    "imageCaption": "W pełni automatyczny: wykrywa trasę, sprząta i opróżnia się sam",
+    "steps": [
+      { "title": "Włącz go", "description": "Przy pierwszym uruchomieniu sam mapuje cały dom. Nie pomija żadnej strefy." },
+      { "title": "Wybierz tryb", "description": "Zdecyduj, czy ma tylko odkurzać, tylko myć, czy robić wszystko naraz. Jedno dotknięcie i rusza." },
+      { "title": "Sam się uzupełnia", "description": "Wraca do bazy, odprowadza brudną wodę i napełnia się czystą wodą z detergentem." },
+      { "title": "Opróżnia się sam", "description": "Baza wysysa brud z robota. Ty musisz tylko wyrzucić worek, gdy się zapełni." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ZAMÓW TERAZ Z RABATEM 34%",
+    "subtext": "Płatność Gotówką przy Odbiorze"
+  },
+
+  "comparison": {
+    "eyebrow": "Porównanie",
+    "title": "Jakie korzyści zyskasz w porównaniu z alternatywami?",
+    "featureColumn": "Funkcja",
+    "winnerBadge": "ZWYCIĘZCA",
+    "productColumn": "CyClean Nano Pro™",
+    "competitorColumn": "Roboty konkurencji",
+    "rows": [
+      { "feature": "Baza samoczyszcząca", "product": "✔ W cenie", "competitor": "Opcjonalnie (1200+ zł)" },
+      { "feature": "Ssanie", "product": "✔ Ekstremalna moc", "competitor": "Standardowe" },
+      { "feature": "Mycie podłóg", "product": "✔ Odkurza, myje i suszy", "competitor": "Tylko odkurzanie" },
+      { "feature": "Autonomia", "product": "✔ Do 8 godzin", "competitor": "Maks. 90 minut" },
+      { "feature": "Sterowanie aplikacją i głosem", "product": "✔ Pełne + głosowe", "competitor": "Ograniczone lub brak" },
+      { "feature": "Cena łączna", "product": "✔ Tylko 349 zł", "competitor": "3200+ zł" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Wszystko w zestawie",
+    "title": "Co otrzymasz do domu",
+    "items": [
+      { "icon": "box", "text": "CyClean Nano Pro™ — Robot Odkurzający i Myjący Podłogi", "value": "529,00 zł", "valueType": "price" },
+      { "icon": "box", "text": "Baza Ładująca z Funkcją Samoczyszczenia", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "box", "text": "Worki na Kurz (2 szt.)", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "gift", "text": "Szczotki Boczne Zapasowe (2 szt.)", "value": "GRATIS", "valueType": "gift" },
+      { "icon": "gift", "text": "Ściereczki do Mopa Wielokrotnego Użytku (4 szt.)", "value": "GRATIS", "valueType": "gift" },
+      { "icon": "gift", "text": "Filtr HEPA Zapasowy (2 szt.)", "value": "GRATIS", "valueType": "gift" },
+      { "icon": "droplet", "text": "Płyn do Mycia Podłóg", "value": "GRATIS", "valueType": "gift" },
+      { "icon": "shield", "text": "Gwarancja 2 Lata + Dedykowana Obsługa", "value": "W ZESTAWIE", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Cena Katalogowa:",
+    "totalOriginalValue": "1 199,00 zł",
+    "totalCurrentLabel": "Dziś płacisz tylko:",
+    "totalCurrentValue": "349,00 zł",
+    "totalSave": "Oszczędzasz 850,00 zł · Wysyłka GRATIS",
+    "ctaText": "ZAMÓW TERAZ"
+  },
+
+  "reviews": {
+    "eyebrow": "Co mówią o Nas",
+    "title": "Zweryfikowane Opinie",
+    "rating": "4.8",
+    "totalCount": "18 473 opinii",
+    "verifiedNote": "✓ Opinie są weryfikowane przez niezależny zespół zewnętrzny.",
+    "showMoreText": "Pokaż więcej opinii",
+    "leaveReviewText": "Zostaw opinię",
+    "verifiedBadge": "Zweryfikowany zakup",
+    "sellerReplyLabel": "Odpowiedź sprzedawcy:",
+    "items": [
+      {
+        "initials": "AK",
+        "name": "Anna Kowalska",
+        "stars": 5,
+        "text": "Mam dwa koty i psa, sierść była moim koszmarem. To urządzenie zbiera ją całą, przesuwam ręką po podłodze i nic nie znajduję. Baza opróżnia się sama, a ja nie muszę nic robić. Doszło w dwa dni, zapłaciłam kurierowi.",
+        "verified": true,
+        "sellerReply": "Anno, z trzema zwierzętami w domu wiemy, jak trudno utrzymać czystość. Cieszymy się, że jest Pani zadowolona!"
+      },
+      {
+        "initials": "PW",
+        "name": "Piotr Wiśniewski",
+        "stars": 5,
+        "text": "chciałem go od dawna, ale te dobre kosztowały za dużo. w tej cenie nie wierzyłem, a jednak działa świetnie. zbiera wszystko, nawet grube okruszki. bateria trzyma bardzo długo",
+        "verified": true,
+        "sellerReply": "Piotrze, bardzo nam miło! Naszą misją jest udostępnienie profesjonalnej technologii. Dziękujemy za zaufanie."
+      },
+      {
+        "initials": "MN",
+        "name": "Małgorzata Nowak",
+        "stars": 5,
+        "text": "Kupiłam go, bo mam problemy z kręgosłupem i nie byłam w stanie odkurzać. Teraz on robi wszystko, a ja patrzę z kanapy. Mycie podłóg jest niesamowite, schną natychmiast.",
+        "verified": true,
+        "sellerReply": "Małgorzato, został zaprojektowany właśnie po to. Żadnych zbędnych wysiłków. Cieszymy się, że mogliśmy pomóc!"
+      },
+      {
+        "initials": "TZ",
+        "name": "Tomasz Zieliński",
+        "stars": 4,
+        "text": "działa dobrze, muszę przyznać, odkurza bardzo dobrze i mycie jest odczuwalne. na razie daję 4 gwiazdki, bo chcę zobaczyć, jak się sprawuje z czasem, po kilku miesiącach zaktualizuję na pewno. na razie super",
+        "verified": true,
+        "sellerReply": "Tomaszu, doceniamy Pana szczerość! Jesteśmy przekonani, że z czasem zauważy Pan tę samą jakość. Proszę dać znać!"
+      },
+      {
+        "initials": "KL",
+        "name": "Katarzyna Lewandowska",
+        "stars": 5,
+        "text": "Byłam bardzo sceptyczna, wcześniej wypróbowałam tani model i był beznadziejny. Ten to zupełnie inna liga. Mapuje dom idealnie, nigdzie nie uderza, a mop myje rewelacyjnie. Polecam każdemu.",
+        "verified": true,
+        "sellerReply": "Katarzyno, przeskok z taniego robota do naszego jest zawsze zaskakujący. Dziękujemy za polecenie!"
+      },
+      {
+        "initials": "AW",
+        "name": "Andrzej Wójcik",
+        "stars": 5,
+        "text": "mieszkam sam i nienawidziłem sprzątania. teraz włączam go rano przed wyjściem do pracy, a gdy wracam, wszystko jest czyste. opróżnia się sam w bazie, nie muszę absolutnie nic robić. pieniądze świetnie wydane",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "EG",
+        "name": "Ewa Grabowska",
+        "stars": 5,
+        "text": "Zamówiłam w poniedziałek wieczorem, w środę rano był już u mnie. Zapłaciłam kurierowi, zero problemów. Wypróbowałam od razu i muszę powiedzieć, że do fug między płytkami robi niesamowitą robotę. Moja siostra też chce jednego.",
+        "verified": true,
+        "sellerReply": "Ewo, szybka wysyłka i gwarantowana jakość. Dla siostry może Pani użyć tego samego linku! Dziękujemy za zaufanie."
+      },
+      {
+        "initials": "MB",
+        "name": "Marek Borkowski",
+        "stars": 5,
+        "text": "mamy 140 m² domu i wcześniej sprzątanie zajmowało półtorej godziny. teraz włączamy robota i on robi wszystko. pod łóżkami, pod kanapą, za meblami... dociera wszędzie. bateria wystarcza na cały dom",
+        "verified": true,
+        "sellerReply": "Marku, 140 m² to dla niego żaden problem! Dziękujemy za opinię, to dokładnie taki feedback, który nas motywuje."
+      },
+      {
+        "initials": "ZK",
+        "name": "Zofia Kamińska",
+        "stars": 5,
+        "text": "Używam go codziennie i nie muszę już odkurzać ręcznie. To, że myje i suszy, przekonało mnie do zakupu. Wcześniej musiałam jeszcze przejść mopem, a teraz on robi wszystko w jednym przejeździe.",
+        "verified": true,
+        "sellerReply": "Zofio, mycie z osuszaniem to nasza mocna strona. Cieszymy się, że robi różnicę w Pani codziennej rutynie!"
+      },
+      {
+        "initials": "KD",
+        "name": "Krzysztof Dąbrowski",
+        "stars": 5,
+        "text": "kupiłem go dla mamy, która ma 75 lat i nie daje rady sprzątać. ona włącza go jednym przyciskiem, a on robi resztę. baza opróżnia się sama, mama musi tylko wyrzucić worek raz na miesiąc mniej więcej",
+        "verified": true,
+        "sellerReply": "Krzysztofie, pięknie wiedzieć, że pomaga też starszym osobom. Pozdrowienia dla mamy!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Zostaw swoją opinię",
+    "nameLabel": "Twoje imię",
+    "namePlaceholder": "Np. Jan Kowalski",
+    "ratingLabel": "Ocena",
+    "textLabel": "Twoja opinia",
+    "textPlaceholder": "Opowiedz o swoim doświadczeniu...",
+    "submitText": "Wyślij Opinię",
+    "successTitle": "Dziękujemy za Twoją opinię!",
+    "successText": "Twoja opinia oczekuje na zatwierdzenie przez niezależny zespół zewnętrzny. Opinie pozostawione przez osoby, które nie kupiły produktu, nie zostaną opublikowane, aby uniknąć nieautentycznych recenzji.",
+    "closeText": "Zamknij"
+  },
+
+  "orderForm": {
+    "eyebrow": "Formularz Zamówienia",
+    "title": "Złóż swoje zamówienie",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Oferta -34% wygasa za:",
+    "stockWarning": "Tylko <strong>8 sztuk</strong> zostało w tej cenie",
+    "summaryTitle": "Podsumowanie Zamówienia",
+    "summaryLines": [
+      { "label": "CyClean Nano Pro™ + Akcesoria", "value": "349,00 zł", "type": "normal" },
+      { "label": "Szybka wysyłka 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Opłata za pobranie", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "RAZEM",
+    "totalValue": "349,00 zł",
+    "fields": {
+      "name": { "label": "Imię i Nazwisko *", "placeholder": "Np. Jan Kowalski" },
+      "phone": { "label": "Numer Telefonu *", "placeholder": "Np. 500 123 456" },
+      "address": { "label": "Adres Dostawy *", "placeholder": "Ulica, Numer, Miasto, Kod pocztowy" }
+    },
+    "phoneNote": "Skontaktujemy się z Tobą telefonicznie lub przez WhatsApp w celu potwierdzenia zamówienia.",
+    "paymentBadge": "Płatność przy Odbiorze — Płacisz gotówką kurierowi. Żadnych zaliczek.",
+    "submitText": "POTWIERDZAM ZAMÓWIENIE",
+    "submitSubtext": "Płatność Gotówką przy Odbiorze",
+    "reassurance": "Dane chronione · SSL 256-bit · Bez żadnych opłat z góry"
+  },
+
+  "faq": {
+    "eyebrow": "Najczęstsze pytania",
+    "title": "Masz jeszcze wątpliwości? Oto odpowiedzi.",
+    "items": [
+      { "question": "Jak złożyć zamówienie?", "answer": "Kliknij przycisk zakupu, wypełnij formularz swoimi danymi i potwierdź zamówienie. Skontaktujemy się z Tobą telefonicznie lub przez WhatsApp w celu potwierdzenia, a paczkę otrzymasz wygodnie do domu z płatnością gotówką." },
+      { "question": "Jak działa wysyłka?", "answer": "Wysyłka jest całkowicie bezpłatna. Od momentu potwierdzenia zamówienia dostarczamy paczkę w ciągu około 24/48 godzin roboczych." },
+      { "question": "A jeśli mi się nie spodoba?", "answer": "Możesz poprosić o pełny zwrot pieniędzy, odsyłając produkt w ciągu 30 dni od dostawy. My przyjedziemy odebrać paczkę i zwrócimy Ci całą kwotę." },
+      { "question": "A jeśli mam problem po 30 dniach?", "answer": "Bez obaw, wszystkie nasze produkty mają 2 lata gwarancji." },
+      { "question": "Jak mogę poprosić o zwrot lub pomoc?", "answer": "Aby poprosić o pomoc lub zwrot po złożeniu zamówienia, możesz skorzystać z formularza kontaktowego na stronie lub napisać na adres e-mail podany w stopce." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "529 zł",
+    "newPrice": "349 zł",
+    "buttonText": "ZAMÓW TERAZ",
+    "buttonSubtext": "Płatność przy Odbiorze"
+  },
+
+  "tracking": {
+    "googleAdsId": "AW-17935147002",
+    "conversionLabel": "",
+    "conversionValue": 349.00,
+    "conversionCurrency": "PLN",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {},
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=595&uid=01981ccf-4474-7c39-97eb-9407221996c2&lp=595"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Poprzedni",
+    "nextSlide": "Następny",
+    "thumbnail": "Miniatura",
+    "close": "Zamknij"
+  },
+
+  "ty": {
+    "title": "Zamówienie Potwierdzone!",
+    "subtitle": "Twoje zamówienie zostało pomyślnie przyjęte.",
+    "orderNumberLabel": "Nr zamówienia:",
+    "summaryTitle": "Podsumowanie Zamówienia",
+    "accessoriesLabel": "+ Akcesoria w zestawie",
+    "totalLabel": "DO ZAPŁATY",
+    "paymentNote": "Płatność gotówką kurierowi — bez żadnych zaliczek",
+    "yourDataTitle": "Twoje Dane",
+    "nameLabel": "Imię",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adres",
+    "nextStepsTitle": "Co dalej?",
+    "message": "Skontaktujemy się z Tobą telefonicznie lub przez WhatsApp w celu potwierdzenia zamówienia i ustalenia dostawy.",
+    "steps": [
+      "Otrzymasz telefon lub wiadomość WhatsApp z potwierdzeniem",
+      "Paczka zostanie wysłana w ciągu 24/48h",
+      "Zapłacisz gotówką kurierowi przy odbiorze"
+    ],
+    "footerText": "Gwarancja 2 Lata · 30 Dni na Zwrot · Dedykowana Obsługa"
+  }
+}

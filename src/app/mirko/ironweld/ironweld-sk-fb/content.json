@@ -1,0 +1,421 @@
+{
+  "seo": {
+    "title": "Bowek Ironweld™ - Zvárte akýkoľvek kov za 5 minút",
+    "description": "Prenosná invertorová zváračka IGBT s hmotnosťou 1,5 kg. Výkon od 20 do 120A, Hot Start, kompletná PRO sada v balení. Doprava zadarmo, platba pri prevzatí."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 149.99,
+    "currentPrice": 99.99,
+    "discountPercent": 33
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Pozor: Veľký dopyt —",
+    "highlight": "Posledných 8 kusov dostupných",
+    "suffix": "za túto cenu"
+  },
+
+  "hero": {
+    "badge": "Technológia 2026",
+    "title": "Zvárte čokoľvek",
+    "titleHighlight": "jednou rukou.",
+    "titleSuffix": "1,5 kg. Domáca zásuvka. Nulové skúsenosti.",
+    "subtitle": "Invertorová zváračka z dielne vo <strong>vreckovom formáte</strong>. Zapojte, nastavte, zvárte. Funguje <strong>na prvýkrát</strong>.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "14 729 overených recenzií"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-33%",
+    "slides": [
+      { "src": "/images/mirko/ironweld/carosello/1.webp", "alt": "Bowek Ironweld pohľad spredu" },
+      { "src": "/images/mirko/ironweld/carosello/2.webp", "alt": "Bowek Ironweld pri použití" },
+      { "src": "/images/mirko/ironweld/carosello/3.webp", "alt": "Bowek Ironweld detail panela" },
+      { "src": "/images/mirko/ironweld/carosello/4.webp", "alt": "Bowek Ironweld kompletná sada" },
+      { "src": "/images/mirko/ironweld/carosello/5.webp", "alt": "Bowek Ironweld kufrík" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Inverter IGBT:", "description": "stabilný oblúk, čistý zvar, žiadne rozstreky" },
+      { "title": "Hot Start:", "description": "oblúk sa zapáli na prvý pokus, žiadne prilepovanie" },
+      { "title": "Regulácia 20-120A:", "description": "od tenkého po ťažký materiál, jeden stroj na všetko" },
+      { "title": "Len 1,5 kg:", "description": "zvárte vertikálne, nad hlavou, kdekoľvek" },
+      { "title": "Ochrana proti prehriatiu:", "description": "automatické vypnutie, nezastaví vás uprostred práce" },
+      { "title": "Domáca zásuvka + 10m predlžovačka:", "description": "žiadny trojfázový prúd, automatické navíjanie" },
+      { "title": "Štandardné elektródy 2,5-3,2 mm:", "description": "kúpite ich v každom železiarstve" },
+      { "title": "Kompletná PRO sada:", "description": "maska, rukavice, 20 elektród, magnety, predlžovačka" }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "Bowek Ironweld™",
+    "originalPriceLabel": "Bežná cena:",
+    "discountLabel": "UŠETRÍTE -33%",
+    "shippingLabel": "Rýchle doručenie:",
+    "shippingValue": "ZADARMO",
+    "guaranteeLabel": "Záruka 2 roky",
+    "offerToggleText": "Zistite, čo ponuka obsahuje",
+    "offerItems": [
+      { "text": "Bowek Ironweld™ — Invertorová zváračka IGBT", "badge": null },
+      { "text": "Pevný kufrík odolný voči nárazom", "badge": null },
+      { "text": "Uzemňovací kábel + svorka Heavy-Duty", "badge": null },
+      { "text": "20 elektród E6013 2,5 mm", "badge": null },
+      { "text": "Samozatmievacia zváracia maska", "badge": "DARČEK" },
+      { "text": "Zváracie rukavice z hovädzej kože", "badge": "DARČEK" },
+      { "text": "Oceľová kefa + zváracie kladivko (2v1)", "badge": "DARČEK" },
+      { "text": "2 uhlové magnety 45°/90°", "badge": "DARČEK" },
+      { "text": "Predlžovací kábel 10m s automatickým navíjaním", "badge": "DARČEK" },
+      { "text": "Návod na použitie v 48 jazykoch", "badge": null },
+      { "text": "Záruka 2 roky + zákaznícka podpora", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "OBJEDNAŤ TERAZ",
+    "mainSubtext": "Platba pri prevzatí",
+    "subNote": ""
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Platba na dobierku", "color": "green" },
+      { "icon": "truck", "text": "Doručenie 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 dní na vrátenie", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Problém",
+    "title": "Sklamávajú vás lacné zváračky?",
+    "items": [
+      { "icon": "money", "titleBold": "Prehriatie už po <strong>pár minútach</strong> používania", "text": "" },
+      { "icon": "warning", "titleBold": "Krehké a <strong>nerovnomerné zvary</strong>, ktoré sa lámu", "text": "" },
+      { "icon": "timer", "titleBold": "<strong>Nadmerná hmotnosť</strong> a nekvalitné materiály, ktoré sa rýchlo opotrebujú", "text": "" },
+      { "icon": "money", "titleBold": "Profesionálna oprava vás stojí <strong>100-200 €</strong> zakaždým", "text": "" }
+    ],
+    "solutionTitle": "S Ironweld™ je to iné.",
+    "solutionText": "Profesionálne zvary v 1,5 kg. Zaplatíte raz, opravujete navždy."
+  },
+
+  "features": {
+    "eyebrow": "Prečo je iný",
+    "title": "Premeňte svoju garáž na profesionálnu dielňu.",
+    "items": [
+      {
+        "image": "/images/mirko/ironweld/angle/1.webp",
+        "imageAlt": "Invertorová technológia IGBT",
+        "tag": "TECHNOLÓGIA IGBT",
+        "tagColor": "green",
+        "title": "Inverter IGBT + regulácia 20-120A",
+        "description": "IGBT inverter reguluje prúd <strong>50 000-krát za sekundu</strong>: stabilný oblúk, žiadne rozstreky. Otočte gombíkom od <strong>20 do 120 Ampérov</strong> podľa návodu a prejdite od tenkého plechu k ťažkému profilu."
+      },
+      {
+        "image": "/images/mirko/ironweld/angle/2.webp",
+        "imageAlt": "Ľahká zváračka do jednej ruky",
+        "tag": "KONIEC S ŤAŽKÝMI STROJMI",
+        "tagColor": "blue",
+        "title": "1,5 kg: Držíte ju jednou rukou a zvárate kdekoľvek",
+        "description": "Vezmete ju, donesiete kam treba a zvárate. <strong>Nad hlavou, za profilom, v úzkych priestoroch</strong>. S <strong>ťažkou dielenskou zváračkou</strong> to nejde."
+      },
+      {
+        "image": "/images/mirko/ironweld/angle/3.webp",
+        "imageAlt": "Domáca zásuvka a predlžovačka",
+        "tag": "ZÁSUVKA + SAMONAVÍJACIA PREDLŽOVAČKA",
+        "tagColor": "green",
+        "title": "Domáca zásuvka + samonavíjacia predlžovačka",
+        "description": "Žiadny trojfázový rozvod, žiadne adaptéry. Predlžovačka <strong>10 metrov</strong>, ktorá sa navíja sama. Zapojíte do zásuvky a pracujete kde treba. Stabilný prúd bez prerušenia."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Jednoduché",
+    "title": "Zapojte, nastavte, zvárte. Hotovo.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Zapojte", "description": "Zapojte do domácej zásuvky. Žiadny špeciálny rozvod, žiadny adaptér." },
+      { "title": "Nastavte", "description": "Otočte gombíkom na správny prúd. Od 20A pre tenký materiál po 120A pre ťažký." },
+      { "title": "Zvárte", "description": "Oblúk sa zapáli stabilne, zvar je čistý. Aj keď zvárate prvýkrát." }
+    ]
+  },
+
+  "midCta": {
+    "text": "OBJEDNAŤ TERAZ SO ZĽAVOU 33%",
+    "subtext": "Platba v hotovosti pri prevzatí"
+  },
+
+  "specs": {
+    "eyebrow": "Špecifikácie",
+    "title": "Technické parametre",
+    "items": [
+      { "label": "Technológia", "value": "Inverter IGBT" },
+      { "label": "Prúd", "value": "20-120A (5 úrovní)" },
+      { "label": "Zapaľovanie", "value": "Hot Arc Start" },
+      { "label": "Napájanie", "value": "Štandardná domáca zásuvka" },
+      { "label": "Hmotnosť", "value": "~1,5 kg" },
+      { "label": "Certifikácie", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Porovnanie",
+    "title": "Aké výhody získate oproti alternatívam?",
+    "featureColumn": "Vlastnosť",
+    "winnerBadge": "VÍŤAZ",
+    "productColumn": "Bowek Ironweld™",
+    "competitorColumn": "Ťažká zváračka / Zvárač",
+    "rows": [
+      { "feature": "Hmotnosť", "product": "✔ ~1,5 kg, jedna ruka", "competitor": "15-25 kg, musíte ťahať" },
+      { "feature": "Zapaľovanie", "product": "✔ Hot Start, zapáli hneď", "competitor": "Elektróda sa prilepí" },
+      { "feature": "Napájanie", "product": "✔ Domáca zásuvka + predlžovačka", "competitor": "Trojfázový rozvod" },
+      { "feature": "Úzke priestory", "product": "✔ Zvárate kdekoľvek", "competitor": "Nedostanete sa tam" },
+      { "feature": "Príslušenstvo", "product": "✔ 9 PRO doplnkov v cene", "competitor": "Kupujete zvlášť" },
+      { "feature": "Cena", "product": "✔ Len 99,99 € (jednorazovo)", "competitor": "100-250 € za opravu" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Všetko v balení",
+    "title": "Čo dostanete domov",
+    "items": [
+      { "icon": "box", "text": "Zváračka Ironweld™ Inverter IGBT", "value": "149,99 €", "valueType": "price" },
+      { "icon": "box", "text": "Pevný kufrík + uzemňovací kábel", "value": "V CENE", "valueType": "included" },
+      { "icon": "gift", "text": "20 elektród E6013 + samozatmievacia maska", "value": "DARČEK", "valueType": "gift" },
+      { "icon": "gift", "text": "Rukavice + kefa/kladivko + 2 uhlové magnety", "value": "DARČEK", "valueType": "gift" },
+      { "icon": "cable", "text": "Predlžovačka 10m s automatickým navíjaním", "value": "DARČEK", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Bežná cena:",
+    "totalOriginalValue": "259,99 €",
+    "totalCurrentLabel": "Dnes zaplatíte len:",
+    "totalCurrentValue": "99,99 €",
+    "totalSave": "Ušetríte 50,00 € · Doručenie ZADARMO",
+    "ctaText": "OBJEDNAŤ TERAZ"
+  },
+
+  "reviews": {
+    "eyebrow": "Čo o nás hovoria",
+    "title": "Overené recenzie",
+    "rating": "4.8",
+    "totalCount": "14 729 recenzií",
+    "verifiedNote": "✓ Recenzie sú overované nezávislým externým tímom.",
+    "showMoreText": "Zobraziť ďalšie recenzie",
+    "leaveReviewText": "Napísať recenziu",
+    "verifiedBadge": "Overený nákup",
+    "sellerReplyLabel": "Odpoveď predajcu:",
+    "items": [
+      {
+        "initials": "MH",
+        "name": "Martin Horvath",
+        "stars": 5,
+        "text": "Zváral som bránu garáže, ktorá bola rozbitá niekoľko mesiacov. Zvárač mi chcel 150 eur, s touto som to zvládol za pol hodiny a výsledok predčil moje očakávania. Oblúk je stabilný, nestrieká ako lacné zváračky, ktoré som skúšal predtým.",
+        "verified": true,
+        "sellerReply": "Martin, presne pre tieto situácie vznikol Bowek Ironweld. Sme radi, že vás výsledok potešil. Pre akékoľvek otázky sme tu."
+      },
+      {
+        "initials": "PK",
+        "name": "Peter Kováč",
+        "stars": 5,
+        "text": "Používam ju v dielni na projekty z kovaného železa vo voľnom čase. Čo ma prekvapilo, je stabilita oblúka aj pri nízkych ampéroch, na plechu 1 mm nič neprepáli. Za tú cenu je to skvelý obchod.",
+        "verified": true,
+        "sellerReply": "Peter, presná práca pri nízkom prúde je silnou stránkou technológie IGBT. Ďakujeme za dôveru!"
+      },
+      {
+        "initials": "TN",
+        "name": "Tomas Novak",
+        "stars": 5,
+        "text": "Potreboval som zvárať držiak nárazníka auta a mechanik chcel 120 eur. S touto som to vyriešil sám na parkovisku pod domom. Nič neváži, vozím ju v kufri. Kuriér prišiel za dva dni, platil som pri prevzatí.",
+        "verified": true,
+        "sellerReply": "Tomáš, prenosnosť je jej hlavnou prednosťou. Sme radi, že ste ušetrili čas aj peniaze. Veľa zdaru pri zváraní!"
+      },
+      {
+        "initials": "MV",
+        "name": "Milan Varga",
+        "stars": 4,
+        "text": "Zatiaľ funguje dobre, vyskúšal som ju na 3mm železo a zvar drží. Dávam 4 hviezdičky, pretože ju chcem ešte chvíľu používať než dám maximum, ale predpoklady sú výborné. Gombík na reguláciu ampérov je praktický.",
+        "verified": true,
+        "sellerReply": "Milan, oceňujeme úprimnosť! S ďalším používaním uvidíte, že zvládne aj náročnejšie práce. Dajte nám vedieť, radi si prečítame vaše ďalšie hodnotenie."
+      },
+      {
+        "initials": "JB",
+        "name": "Jan Bartos",
+        "stars": 5,
+        "text": "Objednal som v sobotu popoludní, v pondelok to bolo tu. Zaplatil som kuriérovi bez problémov, žiadne skryté poplatky. Hneď som ju vyskúšal na záhradnom plote a funguje výborne. Maska v sade je príjemný bonus.",
+        "verified": true,
+        "sellerReply": "Ján, transparentnosť v cenách je našou prioritou. Sme radi, že ste spokojný aj s príslušenstvom!"
+      },
+      {
+        "initials": "JK",
+        "name": "Jozef Kral",
+        "stars": 5,
+        "text": "Používam ju na chalupe na opravy poľnohospodárskeho náradia a plotov. Skvelé je, že sa zapojí do akejkoľvek zásuvky, nepotrebujete žiadny špeciálny rozvod. Do kufríka sa vojde všetko, hodím to do auta a idem.",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "AH",
+        "name": "Andrej Hruska",
+        "stars": 5,
+        "text": "Nikdy v živote som nezváral. Pozrel som si pár videí a na tretí pokus to vyzeralo slušne. Regulácia ampérov veľmi pomáha, pretože začnete pomaly a potom pridáte, keď získate istotu. Pre začiatočníka som spokojný.",
+        "verified": true,
+        "sellerReply": "Andrej, možnosť začať od 20 Ampérov je navrhnutá práve pre začiatočníkov. Uvidíte, že sa budete rýchlo zlepšovať. Ďakujeme za recenziu!"
+      },
+      {
+        "initials": "KM",
+        "name": "Katarina Molnarova",
+        "stars": 5,
+        "text": "Kúpila som ju, pretože ma nebaví čakať a platiť zakaždým za veci, ktoré sa dajú vyriešiť za desať minút. Zvárala som nohu záhradného stola a držiak bránky. Jednoduchá na ovládanie, ľahká, vojde sa do komory.",
+        "verified": true,
+        "sellerReply": "Katarína, nezávislosť v drobných opravách má obrovskú hodnotu. Ďakujeme za dôveru a prajeme veľa zdaru!"
+      },
+      {
+        "initials": "MS",
+        "name": "Michal Sedlak",
+        "stars": 5,
+        "text": "Som elektrikár na dôchodku a môžem povedať, že na domáce práce táto robí svoju prácu na výbornú. IGBT inverter drží oblúk stabilný aj pri kolísaní siete. Za tú cenu je veľmi poctivá.",
+        "verified": true,
+        "sellerReply": "Michal, uznanie od profesionála z odboru je tým najväčším komplimentom. Ďakujeme!"
+      },
+      {
+        "initials": "TD",
+        "name": "Tomas Dubovsky",
+        "stars": 5,
+        "text": "Vlani som si kúpil lacnú zváračku na internete a bola na nič, oblúk stále vyhasínal. Toto je úplne iná liga, rozdiel poznáte okamžite. A sada s maskou a elektródami je veľká výhoda, pretože nemusíte kupovať nič ďalšie.",
+        "verified": true,
+        "sellerReply": "Tomáš, rozdiel je v technológii IGBT inverteru, ktorý zabezpečuje konštantný oblúk. Sme radi, že ste si zlepšenie všimli!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Napíšte svoju recenziu",
+    "nameLabel": "Vaše meno",
+    "namePlaceholder": "Napr. Ján Novák",
+    "ratingLabel": "Hodnotenie",
+    "textLabel": "Vaša recenzia",
+    "textPlaceholder": "Podeľte sa o svoju skúsenosť...",
+    "submitText": "Odoslať recenziu",
+    "successTitle": "Ďakujeme za vašu recenziu!",
+    "successText": "Vaša recenzia čaká na schválenie nezávislým externým tímom. Recenzie od osôb, ktoré produkt nezakúpili, nebudú zverejnené, aby sme predišli neautentickým hodnoteniam.",
+    "closeText": "Zavrieť"
+  },
+
+  "orderSteps": {
+    "eyebrow": "AKO OBJEDNAŤ",
+    "title": "Objednajte v 3 jednoduchých krokoch",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Vyplňte formulár",
+        "description": "Zadajte svoje údaje do objednávkového formulára nižšie."
+      },
+      {
+        "icon": "phone",
+        "title": "Telefonické potvrdenie",
+        "description": "Zavoláme vám alebo vás kontaktujeme cez WhatsApp na potvrdenie údajov."
+      },
+      {
+        "icon": "cash",
+        "title": "Zaplaťte pri prevzatí",
+        "description": "Za 24/48h vám kuriér doručí zásielku. Platíte hotovosťou pri prevzatí."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Objednávkový formulár",
+    "title": "Dokončite svoju objednávku",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Zľava -33% vyprší za:",
+    "stockWarning": "Iba <strong>8 kusov</strong> zostáva za túto cenu",
+    "summaryTitle": "Súhrn objednávky",
+    "summaryLines": [
+      { "label": "Bowek Ironweld™ + príslušenstvo", "value": "99,99 €", "type": "normal" },
+      { "label": "Rýchle doručenie 24/48h", "value": "ZADARMO", "type": "free" },
+      { "label": "Dobierka", "value": "ZADARMO", "type": "free" }
+    ],
+    "totalLabel": "CELKOM",
+    "totalValue": "99,99 €",
+    "fields": {
+      "name": { "label": "Meno a priezvisko *", "placeholder": "Napr. Ján Novák" },
+      "phone": { "label": "Telefónne číslo *", "placeholder": "Napr. +421 123 456 789" },
+      "address": { "label": "Doručovacia adresa *", "placeholder": "Ulica, číslo, mesto, PSČ" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "POTVRDIŤ OBJEDNÁVKU",
+    "submitSubtext": "Platba hotovosťou pri prevzatí",
+    "reassurance": "Doručenie 24/48h · Záruka 1 rok · Zákaznícka podpora<br><strong>Žiadna karta nie je potrebná.</strong> Zavoláme vám na potvrdenie."
+  },
+
+  "faq": {
+    "eyebrow": "Časté otázky",
+    "title": "Máte ešte otázky? Tu sú odpovede.",
+    "items": [
+      { "question": "Ako si môžem objednať?", "answer": "Kliknite na tlačidlo objednávky, vyplňte formulár so svojimi údajmi a potvrďte objednávku. Budeme vás kontaktovať telefonicky alebo cez WhatsApp na potvrdenie a zásielku pohodlne dostanete domov s platbou v hotovosti." },
+      { "question": "Ako funguje doručenie?", "answer": "Doručenie je úplne zadarmo. Od potvrdenia objednávky trvá doručenie približne 24/48 pracovných hodín." },
+      { "question": "Čo ak sa mi nebude páčiť?", "answer": "Môžete požiadať o úplnú náhradu vrátením produktu do 30 dní od doručenia. Prídeme pre zásielku a vrátime vám celú zaplatenú sumu." },
+      { "question": "Čo ak mám problém po 30 dňoch?", "answer": "Žiadne obavy, všetky naše produkty majú 2-ročnú záruku." },
+      { "question": "Ako môžem požiadať o vrátenie alebo podporu?", "answer": "Pre podporu alebo vrátenie po objednaní môžete využiť kontaktný formulár na webe alebo e-mail uvedený v pätičke stránky." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "149,99 €",
+    "newPrice": "99,99 €",
+    "buttonText": "OBJEDNAŤ TERAZ",
+    "buttonSubtext": "Platba pri prevzatí"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 99.99,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Predchádzajúci",
+    "nextSlide": "Ďalší",
+    "thumbnail": "Miniatúra",
+    "close": "Zavrieť"
+  },
+
+  "ty": {
+    "title": "Objednávka potvrdená!",
+    "subtitle": "Vaša objednávka bola úspešne prijatá.",
+    "orderNumberLabel": "Č. objednávky:",
+    "summaryTitle": "Súhrn objednávky",
+    "accessoriesLabel": "+ Príslušenstvo v cene",
+    "totalLabel": "CELKOM NA ÚHRADU",
+    "paymentNote": "Platba v hotovosti kuriérovi — žiadna záloha",
+    "yourDataTitle": "Vaše údaje",
+    "nameLabel": "Meno",
+    "phoneLabel": "Telefón",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Čo sa stane ďalej?",
+    "message": "Budeme vás kontaktovať telefonicky alebo cez WhatsApp na potvrdenie objednávky a doručenia.",
+    "steps": [
+      "Dostanete potvrdzujúci hovor alebo správu cez WhatsApp",
+      "Zásielka bude odoslaná do 24/48h",
+      "Zaplatíte hotovosťou kuriérovi pri prevzatí"
+    ],
+    "footerText": "Záruka 2 roky · 30 dní na vrátenie · Zákaznícka podpora"
+  }
+}

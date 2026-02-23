@@ -1,0 +1,417 @@
+{
+  "seo": {
+    "title": "CyClean Nano Pro™ - Vysává, Mopuje a Suší Sám",
+    "description": "Robotický vysavač s automaticky vyprazdňovací základnou, který uklidí celý byt za vás. Doprava zdarma, platba při převzetí."
+  },
+
+  "pricing": {
+    "currency": "CZK",
+    "currencySymbol": "Kč",
+    "originalPrice": 2999.00,
+    "currentPrice": 1999.00,
+    "discountPercent": 33
+  },
+
+  "topBar": {
+    "text": "Doprava Zdarma 24/48h · Platba při Převzetí · Záruka 2 Roky"
+  },
+
+  "urgencyBanner": {
+    "text": "Pozor: Vysoká poptávka —",
+    "highlight": "Posledních 8 kusů skladem",
+    "suffix": "za tuto cenu"
+  },
+
+  "hero": {
+    "badge": "Technologie 2026",
+    "title": "Čistý Byt Každý Den",
+    "titleHighlight": "Bez Námahy:",
+    "titleSuffix": "Vysává, Mopuje a Suší, Zatímco Vy Odpočíváte",
+    "subtitle": "Jediný robot s inteligentní základnou, který vysaje nečistoty, vytře podlahu a sám se vyprázdní. Skvrny, chlupy a prach zmizí, aniž byste pohnuli prstem.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18 473 spokojených zákazníků"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-33%",
+    "slides": [
+      { "src": "/images/mirko/cyclean/carosello/1.webp", "alt": "CyClean Nano Pro pohled zepředu" },
+      { "src": "/images/mirko/cyclean/carosello/2.webp", "alt": "CyClean Nano Pro v akci" },
+      { "src": "/images/mirko/cyclean/carosello/3.webp", "alt": "Automaticky vyprazdňovací nabíjecí základna" },
+      { "src": "/images/mirko/cyclean/carosello/4.webp", "alt": "CyClean Nano Pro detail kartáčů" },
+      { "src": "/images/mirko/cyclean/carosello/5.webp", "alt": "CyClean Nano Pro kompletní balení" },
+      { "src": "/images/mirko/cyclean/carosello/6.webp", "alt": "CyClean Nano Pro boční pohled" },
+      { "src": "/images/mirko/cyclean/carosello/7.webp", "alt": "CyClean Nano Pro příslušenství" },
+      { "src": "/images/mirko/cyclean/carosello/8.webp", "alt": "CyClean Nano Pro detail základny" },
+      { "src": "/images/mirko/cyclean/carosello/9.webp", "alt": "CyClean Nano Pro lifestyle" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Konec bolesti zad:", "description": "uklidí podlahu za vás, už se nemusíte ohýbat." },
+      { "title": "Zvířecí chlupy? Odstraněny:", "description": "vysaje 99 % chlupů a vlasů na jeden průjezd." },
+      { "title": "Vysává, mopuje a suší:", "description": "vše zvládne na jeden průjezd, podlaha suchá za minutu." },
+      { "title": "Vyprazdňuje se sám:", "description": "základna shromáždí nečistoty do uzavřeného sáčku. Na nic nesaháte." },
+      { "title": "Objíždí překážky a schody:", "description": "díky laserovému senzoru vidí vše a do nábytku nikdy nenarazí." },
+      { "title": "Ovládáte ho hlasem:", "description": "stačí říct 'ukliď kuchyň' a sám se rozjede." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "CyClean Nano Pro™",
+    "originalPriceLabel": "Běžná cena:",
+    "discountLabel": "UŠETŘÍTE 1 000 Kč (-33%)",
+    "shippingLabel": "Rychlé doručení:",
+    "shippingValue": "Zdarma",
+    "guaranteeLabel": "Záruka 2 roky",
+    "offerToggleText": "Zjistěte, co nabídka obsahuje",
+    "offerItems": [
+      { "text": "CyClean Nano Pro™ — Robotický Vysavač a Mop", "badge": null },
+      { "text": "Automaticky Vyprazdňovací Nabíjecí Základna", "badge": null },
+      { "text": "Sáčky na Prach (2x)", "badge": null },
+      { "text": "Náhradní Boční Kartáče (2x)", "badge": "DÁREK" },
+      { "text": "Pratelné Mopovací Hadříky (4x)", "badge": "DÁREK" },
+      { "text": "Náhradní HEPA Filtr (2x)", "badge": "DÁREK" },
+      { "text": "Čisticí Prostředek na Podlahy", "badge": "DÁREK" },
+      { "text": "Záruka 2 Roky + Zákaznická Podpora", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "OBJEDNAT NYNÍ",
+    "mainSubtext": "Platba v hotovosti při převzetí",
+    "subNote": "Žádné riziko: platíte až když zásilku obdržíte"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Platba při Převzetí", "color": "green" },
+      { "icon": "truck", "text": "Doručení 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Dní na Vrácení", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Poznáváte se?",
+    "title": "Jsou vám tyto problémy povědomé?",
+    "items": [
+      { "icon": "pain", "titleBold": "Pokaždé, když vysáváte, bolí vás záda", "text": "a druhý den se probudíte ještě unavenější než předtím." },
+      { "icon": "warning", "titleBold": "Zvířecí chlupy všude — na gauči, na kobercích, v kuchyni", "text": "— uklidíte je a za hodinu jsou zase zpátky." },
+      { "icon": "fatigue", "titleBold": "Mopujete podlahu ručně a ta je pořád vlhká a lepkavá", "text": "— nekonečná práce, která nikdy nekončí." }
+    ],
+    "solutionTitle": "Existuje lepší řešení.",
+    "solutionText": "Robot, který vysává, mopuje a suší sám. Vyprázdní se na základně a pokračuje dál, aniž byste cokoli dělali."
+  },
+
+  "features": {
+    "eyebrow": "Proč je jiný",
+    "title": "Jako byste měli uklízečku doma, ale bez měsíčních plateb.",
+    "items": [
+      {
+        "image": "/images/mirko/cyclean/angle/1.gif",
+        "imageAlt": "Síla sání",
+        "tag": "EXTRÉMNÍ VÝKON",
+        "tagColor": "green",
+        "title": "Vysaje i Nejtěžší Nečistoty",
+        "description": "Má takový sací výkon, že sebere <strong>mince, granule a těžké nečistoty</strong>. Zvířecí chlupy, drobky a prach nemají šanci."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/2.gif",
+        "imageAlt": "Automaticky vyprazdňovací základna",
+        "tag": "ZAPOMENETE NA NĚJ",
+        "tagColor": "blue",
+        "title": "Základna Dělá Vše Sama",
+        "description": "Vysaje nečistoty z robota a shromáždí je do <strong>uzavřeného sáčku</strong>. Doplní čistou vodu a vypustí špinavou. Vy <strong>na nic nesaháte</strong>."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/3.gif",
+        "imageAlt": "Mopování pod tlakem",
+        "tag": "HLOUBKOVÉ MYTÍ",
+        "tagColor": "orange",
+        "title": "Odstraní i Zaschlé Skvrny",
+        "description": "Rotační hadříky se otáčejí <strong>stokrát za minutu</strong> a odstraní skvrny od kávy, omáčky a bláta. Podlaha zůstane čistá a <strong>suchá za minutu</strong>."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/4.gif",
+        "imageAlt": "Laserová navigace",
+        "tag": "LASEROVÁ INTELIGENCE",
+        "tagColor": "green",
+        "title": "Nenaráží a Nespadne ze Schodů",
+        "description": "Vidí a <strong>objíždí překážky</strong> jako boty, kabely a hračky. Zmapuje celý byt na milimetr přesně díky <strong>laserovému senzoru</strong> a nenechá žádné místo nevysáté."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/5.gif",
+        "imageAlt": "Ovládání přes aplikaci a hlasem",
+        "tag": "ÚPLNÁ KONTROLA",
+        "tagColor": "blue",
+        "title": "Poslouchá Vaše Příkazy",
+        "description": "Řekněte mu, aby uklidil kuchyň pomocí <strong>hlasového asistenta</strong> a rozjede se. Nebo použijte <strong>aplikaci</strong> k výběru místností, plánování časů a ovládání z jakéhokoli místa."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/6.webp",
+        "imageAlt": "Baterie s dlouhou výdrží",
+        "tag": "NEÚNAVNÝ",
+        "tagColor": "orange",
+        "title": "Až 8 Hodin Nepřetržitého Úklidu",
+        "description": "Baterie vydrží <strong>celý den</strong>. Když se vybije, sám se vrátí na základnu, <strong>dobije se a pokračuje</strong> přesně tam, kde skončil."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Velmi jednoduché",
+    "title": "Jak to funguje? 4 kroky a hotovo.",
+    "image": "/images/mirko/cyclean/come-usare.webp",
+    "imageAlt": "CyClean Nano Pro v provozu",
+    "imageCaption": "Plně automatický: rozpozná trasu, uklidí a sám se vyprázdní",
+    "steps": [
+      { "title": "Zapněte ho", "description": "Při prvním zapnutí sám zmapuje celý byt. Nenechá žádné místo nevysáté." },
+      { "title": "Zvolte, co má dělat", "description": "Rozhodněte, zda má jen vysávat, jen mopovat nebo dělat obojí najednou. Jeden dotyk a jede." },
+      { "title": "Sám se doplní", "description": "Vrátí se na základnu, vypustí špinavou vodu a doplní čistou vodu s čisticím prostředkem." },
+      { "title": "Sám se vyprázdní", "description": "Základna vysaje nečistoty z robota. Vy jen vyhodíte sáček, když je plný." }
+    ]
+  },
+
+  "midCta": {
+    "text": "OBJEDNAT NYNÍ SE SLEVOU 33%",
+    "subtext": "Platba v hotovosti při převzetí"
+  },
+
+  "comparison": {
+    "eyebrow": "Srovnání",
+    "title": "Jaké výhody získáte oproti alternativám?",
+    "featureColumn": "Vlastnost",
+    "winnerBadge": "VÍTĚZ",
+    "productColumn": "CyClean Nano Pro™",
+    "competitorColumn": "Konkurenční roboty",
+    "rows": [
+      { "feature": "Automaticky vyprazdňovací základna", "product": "✔ V ceně", "competitor": "Volitelná (8 000+ Kč)" },
+      { "feature": "Sání", "product": "✔ Extrémní výkon", "competitor": "Standardní" },
+      { "feature": "Mytí podlah", "product": "✔ Vysává, mopuje a suší", "competitor": "Pouze vysávání" },
+      { "feature": "Výdrž", "product": "✔ Až 8 hodin", "competitor": "Max 90 minut" },
+      { "feature": "Ovládání aplikací a hlasem", "product": "✔ Kompletní + hlasové", "competitor": "Omezené nebo chybí" },
+      { "feature": "Celková cena", "product": "✔ Jen 1 999 Kč", "competitor": "20 000+ Kč" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Vše v ceně",
+    "title": "Co dostanete domů",
+    "items": [
+      { "icon": "box", "text": "CyClean Nano Pro™ — Robotický Vysavač a Mop", "value": "2 999 Kč", "valueType": "price" },
+      { "icon": "box", "text": "Automaticky Vyprazdňovací Nabíjecí Základna", "value": "V CENĚ", "valueType": "included" },
+      { "icon": "box", "text": "Sáčky na Prach (2x)", "value": "V CENĚ", "valueType": "included" },
+      { "icon": "gift", "text": "Náhradní Boční Kartáče (2x)", "value": "DÁREK", "valueType": "gift" },
+      { "icon": "gift", "text": "Pratelné Mopovací Hadříky (4x)", "value": "DÁREK", "valueType": "gift" },
+      { "icon": "gift", "text": "Náhradní HEPA Filtr (2x)", "value": "DÁREK", "valueType": "gift" },
+      { "icon": "droplet", "text": "Čisticí Prostředek na Podlahy", "value": "DÁREK", "valueType": "gift" },
+      { "icon": "shield", "text": "Záruka 2 Roky + Zákaznická Podpora", "value": "V CENĚ", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Běžná cena:",
+    "totalOriginalValue": "2 999 Kč",
+    "totalCurrentLabel": "Dnes platíte pouze:",
+    "totalCurrentValue": "1 999 Kč",
+    "totalSave": "Ušetříte 1 000 Kč · Doprava ZDARMA",
+    "ctaText": "OBJEDNAT NYNÍ"
+  },
+
+  "reviews": {
+    "eyebrow": "Co o nás říkají",
+    "title": "Ověřené Recenze",
+    "rating": "4.8",
+    "totalCount": "18 473 recenzí",
+    "verifiedNote": "✓ Recenze jsou ověřovány nezávislým týmem mimo tuto webovou stránku.",
+    "showMoreText": "Zobrazit další recenze",
+    "leaveReviewText": "Napsat recenzi",
+    "verifiedBadge": "Ověřený nákup",
+    "sellerReplyLabel": "Odpověď prodejce:",
+    "items": [
+      {
+        "initials": "JN",
+        "name": "Jana Nováková",
+        "stars": 5,
+        "text": "Mám dvě kočky a psa, chlupy byly moje noční můra. Tohle zařízení je všechny posbírá, přejedu rukou po podlaze a nic tam není. Základna se sama vyprázdní a já nemusím dělat vůbec nic. Dorazilo za dva dny, zaplatila jsem kurýrovi.",
+        "verified": true,
+        "sellerReply": "Jano, se třemi zvířaty doma víme, jak těžké je udržet vše čisté. Jsme rádi, že jste spokojená!"
+      },
+      {
+        "initials": "PM",
+        "name": "Petr Marek",
+        "stars": 5,
+        "text": "chtěl jsem ho už dlouho, ale ty dobré stály moc. za tuhle cenu jsem tomu nevěřil, ale funguje skvěle. vysaje všechno, i větší drobky. baterie vydrží hodně dlouho",
+        "verified": true,
+        "sellerReply": "Petře, to nás velmi těší! Naším posláním je zpřístupnit profesionální technologii. Děkujeme za důvěru."
+      },
+      {
+        "initials": "EH",
+        "name": "Eva Horáková",
+        "stars": 5,
+        "text": "Koupila jsem ho, protože mám problémy se zády a už jsem nemohla vysávat. Teď dělá všechno on, já ho sleduju z gauče. Mytí podlah je úžasné, jsou hned suché.",
+        "verified": true,
+        "sellerReply": "Evo, přesně pro to byl navržen. Žádná zbytečná námaha. Jsme rádi, že vám pomáhá!"
+      },
+      {
+        "initials": "TK",
+        "name": "Tomáš Král",
+        "stars": 4,
+        "text": "funguje dobře, musím říct, vysává výborně a mytí je znát. zatím dávám 4 hvězdy, protože chci vidět, jak se bude chovat časem, za pár měsíců určitě aktualizuju. zatím výborné",
+        "verified": true,
+        "sellerReply": "Tomáši, ceníme si vaší upřímnosti! Jsme přesvědčeni, že časem zaznamenáte stejnou kvalitu. Dejte nám vědět, jak to jde!"
+      },
+      {
+        "initials": "MV",
+        "name": "Marie Veselá",
+        "stars": 5,
+        "text": "Byla jsem velmi skeptická, předtím jsem vyzkoušela levný a byl hrozný. Tohle je úplně něco jiného. Zmapuje byt perfektně, do ničeho nenaráží a mop myje skvěle. Doporučuji všem.",
+        "verified": true,
+        "sellerReply": "Marie, přechod z levného robota na náš je vždy překvapivý. Děkujeme za doporučení!"
+      },
+      {
+        "initials": "PB",
+        "name": "Pavel Beneš",
+        "stars": 5,
+        "text": "bydlím sám a nesnášel jsem uklízení. teď ho zapnu ráno před odchodem do práce a když se vrátím, je vše čisté. sám se vyprázdní na základně, nemusím dělat vůbec nic. skvěle utracené peníze",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "KS",
+        "name": "Kateřina Svobodová",
+        "stars": 5,
+        "text": "Objednala jsem v pondělí večer, ve středu ráno už byl tady. Zaplatila jsem kurýrovi, žádné problémy. Hned jsem ho vyzkoušela a musím říct, že na spáry mezi dlaždicemi dělá úžasnou práci. I moje sestra si chce jednoho pořídit.",
+        "verified": true,
+        "sellerReply": "Kateřino, rychlé doručení a garantovaná kvalita. Pro sestru může použít stejný odkaz! Děkujeme za důvěru."
+      },
+      {
+        "initials": "JD",
+        "name": "Jakub Dvořák",
+        "stars": 5,
+        "text": "máme byt 140 m² a dřív nám úklid zabral hodinu a půl. teď se spustí robot a udělá všechno sám. pod postelí, pod gaučem, za nábytkem... dostane se všude. baterie stačí na celý byt",
+        "verified": true,
+        "sellerReply": "Jakube, 140 m² pro něj není problém! Děkujeme za recenzi, přesně takový feedback nás motivuje."
+      },
+      {
+        "initials": "AP",
+        "name": "Anna Procházková",
+        "stars": 5,
+        "text": "Používám ho každý den a už nepotřebuji ručně vysávat. To, že myje a suší, mě přesvědčilo. Předtím jsem musela po vysávání ještě mopovat, teď dělá vše najednou.",
+        "verified": true,
+        "sellerReply": "Anno, mytí se sušením je naše největší přednost. Jsme rádi, že to je rozdíl ve vaší každodenní rutině!"
+      },
+      {
+        "initials": "MN",
+        "name": "Martin Novotný",
+        "stars": 5,
+        "text": "koupil jsem ho pro maminku, které je 75 a už nemůže uklízet. ona ho zapne tlačítkem a on udělá zbytek. základna se sama vyprázdní, ona jen vyhodí sáček asi jednou za měsíc",
+        "verified": true,
+        "sellerReply": "Martine, je krásné vědět, že pomáhá i starším lidem. Pozdravujte maminku!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Napište svou recenzi",
+    "nameLabel": "Vaše jméno",
+    "namePlaceholder": "Např. Jan Novák",
+    "ratingLabel": "Hodnocení",
+    "textLabel": "Vaše recenze",
+    "textPlaceholder": "Popište svou zkušenost...",
+    "submitText": "Odeslat Recenzi",
+    "successTitle": "Děkujeme za vaši recenzi!",
+    "successText": "Vaše recenze čeká na schválení nezávislým týmem mimo tuto webovou stránku. Recenze od osob, které produkt nezakoupily, nebudou zveřejněny, aby se předešlo neautentickým recenzím.",
+    "closeText": "Zavřít"
+  },
+
+  "orderForm": {
+    "eyebrow": "Objednávkový Formulář",
+    "title": "Dokončete svou objednávku",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Sleva -33% končí za:",
+    "stockWarning": "Pouze <strong>8 kusů</strong> zbývá za tuto cenu",
+    "summaryTitle": "Souhrn Objednávky",
+    "summaryLines": [
+      { "label": "CyClean Nano Pro™ + Příslušenství", "value": "1 999 Kč", "type": "normal" },
+      { "label": "Rychlé doručení 24/48h", "value": "ZDARMA", "type": "free" },
+      { "label": "Dobírka", "value": "ZDARMA", "type": "free" }
+    ],
+    "totalLabel": "CELKEM",
+    "totalValue": "1 999 Kč",
+    "fields": {
+      "name": { "label": "Jméno a Příjmení *", "placeholder": "Např. Jan Novák" },
+      "phone": { "label": "Telefonní Číslo *", "placeholder": "Např. 733 123 456" },
+      "address": { "label": "Doručovací Adresa *", "placeholder": "Ulice, Číslo, Město, PSČ" }
+    },
+    "phoneNote": "Budeme vás kontaktovat telefonicky nebo přes WhatsApp k potvrzení objednávky.",
+    "paymentBadge": "Platba při Převzetí — Platíte v hotovosti kurýrovi. Žádná platba předem.",
+    "submitText": "POTVRDIT OBJEDNÁVKU",
+    "submitSubtext": "Platba v hotovosti při převzetí",
+    "reassurance": "Chráněná data · SSL 256-bit · Žádná platba předem"
+  },
+
+  "faq": {
+    "eyebrow": "Časté dotazy",
+    "title": "Máte ještě pochybnosti? Zde jsou odpovědi.",
+    "items": [
+      { "question": "Jak si objednám?", "answer": "Klikněte na tlačítko objednávky, vyplňte formulář se svými údaji a potvrďte objednávku. Budeme vás kontaktovat telefonicky nebo přes WhatsApp k potvrzení a zásilku obdržíte pohodlně domů s platbou v hotovosti." },
+      { "question": "Jak funguje doručení?", "answer": "Doručení je zcela zdarma. Od potvrzení objednávky trvá doručení přibližně 24/48 pracovních hodin." },
+      { "question": "Co když se mi nelíbí?", "answer": "Můžete požádat o plný refund vrácením produktu do 30 dnů od doručení. Přijedeme si pro zásilku a vrátíme vám celou zaplacenou částku." },
+      { "question": "Co když mám problém po 30 dnech?", "answer": "Nemusíte se bát, všechny naše produkty mají 2 roky záruky." },
+      { "question": "Jak požádám o vrácení nebo zákaznickou podporu?", "answer": "Pro zákaznickou podporu nebo vrácení po provedení objednávky můžete využít kontaktní formulář na webu nebo e-mail uvedený v patičce stránky." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "2 999 Kč",
+    "newPrice": "1 999 Kč",
+    "buttonText": "OBJEDNAT NYNÍ",
+    "buttonSubtext": "Platba při Převzetí"
+  },
+
+  "tracking": {
+    "googleAdsId": "AW-17935147002",
+    "conversionLabel": "",
+    "conversionValue": 1999.00,
+    "conversionCurrency": "CZK",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {},
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=597&uid=01981ccf-4474-7c39-97eb-9407221996c2&lp=597"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Předchozí",
+    "nextSlide": "Další",
+    "thumbnail": "Náhled",
+    "close": "Zavřít"
+  },
+
+  "ty": {
+    "title": "Objednávka Potvrzena!",
+    "subtitle": "Vaše objednávka byla úspěšně přijata.",
+    "orderNumberLabel": "Č. objednávky:",
+    "summaryTitle": "Souhrn Objednávky",
+    "accessoriesLabel": "+ Příslušenství v ceně",
+    "totalLabel": "CELKEM K ÚHRADĚ",
+    "paymentNote": "Platba v hotovosti kurýrovi — žádná platba předem",
+    "yourDataTitle": "Vaše Údaje",
+    "nameLabel": "Jméno",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Co se stane dál?",
+    "message": "Budeme vás kontaktovat telefonicky nebo přes WhatsApp k potvrzení objednávky a domluvení doručení.",
+    "steps": [
+      "Obdržíte potvrzovací hovor nebo zprávu přes WhatsApp",
+      "Zásilka bude odeslána do 24/48h",
+      "Zaplatíte v hotovosti kurýrovi při převzetí"
+    ],
+    "footerText": "Záruka 2 Roky · 30 Dní na Vrácení · Zákaznická Podpora"
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "seo": {
+    "title": "RatchetPro 2in1™ - Klucz Grzechotkowy i Wkrętarka Bez Wysiłku",
+    "description": "Narzędzie 2-w-1 do śrub i wkrętów: klucz grzechotkowy elektryczny z kompletnym zestawem, 2 akumulatorami i walizką. Darmowa wysyłka, płatność przy odbiorze."
+  },
+
+  "pricing": {
+    "currency": "PLN",
+    "currencySymbol": "zł",
+    "originalPrice": 760.00,
+    "currentPrice": 380.00,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "text": "Darmowa Wysyłka 24/48h · Płatność przy Odbiorze · Gwarancja 2 Lata"
+  },
+
+  "urgencyBanner": {
+    "text": "Uwaga: Duże zainteresowanie —",
+    "highlight": "Ostatnie 8 sztuk dostępnych",
+    "suffix": "w tej cenie"
+  },
+
+  "hero": {
+    "badge": "Technologia 2026",
+    "title": "Śruby i Wkręty",
+    "titleHighlight": "Bez Wysiłku",
+    "titleSuffix": "Jednym Narzędziem",
+    "subtitle": "Elektryczny klucz grzechotkowy 2-w-1, który wkręca, wykręca i dokręca śruby nawet w najciaśniejszych miejscach. Kompletny zestaw z 2 akumulatorami, nasadkami, bitami, wbudowanym LED i walizką.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "14 731 zadowolonych klientów"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/ratchetpro/carosello/1.webp", "alt": "RatchetPro 2in1 widok z przodu" },
+      { "src": "/images/mirko/ratchetpro/carosello/2.webp", "alt": "RatchetPro 2in1 w użyciu" },
+      { "src": "/images/mirko/ratchetpro/carosello/3.webp", "alt": "RatchetPro 2in1 szczegóły" },
+      { "src": "/images/mirko/ratchetpro/carosello/4.webp", "alt": "RatchetPro 2in1 kompletny zestaw" },
+      { "src": "/images/mirko/ratchetpro/carosello/5.webp", "alt": "RatchetPro 2in1 walizka" },
+      { "src": "/images/mirko/ratchetpro/carosello/6.webp", "alt": "RatchetPro 2in1 akcesoria" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Prawdziwe 2-w-1:", "description": "śruby z nasadkami 3/8\" i wkręty z bitami 1/4\". Jedno narzędzie do wszystkiego." },
+      { "title": "Prędkość pod Twoją kontrolą:", "description": "im mocniej naciskasz spust, tym szybciej się kręci. Zero zerwanych wkrętów, zero uszkodzonych gwintów." },
+      { "title": "Wchodzi tam, gdzie inne nie mogą:", "description": "kompaktowa głowica z przegubem do pracy w najciaśniejszych przestrzeniach." },
+      { "title": "Przód i tył w jednej chwili:", "description": "odwróć kierunek obrotów bez zmiany chwytu i bez marnowania czasu." },
+      { "title": "2 akumulatory w zestawie:", "description": "jeden pracuje, drugi się ładuje. Nigdy nie przerywasz pracy w połowie." },
+      { "title": "Wbudowany LED:", "description": "pracuj nawet w ciemności — w garażu, pod zlewem czy za meblami." },
+      { "title": "Kompletny zestaw gotowy do pracy:", "description": "nasadki, bity, przedłużki, przegub i walizka. Nie kupujesz nic więcej." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "RatchetPro 2in1™",
+    "originalPriceLabel": "Cena katalogowa:",
+    "discountLabel": "OSZCZĘDZASZ 380 zł (-50%)",
+    "shippingLabel": "Szybka Wysyłka:",
+    "shippingValue": "Gratis",
+    "guaranteeLabel": "Gwarancja 2 Lata",
+    "offerToggleText": "Zobacz, co zawiera oferta",
+    "offerItems": [
+      { "text": "RatchetPro 2in1™ — Klucz Grzechotkowy i Wkrętarka Elektryczna", "badge": null },
+      { "text": "Zestaw Nasadek 3/8\"", "badge": null },
+      { "text": "Zestaw Bitów 1/4\" + Adapter Quick-Change", "badge": null },
+      { "text": "Przedłużki + Przegub Elastyczny", "badge": null },
+      { "text": "2 Akumulatory Li-ion 20V + Ładowarka", "badge": null },
+      { "text": "Walizka Profesjonalna", "badge": "GRATIS" },
+      { "text": "Gwarancja 2 Lata + Dedykowane Wsparcie", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ZAMÓW TERAZ",
+    "mainSubtext": "Płatność Gotówką przy Odbiorze",
+    "subNote": "Zero ryzyka: płacisz dopiero, gdy otrzymasz paczkę"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Płatność przy Odbiorze", "color": "green" },
+      { "icon": "truck", "text": "Wysyłka 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Dni na Zwrot", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Rozpoznajesz to?",
+    "title": "Te problemy są Ci znane?",
+    "items": [
+      { "icon": "timer", "titleBold": "Tracisz pół godziny na dokręcenie 10 śrub ręcznie", "text": "a na koniec masz wykończony nadgarstek." },
+      { "icon": "stiffness", "titleBold": "Wkrętarka nie wchodzi w ciasne miejsca", "text": "a ręcznym kluczem grzechotkowym trwa to wieczność." },
+      { "icon": "warning", "titleBold": "Jedno narzędzie do wkrętów, drugie do śrub", "text": "— wyrzucone pieniądze i skrzynka narzędziowa pęka w szwach." }
+    ],
+    "solutionTitle": "Jest lepsze rozwiązanie.",
+    "solutionText": "Jedno elektryczne narzędzie do śrub i wkrętów z pełną kontrolą prędkości i kompletnym zestawem gotowym do pracy."
+  },
+
+  "features": {
+    "eyebrow": "Dlaczego jest inny",
+    "title": "Dwa narzędzia w jednym. Zero kompromisów.",
+    "items": [
+      {
+        "image": "/images/mirko/ratchetpro/angle/1.webp",
+        "imageAlt": "Podwójne złącze 2-w-1",
+        "tag": "2-W-1",
+        "tagColor": "green",
+        "title": "Śruby i Wkręty Jednym Narzędziem",
+        "description": "Złącze <strong>3/8\" na nasadki</strong> (śruby i nakrętki) + adapter <strong>1/4\" na bity</strong> (wkręty). <strong>Regulowana prędkość</strong> spustem: im mocniej naciskasz, tym szybciej się kręci. <strong>Zero zerwanych wkrętów</strong>."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/2.webp",
+        "imageAlt": "Profesjonalne użytkowanie",
+        "tag": "PROFESJONALNE UŻYCIE",
+        "tagColor": "orange",
+        "title": "Odpowiedni do Profesjonalnego Użytku",
+        "description": "<strong>81 Nm momentu obrotowego</strong> i silnik <strong>450 obr/min</strong>. Wytrzymuje codzienną pracę w warsztacie, na budowie i w magazynie bez utraty wydajności."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/3.webp",
+        "imageAlt": "Ciasne przestrzenie",
+        "tag": "NIEMOŻLIWE PRZESTRZENIE",
+        "tagColor": "blue",
+        "title": "Dociera Tam, Gdzie Wkrętarka Nie Wejdzie",
+        "description": "Kompaktowa głowica + <strong>elastyczny przegub</strong> w zestawie. Wbudowany <strong>LED przedni</strong> do pracy nawet w ciemnych miejscach. Pracuj za zlewem, pod samochodem, między rurami."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/4.webp",
+        "imageAlt": "Kompletny zestaw z 2 akumulatorami",
+        "tag": "KOMPLETNY ZESTAW",
+        "tagColor": "green",
+        "title": "Wszystko w Zestawie, Nie Kupujesz Nic Więcej",
+        "description": "<strong>2 akumulatory 20V</strong> (jeden pracuje, drugi się ładuje), nasadki, bity, przedłużki, przegub i <strong>profesjonalna walizka</strong>. Otwórz i pracuj."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Banalnie proste",
+    "title": "3 kroki i gotowe.",
+    "image": "",
+    "imageAlt": "Jak to działa",
+    "steps": [
+      { "title": "Wybierz", "description": "Nasadkę do śrub lub bit do wkrętów. Zmiana w 2 sekundy." },
+      { "title": "Naciśnij", "description": "Spust kontroluje prędkość. Im mocniej naciskasz, tym szybciej się kręci." },
+      { "title": "Gotowe", "description": "81 Nm momentu obrotowego robi robotę. Ostateczne dokręcenie ręcznie, jeśli trzeba." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ZAMÓW TERAZ Z RABATEM -50%",
+    "subtext": "Płatność Gotówką przy Odbiorze"
+  },
+
+  "specs": {
+    "eyebrow": "Specyfikacja",
+    "title": "Parametry Techniczne",
+    "items": [
+      { "label": "Typ", "value": "Klucz grzechotkowy elektryczny 2-w-1 (śruby + wkręty)" },
+      { "label": "Złącze nasadek", "value": "3/8\" (kwadrat)" },
+      { "label": "Złącze bitów", "value": "1/4\" sześciokątne (z adapterem)" },
+      { "label": "Maksymalny moment", "value": "81 Nm (60 ft-lbs)" },
+      { "label": "Prędkość", "value": "0-450 obr/min (regulowana)" },
+      { "label": "Napięcie", "value": "20V" },
+      { "label": "Akumulator", "value": "Li-ion 2.0 Ah (x2 w zestawie)" },
+      { "label": "Ładowanie", "value": "Szybka ładowarka w zestawie" },
+      { "label": "Obroty", "value": "W przód / W tył (szybkie przełączanie)" },
+      { "label": "LED", "value": "Wbudowana przednia lampka robocza" },
+      { "label": "Certyfikaty", "value": "CE" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Porównanie",
+    "title": "Jakie korzyści zyskasz w porównaniu z alternatywami?",
+    "featureColumn": "Cecha",
+    "winnerBadge": "BESTSELLER",
+    "productColumn": "RatchetPro 2in1™",
+    "competitorColumn": "Klucz Ręczny / Wkrętarka",
+    "rows": [
+      { "feature": "Wszechstronność", "product": "✔ Śruby + wkręty (2-w-1)", "competitor": "Tylko śruby LUB tylko wkręty" },
+      { "feature": "Wysiłek fizyczny", "product": "✔ Zero, silnik elektryczny", "competitor": "Nadgarstek i ramię pod obciążeniem" },
+      { "feature": "Ciasne miejsca", "product": "✔ Kompaktowa głowica + przegub", "competitor": "Wkrętarka nie wchodzi" },
+      { "feature": "Szybkość pracy", "product": "✔ 450 obr/min", "competitor": "Wolno i męcząco" },
+      { "feature": "Kompletny zestaw", "product": "✔ Nasadki + bity + walizka", "competitor": "Do kupienia osobno" },
+      { "feature": "Łączny koszt", "product": "✔ Tylko 380 zł (jednorazowo)", "competitor": "560–700 zł (2 narzędzia)" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Wszystko w zestawie",
+    "title": "Co otrzymasz do domu",
+    "items": [
+      { "icon": "box", "text": "RatchetPro 2in1™ — Klucz Grzechotkowy i Wkrętarka Elektryczna", "value": "760 zł", "valueType": "price" },
+      { "icon": "box", "text": "Zestaw Nasadek 3/8\"", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "box", "text": "Zestaw Bitów 1/4\" + Adapter Quick-Change", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "cable", "text": "Przedłużki + Przegub Elastyczny", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "box", "text": "2 Akumulatory Li-ion 20V + Ładowarka", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "gift", "text": "Walizka Profesjonalna", "value": "GRATIS", "valueType": "gift" },
+      { "icon": "shield", "text": "Gwarancja 2 Lata + Dedykowane Wsparcie", "value": "W ZESTAWIE", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Cena Katalogowa:",
+    "totalOriginalValue": "1 080 zł",
+    "totalCurrentLabel": "Dziś płacisz tylko:",
+    "totalCurrentValue": "380 zł",
+    "totalSave": "Oszczędzasz 700 zł · DARMOWA WYSYŁKA",
+    "ctaText": "ZAMÓW TERAZ"
+  },
+
+  "reviews": {
+    "eyebrow": "Co mówią nasi klienci",
+    "title": "Zweryfikowane Opinie",
+    "rating": "4.8",
+    "totalCount": "14 731 opinii",
+    "verifiedNote": "✓ Opinie są weryfikowane przez niezależny zespół zewnętrzny.",
+    "showMoreText": "Pokaż więcej opinii",
+    "leaveReviewText": "Zostaw opinię",
+    "verifiedBadge": "Zweryfikowany zakup",
+    "sellerReplyLabel": "Odpowiedź sprzedawcy:",
+    "items": [
+      {
+        "initials": "MK",
+        "name": "Marek Kowalski",
+        "stars": 5,
+        "text": "Używam go do samochodu i do montażu mebli w domu. Wcześniej musiałem wyciągać klucz ręczny do śrub i wkrętarkę do wkrętów, a teraz robię wszystko jednym narzędziem. Zmiana nasadka-bit jest błyskawiczna. Dostawa w dwa dni, zapłaciłem kurierowi.",
+        "verified": true,
+        "sellerReply": "Marku, to dokładnie zastosowanie, do którego został zaprojektowany: jedno narzędzie do wszystkiego. Dziękujemy za zaufanie!"
+      },
+      {
+        "initials": "PN",
+        "name": "Piotr Nowak",
+        "stars": 5,
+        "text": "pracuję jako hydraulik i to urządzenie odmieniło mój dzień pracy. w ciasnych miejscach za armaturą łazienkową moja wkrętarka nie wchodziła, a z przegubem tego narzędzia docieram wszędzie. regulowana prędkość to zbawienie, bo nie niszczę złączek",
+        "verified": true,
+        "sellerReply": "Piotrze, świadomość, że profesjonalista używa go codziennie, to najlepsza rekomendacja. Elastyczny przegub naprawdę robi różnicę w ciasnych miejscach!"
+      },
+      {
+        "initials": "AW",
+        "name": "Anna Wiśniewska",
+        "stars": 5,
+        "text": "Kupiłam go dla mojego męża, który ciągle narzekał na nadgarstek przy używaniu klucza ręcznego. Teraz robi wszystko w połowie czasu i bez wysiłku. Ja też go użyłam do montażu półki i muszę przyznać, że jest banalnie prosty w obsłudze.",
+        "verified": true,
+        "sellerReply": "Anno, kiedy nawet osoba bez doświadczenia radzi sobie bez problemu, to znak, że dobrze wykonaliśmy swoją robotę. Dziękujemy!"
+      },
+      {
+        "initials": "TW",
+        "name": "Tomasz Wójcik",
+        "stars": 5,
+        "text": "jestem stolarzem i używam go codziennie. 81 Nm momentu obrotowego jest więcej niż wystarczające do mojej pracy. dwa akumulatory są kluczowe, bo jeden się ładuje, gdy używam drugiego i nigdy się nie zatrzymuję. walizka jest wygodna do transportu",
+        "verified": true,
+        "sellerReply": "Tomaszu, stolarz używający go na co dzień to najlepszy test. 2 akumulatory zostały zaprojektowane właśnie dla tych, którzy pracują bez przerwy. Dziękujemy!"
+      },
+      {
+        "initials": "KK",
+        "name": "Krzysztof Kamiński",
+        "stars": 4,
+        "text": "działa dobrze zarówno z nasadkami, jak i z bitami. led jest bardzo przydatny, gdy pracuję pod samochodem w garażu. na razie daję 4 gwiazdki, bo jeszcze testuję przy różnych pracach, ale pierwsze wrażenie jest bardzo dobre",
+        "verified": true,
+        "sellerReply": "Krzysztofie, doceniamy szczerość! Jesteśmy przekonani, że przy dalszym użytkowaniu przy różnych pracach będzie Pan zadowolony. Proszę nas informować!"
+      },
+      {
+        "initials": "AL",
+        "name": "Andrzej Lewandowski",
+        "stars": 5,
+        "text": "używam go do serwisowania motocykla. wymiana klocków hamulcowych wcześniej to był koszmar z kluczem ręcznym. teraz w 10 minut mam gotowe i nadgarstek nie boli. zestaw nasadek obejmuje wszystkie rozmiary, których potrzebuję",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "PZ",
+        "name": "Paweł Zieliński",
+        "stars": 5,
+        "text": "błyskawiczna wysyłka i świetny produkt. nie sądziłem, że za 380 zł mogę dostać to wszystko: klucz grzechotkowy, nasadki, bity, przedłużki, przegub, dwa akumulatory i jeszcze walizkę. zrobiłem już trzy naprawy w domu i działa rewelacyjnie",
+        "verified": true,
+        "sellerReply": "Pawle, kompletny zestaw to nasza mocna strona: otwierasz walizkę i masz wszystko. Żadnych ukrytych kosztów i żadnych akcesoriów do dokupienia. Dziękujemy!"
+      },
+      {
+        "initials": "AS",
+        "name": "Agnieszka Szymańska",
+        "stars": 5,
+        "text": "Używam go sama do domowych napraw. Zamontowałam dwie półki i wymieniłam klamki w drzwiach bez proszenia kogokolwiek o pomoc. Regulowana prędkość jest idealna, bo nie ryzykuję uszkodzenia drewna. Dużo bardziej praktyczny niż moja poprzednia wkrętarka.",
+        "verified": true,
+        "sellerReply": "Agnieszko, cieszymy się, że nawet osoba bez fachowego doświadczenia radzi sobie bez problemu. Regulowana prędkość została zaprojektowana właśnie w tym celu!"
+      },
+      {
+        "initials": "JW",
+        "name": "Jan Woźniak",
+        "stars": 5,
+        "text": "sam zmieniłem koła w samochodzie w garażu. nasadki 3/8 dokręcają solidnie i z kluczem elektrycznym nie ma wysiłku. ostateczne dokręcenie ręcznie dla bezpieczeństwa. dwa akumulatory to genialny pomysł",
+        "verified": true,
+        "sellerReply": "Janie, idealne podejście: klucz elektryczny wykonuje główną pracę, a potem ręczne dokręcenie dla bezpieczeństwa. Cieszymy się, że 2 akumulatory robią różnicę!"
+      },
+      {
+        "initials": "MD",
+        "name": "Michał Dąbrowski",
+        "stars": 5,
+        "text": "Zamówiłem w poniedziałek, dotarło w środę. Zapłaciłem kurierowi bez problemów. Przedni LED jest mega przydatny, gdy pracuję pod zlewem w kuchni. Już poleciłem go mojemu szwagrowi, który jest mechanikiem.",
+        "verified": true,
+        "sellerReply": "Michale, LED wydaje się detalem, ale w garażu i ciemnych przestrzeniach robi ogromną różnicę. Pozdrowienia dla szwagra!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Zostaw swoją opinię",
+    "nameLabel": "Twoje imię",
+    "namePlaceholder": "Np. Jan Kowalski",
+    "ratingLabel": "Ocena",
+    "textLabel": "Twoja opinia",
+    "textPlaceholder": "Opowiedz o swoim doświadczeniu...",
+    "submitText": "Wyślij Opinię",
+    "successTitle": "Dziękujemy za Twoją opinię!",
+    "successText": "Twoja opinia oczekuje na zatwierdzenie przez niezależny zespół zewnętrzny. Opinie osób, które nie kupiły produktu, nie zostaną opublikowane — to w celu uniknięcia nieautentycznych recenzji.",
+    "closeText": "Zamknij"
+  },
+
+  "orderForm": {
+    "eyebrow": "Formularz Zamówienia",
+    "title": "Dokończ swoje zamówienie",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Oferta -50% wygasa za:",
+    "stockWarning": "Tylko <strong>8 sztuk</strong> pozostało w tej cenie",
+    "summaryTitle": "Podsumowanie Zamówienia",
+    "summaryLines": [
+      { "label": "RatchetPro 2in1™ + Kompletny Zestaw", "value": "380 zł", "type": "normal" },
+      { "label": "Szybka wysyłka 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Opłata za pobranie", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "RAZEM",
+    "totalValue": "380 zł",
+    "fields": {
+      "name": { "label": "Imię i Nazwisko *", "placeholder": "Np. Jan Kowalski" },
+      "phone": { "label": "Numer Telefonu *", "placeholder": "Np. 600 123 456" },
+      "address": { "label": "Adres Dostawy *", "placeholder": "Ulica, Numer, Miasto, Kod pocztowy" }
+    },
+    "phoneNote": "Skontaktujemy się telefonicznie lub przez WhatsApp w celu potwierdzenia zamówienia.",
+    "paymentBadge": "Płatność przy Odbiorze — Płacisz gotówką kurierowi. Zero zaliczki.",
+    "submitText": "POTWIERDŹ ZAMÓWIENIE",
+    "submitSubtext": "Płatność Gotówką przy Odbiorze",
+    "reassurance": "Dane chronione · SSL 256-bit · Brak przedpłaty"
+  },
+
+  "faq": {
+    "eyebrow": "Najczęściej zadawane pytania",
+    "title": "Masz jeszcze wątpliwości? Oto odpowiedzi.",
+    "items": [
+      { "question": "Jak złożyć zamówienie?", "answer": "Kliknij przycisk zakupu, wypełnij formularz swoimi danymi i potwierdź zamówienie. Skontaktujemy się telefonicznie lub przez WhatsApp w celu potwierdzenia, a paczkę otrzymasz wygodnie do domu z płatnością gotówką." },
+      { "question": "Jak działa wysyłka?", "answer": "Wysyłka jest całkowicie darmowa. Dostawa zajmuje 1–2 dni robocze od potwierdzenia zamówienia." },
+      { "question": "A jeśli mi się nie spodoba?", "answer": "Możesz ubiegać się o pełny zwrot w ciągu 30 dni od dostawy. Przyjedziemy po paczkę i zwrócimy całą zapłaconą kwotę." },
+      { "question": "A jeśli mam problem po 30 dniach?", "answer": "Spokojnie, wszystkie nasze produkty mają 2 lata gwarancji." },
+      { "question": "Jak mogę poprosić o zwrot lub pomoc?", "answer": "Aby poprosić o pomoc lub zwrot po złożeniu zamówienia, możesz skorzystać z formularza kontaktowego na stronie lub napisać na adres e-mail podany w stopce." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "760 zł",
+    "newPrice": "380 zł",
+    "buttonText": "ZAMÓW TERAZ",
+    "buttonSubtext": "Płatność przy Odbiorze"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 380.00,
+    "conversionCurrency": "PLN",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Poprzedni",
+    "nextSlide": "Następny",
+    "thumbnail": "Miniatura",
+    "close": "Zamknij"
+  },
+
+  "ty": {
+    "title": "Zamówienie Potwierdzone!",
+    "subtitle": "Twoje zamówienie zostało pomyślnie przyjęte.",
+    "orderNumberLabel": "Nr zamówienia:",
+    "summaryTitle": "Podsumowanie Zamówienia",
+    "accessoriesLabel": "+ Kompletny zestaw w cenie",
+    "totalLabel": "RAZEM DO ZAPŁATY",
+    "paymentNote": "Płatność gotówką kurierowi — bez zaliczki",
+    "yourDataTitle": "Twoje Dane",
+    "nameLabel": "Imię",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adres",
+    "nextStepsTitle": "Co dalej?",
+    "message": "Skontaktujemy się telefonicznie lub przez WhatsApp w celu potwierdzenia zamówienia i organizacji dostawy.",
+    "steps": [
+      "Otrzymasz telefon lub wiadomość WhatsApp z potwierdzeniem",
+      "Paczka zostanie wysłana w ciągu 24/48h",
+      "Płacisz gotówką kurierowi przy odbiorze"
+    ],
+    "footerText": "Gwarancja 2 Lata · 30 Dni na Zwrot · Dedykowane Wsparcie"
+  }
+}

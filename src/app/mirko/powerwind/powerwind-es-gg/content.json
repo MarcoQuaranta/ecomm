@@ -1,0 +1,411 @@
+{
+  "seo": {
+    "title": "PowerWind X™ - Corta Zarzas, Hierba y Ramas Sin Atascarse",
+    "description": "El desbrozador a batería con motor inteligente que aumenta la potencia solo. Kit completo con 4 cuchillas, cortabordes, 2 baterías. Envío gratuito."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 111.00,
+    "currentPrice": 74.00,
+    "discountPercent": 33
+  },
+
+  "topBar": {
+    "text": "Envío Gratuito 24/48h · Pago contra reembolso · Garantía de 2 años"
+  },
+
+  "urgencyBanner": {
+    "text": "Atención: Gran demanda —",
+    "highlight": "Últimas 8 unidades disponibles",
+    "suffix": "a este precio"
+  },
+
+  "hero": {
+    "badge": "Innovación 2026",
+    "title": "Corta Zarzas, Hierba Alta y Ramas",
+    "titleHighlight": "Sin Atascarse Nunca:",
+    "titleSuffix": "El Primer Desbrozador que Piensa por Sí Solo",
+    "subtitle": "Motor inteligente que regula la potencia solo. 4 cuchillas incluidas en el precio, 2 baterías, cortabordes y maletín. Enciéndelo y corta, él hace todo el trabajo.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.743 clientes satisfechos"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-33%",
+    "slides": [
+      { "src": "/images/mirko/powerwind/carosello/1.webp", "alt": "PowerWind X vista completa" },
+      { "src": "/images/mirko/powerwind/carosello/2.webp", "alt": "PowerWind X en uso" },
+      { "src": "/images/mirko/powerwind/carosello/3.webp", "alt": "PowerWind X detalle del cabezal" },
+      { "src": "/images/mirko/powerwind/carosello/4.webp", "alt": "PowerWind X accesorios incluidos" },
+      { "src": "/images/mirko/powerwind/carosello/5.webp", "alt": "PowerWind X baterías y cargador" },
+      { "src": "/images/mirko/powerwind/carosello/6.webp", "alt": "PowerWind X cortabordes" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "No se atasca nunca:", "description": "el motor SmartTorque aumenta la potencia solo cuando encuentra zarzas y hierba alta." },
+      { "title": "Hilo de corte: se recarga en 10 segundos:", "description": "el hilo de nailon que corta la hierba se desgasta con el uso. Introduces uno nuevo, golpeas contra el suelo y se enrolla solo. Cero desmontaje." },
+      { "title": "Se libera en 1 clic:", "description": "el botón Reverse desbloquea el hilo y la hierba atascada al instante." },
+      { "title": "Bordes perfectos de jardinero:", "description": "cortabordes con rueda guía para aceras y caminos impecables." },
+      { "title": "Cero pausas:", "description": "2 baterías incluidas. Una trabaja, otra se carga. Trabajas todo lo que quieras." },
+      { "title": "Llegas a todas partes:", "description": "se extiende de 71 a 210 cm. Alcanzas debajo de los setos y los puntos difíciles sin agacharte." },
+      { "title": "Comodidad total en los hombros:", "description": "arnés de doble hombro con acolchado que distribuye el peso. Trabajas durante horas sin sentir fatiga." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "PowerWind X™",
+    "originalPriceLabel": "Precio de lista:",
+    "discountLabel": "AHORRAS 37€ (-33%)",
+    "shippingLabel": "Envío Rápido:",
+    "shippingValue": "Gratis",
+    "guaranteeLabel": "Garantía de 2 años",
+    "offerToggleText": "Descubre qué incluye la oferta",
+    "offerItems": [
+      { "text": "PowerWind X™ — Desbrozador Profesional", "badge": null },
+      { "text": "Kit 4 Cuchillas de Corte (hilo, hierba, zarzas, ramas)", "badge": null },
+      { "text": "2 Baterías 40V + Cargador Rápido", "badge": null },
+      { "text": "Cortabordes con Rueda Guía", "badge": "REGALO" },
+      { "text": "Arnés de Doble Hombro Comfort PRO", "badge": "REGALO" },
+      { "text": "Maletín Rígido + Hilo de Repuesto", "badge": "REGALO" },
+      { "text": "Garantía de 2 Años + Asistencia Dedicada", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "PEDIR AHORA",
+    "mainSubtext": "Pago en efectivo al repartidor",
+    "subNote": "Cero riesgo: pagas solo cuando recibes el paquete"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Pago contra reembolso", "color": "green" },
+      { "icon": "truck", "text": "Envío 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Días de Devolución", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "¿Te identificas?",
+    "title": "¿Estos problemas te resultan familiares?",
+    "items": [
+      { "icon": "pain", "titleBold": "El desbrozador de gasolina te destroza la espalda", "text": "— pesado, ruidoso, huele mal y arranca una de cada tres veces." },
+      { "icon": "warning", "titleBold": "El hilo se atasca cada dos minutos", "text": "y tienes que desmontarlo todo para enrollarlo. Pierdes más tiempo arreglándolo que cortando." },
+      { "icon": "timer", "titleBold": "Los de batería no pueden con las zarzas", "text": "— se atascan, se apagan y la batería muere a los 20 minutos." }
+    ],
+    "solutionTitle": "Existe una solución mejor.",
+    "solutionText": "Un desbrozador con motor inteligente, 4 cuchillas, 2 baterías y cero gasolina. Enciéndelo y corta todo."
+  },
+
+  "features": {
+    "eyebrow": "Por qué es diferente",
+    "title": "Arrasa con la hierba alta, ramas y zarzas en un instante",
+    "demoGifs": {
+      "items": [
+        { "src": "/images/mirko/powerwind/gif/1.gif", "alt": "PowerWind X en acción" },
+        { "src": "/images/mirko/powerwind/gif/2.gif", "alt": "PowerWind X en acción" },
+        { "src": "/images/mirko/powerwind/gif/3.gif", "alt": "PowerWind X en acción" }
+      ],
+      "caption": "PowerWind X en acción."
+    },
+    "items": [
+      {
+        "image": "/images/mirko/powerwind/angle/1.webp",
+        "imageAlt": "SmartTorque AUTO",
+        "tag": "POTENCIA INTELIGENTE",
+        "tagColor": "green",
+        "title": "No Se Atasca Nunca en las Zarzas",
+        "description": "El motor <strong>SmartTorque</strong> aumenta <strong>potencia y velocidad automáticamente</strong> cuando encuentra hierba alta y maleza. <strong>Ningún desbrozador a batería</strong> hace esto."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/2.webp",
+        "imageAlt": "4 sistemas de corte",
+        "tag": "4 CUCHILLAS INCLUIDAS",
+        "tagColor": "orange",
+        "title": "Una Cuchilla para Cada Necesidad",
+        "description": "<strong>Hilo de nailon</strong> para los retoques, <strong>cuchilla de 3 dientes</strong> para la hierba espesa, <strong>disco para zarzas</strong> y maleza, <strong>disco de corte</strong> para ramas y ramitas. Con una sola herramienta, lo cortas todo."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/3.webp",
+        "imageAlt": "Cortabordes Borde Perfecto",
+        "tag": "RESULTADO WOW",
+        "tagColor": "blue",
+        "title": "Bordes Perfectos Como un Jardinero Profesional",
+        "description": "<strong>Cortabordes</strong> con <strong>rueda guía</strong> para aceras y caminos. En <strong>5 minutos</strong> tu jardín parece cuidado por un profesional."
+      },
+      {
+        "image": "/images/mirko/powerwind/angle/4.webp",
+        "imageAlt": "Desbrozador telescópico extensible",
+        "tag": "CERO ESFUERZO",
+        "tagColor": "green",
+        "title": "Llegas Donde Otros No Llegan",
+        "description": "Se extiende de <strong>71 a 210 cm</strong> en un gesto. Cortas debajo de los setos, a lo largo de los muros y en los puntos difíciles <strong>sin agacharte</strong> y sin destrozarte la espalda. Lo ajustas a <strong>tu altura</strong> y trabajas cómodo."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Facilísimo",
+    "title": "3 pasos y el jardín está listo.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Monta", "description": "Enganchas la cuchilla, insertas la batería. 30 segundos y listo." },
+      { "title": "Enciende", "description": "Un botón y arranca. SmartTorque regula la potencia solo." },
+      { "title": "Corta", "description": "Hierba, zarzas, ramas: él hace todo. Cambias de cuchilla en 2 segundos." }
+    ]
+  },
+
+  "midCta": {
+    "text": "PIDE AHORA CON EL 33% DE DESCUENTO",
+    "subtext": "Pago en efectivo al repartidor"
+  },
+
+  "comparison": {
+    "eyebrow": "La Comparación",
+    "title": "¿Qué ventajas tendrás frente a las alternativas?",
+    "featureColumn": "Característica",
+    "winnerBadge": "GANADOR",
+    "productColumn": "PowerWind X™",
+    "competitorColumn": "Desbrozador de Gasolina",
+    "rows": [
+      { "feature": "Potencia en zarzas", "product": "✔ SmartTorque auto", "competitor": "Constante (riesgo de atasco)" },
+      { "feature": "Recarga de hilo", "product": "✔ 10 segundos, sin desmontar", "competitor": "Desmontar y enrollar a mano" },
+      { "feature": "Hilo atascado", "product": "✔ Reverse: 1 clic", "competitor": "Desmontar y limpiar a mano" },
+      { "feature": "Peso y comodidad", "product": "✔ Ligero, cero vibraciones", "competitor": "Pesado, vibraciones fuertes" },
+      { "feature": "Ruido", "product": "✔ Silencioso", "competitor": "Despierta a los vecinos" },
+      { "feature": "Coste total", "product": "✔ Solo 74€ (todo incluido)", "competitor": "200-400€ + gasolina + revisiones" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Todo incluido",
+    "title": "Qué recibes en tu casa",
+    "items": [
+      { "icon": "box", "text": "PowerWind X™ — Desbrozador Profesional", "value": "€111,00", "valueType": "price" },
+      { "icon": "check", "text": "Kit 4 Cuchillas de Corte (hilo, hierba, zarzas, ramas)", "value": "INCLUIDO", "valueType": "included" },
+      { "icon": "check", "text": "2 Baterías 40V + Cargador Rápido", "value": "INCLUIDO", "valueType": "included" },
+      { "icon": "gift", "text": "Cortabordes con Rueda Guía", "value": "REGALO", "valueType": "gift" },
+      { "icon": "gift", "text": "Arnés de Doble Hombro Comfort PRO", "value": "REGALO", "valueType": "gift" },
+      { "icon": "gift", "text": "Maletín Rígido + Hilo de Repuesto", "value": "REGALO", "valueType": "gift" },
+      { "icon": "shield", "text": "Garantía de 2 Años + Asistencia Dedicada", "value": "INCLUIDO", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Precio de Lista:",
+    "totalOriginalValue": "€239,00",
+    "totalCurrentLabel": "Hoy pagas solo:",
+    "totalCurrentValue": "€74,00",
+    "totalSave": "Ahorras €165,00 · Envío GRATUITO",
+    "ctaText": "PEDIR AHORA"
+  },
+
+  "reviews": {
+    "eyebrow": "Lo que dicen de nosotros",
+    "title": "Reseñas Verificadas",
+    "rating": "4.8",
+    "totalCount": "18.743 reseñas",
+    "verifiedNote": "✓ Las reseñas son verificadas por un equipo neutral externo a este sitio web.",
+    "showMoreText": "Mostrar más reseñas",
+    "leaveReviewText": "Dejar una reseña",
+    "verifiedBadge": "Compra verificada",
+    "sellerReplyLabel": "Respuesta del vendedor:",
+    "items": [
+      {
+        "initials": "CG",
+        "name": "Carlos García",
+        "stars": 5,
+        "text": "Tengo un terreno de 2000 metros con zarzas y maleza dura. El viejo de gasolina se atascaba siempre y pesaba una tonelada. Este entra en las zarzas y no se para, el motor acelera solo cuando encuentra resistencia. Lo corté todo en una tarde sin destrozarme la espalda. Envío en dos días, pagué al repartidor.",
+        "image": "/images/mirko/powerwind/recensioni/1.webp",
+        "imageAlt": "Foto reseña Carlos",
+        "verified": true,
+        "sellerReply": "Carlos, el SmartTorque ha sido pensado precisamente para quienes tienen terrenos exigentes como el suyo. Nos alegra que haya notado la diferencia de peso. Para cualquier necesidad aquí estamos."
+      },
+      {
+        "initials": "ML",
+        "name": "Miguel López",
+        "stars": 5,
+        "text": "antes tardaba 10 minutos cada vez que se acababa el hilo, tenía que desmontar el cabezal y maldecir. con este meto el hilo, giro y listo, no me lo creía pero funciona de verdad. lo uso los sábados por la mañana y acabo en la mitad de tiempo que antes",
+        "image": "/images/mirko/powerwind/recensioni/2.webp",
+        "imageAlt": "Foto reseña Miguel",
+        "verified": true,
+        "sellerReply": "Miguel, el AutoSpool es la función más valorada por nuestros clientes. Nos alegra que le haya simplificado el trabajo del sábado. ¡Gracias!"
+      },
+      {
+        "initials": "CM",
+        "name": "Carmen Martínez",
+        "stars": 5,
+        "text": "Lo compré para mi marido que tiene 62 años y siempre se quejaba de la espalda después de usar el de gasolina. Con este es ligero y las correas de doble hombro distribuyen el peso muy bien. Además el ruido es mínimo, los vecinos lo agradecen. Llegó en dos días, sin ningún coste adicional.",
+        "image": "/images/mirko/powerwind/recensioni/3.webp",
+        "imageAlt": "Foto reseña Carmen",
+        "verified": true,
+        "sellerReply": "Carmen, ¡qué bonita idea de regalo! El arnés de doble hombro está diseñado precisamente para quienes trabajan mucho rato sin fatigarse. ¡Un saludo a su marido!"
+      },
+      {
+        "initials": "JR",
+        "name": "Javier Rodríguez",
+        "stars": 5,
+        "text": "las dos baterías son una pasada. se acaba una, pongo la otra y sigo sin pausas. con el viejo de gasolina tenía que llevar el bidón y olía todo el día. este es silencioso, limpio y potente. el cortabordes además es espectacular, los bordes quedan rectos",
+        "image": "/images/mirko/powerwind/recensioni/4.webp",
+        "imageAlt": "Foto reseña Javier",
+        "verified": true,
+        "sellerReply": "Javier, la continuidad de trabajo con dos baterías es fundamental para quienes tienen jardines grandes. ¡Gracias por elegir PowerWind X!"
+      },
+      {
+        "initials": "FS",
+        "name": "Francisco Sánchez",
+        "stars": 4,
+        "text": "Producto sólido, lo he probado con hierba alta y zarzas y tengo que decir que el motor responde bien. De momento pongo 4 estrellas porque quiero probarlo bien durante toda la temporada antes de dar el máximo, pero las perspectivas son excelentes. Genial el kit con todos los accesorios incluidos.",
+        "verified": true,
+        "sellerReply": "Francisco, ¡apreciamos su honestidad! Estamos seguros de que a final de temporada los resultados hablarán por sí solos. ¡Cuéntenos, tenemos curiosidad por saberlo!"
+      },
+      {
+        "initials": "LF",
+        "name": "Laura Fernández",
+        "stars": 5,
+        "text": "Lo compré para mi padre de 68 años que no quería ni oír hablar de batería. Después de probarlo no quiere volver a la gasolina. Dice que pesa la mitad y que el cortabordes le deja las aceras como un jardinero de verdad. Pagué al repartidor sin problemas.",
+        "verified": true,
+        "sellerReply": "Laura, ¡convertir a un fan de la gasolina es nuestra mayor satisfacción! Un saludo a su padre, nos alegra que esté contento."
+      },
+      {
+        "initials": "PR",
+        "name": "Pedro Ruiz",
+        "stars": 5,
+        "text": "el cortabordes con la rueda es una locura. los bordes del camino quedan rectos perfectos, parece hecho por un profesional. antes lo hacía a ojo y siempre la liaba. también el maletín es muy cómodo para tener todo ordenado en el garaje",
+        "verified": true,
+        "sellerReply": "Pedro, la rueda guía ha sido diseñada precisamente para obtener bordes profesionales sin experiencia. ¡Gracias por la reseña!"
+      },
+      {
+        "initials": "AH",
+        "name": "Antonio Hernández",
+        "stars": 5,
+        "text": "Lo que me conquistó es el botón Reverse. Antes cada vez que el hilo se atascaba en la hierba tenía que apagar todo y tirar a mano. Con este pulsas un botón y se libera solo. Genial. También la cuchilla para zarzas funciona de maravilla.",
+        "verified": true,
+        "sellerReply": "Antonio, el Reverse anti-enredo nació de escuchar los problemas más comunes de nuestros clientes. ¡Nos alegra que sea la función que más valora!"
+      },
+      {
+        "initials": "JM",
+        "name": "José Moreno",
+        "stars": 5,
+        "text": "por 74€ todo este kit es un chollo increíble. desbrozador, 4 cuchillas diferentes, cortabordes, maletín, dos baterías... he comparado con los de la tienda y para tener lo mismo tienes que gastar el triple. llegó rápido, envío gratuito como prometían",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "MD",
+        "name": "Manuel Díaz",
+        "stars": 5,
+        "text": "La barra telescópica me ha solucionado un problema que tenía desde hace años: cortar debajo del seto y en los puntos donde no llegaba. Se extiende sin herramientas y alcanzas sitios imposibles. Todo sin agacharte ni destrozarte la espalda. Producto serio, lo recomiendo.",
+        "verified": true,
+        "sellerReply": "Manuel, la barra telescópica está pensada precisamente para eliminar las posturas incómodas. ¡Gracias por elegir PowerWind X, buen trabajo!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Deja tu reseña",
+    "nameLabel": "Tu nombre",
+    "namePlaceholder": "Ej. Juan García",
+    "ratingLabel": "Valoración",
+    "textLabel": "Tu reseña",
+    "textPlaceholder": "Cuenta tu experiencia...",
+    "submitText": "Enviar Reseña",
+    "successTitle": "¡Gracias por tu reseña!",
+    "successText": "Tu reseña está pendiente de aprobación por un equipo externo a este sitio web. Las reseñas dejadas por quienes no han comprado el producto no serán publicadas, para evitar reseñas no auténticas.",
+    "closeText": "Cerrar"
+  },
+
+  "orderForm": {
+    "eyebrow": "Formulario de Pedido",
+    "title": "Completa tu pedido",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "La oferta -33% expira en:",
+    "stockWarning": "Solo <strong>8 unidades</strong> a este precio",
+    "summaryTitle": "Resumen del Pedido",
+    "summaryLines": [
+      { "label": "PowerWind X™ + 4 Cuchillas + Accesorios", "value": "€74,00", "type": "normal" },
+      { "label": "Envío rápido 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Gastos de contrarreembolso", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTAL",
+    "totalValue": "€74,00",
+    "fields": {
+      "name": { "label": "Nombre y Apellidos *", "placeholder": "Ej. Juan García" },
+      "phone": { "label": "Número de Teléfono *", "placeholder": "Ej. 612 345 678" },
+      "address": { "label": "Dirección de Envío *", "placeholder": "Calle, número, ciudad, código postal" }
+    },
+    "phoneNote": "Serás contactado por teléfono o por WhatsApp para confirmar el pedido.",
+    "paymentBadge": "Pago contra reembolso — Pagas en efectivo al repartidor. Cero anticipo.",
+    "submitText": "CONFIRMAR PEDIDO",
+    "submitSubtext": "Pago en efectivo al repartidor",
+    "reassurance": "Datos protegidos · SSL 256-bit · Sin cargo anticipado"
+  },
+
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "¿Todavía tienes dudas? Aquí las respuestas.",
+    "items": [
+      { "question": "¿Cómo hago el pedido?", "answer": "Pulsa el botón de compra, rellena el formulario con tus datos y confirma el pedido. Serás contactado por teléfono o por WhatsApp para la confirmación y recibirás el paquete cómodamente en casa, con pago en efectivo al repartidor." },
+      { "question": "¿Cómo funciona el envío?", "answer": "El envío es totalmente gratuito. Desde que el pedido se confirma, tarda aproximadamente 24/48h laborables en ser entregado." },
+      { "question": "¿Y si no me gusta?", "answer": "Puedes solicitar un reembolso total devolviendo el producto en los 30 días siguientes a la entrega. Nosotros recogemos el paquete y te devolvemos el importe íntegro." },
+      { "question": "¿Si tengo problemas después de 30 días?", "answer": "Tranquilo, todos nuestros productos tienen 2 años de garantía." },
+      { "question": "¿Cómo pido una devolución o asistencia?", "answer": "Para solicitar asistencia o una devolución después de hacer un pedido, puedes usar el formulario de contacto dentro del sitio o a través del email que aparece en el pie de página." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€111",
+    "newPrice": "€74",
+    "buttonText": "PEDIR AHORA",
+    "buttonSubtext": "Pago contra reembolso"
+  },
+
+  "tracking": {
+    "googleAdsId": "AW-17935100960",
+    "conversionLabel": "2lYtCK3i5vsbEKDYj-hC",
+    "conversionValue": 74.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "fingerprintScript": "https://offers.uncappednetwork.com/forms/tmfp/",
+      "clickPixel": "https://offers.uncappednetwork.com/forms/api/ck/?o=1611&uid=0191b25c-22d2-7f55-9d9b-79b67cebbff3&lp=1631",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Anterior",
+    "nextSlide": "Siguiente",
+    "thumbnail": "Miniatura",
+    "close": "Cerrar"
+  },
+
+  "ty": {
+    "title": "¡Pedido Confirmado!",
+    "subtitle": "Tu pedido ha sido recibido con éxito.",
+    "orderNumberLabel": "N.º pedido:",
+    "summaryTitle": "Resumen del Pedido",
+    "accessoriesLabel": "+ Accesorios incluidos",
+    "totalLabel": "TOTAL A PAGAR",
+    "paymentNote": "Pago en efectivo al repartidor — sin anticipo",
+    "yourDataTitle": "Tus Datos",
+    "nameLabel": "Nombre",
+    "phoneLabel": "Teléfono",
+    "addressLabel": "Dirección",
+    "nextStepsTitle": "¿Qué pasa ahora?",
+    "message": "Serás contactado por teléfono o por WhatsApp para confirmar el pedido y organizar la entrega.",
+    "steps": [
+      "Recibirás una llamada o un mensaje de WhatsApp de confirmación",
+      "El paquete se enviará en 24/48h",
+      "Pagas en efectivo al repartidor en la entrega"
+    ],
+    "footerText": "Garantía de 2 Años · 30 Días de Devolución · Asistencia Dedicada"
+  }
+}

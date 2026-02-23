@@ -2,8 +2,7 @@
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Image from 'next/image';
-import { useRouter, usePathname } from 'next/navigation';
-import '@/styles/landing-mirko.css';
+import './landing-mirko.css';
 
 /* ------------------------------------------------------------------ */
 /*  Inline SVG Icon Component                                          */
@@ -60,6 +59,8 @@ function LandingIcon({ name, size = 20 }: { name: string; size?: number }) {
       return (<svg {...props}><circle cx="12" cy="4" r="2" /><path d="M12 6v6" /><path d="M8 22l2-6h4l2 6" /><path d="M17 8l2-2M17 12l2 2" /><path d="M7 8L5 6M7 12l-2 2" /></svg>);
     case 'cable':
       return (<svg {...props}><path d="M8 2v4M16 2v4" /><rect x="6" y="6" width="12" height="4" rx="1" /><path d="M12 10v6" /><circle cx="12" cy="18" r="2" /><path d="M12 20v2" /></svg>);
+    case 'clipboard':
+      return (<svg {...props}><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /><rect x="8" y="2" width="8" height="4" rx="1" ry="1" /><line x1="8" y1="10" x2="16" y2="10" /><line x1="8" y1="14" x2="16" y2="14" /><line x1="8" y1="18" x2="12" y2="18" /></svg>);
     default:
       return null;
   }
@@ -69,9 +70,7 @@ function LandingIcon({ name, size = 20 }: { name: string; size?: number }) {
 /*  Component                                                          */
 /* ------------------------------------------------------------------ */
 
-export default function LandingTemplateMirko({ content = {} }: { content?: any }) {
-  const router = useRouter();
-  const pathname = usePathname();
+export default function LandingTemplateMirko({ content = {}, networkConfig }: { content?: any; networkConfig?: { endpoint: string; uid: string; key: string; offerId: string; lpId: string } }) {
 
   /* ---- extract sections ---- */
   const pricing = content?.pricing;
@@ -92,10 +91,13 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
   const pkg = content?.package;
   const reviews = content?.reviews;
   const reviewPopupData = content?.reviewPopup;
+  const orderSteps = content?.orderSteps;
   const orderForm = content?.orderForm;
   const faq = content?.faq;
   const stickyCta = content?.stickyCta;
   const tracking = content?.tracking;
+  const sizes = content?.sizes;
+  const ariaLabels = content?.ariaLabels;
 
   /* ---- slides & data ---- */
   const slides = gallery?.slides || [];
@@ -114,6 +116,7 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
   const [reviewSubmitted, setReviewSubmitted] = useState(false);
   const [stickyVisible, setStickyVisible] = useState(false);
   const [countdown, setCountdown] = useState((orderForm?.countdownMinutes || 118) * 60);
+  const [selectedSize, setSelectedSize] = useState(sizes?.defaultSelected || sizes?.options?.[0]?.id || '');
 
   /* ---- slides derived ---- */
   const thumbsVisible = Math.min(5, totalSlides);
@@ -122,8 +125,6 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
 
   /* ---- refs ---- */
   const orderFormRef = useRef<HTMLDivElement>(null);
-  const autoplayRef = useRef(true);
-  const autoplayTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const checkoutFiredRef = useRef(false);
 
   /* ---- begin checkout event (fires once) ---- */
@@ -184,18 +185,6 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useEffect(() => {
-    if (totalSlides <= 0) return;
-    autoplayTimerRef.current = setInterval(() => {
-      if (autoplayRef.current) {
-        setCurrentSlide((p) => (p >= totalSlides - 1 ? 0 : p + 1));
-      }
-    }, 3000);
-    return () => {
-      if (autoplayTimerRef.current) clearInterval(autoplayTimerRef.current);
-    };
-  }, [totalSlides]);
-
   /* ---- tracking: Google Ads + Meta Pixel ---- */
   useEffect(() => {
     const w = window as any;
@@ -213,20 +202,32 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
       w.gtag('config', tracking.googleAdsId);
     }
 
-    // Meta Pixel (fbq)
-    if (tracking?.facebookPixelId) {
-      w.fbq = w.fbq || function () { (w.fbq.q = w.fbq.q || []).push(arguments); };
-      w.fbq.loaded = true;
-      w.fbq.version = '2.0';
-      w.fbq.queue = w.fbq.q || [];
-
+    // Meta Pixel (fbq) — Official Facebook snippet
+    if (tracking?.facebookPixelId && !w.fbq) {
+      const n: any = w.fbq = function () {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      w._fbq = n;
+      n.push = n;
+      n.loaded = true;
+      n.version = '2.0';
+      n.queue = [];
       const fbScript = document.createElement('script');
       fbScript.async = true;
       fbScript.src = 'https://connect.facebook.net/en_US/fbevents.js';
-      document.head.appendChild(fbScript);
-
+      const firstScript = document.getElementsByTagName('script')[0];
+      if (firstScript?.parentNode) firstScript.parentNode.insertBefore(fbScript, firstScript);
+      else document.head.appendChild(fbScript);
       w.fbq('init', tracking.facebookPixelId);
       w.fbq('track', 'PageView');
+    }
+
+    // Network Fingerprint Script (tmfp)
+    if (tracking?.network?.fingerprintScript) {
+      const fpScript = document.createElement('script');
+      fpScript.async = true;
+      fpScript.src = tracking.network.fingerprintScript;
+      document.head.appendChild(fpScript);
     }
   }, []);
 
@@ -235,16 +236,8 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
   const minutes = Math.floor((countdown % 3600) / 60);
   const seconds = countdown % 60;
 
-  const stopAutoplay = useCallback(() => {
-    autoplayRef.current = false;
-    if (autoplayTimerRef.current) {
-      clearInterval(autoplayTimerRef.current);
-      autoplayTimerRef.current = null;
-    }
-  }, []);
-
-  const prevSlide = () => { stopAutoplay(); setCurrentSlide((p) => (p <= 0 ? totalSlides - 1 : p - 1)); };
-  const nextSlide = () => { stopAutoplay(); setCurrentSlide((p) => (p >= totalSlides - 1 ? 0 : p + 1)); };
+  const prevSlide = () => { setCurrentSlide((p) => (p <= 0 ? totalSlides - 1 : p - 1)); };
+  const nextSlide = () => { setCurrentSlide((p) => (p >= totalSlides - 1 ? 0 : p + 1)); };
   const showMoreReviews = () => setReviewsShown((p) => Math.min(p + 3, reviewItems.length));
   const toggleFaq = (i: number) => setOpenFaqIndex(openFaqIndex === i ? -1 : i);
   const handleReviewSubmit = (e: React.FormEvent) => { e.preventDefault(); setReviewSubmitted(true); };
@@ -280,7 +273,7 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
             <h1>
               {hero.title} <em>{hero.titleHighlight}</em> {hero.titleSuffix}
             </h1>
-            {hero.subtitle && <p className="hero-subtitle">{hero.subtitle}</p>}
+            {hero.subtitle && <p className="hero-subtitle" dangerouslySetInnerHTML={{ __html: hero.subtitle }} />}
             {hero.socialProof && (
               <div className="social-proof-line" onClick={scrollToReviews} style={{ cursor: 'pointer' }}>
                 <span className="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
@@ -301,14 +294,14 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                 <div className="gallery-main">
                   {gallery?.discountTag && <span className="gallery-tag">{gallery.discountTag}</span>}
                   <Image src={slides[currentSlide]?.src} alt={slides[currentSlide]?.alt || ''} className="gallery-main-img" width={800} height={800} quality={85} sizes="(max-width: 768px) 100vw, 500px" />
-                  <button className="gallery-arrow gallery-prev" onClick={prevSlide} aria-label="Precedente">&#8249;</button>
-                  <button className="gallery-arrow gallery-next" onClick={nextSlide} aria-label="Successiva">&#8250;</button>
+                  <button className="gallery-arrow gallery-prev" onClick={prevSlide} aria-label={ariaLabels?.prevSlide || 'Precedente'}>&#8249;</button>
+                  <button className="gallery-arrow gallery-next" onClick={nextSlide} aria-label={ariaLabels?.nextSlide || 'Successiva'}>&#8250;</button>
                 </div>
                 <div className="gallery-thumbs">
                   {visibleThumbs.map((slide: any, i: number) => {
                     const realIndex = thumbStart + i;
                     return (
-                      <button key={realIndex} className={`gallery-thumb${currentSlide === realIndex ? ' active' : ''}`} onClick={() => { stopAutoplay(); setCurrentSlide(realIndex); }} aria-label={`Miniatura ${realIndex + 1}`}>
+                      <button key={realIndex} className={`gallery-thumb${currentSlide === realIndex ? ' active' : ''}`} onClick={() => setCurrentSlide(realIndex)} aria-label={`${ariaLabels?.thumbnail || 'Miniatura'} ${realIndex + 1}`}>
                         <Image src={slide.src} alt={slide.alt || ''} width={100} height={100} quality={70} />
                       </button>
                     );
@@ -333,16 +326,16 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
               {priceBox && (
                 <div className="price-box">
                   {priceBox.productName && <h3 className="price-product-name">{priceBox.productName}</h3>}
-                  {priceBox.originalPriceLabel && (
-                    <span className="price-original">{priceBox.originalPriceLabel} {content?.pricing?.currencySymbol}{content?.pricing?.originalPrice?.toFixed(2)?.replace('.', ',')}</span>
-                  )}
+                  {priceBox.guaranteeLabel && <div className="price-guarantee">{priceBox.guaranteeLabel}</div>}
+                  <div className="price-old-row">
+                    <span className="price-original">{content?.pricing?.currencySymbol}{content?.pricing?.originalPrice?.toFixed(2)?.replace('.', ',')}</span>
+                    {content?.gallery?.discountTag && <span className="price-badge">{content.gallery.discountTag}</span>}
+                  </div>
                   <div className="price-current">{content?.pricing?.currencySymbol}{content?.pricing?.currentPrice?.toFixed(2)?.replace('.', ',')}</div>
-                  {priceBox.discountLabel && <span className="price-discount">{priceBox.discountLabel}</span>}
                   <div className="price-shipping">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
                     {priceBox.shippingLabel} <strong>{priceBox.shippingValue}</strong>
                   </div>
-                  {priceBox.guaranteeLabel && <div className="price-guarantee">{priceBox.guaranteeLabel}</div>}
 
                   {priceBox.offerItems?.length > 0 && (
                     <>
@@ -363,18 +356,40 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                       </div>
                     </>
                   )}
+
+                  {cta && (
+                    <>
+                      <a href="#order-form" className="cta-button" onClick={scrollToOrder}>
+                        {cta.mainText}
+                        <small>{cta.mainSubtext}</small>
+                      </a>
+                      {cta.subNote && <p className="cta-sub">{cta.subNote}</p>}
+                    </>
+                  )}
                 </div>
               )}
 
-              {cta && (
-                <>
-                  <a href="#order-form" className="cta-button" onClick={scrollToOrder}>
-                    {cta.mainText}
-                    <small>{cta.mainSubtext}</small>
-                  </a>
-                  {cta.subNote && <p className="cta-sub">{cta.subNote}</p>}
-                </>
+              {/* SIZE SELECTOR */}
+              {sizes?.options?.length > 0 && (
+                <div className="size-selector">
+                  <h4 className="size-title">{sizes.title}</h4>
+                  <div className="size-options">
+                    {sizes.options.map((opt: any) => (
+                      <button key={opt.id} className={`size-option${selectedSize === opt.id ? ' selected' : ''}`} onClick={() => setSelectedSize(opt.id)}>
+                        <span className="size-name">{opt.name}</span>
+                        <span className="size-dims">{opt.dimensions}</span>
+                      </button>
+                    ))}
+                  </div>
+                  {sizes.explanationTitle && (
+                    <div className="size-explanation">
+                      <strong>{sizes.explanationTitle}</strong>
+                      <p>{sizes.explanationText}</p>
+                    </div>
+                  )}
+                </div>
               )}
+
             </div>
           </div>
         </section>
@@ -398,13 +413,13 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
       {problems?.items?.length > 0 && (
         <section className="problems-section">
           <div className="container">
-            <span className="section-eyebrow negative">{problems.eyebrow}</span>
-            <h2 className="section-title">{problems.title}</h2>
-            <div className="problems-compact">
+            <div className="problems-box">
+              <span className="section-eyebrow negative">{problems.eyebrow}</span>
+              <h2 className="section-title">{problems.title}</h2>
               {problems.items.map((p: any, i: number) => (
                 <div key={i} className="problem-row">
-                  <span className="problem-bullet"></span>
-                  <p><strong>{p.titleBold}</strong> {p.text}</p>
+                  <span className="problem-x">&#10005;</span>
+                  <p dangerouslySetInnerHTML={{ __html: p.titleBold + (p.text ? ` ${p.text}` : '') }} />
                 </div>
               ))}
             </div>
@@ -424,6 +439,11 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
           <div className="container">
             {features.eyebrow && <span className="section-eyebrow">{features.eyebrow}</span>}
             {features.title && <h2 className="section-title">{features.title}</h2>}
+            {features.image && (
+              <div className="features-header-image">
+                <Image src={features.image} alt={features.imageAlt || ''} width={800} height={500} quality={85} sizes="(max-width: 768px) 100vw, 700px" unoptimized={features.image?.endsWith('.gif')} />
+              </div>
+            )}
             {features.items.map((f: any, i: number) => (
               <div key={i} className={`feature-block${i % 2 !== 0 ? ' feature-block-right' : ''}`}>
                 <div className="feature-media">
@@ -432,7 +452,7 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                 <div className="feature-text">
                   {f.tag && <span className={`feature-tag tag-${f.tagColor || 'green'}`}>{f.tag}</span>}
                   <h3>{f.title}</h3>
-                  <p>{f.description}</p>
+                  <p dangerouslySetInnerHTML={{ __html: f.description }} />
                 </div>
               </div>
             ))}
@@ -501,8 +521,8 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
             <table className="comparison-table">
               <thead>
                 <tr>
-                  <th>Caratteristica</th>
-                  <th>{comparison.productColumn} <span className="winner-badge">VINCITORE</span></th>
+                  <th>{comparison.featureColumn || 'Caratteristica'}</th>
+                  <th>{comparison.productColumn} <span className="winner-badge">{comparison.winnerBadge || 'VINCITORE'}</span></th>
                   <th>{comparison.competitorColumn}</th>
                 </tr>
               </thead>
@@ -584,7 +604,7 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                     <div className="review-meta">
                       <h4>{review.name}</h4>
                       {review.verified && (
-                        <span className="review-badge">&#10003; Acquisto verificato</span>
+                        <span className="review-badge">&#10003; {reviews?.verifiedBadge || 'Acquisto verificato'}</span>
                       )}
                     </div>
                   </div>
@@ -596,9 +616,14 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                   <div className="review-text">
                     <p>{review.text}</p>
                   </div>
+                  {review.image && (
+                    <div className="review-image">
+                      <Image src={review.image} alt={review.imageAlt || ''} width={350} height={350} quality={80} sizes="350px" style={{ maxWidth: '350px', width: '100%', height: 'auto', borderRadius: '8px' }} />
+                    </div>
+                  )}
                   {review.sellerReply && (
                     <div className="seller-reply">
-                      <span className="seller-reply-header"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '4px' }}><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg> Risposta del venditore:</span>
+                      <span className="seller-reply-header"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '4px' }}><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg> {reviews?.sellerReplyLabel || 'Risposta del venditore:'}</span>
                       <p>{review.sellerReply}</p>
                     </div>
                   )}
@@ -620,7 +645,7 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
       {reviewPopupData && (
         <div className={`review-popup-overlay${reviewPopupOpen ? ' open' : ''}`} onClick={() => setReviewPopupOpen(false)}>
           <div className="review-popup" onClick={(e) => e.stopPropagation()}>
-            <button className="popup-close" onClick={() => setReviewPopupOpen(false)} aria-label="Chiudi">&times;</button>
+            <button className="popup-close" onClick={() => setReviewPopupOpen(false)} aria-label={ariaLabels?.close || 'Chiudi'}>&times;</button>
             {!reviewSubmitted ? (
               <>
                 <h3>{reviewPopupData.title}</h3>
@@ -656,6 +681,25 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
         </div>
       )}
 
+      {/* 14b. ORDER STEPS */}
+      {orderSteps?.steps?.length > 0 && (
+        <section className="how-section">
+          <div className="container">
+            {orderSteps.eyebrow && <span className="section-eyebrow">{orderSteps.eyebrow}</span>}
+            {orderSteps.title && <h2 className="section-title">{orderSteps.title}</h2>}
+            <div className="steps-row">
+              {orderSteps.steps.map((step: any, i: number) => (
+                <div key={i} className="step-card">
+                  <div className="step-number"><LandingIcon name={step.icon} size={24} /></div>
+                  <h3>{step.title}</h3>
+                  <p>{step.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* 15. ORDER FORM */}
       {orderForm && (
         <section className="order-section" id="order-form" ref={orderFormRef}>
@@ -689,6 +733,12 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                     <Image src={slides[0].src} alt={slides[0].alt || ''} width={100} height={100} quality={70} />
                   </div>
                 )}
+                {selectedSize && sizes?.options && (
+                  <div className="order-line">
+                    <span>{sizes?.sizeLabel || 'Misura'}</span>
+                    <span>{sizes.options.find((o: any) => o.id === selectedSize)?.name} — {sizes.options.find((o: any) => o.id === selectedSize)?.dimensions}</span>
+                  </div>
+                )}
                 {orderForm.summaryLines?.map((line: any, i: number) => (
                   <div key={i} className="order-line">
                     <span>{line.label}</span>
@@ -701,16 +751,63 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                 </div>
               </div>
 
-              <form onSubmit={(e) => {
+              {/* ORDER SIZE SELECTOR */}
+              {sizes?.options?.length > 0 && (
+                <div className="size-selector order-size-selector">
+                  <h4 className="size-title">{sizes.title}</h4>
+                  <div className="size-options">
+                    {sizes.options.map((opt: any) => (
+                      <button key={opt.id} type="button" className={`size-option${selectedSize === opt.id ? ' selected' : ''}`} onClick={() => setSelectedSize(opt.id)}>
+                        <span className="size-name">{opt.name}</span>
+                        <span className="size-dims">{opt.dimensions}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <form onSubmit={async (e) => {
                 e.preventDefault();
+                const w = window as any;
+                const selectedSizeObj = sizes?.options?.find((o: any) => o.id === selectedSize);
                 const formData = {
                   name: (document.getElementById('order-name') as HTMLInputElement)?.value || '',
                   phone: (document.getElementById('order-phone') as HTMLInputElement)?.value || '',
-                  address: (document.getElementById('order-address') as HTMLInputElement)?.value || '',
+                  address: (document.getElementById('order-address') as HTMLTextAreaElement)?.value || '',
+                  size: selectedSizeObj ? `${selectedSizeObj.name} (${selectedSizeObj.dimensions})` : '',
+                  tmfp: w.tmfp || '',
                 };
                 sessionStorage.setItem('orderData', JSON.stringify(formData));
-                const tyPath = pathname.endsWith('/') ? `${pathname}ty` : `${pathname}/ty`;
-                router.push(tyPath);
+                if (!sessionStorage.getItem('orderNumber')) {
+                  sessionStorage.setItem('orderNumber', `ORD-${Date.now().toString().slice(-8)}`);
+                }
+                if (networkConfig) {
+                  const networkFormData = new FormData();
+                  networkFormData.append('uid', networkConfig.uid);
+                  networkFormData.append('key', networkConfig.key);
+                  networkFormData.append('offer', networkConfig.offerId);
+                  networkFormData.append('lp', networkConfig.lpId);
+                  networkFormData.append('name', formData.name);
+                  networkFormData.append('tel', formData.phone);
+                  networkFormData.append('street-address', formData.address);
+                  if (formData.tmfp) {
+                    networkFormData.append('tmfp', formData.tmfp);
+                  } else {
+                    networkFormData.append('ua', navigator.userAgent);
+                  }
+                  try {
+                    const response = await fetch(networkConfig.endpoint, {
+                      method: 'POST',
+                      body: networkFormData,
+                    });
+                    const data = await response.json();
+                    console.log('Network response:', data);
+                  } catch (error) {
+                    console.error('Network error:', error);
+                  }
+                }
+                const base = window.location.pathname;
+                window.location.href = base.endsWith('/') ? `${base}ty` : `${base}/ty`;
               }}>
                 {orderForm.fields?.name && (
                   <div className="form-group">
@@ -728,7 +825,7 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                 {orderForm.fields?.address && (
                   <div className="form-group">
                     <label htmlFor="order-address">{orderForm.fields.address.label}</label>
-                    <input type="text" id="order-address" placeholder={orderForm.fields.address.placeholder} required onFocus={fireBeginCheckout} />
+                    <textarea id="order-address" placeholder={orderForm.fields.address.placeholder} required onFocus={fireBeginCheckout} rows={3} />
                   </div>
                 )}
 
@@ -739,7 +836,7 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
                   <small>{orderForm.submitSubtext}</small>
                 </button>
 
-                {orderForm.reassurance && <p className="form-reassurance">{orderForm.reassurance}</p>}
+                {orderForm.reassurance && <p className="form-reassurance" dangerouslySetInnerHTML={{ __html: orderForm.reassurance }} />}
               </form>
             </div>
           </div>
@@ -783,6 +880,12 @@ export default function LandingTemplateMirko({ content = {} }: { content?: any }
             <small>{stickyCta.buttonSubtext}</small>
           </a>
         </div>
+      )}
+
+      {/* Network Click Pixel */}
+      {tracking?.network?.clickPixel && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={tracking.network.clickPixel} width={1} height={1} alt="" style={{ position: 'absolute', opacity: 0, pointerEvents: 'none' }} />
       )}
 
     </div>

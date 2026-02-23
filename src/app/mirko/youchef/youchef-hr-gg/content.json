@@ -1,0 +1,438 @@
+{
+  "seo": {
+    "title": "YouChef 3.0™ - Kuhajte Jela kao Profesionalac Bez Iskustva",
+    "description": "Kuhinjski robot s automatskim dozatorom i 45 funkcija. Sam dodaje sastojke. Besplatna dostava, plaćanje pri preuzimanju."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 179.99,
+    "currentPrice": 89.99,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "text": "Besplatna Dostava 24/48h · Plaćanje pri Preuzimanju · Jamstvo 2 Godine"
+  },
+
+  "urgencyBanner": {
+    "text": "Pažnja: Velika potražnja —",
+    "highlight": "Posljednjih 8 komada dostupno",
+    "suffix": "po ovoj cijeni"
+  },
+
+  "hero": {
+    "badge": "Novost 2026",
+    "title": "Jela kao iz Restorana Svake Večeri",
+    "titleHighlight": "Bez Iskustva u Kuhanju:",
+    "titleSuffix": "On Sam Dodaje Sastojke i Kuha Dok Vi Uživate",
+    "subtitle": "Prvi kuhinjski robot s automatskim dozatorom. Napunite sastojke, odaberite recept na zaslonu i on radi sve sam. 45 funkcija, nula iskustva potrebno.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.739 zadovoljnih kupaca"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/youchef/carosello/1.png", "alt": "YouChef 3.0 prednji prikaz" },
+      { "src": "/images/mirko/youchef/carosello/2.png", "alt": "YouChef 3.0 u akciji" },
+      { "src": "/images/mirko/youchef/carosello/3.png", "alt": "YouChef 3.0 zaslon na dodir" },
+      { "src": "/images/mirko/youchef/carosello/4.png", "alt": "YouChef 3.0 automatski dozator" },
+      { "src": "/images/mirko/youchef/carosello/5.png", "alt": "YouChef 3.0 uključeni dodaci" },
+      { "src": "/images/mirko/youchef/carosello/6.png", "alt": "YouChef 3.0 gotovo jelo" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Automatski dozator:", "description": "6 odjeljaka koji otpuštaju sastojke u pravom trenutku. Vi ne morate ništa raditi." },
+      { "title": "45 funkcija u jednom uređaju:", "description": "kuha, prži, mijesi, miješa, pari, jogurt, sporo kuhanje. Zamjenjuje 10 kućanskih aparata." },
+      { "title": "Zaslon na dodir od 7 inča:", "description": "vodi vas korak po korak. Odaberite recept i pratite upute na zaslonu." },
+      { "title": "Keramička posuda s neprionjivim premazom:", "description": "ništa se ne lijepi, čisti se za 30 sekundi. Može i u perilicu posuđa." },
+      { "title": "Ugrađena vaga s preciznošću na gram:", "description": "sve važe sam, doze su uvijek savršene. Zbogom mjerice i vanjske vage." },
+      { "title": "Aplikacija s 1000+ recepata:", "description": "odaberite jelo iz aplikacije, pritisnite start i on kuha. Uključuje i funkciju 'Što imam u hladnjaku'." },
+      { "title": "Kuhanje do 180°C:", "description": "prži, peče i kuha kao prava tava. Rezultati kao iz restorana." },
+      { "title": "OneClick sustav:", "description": "promijenite dodatak u sekundi bez rastavljanja. Uvijek spreman za sljedeći recept." },
+      { "title": "Obiteljski kapacitet od 3,3 litre:", "description": "obilne porcije za cijelu obitelj, od 2 do 6 osoba." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "YouChef 3.0™",
+    "originalPriceLabel": "Redovna cijena:",
+    "discountLabel": "UŠTEDITE 90€ (-50%)",
+    "shippingLabel": "Brza Dostava:",
+    "shippingValue": "Besplatno",
+    "guaranteeLabel": "Jamstvo 2 Godine",
+    "offerToggleText": "Otkrijte što uključuje ponuda",
+    "offerItems": [
+      { "text": "YouChef 3.0™ — Kuhinjski Robot s 45 Funkcija", "badge": null },
+      { "text": "Keramička Posuda s Neprionjivim Premazom 3,3L", "badge": null },
+      { "text": "Automatski Dozator QuickSense™", "badge": null },
+      { "text": "Lopatica Sauté za rižota i umake", "badge": null },
+      { "text": "XL Parna Posuda na 2 Razine", "badge": null },
+      { "text": "Set Noževa + Mutilica + Žlica", "badge": null },
+      { "text": "Premium Aplikacija s 1000+ Recepata", "badge": "POKLON" },
+      { "text": "Jamstvo 2 Godine + Posvećena Podrška", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "NARUČITE SADA",
+    "mainSubtext": "Plaćanje Gotovinom pri Preuzimanju",
+    "subNote": "Bez rizika: plaćate tek kada primite paket"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Plaćanje pri Preuzimanju", "color": "green" },
+      { "icon": "truck", "text": "Dostava 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Dana za Povrat", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Prepoznajete se?",
+    "title": "Jesu li vam ovi problemi poznati?",
+    "items": [
+      { "icon": "fatigue", "titleBold": "Dolazite kući umorni i ne znate što kuhati", "text": "uvijek završite naručivanjem ili jedete prvu stvar koju nađete." },
+      { "icon": "timer", "titleBold": "Kuhanje vam oduzima cijelu večer", "text": "između pripreme, kuhanja i čišćenja nestanu dva sata a da to ni ne primijetite." },
+      { "icon": "warning", "titleBold": "Jela nikad ne ispadnu kako želite", "text": "zagorena, bezukusna ili prekomplicirano. I svaki put hrpa lonaca za pranje." }
+    ],
+    "solutionTitle": "Postoji bolje rješenje.",
+    "solutionText": "Robot koji kuha umjesto vas, od prvog do zadnjeg koraka. Vi stavite sastojke, a on napravi ostatak."
+  },
+
+  "features": {
+    "eyebrow": "Zašto je drugačiji",
+    "title": "Kao da imate kuhara kod kuće, bez troškova.",
+    "items": [
+      {
+        "image": "/images/mirko/youchef/angle/1.png",
+        "imageAlt": "Automatski dozator",
+        "tag": "JEDINSTVEN NA SVIJETU",
+        "tagColor": "green",
+        "title": "Sam Dodaje Sastojke",
+        "description": "Automatski dozator ima 6 odjeljaka. Otpušta ih u posudu u pravom trenutku, u točnim količinama. Vi ne morate ništa raditi tijekom kuhanja."
+      },
+      {
+        "image": "/images/mirko/youchef/angle/2.png",
+        "imageAlt": "Zaslon na dodir od 7 inča",
+        "tag": "POTPUNA JEDNOSTAVNOST",
+        "tagColor": "blue",
+        "title": "Zaslon od 7 Inča Koji Vas Vodi",
+        "description": "Veliki i čitljiv zaslon na dodir. Govori vam što staviti, koliko i kada je gotovo. Pratite upute i rezultat je zajamčen 100%."
+      },
+      {
+        "image": "/images/mirko/youchef/angle/3.png",
+        "imageAlt": "Funkcija isprazni hladnjak",
+        "tag": "NULA OTPADA",
+        "tagColor": "orange",
+        "title": "Funkcija 'Što Imam u Hladnjaku'",
+        "description": "Upišite u aplikaciju što imate u hladnjaku i on kreira savršeni recept. Nema više bačene hrane, nema više nepotrebnih troškova u trgovini."
+      },
+      {
+        "image": "/images/mirko/youchef/angle/4.png",
+        "imageAlt": "Keramička posuda s neprionjivim premazom",
+        "tag": "BEZ NAPORA",
+        "tagColor": "green",
+        "title": "Keramički Neprionjivi Premaz, Čišćenje za 30 Sekundi",
+        "description": "Keramička posuda ne dopušta da se išta zalijepi. Sve sklizne jednim potezom spužve. Može i u perilicu posuđa."
+      },
+      {
+        "image": "/images/mirko/youchef/angle/5.png",
+        "imageAlt": "45 funkcija u jednom",
+        "tag": "SVE U JEDNOM",
+        "tagColor": "blue",
+        "title": "45 Funkcija, Jedan Jedini Uređaj",
+        "description": "Sjeca, mijesi, kuha na pari, prži do 180°C, radi jogurt, sporo kuhanje i još mnogo toga. Zamjenjuje 10 različitih kućanskih aparata."
+      },
+      {
+        "image": "/images/mirko/youchef/angle/6.png",
+        "imageAlt": "Rezultati kao od profesionalca",
+        "tag": "PROFESIONALNI REZULTATI",
+        "tagColor": "orange",
+        "title": "Rezultati Kao od Vrhunskog Kuhara, Bez Iskustva",
+        "description": "Baršunaste kreme, savršena tijesta, gusti i ukusni umaci. Sve automatski, čak i ako nikad niste kuhali."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Jednostavnije ne može",
+    "title": "Kako funkcionira? 3 pokreta i jedete.",
+    "image": "",
+    "imageAlt": "Kako funkcionira",
+    "steps": [
+      { "title": "Napunite", "description": "Stavite sastojke u 6 odjeljaka dozatora. Vaga sve sama važe." },
+      { "title": "Odaberite", "description": "Odaberite recept na zaslonu od 7 inča ili iz aplikacije. Više od 1000 gotovih jela." },
+      { "title": "Opustite se", "description": "On dozira, kuha, miješa i obavijesti vas kad je gotovo. Vi ne radite ništa." }
+    ]
+  },
+
+  "midCta": {
+    "text": "NARUČITE SADA S 50% POPUSTA",
+    "subtext": "Plaćanje Gotovinom pri Preuzimanju"
+  },
+
+  "specs": {
+    "eyebrow": "Specifikacije",
+    "title": "Tehničke Karakteristike",
+    "items": [
+      { "label": "Funkcije", "value": "45 načina kuhanja i pripreme" },
+      { "label": "Zaslon", "value": "Zaslon na dodir 7\" SoftScreen" },
+      { "label": "Kapacitet posude", "value": "3,3 litre (obitelj 4-6 osoba)" },
+      { "label": "Materijal posude", "value": "Keramički neprionjivi premaz" },
+      { "label": "Automatski dozator", "value": "6 odjeljaka s programiranim otpuštanjem" },
+      { "label": "Temperatura kuhanja", "value": "Do 180°C (uključujući prženje)" },
+      { "label": "Ugrađena vaga", "value": "Preciznost na gram" },
+      { "label": "Aplikacija", "value": "1000+ recepata s vodičem korak po korak" },
+      { "label": "Čišćenje", "value": "Samočišćenje + perilica posuđa" },
+      { "label": "Certifikati", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Usporedba",
+    "title": "Koje prednosti imate u odnosu na alternative?",
+    "featureColumn": "Značajka",
+    "winnerBadge": "POBJEDNIK",
+    "productColumn": "YouChef 3.0™",
+    "competitorColumn": "Drugi kuhinjski roboti",
+    "rows": [
+      { "feature": "Doziranje sastojaka", "product": "Automatski (6 odjeljaka)", "competitor": "Ručno svaki put" },
+      { "feature": "Funkcije", "product": "45 kompletnih funkcija", "competitor": "12-20 osnovnih funkcija" },
+      { "feature": "Zaslon", "product": "7 inča zaslon na dodir", "competitor": "Mali ili nikakav" },
+      { "feature": "Aplikacija + Isprazni Hladnjak", "product": "1000+ recepata uključeno", "competitor": "Malo recepata ili nijedan" },
+      { "feature": "Posuda", "product": "Keramički neprionjivi 3,3L", "competitor": "Čelik (lijepi se) 2,2L" },
+      { "feature": "Čišćenje", "product": "Samočišćenje + perilica", "competitor": "Samo ručno" },
+      { "feature": "Cijena", "product": "Samo 89€ (jednokratno)", "competitor": "200-500€" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Sve uključeno",
+    "title": "Što dobivate na kućnu adresu",
+    "items": [
+      { "icon": "box", "text": "YouChef 3.0™ — Kuhinjski Robot s 45 Funkcija", "value": "€179,99", "valueType": "price" },
+      { "icon": "box", "text": "Keramička Posuda s Neprionjivim Premazom 3,3L", "value": "UKLJUČENO", "valueType": "included" },
+      { "icon": "box", "text": "Automatski Dozator QuickSense™", "value": "UKLJUČENO", "valueType": "included" },
+      { "icon": "box", "text": "Lopatica Sauté za rižota i umake", "value": "UKLJUČENO", "valueType": "included" },
+      { "icon": "box", "text": "XL Parna Posuda na 2 Razine", "value": "UKLJUČENO", "valueType": "included" },
+      { "icon": "box", "text": "Set Noževa + Mutilica + Žlica", "value": "UKLJUČENO", "valueType": "included" },
+      { "icon": "gift", "text": "Premium Aplikacija s 1000+ Recepata", "value": "POKLON", "valueType": "gift" },
+      { "icon": "shield", "text": "Jamstvo 2 Godine + Posvećena Podrška", "value": "UKLJUČENO", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Redovna Cijena:",
+    "totalOriginalValue": "€179,99",
+    "totalCurrentLabel": "Danas plaćate samo:",
+    "totalCurrentValue": "€89,99",
+    "totalSave": "Uštedite €90,00 · Dostava BESPLATNA",
+    "ctaText": "NARUČITE SADA"
+  },
+
+  "reviews": {
+    "eyebrow": "Što Kažu o Nama",
+    "title": "Provjerene Recenzije",
+    "rating": "4.8",
+    "totalCount": "18.739 recenzija",
+    "verifiedNote": "Recenzije provjerava neovisni tim izvan ove web stranice.",
+    "showMoreText": "Prikaži više recenzija",
+    "leaveReviewText": "Ostavite recenziju",
+    "verifiedBadge": "Potvrđena kupnja",
+    "sellerReplyLabel": "Odgovor prodavača:",
+    "items": [
+      {
+        "initials": "AK",
+        "name": "Ana Kovačić",
+        "stars": 5,
+        "text": "Nikad nisam znala kuhati, a s ovim uređajem radim jela koja prije nikad ne bih ni pokušala. Stavim sastojke, odaberem recept i on sve napravi sam. Moj muž nije mogao vjerovati kad je probao rižoto.",
+        "image": "/images/mirko/youchef/recensioni/1.jpg",
+        "verified": true,
+        "sellerReply": "Ana, rižoto je jedno od najomiljenijih jela naših kupaca! Drago nam je da otkrivate nove recepte. Hvala na povjerenju."
+      },
+      {
+        "initials": "MJ",
+        "name": "Marko Jurić",
+        "stars": 5,
+        "text": "radim do kasno i navečer nisam imao volje za kuhanje, uvijek sam jeo gluposti. sad sve napunim ujutro i navečer pritisnem gumb. za pola sata večera gotova za cijelu obitelj. dostava super brza usput rečeno",
+        "image": "/images/mirko/youchef/recensioni/2.jpg",
+        "verified": true,
+        "sellerReply": "Marko, to je upravo savršena upotreba: pripremiti ujutro i kuhati navečer jednim pritiskom gumba. Drago nam je da funkcionira za cijelu obitelj!"
+      },
+      {
+        "initials": "MN",
+        "name": "Marija Novak",
+        "stars": 5,
+        "text": "Imam 63 godine i tehnologija mi nije jača strana. Ali zaslon je velik, govori ti što raditi korak po korak. I porcije su točne jer vaga sve sama važe. Moji unuci obožavaju stvari koje sad kuham.",
+        "image": "/images/mirko/youchef/recensioni/3.jpg",
+        "verified": true,
+        "sellerReply": "Marija, iznimno nam je drago! Zaslon od 7 inča osmišljen je upravo da bude čitljiv i intuitivan. Pozdrav unucima!"
+      },
+      {
+        "initials": "LB",
+        "name": "Luka Babić",
+        "stars": 4,
+        "text": "za sad dajem 4 zvjezdice jer ga tek kratko koristim, ali moram reći da je automatski dozator genijalan. puni sastojke u pravom trenutku i ne morate biti tu da kontrolirate. recepti iz aplikacije su odlični, isprobat ću još",
+        "verified": true,
+        "sellerReply": "Luka, cijenimo oprez. Dozator je zaista funkcija koja čini razliku. Sigurni smo da će u sljedećim tjednima zvjezdice postati 5!"
+      },
+      {
+        "initials": "PH",
+        "name": "Petra Horvat",
+        "stars": 5,
+        "text": "keramički neprionjivi premaz je spektakularan, ništa se ne lijepi i čisti se jednim potezom spužve. prije sam s starim robotom imala noćnu moru pranja posude. stigao za dva dana, platila kuriru bez ikakvih problema",
+        "verified": true,
+        "sellerReply": "Petra, keramička posuda jedna je od najcjenjenijih poboljšanja. Nula ostataka, nula napora. Hvala na recenziji!"
+      },
+      {
+        "initials": "IM",
+        "name": "Ivan Matić",
+        "stars": 5,
+        "text": "Kupovao sam druge robote u prošlosti koji su imali 10-12 funkcija i koštali više. Ovaj ima 45 i košta manje. Parna posuda na dva nivoa je izuzetno praktična, radim povrće i ribu istovremeno.",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "IK",
+        "name": "Ivana Knežević",
+        "stars": 5,
+        "text": "s troje djece i poslom na puno radno vrijeme kuhanje je postalo noćna mora. sada se večera radi sama. koristim funkciju što imam u hladnjaku gotovo svake večeri i predlaže mi recepte s onim što imam. genijalno",
+        "verified": true,
+        "sellerReply": "Ivana, funkcija isprazni hladnjak osmišljena je upravo za one koji imaju malo vremena i ne žele bacati hranu. Drago nam je da je maksimalno koristite!"
+      },
+      {
+        "initials": "TP",
+        "name": "Tomislav Pavlović",
+        "stars": 5,
+        "text": "Samac sam i kuhanje mi je uvijek bio problem. Ili previše ili premalo. S ugrađenom vagom doze ispadnu savršene za jednu osobu. A kad imam goste, udvostručim i sve ispadne jednako savršeno.",
+        "verified": true,
+        "sellerReply": "Tomislav, vaga s preciznošću na gram savršena je upravo za precizne doze. Bilo za jednog ili za šest, rezultati su uvijek isti. Hvala!"
+      },
+      {
+        "initials": "KŠ",
+        "name": "Katarina Šimić",
+        "stars": 5,
+        "text": "koristim ga svaki dan već mjesec dana i ne vraćam se više natrag. radila sam čak jogurt i kruh. prije sam sve kupovala u trgovini i trošila bogatstvo. isplatio se sam za tri tjedna",
+        "verified": true,
+        "sellerReply": "Katarina, domaći jogurt i kruh su na sasvim drugoj razini! I u pravu ste, ušteda s vremenom je značajna. Hvala na povjerenju."
+      },
+      {
+        "initials": "AV",
+        "name": "Ante Vuković",
+        "stars": 5,
+        "text": "Bio sam skeptičan jer sam po ovoj cijeni mislio da je igračka. Promijenio sam mišljenje nakon prve večere. Meso je savršeno pečeno, a umaci kremasti kao u restoranu. Najbolja kupnja u posljednjih godina.",
+        "verified": true,
+        "sellerReply": "Ante, razumijem početni skepticizam, ali kvaliteta govori sama za sebe. Drago nam je da ste promijenili mišljenje već od prve večeri!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Ostavite svoju recenziju",
+    "nameLabel": "Vaše ime",
+    "namePlaceholder": "Npr. Ivan Horvat",
+    "ratingLabel": "Ocjena",
+    "textLabel": "Vaša recenzija",
+    "textPlaceholder": "Ispričajte svoje iskustvo...",
+    "submitText": "Pošalji Recenziju",
+    "successTitle": "Hvala na vašoj recenziji!",
+    "successText": "Vaša recenzija čeka odobrenje od neovisnog tima izvan ove web stranice. Recenzije osoba koje nisu kupile proizvod neće biti objavljene, kako bi se izbjegle neautentične recenzije.",
+    "closeText": "Zatvori"
+  },
+
+  "orderForm": {
+    "eyebrow": "Obrazac za Narudžbu",
+    "title": "Dovršite svoju narudžbu",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Ponuda -50% istječe za:",
+    "stockWarning": "Samo <strong>8 komada</strong> preostalo po ovoj cijeni",
+    "summaryTitle": "Sažetak Narudžbe",
+    "summaryLines": [
+      { "label": "YouChef 3.0™ + Dodaci", "value": "€89,99", "type": "normal" },
+      { "label": "Brza dostava 24/48h", "value": "BESPLATNO", "type": "free" },
+      { "label": "Troškovi pouzeća", "value": "BESPLATNO", "type": "free" }
+    ],
+    "totalLabel": "UKUPNO",
+    "totalValue": "€89,99",
+    "fields": {
+      "name": { "label": "Ime i Prezime *", "placeholder": "Npr. Ivan Horvat" },
+      "phone": { "label": "Broj Telefona *", "placeholder": "Npr. 091 1234567" },
+      "address": { "label": "Adresa Dostave *", "placeholder": "Ulica, Broj, Grad, Poštanski broj" }
+    },
+    "phoneNote": "Kontaktirat ćemo vas telefonski ili putem WhatsAppa za potvrdu narudžbe.",
+    "paymentBadge": "Plaćanje pri Preuzimanju — Plaćate gotovinom kuriru. Bez predujma.",
+    "submitText": "POTVRDITE NARUDŽBU",
+    "submitSubtext": "Plaćanje Gotovinom pri Preuzimanju",
+    "reassurance": "Zaštićeni podaci · SSL 256-bit · Bez prethodnog naplaćivanja"
+  },
+
+  "faq": {
+    "eyebrow": "Česta pitanja",
+    "title": "Još uvijek imate pitanja? Evo odgovora.",
+    "items": [
+      { "question": "Kako naručiti?", "answer": "Kliknite na gumb za kupnju, ispunite obrazac sa svojim podacima i potvrdite narudžbu. Kontaktirat ćemo vas telefonski ili putem WhatsAppa za potvrdu i primit ćete paket na kućnu adresu, s plaćanjem gotovinom." },
+      { "question": "Kako funkcionira dostava?", "answer": "Dostava je potpuno besplatna. Od potvrde narudžbe, isporuka traje otprilike 24/48h radnih dana." },
+      { "question": "Što ako mi se ne sviđa?", "answer": "Možete zatražiti potpuni povrat novca vraćanjem proizvoda u roku od 30 dana od isporuke. Mi dolazimo preuzeti paket i vraćamo vam cjelokupni iznos." },
+      { "question": "Ako imam problema nakon 30 dana?", "answer": "Bez brige, svi naši proizvodi imaju 2 godine jamstva." },
+      { "question": "Kako zatražiti povrat ili podršku?", "answer": "Za podršku ili povrat nakon narudžbe, možete koristiti kontakt obrazac na stranici ili putem e-maila navedenog u podnožju stranice." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€179",
+    "newPrice": "€89",
+    "buttonText": "NARUČITE SADA",
+    "buttonSubtext": "Plaćanje pri Preuzimanju"
+  },
+
+  "tracking": {
+    "googleAdsId": "AW-17935147002",
+    "conversionLabel": "",
+    "conversionValue": 89.99,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "uid": "",
+      "key": "",
+      "lpId": "",
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=640&uid=01981ccf-4474-7c39-97eb-9407221996c2&lp=640"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Prethodni",
+    "nextSlide": "Sljedeći",
+    "thumbnail": "Minijatura",
+    "close": "Zatvori"
+  },
+
+  "ty": {
+    "title": "Narudžba Potvrđena!",
+    "subtitle": "Vaša narudžba je uspješno zaprimljena.",
+    "orderNumberLabel": "Br. narudžbe:",
+    "summaryTitle": "Sažetak Narudžbe",
+    "accessoriesLabel": "+ Uključeni dodaci",
+    "totalLabel": "UKUPNO ZA PLAĆANJE",
+    "paymentNote": "Plaćanje gotovinom kuriru — bez predujma",
+    "yourDataTitle": "Vaši Podaci",
+    "nameLabel": "Ime",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Što slijedi?",
+    "message": "Kontaktirat ćemo vas telefonski ili putem WhatsAppa za potvrdu narudžbe i organizaciju dostave.",
+    "steps": [
+      "Primit ćete poziv ili WhatsApp poruku za potvrdu",
+      "Paket će biti poslan u roku 24/48h",
+      "Plaćate gotovinom kuriru pri preuzimanju"
+    ],
+    "footerText": "Jamstvo 2 Godine · 30 Dana za Povrat · Posvećena Podrška"
+  }
+}
