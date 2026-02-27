@@ -1,0 +1,400 @@
+{
+  "seo": {
+    "title": "SirioTV Pro™ - Il Box che Rende Ogni TV Intelligente",
+    "description": "Porta film in 4K, sport dal vivo e giochi su qualsiasi televisore in pochi secondi. Consegna gratuita, paghi alla consegna."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 118.00,
+    "currentPrice": 59.00,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "text": "Consegna Gratuita 24/48h · Paghi al Corriere · 2 Anni di Garanzia"
+  },
+
+  "urgencyBanner": {
+    "text": "Avviso: Scorte quasi esaurite —",
+    "highlight": "Rimangono solo 6 unità",
+    "suffix": "a questa cifra"
+  },
+
+  "hero": {
+    "badge": "Novità 2026",
+    "title": "Rendi il Tuo Vecchio TV un Centro",
+    "titleHighlight": "Film, Sport e Videogame",
+    "titleSuffix": "in Meno di un Minuto, Senza Assistenza",
+    "subtitle": "L'unico dispositivo compatto che porta intrattenimento completo su qualsiasi televisore. Semplice come cambiare canale.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.473 clienti soddisfatti"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/siriotv/carosello/1.png", "alt": "SirioTV Pro vista frontale" },
+      { "src": "/images/mirko/siriotv/carosello/2.png", "alt": "SirioTV Pro in uso" },
+      { "src": "/images/mirko/siriotv/carosello/3.png", "alt": "SirioTV Pro dettaglio" },
+      { "src": "/images/mirko/siriotv/carosello/4.png", "alt": "SirioTV Pro accessori" },
+      { "src": "/images/mirko/siriotv/carosello/5.png", "alt": "SirioTV Pro confezione" },
+      { "src": "/images/mirko/siriotv/carosello/6.png", "alt": "SirioTV Pro laterale" },
+      { "src": "/images/mirko/siriotv/carosello/7.png", "alt": "SirioTV Pro telecomando" },
+      { "src": "/images/mirko/siriotv/carosello/8.png", "alt": "SirioTV Pro lifestyle" },
+      { "src": "/images/mirko/siriotv/carosello/9.png", "alt": "SirioTV Pro contenuto pacco" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Film e serie sempre disponibili:", "description": "accedi a tutte le piattaforme di streaming con qualità perfetta." },
+      { "title": "Partite senza buffering:", "description": "guarda lo sport in 4K fluido, senza scatti né interruzioni." },
+      { "title": "Console non necessaria:", "description": "joystick wireless già incluso, giochi pronti dal primo utilizzo." },
+      { "title": "Operativo in un minuto:", "description": "basta collegare il cavo HDMI e accendere. Nessuna competenza richiesta." },
+      { "title": "Compatibile con ogni televisore:", "description": "anche modelli di 15 anni fa. Serve solo una porta HDMI." },
+      { "title": "Comandi vocali integrati:", "description": "cerca contenuti semplicemente parlando al telecomando. Nessuna difficoltà." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "SirioTV Pro™",
+    "originalPriceLabel": "Prezzo originale:",
+    "discountLabel": "SCONTO 59€ (-50%)",
+    "shippingLabel": "Consegna Veloce:",
+    "shippingValue": "Gratuita",
+    "guaranteeLabel": "Coperto da Garanzia 2 Anni",
+    "offerToggleText": "Vedi tutto quello che è incluso",
+    "offerItems": [
+      { "text": "SirioTV Pro™ — Box 4K Ultra HD", "badge": null },
+      { "text": "Telecomando Vocale con Microfono", "badge": null },
+      { "text": "Cavo HDMI ad Alta Velocità", "badge": null },
+      { "text": "Joystick Wireless per Videogiochi", "badge": "REGALO" },
+      { "text": "Garanzia 2 Anni + Supporto Dedicato", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ORDINA ORA",
+    "mainSubtext": "Paghi in Contanti alla Consegna",
+    "subNote": "Nessun rischio: paghi solo al momento della ricezione"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Paghi alla Consegna", "color": "green" },
+      { "icon": "truck", "text": "Consegna 24/48h", "color": "blue" },
+      { "icon": "return", "text": "Reso Gratuito 30gg", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Situazione comune",
+    "title": "Anche tu hai questi problemi?",
+    "items": [
+      { "icon": "warning", "titleBold": "Qualità video pessima e blocchi continui", "text": "— il vecchio decoder non riesce più a garantire un'esperienza decente." },
+      { "icon": "timer", "titleBold": "Sempre i soliti canali ripetitivi", "text": "— per accedere a film e serie recenti servirebbero decine di abbonamenti costosi." },
+      { "icon": "money", "titleBold": "Console da gioco troppo care per la famiglia", "text": "— più di 500 euro per un dispositivo usato sporadicamente durante la settimana." }
+    ],
+    "solutionTitle": "C'è un'alternativa concreta.",
+    "solutionText": "Un dispositivo compatto e potente che trasforma il tuo salotto in sala cinema, stadio e sala giochi. Senza vincoli contrattuali, senza complicazioni."
+  },
+
+  "features": {
+    "eyebrow": "Cosa lo rende unico",
+    "title": "Tutto ciò che il tuo televisore non poteva fare prima.",
+    "items": [
+      {
+        "image": "/images/mirko/siriotv/angle/1.gif",
+        "imageAlt": "Cinema 4K",
+        "tag": "ESPERIENZA CINEMA",
+        "tagColor": "blue",
+        "title": "Il Tuo Salotto Diventa una Sala Cinema",
+        "description": "Dimentica la TV tradizionale. Con risoluzione <strong>4K Ultra HD e tecnologia HDR</strong>, ogni immagine prende vita con colori vividi e dettagli cristallini. Le <strong>piattaforme di streaming</strong> partono in un attimo, pronte per le tue serate."
+      },
+      {
+        "image": "/images/mirko/siriotv/angle/2.gif",
+        "imageAlt": "Sport dal vivo",
+        "tag": "AZIONE DAL VIVO",
+        "tagColor": "green",
+        "title": "Le Partite Non Sono Mai State Così Reali",
+        "description": "Ogni dettaglio del campo in alta definizione. Con <strong>streaming 4K a 60fps senza interruzioni</strong>, le partite scorrono fluide anche nei momenti più concitati. I tuoi amici <strong>non vorranno più guardare le partite altrove</strong>."
+      },
+      {
+        "image": "/images/mirko/siriotv/angle/3.gif",
+        "imageAlt": "Videogiochi",
+        "tag": "GAMING INCLUSO",
+        "tagColor": "orange",
+        "title": "Videogiochi Senza Acquistare una Console",
+        "description": "Nessun errore di lettura. Collega il <strong>joystick wireless OMAGGIO</strong> e il TV si trasforma in una postazione di gioco. I tuoi figli possono divertirsi con i <strong>giochi più richiesti</strong> senza investire centinaia di euro."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Facilissimo",
+    "title": "Pronto in 3 semplici mosse.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Collega", "description": "Attacca il cavo HDMI al televisore. Non è necessario nessun tecnico." },
+      { "title": "Connetti", "description": "Accendi il box e collegalo al WiFi di casa. Funziona con qualsiasi rete." },
+      { "title": "Divertiti", "description": "Film, partite, giochi: tutto a portata di mano. Senza contratti e senza attese." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ORDINA ORA CON IL 50% DI SCONTO",
+    "subtext": "Paghi in Contanti alla Consegna"
+  },
+
+  "specs": {
+    "eyebrow": "Dati Tecnici",
+    "title": "Scheda Tecnica Completa",
+    "items": [
+      { "label": "Risoluzione", "value": "4K Ultra HD (3840x2160) con HDR" },
+      { "label": "Processore", "value": "Quad-Core ad alte prestazioni" },
+      { "label": "RAM", "value": "4GB DDR3" },
+      { "label": "Memoria interna", "value": "32GB (espandibile con MicroSD)" },
+      { "label": "WiFi", "value": "Dual Band 2.4GHz + 5GHz" },
+      { "label": "Bluetooth", "value": "5.0" },
+      { "label": "Porte", "value": "HDMI 2.0, USB 3.0, slot MicroSD" },
+      { "label": "Sistema operativo", "value": "Android TV 13" },
+      { "label": "Telecomando", "value": "Vocale con microfono integrato" },
+      { "label": "Certificazioni", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Confronto Diretto",
+    "title": "Perché conviene rispetto alle alternative?",
+    "featureColumn": "Caratteristica",
+    "winnerBadge": "VINCITORE",
+    "productColumn": "SirioTV Pro™",
+    "competitorColumn": "TV Smart nuovo",
+    "rows": [
+      { "feature": "Investimento totale", "product": "✔ Soli 59€, pagamento unico", "competitor": "Oltre 500€" },
+      { "feature": "Compatibile con TV datati?", "product": "✔ Sì, basta una porta HDMI", "competitor": "No, serve comprarne uno nuovo" },
+      { "feature": "Messa in funzione", "product": "✔ Meno di un minuto, da solo", "competitor": "Configurazione lunga e complicata" },
+      { "feature": "Trasportabilità", "product": "✔ Portalo dove vuoi", "competitor": "Resta fermo in una stanza" },
+      { "feature": "Gaming", "product": "✔ Incluso + Joystick in omaggio", "competitor": "Necessita di console separata" },
+      { "feature": "Longevità", "product": "✔ Aggiornamenti costanti", "competitor": "Obsoleto nel giro di pochi anni" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Kit completo",
+    "title": "Ecco cosa troverai nel pacco",
+    "items": [
+      { "icon": "box", "text": "SirioTV Pro™ — Box 4K Ultra HD", "value": "€118,00", "valueType": "price" },
+      { "icon": "phone", "text": "Telecomando Vocale con Microfono", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "cable", "text": "Cavo HDMI ad Alta Velocità", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "gift", "text": "Joystick Wireless per Videogiochi", "value": "REGALO", "valueType": "gift" },
+      { "icon": "shield", "text": "Garanzia 2 Anni + Supporto Dedicato", "value": "INCLUSO", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Valore Totale:",
+    "totalOriginalValue": "€167,00",
+    "totalCurrentLabel": "Oggi lo paghi:",
+    "totalCurrentValue": "€59,00",
+    "totalSave": "Risparmio di €108,00 · Spedizione GRATUITA",
+    "ctaText": "ORDINA ORA"
+  },
+
+  "reviews": {
+    "eyebrow": "Opinioni Reali",
+    "title": "Cosa Dicono i Nostri Clienti",
+    "rating": "4.8",
+    "totalCount": "18.473 recensioni",
+    "verifiedNote": "✓ Tutte le recensioni sono controllate da un ente di verifica indipendente.",
+    "showMoreText": "Carica altre recensioni",
+    "leaveReviewText": "Scrivi la tua recensione",
+    "verifiedBadge": "Acquisto confermato",
+    "sellerReplyLabel": "Risposta ufficiale:",
+    "items": [
+      {
+        "initials": "RP",
+        "name": "Roberto Parisi",
+        "stars": 5,
+        "text": "L'ho collegato al televisore del salotto che ha almeno 10 anni e adesso sembra un modello ultimo grido. Le partite si vedono in modo perfetto e mia figlia guarda le sue serie senza problemi. Arrivato in un giorno e mezzo.",
+        "verified": true,
+        "sellerReply": "Roberto, felici che il suo televisore abbia avuto una seconda vita! Siamo a disposizione per qualsiasi necessità."
+      },
+      {
+        "initials": "EC",
+        "name": "Elena Capasso",
+        "stars": 5,
+        "text": "Lo uso nella stanza degli ospiti su un TV che non ha nemmeno il digitale terrestre. Risultato incredibile, adesso ho accesso a tutto. Configurato da sola senza chiedere aiuto a nessuno. Il comando vocale è fantastico.",
+        "verified": true,
+        "sellerReply": "Elena, il telecomando vocale rende tutto ancora più immediato! Grazie per averci scelto."
+      },
+      {
+        "initials": "GP",
+        "name": "Giovanni Proietti",
+        "stars": 5,
+        "text": "preso per il figlio che voleva giocare e devo dire che funziona benissimo. il joystick arriva nel pacco e si connette al volo. risparmio enorme rispetto ad una playstation o xbox",
+        "verified": true,
+        "sellerReply": "Giovanni, il joystick wireless è pensato per garantire un'esperienza plug-and-play immediata. Buon divertimento!"
+      },
+      {
+        "initials": "AS",
+        "name": "Alessandra Santini",
+        "stars": 4,
+        "text": "Prodotto valido, la qualità delle immagini è notevolmente superiore a prima. Metto 4 stelle perché sto ancora provando tutte le applicazioni disponibili. La consegna è stata rapidissima, nulla da dire.",
+        "verified": true,
+        "sellerReply": "Alessandra, la ringraziamo per la sincerità! Sono certa che con il tempo scoprirà funzionalità che la sorprenderanno."
+      },
+      {
+        "initials": "MT",
+        "name": "Massimo Tedesco",
+        "stars": 5,
+        "text": "la svolta per vedere le partite come si deve. col vecchio decoder si bloccava ogni cinque minuti ed era diventato insopportabile. questo va sul wifi e non si pianta mai. soldi investiti alla grande",
+        "verified": true,
+        "sellerReply": "Massimo, la connessione WiFi dual band garantisce proprio questa stabilità. Buon campionato!"
+      },
+      {
+        "initials": "PG",
+        "name": "Patrizia Genovese",
+        "stars": 5,
+        "text": "Acquistato come regalo per mio suocero di 80 anni. Non sapeva neanche accendere il computer eppure usa questo box senza problemi. Ora si gode i documentari in una qualità che non credeva possibile.",
+        "verified": true,
+        "sellerReply": "Patrizia, pensato proprio per essere intuitivo anche per chi non ha familiarità con la tecnologia. Un regalo perfetto!"
+      },
+      {
+        "initials": "NF",
+        "name": "Nicola Ferraro",
+        "stars": 5,
+        "text": "consegnato il giorno seguente all'ordine. collegato al tv della taverna e finalmente guardo quello che mi pare quando voglio. il telecomando con la voce è una comodità incredibile",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "LD",
+        "name": "Lorenzo De Luca",
+        "stars": 5,
+        "text": "Lavoro nell'IT e posso confermare che il rapporto qualità-prezzo è eccezionale. Processore reattivo, 4K reale, dual band. L'ho suggerito a parenti e colleghi, in quattro lo hanno già ordinato.",
+        "verified": true,
+        "sellerReply": "Lorenzo, un feedback da professionista del settore vale doppio. Grazie per il passaparola!"
+      },
+      {
+        "initials": "SF",
+        "name": "Sabrina Fontana",
+        "stars": 5,
+        "text": "ordinato il martedì, a casa il giovedì. pagato al corriere senza complicazioni. la cosa migliore è che posso portarlo anche in campagna, lo attacco al tv lì e ho tutto come a casa",
+        "verified": true,
+        "sellerReply": "Sabrina, la portabilità è uno dei vantaggi principali! Perfetto per chi ha più abitazioni."
+      },
+      {
+        "initials": "FC",
+        "name": "Filippo Colombo",
+        "stars": 5,
+        "text": "in uso da oltre un mese e sono completamente soddisfatto. ho eliminato l'abbonamento tv satellitare perché con questo trovo già tutto. i ragazzi giocano e io guardo il calcio, perfetto per tutti",
+        "verified": true,
+        "sellerReply": "Filippo, quando tutti in famiglia sono contenti, significa che il prodotto fa il suo dovere! Grazie della fiducia."
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Scrivi la tua recensione",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "Valutazione",
+    "textLabel": "La tua esperienza",
+    "textPlaceholder": "Raccontaci come ti sei trovato...",
+    "submitText": "Pubblica Recensione",
+    "successTitle": "Grazie per il tuo contributo!",
+    "successText": "La tua recensione verrà esaminata da un team di verifica indipendente. Le recensioni non autentiche o lasciate da chi non ha acquistato il prodotto non verranno pubblicate.",
+    "closeText": "Chiudi"
+  },
+
+  "orderForm": {
+    "eyebrow": "Modulo d'Ordine",
+    "title": "Finalizza il tuo acquisto",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Lo sconto del 50% termina tra:",
+    "stockWarning": "Solo <strong>6 pezzi</strong> ancora disponibili a questo prezzo",
+    "summaryTitle": "Dettaglio Ordine",
+    "summaryLines": [
+      { "label": "SirioTV Pro™ + Accessori", "value": "€59,00", "type": "normal" },
+      { "label": "Spedizione veloce 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Costo Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€59,00",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo Completo *", "placeholder": "Via, Numero, Città, CAP" }
+    },
+    "phoneNote": "Verrai contattato via telefono o WhatsApp per la conferma dell'ordine.",
+    "paymentBadge": "Pagamento alla Consegna — Paghi al corriere in contanti. Nessun anticipo richiesto.",
+    "submitText": "CONFERMA ORDINE",
+    "submitSubtext": "Paghi in Contanti alla Consegna",
+    "reassurance": "Connessione protetta · Crittografia SSL 256-bit · Zero addebiti anticipati"
+  },
+
+  "faq": {
+    "eyebrow": "Domande e risposte",
+    "title": "Le risposte ai dubbi più comuni.",
+    "items": [
+      { "question": "Come si effettua l'ordine?", "answer": "Premi il pulsante di acquisto, inserisci i tuoi dati nel modulo e conferma. Riceverai una telefonata o un messaggio WhatsApp di verifica, poi il pacco arriva direttamente a casa con pagamento in contanti." },
+      { "question": "Quanto costa la spedizione?", "answer": "La consegna è completamente gratuita. Dopo la conferma dell'ordine, il pacco viene spedito e arriva in circa 24/48 ore lavorative." },
+      { "question": "Posso restituirlo se non mi soddisfa?", "answer": "Assolutamente sì. Hai 30 giorni dalla consegna per richiedere il reso completo. Veniamo noi a ritirare il pacco e ti restituiamo l'intero importo pagato." },
+      { "question": "E dopo i 30 giorni?", "answer": "Nessun problema, tutti i prodotti sono coperti da garanzia di 2 anni per qualsiasi difetto." },
+      { "question": "Come posso contattare l'assistenza?", "answer": "Puoi raggiungerci attraverso il modulo di contatto presente nel sito oppure tramite l'indirizzo email indicato nel footer della pagina." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€118",
+    "newPrice": "€59",
+    "buttonText": "ORDINA ORA",
+    "buttonSubtext": "Paghi al Corriere"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 59.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
+  "ty": {
+    "title": "Ordine Confermato!",
+    "subtitle": "Abbiamo ricevuto il tuo ordine con successo.",
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Dettaglio Ordine",
+    "accessoriesLabel": "+ Accessori inclusi",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — zero anticipo",
+    "yourDataTitle": "I Tuoi Dati",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "Cosa succede adesso?",
+    "message": "Verrai contattato telefonicamente o via WhatsApp per confermare l'ordine e organizzare la spedizione.",
+    "steps": [
+      "Riceverai una chiamata o un messaggio WhatsApp di conferma",
+      "Il pacco viene spedito entro 24/48h",
+      "Paghi al corriere in contanti al momento della consegna"
+    ],
+    "footerText": "Garanzia 2 Anni · Reso Gratuito 30 Giorni · Supporto Dedicato"
+  }
+}
