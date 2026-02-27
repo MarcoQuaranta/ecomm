@@ -1,0 +1,421 @@
+{
+  "seo": {
+    "title": "Bowek Ironweld™ - Saldature Perfette su Ogni Metallo, Anche da Principiante",
+    "description": "Saldatrice portatile inverter IGBT da soli 1,5 kg. Potenza regolabile 20-120A, innesco Hot Start, kit professionale completo in dotazione. Consegna gratuita, paghi alla consegna."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 139.00,
+    "currentPrice": 69.00,
+    "discountPercent": 50
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Avviso: Scorte quasi esaurite —",
+    "highlight": "Restano solo 8 unità",
+    "suffix": "a questa cifra"
+  },
+
+  "hero": {
+    "badge": "Tecnologia 2026",
+    "title": "Saldi Qualsiasi Metallo",
+    "titleHighlight": "con Una Sola Mano.",
+    "titleSuffix": "1,5 kg. Spina di Casa. Nessuna Esperienza Necessaria.",
+    "subtitle": "La potenza di un'officina racchiusa in <strong>un formato ultracompatto</strong>. Collegala, imposta, parti. Risultato perfetto <strong>fin dal primo utilizzo</strong>.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "14.729 recensioni verificate"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/ironweld/carosello/1.webp", "alt": "Bowek Ironweld vista frontale" },
+      { "src": "/images/mirko/ironweld/carosello/2.webp", "alt": "Bowek Ironweld in uso" },
+      { "src": "/images/mirko/ironweld/carosello/3.webp", "alt": "Bowek Ironweld dettaglio pannello" },
+      { "src": "/images/mirko/ironweld/carosello/4.webp", "alt": "Bowek Ironweld kit completo" },
+      { "src": "/images/mirko/ironweld/carosello/5.webp", "alt": "Bowek Ironweld valigetta" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Inverter IGBT:", "description": "fiamma costante, giunzione netta, nessuno spruzzo" },
+      { "title": "Hot Start:", "description": "innesco immediato, addio elettrodi che si incollano" },
+      { "title": "20-120A regolabili:", "description": "dalla lamiera leggera ai profili robusti, un solo strumento" },
+      { "title": "Solo 1,5 kg:", "description": "lavori in verticale, sopratesta, in qualsiasi posizione" },
+      { "title": "Protezione surriscaldamento:", "description": "blocco automatico di sicurezza, nessun rischio di danno" },
+      { "title": "Presa di casa + prolunga 10m:", "description": "zero impianti speciali, avvolgimento automatico incluso" },
+      { "title": "Bacchette standard 2,5-3,2 mm:", "description": "reperibili ovunque, in ogni negozio di ferramenta" },
+      { "title": "Kit PRO completo:", "description": "visiera, guantoni, 20 elettrodi, magneti, cavo estensore" }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "Bowek Ironweld™",
+    "originalPriceLabel": "Prezzo di listino:",
+    "discountLabel": "RISPARMI -50%",
+    "shippingLabel": "Spedizione rapida:",
+    "shippingValue": "GRATIS",
+    "guaranteeLabel": "Garanzia 2 Anni",
+    "offerToggleText": "Guarda tutto quello che ricevi",
+    "offerItems": [
+      { "text": "Bowek Ironweld™ — Saldatrice Inverter IGBT", "badge": null },
+      { "text": "Valigetta Rigida Antiurto", "badge": null },
+      { "text": "Cavo Massa + Morsetto Heavy-Duty", "badge": null },
+      { "text": "20 Bacchette E6013 2,5 mm", "badge": null },
+      { "text": "Maschera Auto-Oscurante", "badge": "REGALO" },
+      { "text": "Guanti da Saldatura in Crosta", "badge": "REGALO" },
+      { "text": "Spazzola Acciaio + Martellina Scoria (2-in-1)", "badge": "REGALO" },
+      { "text": "2 Magneti Angolari 45°/90°", "badge": "REGALO" },
+      { "text": "Prolunga 10m Autoavvolgente", "badge": "REGALO" },
+      { "text": "Libretto di Istruzioni in 48 Lingue", "badge": null },
+      { "text": "Garanzia 2 Anni + Assistenza Dedicata", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ORDINA ORA",
+    "mainSubtext": "Paghi Alla Consegna",
+    "subNote": ""
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Pagamento alla Consegna", "color": "green" },
+      { "icon": "truck", "text": "Spedizione 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Giorni di Reso", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Il problema",
+    "title": "Stanco di saldatrici che non mantengono le promesse?",
+    "items": [
+      { "icon": "money", "titleBold": "Si surriscaldano dopo <strong>appena qualche minuto</strong> di lavoro", "text": "" },
+      { "icon": "warning", "titleBold": "Giunzioni <strong>deboli e disomogenee</strong> che cedono subito", "text": "" },
+      { "icon": "timer", "titleBold": "Ingombranti, <strong>pesantissime</strong> e costruite con materiali che durano poco", "text": "" },
+      { "icon": "money", "titleBold": "Ogni chiamata al fabbro ti svuota il portafoglio: <strong>200-400€</strong> a intervento", "text": "" }
+    ],
+    "solutionTitle": "Con Ironweld™ cambia tutto.",
+    "solutionText": "Giunzioni da professionista in soli 1,5 kg. Un acquisto, riparazioni illimitate."
+  },
+
+  "features": {
+    "eyebrow": "Cosa la rende unica",
+    "title": "Il tuo garage diventa un'officina professionale in un attimo.",
+    "items": [
+      {
+        "image": "/images/mirko/ironweld/angle/1.webp",
+        "imageAlt": "Tecnologia Inverter IGBT",
+        "tag": "TECNOLOGIA IGBT",
+        "tagColor": "green",
+        "title": "Inverter IGBT + 20-120A Regolabili",
+        "description": "Il cuore IGBT modula la corrente <strong>50.000 volte ogni secondo</strong>: fiamma stabile, nessuno spruzzo. Ruoti la ghiera da <strong>20 a 120 Ampere</strong> seguendo la guida nel kit e passi dalla lamiera sottilissima al tubolare strutturale."
+      },
+      {
+        "image": "/images/mirko/ironweld/angle/2.webp",
+        "imageAlt": "Saldatrice leggera una mano",
+        "tag": "FINE DEI MACCHINONI",
+        "tagColor": "blue",
+        "title": "1,5 kg: L'Afferri con una Mano e Lavori Dovunque",
+        "description": "La sollevi, la porti sul punto e salvi. <strong>In verticale, dietro un tubo, negli angoli impossibili</strong>. Prova a fare lo stesso con <strong>un bestione da officina da 20 kg</strong>."
+      },
+      {
+        "image": "/images/mirko/ironweld/angle/3.webp",
+        "imageAlt": "Presa di casa e prolunga",
+        "tag": "PRESA + PROLUNGA AUTOAVVOLGENTE",
+        "tagColor": "green",
+        "title": "Presa di Casa + Prolunga Autoavvolgente",
+        "description": "Nessun bisogno di linea trifase, nessun adattatore. Il cavo da <strong>10 metri</strong> si riavvolge in automatico. Inserisci la spina nella presa domestica e sei operativo. Alimentazione continua e senza cali."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Facilissimo",
+    "title": "Collega, imposta, salda. Stop.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Inserisci la spina", "description": "Collegala a una qualsiasi presa domestica. Nessun impianto speciale richiesto." },
+      { "title": "Imposta la potenza", "description": "Ruota la ghiera sul valore corretto. Da 20A per le lamiere a 120A per i pezzi robusti." },
+      { "title": "Inizia a saldare", "description": "L'arco si accende stabile, il cordone viene impeccabile. Anche alla tua prima prova." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ORDINA ORA CON IL 50% DI SCONTO",
+    "subtext": "Paghi in Contanti alla Consegna"
+  },
+
+  "specs": {
+    "eyebrow": "Specifiche",
+    "title": "Scheda Tecnica",
+    "items": [
+      { "label": "Tecnologia", "value": "Inverter IGBT" },
+      { "label": "Corrente", "value": "20-120A (5 livelli)" },
+      { "label": "Innesco", "value": "Hot Arc Start" },
+      { "label": "Alimentazione", "value": "Presa di casa standard" },
+      { "label": "Peso", "value": "~1,5 kg" },
+      { "label": "Certificazioni", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Il Confronto",
+    "title": "Perché conviene rispetto alle alternative tradizionali?",
+    "featureColumn": "Caratteristica",
+    "winnerBadge": "VINCITORE",
+    "productColumn": "Bowek Ironweld™",
+    "competitorColumn": "Cascione Tradizionale / Fabbro",
+    "rows": [
+      { "feature": "Peso", "product": "✔ ~1,5 kg, mano singola", "competitor": "15-25 kg ingombranti" },
+      { "feature": "Innesco", "product": "✔ Hot Start, accensione istantanea", "competitor": "L'elettrodo resta incollato" },
+      { "feature": "Alimentazione", "product": "✔ Presa domestica + prolunga", "competitor": "Serve la trifase" },
+      { "feature": "Punti stretti", "product": "✔ Arrivi ovunque", "competitor": "Impossibile raggiungerli" },
+      { "feature": "Kit incluso", "product": "✔ 9 accessori PRO", "competitor": "Tutto da acquistare separatamente" },
+      { "feature": "Costo", "product": "✔ Appena 69€ (una tantum)", "competitor": "200-500€ per ogni intervento" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Tutto incluso",
+    "title": "Ecco cosa arriva a casa tua",
+    "items": [
+      { "icon": "box", "text": "Saldatrice Ironweld™ Inverter IGBT", "value": "€139,00", "valueType": "price" },
+      { "icon": "box", "text": "Valigetta rigida + cavo massa", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "gift", "text": "20 bacchette E6013 + maschera auto-oscurante", "value": "REGALO", "valueType": "gift" },
+      { "icon": "gift", "text": "Guanti + spazzola/martellina + 2 magneti angolari", "value": "REGALO", "valueType": "gift" },
+      { "icon": "cable", "text": "Prolunga 10m autoavvolgente", "value": "REGALO", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Prezzo di Listino:",
+    "totalOriginalValue": "€259,00",
+    "totalCurrentLabel": "Oggi paghi soltanto:",
+    "totalCurrentValue": "€69,00",
+    "totalSave": "Risparmi €190,00 · Spedizione GRATUITA",
+    "ctaText": "ORDINA ORA"
+  },
+
+  "reviews": {
+    "eyebrow": "Le Opinioni dei Clienti",
+    "title": "Recensioni Verificate",
+    "rating": "4.8",
+    "totalCount": "14.729 recensioni",
+    "verifiedNote": "✓ Ogni recensione viene controllata da un ente di verifica indipendente e esterno.",
+    "showMoreText": "Mostra altre recensioni",
+    "leaveReviewText": "Lascia una recensione",
+    "verifiedBadge": "Acquisto verificato",
+    "sellerReplyLabel": "Risposta del venditore:",
+    "items": [
+      {
+        "initials": "RN",
+        "name": "Roberto Nardini",
+        "stars": 5,
+        "text": "Il cancelletto del balcone si era staccato e stava per cadere. Il fabbro mi chiedeva 300 euro per un lavoro da venti minuti. Ho preso questa, seguita la guida e l'ho riattaccato da solo. Risultato solido, arco preciso, neanche una goccia fuori posto.",
+        "verified": true,
+        "sellerReply": "Roberto, situazioni come la tua dimostrano il vero valore di Bowek Ironweld. Bravissimo e grazie per averci scelto!"
+      },
+      {
+        "initials": "PD",
+        "name": "Pietro De Luca",
+        "stars": 5,
+        "text": "Mi sono appassionato ai lavori in ferro e la uso per progetti creativi nel weekend. Quello che colpisce davvero e' la fermezza dell'arco anche a 25 ampere, su lamiera sottile non sfonda. Un rapporto qualita' prezzo incredibile.",
+        "verified": true,
+        "sellerReply": "Pietro, la tecnologia IGBT e' progettata proprio per garantire precisione anche a bassa potenza. Complimenti per i tuoi progetti!"
+      },
+      {
+        "initials": "VR",
+        "name": "Vincenzo Ruggiero",
+        "stars": 5,
+        "text": "Dovevo riattaccare il supporto dello scarico dell'auto e l'officina voleva 200 euro. Ci ho pensato un attimo, ho ordinato questa e ho fatto tutto nel cortile di casa. Leggerissima, la metto nel portabagagli e sono pronto ovunque. Arrivata in 48 ore, pagata al fattorino.",
+        "verified": true,
+        "sellerReply": "Vincenzo, portarla sempre con se' e' uno dei vantaggi piu' apprezzati. Contenti che il risparmio sia stato concreto!"
+      },
+      {
+        "initials": "SD",
+        "name": "Stefano D'Angelo",
+        "stars": 4,
+        "text": "La sto testando da una settimana su diversi spessori di ferro e i risultati sono convincenti. Per adesso 4 stelle perche' voglio vederla alla prova del tempo, ma devo ammettere che la facilita' di regolazione e' un gran punto a favore.",
+        "verified": true,
+        "sellerReply": "Stefano, la cautela e' comprensibile! Vedra' che col passare delle settimane non la deludera'. Ci faccia sapere come prosegue!"
+      },
+      {
+        "initials": "ML",
+        "name": "Marco Luciani",
+        "stars": 5,
+        "text": "Ho fatto l'ordine venerdi' sera e lunedi' mattina il corriere era gia' sotto casa. Pagato cash, zero sorprese. Ho subito testato sulla ringhiera del terrazzo e salda alla perfezione. La maschera auto-oscurante inclusa e' un tocco in piu' che fa la differenza.",
+        "verified": true,
+        "sellerReply": "Marco, nessun costo nascosto, mai. Felicissimi che apprezzi anche il kit accessori completo!"
+      },
+      {
+        "initials": "AG",
+        "name": "Antonio Greco",
+        "stars": 5,
+        "text": "Ho un terreno con stalle e attrezzature che hanno sempre bisogno di saldature. La cosa fantastica e' che funziona con qualunque presa elettrica, niente generatori ne' cablaggi speciali. La infilo nella valigetta, salgo in macchina e vado.",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "DM",
+        "name": "Diego Martinelli",
+        "stars": 5,
+        "text": "Mai toccato una saldatrice prima d'ora. Mi sono guardato tre tutorial, ho iniziato piano a 20 ampere e al quarto cordone veniva gia' dritto. Poter salire gradualmente con la potenza ti da' sicurezza e non rischi di bruciare niente. Consigliatissima per chi parte da zero.",
+        "verified": true,
+        "sellerReply": "Diego, la ghiera progressiva da 20A e' pensata esattamente per i principianti come te. Vedrai che migliorerai velocemente. Grazie del feedback!"
+      },
+      {
+        "initials": "ER",
+        "name": "Elena Ricci",
+        "stars": 5,
+        "text": "Non ne potevo piu' di chiamare qualcuno per ogni piccola riparazione. Ho risaldato i piedi della sdraio in ferro e il gancio della serranda del box. Intuitiva, pesa pochissimo e la ripongo nel sottoscala. Finalmente faccio da sola.",
+        "verified": true,
+        "sellerReply": "Elena, essere autonomi nelle riparazioni quotidiane non ha prezzo. Bravissima e grazie per la fiducia!"
+      },
+      {
+        "initials": "GP",
+        "name": "Giorgio Palmieri",
+        "stars": 5,
+        "text": "Ho lavorato quarant'anni come elettrotecnico e vi dico che per le riparazioni domestiche questa saldatrice e' piu' che adeguata. L'inverter IGBT mantiene l'arco costante anche quando la tensione di rete oscilla. Un prodotto serio ad un prezzo onesto.",
+        "verified": true,
+        "sellerReply": "Giorgio, il parere di chi ha esperienza nel settore vale doppio. Onorati della sua valutazione!"
+      },
+      {
+        "initials": "NB",
+        "name": "Nicola Barone",
+        "stars": 5,
+        "text": "L'anno scorso avevo preso una saldatrice cinese da due soldi online e non valeva nulla: arco che si spegneva ogni tre secondi. Questa e' su un altro pianeta, la differenza la noti dal primo istante. E con il kit completo di elettrodi e maschera non devi acquistare nient'altro, apri la scatola e sei operativo.",
+        "verified": true,
+        "sellerReply": "Nicola, il segreto e' l'inverter IGBT che assicura un arco sempre stabile. Siamo felici che il salto di qualita' sia stato evidente!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Scrivi la tua recensione",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "Valutazione",
+    "textLabel": "La tua recensione",
+    "textPlaceholder": "Condividi la tua esperienza...",
+    "submitText": "Pubblica Recensione",
+    "successTitle": "Grazie per il tuo contributo!",
+    "successText": "La tua recensione verra' valutata da un team indipendente esterno al sito. Non verranno pubblicate recensioni da parte di chi non ha effettivamente acquistato il prodotto, per garantire autenticita'.",
+    "closeText": "Chiudi"
+  },
+
+  "orderSteps": {
+    "eyebrow": "COME ORDINARE",
+    "title": "Tre passaggi e hai fatto",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Compila i tuoi dati",
+        "description": "Inserisci nome, telefono e indirizzo nel modulo d'ordine qui in basso."
+      },
+      {
+        "icon": "phone",
+        "title": "Ti richiamiamo noi",
+        "description": "Ricevi una telefonata o un messaggio WhatsApp per verificare i dettagli."
+      },
+      {
+        "icon": "cash",
+        "title": "Paghi alla porta",
+        "description": "In 24/48h il corriere ti consegna il pacco. Paghi in contanti, senza anticipo."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Modulo d'Ordine",
+    "title": "Finalizza il tuo acquisto",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Lo sconto -50% termina tra:",
+    "stockWarning": "Rimangono <strong>8 pezzi</strong> a questo prezzo promozionale",
+    "summaryTitle": "Dettaglio Ordine",
+    "summaryLines": [
+      { "label": "Bowek Ironweld™ + Accessori", "value": "€69,00", "type": "normal" },
+      { "label": "Spedizione rapida 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Spese di Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€69,00",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo di Spedizione *", "placeholder": "Via, Numero, Citta', CAP" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "CONFERMA ORDINE",
+    "submitSubtext": "Paghi in Contanti alla Consegna",
+    "reassurance": "Consegna 24/48h · Garanzia 1 anno · Supporto clienti<br><strong>Nessuna carta necessaria.</strong> Ti contattiamo per la conferma."
+  },
+
+  "faq": {
+    "eyebrow": "Domande frequenti",
+    "title": "Qualche dubbio? Trovi tutto qui.",
+    "items": [
+      { "question": "Come posso effettuare l'ordine?", "answer": "Premi il pulsante di acquisto, compila il form con i tuoi dati e invia la richiesta. Verrai ricontattato via telefono o WhatsApp per la conferma, dopodiche' il pacco ti arriva a casa con pagamento in contanti alla consegna." },
+      { "question": "Quanto costa la spedizione?", "answer": "La spedizione e' completamente gratuita. Dopo la conferma dell'ordine, la consegna avviene entro 24/48 ore lavorative." },
+      { "question": "Posso restituirla se non mi soddisfa?", "answer": "Certo, hai 30 giorni di tempo dalla ricezione per effettuare il reso e ottenere un rimborso completo. Organizziamo noi il ritiro a domicilio e ti restituiamo l'intero importo." },
+      { "question": "E se si presenta un difetto dopo il primo mese?", "answer": "Nessun problema, ogni nostro prodotto e' coperto da garanzia di 2 anni dalla data di acquisto." },
+      { "question": "Come richiedo assistenza o un reso?", "answer": "Dopo l'acquisto puoi contattarci tramite il form presente sul sito oppure scrivendo all'indirizzo email che trovi in fondo alla pagina." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€139",
+    "newPrice": "€69",
+    "buttonText": "ORDINA ORA",
+    "buttonSubtext": "Paga Alla Consegna"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 0,
+    "conversionCurrency": "",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
+  "ty": {
+    "title": "Ordine Confermato!",
+    "subtitle": "Abbiamo ricevuto correttamente la tua richiesta.",
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Dettaglio Ordine",
+    "accessoriesLabel": "+ Accessori inclusi",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — zero anticipi richiesti",
+    "yourDataTitle": "I Tuoi Dati",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "Ecco i prossimi passi",
+    "message": "Ti contatteremo telefonicamente o su WhatsApp per confermare l'ordine e programmare la consegna.",
+    "steps": [
+      "Riceverai una chiamata o un messaggio WhatsApp di conferma",
+      "La spedizione parte entro 24/48h",
+      "Paghi in contanti direttamente al corriere"
+    ],
+    "footerText": "Garanzia 2 Anni · 30 Giorni di Reso · Assistenza Dedicata"
+  }
+}
