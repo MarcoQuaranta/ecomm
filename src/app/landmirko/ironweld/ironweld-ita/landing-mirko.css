@@ -98,7 +98,7 @@
 }
 
 .landing-mirko .urgency-banner {
-  background: #1d4ed8;
+  background: #c2410c;
   padding: 10px 16px;
   text-align: center;
   font-size: 14px;
@@ -536,7 +536,7 @@
 .landing-mirko .problems-box {
   background: #eff6ff;
   border: 1px solid rgba(37, 99, 235, 0.2);
-  border-left: 4px solid #2563eb;
+  border-left: 4px solid #dc2626;
   border-radius: var(--radius-lg);
   padding: 24px 28px;
   margin-bottom: 24px;
@@ -1312,11 +1312,11 @@
   font-family: 'Poppins', sans-serif;
   font-size: 28px;
   font-weight: 800;
-  color: var(--primary);
+  color: #c2410c;
 }
 
 .landing-mirko .timer-display span {
-  background: var(--primary);
+  background: #c2410c;
   color: #fff;
   padding: 6px 12px;
   border-radius: 8px;
