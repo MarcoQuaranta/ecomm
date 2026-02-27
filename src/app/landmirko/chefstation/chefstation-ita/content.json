@@ -1,0 +1,426 @@
+{
+  "seo": {
+    "title": "ChefStation™ - Centro Cottura Multifunzione 5 in 1",
+    "description": "Friggi ad aria, inforna, griglia, scalda e prepara bevande calde con un unico dispositivo. Recupera spazio sul piano. Consegna gratuita."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 158.00,
+    "currentPrice": 79.00,
+    "discountPercent": 50
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Avviso: Alta domanda —",
+    "highlight": "Rimangono solo 8 unità",
+    "suffix": "a questa tariffa"
+  },
+
+  "hero": {
+    "badge": "New 2026",
+    "title": "Tutta la Cucina",
+    "titleHighlight": "in Poco Spazio:",
+    "titleSuffix": "Air Fryer, Forno, Piastra, Caffè e Infusi",
+    "subtitle": "Il centro cottura 5-in-1 che <strong>rimpiazza 5 apparecchi diversi</strong>. Prepara tutto insieme in <strong>45 cm di ingombro</strong>.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.743 recensioni verificate"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/chefstation/carosello/1.webp", "alt": "ChefStation vista frontale" },
+      { "src": "/images/mirko/chefstation/carosello/2.webp", "alt": "ChefStation in uso" },
+      { "src": "/images/mirko/chefstation/carosello/3.webp", "alt": "ChefStation forno aperto" },
+      { "src": "/images/mirko/chefstation/carosello/4.webp", "alt": "ChefStation Friggitrice ad Aria" },
+      { "src": "/images/mirko/chefstation/carosello/5.webp", "alt": "ChefStation caffè e tisane" },
+      { "src": "/images/mirko/chefstation/carosello/6.webp", "alt": "ChefStation accessori inclusi" },
+      { "src": "/images/mirko/chefstation/carosello/7.webp", "alt": "ChefStation dettaglio" },
+      { "src": "/images/mirko/chefstation/carosello/8.webp", "alt": "ChefStation confezione" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Air fryer super croccante:", "description": "patatine, alette e tanto altro, dorati e croccanti usando pochissimo olio." },
+      { "title": "Forno 12L su due piani:", "description": "prepara più pietanze nel forno allo stesso tempo mentre utilizzi anche la piastra." },
+      { "title": "Piastra con rivestimento antiaderente:", "description": "si sgancia con un gesto, un risciacquo veloce e sei pronto a ricominciare." },
+      { "title": "Bevande calde:", "description": "riscalda l'acqua per gli infusi e dispone di un filtro incorporato per il caffè, tutto in pochi istanti." },
+      { "title": "Componenti estraibili:", "description": "teglie, griglie e piastra sono compatibili anche con la lavastoviglie." },
+      { "title": "Facile da trasportare:", "description": "ideale per viaggi, camper, monolocali." },
+      { "title": "Timer + spegnimento automatico:", "description": "regoli il tempo e si ferma da sola." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "ChefStation™",
+    "shippingLabel": "Consegna veloce:",
+    "shippingValue": "GRATIS",
+    "guaranteeLabel": "Garanzia 24 Mesi",
+    "offerToggleText": "Guarda cosa comprende l'offerta",
+    "offerItems": [
+      { "text": "ChefStation™ — Centro Cottura 5 in 1", "badge": null },
+      { "text": "Cestello per Frittura ad Aria", "badge": null },
+      { "text": "Vassoio Crisp Microforato", "badge": null },
+      { "text": "2 Griglie + 2 Teglie in Acciaio Inox", "badge": null },
+      { "text": "Infusore per Tisane in Acciaio Inox", "badge": "REGALO" },
+      { "text": "Mini Guanti Termici in Silicone", "badge": "REGALO" },
+      { "text": "Garanzia 24 Mesi + Supporto Dedicato", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ORDINA ORA",
+    "mainSubtext": "Paghi Alla Consegna",
+    "subNote": ""
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Pagamento alla Consegna", "color": "green" },
+      { "icon": "truck", "text": "Spedizione 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Giorni di Reso", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "La difficoltà",
+    "title": "I tuoi elettrodomestici non sono all'altezza?",
+    "items": [
+      { "icon": "box", "titleBold": "Superficie cucina <strong>ingombra di dispositivi</strong> che rubano tutto lo spazio", "text": "" },
+      { "icon": "timer", "titleBold": "Air fryer <strong>troppo ridotta</strong> per preparare porzioni familiari", "text": "" },
+      { "icon": "money", "titleBold": "Pentole e vassoi da <strong>pulire ogni volta</strong>, pile di stoviglie", "text": "" },
+      { "icon": "money", "titleBold": "Acquistare 5 elettrodomestici singoli costa <strong>300-500€</strong>", "text": "" }
+    ],
+    "solutionTitle": "Con ChefStation™ cambia tutto.",
+    "solutionText": "5 funzioni in un unico dispositivo. Cuoci, friggi, prepara bevande — e pulisci in un attimo."
+  },
+
+  "features": {
+    "eyebrow": "Cosa lo rende unico",
+    "title": "Una cucina attrezzata nello spazio di un fornetto.",
+    "image": "/images/mirko/chefstation/features.gif",
+    "imageAlt": "ChefStation in azione",
+    "items": [
+      {
+        "image": "/images/mirko/chefstation/angle/1.webp",
+        "imageAlt": "Frittura ad Aria 360°",
+        "tag": "AIR FRYER A CONVEZIONE 360°",
+        "tagColor": "green",
+        "title": "Dorato Fuori, Senza Olio Dentro",
+        "description": "Ventola ad aria calda con circolazione a 360°. Patatine, pollo, verdure: <strong>croccanti nella metà del tempo</strong>, quasi senza olio. Lo stesso risultato della frittura tradizionale, senza i cattivi odori."
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/2.webp",
+        "imageAlt": "Forno Doppio Livello",
+        "tag": "FORNO SPAZIOSO",
+        "tagColor": "orange",
+        "title": "Due Ripiani: Prepara Più Piatti Insieme",
+        "description": "12 litri di capacità con <strong>doppio ripiano</strong>. Verdure sopra, pane sotto. Il tutto mentre usi la piastra e prepari il caffè. <strong>Statico o ventilato</strong>, decidi tu."
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/3.webp",
+        "imageAlt": "Piastra Antiaderente",
+        "tag": "ADDIO PENTOLE",
+        "tagColor": "blue",
+        "title": "Piastra Antiaderente, Via le Pentole",
+        "description": "Riscaldi, cuoci, tosti — direttamente sulla piastra. <strong>Superficie antiaderente</strong>: la sganci, la risciacqui e ricominci. <strong>Piastra, teglie e caffettiera lavabili in lavastoviglie.</strong>"
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/4.webp",
+        "imageAlt": "Caffè e Tisane",
+        "tag": "BEVANDE CALDE",
+        "tagColor": "green",
+        "title": "Caffè Filtro e Infusi, Quando Vuoi",
+        "description": "Caffettiera a filtro incorporata + infusore in acciaio inox per tisane. <strong>Niente bollitori</strong>, niente apparecchi aggiuntivi. Al mattino il caffè, alla sera la tisana."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Facilissimo",
+    "title": "Accendi, seleziona la modalità, cucina.",
+    "image": "",
+    "imageAlt": "Come funziona",
+    "steps": [
+      { "title": "Seleziona la Modalità", "description": "Ruota la manopola: Air Fryer, Forno, Grill, Piastra o Bevande calde." },
+      { "title": "Regola e Parti", "description": "Temperatura e timer si impostano in un attimo. Nessun rischio di bruciare." },
+      { "title": "Gusta e Risciacqua", "description": "Componenti removibili. Un colpo di spugna e il piano torna pulito." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ORDINA ORA AL 50% IN MENO",
+    "subtext": "Paghi in Contanti alla Consegna"
+  },
+
+  "specs": {
+    "eyebrow": "Dettagli tecnici",
+    "title": "Scheda Tecnica",
+    "items": [
+      { "label": "Potenza", "value": "1250W" },
+      { "label": "Funzioni", "value": "Friggitrice ad aria, Forno, Grill, Piastra, Caffè" },
+      { "label": "Capacità forno", "value": "12L doppio livello" },
+      { "label": "Temperatura", "value": "80-230°C" },
+      { "label": "Dimensioni", "value": "45 × 26 × 28 cm" },
+      { "label": "Certificazioni", "value": "CE · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Messi a confronto",
+    "title": "Cosa guadagni scegliendo ChefStation™?",
+    "featureColumn": "Aspetto",
+    "winnerBadge": "VINCITORE",
+    "productColumn": "ChefStation™",
+    "competitorColumn": "5 Apparecchi Singoli",
+    "rows": [
+      { "feature": "Ingombro", "product": "✔ Un solo dispositivo, 45cm", "competitor": "5 apparecchi sul bancone" },
+      { "feature": "Modalità", "product": "✔ Air Fryer + Forno + Piastra + Caffè", "competitor": "Serve comprare tutto a parte" },
+      { "feature": "Manutenzione", "product": "✔ Componenti estraibili, un risciacquo", "competitor": "Pentole, teglie, filtri da pulire" },
+      { "feature": "Trasportabilità", "product": "✔ La porti ovunque", "competitor": "Impossibile spostare tutto" },
+      { "feature": "Facilità d'uso", "product": "✔ Una manopola, nessuna complicazione", "competitor": "5 istruzioni diverse" },
+      { "feature": "Spesa complessiva", "product": "✔ Solo 79€ (una tantum)", "competitor": "300-500€ in totale" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Contenuto completo",
+    "title": "Ecco cosa arriva a casa tua",
+    "items": [
+      { "icon": "box", "text": "ChefStation™ — Centro Cottura 5 in 1", "value": "€158,00", "valueType": "price" },
+      { "icon": "check", "text": "Cestello air fryer + Vassoio Crisp", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "check", "text": "2 griglie + 2 teglie inox", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "gift", "text": "Infusore tisane + mini guanti silicone", "value": "REGALO", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Prezzo Originale:",
+    "totalOriginalValue": "€239,00",
+    "totalCurrentLabel": "Oggi il tuo prezzo:",
+    "totalCurrentValue": "€79,00",
+    "totalSave": "Risparmio di €160,00 · Spedizione GRATUITA",
+    "ctaText": "ORDINA ORA"
+  },
+
+  "reviews": {
+    "eyebrow": "Le opinioni dei clienti",
+    "title": "Recensioni Certificate",
+    "rating": "4.8",
+    "totalCount": "18.743 recensioni",
+    "verifiedNote": "✓ Le recensioni sono validate da un ente indipendente esterno a questo sito.",
+    "showMoreText": "Carica altre recensioni",
+    "leaveReviewText": "Scrivi una recensione",
+    "verifiedBadge": "Acquisto confermato",
+    "sellerReplyLabel": "Risposta del venditore:",
+    "items": [
+      {
+        "initials": "CB",
+        "name": "Carla Benedetti",
+        "stars": 5,
+        "text": "La mia cucina è minuscola e non c'era più posto per nulla. Questo centro cottura mi ha salvata: faccio ogni cosa con un unico dispositivo. Il caffè la mattina, l'air fryer per la cena... non potrei essere più felice. Consegnata in due giorni, pagata al fattorino.",
+        "verified": true,
+        "sellerReply": "Carla, felici che il problema dello spazio sia risolto! La combinazione caffè + air fryer è la preferita dai nostri acquirenti. Grazie!"
+      },
+      {
+        "initials": "MF",
+        "name": "Massimo Ferraro",
+        "stars": 5,
+        "text": "l'air fryer funziona alla grande, le patatine escono croccanti come se fossero fritte ma con un filo d'olio. la adopero praticamente ogni giorno. pure il forno è ampio per le sue dimensioni, ci ho preparato una teglia di ortaggi senza difficoltà",
+        "verified": true,
+        "sellerReply": "Massimo, l'air fryer è la modalità più amata! Provi anche la funzione grill per tostare il pane, ne rimarrà stupito. Grazie del feedback."
+      },
+      {
+        "initials": "AG",
+        "name": "Antonella Grasso",
+        "stars": 5,
+        "text": "Acquistata per l'appartamento al mare dove manca una cucina attrezzata. La trasportiamo in auto, è leggera e ci prepariamo di tutto: dalla prima colazione alla cena. Il caffè filtro è eccellente e la piastra si scalda rapidamente. Pienamente soddisfatta.",
+        "verified": true,
+        "sellerReply": "Antonella, la casa vacanze è proprio uno degli usi per cui l'abbiamo pensata! Buone ferie e buon appetito."
+      },
+      {
+        "initials": "LP",
+        "name": "Luca Parente",
+        "stars": 4,
+        "text": "devo ammettere che la qualità rapportata al prezzo mi ha sorpreso. l'air fryer va bene, il forno riscalda a dovere, il caffè è gradevole. do 4 stelle per il momento perché la utilizzo da poco e preferisco provarla ancora un po' prima di dare il punteggio massimo",
+        "verified": true,
+        "sellerReply": "Luca, apprezziamo la sincerità! Siamo convinti che con un uso prolungato apprezzerà ancora di più ogni funzione. Ci tenga aggiornati!"
+      },
+      {
+        "initials": "SM",
+        "name": "Stefania Morelli",
+        "stars": 5,
+        "text": "Ho mandato in pensione la friggitrice ad aria, il tostapane e il bollitore. Ora ho il bancone sgombro e faccio le stesse identiche cose con un dispositivo solo. Pulirla è semplicissimo, i pezzi si smontano e si lavano in un attimo.",
+        "verified": true,
+        "sellerReply": "Stefania, avere il bancone libero è la soddisfazione più bella! Grazie per aver raccontato la sua esperienza."
+      },
+      {
+        "initials": "DR",
+        "name": "Daniele Ruggio",
+        "stars": 5,
+        "text": "la adopero soprattutto per il caffè filtro al mattino e l'air fryer alla sera. due sole funzioni che da sole giustificano la spesa. consegna rapidissima e pagata al corriere senza alcun intoppo",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "PC",
+        "name": "Paola Crivelli",
+        "stars": 5,
+        "text": "Semplicissima da utilizzare, mio marito che non mette mai piede in cucina ha capito come usarla in cinque minuti. Le manopole sono chiare e il timer con autospegnimento dà una tranquillità in più. Ordinata lunedì, ricevuta mercoledì.",
+        "verified": true,
+        "sellerReply": "Paola, la facilità d'uso è uno dei punti su cui abbiamo investito di più! Felici che anche suo marito si trovi a suo agio."
+      },
+      {
+        "initials": "AM",
+        "name": "Andrea Montini",
+        "stars": 5,
+        "text": "la utilizzo nel camper e devo ammettere che è impeccabile. poco ingombrante, copre tutte le esigenze e non devo caricare mille oggetti. il grill per tostare il pane al mattino è fantastico",
+        "verified": true,
+        "sellerReply": "Andrea, nel camper è l'ideale! Compatta e versatile, esattamente ciò che serve in viaggio. Buona strada!"
+      },
+      {
+        "initials": "GT",
+        "name": "Gloria Tassone",
+        "stars": 5,
+        "text": "Non ci credevo nel caffè filtro ma devo riconoscere che è davvero buono. E la tisana alla sera prima di andare a letto è diventata una routine. Tutto con un unico apparecchio, senza invadere la cucina di accessori. Lo raccomando.",
+        "verified": true,
+        "sellerReply": "Gloria, il caffè filtro ha convinto anche i più dubbiosi! La tisana della buonanotte è un rituale che piace a tantissimi. Grazie!"
+      },
+      {
+        "initials": "FN",
+        "name": "Franco Nobile",
+        "stars": 5,
+        "text": "credevo fosse il classico marchingegno inutile e invece va benissimo. l'air fryer è vera, le patatine escono croccanti. il forno è compatto ma grazie al doppio livello ci prepari un sacco di roba. per 79 euro non si può pretendere di meglio",
+        "verified": true,
+        "sellerReply": "Franco, felici di aver ribaltato lo scetticismo! Il doppio ripiano è il segreto per sfruttare al massimo lo spazio interno. Grazie della fiducia."
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Scrivi la tua recensione",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "Punteggio",
+    "textLabel": "La tua opinione",
+    "textPlaceholder": "Descrivi la tua esperienza...",
+    "submitText": "Pubblica Recensione",
+    "successTitle": "Grazie per il tuo contributo!",
+    "successText": "La tua recensione è in fase di verifica da parte di un ente indipendente esterno a questo sito. Le recensioni inviate da chi non ha acquistato il prodotto non verranno pubblicate, a tutela dell'autenticità.",
+    "closeText": "Chiudi"
+  },
+
+  "orderSteps": {
+    "eyebrow": "COME ACQUISTARE",
+    "title": "Ordina in 3 passaggi semplici",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Compila il form",
+        "description": "Inserisci le tue informazioni nel modulo d'ordine qui sotto."
+      },
+      {
+        "icon": "phone",
+        "title": "Verifica telefonica",
+        "description": "Ti contattiamo per telefono o su WhatsApp per verificare i dati."
+      },
+      {
+        "icon": "cash",
+        "title": "Paghi alla consegna",
+        "description": "In 24/48h il pacco arriva con corriere tracciabile. Paghi in contanti alla ricezione."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Form d'Ordine",
+    "title": "Finalizza il tuo acquisto",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "La promozione -50% termina tra:",
+    "stockWarning": "Solo <strong>8 pezzi</strong> disponibili a questo prezzo",
+    "summaryTitle": "Dettaglio Ordine",
+    "summaryLines": [
+      { "label": "ChefStation™ + Accessori", "value": "€79,00", "type": "normal" },
+      { "label": "Spedizione rapida 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Spese di Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€79,00",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo di Consegna *", "placeholder": "Via, Numero, Città, CAP" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "CONFERMA ORDINE",
+    "submitSubtext": "Paghi in Contanti alla Consegna",
+    "reassurance": "Consegna 24/48h · Garanzia 24 mesi · Supporto clienti<br><strong>Nessuna carta necessaria.</strong> Sarai richiamato per conferma."
+  },
+
+  "faq": {
+    "eyebrow": "Risposte rapide",
+    "title": "Qualche dubbio? Trovi tutto qui.",
+    "items": [
+      { "question": "Come posso effettuare l'ordine?", "answer": "Premi il pulsante d'acquisto, compila il form con le tue informazioni e conferma. Sarai ricontattato telefonicamente o via WhatsApp per la verifica e riceverai il pacco direttamente a domicilio, con pagamento in contanti." },
+      { "question": "Come avviene la spedizione?", "answer": "La spedizione è completamente gratuita. Dopo la conferma dell'ordine, la consegna avviene in circa 24/48h lavorative." },
+      { "question": "E se non sono soddisfatto?", "answer": "Puoi ottenere il rimborso integrale restituendo il prodotto entro 30 giorni dalla ricezione. Veniamo noi a ritirarlo e ti restituiamo l'intera cifra pagata." },
+      { "question": "Se ho problemi dopo 30 giorni?", "answer": "Nessun problema, tutti i nostri prodotti sono coperti da garanzia di 2 anni." },
+      { "question": "Come chiedo un reso o assistenza?", "answer": "Per richiedere supporto o un reso dopo l'acquisto, puoi usare il modulo di contatto presente sul sito oppure scrivere all'indirizzo email indicato nel footer." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€158",
+    "newPrice": "€79",
+    "buttonText": "ORDINA ORA",
+    "buttonSubtext": "Paghi Alla Consegna"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 79.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
+  "ty": {
+    "title": "Ordine Ricevuto!",
+    "subtitle": "Il tuo ordine è stato registrato correttamente.",
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Dettaglio Ordine",
+    "accessoriesLabel": "+ Accessori compresi",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — nessun anticipo richiesto",
+    "yourDataTitle": "I Tuoi Dati Personali",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "E adesso?",
+    "message": "Sarai ricontattato telefonicamente o via WhatsApp per confermare l'ordine e programmare la consegna.",
+    "steps": [
+      "Riceverai una telefonata o un messaggio WhatsApp di verifica",
+      "Il pacco sarà spedito entro 24/48h",
+      "Paghi in contanti al corriere alla ricezione"
+    ],
+    "footerText": "Garanzia 24 Mesi · 30 Giorni di Reso · Supporto Dedicato"
+  }
+}
