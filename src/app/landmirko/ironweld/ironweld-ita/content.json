@@ -22,10 +22,10 @@
 
   "hero": {
     "badge": "Tecnologia 2026",
-    "title": "Saldi Qualsiasi Metallo",
-    "titleHighlight": "con Una Sola Mano.",
-    "titleSuffix": "1,5 kg. Spina di Casa. Nessuna Esperienza Necessaria.",
-    "subtitle": "La potenza di un'officina racchiusa in <strong>un formato ultracompatto</strong>. Collegala, imposta, parti. Risultato perfetto <strong>fin dal primo utilizzo</strong>.",
+    "title": "Ripara Tutto da Solo.",
+    "titleHighlight": "1,5 kg, Una Mano.",
+    "titleSuffix": "",
+    "subtitle": "Saldatrice portatile IGBT: spina di casa, <strong>nessuna esperienza</strong>. Funziona <strong>al primo colpo</strong>.",
     "socialProof": {
       "rating": "4.8/5",
       "count": "14.729 recensioni verificate"
@@ -45,14 +45,14 @@
 
   "benefits": {
     "items": [
-      { "title": "Inverter IGBT:", "description": "fiamma costante, giunzione netta, nessuno spruzzo" },
-      { "title": "Hot Start:", "description": "innesco immediato, addio elettrodi che si incollano" },
-      { "title": "20-120A regolabili:", "description": "dalla lamiera leggera ai profili robusti, un solo strumento" },
-      { "title": "Solo 1,5 kg:", "description": "lavori in verticale, sopratesta, in qualsiasi posizione" },
-      { "title": "Protezione surriscaldamento:", "description": "blocco automatico di sicurezza, nessun rischio di danno" },
-      { "title": "Presa di casa + prolunga 10m:", "description": "zero impianti speciali, avvolgimento automatico incluso" },
-      { "title": "Bacchette standard 2,5-3,2 mm:", "description": "reperibili ovunque, in ogni negozio di ferramenta" },
-      { "title": "Kit PRO completo:", "description": "visiera, guantoni, 20 elettrodi, magneti, cavo estensore" }
+      { "title": "Arco IGBT stabile:", "description": "cordone netto, zero spruzzi, risultato da officina" },
+      { "title": "Accensione istantanea:", "description": "Hot Start integrato, l'elettrodo non si incolla mai" },
+      { "title": "Da 20 a 120 Ampere:", "description": "lamiera sottile o tubolare pesante, una sola macchina" },
+      { "title": "Pesa 1,5 kg:", "description": "saldi sopra la testa, dietro un tubo, ovunque" },
+      { "title": "Anti-surriscaldamento:", "description": "si blocca da sola, riparte quando è pronta" },
+      { "title": "Spina domestica + cavo 10m:", "description": "niente trifase, il cavo si riavvolge da solo" },
+      { "title": "Elettrodi universali:", "description": "2,5-3,2 mm, li compri in qualsiasi ferramenta" },
+      { "title": "9 accessori PRO inclusi:", "description": "maschera, guanti, magneti, elettrodi, prolunga" }
     ]
   },
 
@@ -94,8 +94,8 @@
   },
 
   "problems": {
-    "eyebrow": "Il problema",
-    "title": "Stanco di saldatrici che non mantengono le promesse?",
+    "eyebrow": "Basta frustrazioni",
+    "title": "Hai buttato soldi in saldatrici inutili?",
     "items": [
       { "icon": "money", "titleBold": "Si surriscaldano dopo <strong>appena qualche minuto</strong> di lavoro", "text": "" },
       { "icon": "warning", "titleBold": "Giunzioni <strong>deboli e disomogenee</strong> che cedono subito", "text": "" },
@@ -107,8 +107,8 @@
   },
 
   "features": {
-    "eyebrow": "Cosa la rende unica",
-    "title": "Il tuo garage diventa un'officina professionale in un attimo.",
+    "eyebrow": "La differenza",
+    "title": "Da garage a officina in 60 secondi.",
     "items": [
       {
         "image": "/images/mirko/ironweld/angle/1.webp",
@@ -138,8 +138,8 @@
   },
 
   "howItWorks": {
-    "eyebrow": "Facilissimo",
-    "title": "Collega, imposta, salda. Stop.",
+    "eyebrow": "3 mosse",
+    "title": "Spina. Manopola. Via.",
     "image": "",
     "imageAlt": "",
     "steps": [
@@ -155,8 +155,8 @@
   },
 
   "specs": {
-    "eyebrow": "Specifiche",
-    "title": "Scheda Tecnica",
+    "eyebrow": "Dati tecnici",
+    "title": "Numeri che parlano chiaro",
     "items": [
       { "label": "Tecnologia", "value": "Inverter IGBT" },
       { "label": "Corrente", "value": "20-120A (5 livelli)" },
@@ -168,8 +168,8 @@
   },
 
   "comparison": {
-    "eyebrow": "Il Confronto",
-    "title": "Perché conviene rispetto alle alternative tradizionali?",
+    "eyebrow": "Ironweld vs il resto",
+    "title": "Guarda tu stesso la differenza.",
     "featureColumn": "Caratteristica",
     "winnerBadge": "VINCITORE",
     "productColumn": "Bowek Ironweld™",
@@ -185,8 +185,8 @@
   },
 
   "package": {
-    "eyebrow": "Tutto incluso",
-    "title": "Ecco cosa arriva a casa tua",
+    "eyebrow": "Nel pacco",
+    "title": "Apri la scatola e sei operativo",
     "items": [
       { "icon": "box", "text": "Saldatrice Ironweld™ Inverter IGBT", "value": "€139,00", "valueType": "price" },
       { "icon": "box", "text": "Valigetta rigida + cavo massa", "value": "INCLUSO", "valueType": "included" },
@@ -203,8 +203,8 @@
   },
 
   "reviews": {
-    "eyebrow": "Le Opinioni dei Clienti",
-    "title": "Recensioni Verificate",
+    "eyebrow": "Chi l'ha provata",
+    "title": "Giudizi reali da acquirenti veri",
     "rating": "4.8",
     "totalCount": "14.729 recensioni",
     "verifiedNote": "✓ Ogni recensione viene controllata da un ente di verifica indipendente e esterno.",
@@ -310,8 +310,8 @@
   },
 
   "orderSteps": {
-    "eyebrow": "COME ORDINARE",
-    "title": "Tre passaggi e hai fatto",
+    "eyebrow": "ORDINA SUBITO",
+    "title": "Semplice come 1, 2, 3",
     "steps": [
       {
         "icon": "clipboard",
@@ -359,8 +359,8 @@
   },
 
   "faq": {
-    "eyebrow": "Domande frequenti",
-    "title": "Qualche dubbio? Trovi tutto qui.",
+    "eyebrow": "FAQ",
+    "title": "Le risposte che cerchi, tutte qui.",
     "items": [
       { "question": "Come posso effettuare l'ordine?", "answer": "Premi il pulsante di acquisto, compila il form con i tuoi dati e invia la richiesta. Verrai ricontattato via telefono o WhatsApp per la conferma, dopodiche' il pacco ti arriva a casa con pagamento in contanti alla consegna." },
       { "question": "Quanto costa la spedizione?", "answer": "La spedizione e' completamente gratuita. Dopo la conferma dell'ordine, la consegna avviene entro 24/48 ore lavorative." },
