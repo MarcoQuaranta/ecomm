@@ -23,9 +23,9 @@
   "hero": {
     "badge": "Tecnologia 2026",
     "title": "Ripara Tutto da Solo.",
-    "titleHighlight": "1,5 kg, Una Mano.",
+    "titleHighlight": "1,5 kg, lo usi con una Mano.",
     "titleSuffix": "",
-    "subtitle": "Saldatrice portatile IGBT: spina di casa, <strong>nessuna esperienza</strong>. Funziona <strong>al primo colpo</strong>.",
+    "subtitle": "Saldatrice inverter portatile: spina di casa, <strong>nessuna esperienza</strong>. Funziona <strong>al primo colpo</strong>.",
     "socialProof": {
       "rating": "4.8/5",
       "count": "14.729 recensioni verificate"
@@ -45,7 +45,7 @@
 
   "benefits": {
     "items": [
-      { "title": "Arco IGBT stabile:", "description": "cordone netto, zero spruzzi, risultato da officina" },
+      { "title": "Tecnologia inverter IGBT:", "description": "arco stabile, cordone netto, zero spruzzi" },
       { "title": "Accensione istantanea:", "description": "Hot Start integrato, l'elettrodo non si incolla mai" },
       { "title": "Da 20 a 120 Ampere:", "description": "lamiera sottile o tubolare pesante, una sola macchina" },
       { "title": "Pesa 1,5 kg:", "description": "saldi sopra la testa, dietro un tubo, ovunque" },
