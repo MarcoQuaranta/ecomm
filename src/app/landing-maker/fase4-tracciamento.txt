@@ -83,8 +83,16 @@ La conversione (evento che conta come vendita) e' HARDCODATA nel ty/page.tsx.
 - ty/page.tsx e' un CLIENT COMPONENT ('use client')
 - Contiene un useEffect che spara la conversione al caricamento
 - Protezione anti-duplicazione: sessionStorage con chiave `cf_{orderNumber}`
-- Google Ads: gtag('event', 'conversion', { send_to, value, currency, transaction_id })
-- Meta Pixel: fbq('track', 'Purchase', { value, currency }, { eventID })
+- IMPORTANTE: la ty page deve CARICARE LO SCRIPT di tracking da zero.
+  Quando l'utente arriva sulla ty, il browser ha fatto un FULL PAGE RELOAD
+  (window.location.href), quindi TUTTO il JavaScript della landing e' perso.
+  gtag e fbq NON esistono sulla ty page. NON usare MAI
+  `if (typeof w.gtag === 'function')` o `if (typeof w.fbq === 'function')`.
+  Gli script vanno caricati DENTRO il useEffect della ty page stessa.
+- Google Ads (-gg): carica gtag.js dinamicamente, usa script.onload per sparare
+  la conversione DOPO che lo script e' caricato
+- Meta Pixel (-fb): usa lo snippet UFFICIALE Facebook (callMethod/queue pattern)
+  che accoda gli eventi e li processa quando fbevents.js e' pronto
 - La conversione scatta UNA SOLA VOLTA per ordine (anche se l'utente refresha)
 
 PERCHE' QUESTA ARCHITETTURA:
@@ -233,7 +241,13 @@ NON serve scrivere questa logica nel page.tsx. Il page.tsx passa SOLO i dati.
 
 ### C. TY/PAGE.TSX — conversione tracking (HARDCODATA)
 
-Per cartelle -gg (Google Ads):
+ATTENZIONE: La ty page deve caricare LO SCRIPT di tracking da zero.
+Quando l'utente arriva sulla ty, window.location.href ha fatto un FULL PAGE RELOAD.
+Tutto il JavaScript della landing e' stato distrutto. gtag e fbq NON esistono.
+NON usare MAI `if (typeof w.gtag === 'function')` o `if (typeof w.fbq === 'function')`.
+Lo script VA CARICATO dentro il useEffect della ty page stessa.
+
+Per cartelle -gg (Google Ads) — carica gtag.js e usa script.onload:
 ```tsx
 'use client';
 
@@ -250,22 +264,32 @@ export default function TyPage() {
 
     const transactionId = `${orderNumber}_${Date.now()}`;
 
-    const w = window as any;
-    if (typeof w.gtag === 'function') {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX';
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      const w = window as any;
+      w.dataLayer = w.dataLayer || [];
+      w.gtag = function () { w.dataLayer.push(arguments); };
+      w.gtag('js', new Date());
+      w.gtag('config', 'AW-XXXXXXXXX');
+
       w.gtag('event', 'conversion', {
         send_to: 'AW-XXXXXXXXX/CONVERSION_LABEL',
         value: PREZZO_SCONTATO,
         currency: 'VALUTA',
         transaction_id: transactionId,
       });
-    }
+    };
   }, []);
 
   return <TyTemplateMirko content={content} />;
 }
 ```
 
-Per cartelle -fb (Meta Pixel):
+Per cartelle -fb (Meta Pixel) — snippet ufficiale Facebook con callMethod/queue:
 ```tsx
 'use client';
 
@@ -283,12 +307,27 @@ export default function TyPage() {
     const eventId = `${orderNumber}_${Date.now()}`;
 
     const w = window as any;
-    if (typeof w.fbq === 'function') {
-      w.fbq('track', 'Purchase', {
-        value: PREZZO_SCONTATO,
-        currency: 'VALUTA',
-      }, { eventID: eventId });
-    }
+    const n: any = w.fbq = function () {
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+    };
+    w._fbq = n;
+    n.push = n;
+    n.loaded = true;
+    n.version = '2.0';
+    n.queue = [];
+    const fbScript = document.createElement('script');
+    fbScript.async = true;
+    fbScript.src = 'https://connect.facebook.net/en_US/fbevents.js';
+    const firstScript = document.getElementsByTagName('script')[0];
+    if (firstScript?.parentNode) firstScript.parentNode.insertBefore(fbScript, firstScript);
+    else document.head.appendChild(fbScript);
+
+    w.fbq('init', 'PIXEL_ID');
+    w.fbq('track', 'PageView');
+    w.fbq('track', 'Purchase', {
+      value: PREZZO_SCONTATO,
+      currency: 'VALUTA',
+    }, { eventID: eventId });
   }, []);
 
   return <TyTemplateMirko content={content} />;
@@ -297,11 +336,26 @@ export default function TyPage() {
 
 REGOLE CRITICHE:
 - ty/page.tsx e' un CLIENT COMPONENT: DEVE avere 'use client'
+- CARICARE LO SCRIPT DI TRACKING dentro il useEffect (NON assumere che sia gia' caricato)
+- Google (-gg): creare <script> per gtag.js, usare script.onload per sparare conversione
+  DOPO che lo script e' caricato. Sostituire AW-XXXXXXXXX con l'ID reale in 3 posti:
+  1. script.src URL
+  2. w.gtag('config', ...)
+  3. send_to nel conversion event
+- Facebook (-fb): usare snippet UFFICIALE (callMethod/queue pattern) — questo accoda
+  gli eventi e li processa quando fbevents.js e' pronto. NON serve onload.
 - send_to: formato 'AW-ID/LABEL' (Google)
 - value: prezzo scontato NUMERICO (es: 299, 69.99), MAI stringa
 - currency: codice ISO valuta (es: 'PLN', 'EUR', 'CZK')
-- La guardia sessionStorage DEVE essere presente (anti-duplicazione)
+- La guardia sessionStorage DEVE essere PRIMA del caricamento script (se duplicato,
+  NON caricare nemmeno lo script — return immediato)
 - transaction_id (Google) e eventID (Facebook) DEVONO essere presenti
+
+ERRORE VECCHIO DA NON RIPETERE MAI:
+Il vecchio codice faceva `if (typeof w.gtag === 'function')` o
+`if (typeof w.fbq === 'function')` — questo NON FUNZIONA perche' sulla ty page
+gli script non sono mai stati caricati (full page reload cancella tutto).
+Risultato: la conversione non scattava MAI. Usa SEMPRE i pattern qui sopra.
 
 ================================================================================
 STEP 3 - VERIFICA
@@ -315,9 +369,13 @@ Dopo aver inserito il tracciamento, verifica OGNI landing:
 [ ] page.tsx: networkConfig con endpoint, uid, key, offerId, lpId corretti
 [ ] page.tsx: NO 'use client' (e' un Server Component)
 [ ] ty/page.tsx: 'use client' presente
-[ ] ty/page.tsx: guardia sessionStorage cf_{orderNumber} presente
-[ ] ty/page.tsx: gtag conversion con send_to, value, currency, transaction_id
+[ ] ty/page.tsx: guardia sessionStorage cf_{orderNumber} PRIMA di tutto (return blocca script)
+[ ] ty/page.tsx: CARICA gtag.js con document.createElement('script')
+[ ] ty/page.tsx: script.onload contiene gtag config + conversion event
+[ ] ty/page.tsx: AW-ID presente in 3 posti (script.src, config, send_to)
+[ ] ty/page.tsx: send_to formato 'AW-ID/LABEL'
 [ ] ty/page.tsx: value = prezzo scontato locale (numero, non stringa)
+[ ] ty/page.tsx: NON usa `if (typeof w.gtag === 'function')` (VIETATO)
 
 ### Per cartelle -fb:
 [ ] content.json: facebookPixelId presente (solo numeri)
@@ -325,9 +383,13 @@ Dopo aver inserito il tracciamento, verifica OGNI landing:
 [ ] page.tsx: networkConfig con endpoint, uid, key, offerId, lpId corretti
 [ ] page.tsx: NO 'use client' (e' un Server Component)
 [ ] ty/page.tsx: 'use client' presente
-[ ] ty/page.tsx: guardia sessionStorage cf_{orderNumber} presente
-[ ] ty/page.tsx: fbq Purchase con value, currency, eventID
+[ ] ty/page.tsx: guardia sessionStorage cf_{orderNumber} PRIMA di tutto (return blocca script)
+[ ] ty/page.tsx: snippet UFFICIALE Facebook (callMethod/queue pattern)
+[ ] ty/page.tsx: carica fbevents.js con createElement('script')
+[ ] ty/page.tsx: fbq('init', 'PIXEL_ID') + fbq('track', 'PageView')
+[ ] ty/page.tsx: fbq('track', 'Purchase', {value, currency}, {eventID})
 [ ] ty/page.tsx: value = prezzo scontato locale (numero, non stringa)
+[ ] ty/page.tsx: NON usa `if (typeof w.fbq === 'function')` (VIETATO)
 
 ### Coerenza cross-piattaforma:
 [ ] value UGUALE tra -gg e -fb della stessa nazione

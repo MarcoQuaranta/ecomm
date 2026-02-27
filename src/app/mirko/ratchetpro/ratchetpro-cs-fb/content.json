@@ -372,11 +372,10 @@
     "conversionLabel": "",
     "conversionValue": 1999,
     "conversionCurrency": "CZK",
-    "facebookPixelId": "",
+    "facebookPixelId": "1576025786901423",
     "network": {
-      "apiEndpoint": "",
-      "offerId": "",
-      "params": {}
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=427&uid=019855d0-397a-72ee-8df5-c5026966105a&lp=427"
     }
   },
 

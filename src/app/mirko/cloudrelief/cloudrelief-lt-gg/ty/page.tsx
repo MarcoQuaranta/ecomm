@@ -13,16 +13,25 @@ export default function TyPage() {
 
     const transactionId = `${orderNumber}_${Date.now()}`;
 
-    // Google Ads Conversion
-    const w = window as any;
-    if (typeof w.gtag === 'function') {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17935147002';
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      const w = window as any;
+      w.dataLayer = w.dataLayer || [];
+      w.gtag = function () { w.dataLayer.push(arguments); };
+      w.gtag('js', new Date());
+      w.gtag('config', 'AW-17935147002');
+
       w.gtag('event', 'conversion', {
         send_to: 'AW-17935147002/2HnoCOeazvcbEPq_kuhC',
         value: 69,
         currency: 'EUR',
         transaction_id: transactionId,
       });
-    }
+    };
   }, []);
 
   return <TyTemplateMirko content={content} />;

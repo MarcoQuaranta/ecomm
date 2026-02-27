@@ -1,0 +1,411 @@
+{
+  "seo": {
+    "title": "RatchetPro 2in1™ - Un Solo Utensile per Bulloni e Viti",
+    "description": "Cricchetto elettrico 2-in-1 con velocità regolabile, 2 batterie al litio e valigetta professionale. Consegna rapida, paghi al corriere."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 138.00,
+    "currentPrice": 69.00,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "text": "Consegna Rapida in 24/48h · Paghi al Corriere · 2 Anni di Garanzia"
+  },
+
+  "urgencyBanner": {
+    "text": "Scorte Limitate —",
+    "highlight": "Rimangono solo 6 unità",
+    "suffix": "a prezzo scontato"
+  },
+
+  "hero": {
+    "badge": "Novità 2026",
+    "title": "Svita, Avvita e Stringi",
+    "titleHighlight": "Tutto in Uno",
+    "titleSuffix": "Senza Stancarti",
+    "subtitle": "Il cricchetto elettrico che gestisce bulloni e viti con un unico utensile. Velocità variabile, testa compatta per gli angoli più difficili, 2 batterie e kit completo in valigetta.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "14.731 utilizzatori soddisfatti"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/ratchetpro/carosello/1.webp", "alt": "RatchetPro 2in1 vista frontale" },
+      { "src": "/images/mirko/ratchetpro/carosello/2.webp", "alt": "RatchetPro 2in1 in uso" },
+      { "src": "/images/mirko/ratchetpro/carosello/3.webp", "alt": "RatchetPro 2in1 dettaglio" },
+      { "src": "/images/mirko/ratchetpro/carosello/4.webp", "alt": "RatchetPro 2in1 kit completo" },
+      { "src": "/images/mirko/ratchetpro/carosello/5.webp", "alt": "RatchetPro 2in1 valigetta" },
+      { "src": "/images/mirko/ratchetpro/carosello/6.webp", "alt": "RatchetPro 2in1 accessori" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Due funzioni, un utensile:", "description": "gestisci bulloni con bussole 3/8\" e viti con bit 1/4\" senza cambiare attrezzo." },
+      { "title": "Velocità sotto controllo:", "description": "regoli la potenza col grilletto. Niente viti rovinate, niente filetti danneggiati." },
+      { "title": "Lavora negli angoli impossibili:", "description": "la testa compatta con snodo raggiunge i punti più difficili." },
+      { "title": "Cambio direzione istantaneo:", "description": "passi da avvitare a svitare con un solo gesto, senza mollare la presa." },
+      { "title": "Doppia batteria in dotazione:", "description": "mentre una è in carica, lavori con l'altra. Mai fermo." },
+      { "title": "Luce LED frontale:", "description": "illumina la zona di lavoro anche in garage, sotto il lavandino o dietro un mobile." },
+      { "title": "Pronto all'uso, niente extra:", "description": "bussole, bit, prolunghe, snodo flessibile e valigetta. Tutto dentro la scatola." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "RatchetPro 2in1™",
+    "originalPriceLabel": "Prezzo originale:",
+    "discountLabel": "SCONTO 69€ (-50%)",
+    "shippingLabel": "Spedizione Veloce:",
+    "shippingValue": "Gratuita",
+    "guaranteeLabel": "Garanzia 2 Anni Inclusa",
+    "offerToggleText": "Guarda cosa è incluso nel kit",
+    "offerItems": [
+      { "text": "RatchetPro 2in1™ — Cricchetto e Avvitatore Elettrico", "badge": null },
+      { "text": "Set Bussole 3/8\"", "badge": null },
+      { "text": "Set Bit 1/4\" + Adattatore Quick-Change", "badge": null },
+      { "text": "Prolunghe + Snodo Flessibile", "badge": null },
+      { "text": "2 Batterie Li-ion 20V + Caricabatterie", "badge": null },
+      { "text": "Valigetta Professionale", "badge": "OMAGGIO" },
+      { "text": "Garanzia 2 Anni + Supporto Tecnico", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ORDINA ORA",
+    "mainSubtext": "Paghi in Contanti alla Consegna",
+    "subNote": "Nessun rischio: paghi solo quando hai il pacco in mano"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Paghi alla Consegna", "color": "green" },
+      { "icon": "truck", "text": "Consegna in 24/48h", "color": "blue" },
+      { "icon": "return", "text": "Reso Gratuito 30 Giorni", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Situazione Comune",
+    "title": "Ti succede anche questo?",
+    "items": [
+      { "icon": "timer", "titleBold": "Stringi bulloni a mano e il polso non regge più", "text": "— dopo 10 minuti sei già stanco." },
+      { "icon": "stiffness", "titleBold": "L'avvitatore è troppo grosso per i punti stretti", "text": "e col cricchetto tradizionale perdi tempo." },
+      { "icon": "warning", "titleBold": "Servono due attrezzi diversi per viti e bulloni", "text": "— più spesa e più ingombro nella cassetta." }
+    ],
+    "solutionTitle": "C'è un modo più intelligente.",
+    "solutionText": "Un singolo utensile elettrico che lavora sia su bulloni che su viti, con velocità regolabile e kit professionale completo."
+  },
+
+  "features": {
+    "eyebrow": "Cosa lo rende unico",
+    "title": "Un utensile, due anime. Nessun limite.",
+    "items": [
+      {
+        "image": "/images/mirko/ratchetpro/angle/1.webp",
+        "imageAlt": "Doppio attacco 2-in-1",
+        "tag": "DOPPIA FUNZIONE",
+        "tagColor": "green",
+        "title": "Bussole e Bit Sullo Stesso Utensile",
+        "description": "Attacco <strong>3/8\" per bussole</strong> (bulloni e dadi) + adattatore <strong>1/4\" per bit</strong> (viti). La <strong>velocità variabile</strong> tramite grilletto ti dà il <strong>pieno controllo</strong> sulla forza."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/2.webp",
+        "imageAlt": "Uso professionale",
+        "tag": "POTENZA REALE",
+        "tagColor": "orange",
+        "title": "Pensato Per Chi Lavora Sul Serio",
+        "description": "<strong>81 Nm di coppia</strong> e un motore capace di <strong>450 giri al minuto</strong>. Resiste al lavoro quotidiano in officina, cantiere o magazzino senza cedere."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/3.webp",
+        "imageAlt": "Spazi stretti",
+        "tag": "ACCESSO TOTALE",
+        "tagColor": "blue",
+        "title": "Raggiunge i Punti Più Difficili",
+        "description": "Testa sottile + <strong>snodo flessibile</strong> in dotazione. <strong>LED integrato</strong> per lavorare anche al buio. Perfetto dietro i sanitari, sotto il cofano, tra le tubature."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/4.webp",
+        "imageAlt": "Kit completo con 2 batterie",
+        "tag": "TUTTO DENTRO",
+        "tagColor": "green",
+        "title": "Apri la Valigetta e Lavori Subito",
+        "description": "<strong>2 batterie 20V</strong> (una in uso, l'altra in carica), set bussole, set bit, prolunghe, snodo e <strong>valigetta rigida</strong>. Non manca niente."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Facilissimo",
+    "title": "Tre passaggi e il lavoro è fatto.",
+    "image": "",
+    "imageAlt": "Come funziona",
+    "steps": [
+      { "title": "Inserisci", "description": "Bussola per i bulloni o bit per le viti. Il cambio è immediato." },
+      { "title": "Aziona", "description": "Il grilletto regola la velocità: più pressione, più giri." },
+      { "title": "Fatto", "description": "81 Nm di coppia fanno tutto il lavoro pesante al posto tuo." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ORDINA ORA CON IL 50% DI SCONTO",
+    "subtext": "Paghi in Contanti alla Consegna"
+  },
+
+  "specs": {
+    "eyebrow": "Dati Tecnici",
+    "title": "Scheda Tecnica Completa",
+    "items": [
+      { "label": "Tipologia", "value": "Cricchetto elettrico 2-in-1 (bulloni + viti)" },
+      { "label": "Attacco bussole", "value": "3/8\" (quadro)" },
+      { "label": "Attacco bit", "value": "1/4\" esagonale (con adattatore)" },
+      { "label": "Coppia massima", "value": "81 Nm (60 ft-lbs)" },
+      { "label": "Velocità", "value": "0-450 RPM (variabile)" },
+      { "label": "Tensione", "value": "20V" },
+      { "label": "Batteria", "value": "Li-ion 2.0 Ah (x2 incluse)" },
+      { "label": "Ricarica", "value": "Caricabatterie rapido incluso" },
+      { "label": "Rotazione", "value": "Avanti / Indietro (switch rapido)" },
+      { "label": "LED", "value": "Luce di lavoro frontale integrata" },
+      { "label": "Certificazioni", "value": "CE" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Confronto Diretto",
+    "title": "Perché conviene rispetto alle alternative?",
+    "featureColumn": "Caratteristica",
+    "winnerBadge": "SCELTA TOP",
+    "productColumn": "RatchetPro 2in1™",
+    "competitorColumn": "Cricchetto Manuale / Avvitatore",
+    "rows": [
+      { "feature": "Doppia funzione", "product": "✔ Bulloni + viti in uno", "competitor": "Solo bulloni O solo viti" },
+      { "feature": "Sforzo fisico", "product": "✔ Nullo, fa tutto il motore", "competitor": "Braccio e polso sotto pressione" },
+      { "feature": "Angoli stretti", "product": "✔ Testa compatta + snodo", "competitor": "L'avvitatore non passa" },
+      { "feature": "Rapidità", "product": "✔ 450 giri/min", "competitor": "Lento e faticoso a mano" },
+      { "feature": "Accessori inclusi", "product": "✔ Bussole + bit + valigetta", "competitor": "Tutto da acquistare a parte" },
+      { "feature": "Investimento", "product": "✔ Solo 69€ (tutto compreso)", "competitor": "280-350€ (2 attrezzi separati)" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Kit completo",
+    "title": "Ecco cosa trovi nel pacco",
+    "items": [
+      { "icon": "box", "text": "RatchetPro 2in1™ — Cricchetto e Avvitatore Elettrico", "value": "€138,00", "valueType": "price" },
+      { "icon": "box", "text": "Set Bussole 3/8\"", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "box", "text": "Set Bit 1/4\" + Adattatore Quick-Change", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "cable", "text": "Prolunghe + Snodo Flessibile", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "box", "text": "2 Batterie Li-ion 20V + Caricabatterie", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "gift", "text": "Valigetta Professionale", "value": "OMAGGIO", "valueType": "gift" },
+      { "icon": "shield", "text": "Garanzia 2 Anni + Supporto Tecnico", "value": "INCLUSO", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Prezzo Originale:",
+    "totalOriginalValue": "€197,00",
+    "totalCurrentLabel": "Il tuo prezzo oggi:",
+    "totalCurrentValue": "€69,00",
+    "totalSave": "Risparmi €128,00 · Spedizione GRATUITA",
+    "ctaText": "ORDINA ORA"
+  },
+
+  "reviews": {
+    "eyebrow": "Le Opinioni",
+    "title": "Chi l'ha provato dice questo",
+    "rating": "4.8",
+    "totalCount": "14.731 recensioni",
+    "verifiedNote": "✓ Tutte le recensioni sono verificate da un team indipendente esterno.",
+    "showMoreText": "Carica altre recensioni",
+    "leaveReviewText": "Scrivi la tua recensione",
+    "verifiedBadge": "Acquisto verificato",
+    "sellerReplyLabel": "Risposta del venditore:",
+    "items": [
+      {
+        "initials": "DP",
+        "name": "Davide Pellegrini",
+        "stars": 5,
+        "text": "Lo uso sia per la moto che per i lavori domestici. Prima portavo sempre dietro il cricchetto manuale e l'avvitatore, adesso basta questo. Il passaggio da bussola a bit è rapidissimo. Pagato al corriere, arrivato in 48 ore.",
+        "verified": true,
+        "sellerReply": "Davide, averli entrambi in un solo utensile è proprio il vantaggio principale. Grazie per il feedback!"
+      },
+      {
+        "initials": "VR",
+        "name": "Vincenzo Ruggiero",
+        "stars": 5,
+        "text": "faccio l'elettricista e negli spazi dietro i quadri elettrici il mio vecchio avvitatore non ci entrava. con lo snodo flessibile di questo raggiungo qualsiasi punto. la velocità regolabile è fondamentale per non rovinare i fissaggi",
+        "verified": true,
+        "sellerReply": "Vincenzo, un professionista che lo usa ogni giorno è la prova migliore. Lo snodo flessibile è pensato proprio per queste situazioni!"
+      },
+      {
+        "initials": "CM",
+        "name": "Claudia Marchetti",
+        "stars": 5,
+        "text": "Regalato a mio marito che si lamentava sempre del dolore al polso con il cricchetto tradizionale. Adesso finisce i lavori nella metà del tempo e senza sforzo. Anch'io l'ho provato per appendere degli scaffali e va benissimo.",
+        "verified": true,
+        "sellerReply": "Claudia, quando anche chi non è del settore lo usa con facilità, vuol dire che abbiamo centrato l'obiettivo. Grazie!"
+      },
+      {
+        "initials": "EM",
+        "name": "Enrico Mazzola",
+        "stars": 5,
+        "text": "sono carpentiere e lo uso praticamente ogni giorno. 81 Nm bastano e avanzano per il tipo di lavoro che faccio. le due batterie sono la svolta perché non devo mai aspettare la ricarica. la valigetta è pratica da portare in cantiere",
+        "verified": true,
+        "sellerReply": "Enrico, un carpentiere che lo usa quotidianamente è il collaudo definitivo. Le 2 batterie servono proprio a non fermarti mai. Grazie!"
+      },
+      {
+        "initials": "GL",
+        "name": "Giuseppe Lombardo",
+        "stars": 4,
+        "text": "fa quello che promette: funziona con bussole e bit senza problemi. il led è utilissimo quando lavoro nel box auto. per ora 4 stelle perché lo sto provando su diversi lavori ma l'impressione iniziale è decisamente positiva",
+        "verified": true,
+        "sellerReply": "Giuseppe, grazie per la sincerità. Siamo convinti che dopo qualche settimana di utilizzo cambierà idea. Ci faccia sapere!"
+      },
+      {
+        "initials": "NB",
+        "name": "Nicola Barone",
+        "stars": 5,
+        "text": "lo uso per la manutenzione dello scooter. sostituire le pastiglie freno prima era un lavoraccio con la chiave manuale. adesso in un quarto d'ora ho finito e il polso ringrazia. le bussole coprono tutte le misure che mi servono",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "AF",
+        "name": "Alessandro Ferretti",
+        "stars": 5,
+        "text": "consegna puntuale e qualità al di sopra delle aspettative. non mi aspettavo di trovare tutto questo a 69 euro: cricchetto, bussole, bit, prolunghe, snodo, due batterie e la valigetta. ho già sistemato tre cose in casa senza intoppi",
+        "verified": true,
+        "sellerReply": "Alessandro, il kit completo è il nostro punto di forza: apri e hai tutto. Nessun accessorio extra da comprare. Grazie!"
+      },
+      {
+        "initials": "LG",
+        "name": "Laura Galli",
+        "stars": 5,
+        "text": "Lo uso per i piccoli lavori in casa senza dover chiedere aiuto. Ho fissato due mensole e sostituito le maniglie delle finestre da sola. La velocità variabile è perfetta perché evito di danneggiare le superfici. Molto meglio del trapano avvitatore che avevo.",
+        "verified": true,
+        "sellerReply": "Laura, ci fa piacere sapere che anche chi non ha esperienza riesce a usarlo senza problemi. La velocità variabile è pensata esattamente per questo!"
+      },
+      {
+        "initials": "SR",
+        "name": "Stefano Romano",
+        "stars": 5,
+        "text": "ho montato e smontato le gomme invernali della macchina nel box. le bussole 3/8 tengono bene e col cricchetto elettrico non fai alcuna fatica. alla fine dai la stretta di sicurezza a mano. avere due batterie è geniale",
+        "verified": true,
+        "sellerReply": "Stefano, approccio corretto: il cricchetto fa il grosso e poi la stretta finale la dai tu per sicurezza. Le 2 batterie sono pensate per chi non vuole fermarsi!"
+      },
+      {
+        "initials": "FC",
+        "name": "Francesco Caruso",
+        "stars": 5,
+        "text": "Ordinato il martedì, giovedì l'avevo già in mano. Pagato al corriere, tutto regolare. Il LED è una manna quando lavoro sotto il piano cucina. L'ho già consigliato al mio vicino che fa il manutentore.",
+        "verified": true,
+        "sellerReply": "Francesco, il LED sembra secondario ma quando ti trovi in uno spazio buio capisci quanto vale. Un saluto al vicino!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Lascia il tuo parere",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "Valutazione",
+    "textLabel": "La tua esperienza",
+    "textPlaceholder": "Raccontaci come ti trovi...",
+    "submitText": "Invia il Parere",
+    "successTitle": "Grazie per aver condiviso la tua opinione!",
+    "successText": "Il tuo parere è in fase di verifica da parte di un team esterno. Solo le recensioni di chi ha realmente acquistato il prodotto saranno pubblicate.",
+    "closeText": "Chiudi"
+  },
+
+  "orderForm": {
+    "eyebrow": "Ordina Adesso",
+    "title": "Compila e ricevi a casa tua",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Lo sconto del 50% termina tra:",
+    "stockWarning": "Attenzione: rimangono <strong>6 pezzi</strong> a questo prezzo",
+    "summaryTitle": "Il Tuo Ordine",
+    "summaryLines": [
+      { "label": "RatchetPro 2in1™ + Kit Completo", "value": "€69,00", "type": "normal" },
+      { "label": "Spedizione veloce 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Commissioni Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€69,00",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo Completo *", "placeholder": "Via, Numero, Città, CAP" }
+    },
+    "phoneNote": "Verrai contattato via telefono o WhatsApp per la conferma dell'ordine.",
+    "paymentBadge": "Paghi alla Consegna — In contanti direttamente al corriere. Nessun anticipo richiesto.",
+    "submitText": "COMPLETA L'ORDINE",
+    "submitSubtext": "Pagamento in Contanti alla Consegna",
+    "reassurance": "Dati protetti · Crittografia SSL · Zero addebiti anticipati"
+  },
+
+  "faq": {
+    "eyebrow": "Risposte rapide",
+    "title": "Le domande più comuni",
+    "items": [
+      { "question": "Come posso effettuare l'ordine?", "answer": "Premi il pulsante di acquisto, inserisci i tuoi dati nel modulo e conferma. Riceverai una chiamata o un messaggio WhatsApp di verifica, dopodiché il pacco arriva a casa tua e paghi in contanti al corriere." },
+      { "question": "Quanto costa la spedizione?", "answer": "La spedizione è completamente gratuita. Dalla conferma dell'ordine, il pacco viene consegnato in circa 24/48 ore lavorative." },
+      { "question": "Posso restituirlo se non mi soddisfa?", "answer": "Certamente. Hai 30 giorni dalla consegna per richiedere il reso completo. Veniamo noi a ritirare il prodotto e ti restituiamo l'intera somma pagata." },
+      { "question": "E se si rompe dopo i 30 giorni?", "answer": "Nessun problema, tutti i nostri prodotti sono coperti da 2 anni di garanzia completa." },
+      { "question": "Come contatto l'assistenza?", "answer": "Puoi scriverci tramite il modulo di contatto presente sul sito oppure via email all'indirizzo che trovi nel footer della pagina." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€138",
+    "newPrice": "€69",
+    "buttonText": "ORDINA ADESSO",
+    "buttonSubtext": "Paghi alla Consegna"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 69.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
+  "ty": {
+    "title": "Ordine Ricevuto!",
+    "subtitle": "Abbiamo preso in carico il tuo ordine con successo.",
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Dettagli Ordine",
+    "accessoriesLabel": "+ Kit completo incluso",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — zero anticipo richiesto",
+    "yourDataTitle": "I Tuoi Dati",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "E adesso?",
+    "message": "Verrai contattato via telefono o WhatsApp per confermare l'ordine e definire la consegna.",
+    "steps": [
+      "Riceverai una chiamata o un messaggio WhatsApp di conferma",
+      "Il pacco viene spedito entro 24/48h lavorative",
+      "Paghi in contanti direttamente al corriere"
+    ],
+    "footerText": "2 Anni di Garanzia · Reso Gratuito 30 Giorni · Supporto Dedicato"
+  }
+}

@@ -378,15 +378,14 @@
   },
 
   "tracking": {
-    "googleAdsId": "",
-    "conversionLabel": "",
+    "googleAdsId": "AW-17933081143",
+    "conversionLabel": "sZ3FCPLJxv0bELe0lOdC",
     "conversionValue": 429,
     "conversionCurrency": "PLN",
     "facebookPixelId": "",
     "network": {
-      "apiEndpoint": "",
-      "offerId": "",
-      "params": {}
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=607&uid=01981ccf-4474-7c39-97eb-9407221996c2&lp=607"
     }
   },
 

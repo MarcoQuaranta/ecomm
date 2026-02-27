@@ -370,13 +370,12 @@
   "tracking": {
     "googleAdsId": "",
     "conversionLabel": "",
-    "conversionValue": 380.00,
+    "conversionValue": 380,
     "conversionCurrency": "PLN",
-    "facebookPixelId": "",
+    "facebookPixelId": "1576025786901423",
     "network": {
-      "apiEndpoint": "",
-      "offerId": "",
-      "params": {}
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=425&uid=019855d0-397a-72ee-8df5-c5026966105a&lp=425"
     }
   },
 
