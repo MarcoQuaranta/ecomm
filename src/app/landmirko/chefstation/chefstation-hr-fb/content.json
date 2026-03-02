@@ -1,0 +1,425 @@
+{
+  "seo": {
+    "title": "ChefStation™ - Višenamjenski Centar za Kuhanje 5 u 1",
+    "description": "Pržite na vrući zrak, pecite, roštiljajte, grijte i pripremajte tople napitke s jednim uređajem. Oslobodite prostor na pultu. Besplatna dostava."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 159.98,
+    "currentPrice": 79.99,
+    "discountPercent": 50
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Upozorenje: Velika potražnja —",
+    "highlight": "Preostalo samo 8 komada",
+    "suffix": "po ovoj cijeni"
+  },
+
+  "hero": {
+    "badge": "New 2026",
+    "title": "Cijela Kuhinja",
+    "titleHighlight": "na Malom Prostoru:",
+    "titleSuffix": "Air Fryer, Pećnica, Roštilj, Kava i Čajevi",
+    "subtitle": "Višenamjenski centar za kuhanje 5-u-1 koji <strong>zamjenjuje 5 različitih uređaja</strong>. Pripremite sve odjednom na <strong>samo 45 cm prostora</strong>.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.743 provjerenih recenzija"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/chefstation/carosello/1.webp", "alt": "ChefStation™ pogled sprijeda" },
+      { "src": "/images/mirko/chefstation/carosello/2.webp", "alt": "ChefStation™ u upotrebi" },
+      { "src": "/images/mirko/chefstation/carosello/3.webp", "alt": "ChefStation™ otvorena pećnica" },
+      { "src": "/images/mirko/chefstation/carosello/4.webp", "alt": "ChefStation™ Air Fryer" },
+      { "src": "/images/mirko/chefstation/carosello/5.webp", "alt": "ChefStation™ kava i čajevi" },
+      { "src": "/images/mirko/chefstation/carosello/6.webp", "alt": "ChefStation™ uključeni dodaci" },
+      { "src": "/images/mirko/chefstation/carosello/7.webp", "alt": "ChefStation™ detalj" },
+      { "src": "/images/mirko/chefstation/carosello/8.webp", "alt": "ChefStation™ pakiranje" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Super hrskavi air fryer:", "description": "pomfrit, krilca i još mnogo toga, zlatno i hrskavo uz minimalnu količinu ulja." },
+      { "title": "Pećnica 12L s dva nivoa:", "description": "pripremite više jela u pećnici istovremeno dok koristite i ploču za kuhanje." },
+      { "title": "Ploča s neprianjajućim premazom:", "description": "odvojite jednim pokretom, brzo isperite i spremni ste za nastavak." },
+      { "title": "Topli napitci:", "description": "zagrijte vodu za čajeve i koristite ugrađeni filter za kavu, sve u nekoliko trenutaka." },
+      { "title": "Izvadivi dijelovi:", "description": "pekači, rešetke i ploča mogu se prati i u perilici posuđa." },
+      { "title": "Lako prenosiv:", "description": "idealan za putovanja, kamper, garsonijere." },
+      { "title": "Timer + automatsko isključivanje:", "description": "postavite vrijeme i uređaj se sam zaustavlja." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "ChefStation™",
+    "shippingLabel": "Brza dostava:",
+    "shippingValue": "BESPLATNO",
+    "guaranteeLabel": "Jamstvo 24 mjeseca",
+    "offerToggleText": "Pogledajte što uključuje ponuda",
+    "offerItems": [
+      { "text": "ChefStation™ — Centar za Kuhanje 5 u 1", "badge": null },
+      { "text": "Košara za prženje na vrući zrak", "badge": null },
+      { "text": "Crisp perforirani pladanj", "badge": null },
+      { "text": "2 rešetke + 2 pekača od nehrđajućeg čelika", "badge": null },
+      { "text": "Infuzor za čajeve od nehrđajućeg čelika", "badge": "POKLON" },
+      { "text": "Mini silikonske rukavice za pećnicu", "badge": "POKLON" },
+      { "text": "Jamstvo 24 mjeseca + Posvećena podrška", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "NARUČITE SADA",
+    "mainSubtext": "Plaćanje Pouzećem",
+    "subNote": ""
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Plaćanje pouzećem", "color": "green" },
+      { "icon": "truck", "text": "Dostava 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 dana za povrat", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Problem",
+    "title": "Vaši kućanski aparati nisu dovoljno dobri?",
+    "items": [
+      { "icon": "box", "titleBold": "Kuhinjska površina <strong>zatrpana uređajima</strong> koji zauzimaju sav prostor", "text": "" },
+      { "icon": "timer", "titleBold": "Air fryer <strong>premali</strong> za obiteljske porcije", "text": "" },
+      { "icon": "money", "titleBold": "Lonci i pladnjevi koje morate <strong>prati svaki put</strong>, hrpe posuđa", "text": "" },
+      { "icon": "money", "titleBold": "Kupnja 5 zasebnih uređaja košta <strong>300-500€</strong>", "text": "" }
+    ],
+    "solutionTitle": "S ChefStation™ sve se mijenja.",
+    "solutionText": "5 funkcija u jednom uređaju. Pecite, pržite, pripremajte napitke — i očistite u trenu."
+  },
+
+  "features": {
+    "eyebrow": "Što ga čini posebnim",
+    "title": "Opremljena kuhinja na prostoru jedne male pećnice.",
+    "image": "/images/mirko/chefstation/features.gif",
+    "imageAlt": "ChefStation™ u akciji",
+    "items": [
+      {
+        "image": "/images/mirko/chefstation/angle/1.webp",
+        "imageAlt": "Prženje na vrući zrak 360°",
+        "tag": "AIR FRYER S KONVEKCIJOM 360°",
+        "tagColor": "green",
+        "title": "Zlatno Izvana, Bez Ulja Iznutra",
+        "description": "Ventilator s vrućim zrakom i cirkulacijom od 360°. Pomfrit, piletina, povrće: <strong>hrskavo u pola vremena</strong>, gotovo bez ulja. Isti rezultat kao tradicionalno prženje, bez neugodnih mirisa."
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/2.webp",
+        "imageAlt": "Pećnica s dva nivoa",
+        "tag": "PROSTRANA PEĆNICA",
+        "tagColor": "orange",
+        "title": "Dva Nivoa: Pripremite Više Jela Odjednom",
+        "description": "12 litara kapaciteta s <strong>dva nivoa</strong>. Povrće gore, kruh dolje. Sve dok koristite ploču i pripremate kavu. <strong>Statička ili ventilacijska</strong>, vi odlučujete."
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/3.webp",
+        "imageAlt": "Neprianjajuća ploča",
+        "tag": "ZBOGOM LONCIMA",
+        "tagColor": "blue",
+        "title": "Neprianjajuća Ploča, Bez Lonaca",
+        "description": "Grijete, kuhate, tostete — izravno na ploči. <strong>Neprianjajuća površina</strong>: odvojite je, isperite i nastavite. <strong>Ploča, pekači i posuda za kavu mogu se prati u perilici posuđa.</strong>"
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/4.webp",
+        "imageAlt": "Kava i čajevi",
+        "tag": "TOPLI NAPITCI",
+        "tagColor": "green",
+        "title": "Filter Kava i Čajevi, Kad God Poželite",
+        "description": "Ugrađeni aparat za filter kavu + infuzor od nehrđajućeg čelika za čajeve. <strong>Bez kuhala za vodu</strong>, bez dodatnih uređaja. Ujutro kava, navečer čaj."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Vrlo jednostavno",
+    "title": "Uključite, odaberite način rada, kuhajte.",
+    "image": "",
+    "imageAlt": "Kako funkcionira",
+    "steps": [
+      { "title": "Odaberite Način Rada", "description": "Okrenite gumb: Air Fryer, Pećnica, Roštilj, Ploča ili Topli napitci." },
+      { "title": "Podesite i Krenite", "description": "Temperaturu i timer postavljate u trenu. Bez rizika od pregorijevanja." },
+      { "title": "Uživajte i Isperite", "description": "Izvadivi dijelovi. Jedno brisanje spužvom i pult je opet čist." }
+    ]
+  },
+
+  "midCta": {
+    "text": "NARUČITE SADA S 50% POPUSTA",
+    "subtext": "Plaćanje Gotovinom Pouzećem"
+  },
+
+  "specs": {
+    "eyebrow": "Tehničke pojedinosti",
+    "title": "Tehnički List",
+    "items": [
+      { "label": "Snaga", "value": "1250W" },
+      { "label": "Funkcije", "value": "Air Fryer, Pećnica, Roštilj, Ploča, Kava" },
+      { "label": "Kapacitet pećnice", "value": "12L dva nivoa" },
+      { "label": "Temperatura", "value": "80-230°C" },
+      { "label": "Dimenzije", "value": "45 × 26 × 28 cm" },
+      { "label": "Certifikati", "value": "CE · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Usporedba",
+    "title": "Što dobivate odabirom ChefStation™?",
+    "featureColumn": "Značajka",
+    "winnerBadge": "POBJEDNIK",
+    "productColumn": "ChefStation™",
+    "competitorColumn": "5 Zasebnih Uređaja",
+    "rows": [
+      { "feature": "Zauzimanje prostora", "product": "✔ Jedan uređaj, 45cm", "competitor": "5 uređaja na pultu" },
+      { "feature": "Načini rada", "product": "✔ Air Fryer + Pećnica + Ploča + Kava", "competitor": "Sve treba kupiti zasebno" },
+      { "feature": "Održavanje", "product": "✔ Izvadivi dijelovi, jedno ispiranje", "competitor": "Lonci, pladnjevi, filteri za pranje" },
+      { "feature": "Prenosivost", "product": "✔ Nosite ga svuda", "competitor": "Nemoguće prenijeti sve" },
+      { "feature": "Jednostavnost korištenja", "product": "✔ Jedan gumb, bez komplikacija", "competitor": "5 različitih uputa" },
+      { "feature": "Ukupna cijena", "product": "✔ Samo 79,99€ (jednokratno)", "competitor": "300-500€ ukupno" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Kompletan sadržaj",
+    "title": "Evo što stiže na vašu adresu",
+    "items": [
+      { "icon": "box", "text": "ChefStation™ — Centar za Kuhanje 5 u 1", "value": "€159,98", "valueType": "price" },
+      { "icon": "check", "text": "Košara za air fryer + Crisp pladanj", "value": "UKLJUČENO", "valueType": "included" },
+      { "icon": "check", "text": "2 rešetke + 2 pekača od nehrđajućeg čelika", "value": "UKLJUČENO", "valueType": "included" },
+      { "icon": "gift", "text": "Infuzor za čajeve + mini silikonske rukavice", "value": "POKLON", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Izvorna cijena:",
+    "totalOriginalValue": "€159,98",
+    "totalCurrentLabel": "Danas vaša cijena:",
+    "totalCurrentValue": "€79,99",
+    "totalSave": "Ušteda od €79,99 · Dostava BESPLATNA",
+    "ctaText": "NARUČITE SADA"
+  },
+
+  "reviews": {
+    "eyebrow": "Mišljenja kupaca",
+    "title": "Potvrđene Recenzije",
+    "rating": "4.8",
+    "totalCount": "18.743 recenzija",
+    "verifiedNote": "✓ Recenzije su potvrđene od strane neovisnog tijela izvan ove web stranice.",
+    "showMoreText": "Učitaj više recenzija",
+    "leaveReviewText": "Napišite recenziju",
+    "verifiedBadge": "Potvrđena kupnja",
+    "sellerReplyLabel": "Odgovor prodavatelja:",
+    "items": [
+      {
+        "initials": "AK",
+        "name": "Ana Kovačević",
+        "stars": 5,
+        "text": "Moja kuhinja je malena i više nije bilo mjesta za ništa. Ovaj centar za kuhanje me spasio: sve radim s jednim uređajem. Kava ujutro, air fryer za večeru... ne bih mogla biti sretnija. Dostavljena za dva dana, platila kuriru.",
+        "verified": true,
+        "sellerReply": "Ana, drago nam je da je problem s prostorom riješen! Kombinacija kava + air fryer je omiljena među našim kupcima. Hvala!"
+      },
+      {
+        "initials": "MH",
+        "name": "Marko Horvat",
+        "stars": 5,
+        "text": "air fryer radi odlično, pomfrit izlazi hrskav kao da je pržen, ali s minimalno ulja. koristim ga praktično svaki dan. i pećnica je prostrana za svoje dimenzije, pripremio sam pladanj povrća bez problema",
+        "verified": true,
+        "sellerReply": "Marko, air fryer je najomiljeniji način rada! Isprobajte i funkciju roštilja za tostiranje kruha, bit ćete oduševljeni. Hvala na povratnoj informaciji."
+      },
+      {
+        "initials": "IP",
+        "name": "Ivana Perić",
+        "stars": 5,
+        "text": "Kupila sam ga za apartman na moru gdje nema opremljene kuhinje. Nosimo ga u autu, lagan je i pripremamo sve: od doručka do večere. Filter kava je izvrsna, a ploča se brzo zagrijava. Potpuno zadovoljna.",
+        "verified": true,
+        "sellerReply": "Ivana, kuća za odmor je upravo jedno od korištenja za koje smo ga osmislili! Lijep odmor i dobar tek."
+      },
+      {
+        "initials": "JB",
+        "name": "Josip Babić",
+        "stars": 4,
+        "text": "moram priznati da me kvaliteta u odnosu na cijenu iznenadila. air fryer radi dobro, pećnica grije kako treba, kava je ugodna. dajem 4 zvjezdice za sada jer ga koristim tek kratko i radije bih ga isprobao još malo prije davanja maksimalne ocjene",
+        "verified": true,
+        "sellerReply": "Josip, cijenimo iskrenost! Uvjereni smo da ćete s dužim korištenjem još više cijeniti svaku funkciju. Javite nam se!"
+      },
+      {
+        "initials": "PM",
+        "name": "Petra Matić",
+        "stars": 5,
+        "text": "Umirovila sam friteze, toster i kuhalo za vodu. Sada imam čist pult i radim potpuno iste stvari s jednim uređajem. Čišćenje je najjednostavnije, dijelovi se odvajaju i peru u trenu.",
+        "verified": true,
+        "sellerReply": "Petra, imati čist pult je najveće zadovoljstvo! Hvala što ste podijelili svoje iskustvo."
+      },
+      {
+        "initials": "TK",
+        "name": "Tomislav Knežević",
+        "stars": 5,
+        "text": "koristim ga uglavnom za filter kavu ujutro i air fryer navečer. samo te dvije funkcije opravdavaju cijenu. dostava je bila iznimno brza i platio sam kuriru bez ikakvih problema",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "LJ",
+        "name": "Lucija Jurić",
+        "stars": 5,
+        "text": "Nevjerojatno jednostavan za korištenje, moj muž koji nikad ne ulazi u kuhinju shvatio je kako ga koristiti za pet minuta. Gumbi su jasni, a timer s automatskim isključivanjem daje dodatnu sigurnost. Naručila u ponedjeljak, primila u srijedu.",
+        "verified": true,
+        "sellerReply": "Lucija, jednostavnost korištenja je jedna od stvari u koje smo najviše uložili! Drago nam je da se i vaš muž snalazi."
+      },
+      {
+        "initials": "NK",
+        "name": "Nikola Kovač",
+        "stars": 5,
+        "text": "koristim ga u kamperu i moram priznati da je besprijekoran. malo zauzima prostora, pokriva sve potrebe i ne moram nositi tisuću stvari. roštilj za tostiranje kruha ujutro je fantastičan",
+        "verified": true,
+        "sellerReply": "Nikola, u kamperu je idealan! Kompaktan i svestran, točno ono što treba na putovanju. Sretan put!"
+      },
+      {
+        "initials": "KS",
+        "name": "Katarina Šimunić",
+        "stars": 5,
+        "text": "Nisam vjerovala u filter kavu, ali moram priznati da je stvarno dobra. A čaj navečer prije spavanja postao je rutina. Sve s jednim uređajem, bez zatrpavanja kuhinje dodacima. Preporučujem.",
+        "verified": true,
+        "sellerReply": "Katarina, filter kava je uvjerila i najveće skeptike! Čaj za laku noć je ritual koji mnogi vole. Hvala!"
+      },
+      {
+        "initials": "AV",
+        "name": "Ante Vuković",
+        "stars": 5,
+        "text": "mislio sam da je još jedan beskoristan izum, a zapravo radi odlično. air fryer je pravi, pomfrit izlazi hrskav. pećnica je kompaktna ali zahvaljujući dvostrukom nivou možete pripremiti puno toga. za 79,99 eura ne možete tražiti bolje",
+        "verified": true,
+        "sellerReply": "Ante, drago nam je da smo promijenili vaše mišljenje! Dvostruki nivo je tajna za maksimalno iskorištavanje unutarnjeg prostora. Hvala na povjerenju."
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Napišite svoju recenziju",
+    "nameLabel": "Vaše ime",
+    "namePlaceholder": "Npr. Ivan Horvat",
+    "ratingLabel": "Ocjena",
+    "textLabel": "Vaše mišljenje",
+    "textPlaceholder": "Opišite svoje iskustvo...",
+    "submitText": "Objavi Recenziju",
+    "successTitle": "Hvala na vašem doprinosu!",
+    "successText": "Vaša recenzija je u postupku provjere od strane neovisnog tijela izvan ove web stranice. Recenzije poslane od osoba koje nisu kupile proizvod neće biti objavljene, radi zaštite autentičnosti.",
+    "closeText": "Zatvori"
+  },
+
+  "orderSteps": {
+    "eyebrow": "KAKO KUPITI",
+    "title": "Naručite u 3 jednostavna koraka",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Ispunite obrazac",
+        "description": "Unesite svoje podatke u obrazac za narudžbu ispod."
+      },
+      {
+        "icon": "phone",
+        "title": "Telefonska provjera",
+        "description": "Kontaktirat ćemo vas telefonom ili putem WhatsAppa kako bismo provjerili podatke."
+      },
+      {
+        "icon": "cash",
+        "title": "Plaćanje pouzećem",
+        "description": "Za 24/48h paket stiže putem kurirske službe s praćenjem. Plaćate gotovinom pri primitku."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Obrazac za Narudžbu",
+    "title": "Dovršite svoju kupnju",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Promocija -50% završava za:",
+    "stockWarning": "Samo <strong>8 komada</strong> dostupno po ovoj cijeni",
+    "summaryTitle": "Detalji Narudžbe",
+    "summaryLines": [
+      { "label": "ChefStation™ + Dodaci", "value": "€79,99", "type": "normal" },
+      { "label": "Brza dostava 24/48h", "value": "BESPLATNO", "type": "free" },
+      { "label": "Troškovi pouzeća", "value": "BESPLATNO", "type": "free" }
+    ],
+    "totalLabel": "UKUPNO",
+    "totalValue": "€79,99",
+    "fields": {
+      "name": { "label": "Ime i Prezime *", "placeholder": "Npr. Ivan Horvat" },
+      "phone": { "label": "Broj Telefona *", "placeholder": "Npr. 091 1234567" },
+      "address": { "label": "Adresa Dostave *", "placeholder": "Ulica, Broj, Grad, Poštanski broj" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "POTVRDITE NARUDŽBU",
+    "submitSubtext": "Plaćanje Gotovinom Pouzećem",
+    "reassurance": "Dostava 24/48h · Jamstvo 24 mjeseca · Korisnička podrška<br><strong>Nije potrebna kartica.</strong> Bit ćete kontaktirani radi potvrde."
+  },
+
+  "faq": {
+    "eyebrow": "Brzi odgovori",
+    "title": "Imate pitanja? Pronađite odgovore ovdje.",
+    "items": [
+      { "question": "Kako mogu naručiti?", "answer": "Pritisnite gumb za kupnju, ispunite obrazac sa svojim podacima i potvrdite. Bit ćete kontaktirani telefonom ili putem WhatsAppa radi provjere i primit ćete paket izravno na vašu adresu, s plaćanjem gotovinom." },
+      { "question": "Kako funkcionira dostava?", "answer": "Dostava je potpuno besplatna. Nakon potvrde narudžbe, isporuka se vrši u roku od 24/48 radnih sati." },
+      { "question": "Što ako nisam zadovoljan/na?", "answer": "Možete dobiti potpuni povrat novca vraćanjem proizvoda unutar 30 dana od primitka. Mi dolazimo po njega i vraćamo vam cjelokupan plaćeni iznos." },
+      { "question": "Što ako imam problem nakon 30 dana?", "answer": "Nema problema, svi naši proizvodi pokriveni su jamstvom od 2 godine." },
+      { "question": "Kako zatražiti povrat ili pomoć?", "answer": "Za podršku ili povrat nakon kupnje možete koristiti kontaktni obrazac na stranici ili pisati na email adresu navedenu u podnožju stranice." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€159,98",
+    "newPrice": "€79,99",
+    "buttonText": "NARUČITE SADA",
+    "buttonSubtext": "Plaćanje Pouzećem"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 79.99,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=629&uid=019855d0-397a-72ee-8df5-c5026966105a&lp=629"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Prethodna",
+    "nextSlide": "Sljedeća",
+    "thumbnail": "Minijatura",
+    "close": "Zatvori"
+  },
+
+  "ty": {
+    "title": "Narudžba Primljena!",
+    "subtitle": "Vaša narudžba je uspješno zabilježena.",
+    "orderNumberLabel": "Br. narudžbe:",
+    "summaryTitle": "Detalji Narudžbe",
+    "accessoriesLabel": "+ Uključeni dodaci",
+    "totalLabel": "UKUPNO ZA PLAĆANJE",
+    "paymentNote": "Plaćanje gotovinom kuriru — nije potreban predujam",
+    "yourDataTitle": "Vaši Osobni Podaci",
+    "nameLabel": "Ime",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Što slijedi?",
+    "message": "Bit ćete kontaktirani telefonom ili putem WhatsAppa kako bismo potvrdili narudžbu i dogovorili dostavu.",
+    "steps": [
+      "Primit ćete telefonski poziv ili WhatsApp poruku za provjeru",
+      "Paket će biti poslan unutar 24/48h",
+      "Plaćate gotovinom kuriru pri primitku"
+    ],
+    "footerText": "Jamstvo 24 Mjeseca · 30 Dana za Povrat · Posvećena Podrška"
+  }
+}

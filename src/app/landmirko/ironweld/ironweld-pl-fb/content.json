@@ -1,0 +1,420 @@
+{
+  "seo": {
+    "title": "Bowek Ironweld™ - Idealne spawy na kazdym metalu, nawet dla poczatkujacych",
+    "description": "Przenosna spawarka inwerterowa IGBT o wadze zaledwie 1,5 kg. Regulowana moc 20-120A, zaplon Hot Start, kompletny profesjonalny zestaw w komplecie. Darmowa dostawa, platnosc przy odbiorze."
+  },
+
+  "pricing": {
+    "currency": "PLN",
+    "currencySymbol": "zl",
+    "originalPrice": 858,
+    "currentPrice": 429,
+    "discountPercent": 50
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Uwaga: Zapasy prawie wyczerpane —",
+    "highlight": "Zostalo tylko 8 sztuk",
+    "suffix": "w tej cenie"
+  },
+
+  "hero": {
+    "badge": "Technologia 2026",
+    "title": "Napraw wszystko sam.",
+    "titleHighlight": "1,5 kg, uzywasz jedna reka.",
+    "titleSuffix": "",
+    "subtitle": "Przenosna spawarka inwerterowa: gniazdko domowe, <strong>zero doswiadczenia</strong>. Dziala <strong>za pierwszym razem</strong>.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "14 729 zweryfikowanych opinii"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/ironweld/carosello/1.webp", "alt": "Bowek Ironweld widok z przodu" },
+      { "src": "/images/mirko/ironweld/carosello/2.webp", "alt": "Bowek Ironweld w uzyciu" },
+      { "src": "/images/mirko/ironweld/carosello/3.webp", "alt": "Bowek Ironweld szczegol panelu" },
+      { "src": "/images/mirko/ironweld/carosello/4.webp", "alt": "Bowek Ironweld kompletny zestaw" },
+      { "src": "/images/mirko/ironweld/carosello/5.webp", "alt": "Bowek Ironweld walizka" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Technologia inwerterowa IGBT:", "description": "stabilny luk, czysty spaw, zero odprysków" },
+      { "title": "Natychmiastowy zaplón:", "description": "wbudowany Hot Start, elektroda nigdy sie nie przykleja" },
+      { "title": "Od 20 do 120 Amperów:", "description": "cienka blacha lub ciezki profil, jedna maszyna" },
+      { "title": "Wazy 1,5 kg:", "description": "spawasz nad glowa, za rura, gdziekolwiek" },
+      { "title": "Ochrona przed przegrzaniem:", "description": "wylacza sie automatycznie, wznawia prace gdy jest gotowa" },
+      { "title": "Gniazdko domowe + kabel 10m:", "description": "bez trojfazowego, kabel zwija sie sam" },
+      { "title": "Uniwersalne elektrody:", "description": "2,5-3,2 mm, kupisz w kazdym sklepie zelaznym" },
+      { "title": "9 akcesoriów PRO w zestawie:", "description": "przyłbica, rekawice, magnesy, elektrody, przedluzacz" }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "Bowek Ironweld™",
+    "originalPriceLabel": "Cena katalogowa:",
+    "discountLabel": "OSZCZEDZASZ -50%",
+    "shippingLabel": "Szybka dostawa:",
+    "shippingValue": "GRATIS",
+    "guaranteeLabel": "Gwarancja 2 lata",
+    "offerToggleText": "Zobacz wszystko, co otrzymujesz",
+    "offerItems": [
+      { "text": "Bowek Ironweld™ — Spawarka inwerterowa IGBT", "badge": null },
+      { "text": "Sztywna walizka odporna na uderzenia", "badge": null },
+      { "text": "Kabel masowy + zacisk Heavy-Duty", "badge": null },
+      { "text": "20 elektrod E6013 2,5 mm", "badge": null },
+      { "text": "Samosciemniajaca przylbica spawalnicza", "badge": "GRATIS" },
+      { "text": "Rekawice spawalnicze ze skóry", "badge": "GRATIS" },
+      { "text": "Szczotka stalowa + mlotek do zuza (2w1)", "badge": "GRATIS" },
+      { "text": "2 magnesy katowe 45°/90°", "badge": "GRATIS" },
+      { "text": "Przedluzacz 10m z automatycznym zwijaniem", "badge": "GRATIS" },
+      { "text": "Instrukcja obslugi w 48 jezykach", "badge": null },
+      { "text": "Gwarancja 2 lata + Dedykowane wsparcie", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ZAMÓW TERAZ",
+    "mainSubtext": "Platnosc przy odbiorze",
+    "subNote": ""
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Platnosc przy odbiorze", "color": "green" },
+      { "icon": "truck", "text": "Dostawa 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 dni na zwrot", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Koniec z frustracjami",
+    "title": "Wyrzuciles pieniadze na bezuzyteczne spawarki?",
+    "items": [
+      { "icon": "money", "titleBold": "Przegrzewaja sie juz <strong>po kilku minutach</strong> pracy", "text": "" },
+      { "icon": "warning", "titleBold": "Slabe i <strong>nierówne polaczenia</strong>, które natychmiast puszczaja", "text": "" },
+      { "icon": "timer", "titleBold": "Nieporeczne, <strong>bardzo ciezkie</strong> i zrobione z materialów o krótkiej zywotnosci", "text": "" },
+      { "icon": "money", "titleBold": "Kazde wezwanie spawacza to wydatek: <strong>500-1000 zl</strong> za wizyte", "text": "" }
+    ],
+    "solutionTitle": "Z Ironweld™ wszystko sie zmienia.",
+    "solutionText": "Profesjonalne polaczenia w zaledwie 1,5 kg. Jeden zakup, nieograniczone naprawy."
+  },
+
+  "features": {
+    "eyebrow": "Róznica",
+    "title": "Z garazu do warsztatu w 60 sekund.",
+    "items": [
+      {
+        "image": "/images/mirko/ironweld/angle/1.webp",
+        "imageAlt": "Technologia inwerterowa IGBT",
+        "tag": "TECHNOLOGIA IGBT",
+        "tagColor": "green",
+        "title": "Inwerter IGBT + 20-120A regulowane",
+        "description": "Serce IGBT moduluje prad <strong>50 000 razy na sekunde</strong>: stabilny plomien, zero odprysków. Obracasz pokretle od <strong>20 do 120 Amperów</strong> zgodnie z instrukcja w zestawie i przechodzisz od cienkiej blachy do profilu konstrukcyjnego."
+      },
+      {
+        "image": "/images/mirko/ironweld/angle/2.webp",
+        "imageAlt": "Lekka spawarka na jedna reke",
+        "tag": "KONIEC Z WIELKIMI MASZYNAMI",
+        "tagColor": "blue",
+        "title": "1,5 kg: Chwytasz jedna reka i pracujesz wszedzie",
+        "description": "Podnosisz, przenosisz na miejsce i spawasz. <strong>Pionowo, za rura, w niemozliwych katach</strong>. Spróbuj tego samego z <strong>20-kilogramowym kolosem z warsztatu</strong>."
+      },
+      {
+        "image": "/images/mirko/ironweld/angle/3.webp",
+        "imageAlt": "Gniazdko domowe i przedluzacz",
+        "tag": "GNIAZDKO + PRZEDLUZACZ Z AUTOMATYCZNYM ZWIJANIEM",
+        "tagColor": "green",
+        "title": "Gniazdko domowe + przedluzacz z automatycznym zwijaniem",
+        "description": "Bez trojfazowego, bez adaptera. Kabel o dlugosci <strong>10 metrów</strong> zwija sie automatycznie. Wkladasz wtyczke do gniazdka domowego i jestes gotowy. Ciagle zasilanie bez spadków."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "3 kroki",
+    "title": "Wtyczka. Pokretle. Start.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Wlóz wtyczke", "description": "Podlacz do dowolnego gniazdka domowego. Zadna specjalna instalacja nie jest wymagana." },
+      { "title": "Ustaw moc", "description": "Obroc pokretle na wlasciwa wartosc. Od 20A do blach az po 120A do ciezkich elementów." },
+      { "title": "Zacznij spawac", "description": "Luk zapala sie stabilnie, spaw wychodzi nieskazitelnie. Nawet przy pierwszej próbie." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ZAMÓW TERAZ Z RABATEM 50%",
+    "subtext": "Platnosc gotówka przy odbiorze"
+  },
+
+  "specs": {
+    "eyebrow": "Dane techniczne",
+    "title": "Liczby mówia same za siebie",
+    "items": [
+      { "label": "Technologia", "value": "Inverter IGBT" },
+      { "label": "Prad", "value": "20-120A (5 poziomów)" },
+      { "label": "Zaplón", "value": "Hot Arc Start" },
+      { "label": "Zasilanie", "value": "Standardowe gniazdko domowe" },
+      { "label": "Waga", "value": "~1,5 kg" },
+      { "label": "Certyfikaty", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Ironweld vs reszta",
+    "title": "Sam zobacz róznice.",
+    "featureColumn": "Cecha",
+    "winnerBadge": "ZWYCIEZCA",
+    "productColumn": "Bowek Ironweld™",
+    "competitorColumn": "Tradycyjna maszyna / Spawacz",
+    "rows": [
+      { "feature": "Waga", "product": "~1,5 kg, jedna reka", "competitor": "15-25 kg, nieporeczne" },
+      { "feature": "Zaplón", "product": "Hot Start, natychmiastowy zaplón", "competitor": "Elektroda przykleja sie" },
+      { "feature": "Zasilanie", "product": "Gniazdko domowe + przedluzacz", "competitor": "Wymaga trojfazowego" },
+      { "feature": "Ciasne miejsca", "product": "Dotrzesz wszedzie", "competitor": "Nie da sie dostac" },
+      { "feature": "Zestaw w komplecie", "product": "9 akcesoriów PRO", "competitor": "Wszystko trzeba kupic osobno" },
+      { "feature": "Koszt", "product": "Zaledwie 429 zl (jednorazowo)", "competitor": "500-1000 zl za kazda wizyte" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "W paczce",
+    "title": "Otwórz pudelko i jestes gotowy",
+    "items": [
+      { "icon": "box", "text": "Spawarka Ironweld™ Inwerter IGBT", "value": "858 zl", "valueType": "price" },
+      { "icon": "box", "text": "Sztywna walizka + kabel masowy", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "gift", "text": "20 elektrod E6013 + samosciemniajaca przylbica", "value": "GRATIS", "valueType": "gift" },
+      { "icon": "gift", "text": "Rekawice + szczotka/mlotek + 2 magnesy katowe", "value": "GRATIS", "valueType": "gift" },
+      { "icon": "cable", "text": "Przedluzacz 10m z automatycznym zwijaniem", "value": "GRATIS", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Cena katalogowa:",
+    "totalOriginalValue": "858 zl",
+    "totalCurrentLabel": "Dzis placisz tylko:",
+    "totalCurrentValue": "429 zl",
+    "totalSave": "Oszczedzasz 429 zl · Dostawa GRATIS",
+    "ctaText": "ZAMÓW TERAZ"
+  },
+
+  "reviews": {
+    "eyebrow": "Kto ja wypróbowal",
+    "title": "Prawdziwe opinie od prawdziwych kupujacych",
+    "rating": "4.8",
+    "totalCount": "14 729 opinii",
+    "verifiedNote": "Kazda opinia jest weryfikowana przez niezalezny zewnetrzny podmiot.",
+    "showMoreText": "Pokaz wiecej opinii",
+    "leaveReviewText": "Napisz opinie",
+    "verifiedBadge": "Zweryfikowany zakup",
+    "sellerReplyLabel": "Odpowiedz sprzedawcy:",
+    "items": [
+      {
+        "initials": "MK",
+        "name": "Marek Kowalski",
+        "stars": 5,
+        "text": "Balustrada na balkonie oderwala sie i grozila upadkiem. Spawacz chcial 1 000 zl za robote na dwadziescia minut. Wzielem ta spawarke, postapowalem wedlug instrukcji i naprawilem sam. Efekt solidny, luk precyzyjny, ani jedna kropla obok.",
+        "verified": true,
+        "sellerReply": "Marku, sytuacje takie jak Twoja pokazuja prawdziwa wartosc Bowek Ironweld. Swietna robota i dziekujemy za wybór!"
+      },
+      {
+        "initials": "PW",
+        "name": "Piotr Wisniewski",
+        "stars": 5,
+        "text": "Zainteresowaly mnie prace z metalem i uzywam jej do kreatywnych projektów w weekendy. To, co naprawde zaskakuje, to stabilnosc luku nawet przy 25 amperach, na cienkim blasze nie przebija. Niesamowity stosunek jakosci do ceny.",
+        "verified": true,
+        "sellerReply": "Piotrze, technologia IGBT jest zaprojektowana wlasnie po to, by zapewniac precyzje nawet przy niskiej mocy. Gratulujemy projektów!"
+      },
+      {
+        "initials": "AN",
+        "name": "Andrzej Nowak",
+        "stars": 5,
+        "text": "Musialem przyspawac uchwyt wydechu w aucie, a warsztat chcial 500 zl. Pomyslalem chwile, zamówilem ta spawarke i zrobilem wszystko na podwórku. Lekka jak piórko, wrzucam do bagaznika i jestem gotowy gdziekolwiek. Przyszla w 48 godzin, zaplacilem kurierowi.",
+        "verified": true,
+        "sellerReply": "Andrzeju, mozliwosc zabrania jej wszedzie to jedna z najbardziej docenianych zalet. Cieszymy sie, ze oszczednosc byla konkretna!"
+      },
+      {
+        "initials": "TZ",
+        "name": "Tomasz Zielinski",
+        "stars": 4,
+        "text": "Testuje ja od tygodnia na róznych grubosciach zelaza i wyniki sa przekonujace. Na razie 4 gwiazdki, bo chce zobaczyc ja w dluzszym okresie, ale musze przyznac, ze latwosc regulacji to ogromny plus.",
+        "verified": true,
+        "sellerReply": "Tomaszu, ostroznosc jest zrozumiala! Zobaczysz, ze z uplywem tygodni nie zawiedzie. Daj nam znac, jak idzie dalej!"
+      },
+      {
+        "initials": "KL",
+        "name": "Krzysztof Lewandowski",
+        "stars": 5,
+        "text": "Zamówilem w piatek wieczorem, a w poniedzialek rano kurier juz dzwonil do drzwi. Zaplacilem gotówka, zero niespodzianek. Od razu przetestowalem na balustradzie tarasu i spawa perfekcyjnie. Samosciemniajaca przylbica w zestawie to bonus, który robi róznice.",
+        "verified": true,
+        "sellerReply": "Krzysztofie, zadnych ukrytych kosztów, nigdy. Cieszymy sie, ze doceniasz tez kompletny zestaw akcesoriów!"
+      },
+      {
+        "initials": "JK",
+        "name": "Jan Kaminski",
+        "stars": 5,
+        "text": "Mam dzialke ze stodolami i sprzetem, który ciagle wymaga spawania. Fantastyczne jest to, ze dziala z kazdym gniazdkiem, bez generatorów i specjalnych kabli. Wkladam ja do walizki, wsiadam do auta i jade.",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "PD",
+        "name": "Pawel Dabrowski",
+        "stars": 5,
+        "text": "Nigdy wczesniej nie trzymalem spawarki w reku. Obejrzalem trzy poradniki, zaczynalem powoli na 20 amperach i juz przy czwartym spawie szlo prosto. Mozliwosc stopniowego zwiekszania mocy daje pewnosc siebie i nie ryzykujesz, ze cos przepalisz. Goraco polecam dla poczatkujacych.",
+        "verified": true,
+        "sellerReply": "Pawle, progresywna regulacja od 20A jest zaprojektowana wlasnie dla poczatkujacych takich jak Ty. Zobaczysz, ze szybko sie poprawisz. Dziekujemy za opinie!"
+      },
+      {
+        "initials": "AW",
+        "name": "Anna Wójcik",
+        "stars": 5,
+        "text": "Nie moglem juz wytrzymac ciąglego wzywania kogos do kazdej drobnej naprawy. Przyspawalam nózki lezaka ogrodowego i haczyk bramy garazowej. Intuicyjna, wazy niewiele i chowam ja pod schodami. W koncu radze sobie sama.",
+        "verified": true,
+        "sellerReply": "Anno, bycie niezalezna w codziennych naprawach jest bezcenne. Swietna robota i dziekujemy za zaufanie!"
+      },
+      {
+        "initials": "MB",
+        "name": "Michal Borkowski",
+        "stars": 5,
+        "text": "Pracowalem czterdziesci lat jako elektrotechnik i mówia wam, ze do domowych napraw ta spawarka jest wiecej niz wystarczajaca. Inwerter IGBT utrzymuje stabilny luk nawet przy wahaniach napiecia w sieci. Powazny produkt w uczciwej cenie.",
+        "verified": true,
+        "sellerReply": "Michale, opinia osoby z doswiadczeniem w branzy jest podwójnie cenna. Zaszczyceni Pana ocena!"
+      },
+      {
+        "initials": "EM",
+        "name": "Ewa Mazur",
+        "stars": 5,
+        "text": "W zeszlym roku kupilem tania chinska spawarke z internetu i nic nie byla warta: luk gasl co trzy sekundy. Ta jest na zupelnie innym poziomie, róznice czujesz od pierwszej chwili. A z kompletnym zestawem elektrod i przylbica nie musisz kupowac nic wiecej, otwierasz pudelko i dzialasz.",
+        "verified": true,
+        "sellerReply": "Ewo, sekretem jest inwerter IGBT, który zapewnia zawsze stabilny luk. Cieszymy sie, ze skok jakosci byl oczywisty!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Napisz swoja opinie",
+    "nameLabel": "Twoje imie",
+    "namePlaceholder": "Np. Jan Kowalski",
+    "ratingLabel": "Ocena",
+    "textLabel": "Twoja opinia",
+    "textPlaceholder": "Podziel sie swoim doswiadczeniem...",
+    "submitText": "Opublikuj opinie",
+    "successTitle": "Dziekujemy za Twój wklad!",
+    "successText": "Twoja opinia zostanie zweryfikowana przez niezalezny zewnetrzny zespól. Nie beda publikowane opinie osób, które nie dokonaly faktycznego zakupu produktu, w celu zapewnienia autentycznosci.",
+    "closeText": "Zamknij"
+  },
+
+  "orderSteps": {
+    "eyebrow": "ZAMÓW TERAZ",
+    "title": "Proste jak 1, 2, 3",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Wypelnij swoje dane",
+        "description": "Wpisz imie, telefon i adres w formularzu zamówienia ponizej."
+      },
+      {
+        "icon": "phone",
+        "title": "Oddzwonimy do Ciebie",
+        "description": "Otrzymasz telefon lub wiadomosc WhatsApp w celu weryfikacji danych."
+      },
+      {
+        "icon": "cash",
+        "title": "Placisz przy odbiorze",
+        "description": "W ciagu 24/48h kurier dostarczy Ci paczke. Placisz gotówka, bez zaliczki."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Formularz zamówienia",
+    "title": "Sfinalizuj swój zakup",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Rabat -50% konczy sie za:",
+    "stockWarning": "Zostalo <strong>8 sztuk</strong> w tej cenie promocyjnej",
+    "summaryTitle": "Szczególy zamówienia",
+    "summaryLines": [
+      { "label": "Bowek Ironweld™ + Akcesoria", "value": "429 zl", "type": "normal" },
+      { "label": "Szybka dostawa 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Opłata za pobranie", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "LACZNIE",
+    "totalValue": "429 zl",
+    "fields": {
+      "name": { "label": "Imie i Nazwisko *", "placeholder": "Np. Jan Kowalski" },
+      "phone": { "label": "Numer telefonu *", "placeholder": "Np. 601 123 456" },
+      "address": { "label": "Adres dostawy *", "placeholder": "Ulica, numer, miasto, kod pocztowy" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "POTWIERDZ ZAMÓWIENIE",
+    "submitSubtext": "Platnosc gotówka przy odbiorze",
+    "reassurance": "Dostawa 24/48h · Gwarancja 1 rok · Obsluga klienta<br><strong>Karta nie jest wymagana.</strong> Skontaktujemy sie z Toba w celu potwierdzenia."
+  },
+
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Odpowiedzi na Twoje pytania, wszystko w jednym miejscu.",
+    "items": [
+      { "question": "Jak moge zlozyc zamówienie?", "answer": "Nacisnij przycisk zakupu, wypelnij formularz swoimi danymi i wyslij zgloszenie. Skontaktujemy sie z Toba telefonicznie lub przez WhatsApp w celu potwierdzenia, po czym paczka zostanie dostarczona do domu z platnoscia gotówka przy odbiorze." },
+      { "question": "Ile kosztuje dostawa?", "answer": "Dostawa jest calkowicie bezplatna. Po potwierdzeniu zamówienia dostarczamy w ciagu 24/48 godzin roboczych." },
+      { "question": "Czy moge ja zwrócic, jesli nie bedzie mi odpowiadac?", "answer": "Oczywiscie, masz 30 dni od otrzymania na dokonanie zwrotu i uzyskanie pelnego zwrotu pieniedzy. Organizujemy odbiór z Twojego adresu i zwracamy cala kwote." },
+      { "question": "A jesli po pierwszym miesiacu pojawi sie wada?", "answer": "Zaden problem, kazdy nasz produkt jest objety 2-letnia gwarancja od daty zakupu." },
+      { "question": "Jak moge poprosic o pomoc lub zwrot?", "answer": "Po zakupie mozesz sie z nami skontaktowac za pomoca formularza na stronie lub pisac na adres e-mail podany na dole strony." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "858 zl",
+    "newPrice": "429 zl",
+    "buttonText": "ZAMÓW TERAZ",
+    "buttonSubtext": "Platnosc przy odbiorze"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 429,
+    "conversionCurrency": "PLN",
+    "facebookPixelId": "",
+    "network": {
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=607&uid=019855d0-397a-72ee-8df5-c5026966105a&lp=607"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Poprzedni",
+    "nextSlide": "Nastepny",
+    "thumbnail": "Miniatura",
+    "close": "Zamknij"
+  },
+
+  "ty": {
+    "title": "Zamówienie potwierdzone!",
+    "subtitle": "Prawidlowo otrzymalismy Twoje zgloszenie.",
+    "orderNumberLabel": "Nr zamówienia:",
+    "summaryTitle": "Szczególy zamówienia",
+    "accessoriesLabel": "+ Akcesoria w zestawie",
+    "totalLabel": "LACZNIE DO ZAPLATY",
+    "paymentNote": "Platnosc gotówka kurierowi — zero zaliczek",
+    "yourDataTitle": "Twoje dane",
+    "nameLabel": "Imie",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adres",
+    "nextStepsTitle": "Kolejne kroki",
+    "message": "Skontaktujemy sie z Toba telefonicznie lub przez WhatsApp w celu potwierdzenia zamówienia i ustalenia dostawy.",
+    "steps": [
+      "Otrzymasz telefon lub wiadomosc WhatsApp z potwierdzeniem",
+      "Przesylka zostanie wyslana w ciagu 24/48h",
+      "Placisz gotówka bezposrednio kurierowi"
+    ],
+    "footerText": "Gwarancja 2 lata · 30 dni na zwrot · Dedykowane wsparcie"
+  }
+}

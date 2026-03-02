@@ -1,0 +1,504 @@
+{
+  "_instructions": [
+    "REGOLE GLOBALI PER LA COMPILAZIONE DI QUESTO JSON:",
+    "",
+    "=== ENCODING ===",
+    "0. Il file DEVE essere salvato in UTF-8. Usare sempre i caratteri accentati nativi (è, à, ù, ò, ì, é) e MAI apostrofi al posto degli accenti. Le emoji e i simboli speciali vanno inseriti direttamente come caratteri Unicode.",
+    "",
+    "=== NAZIONI ===",
+    "1. NON fare MAI riferimento a una nazione specifica (es: Italia, in Italia, ecc). Le landing vengono lanciate in tutta Europa.",
+    "",
+    "=== COERENZA SOCIAL PROOF ===",
+    "2. hero.socialProof.count DEVE corrispondere ESATTAMENTE a reviews.totalCount. La media stelle in hero.socialProof.rating DEVE corrispondere a reviews.rating.",
+    "",
+    "=== IMMAGINI (REGOLA FONDAMENTALE) ===",
+    "3. STRUTTURA CARTELLE: /images/[nome-venditore]/[nome-prodotto]/ — se il prodotto ha più parole (es: 'QuickChef Pro Max'), la cartella si chiama solo con il nome base (es: 'quickchef'). Se la cartella esiste già, CHIEDERE all'utente come vuole chiamarla. Dentro la cartella ci sono due sottocartelle:",
+    "   - carosello/ — foto numerate progressivamente (1.jpg, 2.png, 3.webp, ecc). TUTTE le immagini presenti vanno inserite nel gallery.slides della hero, IN ORDINE. La prima immagine (1.*) va anche nel riepilogo ordine come thumbnail.",
+    "   - angle/ — foto numerate progressivamente (1.jpg, 2.png, ecc). Vanno inserite IN ORDINE nei blocchi della sezione 'Perché è diverso' (features.items). La foto 1 va nel primo blocco, la 2 nel secondo, ecc.",
+    "   L'utente carica le immagini, tu inserisci i path nel JSON. Non importa l'estensione: inserisci tutte le immagini presenti. Le immagini vengono ottimizzate automaticamente dal componente tramite next/image.",
+    "",
+    "=== BENEFITS ===",
+    "4. I benefits devono riguardare SOLO il prodotto e le sue funzionalità. MAI parlare di spedizione, consegna, pagamento, garanzia nei benefits.",
+    "",
+    "=== PREZZI (REGOLA FONDAMENTALE) ===",
+    "5. TUTTI I PREZZI vengono dalla sezione 'pricing'. L'utente fornisce prezzi e sconti all'inizio della creazione, vanno inseriti in pricing. Da lì vengono pescati OVUNQUE servano: priceBox, midCta, comparison, package, orderForm, stickyCta. MAI hardcodare un prezzo.",
+    "",
+    "=== SOCIAL PROOF CLICK ===",
+    "6. Cliccando sulla social proof nella hero, l'utente viene portato alla sezione recensioni.",
+    "",
+    "=== TITOLI DI SEZIONE ===",
+    "7. I titoli (eyebrow + title) possono essere STATICI o DINAMICI. Quelli marcati STATICO non vanno mai cambiati. Quelli DINAMICI cambiano per ogni prodotto.",
+    "",
+    "=== TONO E LINGUAGGIO (REGOLA FONDAMENTALE) ===",
+    "8. TUTTI i testi della landing devono seguire queste regole:",
+    "   - Linguaggio MARKETING AGGRESSIVO e SEMPLICE, mai volgare.",
+    "   - Adatto ai boomer: estremamente semplice ma d'impatto.",
+    "   - Deve trasmettere URGENZA e avere EFFETTO WOW, molto spinto.",
+    "   - NON tecnico ma EMOZIONALE e IMMEDIATO.",
+    "   - Esempio: NON scrivere 'batteria da 5000mAh' ma '3 giorni senza scaricarsi'.",
+    "   - Esempio: NON scrivere 'motore da 800W' ma 'potenza da barbiere professionista'.",
+    "   - Traduci sempre le specifiche tecniche in BENEFICI CONCRETI che il cliente capisce e sente.",
+    "   - Frasi brevi, dirette, che colpiscono. Zero giri di parole.",
+    "",
+    "=== LUNGHEZZA TESTI (REGOLA FONDAMENTALE) ===",
+    "9. Le lunghezze di TUTTI i testi (titoli, descrizioni, bullet, recensioni, ecc) devono essere MOLTO SIMILI a quelle dell'esempio presente in questo JSON. Se un titolo nell'esempio è di 5 parole, anche il nuovo deve essere circa 5 parole. Se una descrizione è di 1 riga, anche la nuova deve essere di 1 riga. Se una recensione è di 3 righe, anche la nuova deve essere circa 3 righe. MAI testi molto più lunghi o molto più corti dell'esempio.",
+    "",
+    "=== MARCHI E NOMI (REGOLA FONDAMENTALE) ===",
+    "10. MAI citare nomi di negozi, brand, marchi registrati o aziende terze (es: Amazon, Decathlon, Apple, Samsung, ecc). Se serve un confronto, usare termini generici come 'altri prodotti', 'prodotti concorrenti', 'alternative in commercio'.",
+    "",
+    "=== NAZIONI (RIBADITO) ===",
+    "11. MAI fare riferimento all'Italia o a qualsiasi nazione specifica. Nemmeno nelle recensioni, nelle risposte del venditore, nei benefits, nelle FAQ. Le landing vengono usate in tutta Europa e tradotte.",
+    "",
+    "=== SPEDIZIONE E PAGAMENTO (REGOLA FONDAMENTALE) ===",
+    "12. NON inventare MAI informazioni su spedizione e pagamento. Le regole sono FISSE e NON modificabili:",
+    "   - Spedizione: SEMPRE gratuita, 24/48h.",
+    "   - Pagamento: SEMPRE alla consegna, in contanti al corriere.",
+    "   - Contrassegno: SEMPRE gratuito.",
+    "   - Reso: SEMPRE 30 giorni.",
+    "   - Garanzia: SEMPRE 2 anni.",
+    "   - MAI inventare costi di spedizione, metodi di pagamento alternativi (carta, PayPal, ecc), tempi diversi o condizioni diverse da queste.",
+    "",
+    "=== ANGLE (REGOLA FONDAMENTALE) ===",
+    "13. Gli angle forniti dall'utente riguardano SEMPRE e SOLO il prodotto e le sue funzionalità. Gli angle su spedizione, consegna, pagamento, garanzia, reso sono GIÀ presenti nelle sezioni statiche e NON vanno ripetuti nei contenuti dinamici (benefits, features, problems, hero, ecc). Non mischiare mai angle prodotto con angle logistica/negozio.",
+    "",
+    "=== LINGUA (REGOLA FONDAMENTALE) ===",
+    "14. La prima versione della landing è SEMPRE in ITALIANO, indipendentemente dalla lingua della fonte, del competitor o del riferimento fornito dall'utente. Anche se il link, le informazioni di partenza o il materiale è in polacco, inglese, tedesco, spagnolo o qualsiasi altra lingua, il copy va SEMPRE scritto in italiano. Le traduzioni nelle altre lingue vengono fatte successivamente nella Fase 3.",
+    "",
+    "=== GRAMMATICA E CORRETTEZZA (REGOLA FONDAMENTALE) ===",
+    "15. TUTTI i testi devono essere grammaticalmente corretti in italiano. Linguaggio semplice e diretto NON significa scorretto. Evitare calchi da altre lingue, costruzioni innaturali o frasi che suonano tradotte. Esempio: NON 'niente appiccica' ma 'lo sporco non attacca'. NON 'zero problemi hai' ma 'non avrai nessun problema'. Ogni frase deve suonare naturale per un madrelingua italiano. Il tono è aggressivo e semplice, ma la grammatica deve essere SEMPRE corretta.",
+    "",
+    "=== NOTE AGGIUNTIVE (WORKFLOW) ===",
+    "16. Dopo aver raccolto i dati del prodotto (Fase 0), PRIMA di iniziare la Fase 1 (analisi + copy), chiedere SEMPRE all'utente: 'Hai note aggiuntive, preferenze o cose da tenere a mente per questa landing?' — e attendere la risposta prima di procedere."
+  ],
+
+  "seo": {
+    "_note": "DINAMICO - Cambia per ogni prodotto. Title max 60 caratteri, description max 160 caratteri.",
+    "title": "CloudRelief Topper™ - Miegokite be skausmo nuo pat pirmos nakties",
+    "description": "Ortopedinis viršutinis čiužinys su banguotu paviršiumi, kuris palaiko stuburą ir malšina skausmą. Nemokamas pristatymas, mokėjimas pristatymo metu."
+  },
+
+  "pricing": {
+    "_note": "DINAMICO - FONTE UNICA DI VERITÀ PER TUTTI I PREZZI. Cambia per ogni prodotto e nazione. L'utente fornisce questi valori all'inizio della creazione. Tutti i prezzi visibili nella pagina si calcolano da qui.",
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 138.00,
+    "currentPrice": 69.00,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "text": "Nemokamas pristatymas 24/48 val. · Mokėjimas pristatymo metu · 2 metų garantija"
+  },
+
+  "urgencyBanner": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "text": "Dėmesio: Didelė paklausa —",
+    "highlight": "Liko tik 8 vienetai",
+    "suffix": "šia kaina"
+  },
+
+  "hero": {
+    "_note": "DINAMICO - Badge, titolo, sottotitolo e social proof cambiano per ogni prodotto. MAI citare nazioni specifiche.",
+    "_note_title": "DINAMICO - Titolo cambia per ogni prodotto.",
+    "_instructions_badge": "Qualcosa di semplice che riguarda il prodotto e trasmette INNOVAZIONE.",
+    "_instructions_title": "SOLUZIONE a un PROBLEMA.",
+    "_instructions_subtitle": "Descrizione aggressiva ma rassicurante.",
+    "_instructions_socialProof": "count e rating DEVONO corrispondere ESATTAMENTE a reviews.totalCount e reviews.rating.",
+    "badge": "Naujiena 2026",
+    "title": "Ortopedinė atrama, kuri",
+    "titleHighlight": "Panaikina skausmą",
+    "titleSuffix": "Kol jūs miegate",
+    "subtitle": "Ortopedinis viršutinis čiužinys su banguotu profiliu, kuris palaiko stuburą ir tolygiai paskirsto svorį. Uždėkite ant čiužinio ir skausmas dingsta.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "19.741 patenkintų klientų"
+    }
+  },
+
+  "gallery": {
+    "_note": "DINAMICO - Le immagini sono in /images/[venditore]/[prodotto]/carosello/.",
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/cloudrelief/carosello/1.png", "alt": "CloudRelief Topper pagrindinis vaizdas" },
+      { "src": "/images/mirko/cloudrelief/carosello/2.png", "alt": "CloudRelief Topper naudojimas" },
+      { "src": "/images/mirko/cloudrelief/carosello/3.png", "alt": "CloudRelief Topper iš arti" },
+      { "src": "/images/mirko/cloudrelief/carosello/4.png", "alt": "CloudRelief Topper banguotas profilis" },
+      { "src": "/images/mirko/cloudrelief/carosello/5.png", "alt": "CloudRelief Topper vidinė struktūra" },
+      { "src": "/images/mirko/cloudrelief/carosello/6.png", "alt": "CloudRelief Topper ant lovos" },
+      { "src": "/images/mirko/cloudrelief/carosello/7.png", "alt": "CloudRelief Topper pakuotė" },
+      { "src": "/images/mirko/cloudrelief/carosello/8.png", "alt": "CloudRelief Topper su priedais" }
+    ]
+  },
+
+  "benefits": {
+    "_note": "DINAMICO - Numero variabile di bullet point. Devono riguardare SOLO le caratteristiche/benefici del prodotto.",
+    "items": [
+      { "title": "Išlygiuota nugara visą naktį:", "description": "kūnas randa teisingą laikyseną, stuburas atsipalaiduoja miego metu." },
+      { "title": "Banguotas masažinis paviršius:", "description": "banguota struktūra skatina kraujotaką. Jokio tirpimo ir rytinio patinimo." },
+      { "title": "Pečiai ir klubai be spaudimo:", "description": "7 cm kompaktiškų atminties putų laiko svorį neįsmukdami." },
+      { "title": "Jokio karščio naktį:", "description": "šoninė 3D Mesh ventiliacija ir atvira struktūra. Naktinis prakaitavimas pašalintas." },
+      { "title": "Paprastas valymas:", "description": "Aloe Vera užvalkalas su nuimamu užtrauktuku. Nuimate ir skalbiate skalbyklėje." },
+      { "title": "Tvirtai savo vietoje:", "description": "neslystantis dugnas ir 4 kampinės gumos. Stovi tvirtai ir niekada nejuda." }
+    ]
+  },
+
+  "sizes": {
+    "title": "Pasirinkite savo dydį",
+    "sizeLabel": "Dydis",
+    "options": [
+      { "id": "viengule", "name": "Viengulė", "dimensions": "80×190 cm" },
+      { "id": "pusantrine", "name": "Pusantrinė", "dimensions": "120×190 cm" },
+      { "id": "dvigule", "name": "Dvigulė", "dimensions": "160×190 cm" },
+      { "id": "king", "name": "King", "dimensions": "180×200 cm" }
+    ],
+    "defaultSelected": "dvigule",
+    "explanationTitle": "Kodėl kaina ta pati?",
+    "explanationText": "Norėdami išvalyti sandėlį, sumažinome didelių dydžių (King/Dvigulė) kainą iki Viengulės kainos. Pasinaudokite dabar: mokate kaip už mažą, o gaunate didelį!"
+  },
+
+  "priceBox": {
+    "_note_static": "shippingLabel, shippingValue, guaranteeLabel, offerToggleText sono STATICI - non modificare.",
+    "_note_dynamic": "productName, originalPriceLabel, discountLabel e offerItems sono DINAMICI.",
+    "productName": "CloudRelief Topper™",
+    "originalPriceLabel": "Kataloginė kaina:",
+    "discountLabel": "SUTAUPYKITE 69€ (-50%)",
+    "shippingLabel": "Greitas pristatymas:",
+    "shippingValue": "Nemokamai",
+    "guaranteeLabel": "2 metų garantija",
+    "offerToggleText": "Sužinokite, kas įeina į pasiūlymą",
+    "offerItems": [
+      { "text": "CloudRelief Topper™ — Ortopedinis viršutinis čiužinys su masažinėmis bangomis", "badge": null },
+      { "text": "Aloe Vera užvalkalas su užtrauktuku (jau uždėtas)", "badge": null },
+      { "text": "Neperšlampamas čiužinio užvalkalas su gumomis", "badge": "DOVANA" },
+      { "text": "2 metų garantija + Asmeninis aptarnavimas", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "mainText": "UŽSAKYTI DABAR",
+    "mainSubtext": "Mokėjimas grynaisiais pristatymo metu",
+    "subNote": "Jokios rizikos: mokate tik gavę siuntinį"
+  },
+
+  "trustBadges": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "items": [
+      { "icon": "cash", "text": "Mokėjimas pristatymo metu", "color": "green" },
+      { "icon": "truck", "text": "Pristatymas 24/48 val.", "color": "blue" },
+      { "icon": "return", "text": "30 dienų grąžinimas", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "_note": "DINAMICO (contenuto) - Items e soluzione cambiano per ogni prodotto.",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Atpažįstate save?",
+    "title": "Jūs taip pat turite šias problemas?",
+    "items": [
+      { "icon": "bone", "titleBold": "Nugara skauda vos tik atsikėlus", "text": "ir sustingimas lydi kelias valandas." },
+      { "icon": "foot", "titleBold": "Rankos ir kojos tirpsta naktį", "text": "— ryte pabustate nutirpęs ir be jautrumo." },
+      { "icon": "fatigue", "titleBold": "Valandų valandas ieškote tinkamos padėties", "text": "o ryte esate labiau pavargęs nei eidamas miegoti." }
+    ],
+    "solutionTitle": "Yra geresnis sprendimas.",
+    "solutionText": "Profesionalaus lygio ortopedinė atrama tiesiai jūsų lovoje. Nekeičiant čiužinio, neišleidžiant baisių sumų."
+  },
+
+  "features": {
+    "_note": "DINAMICO (contenuto e titoli).",
+    "eyebrow": "Kodėl jis kitoks",
+    "title": "3 ortopediniai sluoksniai, veikiantys sinergijoje",
+    "items": [
+      {
+        "image": "/images/mirko/cloudrelief/angle/1.gif",
+        "imageAlt": "Stuburo atpalaidavimas",
+        "tag": "1 SLUOKSNIS",
+        "tagColor": "green",
+        "title": "Stuburo atpalaidavimas",
+        "description": "<strong>Viskoelastinės</strong> putos tiksliai prisitaiko prie kiekvieno kūno lenkimo, užpildydamos <strong>tarpus juosmens srityje</strong>. Stuburas ištiesėja, o diskai <strong>atsinaujina</strong> miego metu."
+      },
+      {
+        "image": "/images/mirko/cloudrelief/angle/2.gif",
+        "imageAlt": "Banguotas Wave paviršius",
+        "tag": "2 SLUOKSNIS",
+        "tagColor": "orange",
+        "title": "Banguotas \"Wave\" paviršius",
+        "description": "Banguotas profilis sukuria <strong>nuolatinį mikro-masažą</strong> kiekvienu menkiausiu judesiu. Aktyvina <strong>periferinę mikrocirkuliaciją</strong>, kovodamas su patinimais ir sąstingiu."
+      },
+      {
+        "image": "/images/mirko/cloudrelief/angle/3.gif",
+        "imageAlt": "Jokio spaudimo taško",
+        "tag": "3 SLUOKSNIS",
+        "tagColor": "blue",
+        "title": "Jokio spaudimo taško",
+        "description": "Tolygiai paskirstydamas svorį per <strong>7 cm storį</strong>, pašalina <strong>perkrovas</strong> ant klubų ir pečių. Būtina tiems, kurie kenčia nuo <strong>sąnarių skausmų</strong> ir naktinio tirpimo."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "_note": "DINAMICO (contenuto e titoli).",
+    "eyebrow": "Paprasčiau nebūna",
+    "title": "Paruoštas per pusę minutės. Jokių įrankių.",
+    "image": "",
+    "imageAlt": "Kaip tai veikia",
+    "steps": [
+      { "title": "Atidarykite", "description": "Išimkite topperį iš vakuuminės pakuotės ir ištiesinkite ant čiužinio." },
+      { "title": "Pritvirtinkite", "description": "Užsekite 4 sustiprintas gumas ant čiužinio kampų. Tvirtai ir stabiliai." },
+      { "title": "Miegokite", "description": "Uždėkite paklodę ir mėgaukitės pirmąja naktimi be skausmo." }
+    ]
+  },
+
+  "midCta": {
+    "_note": "STATICO tranne la percentuale di sconto.",
+    "text": "UŽSAKYKITE DABAR SU 50% NUOLAIDA",
+    "subtext": "Mokėjimas grynaisiais pristatymo metu"
+  },
+
+  "comparison": {
+    "_note": "DINAMICO (contenuto).",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Palyginimas",
+    "title": "Kokius pranašumus turėsite prieš alternatyvas?",
+    "productColumn": "CloudRelief Topper™",
+    "competitorColumn": "Naujas čiužinys / Fizioterapijos seansai",
+    "featureColumn": "Savybė",
+    "winnerBadge": "NUGALĖTOJAS",
+    "rows": [
+      { "feature": "Skausmo malšinimas", "product": "✔ Nuo pirmos nakties", "competitor": "Po savaičių / tik kabinete" },
+      { "feature": "Montavimas", "product": "✔ Pusė minutės, jokių įrankių", "competitor": "Pristatymas ir montavimas" },
+      { "feature": "Pasyvus masažas", "product": "✔ Integruotos Wave bangos", "competitor": "Nėra / tik rankinis" },
+      { "feature": "Stuburo palaikymas", "product": "✔ Kiekvieną naktį, be pertraukų", "competitor": "Tik seanso metu" },
+      { "feature": "Higiena", "product": "✔ Nuimamas ir plaunamas", "competitor": "Neplaunamas / vizitai" },
+      { "feature": "Bendra kaina", "product": "✔ Tik 69€ (vieną kartą)", "competitor": "500-1500€" }
+    ]
+  },
+
+  "package": {
+    "_note": "DINAMICO (contenuto).",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Viskas įskaičiuota",
+    "title": "Ką gausite į namus",
+    "items": [
+      { "icon": "box", "text": "CloudRelief Topper™ — Ortopedinis viršutinis čiužinys su masažinėmis bangomis", "value": "€138,00", "valueType": "price" },
+      { "icon": "leaf", "text": "Aloe Vera užvalkalas su užtrauktuku (jau uždėtas)", "value": "ĮTRAUKTA", "valueType": "included" },
+      { "icon": "droplet", "text": "Neperšlampamas čiužinio užvalkalas su gumomis", "value": "DOVANA", "valueType": "gift" },
+      { "icon": "shield", "text": "2 metų garantija + Asmeninis aptarnavimas", "value": "ĮTRAUKTA", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Kataloginė kaina:",
+    "totalOriginalValue": "€197,00",
+    "totalCurrentLabel": "Šiandien mokate tik:",
+    "totalCurrentValue": "€69,00",
+    "totalSave": "Sutaupote €128,00 · Pristatymas NEMOKAMAS",
+    "ctaText": "UŽSAKYTI DABAR"
+  },
+
+  "reviews": {
+    "_note": "DINAMICO (contenuto).",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "_note_static": "verifiedNote, showMoreText, leaveReviewText sono STATICI.",
+    "eyebrow": "Ką sako apie mus",
+    "title": "Patvirtinti atsiliepimai",
+    "rating": "4.8",
+    "totalCount": "19.741 atsiliepimų",
+    "verifiedNote": "✓ Atsiliepimus tikrina nepriklausoma komanda, nesusijusi su šia svetaine.",
+    "showMoreText": "Rodyti daugiau atsiliepimų",
+    "leaveReviewText": "Palikti atsiliepimą",
+    "verifiedBadge": "Patvirtintas pirkimas",
+    "sellerReplyLabel": "Pardavėjo atsakymas:",
+    "items": [
+      {
+        "initials": "RK",
+        "name": "Rūta Kazlauskienė",
+        "stars": 5,
+        "text": "Jau seniai turiu nugaros problemų, gydytojas patarė keisti čiužinį. Uždėjau šį topperį ir nuo pirmos nakties pajutau skirtumą. Ryte nebėra to juosmens skausmo, kuris mane blokuodavo. Atvežė per dvi dienas, sumokėjau kurjeriui.",
+        "verified": true,
+        "sellerReply": "Rūta, labai džiaugiamės, kad pajutote palengvėjimą nuo pirmos nakties! Juosmens palaikymas yra pagrindinė šio produkto stiprybė. Esame pasiruošę padėti bet kokiu klausimu."
+      },
+      {
+        "initials": "JP",
+        "name": "Jonas Petrauskas",
+        "stars": 5,
+        "text": "dirbu sunkų darbą ir vakare nugara būna sulaužyta. žmona pamatė reklamą ir nupirko. turiu pasakyti kad miegas labai pagerėjo, atsibundu mažiau sustingęs ir senas čiužinys tarsi atgimė. tikrai geras pirkinys",
+        "verified": true,
+        "sellerReply": "Jonai, kas dirba sunkų fizinį darbą, tam nauda didžiausia! Džiaugiamės, kad ir žmona patenkinta sprendimu. Ačiū už pasitikėjimą."
+      },
+      {
+        "initials": "DJ",
+        "name": "Daiva Jankauskienė",
+        "stars": 5,
+        "text": "Nupirkau savo mamai, jai 72 metai ir kas rytą skundėsi nugaros skausmu. Pati uždėjo ant lovos per akimirką, labai paprasta. Po savaitės prisipažino, kad miega daug geriau ir nebepabunda nutirpusiomis rankomis.",
+        "verified": true,
+        "sellerReply": "Daiva, labai malonu tai girdėti! Produktas sukurtas taip, kad būtų lengvas net ir tiems, kas nelabai išmano. Linkėjimai mamai!"
+      },
+      {
+        "initials": "TG",
+        "name": "Tomas Gricius",
+        "stars": 4,
+        "text": "atvyko vakuuminėje pakuotėje, maždaug dieną užtruko kol pilnai išsipūtė. pirmos naktys gerai, jaučiu kad nugara remiasi kitaip. kol kas dedu 4 žvaigždes nes noriu dar pabandyti prieš duodant aukščiausią bet pojūtis geras",
+        "verified": true,
+        "sellerReply": "Tomai, ačiū už nuoširdumą! Tai normalu, kad pilnam tūriui pasiekti reikia 24-48 val. Esame tikri, kad naudojant nuolat pastebėsite dar geresnius rezultatus. Parašykite mums!"
+      },
+      {
+        "initials": "JB",
+        "name": "Jolanta Bražinskienė",
+        "stars": 5,
+        "text": "Mano čiužinys buvo pilnas įdubų ir siaubingai skaudėjo nugarą. Nenorėjau investuoti 800 eurų į naują. Su šiuo topperiu viskas išsisprendė, atrodo lyg miegojai visiškai naujoje lovoje. Banguotas profilis tikrai jaučiasi.",
+        "verified": true,
+        "sellerReply": "Jolanta, atnaujinti seną čiužinį neišleidžiant turto yra būtent mūsų tikslas. Džiaugiamės, kad jums puikiai tinka!"
+      },
+      {
+        "initials": "AN",
+        "name": "Andrius Navickas",
+        "stars": 5,
+        "text": "pristatymas žaibiškas, kitą dieną jau buvo. naudoju dvi savaites ir pečių skausmas kurį jaučiau kiekvieną rytą beveik dingo. miegojau ant šono ir visada atsibusdavau su skaudančiu petimi, dabar nebėra. rekomenduoju",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "NS",
+        "name": "Neringa Stankevičienė",
+        "stars": 5,
+        "text": "Turiu blogos kraujotakos problemų kojose ir rytais visada atsibusdavau su patinusiomis pėdomis. Nuo to laiko kai naudoju šį topperį situacija smarkiai pagerėjo. Medžiaga neprakaitina net vasarą, ko labai bijojau.",
+        "verified": true,
+        "sellerReply": "Neringa, banguotas profilis sukurtas būtent mikrocirkuliacijai skatinti. Džiaugiamės, kad pastebite apčiuopiamų pagerėjimų!"
+      },
+      {
+        "initials": "VR",
+        "name": "Vytautas Rimkus",
+        "stars": 5,
+        "text": "esu osteopatas ir puikiai žinau stuburo problemas. šis topperis laikosi savo pažadų, juosmens palaikymas solidus ir dvigubas sluoksnis jaučiasi. rekomendavau keliems pacientams kurie nenorėjo keisti čiužinio",
+        "verified": true,
+        "sellerReply": "Vytautai, profesionalo nuomonė yra pats vertingiausias įvertinimas. Ačiū, kad rekomendavote savo pacientams!"
+      },
+      {
+        "initials": "EP",
+        "name": "Eglė Paulauskaitė",
+        "stars": 5,
+        "text": "užsakiau penktadienį atvežė pirmadienį. sumokėjau kurjeriui be jokių problemų, jokių papildomų mokesčių. po kelių naktų galiu patvirtinti kad skirtumas jaučiasi, atsibundu daug mažiau sustingusi. ir čiužinio užvalkalas dovanų puikios kokybės",
+        "verified": true,
+        "sellerReply": "Egle, visiškas skaidrumas dėl kainų yra mūsų prioritetas. Džiaugiamės, kad vertinate ir dovanotą čiužinio užvalkalą!"
+      },
+      {
+        "initials": "AČ",
+        "name": "Algirdas Čepulis",
+        "stars": 5,
+        "text": "Man 70 metų ir naktis buvo tapusi tikru kančia, negalėdavau rasti padėties ir atsibusdavau tris keturis kartus. Su šiuo topperiu pramiegoju visą naktį be pertraukos. Medžiaga lydi kūną ir yra labai patogi.",
+        "verified": true,
+        "sellerReply": "Algirdai, miegoti visą naktį nepabudus yra labai svarbu jūsų amžiuje. Nuoširdžiai džiaugiamės, kad atradote poilsį. Ačiū!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "title": "Palikite savo atsiliepimą",
+    "nameLabel": "Jūsų vardas",
+    "namePlaceholder": "Pvz. Jonas Jonaitis",
+    "ratingLabel": "Įvertinimas",
+    "textLabel": "Jūsų atsiliepimas",
+    "textPlaceholder": "Papasakokite apie savo patirtį...",
+    "submitText": "Siųsti atsiliepimą",
+    "successTitle": "Ačiū už jūsų atsiliepimą!",
+    "successText": "Jūsų atsiliepimas laukia patvirtinimo iš nepriklausomos komandos, nesusijusios su šia svetaine. Atsiliepimai, palikti nepirkusių produktą asmenų, nebus publikuojami, siekiant išvengti neautentiškų atsiliepimų.",
+    "closeText": "Uždaryti"
+  },
+
+  "orderForm": {
+    "_note": "SEMI-STATICO.",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Užsakymo forma",
+    "title": "Užbaikite savo užsakymą",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Pasiūlymas -50% baigiasi po:",
+    "stockWarning": "Liko tik <strong>8 vienetai</strong> šia kaina",
+    "summaryTitle": "Užsakymo suvestinė",
+    "summaryLines": [
+      { "label": "CloudRelief Topper™ + Priedai", "value": "€69,00", "type": "normal" },
+      { "label": "Greitas pristatymas 24/48 val.", "value": "NEMOKAMAI", "type": "free" },
+      { "label": "Mokėjimas pristatymo metu", "value": "NEMOKAMAI", "type": "free" }
+    ],
+    "totalLabel": "IŠ VISO",
+    "totalValue": "€69,00",
+    "fields": {
+      "name": { "label": "Vardas ir pavardė *", "placeholder": "Pvz. Jonas Jonaitis" },
+      "phone": { "label": "Telefono numeris *", "placeholder": "Pvz. +370 612 34567" },
+      "address": { "label": "Pristatymo adresas *", "placeholder": "Gatvė, namo nr., miestas, pašto kodas" }
+    },
+    "phoneNote": "Su jumis susisieks telefonu arba per WhatsApp, kad patvirtintų užsakymą.",
+    "paymentBadge": "Mokėjimas pristatymo metu — Mokate grynaisiais kurjeriui. Jokio išankstinio mokėjimo.",
+    "submitText": "PATVIRTINTI UŽSAKYMĄ",
+    "submitSubtext": "Mokėjimas grynaisiais pristatymo metu",
+    "reassurance": "Duomenys apsaugoti · SSL 256 bitų · Jokio išankstinio nuskaičiavimo"
+  },
+
+  "faq": {
+    "_note": "STATICO - Le FAQ sono sempre uguali per tutte le landing. Non modificare.",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Dažnai užduodami klausimai",
+    "title": "Dar turite abejonių? Štai atsakymai.",
+    "items": [
+      { "question": "Kaip užsakyti?", "answer": "Paspauskite pirkimo mygtuką, užpildykite formą savo duomenimis ir patvirtinkite užsakymą. Su jumis susisieks telefonu arba per WhatsApp patvirtinimui ir siuntinį patogiai gausite į namus, mokėdami grynaisiais." },
+      { "question": "Kaip veikia pristatymas?", "answer": "Pristatymas yra visiškai nemokamas. Nuo užsakymo patvirtinimo pristatymas užtrunka maždaug 24/48 darbo valandas." },
+      { "question": "O jei man nepatiks?", "answer": "Galite prašyti visiško pinigų grąžinimo, grąžindami produktą per 30 dienų nuo pristatymo. Mes patys atvažiuosime atsiimti siuntinio ir grąžinsime visą sumokėtą sumą." },
+      { "question": "Jei po 30 dienų kils problemų?", "answer": "Nesijaudinkite, visi mūsų produktai turi 2 metų garantiją." },
+      { "question": "Kaip paprašyti grąžinimo ar pagalbos?", "answer": "Norėdami gauti pagalbos ar grąžinti produktą po užsakymo, galite naudoti kontaktų formą svetainėje arba el. paštą, nurodytą puslapio apačioje." }
+    ]
+  },
+
+  "stickyCta": {
+    "_note": "SEMI-STATICO.",
+    "oldPrice": "€138",
+    "newPrice": "€69",
+    "buttonText": "UŽSAKYTI DABAR",
+    "buttonSubtext": "Mokate pristatymo metu"
+  },
+
+  "tracking": {
+    "_note": "Compilato nella FASE 4.",
+    "googleAdsId": "AW-16697430619",
+    "conversionLabel": "QuC9CK_dtf8bENuk-pk-",
+    "conversionValue": 69.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "https://offers.uncappednetwork.com/forms/api/",
+      "offerId": "3041",
+      "fingerprintScript": "https://offers.uncappednetwork.com/forms/tmfp/",
+      "clickPixel": "https://offers.uncappednetwork.com/forms/api/ck/?o=3041&uid=0191b25c-22d2-7f55-9d9b-79b67cebbff3&lp=3075",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Ankstesnis",
+    "nextSlide": "Kitas",
+    "thumbnail": "Miniatiūra",
+    "close": "Uždaryti"
+  },
+
+  "ty": {
+    "_note": "STATICO.",
+    "title": "Užsakymas patvirtintas!",
+    "subtitle": "Jūsų užsakymas sėkmingai gautas.",
+    "orderNumberLabel": "Užsakymo Nr.:",
+    "summaryTitle": "Užsakymo suvestinė",
+    "accessoriesLabel": "+ Priedai komplekte",
+    "totalLabel": "IŠ VISO MOKĖTI",
+    "paymentNote": "Mokėjimas grynaisiais kurjeriui — jokio išankstinio mokėjimo",
+    "yourDataTitle": "Jūsų duomenys",
+    "nameLabel": "Vardas",
+    "phoneLabel": "Telefonas",
+    "addressLabel": "Adresas",
+    "nextStepsTitle": "Kas vyksta toliau?",
+    "message": "Su jumis susisieks telefonu arba per WhatsApp, kad patvirtintų užsakymą ir suorganizuotų pristatymą.",
+    "steps": [
+      "Gausite skambutį arba WhatsApp žinutę dėl patvirtinimo",
+      "Siuntinys bus išsiųstas per 24/48 val.",
+      "Sumokėsite grynaisiais kurjeriui pristatymo metu"
+    ],
+    "footerText": "2 metų garantija · 30 dienų grąžinimas · Asmeninis aptarnavimas"
+  }
+}

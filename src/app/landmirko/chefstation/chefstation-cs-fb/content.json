@@ -1,0 +1,425 @@
+{
+  "seo": {
+    "title": "ChefStation™ - Multifunkční Centrum Vaření 5 v 1",
+    "description": "Smažte horkovzdušně, pečte, grilujte, ohřívejte a připravujte teplé nápoje jedním přístrojem. Získejte zpět místo na lince. Doprava zdarma."
+  },
+
+  "pricing": {
+    "currency": "CZK",
+    "currencySymbol": "Kč",
+    "originalPrice": 3998.00,
+    "currentPrice": 1999.00,
+    "discountPercent": 50
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Upozornění: Vysoká poptávka —",
+    "highlight": "Zbývá pouze 8 kusů",
+    "suffix": "za tuto cenu"
+  },
+
+  "hero": {
+    "badge": "New 2026",
+    "title": "Celá Kuchyně",
+    "titleHighlight": "na Malém Prostoru:",
+    "titleSuffix": "Air Fryer, Trouba, Gril, Káva a Čaje",
+    "subtitle": "Multifunkční centrum vaření 5-v-1, které <strong>nahradí 5 různých spotřebičů</strong>. Připravte vše najednou na <strong>pouhých 45 cm prostoru</strong>.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18 743 ověřených recenzí"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/chefstation/carosello/1.webp", "alt": "ChefStation™ pohled zepředu" },
+      { "src": "/images/mirko/chefstation/carosello/2.webp", "alt": "ChefStation™ při použití" },
+      { "src": "/images/mirko/chefstation/carosello/3.webp", "alt": "ChefStation™ otevřená trouba" },
+      { "src": "/images/mirko/chefstation/carosello/4.webp", "alt": "ChefStation™ Air Fryer" },
+      { "src": "/images/mirko/chefstation/carosello/5.webp", "alt": "ChefStation™ káva a čaje" },
+      { "src": "/images/mirko/chefstation/carosello/6.webp", "alt": "ChefStation™ příslušenství v balení" },
+      { "src": "/images/mirko/chefstation/carosello/7.webp", "alt": "ChefStation™ detail" },
+      { "src": "/images/mirko/chefstation/carosello/8.webp", "alt": "ChefStation™ balení" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Super křupavý air fryer:", "description": "hranolky, křídla a mnoho dalšího, dozlatova a křupavě s minimem oleje." },
+      { "title": "Trouba 12L se dvěma úrovněmi:", "description": "připravte více pokrmů v troubě současně a zároveň používejte i plotýnku." },
+      { "title": "Plotýnka s nepřilnavým povrchem:", "description": "odepnete jedním pohybem, rychle opláchnete a jste připraveni pokračovat." },
+      { "title": "Teplé nápoje:", "description": "ohřejte vodu na čaj a využijte vestavěný filtr na kávu, vše během chvilky." },
+      { "title": "Vyjímatelné díly:", "description": "plechy, rošty a plotýnka se dají mýt i v myčce nádobí." },
+      { "title": "Snadný transport:", "description": "ideální na cesty, do karavanu, do garsonky." },
+      { "title": "Časovač + automatické vypnutí:", "description": "nastavíte čas a přístroj se sám zastaví." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "ChefStation™",
+    "shippingLabel": "Rychlé doručení:",
+    "shippingValue": "ZDARMA",
+    "guaranteeLabel": "Záruka 24 měsíců",
+    "offerToggleText": "Podívejte se, co nabídka obsahuje",
+    "offerItems": [
+      { "text": "ChefStation™ — Centrum Vaření 5 v 1", "badge": null },
+      { "text": "Košík na horkovzdušné smažení", "badge": null },
+      { "text": "Perforovaný tác Crisp", "badge": null },
+      { "text": "2 rošty + 2 plechy z nerezové oceli", "badge": null },
+      { "text": "Čajový filtr z nerezové oceli", "badge": "DÁREK" },
+      { "text": "Mini silikonové kuchyňské rukavice", "badge": "DÁREK" },
+      { "text": "Záruka 24 měsíců + Specializovaná podpora", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "OBJEDNAT NYNÍ",
+    "mainSubtext": "Platba Při Převzetí",
+    "subNote": ""
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Platba při převzetí", "color": "green" },
+      { "icon": "truck", "text": "Doručení 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 dní na vrácení", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Problém",
+    "title": "Vaše kuchyňské spotřebiče nestačí?",
+    "items": [
+      { "icon": "box", "titleBold": "Pracovní plocha <strong>zahlcená spotřebiči</strong>, které zabírají veškeré místo", "text": "" },
+      { "icon": "timer", "titleBold": "Air fryer <strong>příliš malý</strong> na rodinné porce", "text": "" },
+      { "icon": "money", "titleBold": "Hrnce a plechy, které musíte <strong>mýt pokaždé</strong>, hory nádobí", "text": "" },
+      { "icon": "money", "titleBold": "Nákup 5 samostatných spotřebičů stojí <strong>7 000-10 000 Kč</strong>", "text": "" }
+    ],
+    "solutionTitle": "S ChefStation™ se vše mění.",
+    "solutionText": "5 funkcí v jednom přístroji. Pečte, smažte, připravujte nápoje — a ukliďte během chvilky."
+  },
+
+  "features": {
+    "eyebrow": "Čím je výjimečný",
+    "title": "Vybavená kuchyně na prostoru jedné mini trouby.",
+    "image": "/images/mirko/chefstation/features.gif",
+    "imageAlt": "ChefStation™ v akci",
+    "items": [
+      {
+        "image": "/images/mirko/chefstation/angle/1.webp",
+        "imageAlt": "Horkovzdušné smažení 360°",
+        "tag": "AIR FRYER S KONVEKCÍ 360°",
+        "tagColor": "green",
+        "title": "Zlatavé Zvenku, Bez Oleje Uvnitř",
+        "description": "Ventilátor s horkým vzduchem a cirkulací 360°. Hranolky, kuře, zelenina: <strong>křupavé za polovinu času</strong>, téměř bez oleje. Stejný výsledek jako tradiční smažení, bez nepříjemných pachů."
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/2.webp",
+        "imageAlt": "Trouba se dvěma úrovněmi",
+        "tag": "PROSTORNÁ TROUBA",
+        "tagColor": "orange",
+        "title": "Dvě Úrovně: Připravte Více Pokrmů Najednou",
+        "description": "12 litrů kapacity se <strong>dvěma úrovněmi</strong>. Zelenina nahoře, chléb dole. Vše zatímco používáte plotýnku a připravujete kávu. <strong>Statický nebo s ventilátorem</strong>, rozhodujete vy."
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/3.webp",
+        "imageAlt": "Nepřilnavá plotýnka",
+        "tag": "SBOHEM HRNCE",
+        "tagColor": "blue",
+        "title": "Nepřilnavá Plotýnka, Bez Hrnců",
+        "description": "Ohříváte, vaříte, toustujete — přímo na plotýnce. <strong>Nepřilnavý povrch</strong>: odepnete, opláchnete a pokračujete. <strong>Plotýnka, plechy a konvice na kávu se dají mýt v myčce.</strong>"
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/4.webp",
+        "imageAlt": "Káva a čaje",
+        "tag": "TEPLÉ NÁPOJE",
+        "tagColor": "green",
+        "title": "Filtrovaná Káva a Čaje, Kdy Chcete",
+        "description": "Vestavěný kávovar na filtrovanou kávu + čajový filtr z nerezové oceli. <strong>Žádná varná konvice</strong>, žádné další přístroje. Ráno káva, večer čaj."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Naprosto jednoduché",
+    "title": "Zapněte, vyberte režim, vařte.",
+    "image": "",
+    "imageAlt": "Jak to funguje",
+    "steps": [
+      { "title": "Vyberte Režim", "description": "Otočte ovladačem: Air Fryer, Trouba, Gril, Plotýnka nebo Teplé nápoje." },
+      { "title": "Nastavte a Jděte", "description": "Teplotu a časovač nastavíte během chvilky. Žádné riziko připálení." },
+      { "title": "Vychutnejte si a Opláchněte", "description": "Vyjímatelné díly. Jedno otření houbičkou a linka je zase čistá." }
+    ]
+  },
+
+  "midCta": {
+    "text": "OBJEDNAT NYNÍ S 50% SLEVOU",
+    "subtext": "Platba Hotově Při Převzetí"
+  },
+
+  "specs": {
+    "eyebrow": "Technické údaje",
+    "title": "Technický List",
+    "items": [
+      { "label": "Výkon", "value": "1250W" },
+      { "label": "Funkce", "value": "Air Fryer, Trouba, Gril, Plotýnka, Káva" },
+      { "label": "Kapacita trouby", "value": "12L dvě úrovně" },
+      { "label": "Teplota", "value": "80-230°C" },
+      { "label": "Rozměry", "value": "45 × 26 × 28 cm" },
+      { "label": "Certifikace", "value": "CE · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Srovnání",
+    "title": "Co získáte výběrem ChefStation™?",
+    "featureColumn": "Vlastnost",
+    "winnerBadge": "VÍTĚZ",
+    "productColumn": "ChefStation™",
+    "competitorColumn": "5 Samostatných Spotřebičů",
+    "rows": [
+      { "feature": "Zabraný prostor", "product": "✔ Jeden přístroj, 45cm", "competitor": "5 spotřebičů na lince" },
+      { "feature": "Režimy", "product": "✔ Air Fryer + Trouba + Plotýnka + Káva", "competitor": "Vše je potřeba koupit zvlášť" },
+      { "feature": "Údržba", "product": "✔ Vyjímatelné díly, jedno opláchnutí", "competitor": "Hrnce, plechy, filtry k mytí" },
+      { "feature": "Přenositelnost", "product": "✔ Vezmete ho kamkoli", "competitor": "Nemožné přenést vše" },
+      { "feature": "Snadnost ovládání", "product": "✔ Jeden ovladač, žádné komplikace", "competitor": "5 různých návodů" },
+      { "feature": "Celková cena", "product": "✔ Pouze 1 999 Kč (jednorázově)", "competitor": "7 000-10 000 Kč celkem" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Kompletní obsah",
+    "title": "Toto vše obdržíte",
+    "items": [
+      { "icon": "box", "text": "ChefStation™ — Centrum Vaření 5 v 1", "value": "3 998 Kč", "valueType": "price" },
+      { "icon": "check", "text": "Košík na air fryer + Tác Crisp", "value": "V BALENÍ", "valueType": "included" },
+      { "icon": "check", "text": "2 rošty + 2 plechy z nerezové oceli", "value": "V BALENÍ", "valueType": "included" },
+      { "icon": "gift", "text": "Čajový filtr + mini silikonové rukavice", "value": "DÁREK", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Původní cena:",
+    "totalOriginalValue": "3 998 Kč",
+    "totalCurrentLabel": "Dnes vaše cena:",
+    "totalCurrentValue": "1 999 Kč",
+    "totalSave": "Úspora 1 999 Kč · Doprava ZDARMA",
+    "ctaText": "OBJEDNAT NYNÍ"
+  },
+
+  "reviews": {
+    "eyebrow": "Názory zákazníků",
+    "title": "Ověřené Recenze",
+    "rating": "4.8",
+    "totalCount": "18 743 recenzí",
+    "verifiedNote": "✓ Recenze jsou ověřovány nezávislým subjektem mimo tyto stránky.",
+    "showMoreText": "Načíst další recenze",
+    "leaveReviewText": "Napsat recenzi",
+    "verifiedBadge": "Ověřený nákup",
+    "sellerReplyLabel": "Odpověď prodejce:",
+    "items": [
+      {
+        "initials": "JN",
+        "name": "Jana Nováková",
+        "stars": 5,
+        "text": "Moje kuchyně je malinká a už nikam nic nebylo. Toto centrum vaření mě zachránilo: dělám vše jedním přístrojem. Káva ráno, air fryer na večeři... nemohla bych být šťastnější. Doručeno za dva dny, zaplatila jsem kurýrovi.",
+        "verified": true,
+        "sellerReply": "Jano, jsme rádi, že problém s prostorem je vyřešen! Kombinace káva + air fryer je oblíbenec našich zákazníků. Děkujeme!"
+      },
+      {
+        "initials": "PK",
+        "name": "Petr Král",
+        "stars": 5,
+        "text": "air fryer funguje skvěle, hranolky vycházejí křupavé jako smažené, ale s minimem oleje. používám ho prakticky každý den. i trouba je na své rozměry prostorná, připravil jsem plech zeleniny bez problémů",
+        "verified": true,
+        "sellerReply": "Petře, air fryer je nejoblíbenější režim! Vyzkoušejte i funkci grilu na toustování chleba, budete nadšený. Děkujeme za zpětnou vazbu."
+      },
+      {
+        "initials": "EH",
+        "name": "Eva Horáková",
+        "stars": 5,
+        "text": "Koupila jsem ho do bytu u moře, kde chybí vybavená kuchyně. Vozíme ho autem, je lehký a připravujeme vše: od snídaně po večeři. Filtrovaná káva je výborná a plotýnka se rychle zahřeje. Naprosto spokojená.",
+        "verified": true,
+        "sellerReply": "Evo, prázdninový byt je přesně jedno z využití, pro které jsme ho navrhli! Krásnou dovolenou a dobrou chuť."
+      },
+      {
+        "initials": "TM",
+        "name": "Tomáš Marek",
+        "stars": 4,
+        "text": "musím uznat, že kvalita v poměru k ceně mě překvapila. air fryer funguje dobře, trouba hřeje jak má, káva je příjemná. dávám 4 hvězdičky prozatím, protože ho používám krátce a raději ho ještě trochu vyzkouším, než dám maximální hodnocení",
+        "verified": true,
+        "sellerReply": "Tomáši, oceňujeme upřímnost! Jsme přesvědčeni, že při delším používání oceníte každou funkci ještě více. Dejte nám vědět!"
+      },
+      {
+        "initials": "MV",
+        "name": "Marie Veselá",
+        "stars": 5,
+        "text": "Poslala jsem do důchodu fritézu, toustovač i varnou konvici. Teď mám čistou linku a dělám přesně totéž jedním přístrojem. Čištění je naprosto jednoduché, díly se sundají a umyjí během chvilky.",
+        "verified": true,
+        "sellerReply": "Marie, mít čistou linku je ta největší radost! Děkujeme, že jste se podělila o svou zkušenost."
+      },
+      {
+        "initials": "PS",
+        "name": "Pavel Sedláček",
+        "stars": 5,
+        "text": "používám ho hlavně na filtrovanou kávu ráno a air fryer večer. jen tyto dvě funkce ospravedlňují výdaj. doručení bylo bleskové a zaplatil jsem kurýrovi bez jakýchkoli problémů",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "HP",
+        "name": "Hana Procházková",
+        "stars": 5,
+        "text": "Naprosto jednoduchý na ovládání, můj manžel, který nikdy nevstoupí do kuchyně, ho pochopil za pět minut. Ovladače jsou přehledné a časovač s automatickým vypnutím dává pocit bezpečí. Objednala jsem v pondělí, dostala ve středu.",
+        "verified": true,
+        "sellerReply": "Hano, jednoduchost ovládání je jedním z bodů, do kterých jsme investovali nejvíce! Jsme rádi, že i váš manžel si poradil."
+      },
+      {
+        "initials": "JK",
+        "name": "Jakub Kovář",
+        "stars": 5,
+        "text": "používám ho v karavanu a musím uznat, že je bezchybný. zabírá málo místa, pokryje všechny potřeby a nemusím s sebou tahat tisíc věcí. gril na toustování chleba ráno je fantastický",
+        "verified": true,
+        "sellerReply": "Jakube, v karavanu je ideální! Kompaktní a univerzální, přesně to, co na cestách potřebujete. Šťastnou cestu!"
+      },
+      {
+        "initials": "KD",
+        "name": "Kateřina Dvořáková",
+        "stars": 5,
+        "text": "Nevěřila jsem filtrované kávě, ale musím uznat, že je opravdu dobrá. A čaj večer před spaním se stal rituálem. Vše jedním přístrojem, bez zaplnění kuchyně příslušenstvím. Doporučuji.",
+        "verified": true,
+        "sellerReply": "Kateřino, filtrovaná káva přesvědčila i největší skeptiky! Čaj na dobrou noc je rituál, který si oblíbilo mnoho lidí. Děkujeme!"
+      },
+      {
+        "initials": "MN",
+        "name": "Martin Novotný",
+        "stars": 5,
+        "text": "myslel jsem, že je to další zbytečný vynález, ale funguje skvěle. air fryer je skutečný, hranolky vycházejí křupavé. trouba je kompaktní, ale díky dvěma úrovním připravíte spoustu věcí. za 1 999 Kč se nedá chtít víc",
+        "verified": true,
+        "sellerReply": "Martine, jsme rádi, že jsme změnili váš názor! Dvojitá úroveň je tajemství maximálního využití vnitřního prostoru. Děkujeme za důvěru."
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Napište svou recenzi",
+    "nameLabel": "Vaše jméno",
+    "namePlaceholder": "Např. Jan Novák",
+    "ratingLabel": "Hodnocení",
+    "textLabel": "Váš názor",
+    "textPlaceholder": "Popište svou zkušenost...",
+    "submitText": "Publikovat Recenzi",
+    "successTitle": "Děkujeme za váš příspěvek!",
+    "successText": "Vaše recenze je ověřována nezávislým subjektem mimo tyto stránky. Recenze zaslané osobami, které produkt nezakoupily, nebudou zveřejněny z důvodu ochrany autentičnosti.",
+    "closeText": "Zavřít"
+  },
+
+  "orderSteps": {
+    "eyebrow": "JAK NAKOUPIT",
+    "title": "Objednejte ve 3 jednoduchých krocích",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Vyplňte formulář",
+        "description": "Zadejte své údaje do objednávkového formuláře níže."
+      },
+      {
+        "icon": "phone",
+        "title": "Telefonické ověření",
+        "description": "Budeme vás kontaktovat telefonicky nebo přes WhatsApp pro ověření údajů."
+      },
+      {
+        "icon": "cash",
+        "title": "Platba při převzetí",
+        "description": "Do 24/48h zásilka dorazí sledovatelnou kurýrní službou. Platíte hotově při převzetí."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Objednávkový Formulář",
+    "title": "Dokončete svůj nákup",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Akce -50% končí za:",
+    "stockWarning": "Pouze <strong>8 kusů</strong> dostupných za tuto cenu",
+    "summaryTitle": "Detail Objednávky",
+    "summaryLines": [
+      { "label": "ChefStation™ + Příslušenství", "value": "1 999 Kč", "type": "normal" },
+      { "label": "Rychlé doručení 24/48h", "value": "ZDARMA", "type": "free" },
+      { "label": "Poplatek za dobírku", "value": "ZDARMA", "type": "free" }
+    ],
+    "totalLabel": "CELKEM",
+    "totalValue": "1 999 Kč",
+    "fields": {
+      "name": { "label": "Jméno a Příjmení *", "placeholder": "Např. Jan Novák" },
+      "phone": { "label": "Telefonní Číslo *", "placeholder": "Např. 777 123 456" },
+      "address": { "label": "Doručovací Adresa *", "placeholder": "Ulice, Číslo, Město, PSČ" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "POTVRDIT OBJEDNÁVKU",
+    "submitSubtext": "Platba Hotově Při Převzetí",
+    "reassurance": "Doručení 24/48h · Záruka 24 měsíců · Zákaznická podpora<br><strong>Není potřeba karta.</strong> Budeme vás kontaktovat pro potvrzení."
+  },
+
+  "faq": {
+    "eyebrow": "Rychlé odpovědi",
+    "title": "Máte otázky? Najdete odpovědi zde.",
+    "items": [
+      { "question": "Jak mohu objednat?", "answer": "Stiskněte tlačítko nákupu, vyplňte formulář svými údaji a potvrďte. Budete kontaktováni telefonicky nebo přes WhatsApp k ověření a zásilku obdržíte přímo na vaši adresu s platbou hotově." },
+      { "question": "Jak probíhá doručení?", "answer": "Doručení je zcela zdarma. Po potvrzení objednávky probíhá dodání přibližně do 24/48 pracovních hodin." },
+      { "question": "Co když nebudu spokojený/á?", "answer": "Můžete získat plnou náhradu vrácením produktu do 30 dnů od převzetí. Přijedeme si pro něj a vrátíme vám celou zaplacenou částku." },
+      { "question": "Co když budu mít problém po 30 dnech?", "answer": "Žádný problém, všechny naše produkty jsou kryty 2letou zárukou." },
+      { "question": "Jak požádat o vrácení nebo pomoc?", "answer": "Pro podporu nebo vrácení po nákupu můžete využít kontaktní formulář na stránce nebo napsat na e-mailovou adresu uvedenou v zápatí." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "3 998 Kč",
+    "newPrice": "1 999 Kč",
+    "buttonText": "OBJEDNAT NYNÍ",
+    "buttonSubtext": "Platba Při Převzetí"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 1999.00,
+    "conversionCurrency": "CZK",
+    "facebookPixelId": "",
+    "network": {
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=445&uid=019855d0-397a-72ee-8df5-c5026966105a&lp=445"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Předchozí",
+    "nextSlide": "Další",
+    "thumbnail": "Miniatura",
+    "close": "Zavřít"
+  },
+
+  "ty": {
+    "title": "Objednávka Přijata!",
+    "subtitle": "Vaše objednávka byla úspěšně zaregistrována.",
+    "orderNumberLabel": "Č. objednávky:",
+    "summaryTitle": "Detail Objednávky",
+    "accessoriesLabel": "+ Příslušenství v balení",
+    "totalLabel": "CELKEM K ÚHRADĚ",
+    "paymentNote": "Platba hotově kurýrovi — není potřeba záloha",
+    "yourDataTitle": "Vaše Osobní Údaje",
+    "nameLabel": "Jméno",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Co bude dál?",
+    "message": "Budeme vás kontaktovat telefonicky nebo přes WhatsApp pro potvrzení objednávky a domluvení doručení.",
+    "steps": [
+      "Obdržíte telefonát nebo WhatsApp zprávu k ověření",
+      "Zásilka bude odeslána do 24/48h",
+      "Platíte hotově kurýrovi při převzetí"
+    ],
+    "footerText": "Záruka 24 Měsíců · 30 Dní na Vrácení · Specializovaná Podpora"
+  }
+}

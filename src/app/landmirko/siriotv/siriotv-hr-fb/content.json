@@ -1,0 +1,399 @@
+{
+  "seo": {
+    "title": "SirioTV Pro™ - Uređaj koji svaki TV čini pametnim",
+    "description": "Gledajte filmove u 4K, sport uživo i igrajte igre na bilo kojem televizoru u samo nekoliko sekundi. Besplatna dostava, plaćanje pouzećem."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 118.00,
+    "currentPrice": 59.00,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "text": "Besplatna dostava 24/48h · Plaćanje pouzećem · 2 godine jamstva"
+  },
+
+  "urgencyBanner": {
+    "text": "Upozorenje: Zalihe su gotovo rasprodane —",
+    "highlight": "Preostalo je samo 6 komada",
+    "suffix": "po ovoj cijeni"
+  },
+
+  "hero": {
+    "badge": "Novost 2026",
+    "title": "Pretvorite svoj stari TV u pametni s tisućama",
+    "titleHighlight": "filmova, sportskih prijenosa i videoigara",
+    "titleSuffix": "za manje od jedne minute",
+    "subtitle": "Jedini kompaktni uređaj koji donosi potpunu zabavu na bilo koji televizor. Jednostavno poput promjene kanala, bez potrebe za tehničkom pomoći.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.473 zadovoljnih kupaca"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/siriotv/carosello/1.png", "alt": "SirioTV Pro™ prednji pogled" },
+      { "src": "/images/mirko/siriotv/carosello/2.png", "alt": "SirioTV Pro™ u uporabi" },
+      { "src": "/images/mirko/siriotv/carosello/3.png", "alt": "SirioTV Pro™ detalji" },
+      { "src": "/images/mirko/siriotv/carosello/4.png", "alt": "SirioTV Pro™ dodaci" },
+      { "src": "/images/mirko/siriotv/carosello/5.png", "alt": "SirioTV Pro™ pakiranje" },
+      { "src": "/images/mirko/siriotv/carosello/6.png", "alt": "SirioTV Pro™ bočni pogled" },
+      { "src": "/images/mirko/siriotv/carosello/7.png", "alt": "SirioTV Pro™ daljinski upravljač" },
+      { "src": "/images/mirko/siriotv/carosello/8.png", "alt": "SirioTV Pro™ u svakodnevnoj upotrebi" },
+      { "src": "/images/mirko/siriotv/carosello/9.png", "alt": "SirioTV Pro™ sadržaj paketa" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Filmovi i serije uvijek dostupni:", "description": "pristupite svim streaming platformama s savršenom kvalitetom." },
+      { "title": "Utakmice bez zastoja:", "description": "gledajte sport u 4K fluidno, bez trzanja i prekida." },
+      { "title": "Konzola nije potrebna:", "description": "bežični joystick već uključen, igre spremne od prvog korištenja." },
+      { "title": "Spreman za minutu:", "description": "samo spojite HDMI kabel i uključite. Nije potrebno tehničko znanje." },
+      { "title": "Kompatibilan sa svakim televizorom:", "description": "čak i modelima starim 15 godina. Potreban je samo HDMI priključak." },
+      { "title": "Ugrađene glasovne naredbe:", "description": "pretražujte sadržaj jednostavno govoreći u daljinski upravljač. Bez poteškoća." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "SirioTV Pro™",
+    "originalPriceLabel": "Originalna cijena:",
+    "discountLabel": "POPUST 59€ (-50%)",
+    "shippingLabel": "Brza dostava:",
+    "shippingValue": "Besplatna",
+    "guaranteeLabel": "Pokriveno jamstvom od 2 godine",
+    "offerToggleText": "Pogledajte sve što je uključeno",
+    "offerItems": [
+      { "text": "SirioTV Pro™ — Box 4K Ultra HD", "badge": null },
+      { "text": "Glasovni daljinski upravljač s mikrofonom", "badge": null },
+      { "text": "HDMI kabel velike brzine", "badge": null },
+      { "text": "Bežični joystick za videoigre", "badge": "POKLON" },
+      { "text": "Jamstvo 2 godine + Posvećena podrška", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "NARUČITE SADA",
+    "mainSubtext": "Plaćanje gotovinom pri dostavi",
+    "subNote": "Bez rizika: plaćate tek pri preuzimanju"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Plaćanje pouzećem", "color": "green" },
+      { "icon": "truck", "text": "Dostava 24/48h", "color": "blue" },
+      { "icon": "return", "text": "Besplatan povrat 30 dana", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Česta situacija",
+    "title": "Imate li i vi ove probleme?",
+    "items": [
+      { "icon": "warning", "titleBold": "Loša kvaliteta slike i stalna zastajkivanja", "text": "— stari dekoder više ne može pružiti pristojno iskustvo gledanja." },
+      { "icon": "timer", "titleBold": "Uvijek isti dosadni kanali", "text": "— za pristup novim filmovima i serijama trebali biste desetke skupih pretplata." },
+      { "icon": "money", "titleBold": "Konzole za igre preskupe za obitelj", "text": "— više od 500 eura za uređaj koji se koristi tek povremeno tijekom tjedna." }
+    ],
+    "solutionTitle": "Postoji konkretna alternativa.",
+    "solutionText": "Kompaktan i moćan uređaj koji vaš dnevni boravak pretvara u kino dvoranu, stadion i igraonicu. Bez ugovornih obveza, bez komplikacija."
+  },
+
+  "features": {
+    "eyebrow": "Što ga čini jedinstvenim",
+    "title": "Sve ono što vaš televizor dosad nije mogao.",
+    "items": [
+      {
+        "image": "/images/mirko/siriotv/angle/1.gif",
+        "imageAlt": "Kino 4K",
+        "tag": "KINO ISKUSTVO",
+        "tagColor": "blue",
+        "title": "Vaš dnevni boravak postaje kino dvorana",
+        "description": "Zaboravite na tradicionalnu televiziju. S rezolucijom <strong>4K Ultra HD i HDR tehnologijom</strong>, svaka slika oživljava s živopisnim bojama i kristalno jasnim detaljima. <strong>Streaming platforme</strong> pokreću se u trenu, spremne za vaše večeri."
+      },
+      {
+        "image": "/images/mirko/siriotv/angle/2.gif",
+        "imageAlt": "Sport uživo",
+        "tag": "AKCIJA UŽIVO",
+        "tagColor": "green",
+        "title": "Utakmice nikada nisu bile ovako realne",
+        "description": "Svaki detalj terena u visokoj definiciji. S <strong>4K streamingom pri 60fps bez prekida</strong>, utakmice teku glatko čak i u najuzbudljivijim trenucima. Vaši prijatelji <strong>više neće htjeti gledati utakmice nigdje drugdje</strong>."
+      },
+      {
+        "image": "/images/mirko/siriotv/angle/3.gif",
+        "imageAlt": "Videoigre",
+        "tag": "GAMING UKLJUČEN",
+        "tagColor": "orange",
+        "title": "Videoigre bez kupnje konzole",
+        "description": "Bez greške. Spojite <strong>bežični joystick NA POKLON</strong> i TV se pretvara u igraću stanicu. Vaša djeca mogu uživati u <strong>najtraženijim igrama</strong> bez ulaganja stotina eura."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Iznimno jednostavno",
+    "title": "Spreman u 3 jednostavna koraka.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Spojite", "description": "Priključite HDMI kabel na televizor. Nije potreban nikakav tehničar." },
+      { "title": "Povežite", "description": "Uključite uređaj i spojite ga na kućni WiFi. Radi s bilo kojom mrežom." },
+      { "title": "Uživajte", "description": "Filmovi, utakmice, igre: sve na dohvat ruke. Bez ugovora i bez čekanja." }
+    ]
+  },
+
+  "midCta": {
+    "text": "NARUČITE SADA S 50% POPUSTA",
+    "subtext": "Plaćanje gotovinom pri dostavi"
+  },
+
+  "specs": {
+    "eyebrow": "Tehnički podaci",
+    "title": "Potpuna tehnička specifikacija",
+    "items": [
+      { "label": "Rezolucija", "value": "4K Ultra HD (3840x2160) s HDR" },
+      { "label": "Procesor", "value": "Quad-Core visokih performansi" },
+      { "label": "RAM", "value": "4GB DDR3" },
+      { "label": "Interna memorija", "value": "32GB (proširiva MicroSD karticom)" },
+      { "label": "WiFi", "value": "Dual Band 2.4GHz + 5GHz" },
+      { "label": "Bluetooth", "value": "5.0" },
+      { "label": "Priključci", "value": "HDMI 2.0, USB 3.0, MicroSD utor" },
+      { "label": "Operativni sustav", "value": "Android TV 13" },
+      { "label": "Daljinski upravljač", "value": "Glasovni s ugrađenim mikrofonom" },
+      { "label": "Certifikati", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Izravna usporedba",
+    "title": "Zašto se isplati u odnosu na alternative?",
+    "featureColumn": "Značajka",
+    "winnerBadge": "POBJEDNIK",
+    "productColumn": "SirioTV Pro™",
+    "competitorColumn": "Novi Smart TV",
+    "rows": [
+      { "feature": "Ukupno ulaganje", "product": "✔ Samo 59€, jednokratno plaćanje", "competitor": "Više od 500€" },
+      { "feature": "Kompatibilan sa starijim TV-ima?", "product": "✔ Da, potreban je samo HDMI priključak", "competitor": "Ne, morate kupiti novi" },
+      { "feature": "Postavljanje", "product": "✔ Manje od minute, sami", "competitor": "Dugačka i komplicirana konfiguracija" },
+      { "feature": "Prenosivost", "product": "✔ Ponesete ga gdje god želite", "competitor": "Ostaje u jednoj sobi" },
+      { "feature": "Gaming", "product": "✔ Uključen + Joystick na poklon", "competitor": "Potrebna zasebna konzola" },
+      { "feature": "Trajnost", "product": "✔ Konstantna ažuriranja", "competitor": "Zastario za nekoliko godina" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Kompletni set",
+    "title": "Evo što ćete pronaći u paketu",
+    "items": [
+      { "icon": "box", "text": "SirioTV Pro™ — Box 4K Ultra HD", "value": "€118,00", "valueType": "price" },
+      { "icon": "phone", "text": "Glasovni daljinski upravljač s mikrofonom", "value": "UKLJUČENO", "valueType": "included" },
+      { "icon": "cable", "text": "HDMI kabel velike brzine", "value": "UKLJUČENO", "valueType": "included" },
+      { "icon": "gift", "text": "Bežični joystick za videoigre", "value": "POKLON", "valueType": "gift" },
+      { "icon": "shield", "text": "Jamstvo 2 godine + Posvećena podrška", "value": "UKLJUČENO", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Ukupna vrijednost:",
+    "totalOriginalValue": "€167,00",
+    "totalCurrentLabel": "Danas plaćate:",
+    "totalCurrentValue": "€59,00",
+    "totalSave": "Ušteda od €108,00 · BESPLATNA dostava",
+    "ctaText": "NARUČITE SADA"
+  },
+
+  "reviews": {
+    "eyebrow": "Stvarna mišljenja",
+    "title": "Što kažu naši kupci",
+    "rating": "4.8",
+    "totalCount": "18.473 recenzija",
+    "verifiedNote": "✓ Sve recenzije provjerene od strane neovisnog tijela za verifikaciju.",
+    "showMoreText": "Učitaj više recenzija",
+    "leaveReviewText": "Napišite svoju recenziju",
+    "verifiedBadge": "Potvrđena kupnja",
+    "sellerReplyLabel": "Službeni odgovor:",
+    "items": [
+      {
+        "initials": "IK",
+        "name": "Ivan Kovačević",
+        "stars": 5,
+        "text": "Spojio sam ga na televizor u dnevnom boravku koji ima najmanje 10 godina i sada izgleda kao najnoviji model. Utakmice se vide savršeno, a kćer gleda svoje serije bez problema. Stigao je za dan i pol.",
+        "verified": true,
+        "sellerReply": "Ivan, drago nam je da je vaš televizor dobio drugi život! Na raspolaganju smo za sve što vam treba."
+      },
+      {
+        "initials": "MP",
+        "name": "Marija Petrović",
+        "stars": 5,
+        "text": "Koristim ga u sobi za goste na TV-u koji nema ni zemaljski signal. Rezultat je nevjerojatan, sada imam pristup svemu. Podesila sam ga sama bez ičije pomoći. Glasovno upravljanje je fantastično.",
+        "verified": true,
+        "sellerReply": "Marija, glasovni daljinski upravljač čini sve još jednostavnijim! Hvala što ste nas odabrali."
+      },
+      {
+        "initials": "AH",
+        "name": "Ante Horvat",
+        "stars": 5,
+        "text": "kupio za sina koji je htio igrati igre i moram reći da radi izvrsno. joystick dolazi u paketu i spaja se u trenu. ogromna ušteda u usporedbi s playstationom ili xboxom",
+        "verified": true,
+        "sellerReply": "Ante, bežični joystick osmišljen je za neposredno plug-and-play iskustvo. Uživajte!"
+      },
+      {
+        "initials": "PJ",
+        "name": "Petra Jurić",
+        "stars": 4,
+        "text": "Kvalitetan proizvod, kvaliteta slike znatno je bolja nego prije. Dajem 4 zvjezdice jer još uvijek isprobavam sve dostupne aplikacije. Dostava je bila izuzetno brza, nemam primjedbi.",
+        "verified": true,
+        "sellerReply": "Petra, zahvaljujemo na iskrenosti! Sigurni smo da ćete s vremenom otkriti funkcije koje će vas iznenaditi."
+      },
+      {
+        "initials": "TM",
+        "name": "Tomislav Marić",
+        "stars": 5,
+        "text": "pravi preokret za gledanje utakmica kako treba. sa starim dekoderom se blokiralo svakih pet minuta i postalo je nepodnošljivo. ovaj radi na wifiju i nikad se ne zaglavi. odlično uložen novac",
+        "verified": true,
+        "sellerReply": "Tomislav, dual band WiFi veza pruža upravo tu stabilnost. Uživajte u sezoni!"
+      },
+      {
+        "initials": "LB",
+        "name": "Lucija Babić",
+        "stars": 5,
+        "text": "Kupila sam kao poklon za svekra od 80 godina. Nije znao ni upaliti računalo, a ovaj uređaj koristi bez problema. Sada uživa u dokumentarcima u kvaliteti za koju nije vjerovao da je moguća.",
+        "verified": true,
+        "sellerReply": "Lucija, osmišljen je upravo da bude intuitivan i za one koji nisu upoznati s tehnologijom. Savršen poklon!"
+      },
+      {
+        "initials": "NK",
+        "name": "Nikola Knežević",
+        "stars": 5,
+        "text": "dostavljen sljedeći dan nakon narudžbe. spojio na tv u podrumu i konačno gledam što hoću kad hoću. daljinski s glasovnim upravljanjem je nevjerojatna pogodnost",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "MR",
+        "name": "Marko Radić",
+        "stars": 5,
+        "text": "Radim u IT-u i mogu potvrditi da je omjer kvalitete i cijene izvanredan. Procesor je brz, 4K je pravi, dual band. Preporučio sam ga rodbini i kolegama, četvero ih je već naručilo.",
+        "verified": true,
+        "sellerReply": "Marko, povratna informacija od stručnjaka iz branše vrijedi dvostruko. Hvala na preporuci!"
+      },
+      {
+        "initials": "KS",
+        "name": "Katarina Stipić",
+        "stars": 5,
+        "text": "naručila u utorak, doma u četvrtak. platila kuriru bez komplikacija. najbolje od svega je što ga mogu ponijeti i na vikendicu, spojim ga na tv tamo i imam sve kao kod kuće",
+        "verified": true,
+        "sellerReply": "Katarina, prenosivost je jedna od glavnih prednosti! Savršeno za one koji imaju više nekretnina."
+      },
+      {
+        "initials": "JP",
+        "name": "Josip Pavlović",
+        "stars": 5,
+        "text": "koristim ga više od mjesec dana i potpuno sam zadovoljan. ukinuo sam satelitsku pretplatu jer s ovim pronalazim već sve. klinci igraju igre, a ja gledam nogomet, savršeno za sve",
+        "verified": true,
+        "sellerReply": "Josip, kada su svi u obitelji zadovoljni, to znači da proizvod obavlja svoj posao! Hvala na povjerenju."
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Napišite svoju recenziju",
+    "nameLabel": "Vaše ime",
+    "namePlaceholder": "Npr. Ivan Horvat",
+    "ratingLabel": "Ocjena",
+    "textLabel": "Vaše iskustvo",
+    "textPlaceholder": "Ispričajte nam kako ste zadovoljni...",
+    "submitText": "Objavi recenziju",
+    "successTitle": "Hvala na vašem doprinosu!",
+    "successText": "Vašu recenziju će pregledati neovisni tim za verifikaciju. Recenzije koje nisu autentične ili koje su ostavili korisnici koji nisu kupili proizvod neće biti objavljene.",
+    "closeText": "Zatvori"
+  },
+
+  "orderForm": {
+    "eyebrow": "Obrazac za narudžbu",
+    "title": "Završite svoju kupnju",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Popust od 50% završava za:",
+    "stockWarning": "Samo <strong>6 komada</strong> još dostupno po ovoj cijeni",
+    "summaryTitle": "Detalji narudžbe",
+    "summaryLines": [
+      { "label": "SirioTV Pro™ + Dodaci", "value": "€59,00", "type": "normal" },
+      { "label": "Brza dostava 24/48h", "value": "BESPLATNO", "type": "free" },
+      { "label": "Troškovi pouzeća", "value": "BESPLATNO", "type": "free" }
+    ],
+    "totalLabel": "UKUPNO",
+    "totalValue": "€59,00",
+    "fields": {
+      "name": { "label": "Ime i prezime *", "placeholder": "Npr. Ivan Horvat" },
+      "phone": { "label": "Broj telefona *", "placeholder": "Npr. 091 1234567" },
+      "address": { "label": "Potpuna adresa *", "placeholder": "Ulica, kućni broj, grad, poštanski broj" }
+    },
+    "phoneNote": "Bit ćete kontaktirani telefonom ili putem WhatsAppa za potvrdu narudžbe.",
+    "paymentBadge": "Plaćanje pouzećem — Plaćate kuriru gotovinom. Nije potreban nikakav predujam.",
+    "submitText": "POTVRDITE NARUDŽBU",
+    "submitSubtext": "Plaćanje gotovinom pri dostavi",
+    "reassurance": "Zaštićena veza · SSL 256-bit enkripcija · Bez ikakvih prethodnih naplata"
+  },
+
+  "faq": {
+    "eyebrow": "Pitanja i odgovori",
+    "title": "Odgovori na najčešća pitanja.",
+    "items": [
+      { "question": "Kako se naručuje?", "answer": "Pritisnite gumb za kupnju, unesite svoje podatke u obrazac i potvrdite. Primit ćete telefonski poziv ili WhatsApp poruku za potvrdu, zatim paket stiže izravno na vašu adresu s plaćanjem gotovinom." },
+      { "question": "Koliko košta dostava?", "answer": "Dostava je potpuno besplatna. Nakon potvrde narudžbe, paket se šalje i stiže za otprilike 24/48 radnih sati." },
+      { "question": "Mogu li ga vratiti ako nisam zadovoljan/zadovoljna?", "answer": "Naravno. Imate 30 dana od dostave za zatražiti potpuni povrat. Mi dolazimo po paket i vraćamo vam cjelokupan plaćeni iznos." },
+      { "question": "A nakon 30 dana?", "answer": "Bez brige, svi proizvodi pokriveni su jamstvom od 2 godine za bilo kakav nedostatak." },
+      { "question": "Kako mogu kontaktirati korisničku podršku?", "answer": "Možete nas kontaktirati putem obrasca za kontakt na stranici ili putem e-mail adrese navedene u podnožju stranice." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€118",
+    "newPrice": "€59",
+    "buttonText": "NARUČITE SADA",
+    "buttonSubtext": "Plaćanje pouzećem"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 59.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "fingerprintScript": "https://offers.uncappednetwork.com/forms/tmfp/",
+      "clickPixel": "https://offers.uncappednetwork.com/forms/api/ck/?o=2810&uid=4a2b2107-ba63-494f-b762-41120bde0c94&lp=2843"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Prethodni",
+    "nextSlide": "Sljedeći",
+    "thumbnail": "Minijatura",
+    "close": "Zatvori"
+  },
+
+  "ty": {
+    "title": "Narudžba potvrđena!",
+    "subtitle": "Uspješno smo zaprimili vašu narudžbu.",
+    "orderNumberLabel": "Br. narudžbe:",
+    "summaryTitle": "Detalji narudžbe",
+    "accessoriesLabel": "+ Uključeni dodaci",
+    "totalLabel": "UKUPNO ZA PLAĆANJE",
+    "paymentNote": "Plaćanje gotovinom kuriru — bez predujma",
+    "yourDataTitle": "Vaši podaci",
+    "nameLabel": "Ime",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Što se događa sada?",
+    "message": "Bit ćete kontaktirani telefonom ili putem WhatsAppa kako bi se potvrdila narudžba i organizirala dostava.",
+    "steps": [
+      "Primit ćete poziv ili WhatsApp poruku za potvrdu",
+      "Paket se šalje u roku od 24/48h",
+      "Plaćate kuriru gotovinom pri dostavi"
+    ],
+    "footerText": "Jamstvo 2 godine · Besplatan povrat 30 dana · Posvećena podrška"
+  }
+}

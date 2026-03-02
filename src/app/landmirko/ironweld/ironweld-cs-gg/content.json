@@ -1,0 +1,420 @@
+{
+  "seo": {
+    "title": "Bowek Ironweld™ - Dokonale svary na kazdem kovu, i pro zacatecniky",
+    "description": "Prenosna invertorova svarecka IGBT o hmotnosti pouhych 1,5 kg. Regulovatelny vykon 20-120A, zapalovani Hot Start, kompletni profesionalni sada v baleni. Doruceni zdarma, platba pri prevzeti."
+  },
+
+  "pricing": {
+    "currency": "CZK",
+    "currencySymbol": "Kc",
+    "originalPrice": 4998,
+    "currentPrice": 2499,
+    "discountPercent": 50
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Upozorneni: Zasoby jsou temer vyprodane —",
+    "highlight": "Zbyva pouze 8 kusu",
+    "suffix": "za tuto cenu"
+  },
+
+  "hero": {
+    "badge": "Technologie 2026",
+    "title": "Opravte vse sami.",
+    "titleHighlight": "1,5 kg, pouzivate jednou rukou.",
+    "titleSuffix": "",
+    "subtitle": "Prenosna invertorova svarecka: domaci zasuvka, <strong>zadne zkusenosti</strong>. Funguje <strong>na prvni pokus</strong>.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "14 729 overenych recenzi"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/ironweld/carosello/1.webp", "alt": "Bowek Ironweld pohled zpredu" },
+      { "src": "/images/mirko/ironweld/carosello/2.webp", "alt": "Bowek Ironweld pri pouziti" },
+      { "src": "/images/mirko/ironweld/carosello/3.webp", "alt": "Bowek Ironweld detail panelu" },
+      { "src": "/images/mirko/ironweld/carosello/4.webp", "alt": "Bowek Ironweld kompletni sada" },
+      { "src": "/images/mirko/ironweld/carosello/5.webp", "alt": "Bowek Ironweld kufrik" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Invertorova technologie IGBT:", "description": "stabilni oblouk, cisty svar, zadne odstriknutí" },
+      { "title": "Okamzite zapalovani:", "description": "integrovaný Hot Start, elektroda se nikdy neprilepy" },
+      { "title": "Od 20 do 120 Amperu:", "description": "tenky plech i tezky profil, jeden pristroj" },
+      { "title": "Vazi 1,5 kg:", "description": "svarite nad hlavou, za trubkou, kdekoliv" },
+      { "title": "Ochrana proti prehrati:", "description": "automaticky se vypne, znovu nastartuje az je pripravena" },
+      { "title": "Domaci zasuvka + 10m kabel:", "description": "zadna trojfaze, kabel se samonaviji" },
+      { "title": "Univerzalni elektrody:", "description": "2,5-3,2 mm, koupite v kazdem zelezarstvi" },
+      { "title": "9 PRO prislusenstvi v baleni:", "description": "kukla, rukavice, magnety, elektrody, prodluzovaci kabel" }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "Bowek Ironweld™",
+    "originalPriceLabel": "Bezna cena:",
+    "discountLabel": "USETRITE -50%",
+    "shippingLabel": "Rychle doruceni:",
+    "shippingValue": "ZDARMA",
+    "guaranteeLabel": "Zaruka 2 roky",
+    "offerToggleText": "Podivejte se, co vse dostanete",
+    "offerItems": [
+      { "text": "Bowek Ironweld™ — Invertorova svarecka IGBT", "badge": null },
+      { "text": "Pevny kufrik odolny proti narazum", "badge": null },
+      { "text": "Zemnici kabel + Heavy-Duty svorka", "badge": null },
+      { "text": "20 elektrod E6013 2,5 mm", "badge": null },
+      { "text": "Samozatmavovaci svarecka kukla", "badge": "DAREK" },
+      { "text": "Svarecske rukavice ze stepenky", "badge": "DAREK" },
+      { "text": "Ocelovy kartac + kladivko na strusku (2v1)", "badge": "DAREK" },
+      { "text": "2 uhlove magnety 45°/90°", "badge": "DAREK" },
+      { "text": "Prodluzovaci kabel 10m se samonavijenim", "badge": "DAREK" },
+      { "text": "Navod k pouziti ve 48 jazycich", "badge": null },
+      { "text": "Zaruka 2 roky + Specializovana podpora", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "OBJEDNAT NYNI",
+    "mainSubtext": "Platba pri prevzeti",
+    "subNote": ""
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Platba pri prevzeti", "color": "green" },
+      { "icon": "truck", "text": "Doruceni 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 dni na vraceni", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Konec frustraci",
+    "title": "Vyhodili jste penize za nepouzitelne svarecky?",
+    "items": [
+      { "icon": "money", "titleBold": "Prehrivaji se uz <strong>po nekolika minutach</strong> prace", "text": "" },
+      { "icon": "warning", "titleBold": "Slabe a <strong>nerovnomerne spoje</strong>, ktere okamzite povolí", "text": "" },
+      { "icon": "timer", "titleBold": "Rozmerné, <strong>extremne tezke</strong> a vyrobene z materialu s kratkou zivotnosti", "text": "" },
+      { "icon": "money", "titleBold": "Kazde zavolani svarece vas stoji jmeni: <strong>5 000-10 000 Kc</strong> za zasah", "text": "" }
+    ],
+    "solutionTitle": "S Ironweld™ se vse meni.",
+    "solutionText": "Profesionalni spoje v pouhych 1,5 kg. Jeden nakup, neomezene opravy."
+  },
+
+  "features": {
+    "eyebrow": "Rozdil",
+    "title": "Z garaze do dilny za 60 sekund.",
+    "items": [
+      {
+        "image": "/images/mirko/ironweld/angle/1.webp",
+        "imageAlt": "Invertorova technologie IGBT",
+        "tag": "TECHNOLOGIE IGBT",
+        "tagColor": "green",
+        "title": "Invertor IGBT + 20-120A regulovatelne",
+        "description": "Jadro IGBT moduluje proud <strong>50 000krat za sekundu</strong>: stabilni plamen, zadne odstriknuti. Otocite knoflíkem od <strong>20 do 120 Amperu</strong> podle navodu v sade a prejdete z tenkého plechu na konstrukcni profil."
+      },
+      {
+        "image": "/images/mirko/ironweld/angle/2.webp",
+        "imageAlt": "Lehka svarecka na jednu ruku",
+        "tag": "KONEC OBRICH STROJU",
+        "tagColor": "blue",
+        "title": "1,5 kg: Vezmete ji jednou rukou a pracujete kdekoliv",
+        "description": "Zvednete ji, prinesete na misto a svarite. <strong>Vertikalne, za trubkou, v nemoznych uhlech</strong>. Zkuste to same s <strong>20kg kolosem z dilny</strong>."
+      },
+      {
+        "image": "/images/mirko/ironweld/angle/3.webp",
+        "imageAlt": "Domaci zasuvka a prodluzovak",
+        "tag": "ZASUVKA + SAMONAVIJECI PRODLUZOVAK",
+        "tagColor": "green",
+        "title": "Domaci zasuvka + samonavijeci prodluzovaci kabel",
+        "description": "Zadna trojfaze, zadny adapter. Kabel o delce <strong>10 metru</strong> se naviji automaticky. Zastrckete zastreku do domaci zasuvky a jste pripraveni. Nepretrzite napajeni bez poklesu."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "3 kroky",
+    "title": "Zastreka. Kolecko. Jedeme.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Zastrckete zastreku", "description": "Pripojte ji do jakékoliv domaci zasuvky. Zadna specialni instalace neni potreba." },
+      { "title": "Nastavte vykon", "description": "Otocte koleckem na spravnou hodnotu. Od 20A pro plechy az po 120A pro masivni kusy." },
+      { "title": "Zacnete svarit", "description": "Oblouk se zapali stabilne, svar vychazi bezchybne. I pri vasem uplne prvnim pokusu." }
+    ]
+  },
+
+  "midCta": {
+    "text": "OBJEDNAT NYNI SE SLEVOU 50%",
+    "subtext": "Platba hotove pri prevzeti"
+  },
+
+  "specs": {
+    "eyebrow": "Technicke udaje",
+    "title": "Cisla, ktera mluvi jasne",
+    "items": [
+      { "label": "Technologie", "value": "Inverter IGBT" },
+      { "label": "Proud", "value": "20-120A (5 urovni)" },
+      { "label": "Zapalovani", "value": "Hot Arc Start" },
+      { "label": "Napajeni", "value": "Standardni domaci zasuvka" },
+      { "label": "Hmotnost", "value": "~1,5 kg" },
+      { "label": "Certifikace", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Ironweld vs ostatni",
+    "title": "Posudte sami rozdil.",
+    "featureColumn": "Vlastnost",
+    "winnerBadge": "VITEZ",
+    "productColumn": "Bowek Ironweld™",
+    "competitorColumn": "Tradicni kolos / Svarec",
+    "rows": [
+      { "feature": "Hmotnost", "product": "~1,5 kg, jedna ruka", "competitor": "15-25 kg, nepohodlne" },
+      { "feature": "Zapalovani", "product": "Hot Start, okamzite zapaleni", "competitor": "Elektroda se prilepí" },
+      { "feature": "Napajeni", "product": "Domaci zasuvka + prodluzovak", "competitor": "Vyzaduje trojfazi" },
+      { "feature": "Tezko pristupna mista", "product": "Dostanete se vsude", "competitor": "Nelze se dostat" },
+      { "feature": "Sada v baleni", "product": "9 PRO prislusenstvi", "competitor": "Vse se kupuje zvlast" },
+      { "feature": "Cena", "product": "Pouhych 2 499 Kc (jednorazove)", "competitor": "5 000-10 000 Kc za kazdy zasah" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "V baleni",
+    "title": "Otevrete krabici a muzete zacit",
+    "items": [
+      { "icon": "box", "text": "Svarecka Ironweld™ Invertor IGBT", "value": "4 998 Kc", "valueType": "price" },
+      { "icon": "box", "text": "Pevny kufrik + zemnici kabel", "value": "ZAHRNUTO", "valueType": "included" },
+      { "icon": "gift", "text": "20 elektrod E6013 + samozatmavovaci kukla", "value": "DAREK", "valueType": "gift" },
+      { "icon": "gift", "text": "Rukavice + kartac/kladivko + 2 uhlove magnety", "value": "DAREK", "valueType": "gift" },
+      { "icon": "cable", "text": "Prodluzovaci kabel 10m se samonavijenim", "value": "DAREK", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Bezna cena:",
+    "totalOriginalValue": "4 998 Kc",
+    "totalCurrentLabel": "Dnes zaplatite pouze:",
+    "totalCurrentValue": "2 499 Kc",
+    "totalSave": "Usetrite 2 499 Kc · Doruceni ZDARMA",
+    "ctaText": "OBJEDNAT NYNI"
+  },
+
+  "reviews": {
+    "eyebrow": "Kdo ji vyzkousel",
+    "title": "Skutecne hodnoceni od skutecnych zakazniku",
+    "rating": "4.8",
+    "totalCount": "14 729 recenzi",
+    "verifiedNote": "Kazda recenze je overena nezavislym externim subjektem.",
+    "showMoreText": "Zobrazit dalsi recenze",
+    "leaveReviewText": "Napsat recenzi",
+    "verifiedBadge": "Overeny nakup",
+    "sellerReplyLabel": "Odpoved prodejce:",
+    "items": [
+      {
+        "initials": "JN",
+        "name": "Jan Novak",
+        "stars": 5,
+        "text": "Branicky na balkone se uvolnily a hrozily padem. Svarec chtel 8 000 korun za praci na dvacet minut. Vzal jsem tuhle svarecku, ridil se navodem a opravil to sam. Vysledek je pevny, oblouk presny, ani kapka vedle.",
+        "verified": true,
+        "sellerReply": "Jane, situace jako ta vase ukazuji skutecnou hodnotu Bowek Ironweld. Skvela prace a dekujeme, ze jste si nas vybral!"
+      },
+      {
+        "initials": "PH",
+        "name": "Petr Horak",
+        "stars": 5,
+        "text": "Zacal jsem se zajimat o prace s kovem a pouzivam ji na kreativni projekty o vikendech. Co opravdu prekvapi, je stabilita oblouku i pri 25 amperech, na tenkem plechu neprorazí. Neuverirelny pomer ceny a kvality.",
+        "verified": true,
+        "sellerReply": "Petre, technologie IGBT je navrzena presne pro presnost i pri nizkem vykonu. Gratulujeme k vasim projektum!"
+      },
+      {
+        "initials": "TK",
+        "name": "Tomas Krejci",
+        "stars": 5,
+        "text": "Potreboval jsem privarit drzak vyfuku u auta a servis chtel 5 000 korun. Chvili jsem premyslel, objednal tuhle svarecku a vse udelal na dvorku. Lehoucka, dam ji do kufru a jsem pripraven kdekoliv. Dorazila do 48 hodin, zaplatil jsem kuryerovi.",
+        "verified": true,
+        "sellerReply": "Tomasi, moznost mit ji stale po ruce je jednou z nejvice ocenovanych vyhod. Jsme radi, ze uspora byla konkretni!"
+      },
+      {
+        "initials": "MV",
+        "name": "Martin Vesely",
+        "stars": 4,
+        "text": "Testuji ji uz tyden na ruznych tloustkach zeleza a vysledky jsou presvedcive. Zatim 4 hvezdy, protoze ji chci videt v prubehu casu, ale musim uznat, ze snadnost nastaveni je velke plus.",
+        "verified": true,
+        "sellerReply": "Martine, opatrnost je pochopitelna! Uvidite, ze s pribyvajicimi tydny vas nezklame. Dejte nam vedet, jak to pokracuje!"
+      },
+      {
+        "initials": "PB",
+        "name": "Pavel Beranek",
+        "stars": 5,
+        "text": "Objednal jsem v patek vecer a v pondeli rano uz zvonil kuryer. Zaplatil jsem hotove, zadna prekvapeni. Hned jsem to vyzkousel na zabradli na terase a svari perfektne. Samozatmavovaci kukla v baleni je bonus, ktery dela rozdil.",
+        "verified": true,
+        "sellerReply": "Pavle, zadne skryte naklady, nikdy. Jsme radi, ze ocenujete i kompletni sadu prislusenstvi!"
+      },
+      {
+        "initials": "JD",
+        "name": "Jakub Dvorak",
+        "stars": 5,
+        "text": "Mam pozemek se stajemi a zarizenimi, ktere porad potrebuji svarovani. Fantasticky je, ze funguje s jakoukoliv zasuvkou, zadne generatory ani specialni kabelaz. Vlozim ji do kufiku, sednu do auta a jedu.",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "MP",
+        "name": "Michal Prochazka",
+        "stars": 5,
+        "text": "Nikdy predtim jsem se svareckou nepracoval. Podival jsem se na tri navody, zacal pomalu na 20 amperech a uz u ctvrteho svaru to slo rovne. Moznost postupne zvysovat vykon dava jistotu a neriskujete, ze neco propalite. Vrelé doporuceni pro uplne zacatecniky.",
+        "verified": true,
+        "sellerReply": "Michale, progresivni regulace od 20A je navrzena presne pro zacatecniky jako jste vy. Uvidite, ze se budete rychle zlepsovat. Dekujeme za zpetnou vazbu!"
+      },
+      {
+        "initials": "JP",
+        "name": "Jana Pokorná",
+        "stars": 5,
+        "text": "Uz jsem nemohla snest neustale volani nekoho na kazdou malou opravu. Privarila jsem nohy zahradniho kresla a hacek na garaze. Intuitivni, vazi minimum a ulozim ji pod schody. Konecne si poradim sama.",
+        "verified": true,
+        "sellerReply": "Jano, byt samostatna v beznych opravach je k nezaplaceni. Skvela prace a dekujeme za duveru!"
+      },
+      {
+        "initials": "JC",
+        "name": "Josef Cerny",
+        "stars": 5,
+        "text": "Ctyricet let jsem pracoval jako elektrotechnik a rikam vam, ze na domaci opravy je tato svarecka vice nez dostatecna. Invertor IGBT udrzuje oblouk stabilni i pri kolisani napeti v siti. Seriozni vyrobek za fér cenu.",
+        "verified": true,
+        "sellerReply": "Josefe, nazor cloveka se zkusenostmi v oboru ma dvojnasobnou vahu. Je nam cti vaseho hodnoceni!"
+      },
+      {
+        "initials": "MS",
+        "name": "Marie Svobodova",
+        "stars": 5,
+        "text": "Loni jsem si koupila levnou cinskou svarecku z internetu a za nic nestala: oblouk zhasl kazdé tri sekundy. Tahle je uplne jiny level, rozdil poznate od prvniho okamziku. A s kompletni sadou elektrod a kuklou nemusite kupovat nic dalsiho, otevrete krabici a jedete.",
+        "verified": true,
+        "sellerReply": "Marie, tajemstvi je invertor IGBT, ktery zarucuje vzdy stabilni oblouk. Jsme radi, ze skok v kvalite byl ocividny!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Napiste svou recenzi",
+    "nameLabel": "Vase jmeno",
+    "namePlaceholder": "Napr. Jan Novak",
+    "ratingLabel": "Hodnoceni",
+    "textLabel": "Vase recenze",
+    "textPlaceholder": "Podelte se o svou zkusenost...",
+    "submitText": "Publikovat recenzi",
+    "successTitle": "Dekujeme za vas prispevek!",
+    "successText": "Vase recenze bude posouzena nezavislym externim tymem. Nebudou zverejneny recenze od osob, ktere produkt skutecne nezakoupily, abychom zarucili autenticitu.",
+    "closeText": "Zavrit"
+  },
+
+  "orderSteps": {
+    "eyebrow": "OBJEDNEJTE HNED",
+    "title": "Jednoduche jako 1, 2, 3",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Vyplnte sve udaje",
+        "description": "Zadejte jmeno, telefon a adresu do objednavkoveho formulare nize."
+      },
+      {
+        "icon": "phone",
+        "title": "Zavolame vam",
+        "description": "Obdrzite telefonat nebo zpravu pres WhatsApp pro overeni udaju."
+      },
+      {
+        "icon": "cash",
+        "title": "Platite pri prevzeti",
+        "description": "Do 24/48h vam kuryer doruci balik. Platite hotove, bez zalohy."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Objednavkovy formular",
+    "title": "Dokoncete svuj nakup",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Sleva -50% konci za:",
+    "stockWarning": "Na sklade zbyva <strong>8 kusu</strong> za tuto akcni cenu",
+    "summaryTitle": "Detail objednavky",
+    "summaryLines": [
+      { "label": "Bowek Ironweld™ + Prislusenstvi", "value": "2 499 Kc", "type": "normal" },
+      { "label": "Rychle doruceni 24/48h", "value": "ZDARMA", "type": "free" },
+      { "label": "Dobirka", "value": "ZDARMA", "type": "free" }
+    ],
+    "totalLabel": "CELKEM",
+    "totalValue": "2 499 Kc",
+    "fields": {
+      "name": { "label": "Jmeno a Prijmeni *", "placeholder": "Napr. Jan Novak" },
+      "phone": { "label": "Telefonni cislo *", "placeholder": "Napr. 601 123 456" },
+      "address": { "label": "Dorucovaci adresa *", "placeholder": "Ulice, cislo, mesto, PSC" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "POTVRDIT OBJEDNAVKU",
+    "submitSubtext": "Platba hotove pri prevzeti",
+    "reassurance": "Doruceni 24/48h · Zaruka 1 rok · Zakaznicka podpora<br><strong>Zadna karta neni potreba.</strong> Kontaktujeme vas pro potvrzeni."
+  },
+
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Odpovedi na vase otazky, vse na jednom miste.",
+    "items": [
+      { "question": "Jak mohu provest objednavku?", "answer": "Stisknete tlacitko objednavky, vyplnite formular se svymi udaji a odeslte pozadavek. Budete kontaktovani telefonicky nebo pres WhatsApp pro potvrzeni, pote vam balik dorucime domu s platbou hotove pri prevzeti." },
+      { "question": "Kolik stoji doruceni?", "answer": "Doruceni je zcela zdarma. Po potvrzeni objednavky probehne doruceni do 24/48 pracovnich hodin." },
+      { "question": "Mohu ji vratit, pokud nebudu spokojen/a?", "answer": "Samozrejme, mate 30 dni od prevzeti na vraceni a ziskani plneho vraceni penez. Zajistime svoz z vasi adresy a vratime vam celou castku." },
+      { "question": "Co kdyz se po prvnim mesici objevi zavada?", "answer": "Zadny problem, kazdy nas produkt je kryty zarukou 2 roky od data nakupu." },
+      { "question": "Jak pozadam o pomoc nebo vraceni?", "answer": "Po nakupu nas muzete kontaktovat prostrednictvim formulare na webu nebo na emailovou adresu uvedenou na konci stranky." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "4 998 Kc",
+    "newPrice": "2 499 Kc",
+    "buttonText": "OBJEDNAT NYNI",
+    "buttonSubtext": "Platba pri prevzeti"
+  },
+
+  "tracking": {
+    "googleAdsId": "AW-16697430619",
+    "conversionLabel": "pX2oCOToov8bENuk-pk-",
+    "conversionValue": 2499,
+    "conversionCurrency": "CZK",
+    "facebookPixelId": "",
+    "network": {
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=609&uid=01981ccf-4474-7c39-97eb-9407221996c2&lp=609"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Predchozi",
+    "nextSlide": "Dalsi",
+    "thumbnail": "Miniatura",
+    "close": "Zavrit"
+  },
+
+  "ty": {
+    "title": "Objednavka potvrzena!",
+    "subtitle": "Vasi zadost jsme uspesne prijali.",
+    "orderNumberLabel": "C. objednavky:",
+    "summaryTitle": "Detail objednavky",
+    "accessoriesLabel": "+ Prislusenstvi v cene",
+    "totalLabel": "CELKEM K UHRADE",
+    "paymentNote": "Platba hotove kuryerovi — zadne zalohy",
+    "yourDataTitle": "Vase udaje",
+    "nameLabel": "Jmeno",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Dalsi kroky",
+    "message": "Budeme vas kontaktovat telefonicky nebo pres WhatsApp pro potvrzeni objednavky a domluveni doruceni.",
+    "steps": [
+      "Obdrzite telefonat nebo zpravu WhatsApp s potvrzenim",
+      "Zasilka bude odeslana do 24/48h",
+      "Zaplatite hotove primo kuryerovi"
+    ],
+    "footerText": "Zaruka 2 roky · 30 dni na vraceni · Specializovana podpora"
+  }
+}

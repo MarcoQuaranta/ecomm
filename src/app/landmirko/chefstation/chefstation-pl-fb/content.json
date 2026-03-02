@@ -1,0 +1,425 @@
+{
+  "seo": {
+    "title": "ChefStation™ - Wielofunkcyjne Centrum Gotowania 5 w 1",
+    "description": "Smaż na gorącym powietrzu, piecz, grilluj, podgrzewaj i przygotowuj gorące napoje jednym urządzeniem. Odzyskaj miejsce na blacie. Darmowa dostawa."
+  },
+
+  "pricing": {
+    "currency": "PLN",
+    "currencySymbol": "zł",
+    "originalPrice": 698.00,
+    "currentPrice": 349.00,
+    "discountPercent": 50
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Uwaga: Duże zainteresowanie —",
+    "highlight": "Zostało tylko 8 sztuk",
+    "suffix": "w tej cenie"
+  },
+
+  "hero": {
+    "badge": "New 2026",
+    "title": "Cała Kuchnia",
+    "titleHighlight": "na Małej Przestrzeni:",
+    "titleSuffix": "Air Fryer, Piekarnik, Grill, Kawa i Herbaty",
+    "subtitle": "Wielofunkcyjne centrum gotowania 5-w-1, które <strong>zastępuje 5 różnych urządzeń</strong>. Przygotuj wszystko naraz na <strong>zaledwie 45 cm przestrzeni</strong>.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18 743 zweryfikowanych opinii"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/chefstation/carosello/1.webp", "alt": "ChefStation™ widok z przodu" },
+      { "src": "/images/mirko/chefstation/carosello/2.webp", "alt": "ChefStation™ w użyciu" },
+      { "src": "/images/mirko/chefstation/carosello/3.webp", "alt": "ChefStation™ otwarty piekarnik" },
+      { "src": "/images/mirko/chefstation/carosello/4.webp", "alt": "ChefStation™ Air Fryer" },
+      { "src": "/images/mirko/chefstation/carosello/5.webp", "alt": "ChefStation™ kawa i herbaty" },
+      { "src": "/images/mirko/chefstation/carosello/6.webp", "alt": "ChefStation™ akcesoria w zestawie" },
+      { "src": "/images/mirko/chefstation/carosello/7.webp", "alt": "ChefStation™ szczegół" },
+      { "src": "/images/mirko/chefstation/carosello/8.webp", "alt": "ChefStation™ opakowanie" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Super chrupiący air fryer:", "description": "frytki, skrzydełka i wiele więcej, złociste i chrupiące przy minimalnej ilości oleju." },
+      { "title": "Piekarnik 12L z dwoma poziomami:", "description": "przygotowuj kilka potraw w piekarniku jednocześnie, korzystając też z płyty grzewczej." },
+      { "title": "Płyta z powłoką nieprzywierającą:", "description": "odczepiasz jednym ruchem, szybko płuczesz i jesteś gotowy do dalszego gotowania." },
+      { "title": "Gorące napoje:", "description": "podgrzej wodę na herbatę i korzystaj z wbudowanego filtra do kawy, wszystko w kilka chwil." },
+      { "title": "Wyjmowane elementy:", "description": "blachy, ruszty i płyta nadają się do mycia w zmywarce." },
+      { "title": "Łatwy w transporcie:", "description": "idealny na podróże, do kampera, do kawalerki." },
+      { "title": "Timer + automatyczne wyłączanie:", "description": "ustawiasz czas i urządzenie samo się zatrzymuje." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "ChefStation™",
+    "shippingLabel": "Szybka dostawa:",
+    "shippingValue": "GRATIS",
+    "guaranteeLabel": "Gwarancja 24 miesiące",
+    "offerToggleText": "Zobacz, co zawiera oferta",
+    "offerItems": [
+      { "text": "ChefStation™ — Centrum Gotowania 5 w 1", "badge": null },
+      { "text": "Koszyk do smażenia na gorącym powietrzu", "badge": null },
+      { "text": "Taca Crisp z perforacją", "badge": null },
+      { "text": "2 ruszty + 2 blachy ze stali nierdzewnej", "badge": null },
+      { "text": "Zaparzacz do herbat ze stali nierdzewnej", "badge": "GRATIS" },
+      { "text": "Mini silikonowe rękawice kuchenne", "badge": "GRATIS" },
+      { "text": "Gwarancja 24 miesiące + Dedykowane wsparcie", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ZAMÓW TERAZ",
+    "mainSubtext": "Płatność Przy Odbiorze",
+    "subNote": ""
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Płatność przy odbiorze", "color": "green" },
+      { "icon": "truck", "text": "Wysyłka 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 dni na zwrot", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Problem",
+    "title": "Twoje urządzenia kuchenne nie spełniają oczekiwań?",
+    "items": [
+      { "icon": "box", "titleBold": "Blat kuchenny <strong>zastawiony urządzeniami</strong>, które zabierają całą przestrzeń", "text": "" },
+      { "icon": "timer", "titleBold": "Air fryer <strong>za mały</strong> na rodzinne porcje", "text": "" },
+      { "icon": "money", "titleBold": "Garnki i blachy do <strong>mycia za każdym razem</strong>, stosy naczyń", "text": "" },
+      { "icon": "money", "titleBold": "Zakup 5 osobnych urządzeń kosztuje <strong>1400-2000 zł</strong>", "text": "" }
+    ],
+    "solutionTitle": "Z ChefStation™ wszystko się zmienia.",
+    "solutionText": "5 funkcji w jednym urządzeniu. Piecz, smaż, przygotowuj napoje — i posprzątaj w mgnieniu oka."
+  },
+
+  "features": {
+    "eyebrow": "Co go wyróżnia",
+    "title": "Wyposażona kuchnia na przestrzeni jednego mini piekarnika.",
+    "image": "/images/mirko/chefstation/features.gif",
+    "imageAlt": "ChefStation™ w akcji",
+    "items": [
+      {
+        "image": "/images/mirko/chefstation/angle/1.webp",
+        "imageAlt": "Smażenie na gorącym powietrzu 360°",
+        "tag": "AIR FRYER Z KONWEKCJĄ 360°",
+        "tagColor": "green",
+        "title": "Złociste z Zewnątrz, Bez Oleju w Środku",
+        "description": "Wentylator z gorącym powietrzem i cyrkulacją 360°. Frytki, kurczak, warzywa: <strong>chrupiące w połowie czasu</strong>, prawie bez oleju. Ten sam efekt co tradycyjne smażenie, bez nieprzyjemnych zapachów."
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/2.webp",
+        "imageAlt": "Piekarnik z dwoma poziomami",
+        "tag": "POJEMNY PIEKARNIK",
+        "tagColor": "orange",
+        "title": "Dwa Poziomy: Przygotuj Więcej Potraw Naraz",
+        "description": "12 litrów pojemności z <strong>dwoma poziomami</strong>. Warzywa na górze, chleb na dole. Jednocześnie korzystasz z płyty i przygotowujesz kawę. <strong>Tryb statyczny lub z nawiewem</strong>, sam decydujesz."
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/3.webp",
+        "imageAlt": "Płyta nieprzywierająca",
+        "tag": "ŻEGNAJ GARNKI",
+        "tagColor": "blue",
+        "title": "Płyta Nieprzywierająca, Bez Garnków",
+        "description": "Podgrzewasz, gotujesz, tostujesz — bezpośrednio na płycie. <strong>Powierzchnia nieprzywierająca</strong>: odczep, opłucz i gotuj dalej. <strong>Płyta, blachy i dzbanek do kawy nadają się do zmywarki.</strong>"
+      },
+      {
+        "image": "/images/mirko/chefstation/angle/4.webp",
+        "imageAlt": "Kawa i herbaty",
+        "tag": "GORĄCE NAPOJE",
+        "tagColor": "green",
+        "title": "Kawa Filtrowana i Herbaty, Kiedy Chcesz",
+        "description": "Wbudowany ekspres do kawy filtrowanej + zaparzacz ze stali nierdzewnej na herbaty. <strong>Bez czajnika</strong>, bez dodatkowych urządzeń. Rano kawa, wieczorem herbata."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Banalnie proste",
+    "title": "Włącz, wybierz tryb, gotuj.",
+    "image": "",
+    "imageAlt": "Jak to działa",
+    "steps": [
+      { "title": "Wybierz Tryb", "description": "Obróć pokrętło: Air Fryer, Piekarnik, Grill, Płyta lub Gorące napoje." },
+      { "title": "Ustaw i Startuj", "description": "Temperaturę i timer ustawiasz w mgnieniu oka. Bez ryzyka przypalenia." },
+      { "title": "Jedz i Opłucz", "description": "Wyjmowane elementy. Jedno przetarcie gąbką i blat jest znowu czysty." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ZAMÓW TERAZ Z 50% RABATEM",
+    "subtext": "Płatność Gotówką Przy Odbiorze"
+  },
+
+  "specs": {
+    "eyebrow": "Dane techniczne",
+    "title": "Karta Techniczna",
+    "items": [
+      { "label": "Moc", "value": "1250W" },
+      { "label": "Funkcje", "value": "Air Fryer, Piekarnik, Grill, Płyta, Kawa" },
+      { "label": "Pojemność piekarnika", "value": "12L dwa poziomy" },
+      { "label": "Temperatura", "value": "80-230°C" },
+      { "label": "Wymiary", "value": "45 × 26 × 28 cm" },
+      { "label": "Certyfikaty", "value": "CE · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Porównanie",
+    "title": "Co zyskujesz, wybierając ChefStation™?",
+    "featureColumn": "Cecha",
+    "winnerBadge": "ZWYCIĘZCA",
+    "productColumn": "ChefStation™",
+    "competitorColumn": "5 Osobnych Urządzeń",
+    "rows": [
+      { "feature": "Zajmowane miejsce", "product": "✔ Jedno urządzenie, 45cm", "competitor": "5 urządzeń na blacie" },
+      { "feature": "Tryby pracy", "product": "✔ Air Fryer + Piekarnik + Płyta + Kawa", "competitor": "Wszystko trzeba kupić osobno" },
+      { "feature": "Konserwacja", "product": "✔ Wyjmowane elementy, jedno opłukanie", "competitor": "Garnki, blachy, filtry do mycia" },
+      { "feature": "Mobilność", "product": "✔ Zabierz go wszędzie", "competitor": "Nie do przeniesienia" },
+      { "feature": "Łatwość obsługi", "product": "✔ Jedno pokrętło, zero komplikacji", "competitor": "5 różnych instrukcji" },
+      { "feature": "Łączny koszt", "product": "✔ Tylko 349 zł (jednorazowo)", "competitor": "1400-2000 zł łącznie" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Kompletna zawartość",
+    "title": "Oto co otrzymujesz",
+    "items": [
+      { "icon": "box", "text": "ChefStation™ — Centrum Gotowania 5 w 1", "value": "698 zł", "valueType": "price" },
+      { "icon": "check", "text": "Koszyk air fryer + Taca Crisp", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "check", "text": "2 ruszty + 2 blachy ze stali nierdzewnej", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "gift", "text": "Zaparzacz do herbat + mini silikonowe rękawice", "value": "GRATIS", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Cena regularna:",
+    "totalOriginalValue": "698 zł",
+    "totalCurrentLabel": "Dziś Twoja cena:",
+    "totalCurrentValue": "349 zł",
+    "totalSave": "Oszczędzasz 349 zł · Wysyłka GRATIS",
+    "ctaText": "ZAMÓW TERAZ"
+  },
+
+  "reviews": {
+    "eyebrow": "Opinie klientów",
+    "title": "Zweryfikowane Opinie",
+    "rating": "4.8",
+    "totalCount": "18 743 opinii",
+    "verifiedNote": "✓ Opinie są weryfikowane przez niezależny podmiot zewnętrzny.",
+    "showMoreText": "Załaduj więcej opinii",
+    "leaveReviewText": "Napisz opinię",
+    "verifiedBadge": "Potwierdzony zakup",
+    "sellerReplyLabel": "Odpowiedź sprzedawcy:",
+    "items": [
+      {
+        "initials": "AK",
+        "name": "Anna Kowalska",
+        "stars": 5,
+        "text": "Moja kuchnia jest malutka i nie było już miejsca na nic. To centrum gotowania mnie uratowało: robię wszystko jednym urządzeniem. Kawa rano, air fryer na kolację... nie mogłabym być szczęśliwsza. Dostawa w dwa dni, zapłaciłam kurierowi.",
+        "verified": true,
+        "sellerReply": "Anno, cieszymy się, że problem z przestrzenią jest rozwiązany! Połączenie kawa + air fryer to ulubiona kombinacja naszych klientów. Dziękujemy!"
+      },
+      {
+        "initials": "PN",
+        "name": "Piotr Nowak",
+        "stars": 5,
+        "text": "air fryer działa świetnie, frytki wychodzą chrupiące jak smażone, ale z minimalną ilością oleju. używam go praktycznie codziennie. piekarnik też jest przestronny jak na swoje wymiary, przygotowałem blachę warzyw bez problemu",
+        "verified": true,
+        "sellerReply": "Piotrze, air fryer to najbardziej lubiany tryb! Wypróbuj też funkcję grilla do tostowania chleba, będziesz zachwycony. Dziękujemy za opinię."
+      },
+      {
+        "initials": "MZ",
+        "name": "Małgorzata Zielińska",
+        "stars": 5,
+        "text": "Kupiłam go do mieszkania nad morzem, gdzie nie ma wyposażonej kuchni. Wozimy go samochodem, jest lekki i przygotowujemy wszystko: od śniadania po kolację. Kawa filtrowana jest doskonała, a płyta nagrzewa się szybko. W pełni zadowolona.",
+        "verified": true,
+        "sellerReply": "Małgorzato, dom wakacyjny to właśnie jedno z zastosowań, do których go zaprojektowaliśmy! Udanych wakacji i smacznego."
+      },
+      {
+        "initials": "TW",
+        "name": "Tomasz Wiśniewski",
+        "stars": 4,
+        "text": "muszę przyznać, że jakość w stosunku do ceny mnie zaskoczyła. air fryer działa dobrze, piekarnik grzeje jak trzeba, kawa jest przyjemna. daję 4 gwiazdki na razie, bo używam go od niedawna i wolę go jeszcze trochę przetestować przed wystawieniem maksymalnej oceny",
+        "verified": true,
+        "sellerReply": "Tomaszu, doceniamy szczerość! Jesteśmy przekonani, że przy dłuższym użytkowaniu docenisz jeszcze bardziej każdą funkcję. Daj nam znać!"
+      },
+      {
+        "initials": "KL",
+        "name": "Katarzyna Lewandowska",
+        "stars": 5,
+        "text": "Odstawiłam frytkownicę, toster i czajnik. Teraz mam czysty blat i robię dokładnie to samo jednym urządzeniem. Czyszczenie jest banalnie proste, części się wyjmuje i myje w mgnieniu oka.",
+        "verified": true,
+        "sellerReply": "Katarzyno, czysty blat to największa satysfakcja! Dziękujemy za podzielenie się swoim doświadczeniem."
+      },
+      {
+        "initials": "JM",
+        "name": "Jan Majewski",
+        "stars": 5,
+        "text": "używam go głównie do kawy filtrowanej rano i air fryera wieczorem. same te dwie funkcje uzasadniają wydatek. dostawa błyskawiczna, zapłaciłem kurierowi bez żadnych problemów",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "EW",
+        "name": "Ewa Wójcik",
+        "stars": 5,
+        "text": "Banalnie prosty w obsłudze, mój mąż, który nigdy nie wchodzi do kuchni, ogarnął go w pięć minut. Pokrętła są czytelne, a timer z automatycznym wyłączaniem daje dodatkowy spokój. Zamówiłam w poniedziałek, odebrałam w środę.",
+        "verified": true,
+        "sellerReply": "Ewo, łatwość obsługi to jeden z punktów, w które zainwestowaliśmy najwięcej! Cieszymy się, że Twój mąż też się odnajduje."
+      },
+      {
+        "initials": "AK",
+        "name": "Andrzej Kamiński",
+        "stars": 5,
+        "text": "używam go w kamperze i muszę przyznać, że jest niezawodny. mało zajmuje miejsca, pokrywa wszystkie potrzeby i nie muszę zabierać tysiąca rzeczy. grill do tostowania chleba rano jest fantastyczny",
+        "verified": true,
+        "sellerReply": "Andrzeju, w kamperze jest idealny! Kompaktowy i wszechstronny, dokładnie to, czego potrzeba w podróży. Szerokiej drogi!"
+      },
+      {
+        "initials": "BD",
+        "name": "Barbara Dąbrowska",
+        "stars": 5,
+        "text": "Nie wierzyłam w kawę filtrowaną, ale muszę przyznać, że jest naprawdę dobra. A herbata wieczorem przed snem stała się rutyną. Wszystko jednym urządzeniem, bez zagraconej kuchni. Polecam.",
+        "verified": true,
+        "sellerReply": "Barbaro, kawa filtrowana przekonała nawet największych sceptyków! Herbata na dobranoc to rytuał, który pokochało wielu. Dziękujemy!"
+      },
+      {
+        "initials": "MK",
+        "name": "Marek Kozłowski",
+        "stars": 5,
+        "text": "myślałem, że to kolejny bezużyteczny gadżet, a tymczasem działa świetnie. air fryer jest prawdziwy, frytki wychodzą chrupiące. piekarnik jest kompaktowy, ale dzięki dwóm poziomom przygotowujesz mnóstwo rzeczy. za 349 zł nie można wymagać więcej",
+        "verified": true,
+        "sellerReply": "Marku, cieszymy się, że zmieniliśmy Twoje zdanie! Podwójny poziom to sekret maksymalnego wykorzystania wewnętrznej przestrzeni. Dziękujemy za zaufanie."
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Napisz swoją opinię",
+    "nameLabel": "Twoje imię",
+    "namePlaceholder": "Np. Jan Kowalski",
+    "ratingLabel": "Ocena",
+    "textLabel": "Twoja opinia",
+    "textPlaceholder": "Opisz swoje doświadczenie...",
+    "submitText": "Opublikuj Opinię",
+    "successTitle": "Dziękujemy za Twój wkład!",
+    "successText": "Twoja opinia jest weryfikowana przez niezależny podmiot zewnętrzny. Opinie przesłane przez osoby, które nie kupiły produktu, nie zostaną opublikowane w celu ochrony autentyczności.",
+    "closeText": "Zamknij"
+  },
+
+  "orderSteps": {
+    "eyebrow": "JAK KUPIĆ",
+    "title": "Zamów w 3 prostych krokach",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Wypełnij formularz",
+        "description": "Wpisz swoje dane w formularzu zamówienia poniżej."
+      },
+      {
+        "icon": "phone",
+        "title": "Weryfikacja telefoniczna",
+        "description": "Skontaktujemy się z Tobą telefonicznie lub przez WhatsApp, aby zweryfikować dane."
+      },
+      {
+        "icon": "cash",
+        "title": "Płatność przy odbiorze",
+        "description": "W ciągu 24/48h paczka dotrze kurierem z możliwością śledzenia. Płacisz gotówką przy odbiorze."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Formularz Zamówienia",
+    "title": "Sfinalizuj zakup",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Promocja -50% kończy się za:",
+    "stockWarning": "Tylko <strong>8 sztuk</strong> dostępnych w tej cenie",
+    "summaryTitle": "Szczegóły Zamówienia",
+    "summaryLines": [
+      { "label": "ChefStation™ + Akcesoria", "value": "349 zł", "type": "normal" },
+      { "label": "Szybka wysyłka 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Opłata za pobranie", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "RAZEM",
+    "totalValue": "349 zł",
+    "fields": {
+      "name": { "label": "Imię i Nazwisko *", "placeholder": "Np. Jan Kowalski" },
+      "phone": { "label": "Numer Telefonu *", "placeholder": "Np. 500 123 456" },
+      "address": { "label": "Adres Dostawy *", "placeholder": "Ulica, Numer, Miasto, Kod pocztowy" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "POTWIERDŹ ZAMÓWIENIE",
+    "submitSubtext": "Płatność Gotówką Przy Odbiorze",
+    "reassurance": "Dostawa 24/48h · Gwarancja 24 miesiące · Obsługa klienta<br><strong>Karta nie jest wymagana.</strong> Oddzwonimy w celu potwierdzenia."
+  },
+
+  "faq": {
+    "eyebrow": "Szybkie odpowiedzi",
+    "title": "Masz pytania? Znajdziesz odpowiedzi tutaj.",
+    "items": [
+      { "question": "Jak mogę złożyć zamówienie?", "answer": "Naciśnij przycisk zakupu, wypełnij formularz swoimi danymi i potwierdź. Skontaktujemy się z Tobą telefonicznie lub przez WhatsApp w celu weryfikacji, a paczkę otrzymasz bezpośrednio pod swój adres z płatnością gotówką." },
+      { "question": "Jak wygląda wysyłka?", "answer": "Wysyłka jest całkowicie bezpłatna. Po potwierdzeniu zamówienia dostawa realizowana jest w ciągu ok. 24/48 godzin roboczych." },
+      { "question": "A jeśli nie będę zadowolony/a?", "answer": "Możesz uzyskać pełny zwrot pieniędzy, odsyłając produkt w ciągu 30 dni od otrzymania. Przyjeżdżamy po niego i zwracamy całą zapłaconą kwotę." },
+      { "question": "Co jeśli będę mieć problem po 30 dniach?", "answer": "Żaden problem, wszystkie nasze produkty objęte są 2-letnią gwarancją." },
+      { "question": "Jak złożyć reklamację lub uzyskać pomoc?", "answer": "Aby uzyskać wsparcie lub złożyć zwrot po zakupie, możesz skorzystać z formularza kontaktowego na stronie lub napisać na adres e-mail podany w stopce." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "698 zł",
+    "newPrice": "349 zł",
+    "buttonText": "ZAMÓW TERAZ",
+    "buttonSubtext": "Płatność Przy Odbiorze"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 349.00,
+    "conversionCurrency": "PLN",
+    "facebookPixelId": "",
+    "network": {
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=443&uid=019855d0-397a-72ee-8df5-c5026966105a&lp=443"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Poprzedni",
+    "nextSlide": "Następny",
+    "thumbnail": "Miniatura",
+    "close": "Zamknij"
+  },
+
+  "ty": {
+    "title": "Zamówienie Przyjęte!",
+    "subtitle": "Twoje zamówienie zostało pomyślnie zarejestrowane.",
+    "orderNumberLabel": "Nr zamówienia:",
+    "summaryTitle": "Szczegóły Zamówienia",
+    "accessoriesLabel": "+ Akcesoria w zestawie",
+    "totalLabel": "RAZEM DO ZAPŁATY",
+    "paymentNote": "Płatność gotówką kurierowi — bez zaliczki",
+    "yourDataTitle": "Twoje Dane Osobowe",
+    "nameLabel": "Imię",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adres",
+    "nextStepsTitle": "Co dalej?",
+    "message": "Skontaktujemy się z Tobą telefonicznie lub przez WhatsApp, aby potwierdzić zamówienie i ustalić dostawę.",
+    "steps": [
+      "Otrzymasz telefon lub wiadomość WhatsApp w celu weryfikacji",
+      "Paczka zostanie wysłana w ciągu 24/48h",
+      "Płacisz gotówką kurierowi przy odbiorze"
+    ],
+    "footerText": "Gwarancja 24 Miesiące · 30 Dni na Zwrot · Dedykowane Wsparcie"
+  }
+}

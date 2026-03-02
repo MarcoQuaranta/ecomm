@@ -1,0 +1,503 @@
+{
+  "_instructions": [
+    "REGOLE GLOBALI PER LA COMPILAZIONE DI QUESTO JSON:",
+    "",
+    "=== ENCODING ===",
+    "0. Il file DEVE essere salvato in UTF-8. Usare sempre i caratteri accentati nativi (è, à, ù, ò, ì, é) e MAI apostrofi al posto degli accenti. Le emoji e i simboli speciali vanno inseriti direttamente come caratteri Unicode.",
+    "",
+    "=== NAZIONI ===",
+    "1. NON fare MAI riferimento a una nazione specifica (es: Italia, in Italia, ecc). Le landing vengono lanciate in tutta Europa.",
+    "",
+    "=== COERENZA SOCIAL PROOF ===",
+    "2. hero.socialProof.count DEVE corrispondere ESATTAMENTE a reviews.totalCount. La media stelle in hero.socialProof.rating DEVE corrispondere a reviews.rating.",
+    "",
+    "=== IMMAGINI (REGOLA FONDAMENTALE) ===",
+    "3. STRUTTURA CARTELLE: /images/[nome-venditore]/[nome-prodotto]/ — se il prodotto ha più parole (es: 'QuickChef Pro Max'), la cartella si chiama solo con il nome base (es: 'quickchef'). Se la cartella esiste già, CHIEDERE all'utente come vuole chiamarla. Dentro la cartella ci sono due sottocartelle:",
+    "   - carosello/ — foto numerate progressivamente (1.jpg, 2.png, 3.webp, ecc). TUTTE le immagini presenti vanno inserite nel gallery.slides della hero, IN ORDINE. La prima immagine (1.*) va anche nel riepilogo ordine come thumbnail.",
+    "   - angle/ — foto numerate progressivamente (1.jpg, 2.png, ecc). Vanno inserite IN ORDINE nei blocchi della sezione 'Perché è diverso' (features.items). La foto 1 va nel primo blocco, la 2 nel secondo, ecc.",
+    "   L'utente carica le immagini, tu inserisci i path nel JSON. Non importa l'estensione: inserisci tutte le immagini presenti. Le immagini vengono ottimizzate automaticamente dal componente tramite next/image.",
+    "",
+    "=== BENEFITS ===",
+    "4. I benefits devono riguardare SOLO il prodotto e le sue funzionalità. MAI parlare di spedizione, consegna, pagamento, garanzia nei benefits.",
+    "",
+    "=== PREZZI (REGOLA FONDAMENTALE) ===",
+    "5. TUTTI I PREZZI vengono dalla sezione 'pricing'. L'utente fornisce prezzi e sconti all'inizio della creazione, vanno inseriti in pricing. Da lì vengono pescati OVUNQUE servano: priceBox, midCta, comparison, package, orderForm, stickyCta. MAI hardcodare un prezzo.",
+    "",
+    "=== SOCIAL PROOF CLICK ===",
+    "6. Cliccando sulla social proof nella hero, l'utente viene portato alla sezione recensioni.",
+    "",
+    "=== TITOLI DI SEZIONE ===",
+    "7. I titoli (eyebrow + title) possono essere STATICI o DINAMICI. Quelli marcati STATICO non vanno mai cambiati. Quelli DINAMICI cambiano per ogni prodotto.",
+    "",
+    "=== TONO E LINGUAGGIO (REGOLA FONDAMENTALE) ===",
+    "8. TUTTI i testi della landing devono seguire queste regole:",
+    "   - Linguaggio MARKETING AGGRESSIVO e SEMPLICE, mai volgare.",
+    "   - Adatto ai boomer: estremamente semplice ma d'impatto.",
+    "   - Deve trasmettere URGENZA e avere EFFETTO WOW, molto spinto.",
+    "   - NON tecnico ma EMOZIONALE e IMMEDIATO.",
+    "   - Esempio: NON scrivere 'batteria da 5000mAh' ma '3 giorni senza scaricarsi'.",
+    "   - Esempio: NON scrivere 'motore da 800W' ma 'potenza da barbiere professionista'.",
+    "   - Traduci sempre le specifiche tecniche in BENEFICI CONCRETI che il cliente capisce e sente.",
+    "   - Frasi brevi, dirette, che colpiscono. Zero giri di parole.",
+    "",
+    "=== LUNGHEZZA TESTI (REGOLA FONDAMENTALE) ===",
+    "9. Le lunghezze di TUTTI i testi (titoli, descrizioni, bullet, recensioni, ecc) devono essere MOLTO SIMILI a quelle dell'esempio presente in questo JSON. Se un titolo nell'esempio è di 5 parole, anche il nuovo deve essere circa 5 parole. Se una descrizione è di 1 riga, anche la nuova deve essere di 1 riga. Se una recensione è di 3 righe, anche la nuova deve essere circa 3 righe. MAI testi molto più lunghi o molto più corti dell'esempio.",
+    "",
+    "=== MARCHI E NOMI (REGOLA FONDAMENTALE) ===",
+    "10. MAI citare nomi di negozi, brand, marchi registrati o aziende terze (es: Amazon, Decathlon, Apple, Samsung, ecc). Se serve un confronto, usare termini generici come 'altri prodotti', 'prodotti concorrenti', 'alternative in commercio'.",
+    "",
+    "=== NAZIONI (RIBADITO) ===",
+    "11. MAI fare riferimento all'Italia o a qualsiasi nazione specifica. Nemmeno nelle recensioni, nelle risposte del venditore, nei benefits, nelle FAQ. Le landing vengono usate in tutta Europa e tradotte.",
+    "",
+    "=== SPEDIZIONE E PAGAMENTO (REGOLA FONDAMENTALE) ===",
+    "12. NON inventare MAI informazioni su spedizione e pagamento. Le regole sono FISSE e NON modificabili:",
+    "   - Spedizione: SEMPRE gratuita, 24/48h.",
+    "   - Pagamento: SEMPRE alla consegna, in contanti al corriere.",
+    "   - Contrassegno: SEMPRE gratuito.",
+    "   - Reso: SEMPRE 30 giorni.",
+    "   - Garanzia: SEMPRE 2 anni.",
+    "   - MAI inventare costi di spedizione, metodi di pagamento alternativi (carta, PayPal, ecc), tempi diversi o condizioni diverse da queste.",
+    "",
+    "=== ANGLE (REGOLA FONDAMENTALE) ===",
+    "13. Gli angle forniti dall'utente riguardano SEMPRE e SOLO il prodotto e le sue funzionalità. Gli angle su spedizione, consegna, pagamento, garanzia, reso sono GIÀ presenti nelle sezioni statiche e NON vanno ripetuti nei contenuti dinamici (benefits, features, problems, hero, ecc). Non mischiare mai angle prodotto con angle logistica/negozio.",
+    "",
+    "=== LINGUA (REGOLA FONDAMENTALE) ===",
+    "14. La prima versione della landing è SEMPRE in ITALIANO, indipendentemente dalla lingua della fonte, del competitor o del riferimento fornito dall'utente. Anche se il link, le informazioni di partenza o il materiale è in polacco, inglese, tedesco, spagnolo o qualsiasi altra lingua, il copy va SEMPRE scritto in italiano. Le traduzioni nelle altre lingue vengono fatte successivamente nella Fase 3.",
+    "",
+    "=== GRAMMATICA E CORRETTEZZA (REGOLA FONDAMENTALE) ===",
+    "15. TUTTI i testi devono essere grammaticalmente corretti in italiano. Linguaggio semplice e diretto NON significa scorretto. Evitare calchi da altre lingue, costruzioni innaturali o frasi che suonano tradotte. Esempio: NON 'niente appiccica' ma 'lo sporco non attacca'. NON 'zero problemi hai' ma 'non avrai nessun problema'. Ogni frase deve suonare naturale per un madrelingua italiano. Il tono è aggressivo e semplice, ma la grammatica deve essere SEMPRE corretta.",
+    "",
+    "=== NOTE AGGIUNTIVE (WORKFLOW) ===",
+    "16. Dopo aver raccolto i dati del prodotto (Fase 0), PRIMA di iniziare la Fase 1 (analisi + copy), chiedere SEMPRE all'utente: 'Hai note aggiuntive, preferenze o cose da tenere a mente per questa landing?' — e attendere la risposta prima di procedere."
+  ],
+
+  "seo": {
+    "_note": "DINAMICO - Cambia per ogni prodotto. Title max 60 caratteri, description max 160 caratteri.",
+    "title": "CloudRelief Topper™ - Spěte bez bolesti od první noci",
+    "description": "Ortopedický topper s vlnitým povrchem, který podepře páteř a rozloží váhu rovnoměrně. Doprava zdarma, platba při převzetí."
+  },
+
+  "pricing": {
+    "_note": "DINAMICO - FONTE UNICA DI VERITÀ PER TUTTI I PREZZI. Cambia per ogni prodotto e nazione. L'utente fornisce questi valori all'inizio della creazione. Tutti i prezzi visibili nella pagina si calcolano da qui.",
+    "currency": "CZK",
+    "currencySymbol": "Kč",
+    "originalPrice": 4198,
+    "currentPrice": 2099,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "text": "Doprava zdarma 24/48h · Platba při převzetí · Záruka 2 roky"
+  },
+
+  "urgencyBanner": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "text": "Pozor: Vysoká poptávka —",
+    "highlight": "Posledních 8 kusů skladem",
+    "suffix": "za tuto cenu"
+  },
+
+  "hero": {
+    "_note": "DINAMICO - Badge, titolo, sottotitolo e social proof cambiano per ogni prodotto. MAI citare nazioni specifiche.",
+    "_note_title": "DINAMICO - Titolo cambia per ogni prodotto.",
+    "_instructions_badge": "Qualcosa di semplice che riguarda il prodotto e trasmette INNOVAZIONE.",
+    "_instructions_title": "SOLUZIONE a un PROBLEMA.",
+    "_instructions_subtitle": "Descrizione aggressiva ma rassicurante.",
+    "_instructions_socialProof": "count e rating DEVONO corrispondere ESATTAMENTE a reviews.totalCount e reviews.rating.",
+    "badge": "Novinka 2026",
+    "title": "Ortopedická podpora, která",
+    "titleHighlight": "odstraní bolest",
+    "titleSuffix": "během spánku",
+    "subtitle": "Ortopedický topper s vlnitým profilem, který podepře páteř a rozloží váhu rovnoměrně. Položíte ho na matraci a bolest zmizí.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "19 741 spokojených zákazníků"
+    }
+  },
+
+  "gallery": {
+    "_note": "DINAMICO - Le immagini sono in /images/[venditore]/[prodotto]/carosello/.",
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/cloudrelief/carosello/1.png", "alt": "CloudRelief Topper hlavní pohled" },
+      { "src": "/images/mirko/cloudrelief/carosello/2.png", "alt": "CloudRelief Topper při používání" },
+      { "src": "/images/mirko/cloudrelief/carosello/3.png", "alt": "CloudRelief Topper detail" },
+      { "src": "/images/mirko/cloudrelief/carosello/4.png", "alt": "CloudRelief Topper vlnitý profil" },
+      { "src": "/images/mirko/cloudrelief/carosello/5.png", "alt": "CloudRelief Topper vnitřní struktura" },
+      { "src": "/images/mirko/cloudrelief/carosello/6.png", "alt": "CloudRelief Topper na posteli" },
+      { "src": "/images/mirko/cloudrelief/carosello/7.png", "alt": "CloudRelief Topper balení" },
+      { "src": "/images/mirko/cloudrelief/carosello/8.png", "alt": "CloudRelief Topper s příslušenstvím" }
+    ]
+  },
+
+  "benefits": {
+    "_note": "DINAMICO - Numero variabile di bullet point. Devono riguardare SOLO le caratteristiche/benefici del prodotto.",
+    "items": [
+      { "title": "Vyrovnaná záda celou noc:", "description": "tělo najde správnou polohu, páteř se během spánku uvolní." },
+      { "title": "Masážní vlnitý povrch:", "description": "vlnitá struktura podporuje krevní oběh. Konec brnění a ranních otoků." },
+      { "title": "Ramena a boky bez tlaku:", "description": "7 cm kompaktní paměťové pěny podepře váhu bez propadání." },
+      { "title": "Žádné horko v noci:", "description": "boční ventilace 3D Mesh a otevřená struktura. Noční pocení odstraněno." },
+      { "title": "Snadná údržba:", "description": "potah s Aloe Vera na zip, snímatelný. Sundáte a hodíte do pračky." },
+      { "title": "Drží na místě:", "description": "protiskluzový spodek a 4 rohové gumy. Drží pevně, nikdy se neposune." }
+    ]
+  },
+
+  "sizes": {
+    "title": "Vyberte svou velikost",
+    "sizeLabel": "Velikost",
+    "options": [
+      { "id": "jednoluzko", "name": "Jednolůžko", "dimensions": "80×190 cm" },
+      { "id": "jedenapolis", "name": "Jeden a půl", "dimensions": "120×190 cm" },
+      { "id": "dvouluzko", "name": "Dvoulůžko", "dimensions": "160×190 cm" },
+      { "id": "king", "name": "King", "dimensions": "180×200 cm" }
+    ],
+    "defaultSelected": "dvouluzko",
+    "explanationTitle": "Proč stojí všechny stejně?",
+    "explanationText": "Abychom vyprodali sklad, snížili jsme velké velikosti (King/Dvoulůžko) na cenu Jednolůžka. Využijte toho: platíte za malé a dostanete velké!"
+  },
+
+  "priceBox": {
+    "_note_static": "shippingLabel, shippingValue, guaranteeLabel, offerToggleText sono STATICI - non modificare.",
+    "_note_dynamic": "productName, originalPriceLabel, discountLabel e offerItems sono DINAMICI.",
+    "productName": "CloudRelief Topper™",
+    "originalPriceLabel": "Běžná cena:",
+    "discountLabel": "UŠETŘÍTE 2 099 Kč (-50%)",
+    "shippingLabel": "Rychlé doručení:",
+    "shippingValue": "Zdarma",
+    "guaranteeLabel": "Záruka 2 roky",
+    "offerToggleText": "Zjistěte, co nabídka obsahuje",
+    "offerItems": [
+      { "text": "CloudRelief Topper™ — Ortopedický topper s masážními vlnami", "badge": null },
+      { "text": "Potah s Aloe Vera na zip (již nasazený)", "badge": null },
+      { "text": "Nepromokavý chránič matrace s gumičkami", "badge": "DÁREK" },
+      { "text": "Záruka 2 roky + Osobní podpora", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "mainText": "OBJEDNAT NYNÍ",
+    "mainSubtext": "Platba hotově při převzetí",
+    "subNote": "Žádné riziko: platíte až když balíček obdržíte"
+  },
+
+  "trustBadges": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "items": [
+      { "icon": "cash", "text": "Platba při převzetí", "color": "green" },
+      { "icon": "truck", "text": "Doručení 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 dní na vrácení", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "_note": "DINAMICO (contenuto) - Items e soluzione cambiano per ogni prodotto.",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Poznáváte se?",
+    "title": "Jsou vám tyto problémy povědomé?",
+    "items": [
+      { "icon": "bone", "titleBold": "Záda vás bolí hned po probuzení", "text": "a ztuhlost vás provází celé hodiny." },
+      { "icon": "foot", "titleBold": "Ruce a nohy brnění během spánku", "text": "— ráno se budíte znecitlivělí a bez citu." },
+      { "icon": "fatigue", "titleBold": "Celé hodiny hledáte správnou polohu", "text": "a ráno jste unavenější než když jste šli spát." }
+    ],
+    "solutionTitle": "Existuje lepší řešení.",
+    "solutionText": "Profesionální ortopedická podpora přímo ve vaší posteli. Bez výměny matrace, bez šílených výdajů."
+  },
+
+  "features": {
+    "_note": "DINAMICO (contenuto e titoli).",
+    "eyebrow": "Proč je jiný",
+    "title": "3 ortopedické vrstvy, které působí společně",
+    "items": [
+      {
+        "image": "/images/mirko/cloudrelief/angle/1.gif",
+        "imageAlt": "Uvolnění páteře",
+        "tag": "VRSTVA 1",
+        "tagColor": "green",
+        "title": "Uvolnění páteře",
+        "description": "<strong>Viskoelastická</strong> pěna kopíruje každý záhyb těla s přesností a vyplňuje <strong>mezery v bederní oblasti</strong>. Páteř se narovná a ploténky se během spánku <strong>regenerují</strong>."
+      },
+      {
+        "image": "/images/mirko/cloudrelief/angle/2.gif",
+        "imageAlt": "Vlnitý povrch Wave",
+        "tag": "VRSTVA 2",
+        "tagColor": "orange",
+        "title": "Vlnitý povrch \"Wave\"",
+        "description": "Vlnitý profil vytváří <strong>nepřetržitou mikro-masáž</strong> při každém sebemenším pohybu. Stimuluje <strong>periferní mikrocirkulaci</strong> a snižuje otoky a stagnaci tekutin."
+      },
+      {
+        "image": "/images/mirko/cloudrelief/angle/3.gif",
+        "imageAlt": "Žádné tlakové body",
+        "tag": "VRSTVA 3",
+        "tagColor": "blue",
+        "title": "Žádné tlakové body",
+        "description": "Rovnoměrným rozložením váhy na <strong>7 cm tloušťky</strong> eliminuje <strong>přetížení</strong> boků a ramen. Klíčové pro ty, kdo trpí <strong>bolestmi kloubů</strong> a nočním znecitlivěním."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "_note": "DINAMICO (contenuto e titoli).",
+    "eyebrow": "Naprosto jednoduché",
+    "title": "Připraveno za půl minuty. Žádné nářadí.",
+    "image": "",
+    "imageAlt": "Jak to funguje",
+    "steps": [
+      { "title": "Rozbalte", "description": "Vyjměte topper z vakuového balení a rozložte ho na matraci." },
+      { "title": "Upevněte", "description": "Připevněte 4 zesílené gumy k rohům matrace. Pevné a stabilní." },
+      { "title": "Spěte", "description": "Přehoďte prostěradlo a užijte si první noc bez bolesti." }
+    ]
+  },
+
+  "midCta": {
+    "_note": "STATICO tranne la percentuale di sconto.",
+    "text": "OBJEDNEJTE NYNÍ SE SLEVOU 50%",
+    "subtext": "Platba hotově při převzetí"
+  },
+
+  "comparison": {
+    "_note": "DINAMICO (contenuto).",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Srovnání",
+    "title": "Jaké výhody získáte oproti alternativám?",
+    "productColumn": "CloudRelief Topper™",
+    "competitorColumn": "Nová matrace / Fyzioterapie",
+    "featureColumn": "Vlastnost",
+    "winnerBadge": "VÍTĚZ",
+    "rows": [
+      { "feature": "Úleva od bolesti", "product": "✔ Od první noci", "competitor": "Po týdnech / jen v ordinaci" },
+      { "feature": "Instalace", "product": "✔ Půl minuty, žádné nářadí", "competitor": "Doručení a montáž" },
+      { "feature": "Pasivní masáž", "product": "✔ Integrované vlny Wave", "competitor": "Není k dispozici / jen ručně" },
+      { "feature": "Podpora páteře", "product": "✔ Každou noc, bez přestávek", "competitor": "Jen během sezení" },
+      { "feature": "Hygiena", "product": "✔ Snímatelný a pratelný", "competitor": "Nepratelné / objednání termínu" },
+      { "feature": "Celkové náklady", "product": "✔ Pouze 2 099 Kč (jednorázově)", "competitor": "12 000-35 000 Kč" }
+    ]
+  },
+
+  "package": {
+    "_note": "DINAMICO (contenuto).",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Vše v ceně",
+    "title": "Co obdržíte domů",
+    "items": [
+      { "icon": "box", "text": "CloudRelief Topper™ — Ortopedický topper s masážními vlnami", "value": "4 198 Kč", "valueType": "price" },
+      { "icon": "leaf", "text": "Potah s Aloe Vera na zip (již nasazený)", "value": "ZAHRNUTO", "valueType": "included" },
+      { "icon": "droplet", "text": "Nepromokavý chránič matrace s gumičkami", "value": "DÁREK", "valueType": "gift" },
+      { "icon": "shield", "text": "Záruka 2 roky + Osobní podpora", "value": "ZAHRNUTO", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Běžná cena:",
+    "totalOriginalValue": "5 998 Kč",
+    "totalCurrentLabel": "Dnes platíte pouze:",
+    "totalCurrentValue": "2 099 Kč",
+    "totalSave": "Ušetříte 3 899 Kč · Doprava ZDARMA",
+    "ctaText": "OBJEDNAT NYNÍ"
+  },
+
+  "reviews": {
+    "_note": "DINAMICO (contenuto).",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "_note_static": "verifiedNote, showMoreText, leaveReviewText sono STATICI.",
+    "eyebrow": "Co o nás říkají",
+    "title": "Ověřené recenze",
+    "rating": "4.8",
+    "totalCount": "19 741 recenzí",
+    "verifiedNote": "✓ Recenze jsou ověřovány nezávislým týmem mimo tento web.",
+    "showMoreText": "Zobrazit další recenze",
+    "leaveReviewText": "Napsat recenzi",
+    "verifiedBadge": "Ověřený nákup",
+    "sellerReplyLabel": "Odpověď prodejce:",
+    "items": [
+      {
+        "initials": "JN",
+        "name": "Jana Nováková",
+        "stars": 5,
+        "text": "Mám problémy se zády už dlouho a lékař mi doporučoval vyměnit matraci. Položila jsem tenhle topper a od první noci jsem cítila změnu. Ráno už nemám tu bederní bolest, která mě blokovala. Dorazil za dva dny, zaplatila jsem kurýrovi.",
+        "verified": true,
+        "sellerReply": "Jano, moc nás těší, že jste cítila úlevu už od první noci! Bederní podpora je hlavní předností produktu. Jsme tu pro vás, kdybyste cokoli potřebovala."
+      },
+      {
+        "initials": "PD",
+        "name": "Petr Dvořák",
+        "stars": 5,
+        "text": "dělám těžkou práci a večer jsem měl záda na hadry. manželka viděla reklamu a objednala to. musím uznat že spím mnohem líp, budím se míň ztuhlej a stará matrace jako by ožila. skvělý nákup",
+        "verified": true,
+        "sellerReply": "Petře, lidé s těžkou fyzickou prací jsou ti, kdo to ocení nejvíc! Těšíme se, že je i manželka spokojená. Děkujeme za důvěru."
+      },
+      {
+        "initials": "KP",
+        "name": "Kateřina Procházková",
+        "stars": 5,
+        "text": "Koupila jsem to pro maminku, je jí 72 a každé ráno si stěžovala na záda. Položila si to na postel sama za chvilku, úplně jednoduché. Po týdnu mi přiznala, že spí mnohem líp a už se nebudí s oteklýma rukama.",
+        "verified": true,
+        "sellerReply": "Kateřino, to nás opravdu těší! Produkt je navržený tak, aby byl jednoduchý i pro ty, kdo nejsou zdatní. Pozdravujte maminku!"
+      },
+      {
+        "initials": "TV",
+        "name": "Tomáš Veselý",
+        "stars": 4,
+        "text": "přišel vakuově balený, trvalo asi den než se úplně nafoukl. první noci dobré, cítím že se záda opírají jinak. zatím dávám 4 hvězdičky protože to chci ještě chvíli vyzkoušet než dám plný počet ale pocit je dobrý",
+        "verified": true,
+        "sellerReply": "Tomáši, děkujeme za upřímnost! Je normální, že plný objem dosáhne za 24-48 hodin. Jsme přesvědčeni, že s dalším používáním ucítíte ještě lepší výsledky. Dejte nám vědět!"
+      },
+      {
+        "initials": "IŠ",
+        "name": "Ivana Šimková",
+        "stars": 5,
+        "text": "Měla jsem matraci plnou proležených míst a záda mě bolely strašně. Nechtěla jsem investovat 20 tisíc do nové. S tímhle topperem jsem to vyřešila, je to jako spát na úplně novém lůžku. Vlnitý profil opravdu cítíte.",
+        "verified": true,
+        "sellerReply": "Ivano, oživit starou matraci bez přehnaných výdajů je přesně náš cíl. Jsme rádi, že vám to vyhovuje!"
+      },
+      {
+        "initials": "MK",
+        "name": "Martin Kovář",
+        "stars": 5,
+        "text": "doručení bleskové, dorazil druhý den. používám ho dva týdny a bolest ramen kterou jsem měl každé ráno prakticky zmizela. spal jsem na boku a vždycky se budil s bolestivým ramenem, teď už ne. doporučuji",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "HJ",
+        "name": "Hana Jelínková",
+        "stars": 5,
+        "text": "Mám špatný krevní oběh v nohách a ráno jsem se vždycky budila s oteklými chodidly. Od té doby co používám tenhle topper se situace výrazně zlepšila. Materiál nepotí ani v létě, čehož jsem se hodně bála.",
+        "verified": true,
+        "sellerReply": "Hano, vlnitý profil je navržený přesně pro stimulaci mikrocirkulace. Jsme rádi, že pozorujete hmatatelná zlepšení!"
+      },
+      {
+        "initials": "JM",
+        "name": "Jiří Malý",
+        "stars": 5,
+        "text": "jsem osteopat a problémy s páteří dobře znám. tenhle topper plní to co slibuje, bederní podpora je solidní a dvojitá vrstva se pozná. doporučil jsem ho několika pacientům kteří nechtěli měnit matraci",
+        "verified": true,
+        "sellerReply": "Jiří, uznání od odborníka z oboru je pro nás to nejcennější ocenění. Děkujeme, že jste ho doporučil svým pacientům!"
+      },
+      {
+        "initials": "LK",
+        "name": "Lucie Kopecká",
+        "stars": 5,
+        "text": "objednala jsem v pátek dorazilo v pondělí. zaplatila jsem kurýrovi bez problémů, žádné skryté náklady. po pár nocích můžu potvrdit že rozdíl je znatelný, budím se mnohem méně ztuhlá. i chránič matrace jako dárek je kvalitní",
+        "verified": true,
+        "sellerReply": "Lucie, maximální transparentnost nákladů je naše priorita. Jsme rádi, že oceňujete i dárkový chránič matrace!"
+      },
+      {
+        "initials": "FB",
+        "name": "František Bartoš",
+        "stars": 5,
+        "text": "Je mi 70 a noc se stala utrpením, nemohl jsem najít polohu a budil se tři nebo čtyřikrát. S tímhle topperem spím celou noc bez probuzení. Materiál tělo doprovází a je neskutečně pohodlný.",
+        "verified": true,
+        "sellerReply": "Františku, spát celou noc bez probouzení je ve vašem věku zásadní. Jsme opravdu rádi, že jste znovu našel klidný spánek. Děkujeme!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "title": "Napište svou recenzi",
+    "nameLabel": "Vaše jméno",
+    "namePlaceholder": "Např. Jan Novák",
+    "ratingLabel": "Hodnocení",
+    "textLabel": "Vaše recenze",
+    "textPlaceholder": "Popište svou zkušenost...",
+    "submitText": "Odeslat recenzi",
+    "successTitle": "Děkujeme za vaši recenzi!",
+    "successText": "Vaše recenze čeká na schválení nezávislým týmem mimo tento web. Recenze od osob, které si produkt nezakoupily, nebudou zveřejněny, aby se zabránilo neautentickým recenzím.",
+    "closeText": "Zavřít"
+  },
+
+  "orderForm": {
+    "_note": "SEMI-STATICO.",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Objednávka",
+    "title": "Dokončete svou objednávku",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Nabídka -50% končí za:",
+    "stockWarning": "Pouze <strong>8 kusů</strong> zbývá za tuto cenu",
+    "summaryTitle": "Souhrn objednávky",
+    "summaryLines": [
+      { "label": "CloudRelief Topper™ + Příslušenství", "value": "2 099 Kč", "type": "normal" },
+      { "label": "Rychlé doručení 24/48h", "value": "ZDARMA", "type": "free" },
+      { "label": "Dobírka", "value": "ZDARMA", "type": "free" }
+    ],
+    "totalLabel": "CELKEM",
+    "totalValue": "2 099 Kč",
+    "fields": {
+      "name": { "label": "Jméno a příjmení *", "placeholder": "Např. Jan Novák" },
+      "phone": { "label": "Telefonní číslo *", "placeholder": "Např. 777 123 456" },
+      "address": { "label": "Doručovací adresa *", "placeholder": "Ulice, číslo, město, PSČ" }
+    },
+    "phoneNote": "Budete kontaktováni telefonicky nebo přes WhatsApp pro potvrzení objednávky.",
+    "paymentBadge": "Platba při převzetí — Platíte hotově kurýrovi. Žádná záloha.",
+    "submitText": "POTVRDIT OBJEDNÁVKU",
+    "submitSubtext": "Platba hotově při převzetí",
+    "reassurance": "Chráněná data · SSL 256-bit · Žádná platba předem"
+  },
+
+  "faq": {
+    "_note": "STATICO - Le FAQ sono sempre uguali per tutte le landing. Non modificare.",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Časté dotazy",
+    "title": "Máte ještě pochybnosti? Zde jsou odpovědi.",
+    "items": [
+      { "question": "Jak si objednám?", "answer": "Klikněte na tlačítko nákupu, vyplňte formulář se svými údaji a potvrďte objednávku. Budete kontaktováni telefonicky nebo přes WhatsApp pro potvrzení a balíček obdržíte pohodlně domů s platbou v hotovosti." },
+      { "question": "Jak funguje doručení?", "answer": "Doručení je zcela zdarma. Od potvrzení objednávky trvá doručení přibližně 24/48 pracovních hodin." },
+      { "question": "Co když se mi to nelíbí?", "answer": "Můžete požádat o plné vrácení peněz zasláním produktu zpět do 30 dnů od doručení. Přijedeme si pro balíček a vrátíme vám celou částku." },
+      { "question": "Co když mám problém po 30 dnech?", "answer": "V klidu, všechny naše produkty mají 2 roky záruky." },
+      { "question": "Jak požádám o vrácení nebo pomoc?", "answer": "Pro žádost o pomoc nebo vrácení po provedení objednávky můžete použít kontaktní formulář na webových stránkách nebo email uvedený v zápatí stránky." }
+    ]
+  },
+
+  "stickyCta": {
+    "_note": "SEMI-STATICO.",
+    "oldPrice": "4 198 Kč",
+    "newPrice": "2 099 Kč",
+    "buttonText": "OBJEDNAT NYNÍ",
+    "buttonSubtext": "Platba při převzetí"
+  },
+
+  "tracking": {
+    "_note": "Compilato nella FASE 4.",
+    "googleAdsId": "AW-16697430619",
+    "conversionLabel": "pX2oCOToov8bENuk-pk-",
+    "conversionValue": 2099,
+    "conversionCurrency": "CZK",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "https://offers.uncappednetwork.com/forms/api/",
+      "offerId": "3044",
+      "fingerprintScript": "https://offers.uncappednetwork.com/forms/tmfp/",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Předchozí",
+    "nextSlide": "Další",
+    "thumbnail": "Miniatura",
+    "close": "Zavřít"
+  },
+
+  "ty": {
+    "_note": "STATICO.",
+    "title": "Objednávka potvrzena!",
+    "subtitle": "Vaše objednávka byla úspěšně přijata.",
+    "orderNumberLabel": "Č. objednávky:",
+    "summaryTitle": "Shrnutí objednávky",
+    "accessoriesLabel": "+ Příslušenství v balení",
+    "totalLabel": "CELKEM K ÚHRADĚ",
+    "paymentNote": "Platba hotově kurýrovi — bez zálohy",
+    "yourDataTitle": "Vaše údaje",
+    "nameLabel": "Jméno",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Co bude dál?",
+    "message": "Budete kontaktováni telefonicky nebo přes WhatsApp pro potvrzení objednávky a domluvení doručení.",
+    "steps": [
+      "Obdržíte telefonát nebo zprávu přes WhatsApp s potvrzením",
+      "Zásilka bude odeslána do 24/48 hodin",
+      "Platíte hotově kurýrovi při doručení"
+    ],
+    "footerText": "Záruka 2 roky · 30 dní na vrácení · Zákaznická podpora"
+  }
+}

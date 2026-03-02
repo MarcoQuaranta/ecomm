@@ -1,0 +1,428 @@
+{
+  "seo": {
+    "title": "InspectX Pro™ - Ispeziona l'Interno di Tubi e Motori Senza Aprire",
+    "description": "Endoscopio professionale con telecamera orientabile a 360° e display da 5 pollici. Raggiungi ogni angolo nascosto. Consegna gratuita, paghi al corriere."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 129.90,
+    "currentPrice": 49.90,
+    "discountPercent": 62
+  },
+
+  "topBar": {
+    "text": "Consegna Gratuita in 24/48h · Paghi al Corriere · 2 Anni di Garanzia"
+  },
+
+  "urgencyBanner": {
+    "text": "Avviso: Domanda elevata —",
+    "highlight": "Solo 8 unità rimaste",
+    "suffix": "a questa cifra"
+  },
+
+  "hero": {
+    "badge": "Novità 2026",
+    "title": "Ispeziona Tubi e Motori Dall'Interno",
+    "titleHighlight": "Senza Aprire Niente",
+    "titleSuffix": "e Individua il Guasto all'Istante",
+    "subtitle": "L'endoscopio professionale con telecamera ruotabile a 360° e display da 5 pollici. Infila la sonda, osserva il display e scopri immediatamente cosa si nasconde all'interno.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "17.493 acquirenti soddisfatti"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-62%",
+    "slides": [
+      { "src": "/images/mirko/inspectx/carosello/1.webp", "alt": "InspectX Pro vista frontale" },
+      { "src": "/images/mirko/inspectx/carosello/2.webp", "alt": "InspectX Pro in uso" },
+      { "src": "/images/mirko/inspectx/carosello/3.webp", "alt": "InspectX Pro dettaglio sonda" },
+      { "src": "/images/mirko/inspectx/carosello/4.webp", "alt": "InspectX Pro schermo" },
+      { "src": "/images/mirko/inspectx/carosello/5.webp", "alt": "InspectX Pro accessori" },
+      { "src": "/images/mirko/inspectx/carosello/6.webp", "alt": "InspectX Pro valigetta" },
+      { "src": "/images/mirko/inspectx/carosello/7.webp", "alt": "InspectX Pro kit completo" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Telecamera 360° con blocco:", "description": "la indirizzi dove preferisci e la fissi eliminando ogni vibrazione." },
+      { "title": "Display 5 pollici HD extra-large:", "description": "visualizzi tutto in modo nitido e ampio, senza usare lo smartphone." },
+      { "title": "Due lenti: frontale e laterale:", "description": "osservi sia frontalmente che lateralmente senza ruotare la sonda." },
+      { "title": "Cavo semirigido da 5 metri:", "description": "raggiungi ogni punto e il cavo conserva la posizione impostata." },
+      { "title": "Sonda sottilissima da 6,2 mm:", "description": "si infila in tubature, iniettori e fessure inaccessibili." },
+      { "title": "Certificazione IP67 impermeabile:", "description": "opera in scarichi e zone umide senza alcun rischio." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "InspectX Pro™",
+    "originalPriceLabel": "Prezzo originale:",
+    "discountLabel": "SCONTO 80€ (-62%)",
+    "shippingLabel": "Consegna Veloce:",
+    "shippingValue": "Gratuita",
+    "guaranteeLabel": "2 Anni di Garanzia",
+    "offerToggleText": "Vedi tutto ciò che è incluso",
+    "offerItems": [
+      { "text": "InspectX Pro™ — Endoscopio con Telecamera a 360°", "badge": null },
+      { "text": "Scheda microSD 64GB in dotazione", "badge": null },
+      { "text": "Custodia rigida resistente agli urti", "badge": null },
+      { "text": "Set di recupero: magnete + gancio + specchio", "badge": "OMAGGIO" },
+      { "text": "Asta magnetica telescopica", "badge": "OMAGGIO" },
+      { "text": "Video-guida alle ispezioni + checklist", "badge": "OMAGGIO" },
+      { "text": "2 Anni di Garanzia + Supporto Dedicato", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ACQUISTA ADESSO",
+    "mainSubtext": "Paghi in Contanti alla Consegna",
+    "subNote": "Nessun rischio: paghi esclusivamente alla ricezione del pacco"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Paghi alla Consegna", "color": "green" },
+      { "icon": "truck", "text": "Consegna in 24/48h", "color": "blue" },
+      { "icon": "return", "text": "Reso entro 30 Giorni", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Ti è successo?",
+    "title": "Hai già vissuto queste situazioni?",
+    "items": [
+      { "icon": "droplet", "titleBold": "Scarico ostruito e non riesci a capire la causa", "text": "— contatti l'idraulico senza certezze e spendi senza conoscere l'origine del guasto." },
+      { "icon": "warning", "titleBold": "Rumore anomalo dal motore e il meccanico non individua l'origine", "text": "— lasci l'auto in officina, paghi per la diagnosi e spesso il problema resta." },
+      { "icon": "shield", "titleBold": "Devi bucare una parete ma non conosci cosa si trova dietro", "text": "— rischi di danneggiare tubature o impianti elettrici." }
+    ],
+    "solutionTitle": "C'è un modo migliore per risolvere.",
+    "solutionText": "Un endoscopio professionale con visuale a 360° che ti mostra ogni dettaglio. Senza aprire nulla, senza correre rischi, senza dipendere da nessuno."
+  },
+
+  "features": {
+    "eyebrow": "Cosa lo rende unico",
+    "title": "Raggiungi ogni punto. Anche quello impossibile.",
+    "items": [
+      {
+        "image": "/images/mirko/inspectx/angle/1.gif",
+        "imageAlt": "Telecamera 360° con blocco",
+        "tag": "MASSIMO CONTROLLO",
+        "tagColor": "green",
+        "title": "Telecamera 360° con Sistema Flex-Lock",
+        "description": "Dirigi la telecamera nella direzione desiderata e <strong>la blocchi in posizione</strong>. Niente più riprese instabili o angolazioni sfuggite. Punta, fissa e ottieni <strong>immagini stabili e definite</strong>."
+      },
+      {
+        "image": "/images/mirko/inspectx/angle/2.gif",
+        "imageAlt": "Doppia lente frontale e laterale",
+        "tag": "VISIONE DOPPIA",
+        "tagColor": "blue",
+        "title": "Doppia Lente: Visione Frontale e Laterale",
+        "description": "Nulla ti sfugge, <strong>neppure negli angoli nascosti</strong>. Inquadratura frontale e laterale simultanea, senza dover girare la sonda. Controlli <strong>tutto in una sola occhiata</strong>."
+      },
+      {
+        "image": "/images/mirko/inspectx/angle/3.png",
+        "imageAlt": "Display 5 pollici IPS HD",
+        "tag": "DISPLAY XXL",
+        "tagColor": "orange",
+        "title": "Display IPS da 5 Pollici ad Alta Risoluzione",
+        "description": "<strong>Schermo ampio e brillante</strong> integrato nel dispositivo. Non serve connettere il telefono: accendi e osserva. Leggibile <strong>perfino sotto la luce diretta</strong>."
+      },
+      {
+        "image": "/images/mirko/inspectx/angle/4.png",
+        "imageAlt": "Zoom 8x digitale",
+        "tag": "PRECISIONE MASSIMA",
+        "tagColor": "green",
+        "title": "Zoom 8x: Ogni Particolare Sotto Controllo",
+        "description": "Ingrandisci <strong>crepe, usura e anomalie</strong> senza avvicinare la sonda. Zoom potente per <strong>identificare subito il difetto</strong> anche da lontano."
+      },
+      {
+        "image": "/images/mirko/inspectx/angle/5.png",
+        "imageAlt": "Cavo semirigido 5 metri",
+        "tag": "PORTATA 5 METRI",
+        "tagColor": "blue",
+        "title": "Cavo Semirigido che Mantiene la Forma",
+        "description": "<strong>5 metri di cavo</strong> che conserva la posizione data. Non si arrotola, non cede. <strong>Raggiungi punti che le altre sonde non toccano</strong>."
+      },
+      {
+        "image": "/images/mirko/inspectx/angle/6.gif",
+        "imageAlt": "LED 8+1 regolabili",
+        "tag": "ILLUMINAZIONE LED",
+        "tagColor": "orange",
+        "title": "9 LED ad Intensità Variabile: Perfetti nel Buio Completo",
+        "description": "<strong>8 LED laterali + 1 frontale</strong> con luminosità regolabile. Illumina alla perfezione anche <strong>condotti scuri e meccaniche incrostate</strong>."
+      },
+      {
+        "image": "/images/mirko/inspectx/angle/7.png",
+        "imageAlt": "Sonda ultra-sottile 6,2 mm",
+        "tag": "SUPER COMPATTA",
+        "tagColor": "green",
+        "title": "Appena 6,2 mm: Passa Dove le Altre Non Entrano",
+        "description": "Solo <strong>6,2 millimetri di diametro</strong>. Si introduce in iniettori, condotti stretti, fessure e <strong>spazi dove nessun'altra sonda può arrivare</strong>."
+      },
+      {
+        "image": "/images/mirko/inspectx/angle/8.gif",
+        "imageAlt": "Sonda impermeabile IP67",
+        "tag": "RESISTENTE ALL'ACQUA",
+        "tagColor": "blue",
+        "title": "Certificazione IP67: Funziona Anche Sott'Acqua",
+        "description": "Sonda <strong>totalmente impermeabile</strong>. Utilizzala in scarichi, tubature sommerse e <strong>ambienti bagnati senza alcun timore</strong>. Zero guasti, zero preoccupazioni."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Facilissimo",
+    "title": "3 passaggi e hai il quadro completo.",
+    "image": "",
+    "imageAlt": "Come funziona InspectX Pro",
+    "steps": [
+      { "title": "Avvia", "description": "Premi un tasto e il display si attiva. Operativo in 2 secondi." },
+      { "title": "Esplora", "description": "Introduci la sonda nel tubo, nel motore o nella parete. Portata fino a 5 metri." },
+      { "title": "Analizza", "description": "Direziona la telecamera a 360°, illumina e identifica il problema. Registra foto e video." }
+    ]
+  },
+
+  "midCta": {
+    "text": "APPROFITTA ADESSO DELLO SCONTO DEL 62%",
+    "subtext": "Paghi in Contanti alla Consegna"
+  },
+
+  "comparison": {
+    "eyebrow": "A Confronto",
+    "title": "Che differenza c'è rispetto alle alternative?",
+    "featureColumn": "Funzionalità",
+    "winnerBadge": "IL MIGLIORE",
+    "productColumn": "InspectX Pro™",
+    "competitorColumn": "Tecnico / Metodo tradizionale",
+    "rows": [
+      { "feature": "Visibilità interna", "product": "✔ Display 5\" HD con visuale 360°", "competitor": "A occhio o con una torcia" },
+      { "feature": "Diagnosi del guasto", "product": "✔ Istantanea, vedi direttamente la causa", "competitor": "Prove a tentativi, costi elevati" },
+      { "feature": "Spazi stretti", "product": "✔ Sonda 6,2 mm, portata 5 metri", "competitor": "Impossibile senza smontaggio" },
+      { "feature": "Documentazione", "product": "✔ Foto e video salvati su microSD", "competitor": "Nessuna documentazione" },
+      { "feature": "Disponibilità", "product": "✔ Sempre pronto a casa tua", "competitor": "Solo previa prenotazione" },
+      { "feature": "Costo complessivo", "product": "✔ Solo 49,90€ (acquisto unico)", "competitor": "100-300€ per ogni intervento" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Kit completo",
+    "title": "Ecco cosa troverai nel pacco",
+    "items": [
+      { "icon": "box", "text": "InspectX Pro™ — Endoscopio Professionale con Telecamera 360°", "value": "€129,90", "valueType": "price" },
+      { "icon": "box", "text": "Scheda microSD 64GB in dotazione", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "shield", "text": "Custodia rigida resistente agli urti", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "gift", "text": "Set di recupero: magnete + gancio + specchio", "value": "OMAGGIO", "valueType": "gift" },
+      { "icon": "gift", "text": "Asta magnetica telescopica", "value": "OMAGGIO", "valueType": "gift" },
+      { "icon": "pencil", "text": "Video-guida alle ispezioni + checklist", "value": "OMAGGIO", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Listino ufficiale:",
+    "totalOriginalValue": "€207,40",
+    "totalCurrentLabel": "Il tuo prezzo oggi:",
+    "totalCurrentValue": "€49,90",
+    "totalSave": "Risparmio €157,50 · Consegna GRATUITA",
+    "ctaText": "ACQUISTA ADESSO"
+  },
+
+  "reviews": {
+    "eyebrow": "Le Opinioni dei Clienti",
+    "title": "Feedback Verificati",
+    "rating": "4.8",
+    "totalCount": "17.493 valutazioni",
+    "verifiedNote": "✓ Le recensioni sono controllate da un ente indipendente non collegato a questo sito.",
+    "showMoreText": "Carica altre recensioni",
+    "leaveReviewText": "Scrivi la tua recensione",
+    "verifiedBadge": "Acquisto confermato",
+    "sellerReplyLabel": "Risposta del negozio:",
+    "items": [
+      {
+        "initials": "AF",
+        "name": "Antonio Ferrante",
+        "stars": 5,
+        "text": "Lo utilizzo per ispezionare le tubature domestiche e devo ammettere che mi ha evitato almeno due interventi dell'idraulico. Ho individuato subito il punto dell'intasamento nello scarico del bagno senza smontare nulla. Arrivato in due giorni, pagato al corriere.",
+        "image": "/images/mirko/inspectx/recensioni/1.webp",
+        "imageAlt": "Foto recensione Antonio Ferrante",
+        "verified": true,
+        "sellerReply": "Antonio, ci fa piacere che le sia risultato utile fin da subito! Evitare le uscite del tecnico è proprio lo scopo per cui lo abbiamo sviluppato. Per qualsiasi esigenza siamo qui."
+      },
+      {
+        "initials": "SM",
+        "name": "Salvatore Mancuso",
+        "stars": 5,
+        "text": "lo adopero in officina per ispezionare l'interno dei motori prima di procedere allo smontaggio. il display da 5 pollici è eccezionale, la visibilità è perfetta anche sotto le luci al neon. il sistema di blocco della punta è il punto forte, non perdi mai la messa a fuoco",
+        "image": "/images/mirko/inspectx/recensioni/2.webp",
+        "imageAlt": "Foto recensione Salvatore Mancuso",
+        "verified": true,
+        "sellerReply": "Salvatore, un impiego ideale! Il blocco della punta è stato progettato proprio per chi lavora sui motori e necessita di stabilità. Grazie per averci scelto."
+      },
+      {
+        "initials": "GP",
+        "name": "Giacomo Pellegrini",
+        "stars": 5,
+        "text": "Avevo necessità di controllare delle canne fumarie e con questo strumento ci sono riuscito senza difficoltà. La sonda è sufficientemente lunga e sottile da accedere ovunque. Ho anche filmato un video da mostrare al muratore.",
+        "verified": true,
+        "sellerReply": "Giacomo, ottima iniziativa quella del video! Poter mostrare le evidenze al professionista è un vantaggio enorme. Grazie per il suo feedback."
+      },
+      {
+        "initials": "MC",
+        "name": "Massimo Caruso",
+        "stars": 4,
+        "text": "strumento robusto e ben costruito, la custodia è pratica per organizzare tutto. per ora assegno 4 stelle perché lo sto ancora provando su vari lavori ma le prime impressioni sono decisamente positive, il cavo mantiene la forma e l'illuminazione è intensa",
+        "verified": true,
+        "sellerReply": "Massimo, apprezziamo la sua onestà! Con l'utilizzo quotidiano ne apprezzerà sempre più le potenzialità. Ci faccia sapere tra qualche settimana, saremo lieti di leggere il suo aggiornamento."
+      },
+      {
+        "initials": "LB",
+        "name": "Luca Battaglia",
+        "stars": 5,
+        "text": "sono idraulico di professione e questo strumento mi ha rivoluzionato la giornata lavorativa. prima sprecavo parecchio tempo a cercare le ostruzioni alla cieca, ora inserisco la sonda e in mezzo minuto individuo dove sta l'intoppo. lo suggerisco a tutti i colleghi",
+        "verified": true,
+        "sellerReply": "Luca, il parere di un professionista del settore è il riconoscimento più importante per noi! Grazie per averlo raccomandato ai colleghi."
+      },
+      {
+        "initials": "EM",
+        "name": "Elena Marchese",
+        "stars": 5,
+        "text": "L'ho preso per mio marito che si occupa delle riparazioni in casa. Non è particolarmente tecnologico ma lo ha usato immediatamente senza difficoltà. Ha scoperto un giocattolo del bambino incastrato in un tubo che ci faceva impazzire da settimane.",
+        "verified": true,
+        "sellerReply": "Elena, che episodio simpatico! Siamo contenti che sia stato d'aiuto anche per le emergenze casalinghe. Un saluto al tuttofare di famiglia!"
+      },
+      {
+        "initials": "RG",
+        "name": "Roberto Gentile",
+        "stars": 5,
+        "text": "ho ispezionato l'interno della parete prima di trapanare per montare la tv e ho individuato dove passavano i cavi elettrici. ho schivato un guaio serio. spedizione velocissima, arrivato il giorno successivo all'ordine",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "DC",
+        "name": "Daniele Costanzo",
+        "stars": 5,
+        "text": "Lo zoom digitale è impressionante, ho rilevato della corrosione all'interno di un tubo vecchio che ad occhio nudo sarebbe stato impossibile notare. La doppia lente frontale e laterale è una caratteristica che fa realmente la differenza rispetto ai modelli che avevo testato prima.",
+        "verified": true,
+        "sellerReply": "Daniele, la doppia lente è precisamente il nostro fiore all'occhiello! Rilevare la corrosione tempestivamente può prevenire danni molto onerosi. Grazie per aver condiviso la sua esperienza."
+      },
+      {
+        "initials": "FD",
+        "name": "Fabio De Luca",
+        "stars": 5,
+        "text": "ordinato sabato ricevuto martedì. pagato al corriere senza alcun intoppo. l'ho testato subito sullo scarico della cucina e la qualità delle immagini è notevole per questa fascia di prezzo. la microSD già inclusa è un bel vantaggio",
+        "verified": true,
+        "sellerReply": "Fabio, la microSD è compresa proprio per evitare acquisti aggiuntivi. Felici che la qualità video l'abbia convinto, per il prezzo è davvero impareggiabile!"
+      },
+      {
+        "initials": "VP",
+        "name": "Vincenzo Parisi",
+        "stars": 5,
+        "text": "Mi occupo di manutenzione impianti di climatizzazione e questo endoscopio è il mio strumento quotidiano. L'impermeabilità è autentica, l'ho utilizzato in condotte con condensa e acqua stagnante senza il minimo problema. Il magnete in dotazione mi ha salvato in due occasioni.",
+        "verified": true,
+        "sellerReply": "Vincenzo, sapere che un professionista lo impiega tutti i giorni ci riempie di orgoglio! La protezione IP67 è collaudata proprio per condizioni come le sue. Grazie!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Scrivi la tua recensione",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "La tua valutazione",
+    "textLabel": "Il tuo feedback",
+    "textPlaceholder": "Descrivi la tua esperienza...",
+    "submitText": "Pubblica Recensione",
+    "successTitle": "Grazie per il tuo feedback!",
+    "successText": "La tua recensione è in fase di verifica da parte di un team indipendente da questo sito. Le recensioni inviate da chi non ha effettuato l'acquisto non verranno pubblicate, a garanzia dell'autenticità.",
+    "closeText": "Chiudi"
+  },
+
+  "orderForm": {
+    "eyebrow": "Modulo di Acquisto",
+    "title": "Finalizza il tuo acquisto",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Lo sconto del 62% termina tra:",
+    "stockWarning": "Solo <strong>8 unità</strong> rimaste a questa cifra",
+    "summaryTitle": "Riepilogo Acquisto",
+    "summaryLines": [
+      { "label": "InspectX Pro™ + Accessori", "value": "€49,90", "type": "normal" },
+      { "label": "Consegna rapida 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Spese di Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€49,90",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo di Consegna *", "placeholder": "Via, Numero, Città, CAP" }
+    },
+    "phoneNote": "Verrai ricontattato telefonicamente o via WhatsApp per la conferma dell'ordine.",
+    "paymentBadge": "Pagamento alla Consegna — Paghi in contanti al corriere. Nessun anticipo richiesto.",
+    "submitText": "CONFERMA ACQUISTO",
+    "submitSubtext": "Paghi in Contanti alla Consegna",
+    "reassurance": "Dati protetti · Crittografia SSL 256-bit · Nessun addebito anticipato"
+  },
+
+  "faq": {
+    "eyebrow": "Domande comuni",
+    "title": "Qualche dubbio? Trovi tutto qui.",
+    "items": [
+      { "question": "Come posso effettuare l'ordine?", "answer": "Premi il pulsante di acquisto, inserisci i tuoi dati nel modulo e conferma. Verrai ricontattato telefonicamente o via WhatsApp per la conferma e riceverai il prodotto a casa, con pagamento in contanti al corriere." },
+      { "question": "Come funziona la consegna?", "answer": "La consegna è completamente gratuita. Dalla conferma dell'ordine, il pacco arriva in circa 24/48 ore lavorative." },
+      { "question": "E se non sono soddisfatto?", "answer": "Puoi richiedere un rimborso completo effettuando il reso entro 30 giorni dalla ricezione. Provvediamo noi al ritiro del pacco e alla restituzione dell'intero importo." },
+      { "question": "E se si guasta dopo 30 giorni?", "answer": "Nessun problema, tutti i nostri prodotti sono coperti da garanzia di 2 anni." },
+      { "question": "Come contatto l'assistenza o richiedo un reso?", "answer": "Per assistenza o per avviare un reso dopo l'acquisto, puoi utilizzare il modulo di contatto presente nel sito oppure scriverci all'indirizzo email indicato nel footer." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€129,90",
+    "newPrice": "€49,90",
+    "buttonText": "ACQUISTA ADESSO",
+    "buttonSubtext": "Paghi Alla Consegna"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 0,
+    "conversionCurrency": "",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
+  "ty": {
+    "title": "Acquisto Confermato!",
+    "subtitle": "Il tuo acquisto è stato registrato correttamente.",
+    "orderNumberLabel": "Numero ordine:",
+    "summaryTitle": "Riepilogo Acquisto",
+    "accessoriesLabel": "+ Accessori compresi",
+    "totalLabel": "IMPORTO DA PAGARE",
+    "paymentNote": "Paghi in contanti al corriere — zero anticipo richiesto",
+    "yourDataTitle": "Le Tue Informazioni",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "E adesso cosa succede?",
+    "message": "Verrai ricontattato telefonicamente o via WhatsApp per confermare l'acquisto e concordare la consegna.",
+    "steps": [
+      "Riceverai una telefonata o un messaggio WhatsApp di conferma",
+      "Il pacco verrà spedito entro 24/48h",
+      "Paghi in contanti al corriere al momento della consegna"
+    ],
+    "footerText": "2 Anni di Garanzia · Reso entro 30 Giorni · Supporto Dedicato"
+  }
+}

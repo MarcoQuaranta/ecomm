@@ -1,0 +1,415 @@
+{
+  "seo": {
+    "title": "CyClean Nano Pro™ - Robot che Aspira, Lava e Asciuga Automaticamente",
+    "description": "Robot aspirapolvere e lavapavimenti con base autosvuotante. Pulisce ogni stanza in totale autonomia. Consegna gratuita, paghi al corriere."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 159.00,
+    "currentPrice": 79.00,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "text": "Consegna Gratuita in 24/48h · Paghi al Corriere · 2 Anni di Garanzia"
+  },
+
+  "urgencyBanner": {
+    "text": "Avviso: Disponibilità limitata —",
+    "highlight": "Solo 8 unità rimaste",
+    "suffix": "al prezzo scontato"
+  },
+
+  "hero": {
+    "badge": "Innovazione 2026",
+    "title": "Pavimenti Splendenti Ogni Giorno",
+    "titleHighlight": "Senza Alcuno Sforzo:",
+    "titleSuffix": "Aspira, Lava e Asciuga Mentre Tu Riposi",
+    "subtitle": "Il solo robot dotato di <strong>base intelligente</strong> che raccoglie lo sporco, <strong>lava a fondo</strong> i pavimenti e <strong>si svuota in autonomia</strong>. Polvere, peli e macchie spariscono senza che tu alzi un dito.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.473 acquirenti soddisfatti"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/cyclean/carosello/1.webp", "alt": "CyClean Nano Pro vista frontale" },
+      { "src": "/images/mirko/cyclean/carosello/2.webp", "alt": "CyClean Nano Pro in funzione" },
+      { "src": "/images/mirko/cyclean/carosello/3.webp", "alt": "Stazione di ricarica autosvuotante" },
+      { "src": "/images/mirko/cyclean/carosello/4.webp", "alt": "CyClean Nano Pro dettaglio delle spazzole" },
+      { "src": "/images/mirko/cyclean/carosello/5.webp", "alt": "CyClean Nano Pro kit completo" },
+      { "src": "/images/mirko/cyclean/carosello/6.webp", "alt": "CyClean Nano Pro profilo laterale" },
+      { "src": "/images/mirko/cyclean/carosello/7.webp", "alt": "CyClean Nano Pro con accessori" },
+      { "src": "/images/mirko/cyclean/carosello/8.webp", "alt": "CyClean Nano Pro dettaglio base" },
+      { "src": "/images/mirko/cyclean/carosello/9.webp", "alt": "CyClean Nano Pro in ambiente domestico" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Addio dolori alla schiena:", "description": "fa le pulizie al posto tuo, non dovrai più chinarti." },
+      { "title": "Peli di animali? Spariti:", "description": "raccoglie il 99% dei peli e dei capelli con un'unica passata." },
+      { "title": "Aspira, lava e asciuga tutto:", "description": "completa ogni fase in una sola passata, pavimento asciutto in un attimo." },
+      { "title": "Si svuota in autonomia:", "description": "la base aspira lo sporco nel sacchetto sigillato. Non devi toccare niente." },
+      { "title": "Aggira ostacoli e scale:", "description": "rileva ogni ostacolo col sensore laser e non urta mai i mobili." },
+      { "title": "Lo controlli con la voce:", "description": "ti basta dire 'pulisci la cucina' e si mette in moto." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "CyClean Nano Pro™",
+    "originalPriceLabel": "Prezzo originale:",
+    "discountLabel": "SCONTO 80€ (-50%)",
+    "shippingLabel": "Consegna Veloce:",
+    "shippingValue": "Gratis",
+    "guaranteeLabel": "Coperto da Garanzia 2 Anni",
+    "offerToggleText": "Vedi tutto ciò che è incluso",
+    "offerItems": [
+      { "text": "CyClean Nano Pro™ — Robot Aspirapolvere e Lavapavimenti", "badge": null },
+      { "text": "Stazione di Ricarica Autosvuotante", "badge": null },
+      { "text": "Sacchetti Raccoglipolvere (2x)", "badge": null },
+      { "text": "Spazzole Laterali di Ricambio (2x)", "badge": "REGALO" },
+      { "text": "Panni Lavabili per Mocio (4x)", "badge": "REGALO" },
+      { "text": "Filtro HEPA di Ricambio (2x)", "badge": "REGALO" },
+      { "text": "Detergente Pavimenti Incluso", "badge": "REGALO" },
+      { "text": "2 Anni di Garanzia + Supporto Dedicato", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ACQUISTA ORA",
+    "mainSubtext": "Paghi in Contanti alla Consegna",
+    "subNote": "Nessun rischio: paghi esclusivamente quando ricevi il pacco"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Paghi alla Consegna", "color": "green" },
+      { "icon": "truck", "text": "Consegna in 24/48h", "color": "blue" },
+      { "icon": "return", "text": "Reso Entro 30 Giorni", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Ti succede anche a te?",
+    "title": "Ti ritrovi in queste situazioni?",
+    "items": [
+      { "icon": "pain", "titleBold": "Passare l'aspirapolvere ti provoca dolore alla schiena", "text": "e il giorno seguente ti ritrovi ancora più affaticato di prima." },
+      { "icon": "warning", "titleBold": "Peli di animali dappertutto: sul divano, sui tappeti, in cucina", "text": "— li rimuovi e nel giro di un'ora ricompaiono." },
+      { "icon": "fatigue", "titleBold": "Pulisci i pavimenti a mano ma restano sempre bagnati e appiccicosi", "text": "— una fatica continua che sembra non avere fine." }
+    ],
+    "solutionTitle": "C'è un modo migliore per risolvere tutto.",
+    "solutionText": "Un robot che aspira, lava e asciuga in autonomia. Torna alla base, si svuota e riparte senza il tuo intervento."
+  },
+
+  "features": {
+    "eyebrow": "Cosa lo rende speciale",
+    "title": "Come avere qualcuno che pulisce per te, senza spendere ogni mese.",
+    "items": [
+      {
+        "image": "/images/mirko/cyclean/angle/1.gif",
+        "imageAlt": "Forza di aspirazione",
+        "tag": "ASPIRAZIONE POTENTE",
+        "tagColor": "green",
+        "title": "Raccoglie Anche i Detriti più Pesanti",
+        "description": "Una forza aspirante in grado di raccogliere <strong>monete, crocchette e residui pesanti</strong>. Peli di animali, briciole e polvere vengono eliminati completamente."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/2.gif",
+        "imageAlt": "Stazione autosvuotante",
+        "tag": "ZERO PENSIERI",
+        "tagColor": "blue",
+        "title": "La Stazione Base è Completamente Autonoma",
+        "description": "Aspira lo sporco dal robot e lo conserva in un <strong>sacchetto sigillato</strong>. Riempie l'acqua pulita e scarica quella usata. Tu <strong>non tocchi nulla</strong>."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/3.gif",
+        "imageAlt": "Lavaggio intenso",
+        "tag": "PULIZIA INTENSA",
+        "tagColor": "orange",
+        "title": "Rimuove Anche lo Sporco più Ostinato",
+        "description": "I panni rotanti girano <strong>centinaia di volte al minuto</strong> e tolgono macchie di caffè, sugo e fango. Il pavimento resta splendente e <strong>asciutto in un attimo</strong>."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/4.gif",
+        "imageAlt": "Sistema di navigazione laser",
+        "tag": "NAVIGAZIONE SMART",
+        "tagColor": "green",
+        "title": "Non Urta i Mobili e Non Cade dalle Scale",
+        "description": "Rileva ed <strong>evita ogni ostacolo</strong> come scarpe, cavi e giocattoli. Mappa l'intera abitazione al millimetro con il <strong>sensore laser</strong> senza tralasciare alcuna zona."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/5.gif",
+        "imageAlt": "Gestione da App e voce",
+        "tag": "GESTIONE COMPLETA",
+        "tagColor": "blue",
+        "title": "Esegue i Tuoi Comandi",
+        "description": "Chiedigli di occuparsi della cucina tramite l'<strong>assistente vocale</strong> e si attiva subito. Oppure usa l'<strong>App</strong> per selezionare le stanze, impostare gli orari e gestirlo da remoto."
+      },
+      {
+        "image": "/images/mirko/cyclean/angle/6.webp",
+        "imageAlt": "Batteria a lunga durata",
+        "tag": "AUTONOMIA INFINITA",
+        "tagColor": "orange",
+        "title": "Fino a 8 Ore di Funzionamento Continuo",
+        "description": "La batteria resiste <strong>per tutta la giornata</strong>. Quando si scarica, rientra alla base da solo, si <strong>ricarica e riparte</strong> esattamente dal punto in cui si era fermato."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Facilissimo",
+    "title": "Come si usa? 4 semplici passaggi.",
+    "image": "/images/mirko/cyclean/come-usare.webp",
+    "imageAlt": "CyClean Nano Pro in funzione",
+    "imageCaption": "Totalmente automatico: mappa il percorso, pulisce e si svuota",
+    "steps": [
+      { "title": "Accendilo", "description": "Al primo avvio mappa l'intera abitazione in autonomia. Nessuna zona resta scoperta." },
+      { "title": "Seleziona la modalità", "description": "Scegli se deve solo aspirare, solo lavare o fare entrambe le cose. Un tocco e si avvia." },
+      { "title": "Si rifornisce da solo", "description": "Rientra alla base, scarica l'acqua sporca e riempie il serbatoio di acqua pulita e detersivo." },
+      { "title": "Si svuota automaticamente", "description": "La base aspira lo sporco dal robot. Tu devi soltanto sostituire il sacchetto quando è colmo." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ACQUISTA ORA CON LO SCONTO DEL 50%",
+    "subtext": "Paghi in Contanti alla Consegna"
+  },
+
+  "comparison": {
+    "eyebrow": "La Comparazione",
+    "title": "Perché scegliere lui rispetto alla concorrenza?",
+    "featureColumn": "Funzione",
+    "winnerBadge": "MIGLIORE",
+    "productColumn": "CyClean Nano Pro™",
+    "competitorColumn": "Robot concorrenti",
+    "rows": [
+      { "feature": "Base autosvuotante", "product": "✔ Inclusa nel prezzo", "competitor": "Opzionale (€300+)" },
+      { "feature": "Potenza aspirazione", "product": "✔ Forza aspirante elevata", "competitor": "Nella media" },
+      { "feature": "Lavaggio pavimenti", "product": "✔ Aspira, lava e asciuga", "competitor": "Solo aspirazione" },
+      { "feature": "Durata batteria", "product": "✔ Fino a 8 ore", "competitor": "Massimo 90 minuti" },
+      { "feature": "Gestione App e vocale", "product": "✔ Completa + comandi vocali", "competitor": "Limitata o assente" },
+      { "feature": "Costo complessivo", "product": "✔ Solo 79€", "competitor": "800€+" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Tutto compreso",
+    "title": "Cosa arriva a casa tua",
+    "items": [
+      { "icon": "box", "text": "CyClean Nano Pro™ — Robot Aspirapolvere e Lavapavimenti", "value": "€159,00", "valueType": "price" },
+      { "icon": "box", "text": "Stazione di Ricarica Autosvuotante", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "box", "text": "Sacchetti Raccoglipolvere (2x)", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "gift", "text": "Spazzole Laterali di Ricambio (2x)", "value": "REGALO", "valueType": "gift" },
+      { "icon": "gift", "text": "Panni Lavabili per Mocio (4x)", "value": "REGALO", "valueType": "gift" },
+      { "icon": "gift", "text": "Filtro HEPA di Ricambio (2x)", "value": "REGALO", "valueType": "gift" },
+      { "icon": "droplet", "text": "Detergente Pavimenti Incluso", "value": "REGALO", "valueType": "gift" },
+      { "icon": "shield", "text": "2 Anni di Garanzia + Supporto Dedicato", "value": "INCLUSO", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Prezzo Originale:",
+    "totalOriginalValue": "€299,00",
+    "totalCurrentLabel": "Oggi paghi solo:",
+    "totalCurrentValue": "€79,00",
+    "totalSave": "Risparmi €220,00 · Consegna GRATUITA",
+    "ctaText": "ACQUISTA ORA"
+  },
+
+  "reviews": {
+    "eyebrow": "Le Opinioni dei Clienti",
+    "title": "Recensioni Certificate",
+    "rating": "4.8",
+    "totalCount": "18.473 valutazioni",
+    "verifiedNote": "✓ Ogni recensione viene verificata da un team indipendente esterno a questo sito.",
+    "showMoreText": "Carica altre recensioni",
+    "leaveReviewText": "Scrivi una recensione",
+    "verifiedBadge": "Acquisto confermato",
+    "sellerReplyLabel": "Risposta del venditore:",
+    "items": [
+      {
+        "initials": "MC",
+        "name": "Marina Colangelo",
+        "stars": 5,
+        "text": "Convivo con due gatti e un cane, i peli erano il mio problema quotidiano. Questa macchina li elimina tutti, passo la mano sul pavimento dopo e non c'è traccia di nulla. La base si svuota in automatico e io non devo intervenire. Consegnato in due giorni, pagato al corriere.",
+        "verified": true,
+        "sellerReply": "Marina, con tre animali domestici comprendiamo bene la sfida. Siamo felici che funzioni alla perfezione!"
+      },
+      {
+        "initials": "AT",
+        "name": "Andrea Tagliaferri",
+        "stars": 5,
+        "text": "lo desideravo da tempo ma quelli validi avevano prezzi assurdi. a questa cifra non ci speravo, invece va benissimo. aspira qualsiasi cosa, anche le briciole più grandi. la batteria ha una durata incredibile",
+        "verified": true,
+        "sellerReply": "Andrea, il nostro obiettivo è rendere la tecnologia di qualità alla portata di tutti. Grazie della fiducia."
+      },
+      {
+        "initials": "GS",
+        "name": "Giuliana Sorrentino",
+        "stars": 5,
+        "text": "L'ho acquistato perché soffro di problemi alla schiena e non ce la facevo più a passare l'aspirapolvere. Ora fa tutto lui mentre io mi riposo sul divano. Il lavaggio dei pavimenti è eccezionale, restano asciutti immediatamente.",
+        "verified": true,
+        "sellerReply": "Giuliana, è stato pensato proprio per situazioni come la sua. Niente più sforzi inutili. Contenti di averla supportata!"
+      },
+      {
+        "initials": "DF",
+        "name": "Danilo Ferrara",
+        "stars": 4,
+        "text": "devo ammettere che funziona bene, aspira in modo eccellente e il lavaggio è efficace. per adesso metto 4 stelle perché voglio valutare la resistenza nel tempo, tra un paio di mesi aggiornerò la recensione. al momento sono molto soddisfatto",
+        "verified": true,
+        "sellerReply": "Danilo, apprezziamo la sua sincerità! Siamo certi che col tempo confermerà la stessa qualità. Ci aggiorni!"
+      },
+      {
+        "initials": "ER",
+        "name": "Elena Ruggiero",
+        "stars": 5,
+        "text": "Ero piena di dubbi, ne avevo provato uno economico ed era inutile. Questo è completamente diverso. Mappa l'appartamento alla perfezione, non sbatte contro niente e il mocio pulisce magnificamente. Lo raccomando a chiunque.",
+        "verified": true,
+        "sellerReply": "Elena, il salto di qualità da un robot economico al nostro è sempre notevole. Grazie della raccomandazione!"
+      },
+      {
+        "initials": "PN",
+        "name": "Pietro Napolitano",
+        "stars": 5,
+        "text": "abito da solo e detestavo fare le pulizie. ora lo attivo la mattina prima di uscire per il lavoro e al rientro trovo tutto immacolato. si svuota da solo nella base, non devo fare assolutamente nulla. investimento perfetto",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "SG",
+        "name": "Sabrina Genovese",
+        "stars": 5,
+        "text": "Ordinato il lunedì sera, il mercoledì mattina era già a casa mia. Pagato direttamente al corriere, nessun problema. L'ho testato subito e devo riconoscere che sulle fughe delle piastrelle fa un lavoro straordinario. Anche mia sorella lo vuole.",
+        "verified": true,
+        "sellerReply": "Sabrina, consegna rapida e qualità assicurata. Per la sorella può condividere lo stesso link! Grazie per la fiducia."
+      },
+      {
+        "initials": "LB",
+        "name": "Lorenzo Benedetti",
+        "stars": 5,
+        "text": "la nostra casa è di 140mq e prima impiegavamo un'ora e mezza per pulire tutto. adesso avviamo il robot e pensa a tutto lui. sotto i letti, sotto il divano, dietro i mobili... raggiunge ogni angolo. la batteria è sufficiente per tutta l'abitazione",
+        "verified": true,
+        "sellerReply": "Lorenzo, 140mq non rappresentano un problema per lui! Grazie della recensione, feedback così ci danno grande motivazione."
+      },
+      {
+        "initials": "CV",
+        "name": "Claudia Vitale",
+        "stars": 5,
+        "text": "Lo utilizzo quotidianamente e non ho più necessità di usare l'aspirapolvere tradizionale. Il fatto che lavi e asciughi è ciò che mi ha convinta. Prima dovevo passare il mocio dopo l'aspirapolvere, adesso gestisce tutto in un'unica passata.",
+        "verified": true,
+        "sellerReply": "Claudia, il lavaggio con asciugatura è il nostro punto di forza. Felici che semplifichi la sua routine quotidiana!"
+      },
+      {
+        "initials": "MG",
+        "name": "Marco Gentile",
+        "stars": 5,
+        "text": "l'ho regalato a mia madre che ha 75 anni e non riesce più a occuparsi delle pulizie. lei lo avvia con un pulsante e il robot fa il resto. la base si svuota da sola, deve solo cambiare il sacchetto circa una volta al mese",
+        "verified": true,
+        "sellerReply": "Marco, sapere che aiuta anche le persone meno giovani ci riempie di gioia. Un saluto alla mamma!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Scrivi la tua recensione",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "Valutazione",
+    "textLabel": "La tua opinione",
+    "textPlaceholder": "Racconta come ti sei trovato...",
+    "submitText": "Invia Recensione",
+    "successTitle": "Grazie per la tua opinione!",
+    "successText": "La tua recensione è in fase di revisione da parte di un team indipendente. Le recensioni di chi non ha acquistato il prodotto non verranno pubblicate, per garantire l'autenticità dei feedback.",
+    "closeText": "Chiudi"
+  },
+
+  "orderForm": {
+    "eyebrow": "Modulo d'Ordine",
+    "title": "Finalizza il tuo acquisto",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "La promozione -50% termina tra:",
+    "stockWarning": "Solo <strong>8 pezzi</strong> disponibili a questo prezzo",
+    "summaryTitle": "Dettaglio Ordine",
+    "summaryLines": [
+      { "label": "CyClean Nano Pro™ + Accessori", "value": "€79,00", "type": "normal" },
+      { "label": "Consegna rapida 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Costi di Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€79,00",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo di Consegna *", "placeholder": "Via, Numero, Città, CAP" }
+    },
+    "phoneNote": "Verrai contattato telefonicamente o via WhatsApp per la conferma dell'ordine.",
+    "paymentBadge": "Pagamento alla Consegna — Paghi in contanti al corriere. Nessun anticipo richiesto.",
+    "submitText": "CONFERMA ACQUISTO",
+    "submitSubtext": "Paghi in Contanti alla Consegna",
+    "reassurance": "Dati protetti · Crittografia SSL 256-bit · Zero addebiti anticipati"
+  },
+
+  "faq": {
+    "eyebrow": "Domande frequenti",
+    "title": "Hai ancora qualche dubbio? Ecco le risposte.",
+    "items": [
+      { "question": "Come posso effettuare l'ordine?", "answer": "Premi il pulsante di acquisto, inserisci i tuoi dati nel modulo e conferma. Verrai contattato telefonicamente o via WhatsApp per la conferma e riceverai il prodotto comodamente a domicilio, con pagamento in contanti." },
+      { "question": "Come avviene la consegna?", "answer": "La consegna è completamente gratuita. Dalla conferma dell'ordine, la spedizione richiede indicativamente 24/48 ore lavorative." },
+      { "question": "E se non fossi soddisfatto?", "answer": "Puoi richiedere il rimborso integrale restituendo il prodotto entro 30 giorni dalla ricezione. Provvediamo noi al ritiro del pacco e alla restituzione dell'intero importo." },
+      { "question": "E dopo i 30 giorni?", "answer": "Nessun problema, tutti i nostri articoli sono coperti da garanzia di 2 anni." },
+      { "question": "Come posso contattare l'assistenza o richiedere un reso?", "answer": "Per ricevere supporto o avviare una procedura di reso dopo l'acquisto, puoi utilizzare il modulo di contatto disponibile sul sito oppure scrivere all'indirizzo email indicato nel footer." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€159",
+    "newPrice": "€79",
+    "buttonText": "ACQUISTA ORA",
+    "buttonSubtext": "Paghi Alla Consegna"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 79.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
+  "ty": {
+    "title": "Ordine Confermato!",
+    "subtitle": "Il tuo acquisto è stato registrato con successo.",
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Dettaglio Ordine",
+    "accessoriesLabel": "+ Accessori compresi",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — zero anticipo",
+    "yourDataTitle": "I Tuoi Dati",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "Cosa succede adesso?",
+    "message": "Verrai contattato telefonicamente o via WhatsApp per confermare l'ordine e organizzare la consegna.",
+    "steps": [
+      "Riceverai una telefonata o un messaggio WhatsApp di conferma",
+      "Il pacco verrà spedito entro 24/48h",
+      "Paghi in contanti direttamente al corriere"
+    ],
+    "footerText": "2 Anni di Garanzia · 30 Giorni per il Reso · Supporto Dedicato"
+  }
+}

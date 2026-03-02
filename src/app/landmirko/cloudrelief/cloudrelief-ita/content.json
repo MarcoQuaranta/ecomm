@@ -1,0 +1,502 @@
+{
+  "_instructions": [
+    "REGOLE GLOBALI PER LA COMPILAZIONE DI QUESTO JSON:",
+    "",
+    "=== ENCODING ===",
+    "0. Il file DEVE essere salvato in UTF-8. Usare sempre i caratteri accentati nativi (è, à, ù, ò, ì, é) e MAI apostrofi al posto degli accenti. Le emoji e i simboli speciali vanno inseriti direttamente come caratteri Unicode.",
+    "",
+    "=== NAZIONI ===",
+    "1. NON fare MAI riferimento a una nazione specifica (es: Italia, in Italia, ecc). Le landing vengono lanciate in tutta Europa.",
+    "",
+    "=== COERENZA SOCIAL PROOF ===",
+    "2. hero.socialProof.count DEVE corrispondere ESATTAMENTE a reviews.totalCount. La media stelle in hero.socialProof.rating DEVE corrispondere a reviews.rating.",
+    "",
+    "=== IMMAGINI (REGOLA FONDAMENTALE) ===",
+    "3. STRUTTURA CARTELLE: /images/[nome-venditore]/[nome-prodotto]/ — se il prodotto ha più parole (es: 'QuickChef Pro Max'), la cartella si chiama solo con il nome base (es: 'quickchef'). Se la cartella esiste già, CHIEDERE all'utente come vuole chiamarla. Dentro la cartella ci sono due sottocartelle:",
+    "   - carosello/ — foto numerate progressivamente (1.jpg, 2.png, 3.webp, ecc). TUTTE le immagini presenti vanno inserite nel gallery.slides della hero, IN ORDINE. La prima immagine (1.*) va anche nel riepilogo ordine come thumbnail.",
+    "   - angle/ — foto numerate progressivamente (1.jpg, 2.png, ecc). Vanno inserite IN ORDINE nei blocchi della sezione 'Perché è diverso' (features.items). La foto 1 va nel primo blocco, la 2 nel secondo, ecc.",
+    "   L'utente carica le immagini, tu inserisci i path nel JSON. Non importa l'estensione: inserisci tutte le immagini presenti. Le immagini vengono ottimizzate automaticamente dal componente tramite next/image.",
+    "",
+    "=== BENEFITS ===",
+    "4. I benefits devono riguardare SOLO il prodotto e le sue funzionalità. MAI parlare di spedizione, consegna, pagamento, garanzia nei benefits.",
+    "",
+    "=== PREZZI (REGOLA FONDAMENTALE) ===",
+    "5. TUTTI I PREZZI vengono dalla sezione 'pricing'. L'utente fornisce prezzi e sconti all'inizio della creazione, vanno inseriti in pricing. Da lì vengono pescati OVUNQUE servano: priceBox, midCta, comparison, package, orderForm, stickyCta. MAI hardcodare un prezzo.",
+    "",
+    "=== SOCIAL PROOF CLICK ===",
+    "6. Cliccando sulla social proof nella hero, l'utente viene portato alla sezione recensioni.",
+    "",
+    "=== TITOLI DI SEZIONE ===",
+    "7. I titoli (eyebrow + title) possono essere STATICI o DINAMICI. Quelli marcati STATICO non vanno mai cambiati. Quelli DINAMICI cambiano per ogni prodotto.",
+    "",
+    "=== TONO E LINGUAGGIO (REGOLA FONDAMENTALE) ===",
+    "8. TUTTI i testi della landing devono seguire queste regole:",
+    "   - Linguaggio MARKETING AGGRESSIVO e SEMPLICE, mai volgare.",
+    "   - Adatto ai boomer: estremamente semplice ma d'impatto.",
+    "   - Deve trasmettere URGENZA e avere EFFETTO WOW, molto spinto.",
+    "   - NON tecnico ma EMOZIONALE e IMMEDIATO.",
+    "   - Esempio: NON scrivere 'batteria da 5000mAh' ma '3 giorni senza scaricarsi'.",
+    "   - Esempio: NON scrivere 'motore da 800W' ma 'potenza da barbiere professionista'.",
+    "   - Traduci sempre le specifiche tecniche in BENEFICI CONCRETI che il cliente capisce e sente.",
+    "   - Frasi brevi, dirette, che colpiscono. Zero giri di parole.",
+    "",
+    "=== LUNGHEZZA TESTI (REGOLA FONDAMENTALE) ===",
+    "9. Le lunghezze di TUTTI i testi (titoli, descrizioni, bullet, recensioni, ecc) devono essere MOLTO SIMILI a quelle dell'esempio presente in questo JSON. Se un titolo nell'esempio è di 5 parole, anche il nuovo deve essere circa 5 parole. Se una descrizione è di 1 riga, anche la nuova deve essere di 1 riga. Se una recensione è di 3 righe, anche la nuova deve essere circa 3 righe. MAI testi molto più lunghi o molto più corti dell'esempio.",
+    "",
+    "=== MARCHI E NOMI (REGOLA FONDAMENTALE) ===",
+    "10. MAI citare nomi di negozi, brand, marchi registrati o aziende terze (es: Amazon, Decathlon, Apple, Samsung, ecc). Se serve un confronto, usare termini generici come 'altri prodotti', 'prodotti concorrenti', 'alternative in commercio'.",
+    "",
+    "=== NAZIONI (RIBADITO) ===",
+    "11. MAI fare riferimento all'Italia o a qualsiasi nazione specifica. Nemmeno nelle recensioni, nelle risposte del venditore, nei benefits, nelle FAQ. Le landing vengono usate in tutta Europa e tradotte.",
+    "",
+    "=== SPEDIZIONE E PAGAMENTO (REGOLA FONDAMENTALE) ===",
+    "12. NON inventare MAI informazioni su spedizione e pagamento. Le regole sono FISSE e NON modificabili:",
+    "   - Spedizione: SEMPRE gratuita, 24/48h.",
+    "   - Pagamento: SEMPRE alla consegna, in contanti al corriere.",
+    "   - Contrassegno: SEMPRE gratuito.",
+    "   - Reso: SEMPRE 30 giorni.",
+    "   - Garanzia: SEMPRE 2 anni.",
+    "   - MAI inventare costi di spedizione, metodi di pagamento alternativi (carta, PayPal, ecc), tempi diversi o condizioni diverse da queste.",
+    "",
+    "=== ANGLE (REGOLA FONDAMENTALE) ===",
+    "13. Gli angle forniti dall'utente riguardano SEMPRE e SOLO il prodotto e le sue funzionalità. Gli angle su spedizione, consegna, pagamento, garanzia, reso sono GIÀ presenti nelle sezioni statiche e NON vanno ripetuti nei contenuti dinamici (benefits, features, problems, hero, ecc). Non mischiare mai angle prodotto con angle logistica/negozio.",
+    "",
+    "=== LINGUA (REGOLA FONDAMENTALE) ===",
+    "14. La prima versione della landing è SEMPRE in ITALIANO, indipendentemente dalla lingua della fonte, del competitor o del riferimento fornito dall'utente. Anche se il link, le informazioni di partenza o il materiale è in polacco, inglese, tedesco, spagnolo o qualsiasi altra lingua, il copy va SEMPRE scritto in italiano. Le traduzioni nelle altre lingue vengono fatte successivamente nella Fase 3.",
+    "",
+    "=== GRAMMATICA E CORRETTEZZA (REGOLA FONDAMENTALE) ===",
+    "15. TUTTI i testi devono essere grammaticalmente corretti in italiano. Linguaggio semplice e diretto NON significa scorretto. Evitare calchi da altre lingue, costruzioni innaturali o frasi che suonano tradotte. Esempio: NON 'niente appiccica' ma 'lo sporco non attacca'. NON 'zero problemi hai' ma 'non avrai nessun problema'. Ogni frase deve suonare naturale per un madrelingua italiano. Il tono è aggressivo e semplice, ma la grammatica deve essere SEMPRE corretta.",
+    "",
+    "=== NOTE AGGIUNTIVE (WORKFLOW) ===",
+    "16. Dopo aver raccolto i dati del prodotto (Fase 0), PRIMA di iniziare la Fase 1 (analisi + copy), chiedere SEMPRE all'utente: 'Hai note aggiuntive, preferenze o cose da tenere a mente per questa landing?' — e attendere la risposta prima di procedere."
+  ],
+
+  "seo": {
+    "_note": "DINAMICO - Cambia per ogni prodotto. Title max 60 caratteri, description max 160 caratteri.",
+    "title": "CloudRelief Topper™ - Riposati Senza Dolori Fin da Subito",
+    "description": "Topper ortopedico con superficie ondulata che sostiene la colonna e allevia il dolore. Spedizione gratuita, paghi alla consegna."
+  },
+
+  "pricing": {
+    "_note": "DINAMICO - FONTE UNICA DI VERITÀ PER TUTTI I PREZZI. Cambia per ogni prodotto e nazione. L'utente fornisce questi valori all'inizio della creazione. Tutti i prezzi visibili nella pagina si calcolano da qui.",
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 138.00,
+    "currentPrice": 69.00,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "text": "Spedizione Gratuita 24/48h · Pagamento alla Consegna · Garanzia 2 Anni"
+  },
+
+  "urgencyBanner": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "text": "Attenzione: Forte richiesta —",
+    "highlight": "Ultimi 8 pezzi disponibili",
+    "suffix": "a questo prezzo"
+  },
+
+  "hero": {
+    "_note": "DINAMICO - Badge, titolo, sottotitolo e social proof cambiano per ogni prodotto. MAI citare nazioni specifiche.",
+    "_note_title": "DINAMICO - Titolo cambia per ogni prodotto.",
+    "_instructions_badge": "Qualcosa di semplice che riguarda il prodotto e trasmette INNOVAZIONE.",
+    "_instructions_title": "SOLUZIONE a un PROBLEMA.",
+    "_instructions_subtitle": "Descrizione aggressiva ma rassicurante.",
+    "_instructions_socialProof": "count e rating DEVONO corrispondere ESATTAMENTE a reviews.totalCount e reviews.rating.",
+    "badge": "Novità 2026",
+    "title": "Supporto Ortopedico che",
+    "titleHighlight": "Azzera il Dolore",
+    "titleSuffix": "Durante il Sonno",
+    "subtitle": "Il topper ortopedico con profilo ondulato che sostiene la colonna e distribuisce il peso in modo uniforme. Lo stendi sul materasso e il dolore scompare.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "19.741 clienti soddisfatti"
+    }
+  },
+
+  "gallery": {
+    "_note": "DINAMICO - Le immagini sono in /images/[venditore]/[prodotto]/carosello/.",
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/cloudrelief/carosello/1.png", "alt": "CloudRelief Topper vista principale" },
+      { "src": "/images/mirko/cloudrelief/carosello/2.png", "alt": "CloudRelief Topper utilizzato" },
+      { "src": "/images/mirko/cloudrelief/carosello/3.png", "alt": "CloudRelief Topper primo piano" },
+      { "src": "/images/mirko/cloudrelief/carosello/4.png", "alt": "CloudRelief Topper profilo a onde" },
+      { "src": "/images/mirko/cloudrelief/carosello/5.png", "alt": "CloudRelief Topper struttura interna" },
+      { "src": "/images/mirko/cloudrelief/carosello/6.png", "alt": "CloudRelief Topper posizionato" },
+      { "src": "/images/mirko/cloudrelief/carosello/7.png", "alt": "CloudRelief Topper imballo" },
+      { "src": "/images/mirko/cloudrelief/carosello/8.png", "alt": "CloudRelief Topper con accessori" }
+    ]
+  },
+
+  "benefits": {
+    "_note": "DINAMICO - Numero variabile di bullet point. Devono riguardare SOLO le caratteristiche/benefici del prodotto.",
+    "items": [
+      { "title": "Schiena distesa per tutta la notte:", "description": "il corpo trova la postura corretta, la colonna si rilassa durante il riposo." },
+      { "title": "Superficie a onde massaggianti:", "description": "la struttura ondulata favorisce la circolazione sanguigna. Addio formicolii e gonfiore mattutino." },
+      { "title": "Spalle e fianchi senza pressione:", "description": "7 cm di memory foam compatto sostengono il peso senza sprofondare." },
+      { "title": "Niente caldo di notte:", "description": "aerazione laterale 3D Mesh e struttura aperta. Sudorazione notturna eliminata." },
+      { "title": "Pulizia semplice:", "description": "fodera in Aloe Vera con zip rimovibile. Lo togli e lo metti in lavatrice." },
+      { "title": "Fermo al suo posto:", "description": "base antiscivolo e 4 elastici angolari. Resta saldo senza spostarsi mai." }
+    ]
+  },
+
+  "sizes": {
+    "title": "Seleziona la tua misura",
+    "sizeLabel": "Misura",
+    "options": [
+      { "id": "singolo", "name": "Singolo", "dimensions": "80×190 cm" },
+      { "id": "piazzaemezza", "name": "Piazza e Mezza", "dimensions": "120×190 cm" },
+      { "id": "matrimoniale", "name": "Matrimoniale", "dimensions": "160×190 cm" },
+      { "id": "king", "name": "King", "dimensions": "180×200 cm" }
+    ],
+    "defaultSelected": "matrimoniale",
+    "explanationTitle": "Come mai il prezzo è lo stesso?",
+    "explanationText": "Per svuotare il magazzino abbiamo portato le misure grandi (King/Matrimoniale) allo stesso prezzo del Singolo. Approfitta ora: paghi come il piccolo e porti a casa il grande!"
+  },
+
+  "priceBox": {
+    "_note_static": "shippingLabel, shippingValue, guaranteeLabel, offerToggleText sono STATICI - non modificare.",
+    "_note_dynamic": "productName, originalPriceLabel, discountLabel e offerItems sono DINAMICI.",
+    "productName": "CloudRelief Topper™",
+    "originalPriceLabel": "Prezzo di listino:",
+    "discountLabel": "RISPARMI 69€ (-50%)",
+    "shippingLabel": "Spedizione Rapida:",
+    "shippingValue": "Gratis",
+    "guaranteeLabel": "Garanzia 2 Anni",
+    "offerToggleText": "Scopri cosa include l'offerta",
+    "offerItems": [
+      { "text": "CloudRelief Topper™ — Topper Ortopedico con Onde Massaggianti", "badge": null },
+      { "text": "Rivestimento Aloe Vera con Cerniera (già applicato)", "badge": null },
+      { "text": "Coprimaterasso Impermeabile con Elastici", "badge": "REGALO" },
+      { "text": "Garanzia 2 Anni + Assistenza Dedicata", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "mainText": "ORDINA ORA",
+    "mainSubtext": "Pagamento Contanti alla Consegna",
+    "subNote": "Zero rischio: paghi solo quando ricevi il pacco"
+  },
+
+  "trustBadges": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "items": [
+      { "icon": "cash", "text": "Pagamento alla Consegna", "color": "green" },
+      { "icon": "truck", "text": "Spedizione 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Giorni di Reso", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "_note": "DINAMICO (contenuto) - Items e soluzione cambiano per ogni prodotto.",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Ti riconosci?",
+    "title": "Anche tu hai questi problemi?",
+    "items": [
+      { "icon": "bone", "titleBold": "La schiena ti fa male appena ti alzi", "text": "e la rigidità ti accompagna per ore." },
+      { "icon": "foot", "titleBold": "Mani e gambe che formicolano nel sonno", "text": "— al risveglio sei intorpidito e senza sensibilità." },
+      { "icon": "fatigue", "titleBold": "Passi ore a cercare la posizione giusta", "text": "e al mattino sei più stanco di quando ti sei coricato." }
+    ],
+    "solutionTitle": "Esiste una soluzione migliore.",
+    "solutionText": "Sostegno ortopedico di livello professionale, direttamente nel tuo letto. Senza sostituire il materasso, senza spendere cifre folli."
+  },
+
+  "features": {
+    "_note": "DINAMICO (contenuto e titoli).",
+    "eyebrow": "Perché è diverso",
+    "title": "3 Strati Ortopedici che Agiscono in Sinergia",
+    "items": [
+      {
+        "image": "/images/mirko/cloudrelief/angle/1.gif",
+        "imageAlt": "Rilascio colonna vertebrale",
+        "tag": "STRATO 1",
+        "tagColor": "green",
+        "title": "Rilascio della Colonna",
+        "description": "La schiuma <strong>viscoelastica</strong> segue ogni curva del corpo con precisione, colmando gli <strong>spazi nella zona lombare</strong>. La colonna si allunga e i dischi si <strong>rigenerano</strong> nel sonno."
+      },
+      {
+        "image": "/images/mirko/cloudrelief/angle/2.gif",
+        "imageAlt": "Superficie ondulata Wave",
+        "tag": "STRATO 2",
+        "tagColor": "orange",
+        "title": "Superficie Ondulata \"Wave\"",
+        "description": "Il profilo a onde genera un <strong>micro-massaggio continuo</strong> ad ogni minimo movimento. Attiva la <strong>microcircolazione periferica</strong>, contrastando gonfiori e ristagni."
+      },
+      {
+        "image": "/images/mirko/cloudrelief/angle/3.gif",
+        "imageAlt": "Nessun punto di pressione",
+        "tag": "STRATO 3",
+        "tagColor": "blue",
+        "title": "Nessun Punto di Pressione",
+        "description": "Ripartendo il peso su <strong>7 cm di spessore</strong> in modo uniforme, annulla i <strong>sovraccarichi</strong> su fianchi e spalle. Essenziale per chi soffre di <strong>dolori articolari</strong> e torpore notturno."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "_note": "DINAMICO (contenuto e titoli).",
+    "eyebrow": "Semplicissimo",
+    "title": "Pronto in mezzo minuto. Nessun attrezzo.",
+    "image": "",
+    "imageAlt": "Come funziona",
+    "steps": [
+      { "title": "Apri", "description": "Togli il topper dalla confezione sottovuoto e distendilo sul materasso." },
+      { "title": "Fissa", "description": "Aggancia i 4 elastici rinforzati ai bordi del materasso. Saldo e stabile." },
+      { "title": "Riposa", "description": "Metti il lenzuolo sopra e goditi la prima notte senza dolori." }
+    ]
+  },
+
+  "midCta": {
+    "_note": "STATICO tranne la percentuale di sconto.",
+    "text": "ORDINA ORA CON IL 50% DI SCONTO",
+    "subtext": "Pagamento Contanti alla Consegna"
+  },
+
+  "comparison": {
+    "_note": "DINAMICO (contenuto).",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Il Confronto",
+    "title": "Quali vantaggi avrai rispetto alle alternative?",
+    "productColumn": "CloudRelief Topper™",
+    "competitorColumn": "Nuovo Materasso / Sedute Fisioterapiche",
+    "featureColumn": "Caratteristica",
+    "winnerBadge": "VINCITORE",
+    "rows": [
+      { "feature": "Sollievo dal dolore", "product": "✔ Fin dalla prima notte", "competitor": "Dopo settimane / solo in studio" },
+      { "feature": "Montaggio", "product": "✔ Mezzo minuto, zero attrezzi", "competitor": "Consegna e installazione" },
+      { "feature": "Massaggio passivo", "product": "✔ Onde Wave integrate", "competitor": "Non disponibile / solo manuale" },
+      { "feature": "Sostegno colonna", "product": "✔ Ogni notte, senza interruzioni", "competitor": "Solo durante la seduta" },
+      { "feature": "Igiene", "product": "✔ Sfoderabile e lavabile", "competitor": "Non sfoderabile / appuntamenti" },
+      { "feature": "Costo complessivo", "product": "✔ Solo 69€ (una tantum)", "competitor": "500-1500€" }
+    ]
+  },
+
+  "package": {
+    "_note": "DINAMICO (contenuto).",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Tutto incluso",
+    "title": "Cosa ricevi a casa tua",
+    "items": [
+      { "icon": "box", "text": "CloudRelief Topper™ — Topper Ortopedico con Onde Massaggianti", "value": "€138,00", "valueType": "price" },
+      { "icon": "leaf", "text": "Rivestimento Aloe Vera con Cerniera (già applicato)", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "droplet", "text": "Coprimaterasso Impermeabile con Elastici", "value": "REGALO", "valueType": "gift" },
+      { "icon": "shield", "text": "Garanzia 2 Anni + Assistenza Dedicata", "value": "INCLUSO", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Prezzo di Listino:",
+    "totalOriginalValue": "€197,00",
+    "totalCurrentLabel": "Oggi paghi solo:",
+    "totalCurrentValue": "€69,00",
+    "totalSave": "Risparmi €128,00 · Spedizione GRATUITA",
+    "ctaText": "ORDINA ORA"
+  },
+
+  "reviews": {
+    "_note": "DINAMICO (contenuto).",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "_note_static": "verifiedNote, showMoreText, leaveReviewText sono STATICI.",
+    "eyebrow": "Cosa dicono di Noi",
+    "title": "Recensioni Verificate",
+    "rating": "4.8",
+    "totalCount": "19.741 recensioni",
+    "verifiedNote": "✓ Le recensioni vengono verificate da un team neutrale esterno a questo sito web.",
+    "showMoreText": "Mostra altre recensioni",
+    "leaveReviewText": "Lascia una recensione",
+    "verifiedBadge": "Acquisto verificato",
+    "sellerReplyLabel": "Risposta del venditore:",
+    "items": [
+      {
+        "initials": "FM",
+        "name": "Francesca Mancini",
+        "stars": 5,
+        "text": "Ho problemi alla schiena da tanto tempo e il mio medico mi consigliava di sostituire il materasso. Ho messo questo topper e fin dalla prima notte ho avvertito un cambiamento. Al mattino non ho più quel dolore lombare che mi bloccava. Arrivato in due giorni, pagato al corriere.",
+        "verified": true,
+        "sellerReply": "Francesca, siamo contentissimi che abbia trovato beneficio già dalla prima notte! Il supporto lombare è il punto di forza principale del prodotto. Siamo a disposizione per qualsiasi cosa."
+      },
+      {
+        "initials": "RV",
+        "name": "Roberto Vitale",
+        "stars": 5,
+        "text": "faccio un lavoro pesante e alla sera la schiena era a pezzi. mia moglie ha visto lo spot e lo ha comprato. devo dire che il sonno è migliorato molto, mi sveglio meno contratto e il vecchio materasso sembra rinato. acquisto azzeccato",
+        "verified": true,
+        "sellerReply": "Roberto, chi svolge lavori fisici pesanti è chi trae più vantaggio! Felici che anche la moglie sia contenta della scelta. Grazie per la fiducia."
+      },
+      {
+        "initials": "CB",
+        "name": "Claudia Bernardi",
+        "stars": 5,
+        "text": "Comprato per mia madre di 72 anni che si lamentava ogni mattina della schiena. Lo ha posizionato da sola sul letto in pochissimo tempo, semplicissimo. Dopo una settimana mi ha confessato che riposa molto meglio e non si sveglia più con le mani intorpidite.",
+        "verified": true,
+        "sellerReply": "Claudia, ci fa davvero piacere! Il prodotto è pensato per essere facile anche per chi non è pratico. Un saluto alla mamma!"
+      },
+      {
+        "initials": "ME",
+        "name": "Marco Esposito",
+        "stars": 4,
+        "text": "arrivato sottovuoto, ha impiegato circa un giorno per espandersi completamente. le prime notti bene, sento che la schiena si appoggia in modo diverso. per ora do 4 stelle perché vorrei provarlo ancora un po prima di dare il massimo voto ma la sensazione è buona",
+        "verified": true,
+        "sellerReply": "Marco, grazie per la sincerità! È normale che servano 24-48h per raggiungere il volume pieno. Siamo convinti che con l'uso continuato noterà risultati ancora più evidenti. Ci faccia sapere!"
+      },
+      {
+        "initials": "GM",
+        "name": "Giuliana Marchetti",
+        "stars": 5,
+        "text": "Il mio materasso era pieno di avvallamenti e la schiena ne risentiva tantissimo. Non volevo investire 800 euro in uno nuovo. Con questo topper ho risolto tutto, sembra di dormire su un letto completamente nuovo. Il profilo ondulato si percepisce davvero.",
+        "verified": true,
+        "sellerReply": "Giuliana, rigenerare il vecchio materasso senza una spesa esagerata è proprio il nostro scopo. Contenti che si trovi bene!"
+      },
+      {
+        "initials": "LP",
+        "name": "Luca Pellegrini",
+        "stars": 5,
+        "text": "consegna rapidissima, arrivato il giorno seguente. lo uso da un paio di settimane e il dolore alle spalle che sentivo ogni mattina è quasi scomparso. dormivo sul fianco e mi svegliavo sempre con la spalla indolenzita, ora non più. lo raccomando",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "AC",
+        "name": "Anna Cristofaro",
+        "stars": 5,
+        "text": "Soffro di cattiva circolazione alle gambe e al mattino mi ritrovavo sempre con i piedi gonfi. Da quando uso questo topper la situazione è migliorata notevolmente. Il materiale non fa sudare nemmeno in estate, cosa che temevo molto.",
+        "verified": true,
+        "sellerReply": "Anna, il profilo ondulato è progettato proprio per stimolare la microcircolazione. Felici che stia riscontrando miglioramenti tangibili!"
+      },
+      {
+        "initials": "MD",
+        "name": "Massimo De Luca",
+        "stars": 5,
+        "text": "sono un osteopata e conosco molto bene i problemi della colonna. questo topper mantiene le promesse, il supporto lombare è valido e il doppio strato si nota. l'ho suggerito a diversi pazienti che non intendevano cambiare materasso",
+        "verified": true,
+        "sellerReply": "Massimo, il parere di un professionista del settore è il riconoscimento più prezioso. Grazie per averlo consigliato ai suoi pazienti!"
+      },
+      {
+        "initials": "VR",
+        "name": "Valentina Rinaldi",
+        "stars": 5,
+        "text": "ordinato di venerdì arrivato di lunedì. pagato al corriere senza nessun problema, zero costi nascosti. dopo qualche notte posso confermare che la differenza si sente, mi alzo molto meno rigida. anche il coprimaterasso in omaggio è di ottima fattura",
+        "verified": true,
+        "sellerReply": "Valentina, massima trasparenza sui costi è la nostra priorità. Contenti che apprezzi anche il coprimaterasso regalato!"
+      },
+      {
+        "initials": "GC",
+        "name": "Giuseppe Calabrese",
+        "stars": 5,
+        "text": "Ho 70 anni e la notte era diventata un tormento, non riuscivo a trovare la posizione e mi svegliavo tre o quattro volte. Con questo topper passo la notte intera senza interruzioni. Il materiale accompagna il corpo ed è comodissimo.",
+        "verified": true,
+        "sellerReply": "Giuseppe, riposare tutta la notte senza svegliarsi è fondamentale alla sua età. Siamo davvero felici che abbia ritrovato il sonno. Grazie!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "_note": "STATICO - Sempre uguale per tutte le landing. Non modificare.",
+    "title": "Lascia la tua recensione",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "Valutazione",
+    "textLabel": "La tua recensione",
+    "textPlaceholder": "Racconta la tua esperienza...",
+    "submitText": "Invia Recensione",
+    "successTitle": "Grazie per la tua recensione!",
+    "successText": "La tua recensione è in attesa di approvazione da un team esterno a questo sito web. Le recensioni lasciate da chi non ha acquistato il prodotto non saranno pubblicate, questo per evitare recensioni non autentiche.",
+    "closeText": "Chiudi"
+  },
+
+  "orderForm": {
+    "_note": "SEMI-STATICO.",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Modulo d'Ordine",
+    "title": "Completa il tuo ordine",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "L'offerta -50% scade tra:",
+    "stockWarning": "Solo <strong>8 pezzi</strong> rimasti a questo prezzo",
+    "summaryTitle": "Riepilogo Ordine",
+    "summaryLines": [
+      { "label": "CloudRelief Topper™ + Accessori", "value": "€69,00", "type": "normal" },
+      { "label": "Spedizione rapida 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Spese di Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€69,00",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo di Spedizione *", "placeholder": "Via, Numero, Città, CAP" }
+    },
+    "phoneNote": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine.",
+    "paymentBadge": "Pagamento alla Consegna — Paghi in contanti al corriere. Zero anticipo.",
+    "submitText": "CONFERMA ORDINE",
+    "submitSubtext": "Pagamento Contanti alla Consegna",
+    "reassurance": "Dati protetti · SSL 256-bit · Nessun addebito anticipato"
+  },
+
+  "faq": {
+    "_note": "STATICO - Le FAQ sono sempre uguali per tutte le landing. Non modificare.",
+    "_note_title": "STATICO - eyebrow e title non cambiano mai.",
+    "eyebrow": "Domande frequenti",
+    "title": "Hai ancora dubbi? Ecco le risposte.",
+    "items": [
+      { "question": "Come faccio ad ordinare?", "answer": "Clicca sul pulsante di acquisto, compila il modulo con i tuoi dati e conferma l'ordine. Sarai contattato telefonicamente o tramite WhatsApp per la conferma e riceverai il pacco comodamente a casa, con pagamento in contanti." },
+      { "question": "Come funziona la spedizione?", "answer": "La spedizione è totalmente gratuita. Da quando l'ordine è confermato, impiega circa 24/48h lavorative per essere consegnato." },
+      { "question": "E se non mi piace?", "answer": "Puoi richiedere un rimborso totale facendo il reso del prodotto entro 30 giorni dalla consegna. Veniamo noi a ritirare il pacco e a ridarti l'intera somma spesa." },
+      { "question": "Se ho problemi dopo 30 giorni?", "answer": "Tranquillo, tutti i nostri prodotti hanno 2 anni di garanzia." },
+      { "question": "Come faccio a chiedere un reso o assistenza?", "answer": "Per chiedere assistenza o un reso dopo aver effettuato un ordine, puoi utilizzare il modulo di contatto che trovi all'interno del sito o tramite la mail presente nel footer." }
+    ]
+  },
+
+  "stickyCta": {
+    "_note": "SEMI-STATICO.",
+    "oldPrice": "€138",
+    "newPrice": "€69",
+    "buttonText": "ORDINA ORA",
+    "buttonSubtext": "Paga Alla Consegna"
+  },
+
+  "tracking": {
+    "_note": "Compilato nella FASE 4.",
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 69.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
+  "ty": {
+    "_note": "STATICO.",
+    "title": "Ordine Confermato!",
+    "subtitle": "Il tuo ordine è stato ricevuto con successo.",
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Riepilogo Ordine",
+    "accessoriesLabel": "+ Accessori inclusi",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — nessun anticipo",
+    "yourDataTitle": "I Tuoi Dati",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "Cosa succede ora?",
+    "message": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine e organizzare la consegna.",
+    "steps": [
+      "Riceverai una chiamata o un messaggio WhatsApp di conferma",
+      "Il pacco verrà spedito in 24/48h",
+      "Paghi in contanti al corriere alla consegna"
+    ],
+    "footerText": "Garanzia 2 Anni · 30 Giorni di Reso · Assistenza Dedicata"
+  }
+}

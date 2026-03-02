@@ -1,0 +1,410 @@
+{
+  "seo": {
+    "title": "RatchetPro 2in1™ - Jeden Nastroj na Skrutky aj Vruty",
+    "description": "Elektricky racnovy utahovak 2v1 s regulovatelnou rychlostou, 2 litiovymi bateriami a profesionalnym kufrikom. Rychle dorucenie, platba pri prevzati."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 159.98,
+    "currentPrice": 79.99,
+    "discountPercent": 50
+  },
+
+  "topBar": {
+    "text": "Rychle dorucenie 24/48h . Platba pri prevzati . 2 Roky zaruky"
+  },
+
+  "urgencyBanner": {
+    "text": "Obmedzene zasoby --",
+    "highlight": "Zostava len 6 kusov",
+    "suffix": "za zvyhodnenu cenu"
+  },
+
+  "hero": {
+    "badge": "Novinka 2026",
+    "title": "Povolte, Utiahnite a Zaskrutkujte",
+    "titleHighlight": "Vsetko v Jednom",
+    "titleSuffix": "Bez Unavy",
+    "subtitle": "Elektricky racnovy utahovak, ktory zvladne skrutky aj vruty jednym nastrojom. Regulovatelna rychlost, kompaktna hlava pre tazko pristupne miesta, 2 baterie a kompletna sada v kufri.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "14 731 spokonjych pouzivatelov"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/ratchetpro/carosello/1.webp", "alt": "RatchetPro 2in1 celny pohlad" },
+      { "src": "/images/mirko/ratchetpro/carosello/2.webp", "alt": "RatchetPro 2in1 pri pouziti" },
+      { "src": "/images/mirko/ratchetpro/carosello/3.webp", "alt": "RatchetPro 2in1 detail" },
+      { "src": "/images/mirko/ratchetpro/carosello/4.webp", "alt": "RatchetPro 2in1 kompletna sada" },
+      { "src": "/images/mirko/ratchetpro/carosello/5.webp", "alt": "RatchetPro 2in1 kufrik" },
+      { "src": "/images/mirko/ratchetpro/carosello/6.webp", "alt": "RatchetPro 2in1 prislusenstvo" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Dve funkcie, jeden nastroj:", "description": "utahujte skrutky s nadstavcami 3/8\" a vruty s bitmi 1/4\" bez vymeny nastroja." },
+      { "title": "Rychlost pod kontrolou:", "description": "regulujete silu spustou. Ziadne poskodene vruty, ziadne strhane zavity." },
+      { "title": "Pracujte v nemoznych uhloch:", "description": "kompaktna hlava s klbom sa dostane aj do najnarocnejsich miest." },
+      { "title": "Okamzita zmena smeru:", "description": "prepnete z utahovania na povolovanie jednym pohybom, bez pustenia nastroja." },
+      { "title": "Dve baterie v baleni:", "description": "kym sa jedna nabija, pracujete s druhou. Nikdy nestojite." },
+      { "title": "Predne LED svetlo:", "description": "osvetli pracovny priestor aj v garazi, pod umyvadlom alebo za nabytkom." },
+      { "title": "Pripravene na pouzitie, nic navyse:", "description": "nadstavce, bity, predlzky, flexibilny klb a kufrik. Vsetko v baleni." }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "RatchetPro 2in1™",
+    "originalPriceLabel": "Povodna cena:",
+    "discountLabel": "ZLAVA 79,99€ (-50%)",
+    "shippingLabel": "Rychle dorucenie:",
+    "shippingValue": "Zadarmo",
+    "guaranteeLabel": "2 Roky zaruky v cene",
+    "offerToggleText": "Pozrite sa, co je v sade",
+    "offerItems": [
+      { "text": "RatchetPro 2in1™ -- Elektricky racnovy utahovak", "badge": null },
+      { "text": "Sada nadstavcov 3/8\"", "badge": null },
+      { "text": "Sada bitov 1/4\" + Adapter Quick-Change", "badge": null },
+      { "text": "Predlzky + Flexibilny klb", "badge": null },
+      { "text": "2 Li-ion baterie 20V + Nabijacka", "badge": null },
+      { "text": "Profesionalny kufrik", "badge": "ZADARMO" },
+      { "text": "Zaruka 2 roky + Technicka podpora", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "OBJEDNAT TERAZ",
+    "mainSubtext": "Platba v hotovosti pri prevzati",
+    "subNote": "Ziadne riziko: platite az ked mate balik v ruke"
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Platba pri prevzati", "color": "green" },
+      { "icon": "truck", "text": "Dorucenie za 24/48h", "color": "blue" },
+      { "icon": "return", "text": "Vratenie zadarmo do 30 dni", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Bezna situacia",
+    "title": "Stava sa vam to tiez?",
+    "items": [
+      { "icon": "timer", "titleBold": "Utahujete skrutky rucne a zapastie uz nevydrzi", "text": "-- po 10 minutach ste uz unaveny." },
+      { "icon": "stiffness", "titleBold": "Utahovak je prilis velky na stiesnene miesta", "text": "a s rucnym klucom stracate cas." },
+      { "icon": "warning", "titleBold": "Potrebujete dva rozne nastroje na vruty a skrutky", "text": "-- viac penazi a viac miesta v braskni." }
+    ],
+    "solutionTitle": "Existuje sikovnejsi sposob.",
+    "solutionText": "Jeden elektricky nastroj, ktory zvladne skrutky aj vruty, s regulovatelnou rychlostou a kompletnou profesionalnou sadou."
+  },
+
+  "features": {
+    "eyebrow": "Cim je vynimocny",
+    "title": "Jeden nastroj, dve duse. Ziadne obmedzenia.",
+    "items": [
+      {
+        "image": "/images/mirko/ratchetpro/angle/1.webp",
+        "imageAlt": "Dvojity upinaci system 2v1",
+        "tag": "DVOJITA FUNKCIA",
+        "tagColor": "green",
+        "title": "Nadstavce aj bity na jednom nastroji",
+        "description": "Upinanie <strong>3/8\" pre nadstavce</strong> (skrutky a matice) + adapter <strong>1/4\" pre bity</strong> (vruty). <strong>Regulovatelna rychlost</strong> pomocou spuste vam dava <strong>plnu kontrolu</strong> nad silou."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/2.webp",
+        "imageAlt": "Profesionalne pouzitie",
+        "tag": "SKUTOCNY VYKON",
+        "tagColor": "orange",
+        "title": "Navrhnuty pre tych, ktori pracuju vazne",
+        "description": "<strong>81 Nm tociveho momentu</strong> a motor schopny <strong>450 otacok za minutu</strong>. Vydrzi kazdodennu pracu v dielni, na stavbe alebo v sklade bez oslabenia."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/3.webp",
+        "imageAlt": "Stiesnene miesta",
+        "tag": "UPLNY PRISTUP",
+        "tagColor": "blue",
+        "title": "Dostane sa aj do najnarocnejsich miest",
+        "description": "Tenka hlava + <strong>flexibilny klb</strong> v baleni. <strong>Integrovane LED</strong> na pracu aj v tme. Idealny za sanitarnou technikou, pod kapotou, medzi rurkami."
+      },
+      {
+        "image": "/images/mirko/ratchetpro/angle/4.webp",
+        "imageAlt": "Kompletna sada s 2 bateriami",
+        "tag": "VSETKO V BALENI",
+        "tagColor": "green",
+        "title": "Otvorite kufrik a hned pracujete",
+        "description": "<strong>2 baterie 20V</strong> (jedna v pouziti, druha sa nabija), sada nadstavcov, sada bitov, predlzky, klb a <strong>pevny kufrik</strong>. Nic nechyba."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Velmi jednoduche",
+    "title": "Tri kroky a praca je hotova.",
+    "image": "",
+    "imageAlt": "Ako to funguje",
+    "steps": [
+      { "title": "Nasadte", "description": "Nadstavec na skrutky alebo bit na vruty. Vymena je okamzita." },
+      { "title": "Spustite", "description": "Spust reguluje rychlost: vacsi tlak, viac otacok." },
+      { "title": "Hotovo", "description": "81 Nm tociveho momentu odvede vsetku tazku pracu za vas." }
+    ]
+  },
+
+  "midCta": {
+    "text": "OBJEDNAT TERAZ SO ZLAVOU 50%",
+    "subtext": "Platba v hotovosti pri prevzati"
+  },
+
+  "specs": {
+    "eyebrow": "Technicke udaje",
+    "title": "Kompletna technicka specifikacia",
+    "items": [
+      { "label": "Typ", "value": "Elektricky racnovy utahovak 2v1 (skrutky + vruty)" },
+      { "label": "Upinanie nadstavcov", "value": "3/8\" (stvorec)" },
+      { "label": "Upinanie bitov", "value": "1/4\" sestuholnik (s adapterom)" },
+      { "label": "Maximalny tocivy moment", "value": "81 Nm (60 ft-lbs)" },
+      { "label": "Rychlost", "value": "0-450 RPM (regulovatelna)" },
+      { "label": "Napatie", "value": "20V" },
+      { "label": "Bateria", "value": "Li-ion 2.0 Ah (2x v baleni)" },
+      { "label": "Nabijanie", "value": "Rychlonabijacka v baleni" },
+      { "label": "Otacanie", "value": "Dopredu / Dozadu (rychle prepnutie)" },
+      { "label": "LED", "value": "Integrovane predne pracovne svetlo" },
+      { "label": "Certifikacie", "value": "CE" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Priame porovnanie",
+    "title": "Preco sa oplati viac nez alternativy?",
+    "featureColumn": "Vlastnost",
+    "winnerBadge": "NAJLEPSIA VOLBA",
+    "productColumn": "RatchetPro 2in1™",
+    "competitorColumn": "Rucna racna / Utahovak",
+    "rows": [
+      { "feature": "Dvojita funkcia", "product": "✔ Skrutky + vruty v jednom", "competitor": "Len skrutky ALEBO len vruty" },
+      { "feature": "Fyzicka namaha", "product": "✔ Ziadna, vsetko robi motor", "competitor": "Ruka a zapastie pod tlakom" },
+      { "feature": "Stiesnene miesta", "product": "✔ Kompaktna hlava + klb", "competitor": "Utahovak sa nezmesti" },
+      { "feature": "Rychlost", "product": "✔ 450 otacok/min", "competitor": "Pomale a namahave rucne" },
+      { "feature": "Prislusenstvo v baleni", "product": "✔ Nadstavce + bity + kufrik", "competitor": "Vsetko sa kupuje zvlast" },
+      { "feature": "Investicia", "product": "✔ Len 79,99€ (vsetko v cene)", "competitor": "280-350€ (2 oddelene nastroje)" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Kompletna sada",
+    "title": "Tu je to, co najdete v baliku",
+    "items": [
+      { "icon": "box", "text": "RatchetPro 2in1™ -- Elektricky racnovy utahovak", "value": "159,98€", "valueType": "price" },
+      { "icon": "box", "text": "Sada nadstavcov 3/8\"", "value": "V CENE", "valueType": "included" },
+      { "icon": "box", "text": "Sada bitov 1/4\" + Adapter Quick-Change", "value": "V CENE", "valueType": "included" },
+      { "icon": "cable", "text": "Predlzky + Flexibilny klb", "value": "V CENE", "valueType": "included" },
+      { "icon": "box", "text": "2 Li-ion baterie 20V + Nabijacka", "value": "V CENE", "valueType": "included" },
+      { "icon": "gift", "text": "Profesionalny kufrik", "value": "ZADARMO", "valueType": "gift" },
+      { "icon": "shield", "text": "Zaruka 2 roky + Technicka podpora", "value": "V CENE", "valueType": "included" }
+    ],
+    "totalOriginalLabel": "Povodna cena:",
+    "totalOriginalValue": "159,98€",
+    "totalCurrentLabel": "Vasa dnesna cena:",
+    "totalCurrentValue": "79,99€",
+    "totalSave": "Usetrite 79,99€ . Dorucenie ZADARMO",
+    "ctaText": "OBJEDNAT TERAZ"
+  },
+
+  "reviews": {
+    "eyebrow": "Hodnotenia",
+    "title": "Co hovoria ti, ktori to vyskusali",
+    "rating": "4.8",
+    "totalCount": "14 731 hodnoteni",
+    "verifiedNote": "✓ Vsetky hodnotenia su overene nezavislym externym tymom.",
+    "showMoreText": "Nacitat dalsie hodnotenia",
+    "leaveReviewText": "Napisat hodnotenie",
+    "verifiedBadge": "Overeny nakup",
+    "sellerReplyLabel": "Odpoved predajcu:",
+    "items": [
+      {
+        "initials": "PH",
+        "name": "Peter Horvath",
+        "stars": 5,
+        "text": "Pouzivam ho na motorku aj na domace prace. Predtym som vzdy nosil rucnu racnu a utahovak, teraz staci toto. Prepnutie z nadstavca na bit je bleskove. Zaplatene kurierovi, dorazilo za 48 hodin.",
+        "verified": true,
+        "sellerReply": "Peter, mat oba v jednom nastroji je presne ta hlavna vyhoda. Dakujeme za spatnu vazbu!"
+      },
+      {
+        "initials": "MK",
+        "name": "Martin Kovac",
+        "stars": 5,
+        "text": "som elektrikar a v priestoroch za rozvodnicami sa moj stary utahovak nezmestil. s flexibilnym klbom sa dostanem kamkolvek. regulovatelna rychlost je zasadna aby som neposkodil upevnenie",
+        "verified": true,
+        "sellerReply": "Martin, profesional ktory to pouziva kazdy den je ten najlepsi dokaz. Flexibilny klb je navrhnuty presne pre tieto situacie!"
+      },
+      {
+        "initials": "ZK",
+        "name": "Zuzana Kralova",
+        "stars": 5,
+        "text": "Darovala som ho manzelovi, ktory sa neustale stazoval na bolest zapastia s rucnou racnou. Teraz dokonci pracu za polovicny cas a bez namahy. Sama som to vyskusala na montaz polic a funguje skvele.",
+        "verified": true,
+        "sellerReply": "Zuzana, ked aj niekto bez skusenosti ho pouziva s lahkostou, znamena to, ze sme trafili ciel. Dakujeme!"
+      },
+      {
+        "initials": "MV",
+        "name": "Milan Varga",
+        "stars": 5,
+        "text": "som tesar a pouzivam ho prakticky kazdy den. 81 Nm bohato staci na typ prace ktoru robim. dve baterie su prevratne pretoze nikdy nemusim cakat na nabijanie. kufrik je prakticky na stavbu",
+        "verified": true,
+        "sellerReply": "Milan, tesar ktory to pouziva denne je ten konecny test. 2 baterie su tu presne preto, aby ste sa nikdy nezastavili. Dakujeme!"
+      },
+      {
+        "initials": "TS",
+        "name": "Tomas Smolak",
+        "stars": 4,
+        "text": "robi presne to co slubuje: funguje s nadstavcami aj bitmi bez problemov. LED je velmi uzitocne ked pracujem v garazi. zatial 4 hviezdicky pretoze to este testujem na roznych pracach ale prvy dojem je rozhodne pozitivny",
+        "verified": true,
+        "sellerReply": "Tomas, dakujeme za uprimnost. Sme presvedceni, ze po niekolkych tyzdnoch pouzivania zmenite nazor. Dajte nam vediet!"
+      },
+      {
+        "initials": "JN",
+        "name": "Jozef Novak",
+        "stars": 5,
+        "text": "pouzivam ho na udrzbu skutra. vymena brzdovych dosticiek bola predtym otrava s rucnym klucom. teraz za stvrt hodiny hotovo a zapastie dakuje. nadstavce pokryvaju vsetky rozmery co potrebujem",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "MB",
+        "name": "Michal Baran",
+        "stars": 5,
+        "text": "dorucenie presne na cas a kvalita nad ocakavania. necekal som ze za 79,99€ najdem toto vsetko: racnu, nadstavce, bity, predlzky, klb, dve baterie a kufrik. uz som opravil tri veci doma bez problemov",
+        "verified": true,
+        "sellerReply": "Michal, kompletna sada je nasa silna stranka: otvorite a mate vsetko. Ziadne dalsie prislusenstvo na nakup. Dakujeme!"
+      },
+      {
+        "initials": "EM",
+        "name": "Eva Majercikova",
+        "stars": 5,
+        "text": "Pouzivam ho na drobne prace v domacnosti, bez toho aby som musela niekoho prosit o pomoc. Pripevnila som dve police a vymenila klucky u okien sama. Regulovatelna rychlost je dokonala, pretoze neposkodim povrch. Ovela lepsi nez vrtacka co som mala.",
+        "verified": true,
+        "sellerReply": "Eva, tesi nas, ze aj kto nema skusenosti ho pouziva bez problemov. Regulovatelna rychlost je navrhunta presne na toto!"
+      },
+      {
+        "initials": "AB",
+        "name": "Andrej Benes",
+        "stars": 5,
+        "text": "montoval som a demontoval zimne pneumatiky v garazi. nadstavce 3/8 drzia skvele a s elektrickym klucom to nie je ziadna namaha. nakoniec dotiahnete rucne pre istotu. mat dve baterie je genialne",
+        "verified": true,
+        "sellerReply": "Andrej, spravny pristup: racna urobi hlavnu pracu a finalne dotiahnutie urobite rucne pre bezpecnost. 2 baterie su tu pre tych, ktori sa nechcu zastavovat!"
+      },
+      {
+        "initials": "JK",
+        "name": "Jana Kralikova",
+        "stars": 5,
+        "text": "Objednane v utorok, vo stvrtok uz som to mala v ruke. Zaplatene kurierovi, vsetko v poriadku. LED je zachrana ked pracujem pod kuchynskou linkou. Uz som to doporucila susedovi, ktory robi udrzbar.",
+        "verified": true,
+        "sellerReply": "Jana, LED sa zda ako malickost, ale ked sa ocitnete v tmavom priestore, pochopite jeho hodnotu. Pozdravujte suseda!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Zanechajte svoj nazor",
+    "nameLabel": "Vase meno",
+    "namePlaceholder": "Napr. Jan Novak",
+    "ratingLabel": "Hodnotenie",
+    "textLabel": "Vasa skusenost",
+    "textPlaceholder": "Povedzte nam, ako ste spokojny...",
+    "submitText": "Odoslat nazor",
+    "successTitle": "Dakujeme za zdielanie vasho nazoru!",
+    "successText": "Vas nazor je overovany nezavislym tymom. Zverejnene budu len hodnotenia od tych, ktori produkt skutocne zakupili.",
+    "closeText": "Zavriet"
+  },
+
+  "orderForm": {
+    "eyebrow": "Objednajte teraz",
+    "title": "Vyplnte a dostadte domov",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Zlava 50% konci za:",
+    "stockWarning": "Pozor: zostava len <strong>6 kusov</strong> za tuto cenu",
+    "summaryTitle": "Vasa objednavka",
+    "summaryLines": [
+      { "label": "RatchetPro 2in1™ + Kompletna sada", "value": "79,99€", "type": "normal" },
+      { "label": "Rychle dorucenie 24/48h", "value": "ZADARMO", "type": "free" },
+      { "label": "Poplatky za dobierku", "value": "ZADARMO", "type": "free" }
+    ],
+    "totalLabel": "CELKOM",
+    "totalValue": "79,99€",
+    "fields": {
+      "name": { "label": "Meno a priezvisko *", "placeholder": "Napr. Jan Novak" },
+      "phone": { "label": "Telefonne cislo *", "placeholder": "Napr. 0901 123 456" },
+      "address": { "label": "Uplna adresa *", "placeholder": "Ulica, cislo, mesto, PSC" }
+    },
+    "phoneNote": "Budete kontaktovany telefonicky alebo cez WhatsApp na potvrdenie objednavky.",
+    "paymentBadge": "Platba pri prevzati -- Hotovost priamo kurierovi. Ziadna platba vopred.",
+    "submitText": "DOKONCIT OBJEDNAVKU",
+    "submitSubtext": "Platba v hotovosti pri prevzati",
+    "reassurance": "Chranene udaje . SSL sifrovanie . Ziadne platby vopred"
+  },
+
+  "faq": {
+    "eyebrow": "Rychle odpovede",
+    "title": "Najcastejsie otazky",
+    "items": [
+      { "question": "Ako mozem objednat?", "answer": "Stlacte tlacidlo objednavky, vyplnte svoje udaje vo formulari a potvrdite. Dostanete telefonat alebo spravu cez WhatsApp na overenie, potom balik dorazi k vam domov a platite hotovostou kurierovi." },
+      { "question": "Kolko stoji dorucenie?", "answer": "Dorucenie je uplne zadarmo. Od potvrdenia objednavky je balik doruceny priblizne za 24/48 pracovnych hodin." },
+      { "question": "Mozem ho vratit, ak nebudem spokojny?", "answer": "Samozrejme. Mate 30 dni od dorucenia na poziadanie o uplne vratenie. Prideme si po produkt a vratime vam celu zaplattenu sumu." },
+      { "question": "Co ak sa po 30 dnoch pokazi?", "answer": "Ziadny problem, vsetky nase produkty su kryte 2-rocnou uplnou zarukou." },
+      { "question": "Ako kontaktujem zakaznicku podporu?", "answer": "Mozete nam napisat prostrednictvom kontaktneho formulara na webe alebo emailom na adrese uvedenej v pate stranky." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "159,98€",
+    "newPrice": "79,99€",
+    "buttonText": "OBJEDNAT TERAZ",
+    "buttonSubtext": "Platba pri prevzati"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 79.99,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=426&uid=019855d0-397a-72ee-8df5-c5026966105a&lp=426"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Predchadzajuci",
+    "nextSlide": "Dalsi",
+    "thumbnail": "Miniatura",
+    "close": "Zavriet"
+  },
+
+  "ty": {
+    "title": "Objednavka prijata!",
+    "subtitle": "Vasu objednavku sme uspesne prijali na spracovanie.",
+    "orderNumberLabel": "C. objednavky:",
+    "summaryTitle": "Detail objednavky",
+    "accessoriesLabel": "+ Kompletna sada v cene",
+    "totalLabel": "CELKOM NA UHRADU",
+    "paymentNote": "Platba v hotovosti kurierovi -- ziadna platba vopred",
+    "yourDataTitle": "Vase udaje",
+    "nameLabel": "Meno",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Co bude dalej?",
+    "message": "Budete kontaktovany telefonicky alebo cez WhatsApp na potvrdenie objednavky a dohodnutie dorucenia.",
+    "steps": [
+      "Dostanete telefonat alebo spravu cez WhatsApp s potvrdenim",
+      "Balik bude odoslany do 24/48 pracovnych hodin",
+      "Platite v hotovosti priamo kurierovi"
+    ],
+    "footerText": "2 Roky zaruky . Vratenie zadarmo 30 dni . Vyhradena podpora"
+  }
+}

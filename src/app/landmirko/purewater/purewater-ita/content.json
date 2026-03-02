@@ -1,0 +1,431 @@
+{
+  "seo": {
+    "title": "PureWaterX™ Instant 2in1 - Acqua Calda e Pura in 3 Secondi",
+    "description": "Scaldabagno istantaneo + depuratore certificato. Bollire non basta: elimina calcare, cloro e micrometalli. Per casa, camper e seconda casa."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 198.00,
+    "currentPrice": 99.00,
+    "discountPercent": 50
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Attenzione: Forte richiesta —",
+    "highlight": "Ultimi 8 pezzi disponibili",
+    "suffix": "a questo prezzo"
+  },
+
+  "hero": {
+    "badge": "Innovazione 2026",
+    "title": "Acqua Calda e Pura",
+    "titleHighlight": "in 3 Secondi.",
+    "titleSuffix": "In Cucina, in Bagno o nel Camper",
+    "subtitle": "Scaldabagno + depuratore <strong>2-in-1</strong>. Bollire l'acqua <strong>non basta</strong>: calcare, micrometalli e sostanze nocive restano. <strong>PureWaterX™ Instant 2in1</strong> la scalda e la purifica davvero.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.437 recensioni verificate"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/purewater/carosello/1.webp", "alt": "PureWaterX™ Instant 2in1 vista frontale" },
+      { "src": "/images/mirko/purewater/carosello/2.webp", "alt": "PureWaterX™ Instant 2in1 in uso doccia" },
+      { "src": "/images/mirko/purewater/carosello/3.webp", "alt": "PureWaterX™ Instant 2in1 display LED" },
+      { "src": "/images/mirko/purewater/carosello/4.webp", "alt": "PureWaterX™ Instant 2in1 kit completo" },
+      { "src": "/images/mirko/purewater/carosello/5.webp", "alt": "PureWaterX™ Instant 2in1 installazione cucina" },
+      { "src": "/images/mirko/purewater/carosello/6.webp", "alt": "PureWaterX™ Instant 2in1 uso camper" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "Caldo in 3 secondi:", "description": "apri il rubinetto e l'acqua arriva calda, subito" },
+      { "title": "Purifica davvero:", "description": "bollire non basta, il filtro elimina calcare, cloro e micrometalli" },
+      { "title": "Doppio utilizzo:", "description": "doccino per il bagno, rubinetto per cucina e acqua da bere" },
+      { "title": "Elettrico o Gas:", "description": "due modalità, scegli quella che preferisci in base alla situazione" },
+      { "title": "Asta e rubinetto con viti o ventose:", "description": "decidi se fissare l'asta per il doccino e il rubinetto con le viti, oppure con le ventose per rimuoverlo più facilmente" },
+      { "title": "Camper e seconda casa:", "description": "arrivi, attacchi e hai acqua calda e pura in 3 secondi, ovunque" },
+      { "title": "Risparmio bollette:", "description": "niente standby, scaldi solo quando apri l'acqua" },
+      { "title": "Compatibile con tutto:", "description": "tubature vecchie, bassa pressione, qualsiasi impianto" },
+      { "title": "Kit completo incluso:", "description": "filtri, doccino, rubinetto, pompa 12V, tanica pieghevole 20L, valigetta: non compri altro" }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "PureWaterX™ Instant 2in1",
+    "shippingLabel": "Spedizione rapida:",
+    "shippingValue": "GRATIS",
+    "guaranteeLabel": "Garanzia 2 Anni",
+    "offerToggleText": "Scopri cosa include l'offerta",
+    "offerItems": [
+      { "text": "PureWaterX™ Instant 2in1 — Scaldabagno + Depuratore", "badge": null },
+      { "text": "Raccordi universali + Pompa 12V + Tanica Pieghevole", "badge": null },
+      { "text": "Filtro ScaleShield + PureDrink Certified + cartuccia extra", "badge": "REGALO" },
+      { "text": "QuickDock: Doccetta SPA multi-getto + rubinetto cucina + kit GPL", "badge": "REGALO" },
+      { "text": "Valigetta rigida con sagome per tutti gli accessori", "badge": "REGALO" },
+      { "text": "Garanzia 2 Anni + Assistenza Dedicata", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ORDINA ORA",
+    "mainSubtext": "Paghi Alla Consegna",
+    "subNote": ""
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Pagamento alla Consegna", "color": "green" },
+      { "icon": "truck", "text": "Spedizione 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Giorni di Reso", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Fai attenzione",
+    "title": "Sai davvero cosa c'è nella tua acqua?",
+    "items": [
+      { "icon": "droplet", "titleBold": "Calcare, cloro e <strong>micrometalli nocivi</strong> in ogni goccia: per pelle, capelli e stomaco", "text": "" },
+      { "icon": "warning", "titleBold": "Bollire <strong>non basta</strong>: metalli pesanti e sostanze cancerogene restano nell'acqua", "text": "" },
+      { "icon": "timer", "titleBold": "In camper o seconda casa: <strong>niente acqua calda né pulita</strong>, ogni volta la stessa storia", "text": "" },
+      { "icon": "money", "titleBold": "Un depuratore costa <strong>migliaia di euro</strong> e non scalda. Uno scaldabagno non purifica", "text": "" }
+    ],
+    "solutionTitle": "Con PureWaterX™ Instant 2in1 è diverso.",
+    "solutionText": "Scalda e purifica in 3 secondi. In casa, in camper, nella seconda casa."
+  },
+
+  "features": {
+    "eyebrow": "Perché è diverso",
+    "title": "Acqua calda e pura, ovunque tu sia.",
+    "items": [
+      {
+        "image": "/images/mirko/purewater/angle/1.webp",
+        "imageAlt": "Acqua pura per doccia e cucina",
+        "tag": "ACQUA PURA PER TUTTO",
+        "tagColor": "green",
+        "title": "Acqua pura da bere, per cucinare e farsi la doccia",
+        "description": "Calcare, cloro, micrometalli e sostanze nocive: <strong>bollire non li elimina</strong>. Il filtro certificato li riduce. Scegli il doccino per il bagno o il rubinetto per cucina e acqua da bere."
+      },
+      {
+        "image": "/images/mirko/purewater/angle/2.webp",
+        "imageAlt": "Uso in camper e outdoor",
+        "tag": "PERFETTO PER IL CAMPER",
+        "tagColor": "orange",
+        "title": "Doccia calda ovunque in 3 secondi, con una tanica",
+        "description": "Pompa 12V, tanica pieghevole e modalità GPL: <strong>doccia calda anche senza rete idrica</strong>. Kit completo nel pacco, non devi comprare niente in più."
+      },
+      {
+        "image": "/images/mirko/purewater/angle/3.webp",
+        "imageAlt": "Regolazione temperatura precisa",
+        "tag": "TEMPERATURA PERFETTA",
+        "tagColor": "blue",
+        "title": "Regolazione precisa e stabile della temperatura",
+        "description": "Con le caldaie tradizionali la temperatura <strong>salta di continuo</strong> e ci metti una vita a regolarla. Qui imposti i gradi esatti sul display e restano stabili. <strong>Fine docce bollenti o gelate</strong>."
+      },
+      {
+        "image": "/images/mirko/purewater/angle/4.webp",
+        "imageAlt": "DualPower elettrico e GPL",
+        "tag": "DOPPIA ALIMENTAZIONE",
+        "tagColor": "orange",
+        "title": "Elettrico o Gas: due modalità, zero limiti",
+        "description": "Modalità <strong>E-Mode</strong> (presa 230V) per un uso rapido e leggero. <strong>G-Mode</strong> (GPL): attacchi gli ugelli, colleghi la bombola e sei pronto. Doccia potente e grandi flussi."
+      },
+      {
+        "image": "/images/mirko/purewater/angle/5.webp",
+        "imageAlt": "QuickDock portatile",
+        "tag": "LO SPOSTI DOVE VUOI",
+        "tagColor": "green",
+        "title": "Bagno, cucina, camper: in un click",
+        "description": "Asta per doccino e rubinetto QuickDock con sgancio rapido: <strong>lo sposti in 30 secondi</strong>. Oggi in cucina, domani in camper. Cappucci anti-goccia, zero sporco."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Semplicissimo",
+    "title": "3 passi e hai acqua calda e pura.",
+    "image": "",
+    "imageAlt": "",
+    "steps": [
+      { "title": "Scegli l'acqua", "description": "Tubo di casa o tanica: attacca e vai, adattatori inclusi." },
+      { "title": "Scegli la modalità", "description": "Elettrico (presa) per uso rapido. Gas (GPL) per doccia potente e grandi flussi." },
+      { "title": "Apri e regola", "description": "Acqua calda e pura in 3 secondi. Sul display vedi i gradi in tempo reale." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ORDINA ORA CON IL 50% DI SCONTO",
+    "subtext": "Paghi Alla Consegna"
+  },
+
+  "specs": {
+    "eyebrow": "Specifiche",
+    "title": "Caratteristiche Tecniche",
+    "items": [
+      { "label": "Capacità serbatoio", "value": "20 litri" },
+      { "label": "Riscaldamento", "value": "Istantaneo (3 secondi)" },
+      { "label": "Alimentazione", "value": "Elettrico 230V + GPL" },
+      { "label": "Display", "value": "LED (°C + L/min + Litri)" },
+      { "label": "Filtrazione", "value": "Carbon Block + Resina Anticalcare" },
+      { "label": "Sicurezza", "value": "Anti-surriscaldamento · Anti-secco · Auto-stop" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Il Confronto",
+    "title": "Quali vantaggi avrai rispetto alle alternative?",
+    "featureColumn": "Caratteristica",
+    "winnerBadge": "VINCITORE",
+    "productColumn": "PureWaterX™ Instant 2in1",
+    "competitorColumn": "Boiler tradizionale",
+    "rows": [
+      { "feature": "Tempo riscaldamento", "product": "✔ 3 secondi", "competitor": "20-40 minuti" },
+      { "feature": "Purezza dell'acqua", "product": "✔ Filtro calcare, cloro, metalli", "competitor": "Zero filtrazione" },
+      { "feature": "Uso in camper/esterno", "product": "✔ Tanica + pompa + GPL", "competitor": "Impossibile" },
+      { "feature": "Installazione", "product": "✔ Fai da te, 2 minuti", "competitor": "Serve l'idraulico" },
+      { "feature": "Consumi energetici", "product": "✔ Solo quando apri", "competitor": "Sempre acceso (standby)" },
+      { "feature": "Costo totale", "product": "✔ Solo 99€ (una volta)", "competitor": "300-800€ + installazione" }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Tutto incluso",
+    "title": "Cosa ricevi a casa tua",
+    "items": [
+      { "icon": "box", "text": "PureWaterX™ Instant 2in1 — Scaldabagno + Depuratore", "value": "€198,00", "valueType": "price" },
+      { "icon": "box", "text": "Raccordi universali + Pompa 12V + Tanica Pieghevole", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "gift", "text": "Filtro ScaleShield + PureDrink Certified + cartuccia extra", "value": "REGALO", "valueType": "gift" },
+      { "icon": "gift", "text": "QuickDock: Doccetta SPA multi-getto + rubinetto cucina + kit GPL", "value": "REGALO", "valueType": "gift" },
+      { "icon": "gift", "text": "Valigetta rigida con sagome per tutti gli accessori", "value": "REGALO", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Prezzo di Listino:",
+    "totalOriginalValue": "€399,00",
+    "totalCurrentLabel": "Oggi paghi solo:",
+    "totalCurrentValue": "€99,00",
+    "totalSave": "Risparmi €300,00 · Spedizione GRATUITA",
+    "ctaText": "ORDINA ORA"
+  },
+
+  "reviews": {
+    "eyebrow": "Cosa dicono di Noi",
+    "title": "Recensioni Verificate",
+    "rating": "4.8",
+    "totalCount": "18.437 recensioni",
+    "verifiedNote": "✓ Le recensioni vengono verificate da un team neutrale esterno a questo sito web.",
+    "showMoreText": "Mostra altre recensioni",
+    "leaveReviewText": "Lascia una recensione",
+    "verifiedBadge": "Acquisto verificato",
+    "sellerReplyLabel": "Risposta del venditore:",
+    "items": [
+      {
+        "initials": "MB",
+        "name": "Maria Benedetti",
+        "stars": 5,
+        "text": "Il boiler vecchio ci ha lasciato senza acqua calda e l'idraulico non poteva venire per due settimane. Abbiamo comprato questo e lo abbiamo montato da soli in 10 minuti. L'acqua esce calda subito, non devi aspettare niente. Arrivato in due giorni, pagato al corriere.",
+        "verified": true,
+        "sellerReply": "Maria, situazioni del genere capitano più spesso di quanto si pensi. Felici di averla aiutata a risolvere in fretta! Per qualsiasi necessità siamo qui."
+      },
+      {
+        "initials": "RP",
+        "name": "Renato Palmieri",
+        "stars": 5,
+        "text": "lo uso col camper e non torno più indietro. attacco la tanica, accendo la pompa e ho doccia calda in mezzo alla natura. mia moglie dopo il campeggio voleva sempre andare in un camping con docce, adesso non serve più. il kit è completo non ho comprato niente in più",
+        "verified": true,
+        "sellerReply": "Renato, sentire che ha cambiato il modo di viaggiare in camper è il complimento più bello. Buoni viaggi!"
+      },
+      {
+        "initials": "CE",
+        "name": "Chiara Esposito",
+        "stars": 5,
+        "text": "Lo uso nella casa al mare che apriamo da maggio a settembre. Prima dovevo accendere il boiler ore prima di fare la doccia. Adesso arrivo, attacco e in pochi secondi ho acqua calda. Lo lascio montato tutto l'anno, quando torno è pronto.",
+        "verified": true,
+        "sellerReply": "Chiara, per le seconde case è perfetto: niente standby, niente attese. Buona estate!"
+      },
+      {
+        "initials": "AM",
+        "name": "Alberto Manfredi",
+        "stars": 4,
+        "text": "funziona bene lo ammetto, l'acqua calda arriva davvero subito e il display è comodo. per ora metto 4 stelle perché lo sto testando ancora con il gas per la doccia, ma con l'elettrico al lavello è perfetto",
+        "verified": true,
+        "sellerReply": "Alberto, apprezziamo la sua onestà! La modalità gas è ottima per docce più potenti, siamo sicuri che resterà soddisfatto. Ci aggiorni!"
+      },
+      {
+        "initials": "GF",
+        "name": "Giuliana Ferrante",
+        "stars": 5,
+        "text": "Da quando uso il filtro il caffè ha tutto un altro sapore e l'acqua non sa più di cloro. Non ci pensavo ma anche la pasta viene meglio. Ho fatto analizzare l'acqua del rubinetto e c'era calcare altissimo, adesso con il filtro è tutta un'altra cosa.",
+        "verified": true,
+        "sellerReply": "Giuliana, molte persone non si rendono conto di quanto il calcare e il cloro influenzino il sapore. Felici che apprezzi la differenza, anche in cucina!"
+      },
+      {
+        "initials": "SR",
+        "name": "Stefano Rigoni",
+        "stars": 5,
+        "text": "tre settimane di viaggio in camper con la famiglia e doccia calda ogni sera. la tanica da 20 litri basta per tutti e quattro, la pompa funziona bene e il gas dura tanto. lo consiglio a tutti quelli che fanno campeggio libero",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "AC",
+        "name": "Anna Cataldi",
+        "stars": 5,
+        "text": "Casa degli anni 60 con pressione bassa e il vecchio scaldino si spegneva di continuo. Questo funziona anche con la pressione che abbiamo noi, non si è mai spento. L'acqua arriva calda e pulita. Anche mia madre di 78 anni lo usa senza problemi.",
+        "verified": true,
+        "sellerReply": "Anna, la compatibilità con pressioni basse è una delle caratteristiche su cui abbiamo lavorato di più. Un saluto alla mamma!"
+      },
+      {
+        "initials": "DS",
+        "name": "Domenico Saviano",
+        "stars": 5,
+        "text": "Sono idraulico e devo dire che questo prodotto è fatto bene. Gli attacchi sono standard, i materiali sono buoni e il filtro anticalcare funziona. Lo consiglio ai clienti che hanno case vecchie e ai camperisti che mi chiedono una soluzione per l'acqua calda.",
+        "verified": true,
+        "sellerReply": "Domenico, la conferma di un professionista del settore è il miglior riconoscimento. Grazie per i consigli ai suoi clienti!"
+      },
+      {
+        "initials": "TM",
+        "name": "Teresa Montanari",
+        "stars": 5,
+        "text": "viviamo in campagna e l'acqua ha tantissimo calcare, mi rovinava i capelli e la pelle era sempre secca dopo la doccia. da quando uso questo con il filtro la differenza si vede subito. il calcare sui rubinetti è diminuito tantissimo",
+        "verified": true,
+        "sellerReply": "Teresa, il calcare nell'acqua non è solo un problema estetico ma anche di salute per pelle e capelli. Felici che noti la differenza!"
+      },
+      {
+        "initials": "LP",
+        "name": "Luca Palmisano",
+        "stars": 5,
+        "text": "Comprato per il bungalow dove andiamo in vacanza. L'impianto idrico è vecchissimo e l'acqua non era potabile. Adesso la filtro per cucinare e bere, e la scaldo per la doccia con il gas. Due problemi risolti con un solo acquisto, per 99 euro è un affare.",
+        "verified": true,
+        "sellerReply": "Luca, risolvere acqua calda e acqua pulita con un solo prodotto è esattamente la nostra missione. Buone vacanze!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Lascia la tua recensione",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "Valutazione",
+    "textLabel": "La tua recensione",
+    "textPlaceholder": "Racconta la tua esperienza...",
+    "submitText": "Invia Recensione",
+    "successTitle": "Grazie per la tua recensione!",
+    "successText": "La tua recensione è in attesa di approvazione da un team esterno a questo sito web. Le recensioni lasciate da chi non ha acquistato il prodotto non saranno pubblicate, questo per evitare recensioni non autentiche.",
+    "closeText": "Chiudi"
+  },
+
+  "orderSteps": {
+    "eyebrow": "COME ORDINARE",
+    "title": "Ordina in 3 semplici passi",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Compila il modulo",
+        "description": "Inserisci i tuoi dati nel modulo d'ordine qui sotto."
+      },
+      {
+        "icon": "phone",
+        "title": "Conferma telefonica",
+        "description": "Ti chiamiamo o ti contattiamo su WhatsApp per confermare i dati."
+      },
+      {
+        "icon": "cash",
+        "title": "Paga alla consegna",
+        "description": "Dopo 24/48h il pacco arriva con corriere tracciato. Paghi in contanti alla consegna."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Modulo d'Ordine",
+    "title": "Completa il tuo ordine",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "L'offerta -50% scade tra:",
+    "stockWarning": "Solo <strong>8 pezzi</strong> rimasti a questo prezzo",
+    "summaryTitle": "Riepilogo Ordine",
+    "summaryLines": [
+      { "label": "PureWaterX™ Instant 2in1 + Kit Completo", "value": "€99,00", "type": "normal" },
+      { "label": "Spedizione rapida 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Spese di Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€99,00",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo di Spedizione *", "placeholder": "Via, Numero, Città, CAP" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "CONFERMA ORDINE",
+    "submitSubtext": "Paghi Contanti alla Consegna",
+    "reassurance": "Spedizione 24/48h · Garanzia 2 anni · Assistenza<br><strong>Nessuna carta richiesta.</strong> Ti richiamiamo per conferma."
+  },
+
+  "faq": {
+    "eyebrow": "Domande frequenti",
+    "title": "Hai ancora dubbi? Ecco le risposte.",
+    "items": [
+      { "question": "Come faccio ad ordinare?", "answer": "Clicca sul pulsante di acquisto, compila il modulo con i tuoi dati e conferma l'ordine. Sarai contattato telefonicamente o tramite WhatsApp per la conferma e riceverai il pacco comodamente a casa, con pagamento in contanti." },
+      { "question": "Come funziona la spedizione?", "answer": "La spedizione è totalmente gratuita. Da quando l'ordine è confermato, impiega circa 24/48h lavorative per essere consegnato." },
+      { "question": "E se non mi piace?", "answer": "Puoi richiedere un rimborso totale facendo il reso del prodotto entro 30 giorni dalla consegna. Veniamo noi a ritirare il pacco e a ridarti l'intera somma spesa." },
+      { "question": "Se ho problemi dopo 30 giorni?", "answer": "Tranquillo, tutti i nostri prodotti hanno 2 anni di garanzia." },
+      { "question": "Come faccio a chiedere un reso o assistenza?", "answer": "Per chiedere assistenza o un reso dopo aver effettuato un ordine, puoi utilizzare il modulo di contatto che trovi all'interno del sito o tramite la mail presente nel footer." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€198",
+    "newPrice": "€99",
+    "buttonText": "ORDINA ORA",
+    "buttonSubtext": "Paga Alla Consegna"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 0,
+    "conversionCurrency": "",
+    "facebookPixelId": "",
+    "network": {
+      "fingerprintScript": "",
+      "clickPixel": ""
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
+  "ty": {
+    "title": "Ordine Confermato!",
+    "subtitle": "Il tuo ordine è stato ricevuto con successo.",
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Riepilogo Ordine",
+    "accessoriesLabel": "+ Accessori inclusi",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — nessun anticipo",
+    "yourDataTitle": "I Tuoi Dati",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "Cosa succede ora?",
+    "message": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine e organizzare la consegna.",
+    "steps": [
+      "Riceverai una chiamata o un messaggio WhatsApp di conferma",
+      "Il pacco verrà spedito in 24/48h",
+      "Paghi in contanti al corriere alla consegna"
+    ],
+    "footerText": "Garanzia 2 Anni · 30 Giorni di Reso · Assistenza Dedicata"
+  }
+}
