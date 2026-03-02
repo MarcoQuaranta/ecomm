@@ -1,0 +1,451 @@
+{
+  "seo": {
+    "title": "DrillForce Full Kit™ - 3 Utensili in 1, Cambi Testa in Un Click",
+    "description": "Sistema modulare 18V brushless con 3 teste dedicate: trapano, avvitatore a impulsi e SDS. Kit 141 accessori + 2 batterie. Spedizione gratuita, paghi alla consegna."
+  },
+
+  "pricing": {
+    "currency": "EUR",
+    "currencySymbol": "€",
+    "originalPrice": 199.00,
+    "currentPrice": 99.00,
+    "discountPercent": 50
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Attenzione: Forte richiesta —",
+    "highlight": "Ultimi 8 pezzi disponibili",
+    "suffix": "a questo prezzo"
+  },
+
+  "hero": {
+    "badge": null,
+    "badges": ["Mandrino 13 mm", "1/4\" HEX Quick-Change", "SDS-Plus"],
+    "title": "Trapano, Avvitatore a Impulsi, Martello SDS e 141 Accessori in Una Sola Valigetta.",
+    "titleHighlight": "Cambi Testa in Un Click.",
+    "titleSuffix": "",
+    "subtitle": "Sistema modulare 18V brushless con cambio rapido Quick-Lock. Per legno, metallo e cemento. 141 accessori + 2 batterie + valigetta completa.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18.473 recensioni verificate"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/drillforce/carosello/1.webp", "alt": "DrillForce Full Kit vista frontale" },
+      { "src": "/images/mirko/drillforce/carosello/2.webp", "alt": "DrillForce Full Kit in uso" },
+      { "src": "/images/mirko/drillforce/carosello/3.webp", "alt": "DrillForce Full Kit 3 teste" },
+      { "src": "/images/mirko/drillforce/carosello/4.webp", "alt": "DrillForce Full Kit kit accessori" },
+      { "src": "/images/mirko/drillforce/carosello/5.webp", "alt": "DrillForce Full Kit valigetta completa" },
+      { "src": "/images/mirko/drillforce/carosello/6.webp", "alt": "DrillForce Full Kit dettaglio Quick-Lock" },
+      { "src": "/images/mirko/drillforce/carosello/7.webp", "alt": "DrillForce Full Kit batterie e caricatore" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "3 teste dedicate:", "description": "Mandrino 13 mm (per legno e metallo), 1/4\" HEX Quick-Change (avvitatore a impulsi) e SDS-Plus (muri e cemento)" },
+      { "title": "Cambio Quick-Lock:", "description": "click, ruota e la testa è bloccata. La cambi in 2 secondi" },
+      { "title": "Motore brushless 18V:", "description": "più potenza, meno usura, dura il doppio di un motore a spazzole" },
+      { "title": "2 batterie 4.0Ah incluse:", "description": "una lavora, l'altra carica. Zero interruzioni e 18 ore di autonomia" },
+      { "title": "SDS per cemento vero:", "description": "colpo assiale reale, perfori muri e cemento senza rompere la punta" },
+      { "title": "Impulsi per bulloni:", "description": "colpi torsionali, sviti anche i bulloni più stretti senza sforzo e senza spezzarti il polso" },
+      { "title": "Velocità regolabile:", "description": "adatti la potenza al materiale. Delicato sul legno, aggressivo sul cemento" },
+      { "title": "Luce LED incorporata:", "description": "per lavorare al buio, di notte o negli spazi con poca visibilità" },
+      { "title": "Kit 141 accessori:", "description": "inserti, bussole, punte, chiavi, martelli, pinze e livella. Tutto in valigetta" }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "DrillForce Full Kit™",
+    "shippingLabel": "Spedizione rapida:",
+    "shippingValue": "GRATIS",
+    "guaranteeLabel": "Garanzia 2 Anni",
+    "offerToggleText": "Scopri cosa include l'offerta",
+    "offerItems": [
+      { "text": "DrillForce Full Kit™ — Corpo Motore 18V Brushless", "badge": null },
+      { "text": "Testa Trapano/Avvitatore con Percussione (Mandrino 13mm)", "badge": null },
+      { "text": "Testa Avvitatore a Impulsi (1/4\" HEX)", "badge": null },
+      { "text": "Testa SDS-Plus per Cemento e Muratura", "badge": null },
+      { "text": "2 Batterie Li-Ion + Caricatore Rapido", "badge": null },
+      { "text": "Kit 141 Accessori Professionali", "badge": "REGALO" },
+      { "text": "Valigetta Organizzata con Scomparti Dedicati", "badge": "REGALO" },
+      { "text": "Garanzia 2 Anni + Assistenza Dedicata", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ORDINA ORA",
+    "mainSubtext": "Paghi Alla Consegna",
+    "subNote": ""
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Pagamento alla Consegna", "color": "green" },
+      { "icon": "truck", "text": "Spedizione 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Giorni di Reso", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Il problema",
+    "title": "I trapani multi-funzione ti hanno deluso?",
+    "items": [
+      { "icon": "warning", "titleBold": "Adattatori finti che <strong>si rompono</strong> dopo due utilizzi", "text": "" },
+      { "icon": "money", "titleBold": "Comprare <strong>3 utensili separati</strong> costa una fortuna e occupa spazio", "text": "" },
+      { "icon": "timer", "titleBold": "Trapani economici che <strong>surriscaldano</strong> e perdono potenza in 5 minuti", "text": "" },
+      { "icon": "money", "titleBold": "Kit accessori venduti <strong>a parte</strong> a prezzi assurdi, ogni volta un altro acquisto", "text": "" }
+    ],
+    "solutionTitle": "Con DrillForce Full Kit™ è diverso.",
+    "solutionText": "3 teste vere con meccanismo dedicato. Un corpo, zero compromessi."
+  },
+
+  "features": {
+    "eyebrow": "Perché è diverso",
+    "title": "Un solo corpo motore. Tre utensili professionali.",
+    "items": [
+      {
+        "image": "/images/mirko/drillforce/angle/1.webp",
+        "imageAlt": "Sistema 3 teste Quick-Lock",
+        "tag": "SISTEMA MODULARE",
+        "tagColor": "green",
+        "title": "3 Teste Dedicate, Zero Adattatori Usa e Getta",
+        "description": "Fori <strong>legno, metallo e cemento</strong> con facilità. Non è un adattatore: è un utensile vero e dedicato con blocco meccanico Quick-Lock."
+      },
+      {
+        "image": "/images/mirko/drillforce/angle/2.webp",
+        "imageAlt": "Motore brushless 18V",
+        "tag": "POTENZA REALE",
+        "tagColor": "orange",
+        "title": "Motore Brushless 18V — Potenza Senza Fine",
+        "description": "Più coppia, meno attrito, <strong>durata doppia</strong> rispetto ai motori a spazzole. Non perde potenza neanche sotto sforzo."
+      },
+      {
+        "image": "/images/mirko/drillforce/angle/3.webp",
+        "imageAlt": "Kit 141 accessori",
+        "tag": "KIT COMPLETO",
+        "tagColor": "blue",
+        "title": "141 Accessori + Valigetta Organizzata",
+        "description": "Inserti, bussole, punte, chiavi a brugola, martello, pinza, metro. <strong>Tutto già dentro</strong>, niente da comprare a parte."
+      },
+      {
+        "image": "/images/mirko/drillforce/angle/4.webp",
+        "imageAlt": "2 batterie e caricatore",
+        "tag": "AUTONOMIA TOTALE",
+        "tagColor": "green",
+        "title": "2 Batterie — Una Lavora, L'Altra Carica",
+        "description": "Batterie <strong>18V 4000mAh</strong> a ricarica rapida (30 minuti). Una lavora, l'altra carica. <strong>Lavori a ciclo continuo</strong> senza pause."
+      },
+      {
+        "image": "/images/mirko/drillforce/angle/5.webp",
+        "imageAlt": "Luce LED incorporata",
+        "tag": "VISIBILITÀ TOTALE",
+        "tagColor": "orange",
+        "title": "Luce LED Incorporata — Lavori Anche al Buio",
+        "description": "LED integrato che illumina <strong>esattamente il punto di lavoro</strong>. Perfetto per spazi stretti, cantine, sottoscala e lavori serali."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Semplicissimo",
+    "title": "Come funziona? Click e via.",
+    "image": "",
+    "imageAlt": "Come funziona",
+    "steps": [
+      { "title": "Scegli la Testa", "description": "Trapano, impulsi o SDS. Click, ruota, bloccata." },
+      { "title": "Inserisci l'Accessorio", "description": "Punta, inserto o bussola. È tutto nel kit, già organizzato." },
+      { "title": "Lavora", "description": "Premi il grilletto e via. Cambi lavoro? Cambi testa in 2 secondi." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ORDINA ORA CON IL 50% DI SCONTO",
+    "subtext": "Paghi Alla Consegna"
+  },
+
+  "specs": {
+    "eyebrow": "Specifiche",
+    "title": "Caratteristiche Tecniche",
+    "items": [
+      { "label": "Motore", "value": "Brushless 18V" },
+      { "label": "Teste incluse", "value": "3 (Mandrino 13mm / Impact 1/4\" HEX / SDS-Plus)" },
+      { "label": "Batterie", "value": "2x Li-Ion + Caricatore rapido" },
+      { "label": "Kit accessori", "value": "141 pezzi" },
+      { "label": "Cambio testa", "value": "Quick-Lock (2 secondi)" },
+      { "label": "Certificazioni", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Il Confronto",
+    "title": "Quali vantaggi avrai rispetto alle alternative?",
+    "featureColumn": "Caratteristica",
+    "winnerBadge": "VINCITORE",
+    "productColumn": "DrillForce Full Kit™",
+    "competitorColumn": "3 Utensili Separati",
+    "rows": [
+      { "feature": "Utensili inclusi", "product": "✔ Trapano + Impulsi + SDS", "competitor": "Compri tutto separato" },
+      { "feature": "Cambio funzione", "product": "✔ Quick-Lock in 2 secondi", "competitor": "Cambi utensile ogni volta" },
+      { "feature": "Accessori", "product": "✔ 141 pezzi inclusi", "competitor": "Venduti a parte" },
+      { "feature": "Batterie", "product": "✔ 2 batterie + caricatore", "competitor": "1 batteria per utensile" },
+      { "feature": "Ingombro", "product": "✔ 1 valigetta per tutto", "competitor": "3 valigette + cassetti" },
+      { "feature": "Costo totale", "product": "✔ Solo 99€ (una volta)", "competitor": "300-500€ in totale" }
+    ]
+  },
+
+  "kitContents": {
+    "eyebrow": "Cosa contiene il Kit",
+    "title": "Oltre al trapano e alle 3 testine modulari, il kit include:",
+    "image": "/images/mirko/drillforce/carosello/2.webp",
+    "imageAlt": "Contenuto kit DrillForce Full Kit",
+    "groups": [
+      { "letter": "A", "title": "Inserti / bits (46 pz)", "items": ["Set inserti principale (36 pz: PH/PZ/SL/TX/HEX vari)", "Set inserti extra (10 pz)"] },
+      { "letter": "B", "title": "Bussole (9 pz)", "items": ["8 bussole su supporto", "1 adattatore porta-bussole"] },
+      { "letter": "C", "title": "Chiavi a brugola (9 pz)", "items": [] },
+      { "letter": "D", "title": "Punte (8 pz)", "items": ["7 punte trapano (misure miste)", "1 punta a pala (legno)"] },
+      { "letter": "E", "title": "Cacciaviti e portainserti (6 pz)", "items": ["4 cacciaviti", "1 impugnatura portainserti", "1 prolunga porta-inserti"] },
+      { "letter": "F", "title": "Utensili manuali (6 pz)", "items": ["1 martello", "1 pinza", "1 chiave regolabile", "1 cutter", "1 metro", "1 livella"] },
+      { "letter": "G", "title": "Minuteria + organizer (41 pz)", "items": ["1 scatolina organizer", "20 tasselli", "20 viti"] }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Tutto incluso",
+    "title": "Cosa ricevi a casa tua",
+    "items": [
+      { "icon": "box", "text": "DrillForce Full Kit™ — Corpo 18V + 3 Teste Dedicate", "value": "€199,00", "valueType": "price" },
+      { "icon": "box", "text": "2 Batterie Li-Ion + Caricatore Rapido", "value": "INCLUSO", "valueType": "included" },
+      { "icon": "gift", "text": "Kit 141 Accessori Professionali in Valigetta", "value": "REGALO", "valueType": "gift" },
+      { "icon": "gift", "text": "Valigetta Organizzata con Scomparti Dedicati", "value": "REGALO", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Prezzo di Listino:",
+    "totalOriginalValue": "€349,00",
+    "totalCurrentLabel": "Oggi paghi solo:",
+    "totalCurrentValue": "€99,00",
+    "totalSave": "Risparmi €250,00 · Spedizione GRATUITA",
+    "ctaText": "ORDINA ORA"
+  },
+
+  "reviews": {
+    "eyebrow": "Cosa dicono di Noi",
+    "title": "Recensioni Verificate",
+    "rating": "4.8",
+    "totalCount": "18.473 recensioni",
+    "verifiedNote": "✓ Le recensioni vengono verificate da un team neutrale esterno a questo sito web.",
+    "showMoreText": "Mostra altre recensioni",
+    "leaveReviewText": "Lascia una recensione",
+    "verifiedBadge": "Acquisto verificato",
+    "sellerReplyLabel": "Risposta del venditore:",
+    "items": [
+      {
+        "initials": "MT",
+        "name": "Massimo Torretti",
+        "stars": 5,
+        "text": "finalmente un trapano che fa davvero tutto. ho montato la cucina nuova avvitando, poi forato il muro per i pensili con la testa SDS senza cambiare utensile. il cambio testa è velocissimo, due secondi e sei pronto. arrivato in due giorni, pagato al corriere.",
+        "verified": true,
+        "sellerReply": "Massimo, è esattamente l'uso per cui è stato progettato! Montaggio completo con un solo strumento. Grazie per la fiducia."
+      },
+      {
+        "initials": "LP",
+        "name": "Luca Palmieri",
+        "stars": 5,
+        "text": "Lo uso in garage quasi ogni giorno. La testa a impulsi sui bulloni è una bomba, sviti tutto senza fatica. Prima avevo tre attrezzi separati e perdevo tempo a cercare quello giusto. Adesso è tutto in una valigetta, comodissimo.",
+        "verified": true,
+        "sellerReply": "Luca, avere tutto in una valigetta cambia davvero il modo di lavorare. Felici che si trovi bene!"
+      },
+      {
+        "initials": "GF",
+        "name": "Gianluca Ferrante",
+        "stars": 5,
+        "text": "ero scettico sul cambio testa perché ho comprato roba simile in passato e si rompeva subito. questo ha un blocco meccanico serio che non si muove. il motore brushless è potente e silenzioso. le due batterie sono una manna, non ti fermi mai",
+        "verified": true,
+        "sellerReply": "Gianluca, capisco lo scetticismo dopo brutte esperienze. Il sistema Quick-Lock è progettato per durare. Grazie per averci dato fiducia!"
+      },
+      {
+        "initials": "AB",
+        "name": "Andrea Benedetti",
+        "stars": 4,
+        "text": "il prodotto è solido e ben fatto, le teste si cambiano facilmente e il kit accessori è completo. per ora metto 4 stelle perché voglio testarlo ancora un po su lavori pesanti prima di dare il massimo, ma le premesse sono ottime",
+        "verified": true,
+        "sellerReply": "Andrea, apprezziamo la sua onestà! Siamo sicuri che anche sui lavori più impegnativi non la deluderà. Ci aggiorni tra qualche settimana!"
+      },
+      {
+        "initials": "SM",
+        "name": "Sabrina Moretti",
+        "stars": 5,
+        "text": "L'ho preso per mio marito che si lamenta sempre di non avere gli attrezzi giusti. Ha montato una libreria, fissato le mensole al muro e stretto i bulloni del cancello tutto con lo stesso apparecchio. Non smette di parlarne, dice che è il regalo migliore che abbia mai ricevuto.",
+        "verified": true,
+        "sellerReply": "Sabrina, che bello sentirlo! Quando un prodotto diventa l'argomento preferito a casa, per noi è il complimento più grande."
+      },
+      {
+        "initials": "FC",
+        "name": "Fabio Costanzo",
+        "stars": 5,
+        "text": "sono elettricista e lo uso come secondo trapano per le emergenze. lo tengo nel furgone perché con la valigetta occupa pochissimo. la testa SDS buca il cemento senza problemi, le batterie durano un'intera giornata di lavoro leggero",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "RG",
+        "name": "Roberto Giordano",
+        "stars": 5,
+        "text": "il kit da 141 pezzi da solo vale metà del prezzo. ho tutte le punte, gli inserti, le bussole, i cacciaviti, persino il martello e la pinza. non ho dovuto comprare niente a parte. spedizione velocissima e corriere puntuale",
+        "verified": true,
+        "sellerReply": "Roberto, avere tutto incluso senza costi nascosti è la nostra filosofia. Grazie per la recensione!"
+      },
+      {
+        "initials": "EP",
+        "name": "Elena Parisi",
+        "stars": 5,
+        "text": "Non sono esperta di fai-da-te ma ho voluto provarlo per piccoli lavori in casa. Il cambio testa è facilissimo anche per me, basta un click. Ho forato il muro per appendere i quadri e montato uno scaffale senza chiedere aiuto a nessuno.",
+        "verified": true,
+        "sellerReply": "Elena, è progettato per essere usato anche da chi non è un professionista. Felici che si sia sentita sicura nell'utilizzarlo!"
+      },
+      {
+        "initials": "NC",
+        "name": "Nicola Cataldo",
+        "stars": 5,
+        "text": "confrontato con prodotti simili online che costano il doppio e hanno meno accessori. questo ha tre teste vere con meccanismo dedicato, non adattatori di plastica. il rapporto qualità prezzo è imbattibile, punto. consigliatissimo",
+        "verified": true,
+        "sellerReply": "Nicola, il confronto con la concorrenza è il test più onesto. Grazie per la fiducia e la recensione dettagliata!"
+      },
+      {
+        "initials": "DS",
+        "name": "Daniele Santini",
+        "stars": 5,
+        "text": "Ho ristrutturato il bagno praticamente solo con questo. Demolizione piastrelle con l'SDS, avvitatura struttura cartongesso, bulloni impianto con gli impulsi. Tre lavori diversi, un solo attrezzo. La valigetta è organizzata benissimo, ogni cosa al suo posto.",
+        "verified": true,
+        "sellerReply": "Daniele, una ristrutturazione completa con un solo strumento è la dimostrazione perfetta del sistema modulare. Complimenti per il lavoro!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Lascia la tua recensione",
+    "nameLabel": "Il tuo nome",
+    "namePlaceholder": "Es. Mario Rossi",
+    "ratingLabel": "Valutazione",
+    "textLabel": "La tua recensione",
+    "textPlaceholder": "Racconta la tua esperienza...",
+    "submitText": "Invia Recensione",
+    "successTitle": "Grazie per la tua recensione!",
+    "successText": "La tua recensione è in attesa di approvazione da un team esterno a questo sito web. Le recensioni lasciate da chi non ha acquistato il prodotto non saranno pubblicate, questo per evitare recensioni non autentiche.",
+    "closeText": "Chiudi"
+  },
+
+  "orderSteps": {
+    "eyebrow": "COME ORDINARE",
+    "title": "Ordina in 3 semplici passi",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Compila il modulo",
+        "description": "Inserisci i tuoi dati nel modulo d'ordine qui sotto."
+      },
+      {
+        "icon": "phone",
+        "title": "Conferma telefonica",
+        "description": "Ti chiamiamo o ti contattiamo su WhatsApp per confermare i dati."
+      },
+      {
+        "icon": "cash",
+        "title": "Paga alla consegna",
+        "description": "Dopo 24/48h il pacco arriva con corriere tracciato. Paghi in contanti alla consegna."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Modulo d'Ordine",
+    "title": "Completa il tuo ordine",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "L'offerta -50% scade tra:",
+    "stockWarning": "Solo <strong>8 pezzi</strong> rimasti a questo prezzo",
+    "summaryTitle": "Riepilogo Ordine",
+    "summaryLines": [
+      { "label": "DrillForce Full Kit™ + Accessori", "value": "€99,00", "type": "normal" },
+      { "label": "Spedizione rapida 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Spese di Contrassegno", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "TOTALE",
+    "totalValue": "€99,00",
+    "fields": {
+      "name": { "label": "Nome e Cognome *", "placeholder": "Es. Mario Rossi" },
+      "phone": { "label": "Numero di Telefono *", "placeholder": "Es. 333 1234567" },
+      "address": { "label": "Indirizzo di Spedizione *", "placeholder": "Via, Numero, Città, CAP" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "CONFERMA ORDINE",
+    "submitSubtext": "Paghi Contanti alla Consegna",
+    "reassurance": "Spedizione 24/48h · Garanzia 2 anni · Assistenza<br><strong>Nessuna carta richiesta.</strong> Ti richiamiamo per conferma."
+  },
+
+  "faq": {
+    "eyebrow": "Domande frequenti",
+    "title": "Hai ancora dubbi? Ecco le risposte.",
+    "items": [
+      { "question": "Come faccio ad ordinare?", "answer": "Clicca sul pulsante di acquisto, compila il modulo con i tuoi dati e conferma l'ordine. Sarai contattato telefonicamente o tramite WhatsApp per la conferma e riceverai il pacco comodamente a casa, con pagamento in contanti." },
+      { "question": "Come funziona la spedizione?", "answer": "La spedizione è totalmente gratuita. Da quando l'ordine è confermato, impiega circa 24/48h lavorative per essere consegnato." },
+      { "question": "E se non mi piace?", "answer": "Puoi richiedere un rimborso totale facendo il reso del prodotto entro 30 giorni dalla consegna. Veniamo noi a ritirare il pacco e a ridarti l'intera somma spesa." },
+      { "question": "Se ho problemi dopo 30 giorni?", "answer": "Tranquillo, tutti i nostri prodotti hanno 2 anni di garanzia." },
+      { "question": "Come faccio a chiedere un reso o assistenza?", "answer": "Per chiedere assistenza o un reso dopo aver effettuato un ordine, puoi utilizzare il modulo di contatto che trovi all'interno del sito o tramite la mail presente nel footer." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "€199",
+    "newPrice": "€99",
+    "buttonText": "ORDINA ORA",
+    "buttonSubtext": "Paga Alla Consegna"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 99.00,
+    "conversionCurrency": "EUR",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {}
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Precedente",
+    "nextSlide": "Successiva",
+    "thumbnail": "Miniatura",
+    "close": "Chiudi"
+  },
+
+  "ty": {
+    "title": "Ordine Confermato!",
+    "subtitle": "Il tuo ordine è stato ricevuto con successo.",
+    "orderNumberLabel": "N° ordine:",
+    "summaryTitle": "Riepilogo Ordine",
+    "accessoriesLabel": "+ Accessori inclusi",
+    "totalLabel": "TOTALE DA PAGARE",
+    "paymentNote": "Pagamento in contanti al corriere — nessun anticipo",
+    "yourDataTitle": "I Tuoi Dati",
+    "nameLabel": "Nome",
+    "phoneLabel": "Telefono",
+    "addressLabel": "Indirizzo",
+    "nextStepsTitle": "Cosa succede ora?",
+    "message": "Sarai contattato telefonicamente o tramite WhatsApp per confermare l'ordine e organizzare la consegna.",
+    "steps": [
+      "Riceverai una chiamata o un messaggio WhatsApp di conferma",
+      "Il pacco verrà spedito in 24/48h",
+      "Paghi in contanti al corriere alla consegna"
+    ],
+    "footerText": "Garanzia 2 Anni · 30 Giorni di Reso · Assistenza Dedicata"
+  }
+}
