@@ -21,11 +21,11 @@
   },
 
   "hero": {
-    "badge": "Innovazione 2026",
-    "title": "Acqua Calda e Pura",
-    "titleHighlight": "in 3 Secondi.",
-    "titleSuffix": "In Cucina, in Bagno o nel Camper",
-    "subtitle": "Scaldabagno + depuratore <strong>2-in-1</strong>. Bollire l'acqua <strong>non basta</strong>: calcare, micrometalli e sostanze nocive restano. <strong>PureWaterX™ Instant 2in1</strong> la scalda e la purifica davvero.",
+    "badges": ["In cucina", "In doccia", "Fuori casa"],
+    "title": "Scaldabagno e depuratore",
+    "titleHighlight": "per doccia, cucina e camper",
+    "titleSuffix": "con tanica 20 litri",
+    "subtitle": "Acqua calda e potabile in 3 secondi. Bollire l'acqua <strong>non basta</strong>: calcare, micrometalli e sostanze nocive restano. <strong>PureWaterX™ Instant 2in1</strong> la scalda e la purifica davvero.",
     "socialProof": {
       "rating": "4.8/5",
       "count": "18.437 recensioni verificate"
@@ -48,12 +48,15 @@
   "benefits": {
     "items": [
       { "title": "Caldo in 3 secondi:", "description": "apri il rubinetto e l'acqua arriva calda, subito" },
-      { "title": "Purifica davvero:", "description": "bollire non basta, il filtro elimina calcare, cloro e micrometalli" },
+      { "title": "Acqua potabile purificata certificata:", "description": "bollire non basta, il filtro elimina calcare, cloro e micrometalli" },
       { "title": "Doppio utilizzo:", "description": "doccino per il bagno, rubinetto per cucina e acqua da bere" },
+      { "title": "Display gigante °C e Litri:", "description": "controlli temperatura e litri utilizzati a colpo d'occhio" },
+      { "title": "Temperatura più stabile:", "description": "meno sbalzi mentre usi doccia o lavello" },
       { "title": "Elettrico o Gas:", "description": "due modalità, scegli quella che preferisci in base alla situazione" },
       { "title": "Asta e rubinetto con viti o ventose:", "description": "decidi se fissare l'asta per il doccino e il rubinetto con le viti, oppure con le ventose per rimuoverlo più facilmente" },
       { "title": "Camper e seconda casa:", "description": "arrivi, attacchi e hai acqua calda e pura in 3 secondi, ovunque" },
-      { "title": "Risparmio bollette:", "description": "niente standby, scaldi solo quando apri l'acqua" },
+      { "title": "Risparmio bollette:", "description": "risparmi fino al 92% in bolletta, scaldi solo quando apri l'acqua" },
+      { "title": "Anti-calcare ULTRA:", "description": "cartuccia dedicata + sistema anti-incrostazione per prestazioni stabili" },
       { "title": "Compatibile con tutto:", "description": "tubature vecchie, bassa pressione, qualsiasi impianto" },
       { "title": "Kit completo incluso:", "description": "filtri, doccino, rubinetto, pompa 12V, tanica pieghevole 20L, valigetta: non compri altro" }
     ]
@@ -145,6 +148,22 @@
         "tagColor": "green",
         "title": "Bagno, cucina, camper: in un click",
         "description": "Asta per doccino e rubinetto QuickDock con sgancio rapido: <strong>lo sposti in 30 secondi</strong>. Oggi in cucina, domani in camper. Cappucci anti-goccia, zero sporco."
+      },
+      {
+        "image": "/images/mirko/purewater/angle/6.webp",
+        "imageAlt": "Sistema anticalcare PureWaterX",
+        "tag": "SISTEMA ANTICALCARE",
+        "tagColor": "blue",
+        "title": "Dura di più perché non si incrosta",
+        "description": "Il calcare incrosta e distrugge gli scaldabagno. PureWaterX™ ha <strong>cartuccia anticalcare dedicata</strong> + sistema anti-incrostazione: <strong>prestazioni stabili nel tempo</strong>, zero manutenzione."
+      },
+      {
+        "image": "/images/mirko/purewater/angle/7.webp",
+        "imageAlt": "Risparmio bolletta Smart-Saver",
+        "tag": "RISPARMIO IN BOLLETTA",
+        "tagColor": "green",
+        "title": "Tecnologia Smart-Saver: risparmi fino al 92%",
+        "description": "I boiler tradizionali <strong>scaldano 24h anche quando non serve</strong>. PureWaterX™ scalda <strong>solo quando apri il rubinetto</strong>: zero standby, zero sprechi."
       }
     ]
   },

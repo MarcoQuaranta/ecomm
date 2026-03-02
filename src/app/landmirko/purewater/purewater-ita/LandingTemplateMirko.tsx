@@ -291,7 +291,13 @@ export default function LandingTemplateMirko({ content = {}, networkConfig }: { 
       {hero && (
         <section className="hero-section">
           <div className="container">
-            {hero.badge && <span className="hero-badge">{hero.badge}</span>}
+            {hero.badges && Array.isArray(hero.badges) ? (
+              <div className="hero-badges-row">
+                {hero.badges.map((b: string, i: number) => (
+                  <span key={i} className="hero-badge">{b}</span>
+                ))}
+              </div>
+            ) : hero.badge && <span className="hero-badge">{hero.badge}</span>}
             <h1>
               {hero.title} <em>{hero.titleHighlight}</em> {hero.titleSuffix}
             </h1>

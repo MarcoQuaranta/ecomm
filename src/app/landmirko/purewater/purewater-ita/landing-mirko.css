@@ -116,6 +116,13 @@
 
 .landing-mirko .hero-section .container { text-align: center; }
 
+.landing-mirko .hero-badges-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
 .landing-mirko .hero-badge {
   display: inline-block;
   background: #e8f0fe;
@@ -124,9 +131,11 @@
   font-weight: 700;
   padding: 5px 14px;
   border-radius: 100px;
-  margin-bottom: 16px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+}
+.landing-mirko .hero-badges-row .hero-badge {
+  margin-bottom: 0;
 }
 
 .landing-mirko .hero-section h1 {
@@ -1589,6 +1598,7 @@
   .landing-mirko .hero-section h1 { font-size: 24px; margin-bottom: 14px; }
   .landing-mirko .hero-subtitle { font-size: 17px; margin-bottom: 12px; }
   .landing-mirko .hero-badge { margin-bottom: 6px; font-size: 11px; padding: 4px 12px; }
+  .landing-mirko .hero-badges-row { margin-bottom: 8px; gap: 6px; }
   .landing-mirko .social-proof-line { margin-bottom: 12px; font-size: 12px; padding: 5px 12px; }
 
   .landing-mirko .product-hero { padding: 0 6px 12px; }
