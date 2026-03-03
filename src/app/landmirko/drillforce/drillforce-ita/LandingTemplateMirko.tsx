@@ -99,6 +99,7 @@ export default function LandingTemplateMirko({ content = {}, networkConfig }: { 
   const tracking = content?.tracking;
   const sizes = content?.sizes;
   const ariaLabels = content?.ariaLabels;
+  const drillTips = content?.drillTips;
 
   /* ---- slides & data ---- */
   const slides = gallery?.slides || [];
@@ -395,6 +396,7 @@ export default function LandingTemplateMirko({ content = {}, networkConfig }: { 
                       {cta.subNote && <p className="cta-sub">{cta.subNote}</p>}
                     </>
                   )}
+
                 </div>
               )}
 
@@ -431,6 +433,75 @@ export default function LandingTemplateMirko({ content = {}, networkConfig }: { 
               <div key={i} className={`trust-badge badge-${badge.color}`}>
                 <div className="badge-icon"><LandingIcon name={badge.icon} /></div>
                 <h4>{badge.text}</h4>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* DRILL TIPS — full width */}
+      {drillTips?.items?.length > 0 && (
+        <section style={{ padding: '24px 16px' }}>
+          {drillTips.title && (
+            <h2 style={{
+              textAlign: 'center',
+              fontSize: '1.65rem',
+              fontWeight: 700,
+              marginBottom: '24px',
+              maxWidth: '900px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}>{drillTips.title}</h2>
+          )}
+          <div className="drill-tips-grid">
+            {drillTips.items.map((tip: any, i: number) => (
+              <div key={i} style={{
+                position: 'relative',
+                aspectRatio: '1',
+                borderRadius: '12px',
+                overflow: 'hidden',
+                background: '#f5f5f5',
+              }}>
+                <Image
+                  src={tip.image}
+                  alt={tip.alt}
+                  fill
+                  sizes="(max-width: 600px) 90vw, 280px"
+                  style={{ objectFit: 'cover' }}
+                />
+                {tip.label && (
+                  <span style={{
+                    position: 'absolute',
+                    bottom: '8px',
+                    left: '8px',
+                    right: '8px',
+                    color: '#fff',
+                    fontWeight: 700,
+                    fontSize: '1.35rem',
+                    textShadow: '0 1px 6px rgba(0,0,0,0.7)',
+                    lineHeight: 1.2,
+                  }}>{tip.label}</span>
+                )}
+                <div style={{
+                  position: 'absolute',
+                  top: '6px',
+                  left: '6px',
+                  width: '35%',
+                  height: '35%',
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                  border: '2px solid #fff',
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
+                  background: '#fff',
+                }}>
+                  <Image
+                    src={tip.overlayImage}
+                    alt={tip.overlayAlt}
+                    fill
+                    sizes="100px"
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
               </div>
             ))}
           </div>

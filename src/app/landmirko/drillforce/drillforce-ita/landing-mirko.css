@@ -2038,6 +2038,23 @@
   font-weight: 600;
 }
 
+/* DRILL TIPS GRID */
+.drill-tips-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .drill-tips-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    gap: 20px;
+  }
+}
+
 /* TY Responsive */
 @media (max-width: 480px) {
   .ty-mirko { padding: 16px 10px; }

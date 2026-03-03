@@ -42,7 +42,10 @@
       { "src": "/images/mirko/drillforce/carosello/4.webp", "alt": "DrillForce Full Kit kit accessori" },
       { "src": "/images/mirko/drillforce/carosello/5.webp", "alt": "DrillForce Full Kit valigetta completa" },
       { "src": "/images/mirko/drillforce/carosello/6.webp", "alt": "DrillForce Full Kit dettaglio Quick-Lock" },
-      { "src": "/images/mirko/drillforce/carosello/7.webp", "alt": "DrillForce Full Kit batterie e caricatore" }
+      { "src": "/images/mirko/drillforce/carosello/7.webp", "alt": "DrillForce Full Kit batterie e caricatore" },
+      { "src": "/images/mirko/drillforce/carosello/8.webp", "alt": "DrillForce Full Kit dettaglio 8" },
+      { "src": "/images/mirko/drillforce/carosello/9.webp", "alt": "DrillForce Full Kit dettaglio 9" },
+      { "src": "/images/mirko/drillforce/carosello/10.webp", "alt": "DrillForce Full Kit dettaglio 10" }
     ]
   },
 
@@ -84,6 +87,33 @@
     "subNote": ""
   },
 
+  "drillTips": {
+    "title": "Una testa per ogni uso, senza adattatori",
+    "items": [
+      {
+        "image": "/images/mirko/drillforce/punte/punta1.webp",
+        "overlayImage": "/images/mirko/drillforce/punte/punta1_1.webp",
+        "alt": "Punta SDS-Plus per cemento",
+        "overlayAlt": "Dettaglio punta SDS",
+        "label": "Perfora legno e metallo"
+      },
+      {
+        "image": "/images/mirko/drillforce/punte/punta2.webp",
+        "overlayImage": "/images/mirko/drillforce/punte/punta2_2.webp",
+        "alt": "Punta per legno e metallo",
+        "overlayAlt": "Dettaglio punta trapano",
+        "label": "Fora il cemento con facilità"
+      },
+      {
+        "image": "/images/mirko/drillforce/punte/punta3.webp",
+        "overlayImage": "/images/mirko/drillforce/punte/punta3_3.webp",
+        "alt": "Inserto avvitatore a impulsi",
+        "overlayAlt": "Dettaglio inserto",
+        "label": "Avvita e svita in un attimo"
+      }
+    ]
+  },
+
   "trustBadges": {
     "items": [
       { "icon": "cash", "text": "Pagamento alla Consegna", "color": "green" },
@@ -93,7 +123,7 @@
   },
 
   "problems": {
-    "eyebrow": "Il problema",
+    "eyebrow": "Ti ci rivedi?",
     "title": "I trapani multi-funzione ti hanno deluso?",
     "items": [
       { "icon": "warning", "titleBold": "Adattatori finti che <strong>si rompono</strong> dopo due utilizzi", "text": "" },
@@ -107,7 +137,7 @@
 
   "features": {
     "eyebrow": "Perché è diverso",
-    "title": "Un solo corpo motore. Tre utensili professionali.",
+    "title": "Un solo corpo motore, tripla funzione, 141 accessori",
     "items": [
       {
         "image": "/images/mirko/drillforce/angle/1.webp",
