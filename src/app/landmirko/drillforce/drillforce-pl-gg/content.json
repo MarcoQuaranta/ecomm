@@ -1,0 +1,483 @@
+{
+  "seo": {
+    "title": "DrillForce Full Kit™ - 3 Narzedzia w 1, Zmiana Glowicy Jednym Kliknieciem",
+    "description": "Modulowy system 18V brushless z 3 dedykowanymi glowicami: wiertarka, wkretarka udarowa i SDS. Zestaw 141 akcesoriow + 2 akumulatory. Darmowa wysylka, platnosc przy odbiorze."
+  },
+
+  "pricing": {
+    "currency": "PLN",
+    "currencySymbol": "zł",
+    "originalPrice": 678.00,
+    "currentPrice": 339.00,
+    "discountPercent": 50
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Uwaga: Duze zainteresowanie —",
+    "highlight": "Ostatnie 8 sztuk dostepnych",
+    "suffix": "w tej cenie"
+  },
+
+  "hero": {
+    "badge": null,
+    "badges": ["Uchwyt 13 mm", "1/4\" HEX Quick-Change", "SDS-Plus"],
+    "title": "Wiertarka, Wkretarka Udarowa, Mlot SDS i 141 Akcesoriow w Jednej Walizce.",
+    "titleHighlight": "Zmiana Glowicy Jednym Kliknieciem.",
+    "titleSuffix": "",
+    "subtitle": "Modulowy system 18V brushless z szybka wymiana Quick-Lock. Do drewna, metalu i betonu. 141 akcesoriow + 2 akumulatory + kompletna walizka.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18 473 zweryfikowanych opinii"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/drillforce/carosello/1.webp", "alt": "DrillForce Full Kit widok z przodu" },
+      { "src": "/images/mirko/drillforce/carosello/2.webp", "alt": "DrillForce Full Kit w uzyciu" },
+      { "src": "/images/mirko/drillforce/carosello/3.webp", "alt": "DrillForce Full Kit 3 glowice" },
+      { "src": "/images/mirko/drillforce/carosello/4.webp", "alt": "DrillForce Full Kit zestaw akcesoriow" },
+      { "src": "/images/mirko/drillforce/carosello/5.webp", "alt": "DrillForce Full Kit kompletna walizka" },
+      { "src": "/images/mirko/drillforce/carosello/6.webp", "alt": "DrillForce Full Kit szczegol Quick-Lock" },
+      { "src": "/images/mirko/drillforce/carosello/7.webp", "alt": "DrillForce Full Kit akumulatory i ladowarka" },
+      { "src": "/images/mirko/drillforce/carosello/8.webp", "alt": "DrillForce Full Kit szczegol 8" },
+      { "src": "/images/mirko/drillforce/carosello/9.webp", "alt": "DrillForce Full Kit szczegol 9" },
+      { "src": "/images/mirko/drillforce/carosello/10.webp", "alt": "DrillForce Full Kit szczegol 10" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "3 dedykowane glowice:", "description": "Uchwyt 13 mm (do drewna i metalu), 1/4\" HEX Quick-Change (wkretarka udarowa) i SDS-Plus (sciany i beton)" },
+      { "title": "Wymiana Quick-Lock:", "description": "klik, obroc i glowica zablokowana. Wymiana w 2 sekundy" },
+      { "title": "Silnik brushless 18V:", "description": "wiecej mocy, mniejsze zuzycie, trwa dwa razy dluzej niz silnik szczotkowy" },
+      { "title": "2 akumulatory 4.0Ah w zestawie:", "description": "jeden pracuje, drugi sie laduje. Zero przerw i 18 godzin autonomii" },
+      { "title": "SDS do prawdziwego betonu:", "description": "prawdziwe udary, wiercisz w scianach i betonie bez lamia wiertla" },
+      { "title": "Udar do srub:", "description": "udary skretne, odkrecisz nawet najbardziej oporne sruby bez wysilku" },
+      { "title": "Regulowana predkosc:", "description": "dostosujesz moc do materialu. Delikatnie na drewnie, agresywnie na betonie" },
+      { "title": "Wbudowane oswietlenie LED:", "description": "do pracy w ciemnosci, w nocy lub w miejscach o slabej widocznosci" },
+      { "title": "Zestaw 141 akcesoriow:", "description": "koncowki, nasadki, wiertla, klucze, mlotki, szczypce i poziomica. Wszystko w walizce" }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "DrillForce Full Kit™",
+    "shippingLabel": "Szybka wysylka:",
+    "shippingValue": "GRATIS",
+    "guaranteeLabel": "Gwarancja 2 lata",
+    "offerToggleText": "Sprawdz, co zawiera oferta",
+    "offerItems": [
+      { "text": "DrillForce Full Kit™ — Korpus Silnika 18V Brushless", "badge": null },
+      { "text": "Glowica Wiertarki/Wkretarki z Udarem (Uchwyt 13mm)", "badge": null },
+      { "text": "Glowica Wkretarki Udarowej (1/4\" HEX)", "badge": null },
+      { "text": "Glowica SDS-Plus do Betonu i Muru", "badge": null },
+      { "text": "2 Akumulatory Li-Ion + Szybka Ladowarka", "badge": null },
+      { "text": "Zestaw 141 Profesjonalnych Akcesoriow", "badge": "GRATIS" },
+      { "text": "Zorganizowana Walizka z Dedykowanymi Przegrodkami", "badge": "GRATIS" },
+      { "text": "Gwarancja 2 Lata + Dedykowana Obsluga", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "ZAMOW TERAZ",
+    "mainSubtext": "Platnosc Przy Odbiorze",
+    "subNote": ""
+  },
+
+  "drillTips": {
+    "title": "Jedna glowica do kazdego zastosowania, bez adapterow",
+    "items": [
+      {
+        "image": "/images/mirko/drillforce/punte/punta1.webp",
+        "overlayImage": "/images/mirko/drillforce/punte/punta1_1.webp",
+        "alt": "Wiertlo SDS-Plus do betonu",
+        "overlayAlt": "Szczegol wiertla SDS",
+        "label": "Wierci w drewnie i metalu"
+      },
+      {
+        "image": "/images/mirko/drillforce/punte/punta2.webp",
+        "overlayImage": "/images/mirko/drillforce/punte/punta2_2.webp",
+        "alt": "Wiertlo do drewna i metalu",
+        "overlayAlt": "Szczegol wiertla",
+        "label": "Wierci w betonie z latwoscia"
+      },
+      {
+        "image": "/images/mirko/drillforce/punte/punta3.webp",
+        "overlayImage": "/images/mirko/drillforce/punte/punta3_3.webp",
+        "alt": "Koncowka wkretarki udarowej",
+        "overlayAlt": "Szczegol koncowki",
+        "label": "Wkreca i wykreca w mgnieniu oka"
+      }
+    ]
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Platnosc Przy Odbiorze", "color": "green" },
+      { "icon": "truck", "text": "Wysylka 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 Dni na Zwrot", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Znasz to?",
+    "title": "Wielofunkcyjne wiertarki Cie zawiodly?",
+    "items": [
+      { "icon": "warning", "titleBold": "Falszywe adaptery, ktore <strong>lamia sie</strong> po dwoch uzyciach", "text": "" },
+      { "icon": "money", "titleBold": "Kupno <strong>3 oddzielnych narzedzi</strong> kosztuje fortune i zajmuje miejsce", "text": "" },
+      { "icon": "timer", "titleBold": "Tanie wiertarki, ktore <strong>przegrzewaja sie</strong> i traca moc po 5 minutach", "text": "" },
+      { "icon": "money", "titleBold": "Zestawy akcesoriow sprzedawane <strong>oddzielnie</strong> w absurdalnych cenach, za kazdym razem kolejny zakup", "text": "" }
+    ],
+    "solutionTitle": "Z DrillForce Full Kit™ jest inaczej.",
+    "solutionText": "3 prawdziwe glowice z dedykowanym mechanizmem. Jeden korpus, zero kompromisow."
+  },
+
+  "features": {
+    "eyebrow": "Dlaczego jest inny",
+    "title": "Jeden korpus silnika, potrojna funkcja, 141 akcesoriow",
+    "items": [
+      {
+        "image": "/images/mirko/drillforce/angle/1.webp",
+        "imageAlt": "System 3 glowic Quick-Lock",
+        "tag": "SYSTEM MODULOWY",
+        "tagColor": "green",
+        "title": "3 Dedykowane Glowice, Zero Jednorazowych Adapterow",
+        "description": "Wiercisz w <strong>drewnie, metalu i betonie</strong> z latwoscia. To nie adapter: to prawdziwe, dedykowane narzedzie z mechanicznym blokada Quick-Lock."
+      },
+      {
+        "image": "/images/mirko/drillforce/angle/2.webp",
+        "imageAlt": "Silnik brushless 18V",
+        "tag": "PRAWDZIWA MOC",
+        "tagColor": "orange",
+        "title": "Silnik Brushless 18V — Moc Bez Konca",
+        "description": "Wiecej momentu obrotowego, mniej tarcia, <strong>podwojna zywotnosc</strong> w porownaniu z silnikami szczotkowymi. Nie traci mocy nawet pod obciazeniem."
+      },
+      {
+        "image": "/images/mirko/drillforce/angle/3.webp",
+        "imageAlt": "Zestaw 141 akcesoriow",
+        "tag": "KOMPLETNY ZESTAW",
+        "tagColor": "blue",
+        "title": "141 Akcesoriow + Zorganizowana Walizka",
+        "description": "Koncowki, nasadki, wiertla, klucze imbusowe, mlotek, szczypce, miarka. <strong>Wszystko juz w srodku</strong>, nic nie trzeba dokupowac."
+      },
+      {
+        "image": "/images/mirko/drillforce/angle/4.webp",
+        "imageAlt": "2 akumulatory i ladowarka",
+        "tag": "PELNA AUTONOMIA",
+        "tagColor": "green",
+        "title": "2 Akumulatory — Jeden Pracuje, Drugi sie Laduje",
+        "description": "Akumulatory <strong>18V 4000mAh</strong> z szybkim ladowaniem (30 minut). Jeden pracuje, drugi sie laduje. <strong>Pracujesz bez przerwy</strong> w trybie ciaglym."
+      },
+      {
+        "image": "/images/mirko/drillforce/angle/5.webp",
+        "imageAlt": "Wbudowane oswietlenie LED",
+        "tag": "PELNA WIDOCZNOSC",
+        "tagColor": "orange",
+        "title": "Wbudowane Oswietlenie LED — Pracuj Nawet w Ciemnosci",
+        "description": "Zintegrowana dioda LED oswietlajaca <strong>dokladnie miejsce pracy</strong>. Idealna do ciasnych przestrzeni, piwnic, klatek schodowych i prac wieczornych."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Bardzo proste",
+    "title": "Jak to dziala? Klik i gotowe.",
+    "image": "",
+    "imageAlt": "Jak to dziala",
+    "steps": [
+      { "title": "Wybierz Glowice", "description": "Wiertarka, udar lub SDS. Klik, obroc, zablokowane." },
+      { "title": "Wloz Akcesorium", "description": "Wiertlo, koncowke lub nasadke. Wszystko w zestawie, juz zorganizowane." },
+      { "title": "Pracuj", "description": "Nacisnij spust i do dziela. Zmieniasz zadanie? Zmieniasz glowice w 2 sekundy." }
+    ]
+  },
+
+  "midCta": {
+    "text": "ZAMOW TERAZ Z 50% RABATEM",
+    "subtext": "Platnosc Przy Odbiorze"
+  },
+
+  "specs": {
+    "eyebrow": "Specyfikacja",
+    "title": "Parametry Techniczne",
+    "items": [
+      { "label": "Silnik", "value": "Brushless 18V" },
+      { "label": "Glowice w zestawie", "value": "3 (Uchwyt 13mm / Impact 1/4\" HEX / SDS-Plus)" },
+      { "label": "Akumulatory", "value": "2x Li-Ion + Szybka ladowarka" },
+      { "label": "Zestaw akcesoriow", "value": "141 elementow" },
+      { "label": "Wymiana glowicy", "value": "Quick-Lock (2 sekundy)" },
+      { "label": "Certyfikaty", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Porownanie",
+    "title": "Jakie korzysci zyskasz w porownaniu z alternatywami?",
+    "featureColumn": "Cecha",
+    "winnerBadge": "ZWYCIEZCA",
+    "productColumn": "DrillForce Full Kit™",
+    "competitorColumn": "3 Oddzielne Narzedzia",
+    "rows": [
+      { "feature": "Narzedzia w zestawie", "product": "✔ Wiertarka + Udar + SDS", "competitor": "Kupujesz wszystko osobno" },
+      { "feature": "Zmiana funkcji", "product": "✔ Quick-Lock w 2 sekundy", "competitor": "Zmiana narzedzia za kazdym razem" },
+      { "feature": "Akcesoria", "product": "✔ 141 elementow w zestawie", "competitor": "Sprzedawane oddzielnie" },
+      { "feature": "Akumulatory", "product": "✔ 2 akumulatory + ladowarka", "competitor": "1 akumulator na narzedzie" },
+      { "feature": "Zajmowane miejsce", "product": "✔ 1 walizka na wszystko", "competitor": "3 walizki + szuflady" },
+      { "feature": "Calkowity koszt", "product": "✔ Tylko 339 zl (jednorazowo)", "competitor": "1500-2500 zl lacznie" }
+    ]
+  },
+
+  "kitContents": {
+    "eyebrow": "Zawartosc Zestawu",
+    "title": "Oprocz wiertarki i 3 modulowych glowic, zestaw zawiera:",
+    "image": "/images/mirko/drillforce/carosello/2.webp",
+    "imageAlt": "Zawartosc zestawu DrillForce Full Kit",
+    "groups": [
+      { "letter": "A", "title": "Koncowki / bity (46 szt.)", "items": ["Glowny zestaw koncowek (36 szt.: PH/PZ/SL/TX/HEX rozne)", "Dodatkowy zestaw koncowek (10 szt.)"] },
+      { "letter": "B", "title": "Nasadki (9 szt.)", "items": ["8 nasadek na uchwycie", "1 adapter do nasadek"] },
+      { "letter": "C", "title": "Klucze imbusowe (9 szt.)", "items": [] },
+      { "letter": "D", "title": "Wiertla (8 szt.)", "items": ["7 wiertel (rozne rozmiary)", "1 wiertlo lopatowe (drewno)"] },
+      { "letter": "E", "title": "Wkretaki i uchwyty na koncowki (6 szt.)", "items": ["4 wkretaki", "1 uchwyt na koncowki", "1 przedluzka do koncowek"] },
+      { "letter": "F", "title": "Narzedzia reczne (6 szt.)", "items": ["1 mlotek", "1 szczypce", "1 klucz nastawny", "1 noz", "1 miarka", "1 poziomica"] },
+      { "letter": "G", "title": "Drobne elementy + organizer (41 szt.)", "items": ["1 pudelko-organizer", "20 kolkow", "20 srub"] }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Wszystko w zestawie",
+    "title": "Co otrzymasz do domu",
+    "items": [
+      { "icon": "box", "text": "DrillForce Full Kit™ — Korpus 18V + 3 Dedykowane Glowice", "value": "678 zl", "valueType": "price" },
+      { "icon": "box", "text": "2 Akumulatory Li-Ion + Szybka Ladowarka", "value": "W ZESTAWIE", "valueType": "included" },
+      { "icon": "gift", "text": "Zestaw 141 Profesjonalnych Akcesoriow w Walizce", "value": "GRATIS", "valueType": "gift" },
+      { "icon": "gift", "text": "Zorganizowana Walizka z Dedykowanymi Przegrodkami", "value": "GRATIS", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Cena regularna:",
+    "totalOriginalValue": "1 356 zl",
+    "totalCurrentLabel": "Dzis placisz tylko:",
+    "totalCurrentValue": "339 zl",
+    "totalSave": "Oszczedzasz 339 zl · Wysylka GRATIS",
+    "ctaText": "ZAMOW TERAZ"
+  },
+
+  "reviews": {
+    "eyebrow": "Co mowia o Nas",
+    "title": "Zweryfikowane Opinie",
+    "rating": "4.8",
+    "totalCount": "18 473 opinii",
+    "verifiedNote": "✓ Opinie sa weryfikowane przez niezalezny zespol zewnetrzny wobec tej strony.",
+    "showMoreText": "Pokaz wiecej opinii",
+    "leaveReviewText": "Zostaw opinie",
+    "verifiedBadge": "Zweryfikowany zakup",
+    "sellerReplyLabel": "Odpowiedz sprzedawcy:",
+    "items": [
+      {
+        "initials": "MT",
+        "name": "Marek Tomczak",
+        "stars": 5,
+        "text": "wreszcie wiertarka, ktora naprawde robi wszystko. zmontowalem nowa kuchnie wkrecajac, a potem wywiercilem otwory w scianie na szafki glowica SDS bez zmiany narzedzia. wymiana glowic jest blyskawiczna, dwie sekundy i gotowe. dostarczono w dwa dni, zaplacilem kurierowi.",
+        "verified": true,
+        "sellerReply": "Marek, to dokladnie zastosowanie, do ktorego zostal zaprojektowany! Kompletny montaz jednym narzedziem. Dziekujemy za zaufanie."
+      },
+      {
+        "initials": "PK",
+        "name": "Piotr Kowalski",
+        "stars": 5,
+        "text": "Uzywam go w garazu prawie codziennie. Glowica udarowa do srub to jest bomba, odkrecasz wszystko bez wysilku. Wczesniej mialem trzy oddzielne narzedzia i tracilem czas na szukanie wlasciwego. Teraz wszystko jest w jednej walizce, super wygodne.",
+        "verified": true,
+        "sellerReply": "Piotr, miec wszystko w jednej walizce naprawde zmienia sposob pracy. Cieszymy sie, ze jest Pan zadowolony!"
+      },
+      {
+        "initials": "AW",
+        "name": "Andrzej Wisniewski",
+        "stars": 5,
+        "text": "bylem sceptyczny co do wymiany glowic, bo kupowalem podobne rzeczy wczesniej i od razu sie lamaly. ten ma solidna blokade mechaniczna, ktora sie nie rusza. silnik brushless jest mocny i cichy. dwa akumulatory to zbawienie, nigdy sie nie zatrzymujesz",
+        "verified": true,
+        "sellerReply": "Andrzej, rozumiemy sceptycyzm po zlych doswiadczeniach. System Quick-Lock jest zaprojektowany na lata. Dziekujemy za zaufanie!"
+      },
+      {
+        "initials": "TN",
+        "name": "Tomasz Nowak",
+        "stars": 4,
+        "text": "produkt jest solidny i dobrze wykonany, glowice wymienia sie latwo, a zestaw akcesoriow jest kompletny. na razie daje 4 gwiazdki, bo chce go jeszcze troche przetestowac na ciezkich robotach, ale zapowiada sie swietnie",
+        "verified": true,
+        "sellerReply": "Tomasz, doceniamy Pana uczciwosci! Jestesmy pewni, ze nawet przy najciezszych pracach nie zawiedzie. Prosimy o aktualizacje za kilka tygodni!"
+      },
+      {
+        "initials": "AK",
+        "name": "Anna Kaminska",
+        "stars": 5,
+        "text": "Kupilem go dla meza, ktory zawsze narzeka, ze nie ma odpowiednich narzedzi. Zmontowal regal, przymocowal polki do sciany i dokrecil sruby w furce — wszystko jednym urzadzeniem. Nie przestaje o tym mowic, mowi ze to najlepszy prezent jaki kiedykolwiek dostal.",
+        "verified": true,
+        "sellerReply": "Anna, jak milo to slyszec! Gdy produkt staje sie ulubionym tematem rozmow w domu, dla nas to najwiekszy komplement."
+      },
+      {
+        "initials": "KZ",
+        "name": "Krzysztof Zajac",
+        "stars": 5,
+        "text": "jestem elektrykiem i uzywam go jako drugiej wiertarki na wypadek awarii. trzymam go w furgonetce, bo z walizka zajmuje bardzo malo miejsca. glowica SDS wierci w betonie bez problemow, akumulatory wystarczaja na caly dzien lekkiej pracy",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "JG",
+        "name": "Jan Gorski",
+        "stars": 5,
+        "text": "sam zestaw 141 elementow jest wart polowy ceny. mam wszystkie wiertla, koncowki, nasadki, wkretaki, a nawet mlotek i szczypce. nie musialem nic dokupowac. wysylka blyskawiczna, kurier punktualny",
+        "verified": true,
+        "sellerReply": "Jan, miec wszystko w zestawie bez ukrytych kosztow to nasza filozofia. Dziekujemy za opinie!"
+      },
+      {
+        "initials": "EM",
+        "name": "Ewa Mazur",
+        "stars": 5,
+        "text": "Nie jestem ekspertem od majsterkowania, ale chcialam sprobowac do drobnych prac w domu. Wymiana glowic jest bardzo latwa nawet dla mnie, wystarczy jedno klikniecie. Wywiercilem otwory w scianie, zeby powiesic obrazy i zmontowalem regal bez czyjejkolwiek pomocy.",
+        "verified": true,
+        "sellerReply": "Ewa, jest zaprojektowany tak, aby mogly go uzywac rowniez osoby niebedace profesjonalistami. Cieszymy sie, ze poczula sie Pani pewnie podczas uzytkowania!"
+      },
+      {
+        "initials": "PC",
+        "name": "Pawel Chmielewski",
+        "stars": 5,
+        "text": "porownalem z podobnymi produktami w internecie, ktore kosztuja dwa razy wiecej i maja mniej akcesoriow. ten ma trzy prawdziwe glowice z dedykowanym mechanizmem, a nie plastikowe adaptery. stosunek jakosci do ceny jest nie do pobicia, kropka. goraco polecam",
+        "verified": true,
+        "sellerReply": "Pawel, porownanie z konkurencja to najuczciwszy test. Dziekujemy za zaufanie i szczegolowa opinie!"
+      },
+      {
+        "initials": "MS",
+        "name": "Michal Szymanski",
+        "stars": 5,
+        "text": "Wyremontowalem lazienke praktycznie samym tym narzedziem. Skuwanie plytek glowica SDS, wkrecanie konstrukcji z plyt gipsowych, sruby instalacji glowica udarowa. Trzy rozne prace, jedno narzedzie. Walizka jest swietnie zorganizowana, wszystko na swoim miejscu.",
+        "verified": true,
+        "sellerReply": "Michal, kompletny remont jednym narzedziem to idealny dowod na skutecznosc systemu modulowego. Gratulacje za prace!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Zostaw swoja opinie",
+    "nameLabel": "Twoje imie",
+    "namePlaceholder": "Np. Jan Kowalski",
+    "ratingLabel": "Ocena",
+    "textLabel": "Twoja opinia",
+    "textPlaceholder": "Opowiedz o swoich doswiadczeniach...",
+    "submitText": "Wyslij Opinie",
+    "successTitle": "Dziekujemy za Twoja opinie!",
+    "successText": "Twoja opinia oczekuje na zatwierdzenie przez niezalezny zespol zewnetrzny wobec tej strony. Opinie pozostawione przez osoby, ktore nie zakupily produktu, nie zostana opublikowane — w celu unikniecia nieautentycznych opinii.",
+    "closeText": "Zamknij"
+  },
+
+  "orderSteps": {
+    "eyebrow": "JAK ZAMOWIC",
+    "title": "Zamow w 3 prostych krokach",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Wypelnij formularz",
+        "description": "Wpisz swoje dane w formularzu zamowienia ponizej."
+      },
+      {
+        "icon": "phone",
+        "title": "Potwierdzenie telefoniczne",
+        "description": "Zadzwonimy lub skontaktujemy sie przez WhatsApp, aby potwierdzic dane."
+      },
+      {
+        "icon": "cash",
+        "title": "Zaplac przy odbiorze",
+        "description": "Po 24/48h paczka dotrze kurierem ze sledzeniem. Placisz gotowka przy odbiorze."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Formularz Zamowienia",
+    "title": "Dokoncz swoje zamowienie",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Oferta -50% konczy sie za:",
+    "stockWarning": "Zostalo tylko <strong>8 sztuk</strong> w tej cenie",
+    "summaryTitle": "Podsumowanie Zamowienia",
+    "summaryLines": [
+      { "label": "DrillForce Full Kit™ + Akcesoria", "value": "339 zl", "type": "normal" },
+      { "label": "Szybka wysylka 24/48h", "value": "GRATIS", "type": "free" },
+      { "label": "Oplata za pobranie", "value": "GRATIS", "type": "free" }
+    ],
+    "totalLabel": "RAZEM",
+    "totalValue": "339 zl",
+    "fields": {
+      "name": { "label": "Imie i Nazwisko *", "placeholder": "Np. Jan Kowalski" },
+      "phone": { "label": "Numer Telefonu *", "placeholder": "Np. 500 123 456" },
+      "address": { "label": "Adres Wysylki *", "placeholder": "Ulica, Numer, Miasto, Kod pocztowy" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "POTWIERDZ ZAMOWIENIE",
+    "submitSubtext": "Platnosc Gotowka Przy Odbiorze",
+    "reassurance": "Wysylka 24/48h · Gwarancja 2 lata · Obsluga klienta<br><strong>Karta nie jest wymagana.</strong> Oddzwonimy w celu potwierdzenia."
+  },
+
+  "faq": {
+    "eyebrow": "Czesto zadawane pytania",
+    "title": "Masz jeszcze watpliwosci? Oto odpowiedzi.",
+    "items": [
+      { "question": "Jak zlozyc zamowienie?", "answer": "Kliknij przycisk zakupu, wypelnij formularz swoimi danymi i potwierdz zamowienie. Skontaktujemy sie telefonicznie lub przez WhatsApp w celu potwierdzenia, a paczka zostanie wygodnie dostarczona do domu z platnoscia gotowka." },
+      { "question": "Jak dziala wysylka?", "answer": "Wysylka jest calkowicie darmowa. Od momentu potwierdzenia zamowienia dostawa trwa okolo 24/48 godzin roboczych." },
+      { "question": "A jesli mi sie nie spodoba?", "answer": "Mozesz poprosic o pelny zwrot pieniedzy, zwracajac produkt w ciagu 30 dni od dostawy. Przyjedziemy po paczke i zwrocimy cala kwote." },
+      { "question": "Co jesli mam problem po 30 dniach?", "answer": "Bez obaw, wszystkie nasze produkty maja 2 lata gwarancji." },
+      { "question": "Jak poprosic o zwrot lub pomoc?", "answer": "Aby poprosic o pomoc lub zwrot po zlozeniu zamowienia, mozesz uzyc formularza kontaktowego na stronie lub napisac na adres e-mail podany w stopce." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "678 zl",
+    "newPrice": "339 zl",
+    "buttonText": "ZAMOW TERAZ",
+    "buttonSubtext": "Zaplac Przy Odbiorze"
+  },
+
+  "tracking": {
+    "googleAdsId": "AW-16697430619",
+    "conversionLabel": "8ZQSCLrWtf8bENuk-pk-",
+    "conversionValue": 339.00,
+    "conversionCurrency": "PLN",
+    "facebookPixelId": "",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {},
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=517&uid=01981ccf-4474-7c39-97eb-9407221996c2&lp=517"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Poprzedni",
+    "nextSlide": "Nastepny",
+    "thumbnail": "Miniatura",
+    "close": "Zamknij"
+  },
+
+  "ty": {
+    "title": "Zamowienie Potwierdzone!",
+    "subtitle": "Twoje zamowienie zostalo pomyslnie przyjete.",
+    "orderNumberLabel": "Nr zamowienia:",
+    "summaryTitle": "Podsumowanie Zamowienia",
+    "accessoriesLabel": "+ Akcesoria w zestawie",
+    "totalLabel": "RAZEM DO ZAPLATY",
+    "paymentNote": "Platnosc gotowka kurierowi — bez zaliczki",
+    "yourDataTitle": "Twoje Dane",
+    "nameLabel": "Imie",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adres",
+    "nextStepsTitle": "Co dalej?",
+    "message": "Skontaktujemy sie telefonicznie lub przez WhatsApp, aby potwierdzic zamowienie i zorganizowac dostawe.",
+    "steps": [
+      "Otrzymasz telefon lub wiadomosc WhatsApp z potwierdzeniem",
+      "Paczka zostanie wyslana w ciagu 24/48h",
+      "Placisz gotowka kurierowi przy odbiorze"
+    ],
+    "footerText": "Gwarancja 2 Lata · 30 Dni na Zwrot · Dedykowana Obsluga"
+  }
+}

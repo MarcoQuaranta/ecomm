@@ -1,0 +1,483 @@
+{
+  "seo": {
+    "title": "DrillForce Full Kit™ - 3 nastroje v 1, vymenite hlavu jednim kliknutim",
+    "description": "Modularni system 18V brushless se 3 dedicovanymi hlavami: vrtacka, razovy utahovak a SDS. Sada 141 prislusenstvi + 2 baterie. Doprava zdarma, platba pri prevzeti."
+  },
+
+  "pricing": {
+    "currency": "CZK",
+    "currencySymbol": "Kc",
+    "originalPrice": 3898,
+    "currentPrice": 1949,
+    "discountPercent": 50
+  },
+
+  "topBar": null,
+
+  "urgencyBanner": {
+    "text": "Pozor: Vysoka poptavka —",
+    "highlight": "Poslednich 8 kusu skladem",
+    "suffix": "za tuto cenu"
+  },
+
+  "hero": {
+    "badge": null,
+    "badges": ["Sklicidlo 13 mm", "1/4\" HEX Quick-Change", "SDS-Plus"],
+    "title": "Vrtacka, razovy utahovak, SDS kladivo a 141 prislusenstvi v jednom kufru.",
+    "titleHighlight": "Vymenite hlavu jednim kliknutim.",
+    "titleSuffix": "",
+    "subtitle": "Modularni system 18V brushless s rychloupinanim Quick-Lock. Pro drevo, kov a beton. 141 prislusenstvi + 2 baterie + kompletni kufr.",
+    "socialProof": {
+      "rating": "4.8/5",
+      "count": "18 473 overenych recenzi"
+    }
+  },
+
+  "gallery": {
+    "discountTag": "-50%",
+    "slides": [
+      { "src": "/images/mirko/drillforce/carosello/1.webp", "alt": "DrillForce Full Kit celkovy pohled" },
+      { "src": "/images/mirko/drillforce/carosello/2.webp", "alt": "DrillForce Full Kit pri pouziti" },
+      { "src": "/images/mirko/drillforce/carosello/3.webp", "alt": "DrillForce Full Kit 3 hlavy" },
+      { "src": "/images/mirko/drillforce/carosello/4.webp", "alt": "DrillForce Full Kit sada prislusenstvi" },
+      { "src": "/images/mirko/drillforce/carosello/5.webp", "alt": "DrillForce Full Kit kompletni kufr" },
+      { "src": "/images/mirko/drillforce/carosello/6.webp", "alt": "DrillForce Full Kit detail Quick-Lock" },
+      { "src": "/images/mirko/drillforce/carosello/7.webp", "alt": "DrillForce Full Kit baterie a nabijecka" },
+      { "src": "/images/mirko/drillforce/carosello/8.webp", "alt": "DrillForce Full Kit detail 8" },
+      { "src": "/images/mirko/drillforce/carosello/9.webp", "alt": "DrillForce Full Kit detail 9" },
+      { "src": "/images/mirko/drillforce/carosello/10.webp", "alt": "DrillForce Full Kit detail 10" }
+    ]
+  },
+
+  "benefits": {
+    "items": [
+      { "title": "3 dedicovane hlavy:", "description": "Sklicidlo 13 mm (pro drevo a kov), 1/4\" HEX Quick-Change (razovy utahovak) a SDS-Plus (zdi a beton)" },
+      { "title": "Vymena Quick-Lock:", "description": "kliknete, otocite a hlava je zajistena. Vymenite ji za 2 sekundy" },
+      { "title": "Motor brushless 18V:", "description": "vetsi vykon, mensi opotrebeni, vydrzi dvakrat dele nez kartacovy motor" },
+      { "title": "2 baterie 4.0Ah v baleni:", "description": "jedna pracuje, druha se nabiji. Zadne preruseni a 18 hodin vydrze" },
+      { "title": "SDS na pravy beton:", "description": "skutecne priklepove udery, prorazite zdi a beton bez zlomeni vrtaku" },
+      { "title": "Razove utahovani sroubu:", "description": "torznivudery, povolite i ty nejtvrdsi srouby bez namahy a bez bolesti zapesti" },
+      { "title": "Regulovatelne otacky:", "description": "prizpusobite vykon materialu. Jemne na drevo, agresivne na beton" },
+      { "title": "Vestavenesvetlo LED:", "description": "pro praci ve tme, v noci nebo v prostorech se spatnou viditelnosti" },
+      { "title": "Sada 141 prislusenstvi:", "description": "bity, nasadove klice, vrtaky, imbusove klice, kladivo, kleste a vodovaha. Vse v kufru" }
+    ]
+  },
+
+  "priceBox": {
+    "productName": "DrillForce Full Kit™",
+    "shippingLabel": "Rychle doruceni:",
+    "shippingValue": "ZDARMA",
+    "guaranteeLabel": "Zaruka 2 roky",
+    "offerToggleText": "Zjistete, co nabidka obsahuje",
+    "offerItems": [
+      { "text": "DrillForce Full Kit™ — Telo motoru 18V Brushless", "badge": null },
+      { "text": "Hlava vrtacky/utahovaku s priklepem (sklicidlo 13mm)", "badge": null },
+      { "text": "Hlava razoveho utahovaku (1/4\" HEX)", "badge": null },
+      { "text": "Hlava SDS-Plus pro beton a zdivo", "badge": null },
+      { "text": "2 baterie Li-Ion + rychlonabijecka", "badge": null },
+      { "text": "Sada 141 profesiomalnich prislusenstvi", "badge": "DAREK" },
+      { "text": "Organizovany kufr s dedicovanymi prihradkami", "badge": "DAREK" },
+      { "text": "Zaruka 2 roky + dedicovana podpora", "badge": null }
+    ]
+  },
+
+  "cta": {
+    "mainText": "OBJEDNEJTE NYNI",
+    "mainSubtext": "Platba pri prevzeti",
+    "subNote": ""
+  },
+
+  "drillTips": {
+    "title": "Jedna hlava pro kazde pouziti, bez adapteru",
+    "items": [
+      {
+        "image": "/images/mirko/drillforce/punte/punta1.webp",
+        "overlayImage": "/images/mirko/drillforce/punte/punta1_1.webp",
+        "alt": "Vrtak SDS-Plus na beton",
+        "overlayAlt": "Detail vrtaku SDS",
+        "label": "Vrtejte do dreva a kovu"
+      },
+      {
+        "image": "/images/mirko/drillforce/punte/punta2.webp",
+        "overlayImage": "/images/mirko/drillforce/punte/punta2_2.webp",
+        "alt": "Vrtak na drevo a kov",
+        "overlayAlt": "Detail vrtaku",
+        "label": "Provrtejte beton snadno"
+      },
+      {
+        "image": "/images/mirko/drillforce/punte/punta3.webp",
+        "overlayImage": "/images/mirko/drillforce/punte/punta3_3.webp",
+        "alt": "Bit razoveho utahovaku",
+        "overlayAlt": "Detail bitu",
+        "label": "Utahnete a povolte raz dva"
+      }
+    ]
+  },
+
+  "trustBadges": {
+    "items": [
+      { "icon": "cash", "text": "Platba pri prevzeti", "color": "green" },
+      { "icon": "truck", "text": "Doruceni 24/48h", "color": "blue" },
+      { "icon": "return", "text": "30 dni na vraceni", "color": "orange" }
+    ]
+  },
+
+  "problems": {
+    "eyebrow": "Poznate to?",
+    "title": "Zklamaly vas viceucelove vrtacky?",
+    "items": [
+      { "icon": "warning", "titleBold": "Falesne adaptery, ktere se <strong>rozpadnou</strong> po dvou pouzitich", "text": "" },
+      { "icon": "money", "titleBold": "Koupitsi <strong>3 samostatne nastroje</strong> stoji jmeni a zabira misto", "text": "" },
+      { "icon": "timer", "titleBold": "Levne vrtacky, ktere se <strong>prehrivaji</strong> a ztraceji vykon za 5 minut", "text": "" },
+      { "icon": "money", "titleBold": "Sady prislusenstvi prodavane <strong>zvlast</strong> za absurdni ceny, pokazde dalsi nakup", "text": "" }
+    ],
+    "solutionTitle": "S DrillForce Full Kit™ je to jine.",
+    "solutionText": "3 skutecne hlavy s dedicovanym mechanismem. Jedno telo, zadne kompromisy."
+  },
+
+  "features": {
+    "eyebrow": "Proc je jiny",
+    "title": "Jedno telo motoru, trojna funkce, 141 prislusenstvi",
+    "items": [
+      {
+        "image": "/images/mirko/drillforce/angle/1.webp",
+        "imageAlt": "System 3 hlav Quick-Lock",
+        "tag": "MODULARNI SYSTEM",
+        "tagColor": "green",
+        "title": "3 dedicovane hlavy, zadne jednorrazove adaptery",
+        "description": "Vrtejte do <strong>dreva, kovu a betonu</strong> snadno. Neni to adapter: je to skutecny dedicovany nastroj s mechanickym zajistenim Quick-Lock."
+      },
+      {
+        "image": "/images/mirko/drillforce/angle/2.webp",
+        "imageAlt": "Motor brushless 18V",
+        "tag": "SKUTECNY VYKON",
+        "tagColor": "orange",
+        "title": "Motor Brushless 18V — nekonecny vykon",
+        "description": "Vetsi tocive moment, mensi treni, <strong>dvojnasobna zivotnost</strong> oproti kartacovym motorum. Neztraci vykon ani pod zatezi."
+      },
+      {
+        "image": "/images/mirko/drillforce/angle/3.webp",
+        "imageAlt": "Sada 141 prislusenstvi",
+        "tag": "KOMPLETNI SADA",
+        "tagColor": "blue",
+        "title": "141 prislusenstvi + organizovany kufr",
+        "description": "Bity, nasadove klice, vrtaky, imbusove klice, kladivo, kleste, metr. <strong>Vse uz v baleni</strong>, nic nekupujete zvlast."
+      },
+      {
+        "image": "/images/mirko/drillforce/angle/4.webp",
+        "imageAlt": "2 baterie a nabijecka",
+        "tag": "UPLNA AUTONOMIE",
+        "tagColor": "green",
+        "title": "2 baterie — jedna pracuje, druha se nabiji",
+        "description": "Baterie <strong>18V 4000mAh</strong> s rychlonabijenim (30 minut). Jedna pracuje, druha se nabiji. <strong>Pracujte nepretrzite</strong> bez prestavek."
+      },
+      {
+        "image": "/images/mirko/drillforce/angle/5.webp",
+        "imageAlt": "Vestavenesvetlo LED",
+        "tag": "UPLNA VIDITELNOST",
+        "tagColor": "orange",
+        "title": "Vestavenesvetlo LED — pracujte i ve tme",
+        "description": "Integrovane LED svetlo, ktere osvetluje <strong>presne misto prace</strong>. Idealni pro stisnen prostory, sklepy, podschodi a vecernt praci."
+      }
+    ]
+  },
+
+  "howItWorks": {
+    "eyebrow": "Velmi jednoduche",
+    "title": "Jak to funguje? Kliknete a jedete.",
+    "image": "",
+    "imageAlt": "Jak to funguje",
+    "steps": [
+      { "title": "Zvolte hlavu", "description": "Vrtacka, razovy utahovak nebo SDS. Kliknete, otocite, zajisteno." },
+      { "title": "Vlozte prislusenstvi", "description": "Vrtak, bit nebo nasadovy klic. Vse je v sade, uz organizovane." },
+      { "title": "Pracujte", "description": "Stisknete spoustaz jdete. Menite praci? Vymenite hlavu za 2 sekundy." }
+    ]
+  },
+
+  "midCta": {
+    "text": "OBJEDNEJTE NYNI SE SLEVOU 50 %",
+    "subtext": "Platba pri prevzeti"
+  },
+
+  "specs": {
+    "eyebrow": "Specifikace",
+    "title": "Technicke parametry",
+    "items": [
+      { "label": "Motor", "value": "Brushless 18V" },
+      { "label": "Hlavy v baleni", "value": "3 (Sklicidlo 13mm / Impact 1/4\" HEX / SDS-Plus)" },
+      { "label": "Baterie", "value": "2x Li-Ion + Rychlonabijecka" },
+      { "label": "Sada prislusenstvi", "value": "141 kusu" },
+      { "label": "Vymena hlavy", "value": "Quick-Lock (2 sekundy)" },
+      { "label": "Certifikace", "value": "CE · FCC · RoHS" }
+    ]
+  },
+
+  "comparison": {
+    "eyebrow": "Srovnani",
+    "title": "Jake vyhody ziskate oproti alternativam?",
+    "featureColumn": "Vlastnost",
+    "winnerBadge": "VITEZ",
+    "productColumn": "DrillForce Full Kit™",
+    "competitorColumn": "3 samostatne nastroje",
+    "rows": [
+      { "feature": "Nastroje v baleni", "product": "Vrtacka + razovy utahovak + SDS", "competitor": "Kupujete vse zvlast" },
+      { "feature": "Zmena funkce", "product": "Quick-Lock za 2 sekundy", "competitor": "Pokazde menite nastroj" },
+      { "feature": "Prislusenstvi", "product": "141 kusu v baleni", "competitor": "Prodava se zvlast" },
+      { "feature": "Baterie", "product": "2 baterie + nabijecka", "competitor": "1 baterie na nastroj" },
+      { "feature": "Ulozeni", "product": "1 kufr na vse", "competitor": "3 kufry + zasuvky" },
+      { "feature": "Celkova cena", "product": "Pouze 1 949 Kc (jednou)", "competitor": "7 000-12 000 Kc celkem" }
+    ]
+  },
+
+  "kitContents": {
+    "eyebrow": "Co sada obsahuje",
+    "title": "Krome vrtacky a 3 modularnich hlav sada obsahuje:",
+    "image": "/images/mirko/drillforce/carosello/2.webp",
+    "imageAlt": "Obsah sady DrillForce Full Kit",
+    "groups": [
+      { "letter": "A", "title": "Bity (46 ks)", "items": ["Hlavni sada bitu (36 ks: PH/PZ/SL/TX/HEX ruzne)", "Extra sada bitu (10 ks)"] },
+      { "letter": "B", "title": "Nasadove klice (9 ks)", "items": ["8 nasadovych klicu na drzaku", "1 adapter na nasadove klice"] },
+      { "letter": "C", "title": "Imbusove klice (9 ks)", "items": [] },
+      { "letter": "D", "title": "Vrtaky (8 ks)", "items": ["7 vrtaku (ruzne velikosti)", "1 lopatkovy vrtak (drevo)"] },
+      { "letter": "E", "title": "Sroubovaky a drzaky bitu (6 ks)", "items": ["4 sroubovaky", "1 rukojet na bity", "1 prodlouzeni na bity"] },
+      { "letter": "F", "title": "Rucni nastroje (6 ks)", "items": ["1 kladivo", "1 kleste", "1 nastavitelny klic", "1 odlamovaci nuz", "1 metr", "1 vodovaha"] },
+      { "letter": "G", "title": "Drobny material + organizer (41 ks)", "items": ["1 organizacni krabicka", "20 hmozdinek", "20 sroubu"] }
+    ]
+  },
+
+  "package": {
+    "eyebrow": "Vse v baleni",
+    "title": "Co dostanete domu",
+    "items": [
+      { "icon": "box", "text": "DrillForce Full Kit™ — telo 18V + 3 dedicovane hlavy", "value": "3 898 Kc", "valueType": "price" },
+      { "icon": "box", "text": "2 baterie Li-Ion + rychlonabijecka", "value": "V CENE", "valueType": "included" },
+      { "icon": "gift", "text": "Sada 141 profesionalnich prislusenstvi v kufru", "value": "DAREK", "valueType": "gift" },
+      { "icon": "gift", "text": "Organizovany kufr s dedicovanymi prihradkami", "value": "DAREK", "valueType": "gift" }
+    ],
+    "totalOriginalLabel": "Bezna cena:",
+    "totalOriginalValue": "7 796 Kc",
+    "totalCurrentLabel": "Dnes zaplatite pouze:",
+    "totalCurrentValue": "1 949 Kc",
+    "totalSave": "Usetrite 5 847 Kc · Doprava ZDARMA",
+    "ctaText": "OBJEDNEJTE NYNI"
+  },
+
+  "reviews": {
+    "eyebrow": "Co o nas rikaji",
+    "title": "Overene recenze",
+    "rating": "4.8",
+    "totalCount": "18 473 recenzi",
+    "verifiedNote": "Recenze jsou overovany nezavislym externim tymem mimo tento web.",
+    "showMoreText": "Zobrazit dalsi recenze",
+    "leaveReviewText": "Napsat recenzi",
+    "verifiedBadge": "Overeny nakup",
+    "sellerReplyLabel": "Odpoved prodejce:",
+    "items": [
+      {
+        "initials": "JN",
+        "name": "Jan Novak",
+        "stars": 5,
+        "text": "Konecne vrtacka, ktera opravdu zvladne vse. Montoval jsem novou kuchyn — srouboval a pak vrtal do zdi pro skrinky s hlavou SDS, aniz bych menil nastroj. Vymena hlavy je bleskova, dve sekundy a jste pripraveni. Dorazilo za dva dny, platil jsem kuryrovi.",
+        "verified": true,
+        "sellerReply": "Jane, presne pro toto pouziti byl navrzena! Kompletni montaz jednim nastrojem. Dekujeme za duveru."
+      },
+      {
+        "initials": "PK",
+        "name": "Petr Kral",
+        "stars": 5,
+        "text": "Pouzivam ho v garazi temer kazdy den. Razova hlava na srouby je bomba, povolite vse bez namahy. Drive jsem mel tri samostatne nastroje a ztacel jsem cas hledanim toho spravneho. Ted je vse v jednom kufru, maximalni pohodli.",
+        "verified": true,
+        "sellerReply": "Petre, mit vse v jednom kufru opravdu meni zpusob prace. Jsme radi, ze jste spokojeny!"
+      },
+      {
+        "initials": "TH",
+        "name": "Tomas Horak",
+        "stars": 5,
+        "text": "Byl jsem skepticky ohledne vymeny hlav, protoze jsem v minulosti kupil podobne veci a hned se rozbily. Tato ma solidni mechanicke zajisteni, ktere se nehybe. Motor brushless je vykonny a tichy. Dve baterie jsou pozehnanim, nikdy se nezastavite.",
+        "verified": true,
+        "sellerReply": "Tomasi, chapeme skepsi po spatnych zkusenostech. System Quick-Lock je navrzeny pro dlouhou zivotnost. Dekujeme za duveru!"
+      },
+      {
+        "initials": "MV",
+        "name": "Martin Vesely",
+        "stars": 4,
+        "text": "Produkt je solidni a dobre zpracovany, hlavy se meni snadno a sada prislusenstvi je kompletni. Zatim davamctyri hvezdy, protoze ho chci jeste otestovat na tezsi praci, ale predpoklady jsou vyborne.",
+        "verified": true,
+        "sellerReply": "Martine, cenime si vasi uprimnosti! Jsme si jisti, ze vas nezklameanina narocnejsich pracech. Dejte nam vedet za par tydnu!"
+      },
+      {
+        "initials": "KS",
+        "name": "Katerina Svobodova",
+        "stars": 5,
+        "text": "Koupila jsem to manzelovi, ktery si porad stezuje, ze nema spravne naradi. Smontoval knihovnu, pripevnil police na zed a utahl srouby na brance — vse jednim pristrojem. Neprestal o tom mluvit, rika, ze je to nejlepsi darek, jaky kdy dostal.",
+        "verified": true,
+        "sellerReply": "Katerino, to nas moc tesi! Kdyz se produkt stane oblibenym tematem doma, je to pro nas ten nejvetsi kompliment."
+      },
+      {
+        "initials": "PZ",
+        "name": "Pavel Zeman",
+        "stars": 5,
+        "text": "Jsem elektrikar a pouzivam ho jako druhou vrtacku pro nouzove situace. Mam ho v dodavce, protoze s kufrem zabira minimum mista. Hlava SDS bez problemu provrta beton, baterie vydrzina cely den lehke prace.",
+        "verified": true,
+        "sellerReply": null
+      },
+      {
+        "initials": "JM",
+        "name": "Jakub Marek",
+        "stars": 5,
+        "text": "Sama sada 141 kusu ma hodnotu poloviny ceny. Mam vsechny vrtaky, bity, nasadove klice, sroubovaky, dokonce kladivo a kleste. Nemusel jsem kupovat nic navic. Doruceni velmi rychle a kuryr na cas.",
+        "verified": true,
+        "sellerReply": "Jakube, mit vse v baleni bez skrytych nakladu je nase filozofie. Dekujeme za recenzi!"
+      },
+      {
+        "initials": "EH",
+        "name": "Eva Hajkova",
+        "stars": 5,
+        "text": "Nejsem odbornk na kutitstvi, ale chtela jsem to zkusit na drobne prace doma. Vymena hlavy je snadna i pro me, staci jedno kliknuti. Provrtala jsem zed pro obrazy a smontovala polici bez pomoci kohokoliv.",
+        "verified": true,
+        "sellerReply": "Evo, je navrzen tak, aby ho mohl pouzivat i neprofesional. Jsme radi, ze jste se citila jiste pri jeho pouzivani!"
+      },
+      {
+        "initials": "MC",
+        "name": "Michal Cermak",
+        "stars": 5,
+        "text": "Porovnal jsem ho s podobnymi produkty online, ktere stoji dvakrat tolik a maji mene prislusenstvi. Tento ma tri skutecne hlavy s dedicovanym mechanismem, ne plastove adaptery. Pomer kvality a ceny je neporazitelny, tecka. Velmi doporucuji.",
+        "verified": true,
+        "sellerReply": "Michale, srovnani s konkurenci je ten nejpoctivejsi test. Dekujeme za duveru a podrobnou recenzi!"
+      },
+      {
+        "initials": "JS",
+        "name": "Josef Sedlacek",
+        "stars": 5,
+        "text": "Rekonstruoval jsem koupelnu prakticky jen timto nastrojem. Demolice obkladu s SDS, sroubovani konstrukce sadrokartonu, srouby instalace s razovym utahovanim. Tri ruzne prace, jeden nastroj. Kufr je skvele organizovany, kazda vec na svem miste.",
+        "verified": true,
+        "sellerReply": "Josefe, kompletni rekonstrukce jednim nastrojem je dokonalou ukazkou modularniho systemu. Gratulujeme k odvedene praci!"
+      }
+    ]
+  },
+
+  "reviewPopup": {
+    "title": "Napiste svou recenzi",
+    "nameLabel": "Vase jmeno",
+    "namePlaceholder": "Napr. Jan Novak",
+    "ratingLabel": "Hodnoceni",
+    "textLabel": "Vase recenze",
+    "textPlaceholder": "Popiste svou zkusenost...",
+    "submitText": "Odeslat recenzi",
+    "successTitle": "Dekujeme za vasi recenzi!",
+    "successText": "Vase recenze ceka na schvaleni nezavislym tymem mimo tento web. Recenze od osob, ktere produkt nezakoupily, nebudou zverejneny, abychom zabranili neautentickym recenzim.",
+    "closeText": "Zavrit"
+  },
+
+  "orderSteps": {
+    "eyebrow": "JAK OBJEDNAT",
+    "title": "Objednejte ve 3 jednoduchych krocich",
+    "steps": [
+      {
+        "icon": "clipboard",
+        "title": "Vyplnte formular",
+        "description": "Zadejte sve udaje do objednavkoveho formulare nize."
+      },
+      {
+        "icon": "phone",
+        "title": "Telefonicke potvrzeni",
+        "description": "Zavolame vam nebo vas kontaktujeme pres WhatsApp pro potvrzeni udaju."
+      },
+      {
+        "icon": "cash",
+        "title": "Platba pri prevzeti",
+        "description": "Za 24/48h dorazi balik se sledovanym kurityrem. Platite hotove pri prevzeti."
+      }
+    ]
+  },
+
+  "orderForm": {
+    "eyebrow": "Objednavkovy formular",
+    "title": "Dokoncete svou objednavku",
+    "showCountdown": true,
+    "countdownMinutes": 118,
+    "timerLabel": "Sleva -50 % konci za:",
+    "stockWarning": "Pouze <strong>8 kusu</strong> za tuto cenu",
+    "summaryTitle": "Souhrn objednavky",
+    "summaryLines": [
+      { "label": "DrillForce Full Kit™ + prislusenstvi", "value": "1 949 Kc", "type": "normal" },
+      { "label": "Rychle doruceni 24/48h", "value": "ZDARMA", "type": "free" },
+      { "label": "Poplatek za dobirku", "value": "ZDARMA", "type": "free" }
+    ],
+    "totalLabel": "CELKEM",
+    "totalValue": "1 949 Kc",
+    "fields": {
+      "name": { "label": "Jmeno a prijmeni *", "placeholder": "Napr. Jan Novak" },
+      "phone": { "label": "Telefonni cislo *", "placeholder": "Napr. +420 123 456 789" },
+      "address": { "label": "Dorucovaci adresa *", "placeholder": "Ulice, cislo, mesto, PSC" }
+    },
+    "phoneNote": "",
+    "paymentBadge": "",
+    "submitText": "POTVRDIT OBJEDNAVKU",
+    "submitSubtext": "Platba hotove pri prevzeti",
+    "reassurance": "Doruceni 24/48h · Zaruka 2 roky · Podpora<br><strong>Zadna karta neni potreba.</strong> Zavolame vam pro potvrzeni."
+  },
+
+  "faq": {
+    "eyebrow": "Caste dotazy",
+    "title": "Mate jeste otazky? Zde jsou odpovedi.",
+    "items": [
+      { "question": "Jak mohu objednat?", "answer": "Kliknete na tlacitko objednat, vyplnte formular se svymi udaji a potrvrdte objednavku. Budete kontaktovani telefonicky nebo pres WhatsApp pro potvrzeni a balik obdrzite pohodlne domu s platbou hotove." },
+      { "question": "Jak funguje doruceni?", "answer": "Doruceni je zcela zdarma. Od potvrzeni objednavky trva priblizne 24/48 pracovnich hodin." },
+      { "question": "Co kdyz se mi nebude libit?", "answer": "Muzete pozadat o uplne vraceni penez zaslanim produktu zpet do 30 dnu od doruceni. Prijdeme vyzvednout balik a vratime vam celou castku." },
+      { "question": "Co kdyz budu mit problem po 30 dnech?", "answer": "Budte v klidu, vsechny nase produkty maji zaruku 2 roky." },
+      { "question": "Jak mohu pozadat o vraceni nebo podporu?", "answer": "Pro podporu nebo vraceni po provedeni objednavky muzete vyuzit kontaktni formular na webu nebo e-mail uvedeny v zapati stranky." }
+    ]
+  },
+
+  "stickyCta": {
+    "oldPrice": "3 898 Kc",
+    "newPrice": "1 949 Kc",
+    "buttonText": "OBJEDNEJTE NYNI",
+    "buttonSubtext": "Platba pri prevzeti"
+  },
+
+  "tracking": {
+    "googleAdsId": "",
+    "conversionLabel": "",
+    "conversionValue": 1949,
+    "conversionCurrency": "CZK",
+    "facebookPixelId": "1576025786901423",
+    "network": {
+      "apiEndpoint": "",
+      "offerId": "",
+      "params": {},
+      "fingerprintScript": "https://offers.supertrendaffiliateprogram.com/forms/tmfp/",
+      "clickPixel": "https://offers.supertrendaffiliateprogram.com/forms/api/ck/?o=515&uid=019855d0-397a-72ee-8df5-c5026966105a&lp=515"
+    }
+  },
+
+  "ariaLabels": {
+    "prevSlide": "Predchozi",
+    "nextSlide": "Dalsi",
+    "thumbnail": "Nahled",
+    "close": "Zavrit"
+  },
+
+  "ty": {
+    "title": "Objednavka potvrzena!",
+    "subtitle": "Vase objednavka byla uspesne prijata.",
+    "orderNumberLabel": "C. objednavky:",
+    "summaryTitle": "Souhrn objednavky",
+    "accessoriesLabel": "+ Prislusenstvi v baleni",
+    "totalLabel": "CELKEM K UHRADE",
+    "paymentNote": "Platba hotove kuryrovi — zadna zaloha",
+    "yourDataTitle": "Vase udaje",
+    "nameLabel": "Jmeno",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Adresa",
+    "nextStepsTitle": "Co se stane dal?",
+    "message": "Budete kontaktovani telefonicky nebo pres WhatsApp pro potvrzeni objednavky a domluveni doruceni.",
+    "steps": [
+      "Obdrzite telefonicky hovor nebo zpravu pres WhatsApp s potvrzenim",
+      "Balik bude odeslan do 24/48h",
+      "Zaplatite hotove kuryrovi pri prevzeti"
+    ],
+    "footerText": "Zaruka 2 roky · 30 dni na vraceni · Dedicovana podpora"
+  }
+}
